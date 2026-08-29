@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>釣果×海況ログ</title>
+<style>
+  :root{
+    --bg:#f6f7f9; --panel:#ffffff; --panel2:#f0f2f5; --text:#1c2128; --muted:#5b6572;
+    --border:#d9dee5; --accent:#0b6bcb; --accent-soft:#e3f0fc;
+    --warm:#c9541c; --cool:#1f6f8b; --good:#1a7f37; --chip:#eef1f4;
+    --heat0:#eef2f7; --heat1:#cfe3f7; --heat2:#9cc9ef; --heat3:#5aa7e3; --heat4:#1f7fd1; --heat5:#0b5aa8;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --bg:#12151a; --panel:#1b1f26; --panel2:#232832; --text:#e6e9ee; --muted:#9aa4b1;
+      --border:#333a45; --accent:#5aa7e3; --accent-soft:#1d2b3a;
+      --warm:#e8834f; --cool:#6fc0d4; --good:#5cc271; --chip:#262c36;
+      --heat0:#1e232c; --heat1:#213347; --heat2:#274b6b; --heat3:#2f6795; --heat4:#3b86c2; --heat5:#5aa7e3;
+    }
+  }
+  :root[data-theme="dark"]{
+    --bg:#12151a; --panel:#1b1f26; --panel2:#232832; --text:#e6e9ee; --muted:#9aa4b1;
+    --border:#333a45; --accent:#5aa7e3; --accent-soft:#1d2b3a;
+    --warm:#e8834f; --cool:#6fc0d4; --good:#5cc271; --chip:#262c36;
+    --heat0:#1e232c; --heat1:#213347; --heat2:#274b6b; --heat3:#2f6795; --heat4:#3b86c2; --heat5:#5aa7e3;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0}
+  body{background:var(--bg);color:var(--text);font-family:-apple-system,"Segoe UI","Hiragino Sans","Noto Sans JP",Meiryo,sans-serif;line-height:1.5;font-size:15px}
+  a{color:var(--accent)}
+  .wrap{max-width:1180px;margin:0 auto;padding:16px}
+  header h1{font-size:20px;margin:0 0 2px}
+  .sub{color:var(--muted);font-size:12.5px;margin-bottom:12px}
+  .tabs{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:10px}
+  .tab{padding:6px 12px;border:1px solid var(--border);border-radius:999px;background:var(--panel);cursor:pointer;font-size:13px;white-space:nowrap}
+  .tab.on{background:var(--accent);color:#fff;border-color:var(--accent)}
+  .viewtabs .tab.on{background:var(--text);border-color:var(--text);color:var(--bg)}
+  .panel{background:var(--panel);border:1px solid var(--border);border-radius:12px;padding:12px;margin-bottom:14px}
+  .filters{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:8px}
+  .filters label{display:flex;flex-direction:column;font-size:11.5px;color:var(--muted);gap:3px}
+  .filters input,.filters select{padding:6px 8px;border:1px solid var(--border);border-radius:8px;background:var(--panel2);color:var(--text);font-size:13px}
+  .filters .wt{display:flex;gap:6px}
+  .filters .wt input{width:100%}
+  .fbar{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap;margin-top:10px}
+  .btn{padding:6px 12px;border:1px solid var(--border);border-radius:8px;background:var(--panel2);color:var(--text);cursor:pointer;font-size:13px}
+  .btn:hover{border-color:var(--accent)}
+  .count{color:var(--muted);font-size:12.5px}
+  .tablewrap{overflow-x:auto;border:1px solid var(--border);border-radius:12px}
+  table{border-collapse:collapse;width:100%;font-size:13px;min-width:820px}
+  th,td{padding:7px 9px;text-align:left;border-bottom:1px solid var(--border);vertical-align:top}
+  th{background:var(--panel2);position:sticky;top:0;cursor:pointer;white-space:nowrap;font-weight:600}
+  th .arr{color:var(--accent);font-size:10px}
+  tbody tr:hover{background:var(--accent-soft)}
+  .chip{display:inline-block;background:var(--chip);border-radius:6px;padding:1px 7px;margin:1px 3px 1px 0;font-size:12px;white-space:nowrap}
+  .chip.sp{background:var(--accent-soft);color:var(--accent);font-weight:600}
+  .wt-cell{font-variant-numeric:tabular-nums;font-weight:600}
+  .near{color:var(--muted);font-size:11px;line-height:1.35;margin-top:2px}
+  .spbox{width:100%}
+  .spbox summary{cursor:pointer;padding:6px 8px;border:1px solid var(--border);border-radius:8px;background:var(--panel2);font-size:13px;color:var(--text);list-style:none}
+  .spbox summary::-webkit-details-marker{display:none}
+  .spbox summary::before{content:"▸ ";color:var(--muted)}
+  .spbox[open] summary::before{content:"▾ "}
+  .spgrid{display:flex;flex-wrap:wrap;gap:4px 10px;max-height:150px;overflow-y:auto;padding:8px;border:1px solid var(--border);border-top:none;border-radius:0 0 8px 8px}
+  .filters .spgrid label.spopt{display:flex;flex-flow:row nowrap;align-items:center;gap:5px;font-size:12.5px;color:var(--text);width:calc(33.3% - 8px)}
+  .filters .spgrid label.spopt input{margin:0;padding:0;flex:none;width:15px;height:15px}
+  .spgrid .spclear{margin-top:4px;padding:3px 10px;border:1px solid var(--border);border-radius:6px;background:var(--panel);color:var(--muted);cursor:pointer;font-size:12px;width:auto}
+  @media (max-width:560px){ .filters .spgrid label.spopt{width:calc(50% - 8px)} }
+  .warm{color:var(--warm)} .cool{color:var(--cool)}
+  .tide-大潮{color:var(--warm);font-weight:700}
+  .tide-中潮{color:var(--text)}
+  .tide-小潮{color:var(--cool)}
+  .tide-長潮,.tide-若潮{color:var(--muted)}
+  .src a{font-size:12px}
+  .latest-day{margin:14px 0 6px;font-weight:700;font-size:14px;border-bottom:2px solid var(--border);padding-bottom:3px}
+  .card{background:var(--panel);border:1px solid var(--border);border-radius:10px;padding:10px 12px;margin-bottom:8px}
+  .card .top{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;font-size:12.5px;color:var(--muted)}
+  .card .sp{margin:4px 0}
+  .banner{background:var(--accent-soft);border:1px solid var(--accent);border-radius:10px;padding:9px 12px;font-size:13px;margin-bottom:12px}
+  .empty{padding:40px 12px;text-align:center;color:var(--muted)}
+  .sp-picker{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:12px}
+  .sp-picker .tab{font-size:12.5px}
+  .summary{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:10px;margin-bottom:14px}
+  .stat{background:var(--panel2);border:1px solid var(--border);border-radius:10px;padding:10px}
+  .stat h4{margin:0 0 6px;font-size:12px;color:var(--muted);font-weight:600}
+  .stat .big{font-size:19px;font-weight:700;font-variant-numeric:tabular-nums}
+  .bars{display:flex;align-items:flex-end;gap:3px;height:46px;margin-top:4px}
+  .bars .b{flex:1;background:var(--accent);border-radius:2px 2px 0 0;min-height:2px;position:relative}
+  .bars .lbl{display:flex;gap:3px;font-size:9px;color:var(--muted);margin-top:2px}
+  .bars .lbl span{flex:1;text-align:center}
+  .matrix{overflow-x:auto;border:1px solid var(--border);border-radius:12px}
+  .matrix table{min-width:760px;font-size:12px}
+  .matrix td.m{text-align:center;cursor:pointer;font-variant-numeric:tabular-nums}
+  .matrix td.name{font-weight:600;white-space:nowrap}
+  .foot{color:var(--muted);font-size:11.5px;margin-top:20px;border-top:1px solid var(--border);padding-top:10px}
+  @media (max-width:560px){ .wrap{padding:10px} header h1{font-size:18px} }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>釣果 × 海況ログ</h1>
+    <div class="sub" id="meta">読み込み中…</div>
+  </header>
+
+  <div class="tabs" id="areaTabs"></div>
+  <div class="tabs viewtabs" id="viewTabs"></div>
+
+  <div id="bannerHost"></div>
+
+  <div class="panel" id="filterPanel">
+    <div class="filters" id="filters"></div>
+    <div class="fbar">
+      <span class="count" id="count"></span>
+      <div>
+        <button class="btn" id="resetBtn">条件クリア</button>
+        <button class="btn" id="csvBtn">CSV書き出し</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="content"></div>
+
+  <div class="foot" id="foot"></div>
+</div>
+
+<script src="data/catch-log.js"></script>
+<script src="data/catch-log.sample.js"></script>
+<script>
+(function(){
+  "use strict";
+
+  var AREAS = [
+    {id:"all",         label:"全エリア"},
+    {id:"aoku",        label:"東京湾奥・内湾"},
+    {id:"wanko-miura", label:"湾口・三浦〜城ヶ島"},
+    {id:"wanko-boso",  label:"湾口・内房"},
+    {id:"sagami",      label:"相模湾"},
+    {id:"suruga",      label:"駿河湾（西伊豆〜三保）"}
+  ];
+  var VIEWS = [
+    {id:"latest", label:"最新"},
+    {id:"list",   label:"一覧・検索"},
+    {id:"species",label:"魚種から探す"},
+    {id:"matrix", label:"月 × 魚種"}
+  ];
+  var SPOT_TYPES = ["堤防","護岸","釣り公園","砂浜","地磯","河口","沖-釣り船","沖-ボート","沖-カヤック","沖-SUP"];
+  var SPECIES_MASTER = ["アイナメ","アジ","アオリイカ","イワシ","カサゴ","カワハギ","カンパチ","サヨリ","カマス","シーバス","スズキ","タチウオ","ヒラメ","マダイ","マゴチ","メバル","シイラ","キス","シロギス","ショゴ","ワカシ","イナダ","ワラサ","ブリ","サワラ","ソウダガツオ","カツオ","アマダイ","サバ","オオモンハタ","キジハタ","アカハタ","マハタ","コノシロ"];
+  var TIDES = ["大潮","中潮","小潮","長潮","若潮"];
+
+  var LSKEY = "tsuriLog.v1";
+  var state = { area:"all", view:"latest", sort:{key:"date",dir:-1}, filters:{} };
+  try { var s = JSON.parse(localStorage.getItem(LSKEY)||"{}"); Object.assign(state, s); } catch(e){}
+  state.filters = state.filters || {};
+
+  function save(){ try{ localStorage.setItem(LSKEY, JSON.stringify(state)); }catch(e){} }
+
+  // ---- data ----
+  var META = window.CATCH_LOG_META || {lastUpdated:"", lastRunNote:""};
+  var raw = (window.CATCH_LOG && window.CATCH_LOG.length) ? window.CATCH_LOG.slice() : null;
+  var usingSample = false;
+  if(!raw){ raw = (window.CATCH_LOG_SAMPLE||[]).slice(); usingSample = true; }
+
+  function moonAge(dateStr){
+    var d = new Date(dateStr+"T12:00:00+09:00");
+    var ref = Date.UTC(2000,0,6,18,14,0);
+    var syn = 29.530588853;
+    var age = (((d.getTime()-ref)/86400000) % syn);
+    if(age<0) age += syn;
+    return age;
+  }
+  function tideFromDate(dateStr){
+    var kd = Math.floor(moonAge(dateStr)) + 1; // 旧暦日の近似 1..30
+    if(kd>30) kd=30;
+    if([1,2,3,16,17,18].indexOf(kd)>=0) return "大潮";
+    if([7,8,9,22,23,24].indexOf(kd)>=0) return "小潮";
+    if(kd===10||kd===25) return "長潮";
+    if(kd===11||kd===26) return "若潮";
+    return "中潮";
+  }
+
+  var recs = raw.map(function(r,i){
+    var sp = Array.isArray(r.species)? r.species.slice() : (r.species? [r.species] : []);
+    var d = (r.date || "").trim();
+    var approx = /^\d{4}-\d{2}$/.test(d);        // "YYYY-MM" = 日付があいまい（月のみ）
+    var full = /^\d{4}-\d{2}-\d{2}$/.test(d);
+    var dCmp = approx ? d+"-15" : d;             // 比較・並べ替え用
+    var yr = d.slice(0,4);
+    var mm = d.length>=7 ? parseInt(d.slice(5,7),10) : 0;
+    return {
+      id: r.id || ("r"+i),
+      date: d,
+      approx: approx,
+      dateCmp: dCmp,
+      dateYear: yr,
+      dateDisp: approx ? (mm+"月頃") : (full ? d.slice(5) : d),
+      ts: dCmp ? new Date(dCmp+"T12:00:00+09:00").getTime() : 0,
+      month: mm,
+      area: r.area || "",
+      areaLabel: (AREAS.filter(function(a){return a.id===r.area;})[0]||{}).label || r.area || "—",
+      spot: r.spot || "—",
+      spotType: r.spotType || "—",
+      method: r.method || "—",
+      species: sp,
+      result: r.result || "",
+      tideName: r.tideName || (full? tideFromDate(d):""),
+      moonAge: full? moonAge(d):null,
+      waterTempC: (r.waterTempC===0||r.waterTempC)? Number(r.waterTempC) : null,
+      waterTempSource: r.waterTempSource || "",
+      weather: r.weather || "",
+      windMS: (r.windMS===0||r.windMS)? r.windMS : null,
+      windDir: r.windDir || "",
+      airTempC: (r.airTempC===0||r.airTempC)? r.airTempC : null,
+      nearby: r.nearby || null,   // { obs, waterTempC, weather, windMS, windDir, waveM, airTempC, time }
+      sourceName: r.sourceName || "",
+      sourceUrl: r.sourceUrl || "",
+      note: r.note || ""
+    };
+  }).filter(function(r){ return r.date; })
+    .map(function(r){
+      var nb = r.nearby || {};
+      r.wtEff  = (r.waterTempC!=null) ? r.waterTempC : (nb.waterTempC!=null ? nb.waterTempC : null);
+      r.wtNear = (r.waterTempC==null && nb.waterTempC!=null);
+      return r;
+    });
+
+  var ALL_SPECIES = (function(){
+    var set = {};
+    SPECIES_MASTER.forEach(function(s){ set[s]=1; });
+    recs.forEach(function(r){ r.species.forEach(function(s){ set[s]=1; }); });
+    return Object.keys(set).sort(function(a,b){ return a.localeCompare(b,"ja"); });
+  })();
+
+  // ---- filtering ----
+  function passArea(r){ return state.area==="all" || r.area===state.area; }
+  function passFilters(r){
+    var f = state.filters;
+    if(f.text){
+      var t = f.text.toLowerCase();
+      var hay = (r.spot+" "+r.result+" "+r.note+" "+r.method+" "+r.sourceName+" "+r.species.join(" ")).toLowerCase();
+      if(hay.indexOf(t)<0) return false;
+    }
+    if(f.speciesList && f.speciesList.length && !f.speciesList.some(function(s){ return r.species.indexOf(s)>=0; })) return false;
+    if(f.spotType && r.spotType!==f.spotType) return false;
+    if(f.method && (r.method||"").indexOf(f.method)<0) return false;
+    if(f.tide && r.tideName!==f.tide) return false;
+    if(f.month && r.month!==Number(f.month)) return false;
+    if(f.wtMin!=="" && f.wtMin!=null && (r.wtEff==null || r.wtEff < Number(f.wtMin))) return false;
+    if(f.wtMax!=="" && f.wtMax!=null && (r.wtEff==null || r.wtEff > Number(f.wtMax))) return false;
+    if(f.from && r.dateCmp < f.from) return false;
+    if(f.to && r.dateCmp > f.to) return false;
+    return true;
+  }
+  function filtered(){ return recs.filter(function(r){ return passArea(r) && passFilters(r); }); }
+
+  // ---- render helpers ----
+  var $content = document.getElementById("content");
+  function el(tag, cls, html){ var e=document.createElement(tag); if(cls)e.className=cls; if(html!=null)e.innerHTML=html; return e; }
+  function esc(s){ return String(s==null?"":s).replace(/[&<>"]/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;"}[c];}); }
+  function wtClass(v){ if(v==null) return ""; return v>=22 ? "warm" : (v<=16 ? "cool":""); }
+  function n1(v){ return (Math.round(v*10)/10); }
+  function wtStr(r){
+    if(r.waterTempC!=null) return r.waterTempC.toFixed(1)+"℃";
+    if(r.nearby && r.nearby.waterTempC!=null) return "（"+Number(r.nearby.waterTempC).toFixed(1)+"℃）";
+    return "—";
+  }
+  function spChips(arr){ return arr.map(function(s){ return '<span class="chip sp">'+esc(s)+'</span>'; }).join(""); }
+  function srcCell(r){
+    if(r.sourceUrl) return '<span class="src"><a href="'+esc(r.sourceUrl)+'" target="_blank" rel="noopener">'+esc(r.sourceName||"出典")+'</a></span>';
+    return '<span class="src">'+esc(r.sourceName||"—")+'</span>';
+  }
+  function ownWeatherStr(r){
+    var p=[];
+    if(r.weather) p.push(r.weather);
+    if(r.windDir||r.windMS!=null) p.push((r.windDir||"")+(r.windMS!=null? (" "+r.windMS+"m"):""));
+    if(r.airTempC!=null) p.push("気温"+r.airTempC+"℃");
+    return p.join(" / ");
+  }
+  function nearbyStr(r){
+    var nb = r.nearby; if(!nb) return "";
+    var p=[];
+    if(nb.weather) p.push(nb.weather);
+    if(nb.windDir||nb.windMS!=null) p.push((nb.windDir||"")+(nb.windMS!=null? (" "+n1(nb.windMS)+"m"):""));
+    if(nb.waveM!=null) p.push("波"+n1(nb.waveM)+"m");
+    if(nb.airTempC!=null) p.push(n1(nb.airTempC)+"℃");
+    if(!p.length) return "";
+    return "≈ "+p.join(" / ")+"（"+esc(nb.obs||"近隣観測")+(nb.time? " "+esc(String(nb.time).slice(5)):"")+"）";
+  }
+  function weatherCell(r){
+    var own = ownWeatherStr(r), near = nearbyStr(r);
+    if(own && near) return esc(own)+'<div class="near">'+near+"</div>";
+    if(own) return esc(own);
+    if(near) return '<span class="near">'+near+"</span>";
+    return "—";
+  }
+
+  // ---- TABLE (list view) ----
+  var COLS = [
+    {key:"date",   label:"日付"},
+    {key:"tideName",label:"潮"},
+    {key:"wtEff",label:"水温"},
+    {key:"weather",label:"天気・風・波", nosort:true},
+    {key:"areaLabel",label:"エリア"},
+    {key:"spot",   label:"場所"},
+    {key:"spotType",label:"場所種別"},
+    {key:"species",label:"魚種", nosort:true},
+    {key:"result", label:"釣果", nosort:true},
+    {key:"method", label:"釣法"},
+    {key:"sourceName",label:"出典", nosort:true}
+  ];
+  function sortRecs(list){
+    var k=state.sort.key, dir=state.sort.dir;
+    return list.slice().sort(function(a,b){
+      var x=a[k], y=b[k];
+      if(k==="date"){ x=a.dateCmp; y=b.dateCmp; }
+      if(k==="wtEff"){ x=(x==null?-999:x); y=(y==null?-999:y); }
+      if(x<y) return -1*dir; if(x>y) return 1*dir;
+      if(a.dateCmp<b.dateCmp) return 1; if(a.dateCmp>b.dateCmp) return -1; return 0;
+    });
+  }
+  function renderList(){
+    var list = sortRecs(filtered());
+    document.getElementById("count").textContent = list.length + " 件";
+    if(!list.length){ $content.appendChild(el("div","empty","条件に一致する記録がありません。")); return; }
+    var wrap = el("div","tablewrap");
+    var t = el("table");
+    var thead = el("thead");
+    var tr = el("tr");
+    COLS.forEach(function(c){
+      var th = el("th", null, esc(c.label) + (state.sort.key===c.key ? ' <span class="arr">'+(state.sort.dir<0?"▼":"▲")+'</span>':""));
+      if(!c.nosort) th.onclick = function(){
+        if(state.sort.key===c.key) state.sort.dir*=-1; else { state.sort.key=c.key; state.sort.dir=(c.key==="date"?-1:1); }
+        save(); rerender();
+      };
+      else th.style.cursor="default";
+      tr.appendChild(th);
+    });
+    thead.appendChild(tr); t.appendChild(thead);
+    var tb = el("tbody");
+    list.forEach(function(r){
+      var row = el("tr");
+      row.innerHTML =
+        "<td>"+esc(r.dateDisp)+'<div style="color:var(--muted);font-size:10px">'+esc(r.dateYear)+(r.approx?" 概算":"")+"</div></td>"+
+        '<td class="tide-'+esc(r.tideName)+'">'+esc(r.tideName||"—")+(r.moonAge!=null?'<div style="color:var(--muted);font-size:10px">月齢'+r.moonAge.toFixed(1)+"</div>":"")+"</td>"+
+        '<td class="wt-cell '+wtClass(r.wtEff)+'">'+wtStr(r)+"</td>"+
+        "<td>"+weatherCell(r)+"</td>"+
+        "<td>"+esc(r.areaLabel)+"</td>"+
+        "<td>"+esc(r.spot)+"</td>"+
+        '<td><span class="chip">'+esc(r.spotType)+"</span></td>"+
+        "<td>"+spChips(r.species)+"</td>"+
+        "<td>"+esc(r.result)+"</td>"+
+        "<td>"+esc(r.method)+"</td>"+
+        "<td>"+srcCell(r)+"</td>";
+      tb.appendChild(row);
+    });
+    t.appendChild(tb); wrap.appendChild(t); $content.appendChild(wrap);
+  }
+
+  // ---- LATEST view ----
+  function renderLatest(){
+    document.getElementById("filterPanel").style.display="none";
+    var list = recs.filter(passArea).slice().sort(function(a,b){ return b.ts-a.ts; });
+    var now = Date.now() + 86400000;
+    var cutoff = now - 29*86400000;
+    var recent = list.filter(function(r){ return r.ts>=cutoff && r.ts<=now; });
+    var show = recent.length ? recent : list.slice(0,20);
+    if(!show.length){ $content.appendChild(el("div","empty","記録がまだありません。毎日の収集で追加されます。")); return; }
+    $content.appendChild(el("div","sub", recent.length ? "直近28日間の記録" : "直近の記録（28日以内の記録がないため最新20件）"));
+    var curDay = "";
+    show.forEach(function(r){
+      if(r.date!==curDay){ curDay=r.date; $content.appendChild(el("div","latest-day", esc(r.approx? (r.dateYear+"年"+r.month+"月頃") : r.date)+(r.tideName? "（"+r.tideName+"）":""))); }
+      var c = el("div","card");
+      var ownW = ownWeatherStr(r), nearW = nearbyStr(r);
+      c.innerHTML =
+        '<div class="top"><span>'+esc(r.areaLabel)+" ・ "+esc(r.spot)+' <span class="chip">'+esc(r.spotType)+'</span></span>'+
+        '<span class="wt-cell '+wtClass(r.wtEff)+'">水温 '+wtStr(r)+"</span></div>"+
+        '<div class="sp">'+spChips(r.species)+"</div>"+
+        "<div>"+esc(r.result)+"</div>"+
+        '<div class="top" style="margin-top:5px"><span>'+esc(r.method)+(ownW? " ／ "+esc(ownW):"")+"</span>"+srcCell(r)+"</div>"+
+        (nearW? '<div class="near">'+nearW+"</div>":"");
+      $content.appendChild(c);
+    });
+  }
+
+  // ---- SPECIES view ----
+  function renderSpecies(){
+    document.getElementById("filterPanel").style.display="none";
+    var pick = state.filters.spSel || "";
+    var host = el("div","sp-picker");
+    var present = {};
+    recs.filter(passArea).forEach(function(r){ r.species.forEach(function(s){ present[s]=(present[s]||0)+1; }); });
+    Object.keys(present).sort(function(a,b){ return present[b]-present[a]; }).forEach(function(s){
+      var b = el("button","tab"+(s===pick?" on":""), esc(s)+" <span style='opacity:.6'>"+present[s]+"</span>");
+      b.onclick=function(){ state.filters.spSel = (s===pick?"":s); save(); rerender(); };
+      host.appendChild(b);
+    });
+    if(!Object.keys(present).length){ $content.appendChild(el("div","empty","このエリアの記録がありません。")); return; }
+    $content.appendChild(host);
+    if(!pick){ $content.appendChild(el("div","sub","上から魚種を選ぶと、その魚が釣れた日の潮・水温・場所が一覧になります。")); return; }
+
+    var list = recs.filter(function(r){ return passArea(r) && r.species.indexOf(pick)>=0; }).sort(function(a,b){ return b.ts-a.ts; });
+    var temps = list.map(function(r){ return r.wtEff; }).filter(function(v){ return v!=null; }).sort(function(a,b){return a-b;});
+    var med = temps.length ? temps[Math.floor((temps.length-1)/2)] : null;
+    var monthCount = new Array(12).fill(0); list.forEach(function(r){ if(r.month) monthCount[r.month-1]++; });
+    var tideCount = {}; list.forEach(function(r){ tideCount[r.tideName]=(tideCount[r.tideName]||0)+1; });
+    var maxM = Math.max.apply(null, monthCount.concat([1]));
+
+    var sum = el("div","summary");
+    sum.appendChild(el("div","stat","<h4>記録件数</h4><div class='big'>"+list.length+" 件</div>"));
+    sum.appendChild(el("div","stat","<h4>水温レンジ（最低 / 中央 / 最高）</h4><div class='big'>"+
+      (temps.length? (temps[0].toFixed(1)+" / "+med.toFixed(1)+" / "+temps[temps.length-1].toFixed(1)+"℃") : "データなし")+
+      "</div><div style='font-size:11px;color:var(--muted)'>記録の実測値＋近隣観測値を含む</div>"));
+    var tideStr = TIDES.filter(function(t){return tideCount[t];}).map(function(t){ return t+" "+tideCount[t]; }).join(" ・ ") || "—";
+    sum.appendChild(el("div","stat","<h4>潮回りの分布</h4><div style='font-size:14px;font-weight:600'>"+esc(tideStr)+"</div>"));
+    var barsHtml = "<h4>釣れた月の分布</h4><div class='bars'>"+
+      monthCount.map(function(v){ return "<div class='b' style='height:"+(v/maxM*100)+"%' title='"+v+"件'></div>"; }).join("")+
+      "</div><div class='lbl'>"+["1","2","3","4","5","6","7","8","9","10","11","12"].map(function(m){return "<span>"+m+"</span>";}).join("")+"</div>";
+    var bs = el("div","stat"); bs.style.gridColumn="1/-1"; bs.innerHTML=barsHtml; sum.appendChild(bs);
+    $content.appendChild(sum);
+
+    // reuse list table
+    var saveSort = state.sort; state.sort = {key:"date",dir:-1};
+    var tmpFilter = state.filters;
+    var wrap = el("div","tablewrap"); var t=el("table");
+    t.innerHTML = "<thead><tr><th>日付</th><th>潮</th><th>水温</th><th>天気・風</th><th>エリア</th><th>場所</th><th>場所種別</th><th>釣法</th><th>釣果</th><th>出典</th></tr></thead>";
+    var tb=el("tbody");
+    list.forEach(function(r){
+      var row=el("tr");
+      row.innerHTML="<td>"+esc(r.approx? (r.dateYear+"/"+r.month+"月頃") : r.date)+"</td>"+
+        '<td class="tide-'+esc(r.tideName)+'">'+esc(r.tideName||"—")+"</td>"+
+        '<td class="wt-cell '+wtClass(r.wtEff)+'">'+wtStr(r)+"</td>"+
+        "<td>"+weatherCell(r)+"</td>"+
+        "<td>"+esc(r.areaLabel)+"</td><td>"+esc(r.spot)+"</td>"+
+        '<td><span class="chip">'+esc(r.spotType)+"</span></td>"+
+        "<td>"+esc(r.method)+"</td><td>"+esc(r.result)+"</td><td>"+srcCell(r)+"</td>";
+      tb.appendChild(row);
+    });
+    t.appendChild(tb); wrap.appendChild(t); $content.appendChild(wrap);
+    state.sort = saveSort;
+  }
+
+  // ---- MATRIX view ----
+  function renderMatrix(){
+    document.getElementById("filterPanel").style.display="none";
+    var list = recs.filter(passArea);
+    var grid = {}; var present = {};
+    list.forEach(function(r){
+      if(!r.month) return;
+      r.species.forEach(function(s){
+        present[s]=(present[s]||0)+1;
+        grid[s]=grid[s]||new Array(12).fill(0);
+        grid[s][r.month-1]++;
+      });
+    });
+    var sps = Object.keys(present).sort(function(a,b){ return present[b]-present[a]; });
+    if(!sps.length){ $content.appendChild(el("div","empty","このエリアの記録がありません。")); return; }
+    var maxV = 1; sps.forEach(function(s){ grid[s].forEach(function(v){ if(v>maxV)maxV=v; }); });
+    function heat(v){ if(!v) return "var(--heat0)"; var r=v/maxV; return r>0.8?"var(--heat5)":r>0.6?"var(--heat4)":r>0.4?"var(--heat3)":r>0.2?"var(--heat2)":"var(--heat1)"; }
+    $content.appendChild(el("div","sub","セルの数字＝その月に釣れた記録件数。クリックすると一覧でその魚×月に絞り込みます。"));
+    var wrap=el("div","matrix"); var t=el("table");
+    t.innerHTML="<thead><tr><th>魚種</th>"+["1","2","3","4","5","6","7","8","9","10","11","12"].map(function(m){return "<th style='text-align:center'>"+m+"月</th>";}).join("")+"<th style='text-align:center'>計</th></tr></thead>";
+    var tb=el("tbody");
+    sps.forEach(function(s){
+      var row=el("tr");
+      var cells="<td class='name'>"+esc(s)+"</td>";
+      grid[s].forEach(function(v,mi){
+        cells+="<td class='m' data-sp='"+esc(s)+"' data-m='"+(mi+1)+"' style='background:"+heat(v)+"'>"+(v||"")+"</td>";
+      });
+      cells+="<td class='m' style='font-weight:700'>"+present[s]+"</td>";
+      row.innerHTML=cells;
+      tb.appendChild(row);
+    });
+    t.appendChild(tb); wrap.appendChild(t); $content.appendChild(wrap);
+    wrap.addEventListener("click", function(e){
+      var td=e.target.closest("td.m"); if(!td||!td.dataset.sp) return;
+      state.view="list";
+      state.filters = { speciesList:[td.dataset.sp], month:td.dataset.m };
+      save(); fullRender();
+    });
+  }
+
+  // ---- filter panel ----
+  function buildFilters(){
+    var host = document.getElementById("filters"); host.innerHTML="";
+    var f = state.filters;
+    function mk(labelText, node){ var l=el("label",null,"<span>"+labelText+"</span>"); l.appendChild(node); host.appendChild(l); }
+    var txt=el("input"); txt.type="search"; txt.placeholder="場所・魚種・釣法…"; txt.value=f.text||"";
+    txt.oninput=function(){ f.text=txt.value; save(); rerender(); }; mk("フリーワード", txt);
+
+    f.speciesList = f.speciesList || [];
+    var spBox=el("details","spbox"); if(f.speciesList.length) spBox.open=false;
+    var sum=el("summary",null,"魚種"+(f.speciesList.length? "（"+f.speciesList.length+"）":"（すべて）"));
+    spBox.appendChild(sum);
+    var grid=el("div","spgrid");
+    ALL_SPECIES.forEach(function(s){
+      var lab=el("label","spopt");
+      var cb=el("input"); cb.type="checkbox"; cb.checked=f.speciesList.indexOf(s)>=0;
+      cb.onchange=function(){
+        if(cb.checked){ if(f.speciesList.indexOf(s)<0) f.speciesList.push(s); }
+        else { f.speciesList = f.speciesList.filter(function(x){ return x!==s; }); }
+        sum.textContent="魚種"+(f.speciesList.length? "（"+f.speciesList.length+"）":"（すべて）");
+        save(); rerender();
+      };
+      lab.appendChild(cb); lab.appendChild(document.createTextNode(s));
+      grid.appendChild(lab);
+    });
+    var clr=el("button","spclear","選択解除"); clr.type="button";
+    clr.onclick=function(){ f.speciesList=[]; save(); buildFilters(); rerender(); };
+    grid.appendChild(clr);
+    spBox.appendChild(grid);
+    var l=el("label"); l.style.gridColumn="1/-1"; l.innerHTML="<span>魚種（複数選択可）</span>"; l.appendChild(spBox); host.appendChild(l);
+
+    var st=el("select"); st.innerHTML="<option value=''>すべて</option>"+SPOT_TYPES.map(function(s){return "<option"+(f.spotType===s?" selected":"")+">"+esc(s)+"</option>";}).join("");
+    st.onchange=function(){ f.spotType=st.value; save(); rerender(); }; mk("場所種別", st);
+
+    var td=el("select"); td.innerHTML="<option value=''>すべて</option>"+TIDES.map(function(s){return "<option"+(f.tide===s?" selected":"")+">"+esc(s)+"</option>";}).join("");
+    td.onchange=function(){ f.tide=td.value; save(); rerender(); }; mk("潮回り", td);
+
+    var mo=el("select"); mo.innerHTML="<option value=''>すべて</option>"+Array.from({length:12},function(_,i){return "<option value='"+(i+1)+"'"+(String(f.month)===String(i+1)?" selected":"")+">"+(i+1)+"月</option>";}).join("");
+    mo.onchange=function(){ f.month=mo.value; save(); rerender(); }; mk("月", mo);
+
+    var me=el("input"); me.type="text"; me.placeholder="例: ジギング"; me.value=f.method||"";
+    me.oninput=function(){ f.method=me.value; save(); rerender(); }; mk("釣法（部分一致）", me);
+
+    var wtwrap=el("div","wt");
+    var mn=el("input"); mn.type="number"; mn.step="0.5"; mn.placeholder="最低"; mn.value=(f.wtMin==null?"":f.wtMin);
+    var mx=el("input"); mx.type="number"; mx.step="0.5"; mx.placeholder="最高"; mx.value=(f.wtMax==null?"":f.wtMax);
+    mn.oninput=function(){ f.wtMin=mn.value; save(); rerender(); };
+    mx.oninput=function(){ f.wtMax=mx.value; save(); rerender(); };
+    wtwrap.appendChild(mn); wtwrap.appendChild(mx); mk("水温レンジ（℃）", wtwrap);
+
+    var fr=el("input"); fr.type="date"; fr.value=f.from||""; fr.onchange=function(){ f.from=fr.value; save(); rerender(); }; mk("期間（開始）", fr);
+    var to=el("input"); to.type="date"; to.value=f.to||""; to.onchange=function(){ f.to=to.value; save(); rerender(); }; mk("期間（終了）", to);
+  }
+
+  function toCSV(){
+    var list = sortRecs(filtered());
+    var head = ["日付","潮","月齢","水温C(実測)","水温C(近隣)","近隣観測","近隣天気","近隣風向","近隣風速m","近隣波高m",
+      "記録天気","記録風向","記録風速","記録気温C","エリア","場所","場所種別","魚種","釣果","釣法","出典","出典URL","水温出典","メモ"];
+    var rows = list.map(function(r){
+      var nb = r.nearby||{};
+      return [r.date,r.tideName,(r.moonAge!=null?r.moonAge.toFixed(1):""),
+        (r.waterTempC==null?"":r.waterTempC),(nb.waterTempC==null?"":nb.waterTempC),nb.obs||"",
+        nb.weather||"",nb.windDir||"",(nb.windMS==null?"":nb.windMS),(nb.waveM==null?"":nb.waveM),
+        r.weather,r.windDir,(r.windMS==null?"":r.windMS),(r.airTempC==null?"":r.airTempC),
+        r.areaLabel,r.spot,r.spotType,r.species.join("・"),r.result,r.method,r.sourceName,r.sourceUrl,r.waterTempSource,r.note];
+    });
+    var csv = [head].concat(rows).map(function(row){
+      return row.map(function(c){ c=String(c==null?"":c); return /[",\n]/.test(c)? '"'+c.replace(/"/g,'""')+'"' : c; }).join(",");
+    }).join("\r\n");
+    var blob = new Blob(["﻿"+csv], {type:"text/csv"});
+    var a=document.createElement("a"); a.href=URL.createObjectURL(blob); a.download="釣果ログ.csv"; a.click();
+  }
+
+  // ---- top-level render ----
+  function rerender(){ $content.innerHTML="";
+    if(state.view==="list") renderList();
+    else if(state.view==="latest") renderLatest();
+    else if(state.view==="species") renderSpecies();
+    else renderMatrix();
+  }
+  function fullRender(){
+    // area tabs
+    var at=document.getElementById("areaTabs"); at.innerHTML="";
+    AREAS.forEach(function(a){
+      var b=el("button","tab"+(state.area===a.id?" on":""), esc(a.label));
+      b.onclick=function(){ state.area=a.id; save(); fullRender(); };
+      at.appendChild(b);
+    });
+    var vt=document.getElementById("viewTabs"); vt.innerHTML="";
+    VIEWS.forEach(function(v){
+      var b=el("button","tab"+(state.view===v.id?" on":""), esc(v.label));
+      b.onclick=function(){ state.view=v.id; save(); fullRender(); };
+      vt.appendChild(b);
+    });
+    document.getElementById("filterPanel").style.display = (state.view==="list") ? "" : "none";
+    buildFilters();
+    rerender();
+  }
+
+  document.getElementById("resetBtn").onclick=function(){ state.filters={}; save(); fullRender(); };
+  // CSV書き出しはファイル保存が要るため、埋め込み表示（claude.aiのArtifact等）では隠す
+  var embedded = false; try { embedded = (window.self !== window.top); } catch(e){ embedded = true; }
+  var csvBtn = document.getElementById("csvBtn");
+  if(embedded){ csvBtn.style.display="none"; }
+  else { csvBtn.onclick=toCSV; }
+
+  // meta line + banner
+  var metaEl = document.getElementById("meta");
+  metaEl.textContent = "記録 "+recs.length+" 件"+(META.lastUpdated? "　最終更新 "+META.lastUpdated : "")+(META.lastRunNote? "　（"+META.lastRunNote+"）":"");
+  if(usingSample){
+    var bn=el("div","banner","<b>サンプル表示中</b>　これは画面確認用のダミーです。<code>収集手順.md</code> に沿って毎日の収集を実行すると、実データ（<code>data/catch-log.js</code>）に置き換わります。");
+    document.getElementById("bannerHost").appendChild(bn);
+  }
+  document.getElementById("foot").innerHTML =
+    "潮回り・月齢は日付からの簡易計算（記録に潮名があればそれを優先）。日付があいまいな記録は「◯月頃」とだけ表示し、潮・月齢は計算しない。"+
+    "<br>水温：太字＝記事に記載の実測値。<b>（27.0℃）</b>のようにカッコ書き＝釣行日・釣り場の近くの観測値（"+
+    "神奈川県水産技術センター リアルタイム海況 / 静岡県水産・海洋技術研究所 / 東京湾環境情報センター / Open-Meteo）。"+
+    "「≈」の行は近隣の天気・風・波・気温。"+
+    "<br>対象範囲：東京湾（剣崎〜洲崎ライン以北・城ヶ島沖含む）／相模湾／駿河湾（西伊豆〜三保）。";
+
+  fullRender();
+})();
+</script>
+</body>
+</html>

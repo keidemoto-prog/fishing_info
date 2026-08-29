@@ -1,0 +1,8 @@
+# 旧・claude.ai Artifact 関連（公開リポジトリに載せない）
+artifact-url.txt
+dist/
+
+# ローカル鍵・一時ファイル
+.neocities-key
+*.tmp
+_*.html
