@@ -25,13 +25,14 @@ $claudeExit = $LASTEXITCODE
 & (Join-Path $dir "build-single.ps1") 2>&1 |
     ForEach-Object { $_.ToString() } | Out-File -Append -Encoding utf8 $logFile
 
+Add-Content -Encoding utf8 $logFile ("=== {0} end (claude exit {1}) ===" -f (Get-Date -Format "yyyy-MM-dd HH:mm"), $claudeExit)
+
 # Commit + push so GitHub Pages (keidemoto-prog/fishing_info -> docs/) picks up the new data.
+# git output goes to a non-tracked file so the tracked run log stays clean between runs.
 # First push must be done once by hand so the credential is cached; after that this is unattended.
 if (Test-Path (Join-Path $dir ".git")) {
-    & git -C $dir add -A 2>&1 | ForEach-Object { $_.ToString() } | Out-File -Append -Encoding utf8 $logFile
-    & git -C $dir commit -m ("auto: collect {0}" -f (Get-Date -Format "yyyy-MM-dd HH:mm")) 2>&1 |
-        ForEach-Object { $_.ToString() } | Out-File -Append -Encoding utf8 $logFile
-    & git -C $dir push 2>&1 | ForEach-Object { $_.ToString() } | Out-File -Append -Encoding utf8 $logFile
+    $gitLog = Join-Path $dir ("logs\git-{0}.log" -f $stamp)
+    & git -C $dir add -A                                                            2>&1 | Out-File -Append -Encoding utf8 $gitLog
+    & git -C $dir commit -m ("auto: collect {0}" -f (Get-Date -Format "yyyy-MM-dd HH:mm")) 2>&1 | Out-File -Append -Encoding utf8 $gitLog
+    & git -C $dir push                                                              2>&1 | Out-File -Append -Encoding utf8 $gitLog
 }
-
-Add-Content -Encoding utf8 $logFile ("=== {0} end (claude exit {1}) ===" -f (Get-Date -Format "yyyy-MM-dd HH:mm"), $claudeExit)

@@ -6,3 +6,6 @@ dist/
 .neocities-key
 *.tmp
 _*.html
+
+# git 操作ログ（追跡すると毎回自分を変更してしまうため）
+logs/git-*.log
