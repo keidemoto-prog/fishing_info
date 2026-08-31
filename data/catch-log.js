@@ -8,11 +8,23 @@
  *   { obs:"観測地点名", waterTempC, weather, windMS, windDir, waveM, airTempC, time:"YYYY-MM-DD" }
  */
 window.CATCH_LOG_META = {
-  lastUpdated: "2026-08-31 14:40",
-  lastRunNote: "13件追加（東京湾奥3・湾口三浦3・内房1・相模湾4・駿河湾2）"
+  lastUpdated: "2026-09-01 00:10",
+  lastRunNote: "2件追加（相模湾1・湾口三浦1）"
 };
 
 window.CATCH_LOG = [
+  // ---------- 2026-08-31 追加分（09-01 0:00回） ----------
+  { id:"2026-08-31-sagami-02", date:"2026-08-31", area:"sagami", spot:"相模湾（小田原・早川沖）石田丸", spotType:"沖-釣り船",
+    method:"コマセ五目", species:["マダイ","アジ","メバル"], result:"マアジ20〜40cm 17匹／大アジ40〜45cm 9匹／マダイ52cm 1.5kg。ほかメバル",
+    waterTempC:null, waterTempSource:"", weather:"", windMS:null, windDir:"", airTempC:null,
+    nearby:{ obs:"Open-Meteo（相模湾中央）", waterTempC:27.3, weather:"曇り", windMS:4.7, windDir:"北東", waveM:0.40, airTempC:27.3, time:"2026-08-31" },
+    sourceName:"石田丸 釣果ブログ", sourceUrl:"https://www.ishidamaru.com/?post_type=fishing&paged=1", note:"" },
+  { id:"2026-08-31-wanko-miura-01", date:"2026-08-31", area:"wanko-miura", spot:"新安浦港（横須賀市）こうゆう丸", spotType:"沖-釣り船",
+    method:"テンヤ／ドラゴンタチウオ狙い", species:["タチウオ"], result:"タチウオ70〜120cm 2〜11匹。良型混じり、ドラゴン級も",
+    waterTempC:null, waterTempSource:"", weather:"", windMS:null, windDir:"", airTempC:null,
+    nearby:{ obs:"Open-Meteo（走水〜観音崎沖）", waterTempC:27.2, weather:"曇り", windMS:5.6, windDir:"北東", waveM:0.46, airTempC:27.5, time:"2026-08-31" },
+    sourceName:"ちょうあり こうゆう丸釣果", sourceUrl:"https://www.chowari.jp/ship/00562/", note:"" },
+
   // ---------- 2026-08-28〜08-31 追加分 ----------
   { id:"2026-08-30-sagami-01", date:"2026-08-30", area:"sagami", spot:"相模湾（横須賀・平塚・茅ヶ崎・逗子・葉山・藤沢沖）はら丸・浅八丸・まごうの丸・太郎丸・五エム丸・島きち丸", spotType:"沖-釣り船",
     method:"コマセカツオ", species:["カツオ"], result:"はら丸0〜2匹／浅八丸1匹／まごうの丸0〜1匹／太郎丸1匹／五エム丸0〜1匹／島きち丸1匹。反応薄く全船食い渋り",

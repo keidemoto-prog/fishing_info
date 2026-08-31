@@ -1,0 +1,13 @@
+﻿
+=== 2026-09-01 00:00 start ===
+Completed the daily collection run per `蜿朱寔謇矩・md`:
+
+- **Period covered**: 2026-08-31縲・9-01 (normal today+yesterday window, since the previous run at 14:40 on 08-31 already covered most of that day).
+- **Added 2 new records** to `data/catch-log.js` (verified it still parses as valid JS, 41 records total):
+  - 逶ｸ讓｡貉ｾ繝ｻ蟆冗伐蜴滓ｲ・遏ｳ逕ｰ荳ｸ (08-31): 繝槭い繧ｸ17蛹ｹ・丞､ｧ繧｢繧ｸ9蛹ｹ・上・繝繧､52cm繝ｻ1.5kg縲√⊇縺九Γ繝舌Ν
+  - 貉ｾ蜿｣荳画ｵｦ繝ｻ譁ｰ螳画ｵｦ貂ｯ 縺薙≧繧・≧荳ｸ (08-31): 繧ｿ繝√え繧ｪ70縲・20cm 2縲・1蛹ｹ
+- Updated `CATCH_LOG_META` (`lastUpdated`, `lastRunNote`).
+- Wrote `logs/2026-09-01.md` with URLs checked and accept/reject reasoning (including one SSM豬ｦ雉 section I discarded as unreliable due to an area mismatch in the scrape).
+- Stopped at step 9 as instructed 窶・I did not touch `tsuriha_all-in-one.html`, `dist/artifact.html`, or run any git commands; `run-collect.ps1` handles the HTML rebuild and git commit/push after this.
+build-single: all-in-one 58131 chars / docs/index.html 58131 / dist/artifact.html 57972
+=== 2026-09-01 00:04 end (claude exit 0) ===
