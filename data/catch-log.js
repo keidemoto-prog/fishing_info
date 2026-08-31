@@ -8,11 +8,33 @@
  *   { obs:"観測地点名", waterTempC, weather, windMS, windDir, waveM, airTempC, time:"YYYY-MM-DD" }
  */
 window.CATCH_LOG_META = {
-  lastUpdated: "2026-09-01 00:10",
-  lastRunNote: "2件追加（相模湾1・湾口三浦1）"
+  lastUpdated: "2026-09-01 06:10",
+  lastRunNote: "4件追加（東京湾奥1・相模湾2・駿河湾1）"
 };
 
 window.CATCH_LOG = [
+  // ---------- 2026-08-30〜08-31 追加分（09-01 6:00回） ----------
+  { id:"2026-08-31-aoku-02", date:"2026-08-31", area:"aoku", spot:"金沢八景・金沢漁港 忠彦丸", spotType:"沖-釣り船",
+    method:"ライトアジ／テンヤ・天秤タチウオ", species:["アジ","タチウオ","サワラ"], result:"ライトアジ船でアジ・タチウオ、テンヤ・天秤タチウオ船でタチウオ・サワラ（マダコも）。数量記載なし",
+    waterTempC:28.6, waterTempSource:"忠彦丸釣果ページ本文", weather:"曇り", windMS:3.0, windDir:"北東", airTempC:null,
+    nearby:{ obs:"Open-Meteo（東京湾奥・横浜沖）", waterTempC:27.3, weather:"曇り", windMS:3.2, windDir:"北東", waveM:0.34, airTempC:27.2, time:"2026-08-31" },
+    sourceName:"ちょうあり 忠彦丸釣果", sourceUrl:"https://www.chowari.jp/ship/00703/catch/", note:"" },
+  { id:"2026-08-31-sagami-03", date:"2026-08-31", area:"sagami", spot:"松輪江奈漁港（三浦市）正海丸", spotType:"沖-釣り船",
+    method:"コマセカツオ", species:["カツオ"], result:"カツオ1.20〜3.00kg 0〜1匹",
+    waterTempC:null, waterTempSource:"", weather:"", windMS:null, windDir:"", airTempC:null,
+    nearby:{ obs:"Open-Meteo（相模湾中央）", waterTempC:27.3, weather:"曇り", windMS:4.7, windDir:"北東", waveM:0.40, airTempC:27.3, time:"2026-08-31" },
+    sourceName:"ちょうあり 関東カツオ釣果", sourceUrl:"https://www.chowari.jp/catcharea/?area=92&fish=308", note:"" },
+  { id:"2026-08-30-sagami-03", date:"2026-08-30", area:"sagami", spot:"西湘エリア 堤防", spotType:"堤防",
+    method:"エギング（エギ王2.5号）", species:["アオリイカ"], result:"アオリイカ釣果あり（サイズ・数記載なし）",
+    waterTempC:null, waterTempSource:"", weather:"", windMS:null, windDir:"", airTempC:null,
+    nearby:{ obs:"Open-Meteo（西湘沖）", waterTempC:26.3, weather:"曇り", windMS:3.6, windDir:"北東", waveM:0.54, airTempC:27.2, time:"2026-08-30" },
+    sourceName:"かめや釣具 関東・東海 釣果", sourceUrl:"https://kameya-choka.com/kanto-tokai/archives/f-info/542730", note:"" },
+  { id:"2026-08-30-suruga-01", date:"2026-08-30", area:"suruga", spot:"沼津周辺（港内）", spotType:"堤防",
+    method:"エギング（エギ王K2.5号）", species:["アオリイカ"], result:"アオリイカ1杯 胴長約10cm（コロッケサイズ）。サーフは厳しく港内へ移動して釣獲",
+    waterTempC:null, waterTempSource:"", weather:"", windMS:null, windDir:"", airTempC:null,
+    nearby:{ obs:"Open-Meteo（沼津沖）", waterTempC:27.7, weather:"霧雨", windMS:7.1, windDir:"東", waveM:0.68, airTempC:26.5, time:"2026-08-30" },
+    sourceName:"釣具のイシグロ 静岡中吉田店", sourceUrl:"https://www.ishiguro-gr.com/enjoy/fishing/detail.php?id=49544", note:"" },
+
   // ---------- 2026-08-31 追加分（09-01 0:00回） ----------
   { id:"2026-08-31-sagami-02", date:"2026-08-31", area:"sagami", spot:"相模湾（小田原・早川沖）石田丸", spotType:"沖-釣り船",
     method:"コマセ五目", species:["マダイ","アジ","メバル"], result:"マアジ20〜40cm 17匹／大アジ40〜45cm 9匹／マダイ52cm 1.5kg。ほかメバル",
