@@ -23,3 +23,14 @@ build-single: all-in-one 58131 chars / docs/index.html 58131 / dist/artifact.htm
 `data/catch-log.js`縺ｯNode讒区枚繝√ぉ繝・け貂医∩・域ｭ｣蟶ｸ・峨～window.CATCH_LOG_META`譖ｴ譁ｰ縲～logs/2026-09-01.md`縺ｫ隕九◆URL繝ｻ謗｡蜷ｦ繝ｻ豌励▼縺阪ｒ霑ｽ險俶ｸ医∩縺ｧ縺吶ょ腰菴滴TML縺ｮ蜀咲函謌舌→繧ｹ繝槭・逕ｨ繝壹・繧ｸ縺ｮ譖ｴ譁ｰ縺ｯ謇矩・←縺翫ｊ`run-collect.ps1`蛛ｴ縺ｨ謇句虚菴懈･ｭ縺ｫ蟋斐・縺ｾ縺吶・
 build-single: all-in-one 60357 chars / docs/index.html 60357 / dist/artifact.html 60198
 === 2026-09-01 06:04 end (claude exit 0) ===
+
+=== 2026-09-01 12:00 start ===
+Completed the 12:00 collection run per 蜿朱寔謇矩・md:
+
+- **Checked** all listed sources (驥｣蜑ｲ/chowari, 遏ｳ逕ｰ荳ｸ, SSM豬ｦ雉, 豬懷鴻魑･, 荳ｭ譬ｹ繝懊・繝・ 縺九ａ繧・ 繧､繧ｷ繧ｰ繝ｭ, TSURINEWS, ANGLERS, YouTube, etc.) plus a bonus find (關ｬ譬・ｸｸ繝悶Ο繧ｰ) for the 08-31縲・9-01 window.
+- **Added 1 new record** to `data/catch-log.js` (47竊・actually 46 total records): 隘ｿ貉倥お繝ｪ繧｢蝣､髦ｲ縺ｮ繧｢繧ｪ繝ｪ繧､繧ｫ・・9-01, 蟆丞梛3譚ｯ, 繧ｨ繧ｮ繝ｳ繧ｰ・俄・everything else found was either already in the log, out of the target area/species, or (in nakane-boat's case) turned out to be a mis-dated July post I caught by checking the URL timestamp.
+- Updated `CATCH_LOG_META` and verified the file still parses as valid JS.
+- Wrote up URLs checked/accepted/rejected and notes in `logs/2026-09-01.md` under a new "12:00蝗・ section.
+- Stopped at step 9 as instructed 窶・did not touch `tsuriha_all-in-one.html`, `dist/artifact.html`, or run any git commands; that's `run-collect.ps1`'s job after this.
+build-single: all-in-one 60918 chars / docs/index.html 60918 / dist/artifact.html 60759
+=== 2026-09-01 12:04 end (claude exit 0) ===
