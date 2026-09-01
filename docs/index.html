@@ -135,11 +135,23 @@
  *   { obs:"観測地点名", waterTempC, weather, windMS, windDir, waveM, airTempC, time:"YYYY-MM-DD" }
  */
 window.CATCH_LOG_META = {
-  lastUpdated: "2026-09-01 12:10",
-  lastRunNote: "1件追加（相模湾1）"
+  lastUpdated: "2026-09-01 18:05",
+  lastRunNote: "2件追加（東京湾口三浦1・相模湾1）"
 };
 
 window.CATCH_LOG = [
+  // ---------- 2026-09-01 追加分（09-01 18:00回） ----------
+  { id:"2026-09-01-wanko-miura-01", date:"2026-09-01", area:"wanko-miura", spot:"新安浦港（横須賀市）こうゆう丸", spotType:"沖-釣り船",
+    method:"テンヤ／ドラゴンタチウオ狙い", species:["タチウオ"], result:"タチウオ70〜118cm 2〜21匹。良型主体にメーター前後、ドラゴン級多く混じり",
+    waterTempC:null, waterTempSource:"", weather:"", windMS:null, windDir:"", airTempC:null,
+    nearby:{ obs:"Open-Meteo（走水〜観音崎沖）", waterTempC:27.2, weather:"曇り", windMS:5.9, windDir:"北東", waveM:0.40, airTempC:27.7, time:"2026-09-01" },
+    sourceName:"ちょうあり こうゆう丸釣果", sourceUrl:"https://www.chowari.jp/ship/00562/catch/", note:"" },
+  { id:"2026-09-01-sagami-02", date:"2026-09-01", area:"sagami", spot:"松輪江奈漁港（三浦市）正海丸", spotType:"沖-釣り船",
+    method:"コマセカツオ・ワラサ五目", species:["ワラサ","マダイ","カツオ"], result:"ワラサ3.00〜3.80kg 0〜1匹／マダイ3.40kg 1匹／カツオ1.20〜3.50kg 0〜1匹。朝は港前でワラサ・マダイ、その後カツオへ移動",
+    waterTempC:null, waterTempSource:"", weather:"", windMS:null, windDir:"", airTempC:null,
+    nearby:{ obs:"Open-Meteo（相模湾中央）", waterTempC:27.5, weather:"霧雨", windMS:4.0, windDir:"北東", waveM:0.42, airTempC:29.3, time:"2026-09-01" },
+    sourceName:"ちょうあり 正海丸釣果", sourceUrl:"https://www.chowari.jp/ship/01696/catch/", note:"" },
+
   // ---------- 2026-09-01 追加分（09-01 12:00回） ----------
   { id:"2026-09-01-sagami-01", date:"2026-09-01", area:"sagami", spot:"西湘エリア 堤防", spotType:"堤防",
     method:"エギング", species:["アオリイカ"], result:"アオリイカ小型3杯（約2時間の釣行）",

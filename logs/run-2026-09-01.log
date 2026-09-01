@@ -34,3 +34,12 @@ Completed the 12:00 collection run per 蜿朱寔謇矩・md:
 - Stopped at step 9 as instructed 窶・did not touch `tsuriha_all-in-one.html`, `dist/artifact.html`, or run any git commands; that's `run-collect.ps1`'s job after this.
 build-single: all-in-one 60918 chars / docs/index.html 60918 / dist/artifact.html 60759
 === 2026-09-01 12:04 end (claude exit 0) ===
+
+=== 2026-09-01 18:00 start ===
+Confirmed 窶・`run-collect.ps1` handles the HTML rebuild, git add/commit/push automatically after this step. My part (steps 1窶・) is complete; no manual commit needed.
+
+## 螳御ｺ・＠縺ｾ縺励◆・・026-09-01 18:00蝗橸ｼ・
+- 譚ｱ莠ｬ貉ｾ蜿｣荳画ｵｦ1莉ｶ・医％縺・ｆ縺・ｸｸ・乗眠螳画ｵｦ貂ｯ縲√ち繝√え繧ｪ09-01・・- 逶ｸ讓｡貉ｾ1莉ｶ・域ｭ｣豬ｷ荳ｸ・乗收霈ｪ豎溷･域ｼ∵ｸｯ縲√Ρ繝ｩ繧ｵ繝ｻ繝槭ム繧､繝ｻ繧ｫ繝・が09-01・・
+繧蛋data/catch-log.js`縺ｫ霑ｽ險倥＠縲゛S讒区枚繧よ､懆ｨｼ貂医∩縺ｧ縺吶Ａlogs/2026-09-01.md`縺ｫ隕九◆URL繝ｻ謗｡蜷ｦ繝ｻ豌励▼縺阪ｒ霑ｽ險倥＠縺ｾ縺励◆縲ゆｻ雁屓縺ｯ縲後■繧・≧縺ゅｊ縲阪・闊ｹ蛻･繝壹・繧ｸ縺悟酔荳URL縺ｧ繧りｨｪ蝠上＃縺ｨ縺ｫ譛譁ｰ驥｣陦梧律縺ｸ譖ｴ譁ｰ縺輔ｌ繧狗せ縺ｫ豌励▼縺阪∝句挨繝壹・繧ｸ縺ｧ譌･莉倥ｒ遒ｺ隱阪＠縺ｦ縺九ｉ驥崎､・愛螳壹☆繧九ｈ縺・↓縺励∪縺励◆縲ょ腰菴滴TML縺ｮ蜀咲函謌舌・git commit/push縺ｯ`run-collect.ps1`縺後％縺ｮ蠕瑚・蜍輔〒陦後＞縺ｾ縺吶・
+build-single: all-in-one 62113 chars / docs/index.html 62113 / dist/artifact.html 61954
+=== 2026-09-01 18:03 end (claude exit 0) ===
