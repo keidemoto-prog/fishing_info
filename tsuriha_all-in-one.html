@@ -135,11 +135,18 @@
  *   { obs:"観測地点名", waterTempC, weather, windMS, windDir, waveM, airTempC, time:"YYYY-MM-DD" }
  */
 window.CATCH_LOG_META = {
-  lastUpdated: "2026-09-02 00:15",
-  lastRunNote: "5件追加（相模湾3・東京湾口三浦1・駿河湾1）"
+  lastUpdated: "2026-09-02 06:10",
+  lastRunNote: "1件追加（相模湾1）"
 };
 
 window.CATCH_LOG = [
+  // ---------- 2026-09-01 追加分（09-02 06:00回） ----------
+  { id:"2026-09-01-sagami-06", date:"2026-09-01", area:"sagami", spot:"葉山芝崎港 福栄丸", spotType:"沖-釣り船",
+    method:"五目釣り", species:["マダイ","イナダ"], result:"マダイ0.40〜2.50kg 1〜3匹、ほかイトヨリ・イナダ混在（イトヨリは対象魚種外のため省略）",
+    waterTempC:28.2, waterTempSource:"福栄丸釣果ページ本文", weather:"曇り", windMS:null, windDir:"", airTempC:null,
+    nearby:{ obs:"Open-Meteo（相模湾中央）", waterTempC:27.3, weather:"霧雨", windMS:4.0, windDir:"北東", waveM:0.44, airTempC:29.2, time:"2026-09-01" },
+    sourceName:"ちょうあり 福栄丸釣果", sourceUrl:"https://www.chowari.jp/ship/00156/catch/", note:"" },
+
   // ---------- 2026-09-01〜08-31 追加分（09-02 00:00回） ----------
   { id:"2026-09-01-sagami-03", date:"2026-09-01", area:"sagami", spot:"葉山芝崎港 五エム丸", spotType:"沖-釣り船",
     method:"アマダイ狙い", species:["アマダイ"], result:"アマダイ27〜38cm 1〜6匹",
