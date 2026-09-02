@@ -8,11 +8,37 @@
  *   { obs:"観測地点名", waterTempC, weather, windMS, windDir, waveM, airTempC, time:"YYYY-MM-DD" }
  */
 window.CATCH_LOG_META = {
-  lastUpdated: "2026-09-02 18:00",
-  lastRunNote: "7件追加（相模湾5・駿河湾2）"
+  lastUpdated: "2026-09-03 00:00",
+  lastRunNote: "5件追加（東京湾口三浦2・相模湾3）"
 };
 
 window.CATCH_LOG = [
+  // ---------- 2026-09-01〜09-02 追加分（09-03 00:00回） ----------
+  { id:"2026-09-02-wanko-miura-02", date:"2026-09-02", area:"wanko-miura", spot:"新安浦港（横須賀市）こうゆう丸", spotType:"沖-釣り船",
+    method:"夜タチウオ", species:["タチウオ"], result:"70〜119cm 6〜22匹。朝は安浦ドラゴン狙いで反応少なめも、沖へ出て探索しドラゴン級が多く混じった",
+    waterTempC:null, waterTempSource:"", weather:"", windMS:null, windDir:"", airTempC:null,
+    nearby:{ obs:"Open-Meteo（東京湾口・三浦）", waterTempC:27.4, weather:"晴れ時々曇り", windMS:4.22, windDir:"南東", waveM:0.56, airTempC:27.6, time:"2026-09-02" },
+    sourceName:"ちょうあり こうゆう丸釣果", sourceUrl:"https://www.chowari.jp/ship/00562/catch/", note:"" },
+  { id:"2026-09-02-wanko-miura-03", date:"2026-09-02", area:"wanko-miura", spot:"久里浜（横須賀市）浜千鳥", spotType:"堤防",
+    method:"陸っぱり", species:["イナダ","ショゴ"], result:"的場氏 イナダ46cm／鈴木氏 ショゴ（サイズ記載なし）。ほか金子氏マダコ（対象魚種外のため除外）",
+    waterTempC:null, waterTempSource:"", weather:"", windMS:null, windDir:"", airTempC:null,
+    nearby:{ obs:"Open-Meteo（東京湾口・三浦）", waterTempC:27.4, weather:"晴れ時々曇り", windMS:4.22, windDir:"南東", waveM:0.56, airTempC:27.6, time:"2026-09-02" },
+    sourceName:"浜千鳥 釣果情報", sourceUrl:"https://hamachidori-kw.com/9%e6%9c%882%e6%97%a5%e6%b0%b4%e3%81%ae%e9%87%a3%e6%9e%9c%e6%83%85%e5%a0%b1/", note:"" },
+  { id:"2026-09-02-sagami-02", date:"2026-09-02", area:"sagami", spot:"相模湾（小田原・早川沖）石田丸", spotType:"沖-釣り船",
+    method:"コマセ五目（ビシ仕掛け・ロングハリス6m）", species:["マダイ","アジ"], result:"真鯛62cm 1匹（3kg）、大アジ38〜42cm前後 10匹",
+    waterTempC:null, waterTempSource:"", weather:"", windMS:null, windDir:"", airTempC:null,
+    nearby:{ obs:"Open-Meteo（相模湾中央）", waterTempC:27.6, weather:"晴れ時々曇り", windMS:4.23, windDir:"南", waveM:0.56, airTempC:28.3, time:"2026-09-02" },
+    sourceName:"石田丸 釣果ブログ", sourceUrl:"https://www.ishidamaru.com/?post_type=fishing&paged=1", note:"" },
+  { id:"2026-09-02-sagami-03", date:"2026-09-02", area:"sagami", spot:"小田原早川港 坂口丸", spotType:"沖-釣り船",
+    method:"アマダイ五目", species:["アマダイ"], result:"アマダイ22〜35cm 4〜14匹（ほかスルメイカ3〜7匹は対象魚種外のため除外）",
+    waterTempC:null, waterTempSource:"", weather:"", windMS:null, windDir:"", airTempC:null,
+    nearby:{ obs:"Open-Meteo（相模湾中央）", waterTempC:27.6, weather:"晴れ時々曇り", windMS:4.23, windDir:"南", waveM:0.56, airTempC:28.3, time:"2026-09-02" },
+    sourceName:"坂口丸 釣果情報", sourceUrl:"https://sakaguchimaru.com/", note:"" },
+  { id:"2026-09-01-sagami-11", date:"2026-09-01", area:"sagami", spot:"小田原早川港 坂口丸", spotType:"沖-釣り船",
+    method:"アマダイ五目", species:["アマダイ"], result:"アマダイ24〜33cm 6〜8匹",
+    waterTempC:null, waterTempSource:"", weather:"", windMS:null, windDir:"", airTempC:null,
+    nearby:{ obs:"Open-Meteo（相模湾中央）", waterTempC:27.3, weather:"霧雨", windMS:4.00, windDir:"北東", waveM:0.44, airTempC:29.2, time:"2026-09-01" },
+    sourceName:"坂口丸 釣果情報", sourceUrl:"https://sakaguchimaru.com/", note:"" },
   // ---------- 2026-09-01〜09-02 追加分（09-02 18:00回） ----------
   { id:"2026-09-02-sagami-01", date:"2026-09-02", area:"sagami", spot:"松輪江奈漁港（三浦市）成銀丸", spotType:"沖-釣り船",
     method:"ワラサ・マダイ五目", species:["ワラサ","マダイ"], result:"ワラサ2.00〜3.00kg 0〜3匹／マダイ0.50〜1.00kg 0〜1匹。1流し目から反応ありも当たりは渋め（2隻体制、中潮）",
