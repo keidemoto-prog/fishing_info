@@ -8,11 +8,18 @@
  *   { obs:"観測地点名", waterTempC, weather, windMS, windDir, waveM, airTempC, time:"YYYY-MM-DD" }
  */
 window.CATCH_LOG_META = {
-  lastUpdated: "2026-09-02 06:10",
-  lastRunNote: "1件追加（相模湾1）"
+  lastUpdated: "2026-09-02 12:04",
+  lastRunNote: "1件追加（東京湾奥1）"
 };
 
 window.CATCH_LOG = [
+  // ---------- 2026-09-01 追加分（09-02 12:00回） ----------
+  { id:"2026-09-01-aoku-01", date:"2026-09-01", area:"aoku", spot:"本牧海づり施設", spotType:"釣り公園",
+    method:"堤防釣り公園（サビキ・穴釣り等）", species:["アジ","カサゴ","コノシロ"], result:"アジ154匹15〜25cm／コノシロ131匹24〜28cm／カサゴ37匹15〜20cm（入場者数258人。サッパ・クロダイは対象魚種外のため省略）",
+    waterTempC:27, waterTempSource:"本牧海づり施設 釣果ページ本文", weather:"", windMS:null, windDir:"", airTempC:null,
+    nearby:{ obs:"Open-Meteo（東京湾奥・横浜沖）", waterTempC:27.5, weather:"晴れ時々曇り", windMS:5.2, windDir:"北東", waveM:0.22, airTempC:27.7, time:"2026-09-01" },
+    sourceName:"横浜フィッシングピアーズ 本牧海づり施設 釣果", sourceUrl:"https://www.fishing-v.jp/choka/choka_detail.php?s=11284&pageID=1", note:"" },
+
   // ---------- 2026-09-01 追加分（09-02 06:00回） ----------
   { id:"2026-09-01-sagami-06", date:"2026-09-01", area:"sagami", spot:"葉山芝崎港 福栄丸", spotType:"沖-釣り船",
     method:"五目釣り", species:["マダイ","イナダ"], result:"マダイ0.40〜2.50kg 1〜3匹、ほかイトヨリ・イナダ混在（イトヨリは対象魚種外のため省略）",
