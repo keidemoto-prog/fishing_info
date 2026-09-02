@@ -8,11 +8,48 @@
  *   { obs:"観測地点名", waterTempC, weather, windMS, windDir, waveM, airTempC, time:"YYYY-MM-DD" }
  */
 window.CATCH_LOG_META = {
-  lastUpdated: "2026-09-02 12:04",
-  lastRunNote: "1件追加（東京湾奥1）"
+  lastUpdated: "2026-09-02 18:00",
+  lastRunNote: "7件追加（相模湾5・駿河湾2）"
 };
 
 window.CATCH_LOG = [
+  // ---------- 2026-09-01〜09-02 追加分（09-02 18:00回） ----------
+  { id:"2026-09-02-sagami-01", date:"2026-09-02", area:"sagami", spot:"松輪江奈漁港（三浦市）成銀丸", spotType:"沖-釣り船",
+    method:"ワラサ・マダイ五目", species:["ワラサ","マダイ"], result:"ワラサ2.00〜3.00kg 0〜3匹／マダイ0.50〜1.00kg 0〜1匹。1流し目から反応ありも当たりは渋め（2隻体制、中潮）",
+    waterTempC:null, waterTempSource:"", weather:"", windMS:null, windDir:"", airTempC:null,
+    nearby:{ obs:"Open-Meteo（相模湾中央）", waterTempC:27.7, weather:"晴れ時々曇り", windMS:4.53, windDir:"南", waveM:0.52, airTempC:28.3, time:"2026-09-02" },
+    sourceName:"ちょうあり 成銀丸釣果", sourceUrl:"https://www.chowari.jp/ship/00332/catch/", note:"" },
+  { id:"2026-09-02-suruga-01", date:"2026-09-02", area:"suruga", spot:"沼津周辺", spotType:"堤防",
+    method:"エギング", species:["アオリイカ"], result:"アオリイカ コロッケサイズ2杯。05:00〜06:45",
+    waterTempC:null, waterTempSource:"", weather:"", windMS:null, windDir:"", airTempC:null,
+    nearby:{ obs:"Open-Meteo（沼津沖）", waterTempC:27.7, weather:"晴れ時々曇り", windMS:3.10, windDir:"北西", waveM:0.60, airTempC:30.1, time:"2026-09-02" },
+    sourceName:"イシグロ静岡中吉田店 釣果ブログ", sourceUrl:"https://www.ishiguro-gr.com/enjoy/fishing/detail.php?id=49561", note:"" },
+  { id:"2026-09-01-suruga-01", date:"2026-09-01", area:"suruga", spot:"大井川・焼津周辺", spotType:"地磯",
+    method:"シーバスルアー（ヒラスズキ狙い）", species:["スズキ"], result:"ヒラスズキ50cm 1匹。22:45〜23:30",
+    waterTempC:null, waterTempSource:"", weather:"", windMS:null, windDir:"", airTempC:null,
+    nearby:{ obs:"Open-Meteo（焼津・大井川沖）", waterTempC:27.8, weather:"晴れ時々曇り", windMS:4.46, windDir:"北東", waveM:0.74, airTempC:28.5, time:"2026-09-01" },
+    sourceName:"イシグロ焼津店 釣果ブログ", sourceUrl:"https://www.ishiguro-gr.com/enjoy/fishing/detail.php?id=49560", note:"" },
+  { id:"2026-09-01-sagami-10", date:"2026-09-01", area:"sagami", spot:"福浦港（湯河原町）雅裕丸", spotType:"沖-釣り船",
+    method:"コマセ五目", species:["マダイ","メバル","サバ","カサゴ"], result:"マダイ1.00kg 1匹、ほかオキメバル・サバ・カサゴ混獲（キツネダイ・イトヨリは対象魚種外のため省略）。中潮",
+    waterTempC:null, waterTempSource:"", weather:"", windMS:null, windDir:"", airTempC:null,
+    nearby:{ obs:"Open-Meteo（相模湾中央）", waterTempC:27.3, weather:"霧雨", windMS:4.0, windDir:"北東", waveM:0.44, airTempC:29.2, time:"2026-09-01" },
+    sourceName:"ちょうあり 雅裕丸釣果", sourceUrl:"https://www.chowari.jp/ship/01194/catch/", note:"" },
+  { id:"2026-09-01-sagami-09", date:"2026-09-01", area:"sagami", spot:"腰越漁港（鎌倉市）孝太郎丸", spotType:"沖-釣り船",
+    method:"アマダイ狙い", species:["アマダイ","カサゴ"], result:"アマダイ26〜43cm 4〜5匹、ほかカサゴ混獲（アラ・イトヨリ・ガンゾウビラメ・ホウボウ・レンコダイ等は対象魚種外のため省略）",
+    waterTempC:null, waterTempSource:"", weather:"", windMS:null, windDir:"", airTempC:null,
+    nearby:{ obs:"Open-Meteo（相模湾中央）", waterTempC:27.3, weather:"霧雨", windMS:4.0, windDir:"北東", waveM:0.44, airTempC:29.2, time:"2026-09-01" },
+    sourceName:"ちょうあり 孝太郎丸釣果（アマダイ船）", sourceUrl:"https://www.chowari.jp/ship/00707/catch/", note:"" },
+  { id:"2026-09-01-sagami-08", date:"2026-09-01", area:"sagami", spot:"腰越漁港（鎌倉市）孝太郎丸", spotType:"沖-釣り船",
+    method:"マダイ狙い五目", species:["マダイ","アマダイ","カサゴ","サバ","ソウダガツオ"], result:"マダイ0.30〜2.20kg 0〜2匹。ほかアマダイ・カサゴ・サバ・ソウダガツオ混獲（ハナダイ・イトヨリは対象魚種外のため省略）",
+    waterTempC:null, waterTempSource:"", weather:"", windMS:null, windDir:"", airTempC:null,
+    nearby:{ obs:"Open-Meteo（相模湾中央）", waterTempC:27.3, weather:"霧雨", windMS:4.0, windDir:"北東", waveM:0.44, airTempC:29.2, time:"2026-09-01" },
+    sourceName:"ちょうあり 孝太郎丸釣果（マダイ船）", sourceUrl:"https://www.chowari.jp/ship/00707/catch/", note:"" },
+  { id:"2026-09-01-sagami-07", date:"2026-09-01", area:"sagami", spot:"腰越漁港（鎌倉市）秋田屋", spotType:"沖-釣り船",
+    method:"青物五目", species:["イナダ","アジ","マダイ","アマダイ","サバ","ソウダガツオ"], result:"イナダ34〜43cm 1〜7匹／マアジ30〜38cm 2〜17匹、ほかマダイ・アマダイ・サバ・ソウダガツオ混獲（クエ3.80kg・クロダイ・イトヨリ・オニカサゴ・ヒメコダイ等は対象魚種外のため省略）。中潮",
+    waterTempC:null, waterTempSource:"", weather:"", windMS:null, windDir:"", airTempC:null,
+    nearby:{ obs:"Open-Meteo（相模湾中央）", waterTempC:27.3, weather:"霧雨", windMS:4.0, windDir:"北東", waveM:0.44, airTempC:29.2, time:"2026-09-01" },
+    sourceName:"ちょうあり 秋田屋釣果", sourceUrl:"https://www.chowari.jp/ship/00371/catch/", note:"" },
+
   // ---------- 2026-09-01 追加分（09-02 12:00回） ----------
   { id:"2026-09-01-aoku-01", date:"2026-09-01", area:"aoku", spot:"本牧海づり施設", spotType:"釣り公園",
     method:"堤防釣り公園（サビキ・穴釣り等）", species:["アジ","カサゴ","コノシロ"], result:"アジ154匹15〜25cm／コノシロ131匹24〜28cm／カサゴ37匹15〜20cm（入場者数258人。サッパ・クロダイは対象魚種外のため省略）",
