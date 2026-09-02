@@ -135,11 +135,33 @@
  *   { obs:"観測地点名", waterTempC, weather, windMS, windDir, waveM, airTempC, time:"YYYY-MM-DD" }
  */
 window.CATCH_LOG_META = {
-  lastUpdated: "2026-09-03 00:00",
-  lastRunNote: "5件追加（東京湾口三浦2・相模湾3）"
+  lastUpdated: "2026-09-03 06:00",
+  lastRunNote: "4件追加（東京湾口三浦3・相模湾1）"
 };
 
 window.CATCH_LOG = [
+  // ---------- 2026-09-02 追加分（09-03 06:00回） ----------
+  { id:"2026-09-02-wanko-miura-04", date:"2026-09-02", area:"wanko-miura", spot:"鴨居大室港（横須賀市）房丸", spotType:"沖-釣り船",
+    method:"アジ釣り（LT五目）", species:["アジ"], result:"午前18〜23匹、午後10〜27匹",
+    waterTempC:null, waterTempSource:"", weather:"", windMS:null, windDir:"", airTempC:null,
+    nearby:{ obs:"Open-Meteo（東京湾口・三浦）", waterTempC:27.4, weather:"晴れ時々曇り", windMS:4.22, windDir:"南東", waveM:0.56, airTempC:27.6, time:"2026-09-02" },
+    sourceName:"ちょうあり 房丸釣果", sourceUrl:"https://www.chowari.jp/ship/00690/catch/", note:"" },
+  { id:"2026-09-02-wanko-miura-05", date:"2026-09-02", area:"wanko-miura", spot:"三浦海岸（横須賀市）陸っぱり複数人", spotType:"砂浜",
+    method:"陸っぱり（ルアー・エサ）", species:["イナダ","アジ","マハタ","マゴチ","マダイ","カマス","サバ","タチウオ"],
+    result:"イナダ44〜45cm、アジ26〜42cm、マハタ23cm、マゴチ50cm、マダイ28cm、太刀魚115cm など、複数の釣り人がそれぞれ釣果（カイワリ・イトヨリ・ワニゴチは対象魚種外のため除外）",
+    waterTempC:null, waterTempSource:"", weather:"", windMS:null, windDir:"", airTempC:null,
+    nearby:{ obs:"Open-Meteo（東京湾口・三浦）", waterTempC:27.4, weather:"晴れ時々曇り", windMS:4.22, windDir:"南東", waveM:0.56, airTempC:27.6, time:"2026-09-02" },
+    sourceName:"HIT三浦海岸 Instagram釣果まとめ", sourceUrl:"https://hitmiurakaigan.com/my-instagram-feed", note:"" },
+  { id:"2026-09-02-wanko-miura-06", date:"2026-09-02", area:"wanko-miura", spot:"猿島沖（金沢八景発）米元釣船店", spotType:"沖-釣り船",
+    method:"タチウオテンヤ", species:["タチウオ"], result:"21尾、最大115cm（船中最大）",
+    waterTempC:null, waterTempSource:"", weather:"", windMS:null, windDir:"", airTempC:null,
+    nearby:{ obs:"Open-Meteo（東京湾口・三浦）", waterTempC:27.4, weather:"晴れ時々曇り", windMS:4.22, windDir:"南東", waveM:0.56, airTempC:27.6, time:"2026-09-02" },
+    sourceName:"TSURINEWS 米元釣船店釣果", sourceUrl:"https://tsurinews.jp/409951/", note:"" },
+  { id:"2026-09-02-sagami-04", date:"2026-09-02", area:"sagami", spot:"相模湾各地（茅ヶ崎・平塚・大磯ほか）ちがさき丸・弘漁丸・新幸丸・雅裕丸・第2美吉丸・三次郎丸・九左衛門丸・藤富丸・梅花丸ほか", spotType:"沖-釣り船",
+    method:"マダイ釣り（コマセ・LT）", species:["マダイ"], result:"0.30〜5.20kg、0〜11匹（船ごとに差、中潮）",
+    waterTempC:null, waterTempSource:"", weather:"", windMS:null, windDir:"", airTempC:null,
+    nearby:{ obs:"Open-Meteo（相模湾中央）", waterTempC:27.6, weather:"晴れ時々曇り", windMS:4.23, windDir:"南", waveM:0.56, airTempC:28.3, time:"2026-09-02" },
+    sourceName:"ちょうあり 相模湾マダイ釣果まとめ", sourceUrl:"https://www.chowari.jp/catcharea/?area=92", note:"" },
   // ---------- 2026-09-01〜09-02 追加分（09-03 00:00回） ----------
   { id:"2026-09-02-wanko-miura-02", date:"2026-09-02", area:"wanko-miura", spot:"新安浦港（横須賀市）こうゆう丸", spotType:"沖-釣り船",
     method:"夜タチウオ", species:["タチウオ"], result:"70〜119cm 6〜22匹。朝は安浦ドラゴン狙いで反応少なめも、沖へ出て探索しドラゴン級が多く混じった",
