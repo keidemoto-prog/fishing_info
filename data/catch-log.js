@@ -8,11 +8,23 @@
  *   { obs:"観測地点名", waterTempC, weather, windMS, windDir, waveM, airTempC, time:"YYYY-MM-DD" }
  */
 window.CATCH_LOG_META = {
-  lastUpdated: "2026-09-03 06:00",
-  lastRunNote: "4件追加（東京湾口三浦3・相模湾1）"
+  lastUpdated: "2026-09-03 12:00",
+  lastRunNote: "2件追加（東京湾奥1・房総1）"
 };
 
 window.CATCH_LOG = [
+  // ---------- 09-03 12:00回 追加分 ----------
+  { id:"2026-09-03-wanko-boso-01", date:"2026-09-03", area:"wanko-boso", spot:"洲崎栄ノ浦港（千葉県館山市）早川丸", spotType:"沖-釣り船",
+    method:"船釣り", species:["カワハギ"], result:"20〜25cm 4〜11匹",
+    waterTempC:null, waterTempSource:"", weather:"", windMS:null, windDir:"", airTempC:null,
+    nearby:{ obs:"Open-Meteo（洲崎沖）", waterTempC:28.2, weather:"霧雨", windMS:3.94, windDir:"南西", waveM:1.06, airTempC:28.5, time:"2026-09-03" },
+    sourceName:"ちょうあり 早川丸釣果", sourceUrl:"https://www.chowari.jp/ship/00293/catch/", note:"" },
+  { id:"2026-09-02-aoku-03", date:"2026-09-02", area:"aoku", spot:"柴漁港・金沢八景平潟（三喜丸・荒川屋・黒川丸）", spotType:"沖-釣り船",
+    method:"タチウオ釣り（テンヤ）", species:["タチウオ"], result:"65〜119cm 2〜22匹（船により差）",
+    waterTempC:null, waterTempSource:"", weather:"", windMS:null, windDir:"", airTempC:null,
+    nearby:{ obs:"Open-Meteo（金沢八景沖）", waterTempC:27.6, weather:"晴れ", windMS:2.21, windDir:"南東", waveM:0.42, airTempC:29.8, time:"2026-09-02" },
+    sourceName:"ちょうあり 東京湾タチウオ釣果", sourceUrl:"https://www.chowari.jp/catcharea/?area=56&fish=316", note:"" },
+
   // ---------- 2026-09-02 追加分（09-03 06:00回） ----------
   { id:"2026-09-02-wanko-miura-04", date:"2026-09-02", area:"wanko-miura", spot:"鴨居大室港（横須賀市）房丸", spotType:"沖-釣り船",
     method:"アジ釣り（LT五目）", species:["アジ"], result:"午前18〜23匹、午後10〜27匹",
