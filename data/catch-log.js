@@ -8,11 +8,28 @@
  *   { obs:"観測地点名", waterTempC, weather, windMS, windDir, waveM, airTempC, time:"YYYY-MM-DD" }
  */
 window.CATCH_LOG_META = {
-  lastUpdated: "2026-09-04 00:00",
-  lastRunNote: "6件追加（東京湾奥1・東京湾口三浦2・相模湾3）"
+  lastUpdated: "2026-09-04 06:00",
+  lastRunNote: "3件追加（東京湾口三浦1・湾口内房1・相模湾1）"
 };
 
 window.CATCH_LOG = [
+  // ---------- 09-04 06:00回 追加分 ----------
+  { id:"2026-09-03-wanko-miura-03", date:"2026-09-03", area:"wanko-miura", spot:"三浦海岸（三浦市南下浦町）", spotType:"堤防",
+    method:"エサ釣り（五目）", species:["マダイ","アジ","カワハギ"], result:"マダイ45cm、アジ42cm 3匹、カワハギ25cm 3匹（イトヨリは対象魚種外のため除外）。潮濁り気味でルアーの青物は渋かった",
+    waterTempC:null, waterTempSource:"", weather:"", windMS:null, windDir:"", airTempC:null,
+    nearby:{ obs:"Open-Meteo（三浦海岸沖）", waterTempC:27.7, weather:"曇り", windMS:7.02, windDir:"南西", waveM:0.80, airTempC:28.7, time:"2026-09-03" },
+    sourceName:"HIT三浦海岸 Instagram", sourceUrl:"https://hitmiurakaigan.com/my-instagram-feed", note:"" },
+  { id:"2026-09-03-wanko-boso-02", date:"2026-09-03", area:"wanko-boso", spot:"上総湊港（千葉県富津市）フィッシュオン大勝", spotType:"沖-釣り船",
+    method:"LTアジ・ライトタックル五目", species:["アジ","タチウオ"], result:"アジ24〜30cm 2〜20匹、タチウオ65〜119cm 0〜10匹。前半アジ好調も後半は喰い渋く、マダイ・クロダイも顔出し（クロダイは対象魚種外）",
+    waterTempC:null, waterTempSource:"", weather:"", windMS:null, windDir:"", airTempC:null,
+    nearby:{ obs:"Open-Meteo（上総湊沖）", waterTempC:27.4, weather:"曇り", windMS:4.02, windDir:"南", waveM:0.46, airTempC:29.2, time:"2026-09-03" },
+    sourceName:"ちょうあり フィッシュオン大勝釣果", sourceUrl:"https://www.chowari.jp/ship/01422/", note:"" },
+  { id:"2026-09-03-sagami-05", date:"2026-09-03", area:"sagami", spot:"間口漁港（三浦市初声町）丸又丸", spotType:"沖-釣り船",
+    method:"ビシアジ", species:["アジ"], result:"派手な喰いはないものの、出れば良型主体（匹数・サイズの具体的記載なし）",
+    waterTempC:null, waterTempSource:"", weather:"", windMS:null, windDir:"", airTempC:null,
+    nearby:{ obs:"Open-Meteo（間口沖）", waterTempC:27.7, weather:"曇り", windMS:7.02, windDir:"南西", waveM:0.80, airTempC:28.5, time:"2026-09-03" },
+    sourceName:"ちょうあり 丸又丸釣果", sourceUrl:"https://www.chowari.jp/ship/00927/", note:"" },
+
   // ---------- 09-04 00:00回 追加分 ----------
   { id:"2026-09-03-wanko-miura-01", date:"2026-09-03", area:"wanko-miura", spot:"新安浦港（横須賀市）こうゆう丸", spotType:"沖-釣り船",
     method:"夜タチウオ（テンヤ）", species:["タチウオ"], result:"65〜117cm 1〜32匹。中型〜良型主体、ドラゴン級も混在",
