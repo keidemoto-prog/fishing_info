@@ -135,11 +135,18 @@
  *   { obs:"観測地点名", waterTempC, weather, windMS, windDir, waveM, airTempC, time:"YYYY-MM-DD" }
  */
 window.CATCH_LOG_META = {
-  lastUpdated: "2026-09-03 12:00",
-  lastRunNote: "2件追加（東京湾奥1・房総1）"
+  lastUpdated: "2026-09-03 18:00",
+  lastRunNote: "1件追加（相模湾1）"
 };
 
 window.CATCH_LOG = [
+  // ---------- 09-03 18:00回 追加分 ----------
+  { id:"2026-09-03-sagami-01", date:"2026-09-03", area:"sagami", spot:"佐島港（横須賀市）志平丸", spotType:"沖-釣り船",
+    method:"カワハギ釣り", species:["カワハギ"], result:"18〜27cm 2〜11匹。潮通し悪くバレあり（小潮）",
+    tideName:"小潮", waterTempC:27.0, waterTempSource:"ちょうあり 志平丸釣果", weather:"", windMS:null, windDir:"", airTempC:null,
+    nearby:{ obs:"Open-Meteo（佐島沖）", waterTempC:27.5, weather:"曇り", windMS:3.44, windDir:"南西", waveM:0.70, airTempC:28.5, time:"2026-09-03" },
+    sourceName:"ちょうあり 志平丸釣果", sourceUrl:"https://www.chowari.jp/ship/00346/catch/", note:"" },
+
   // ---------- 09-03 12:00回 追加分 ----------
   { id:"2026-09-03-wanko-boso-01", date:"2026-09-03", area:"wanko-boso", spot:"洲崎栄ノ浦港（千葉県館山市）早川丸", spotType:"沖-釣り船",
     method:"船釣り", species:["カワハギ"], result:"20〜25cm 4〜11匹",
