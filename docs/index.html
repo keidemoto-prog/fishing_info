@@ -135,11 +135,43 @@
  *   { obs:"観測地点名", waterTempC, weather, windMS, windDir, waveM, airTempC, time:"YYYY-MM-DD" }
  */
 window.CATCH_LOG_META = {
-  lastUpdated: "2026-09-03 18:00",
-  lastRunNote: "1件追加（相模湾1）"
+  lastUpdated: "2026-09-04 00:00",
+  lastRunNote: "6件追加（東京湾奥1・東京湾口三浦2・相模湾3）"
 };
 
 window.CATCH_LOG = [
+  // ---------- 09-04 00:00回 追加分 ----------
+  { id:"2026-09-03-wanko-miura-01", date:"2026-09-03", area:"wanko-miura", spot:"新安浦港（横須賀市）こうゆう丸", spotType:"沖-釣り船",
+    method:"夜タチウオ（テンヤ）", species:["タチウオ"], result:"65〜117cm 1〜32匹。中型〜良型主体、ドラゴン級も混在",
+    waterTempC:null, waterTempSource:"", weather:"", windMS:null, windDir:"", airTempC:null,
+    nearby:{ obs:"Open-Meteo（東京湾口・三浦）", waterTempC:27.4, weather:"霧雨", windMS:7.87, windDir:"南", waveM:0.62, airTempC:28.5, time:"2026-09-03" },
+    sourceName:"ちょうあり こうゆう丸釣果", sourceUrl:"https://www.chowari.jp/ship/00562/catch/", note:"" },
+  { id:"2026-09-03-wanko-miura-02", date:"2026-09-03", area:"wanko-miura", spot:"松輪江奈漁港・金田漁港（三浦市）あまさけや丸・浜鈴丸・成銀丸・邦丸", spotType:"沖-釣り船",
+    method:"マダイ・ワラサ釣り", species:["ワラサ","イナダ","マダイ"], result:"ワラサ2.5〜4.0kg 0〜5匹（竿頭5匹の船あり）、イナダ1.0〜1.8kg 1〜3匹、マダイ0.6〜4.5kg 0〜4匹（船ごとに差）",
+    tideName:"小潮", waterTempC:null, waterTempSource:"", weather:"", windMS:null, windDir:"", airTempC:null,
+    nearby:{ obs:"Open-Meteo（東京湾口・三浦）", waterTempC:27.4, weather:"霧雨", windMS:7.87, windDir:"南", waveM:0.62, airTempC:28.5, time:"2026-09-03" },
+    sourceName:"ちょうあり 相模湾釣果まとめ", sourceUrl:"https://www.chowari.jp/catcharea/?area=92", note:"" },
+  { id:"2026-09-03-sagami-02", date:"2026-09-03", area:"sagami", spot:"相模湾（小田原・早川沖）石田丸", spotType:"沖-釣り船",
+    method:"コマセ五目（ビシ仕掛け）", species:["マダイ","アジ"], result:"湯浅氏：真鯛69・53・40cm前後3匹、大アジ40cm前後10匹／鈴村氏：真鯛60・69・53cm3匹、大アジ40cm前後13匹（クロダイは対象魚種外のため除外）。小潮・うす濁り",
+    tideName:"小潮", waterTempC:null, waterTempSource:"", weather:"", windMS:null, windDir:"", airTempC:null,
+    nearby:{ obs:"Open-Meteo（相模湾中央）", waterTempC:27.6, weather:"霧雨", windMS:5.68, windDir:"南西", waveM:0.66, airTempC:29.0, time:"2026-09-03" },
+    sourceName:"石田丸 釣果ブログ", sourceUrl:"https://www.ishidamaru.com/?post_type=fishing&paged=1", note:"" },
+  { id:"2026-09-03-sagami-03", date:"2026-09-03", area:"sagami", spot:"小田原早川港 坂口丸", spotType:"沖-釣り船",
+    method:"本カツオ船・LTアマダイ船", species:["カツオ","アマダイ"], result:"本ガツオ2.2〜3kg 1〜2匹、LTアマダイ25〜42cm 3〜8匹",
+    waterTempC:null, waterTempSource:"", weather:"", windMS:null, windDir:"", airTempC:null,
+    nearby:{ obs:"Open-Meteo（相模湾中央）", waterTempC:27.6, weather:"霧雨", windMS:5.68, windDir:"南西", waveM:0.66, airTempC:29.0, time:"2026-09-03" },
+    sourceName:"坂口丸 釣果情報", sourceUrl:"https://sakaguchimaru.com/", note:"" },
+  { id:"2026-09-03-sagami-04", date:"2026-09-03", area:"sagami", spot:"平塚漁港 豊漁丸", spotType:"沖-釣り船",
+    method:"マダイ・LT五目", species:["マダイ","イナダ","アジ","ソウダガツオ"], result:"マダイ28〜57cm 0〜4匹、イナダ1〜5匹、アジ・ソウダガツオ混交（小潮）",
+    tideName:"小潮", waterTempC:null, waterTempSource:"", weather:"", windMS:null, windDir:"", airTempC:null,
+    nearby:{ obs:"Open-Meteo（相模湾中央）", waterTempC:27.6, weather:"霧雨", windMS:5.68, windDir:"南西", waveM:0.66, airTempC:29.0, time:"2026-09-03" },
+    sourceName:"ちょうあり 豊漁丸釣果", sourceUrl:"https://www.chowari.jp/catcharea/?area=92", note:"" },
+  { id:"2026-09-03-aoku-01", date:"2026-09-03", area:"aoku", spot:"江戸川放水路（市川市）Friend☆Ship", spotType:"河口",
+    method:"ルアー（サワラ狙い）", species:["サワラ"], result:"表層・底を探り、乗船者全員がサワラをキャッチ",
+    waterTempC:null, waterTempSource:"", weather:"", windMS:null, windDir:"", airTempC:null,
+    nearby:{ obs:"Open-Meteo（東京湾奥）", waterTempC:27.5, weather:"曇り", windMS:7.00, windDir:"南", waveM:0.34, airTempC:28.7, time:"2026-09-03" },
+    sourceName:"ちょうあり Friend☆Ship釣果", sourceUrl:"https://www.chowari.jp/ship/01635/catch/", note:"" },
+
   // ---------- 09-03 18:00回 追加分 ----------
   { id:"2026-09-03-sagami-01", date:"2026-09-03", area:"sagami", spot:"佐島港（横須賀市）志平丸", spotType:"沖-釣り船",
     method:"カワハギ釣り", species:["カワハギ"], result:"18〜27cm 2〜11匹。潮通し悪くバレあり（小潮）",
