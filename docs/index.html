@@ -135,11 +135,33 @@
  *   { obs:"観測地点名", waterTempC, weather, windMS, windDir, waveM, airTempC, time:"YYYY-MM-DD" }
  */
 window.CATCH_LOG_META = {
-  lastUpdated: "2026-09-04 12:00",
-  lastRunNote: "6件追加（相模湾3・東京湾口三浦2・駿河湾1）"
+  lastUpdated: "2026-09-04 18:00",
+  lastRunNote: "4件追加（東京湾口三浦1・東京湾奥1・相模湾1・駿河湾1）"
 };
 
 window.CATCH_LOG = [
+  // ---------- 09-04 18:00回 追加分 ----------
+  { id:"2026-09-04-wanko-miura-02", date:"2026-09-04", area:"wanko-miura", spot:"走水港（横須賀市）政信丸", spotType:"沖-釣り船",
+    method:"LTタチウオ・アジ船", species:["タチウオ","アジ"], result:"タチウオ60〜105cm 4〜15匹、アジ23〜30cm 4〜18匹",
+    tideName:"小潮", waterTempC:null, waterTempSource:"", weather:"", windMS:null, windDir:"", airTempC:null,
+    nearby:{ obs:"Open-Meteo（東京湾口・走水）", waterTempC:27.2, weather:"雨", windMS:6.02, windDir:"北", waveM:0.48, airTempC:26.5, time:"2026-09-04" },
+    sourceName:"ちょうあり 政信丸釣果", sourceUrl:"https://www.chowari.jp/ship/00861/", note:"" },
+  { id:"2026-09-04-aoku-01", date:"2026-09-04", area:"aoku", spot:"金沢八景平潟（横浜市）黒川丸", spotType:"沖-釣り船",
+    method:"タチウオ釣り（テンヤ）", species:["タチウオ"], result:"65〜115cm 4〜20匹",
+    tideName:"小潮", waterTempC:null, waterTempSource:"", weather:"", windMS:null, windDir:"", airTempC:null,
+    nearby:{ obs:"Open-Meteo（金沢八景沖）", waterTempC:27.3, weather:"弱い雨", windMS:2.86, windDir:"北", waveM:0.54, airTempC:25.1, time:"2026-09-04" },
+    sourceName:"ちょうあり 黒川丸釣果", sourceUrl:"https://www.chowari.jp/ship/00150/", note:"" },
+  { id:"2026-09-04-sagami-03", date:"2026-09-04", area:"sagami", spot:"福浦港（湯河原町）とものまる", spotType:"沖-釣り船",
+    method:"ルアー（SLJ）", species:["ショゴ","イナダ"], result:"青物（ショゴ・イナダ）に反応、複数魚種がヒット（尾数・サイズの詳細記載なし）",
+    waterTempC:null, waterTempSource:"", weather:"", windMS:null, windDir:"", airTempC:null,
+    nearby:{ obs:"Open-Meteo（湯河原沖）", waterTempC:27.0, weather:"雨", windMS:6.96, windDir:"北東", waveM:0.74, airTempC:27.4, time:"2026-09-04" },
+    sourceName:"とものまる 釣果情報", sourceUrl:"https://tomonomaru.com/", note:"" },
+  { id:"2026-09-03-suruga-02", date:"2026-09-03", area:"suruga", spot:"久料港（沼津市西浦）魚磯丸", spotType:"沖-釣り船",
+    method:"コマセマダイ", species:["マダイ","サバ"], result:"マダイ0.5〜2.0kg 0〜4匹（計7匹）、サバも混獲",
+    tideName:"小潮", waterTempC:null, waterTempSource:"", weather:"", windMS:null, windDir:"", airTempC:null,
+    nearby:{ obs:"Open-Meteo（沼津・久料沖）", waterTempC:27.8, weather:"霧雨", windMS:4.25, windDir:"南西", waveM:0.66, airTempC:28.8, time:"2026-09-03" },
+    sourceName:"ちょうあり 魚磯丸釣果", sourceUrl:"https://www.chowari.jp/catcharea/?area=60", note:"" },
+
   // ---------- 09-04 12:00回 追加分 ----------
   { id:"2026-09-04-sagami-01", date:"2026-09-04", area:"sagami", spot:"片瀬漁港（藤沢市）島きち丸", spotType:"沖-釣り船",
     method:"LTルアー船（五目）", species:["カマス","イナダ","アジ","カンパチ","カサゴ","サバ"], result:"カマス21〜27cm 5〜15匹、イナダ30〜40cm 0〜10匹。ほか豆アジ・カンパチ・カサゴ・サバも混獲（ホウボウは対象魚種外のため除外）",
