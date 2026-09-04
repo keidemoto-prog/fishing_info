@@ -8,11 +8,28 @@
  *   { obs:"観測地点名", waterTempC, weather, windMS, windDir, waveM, airTempC, time:"YYYY-MM-DD" }
  */
 window.CATCH_LOG_META = {
-  lastUpdated: "2026-09-04 18:00",
-  lastRunNote: "4件追加（東京湾口三浦1・東京湾奥1・相模湾1・駿河湾1）"
+  lastUpdated: "2026-09-05 00:00",
+  lastRunNote: "3件追加（東京湾口三浦2・相模湾1）"
 };
 
 window.CATCH_LOG = [
+  // ---------- 09-05 00:00回 追加分 ----------
+  { id:"2026-09-04-wanko-miura-03", date:"2026-09-04", area:"wanko-miura", spot:"久比里（横須賀市）やまてん丸", spotType:"沖-釣り船",
+    method:"アマダイ釣り（剣崎沖）", species:["アマダイ"], result:"アマダイ25〜40cm 1〜9匹（トップ9尾、オデコなし）。外道にオニカサゴ・アラ・キダイ等（対象魚種外は除外）",
+    tideName:"小潮", waterTempC:27.2, waterTempSource:"ちょうあり やまてん丸釣果", weather:"雨時々止む", windMS:3.2, windDir:"北北東", airTempC:27,
+    nearby:{ obs:"Open-Meteo（剣崎沖）", waterTempC:27.9, weather:"雨", windMS:6.26, windDir:"北北東", waveM:0.88, airTempC:27.4, time:"2026-09-04" },
+    sourceName:"ちょうあり やまてん丸釣果", sourceUrl:"https://www.chowari.jp/ship/00290/catch/", note:"" },
+  { id:"2026-09-04-wanko-miura-04", date:"2026-09-04", area:"wanko-miura", spot:"久比里（横須賀市）巳之助丸", spotType:"沖-釣り船",
+    method:"LTアジ・カワハギ", species:["アジ","カワハギ"], result:"アジ17〜40cm 17〜85匹（鴨居〜観音沖）、カワハギ18〜28cm 9〜15匹（鴨居沖）",
+    tideName:"小潮", waterTempC:null, waterTempSource:"", weather:"雨時々止む", windMS:null, windDir:"", airTempC:null,
+    nearby:{ obs:"Open-Meteo（東京湾口・走水〜観音崎沖）", waterTempC:27.2, weather:"雨", windMS:6.02, windDir:"北", waveM:0.48, airTempC:26.5, time:"2026-09-04" },
+    sourceName:"ちょうあり 巳之助丸釣果", sourceUrl:"https://www.chowari.jp/ship/00288/catch/", note:"" },
+  { id:"2026-09-04-sagami-04", date:"2026-09-04", area:"sagami", spot:"相模湾（小田原・早川沖）石田丸", spotType:"沖-釣り船",
+    method:"コマセ五目（ビシ仕掛け）", species:["マダイ","アジ"], result:"真鯛59cm 2.5kg 1匹、大アジ40cm前後9匹。富士山根（富士山オレンジブイ付近）で釣行",
+    waterTempC:null, waterTempSource:"", weather:"", windMS:null, windDir:"", airTempC:null,
+    nearby:{ obs:"Open-Meteo（相模湾中央）", waterTempC:27.1, weather:"雨", windMS:4.66, windDir:"北", waveM:0.66, airTempC:26.3, time:"2026-09-04" },
+    sourceName:"石田丸 釣果ブログ", sourceUrl:"https://www.ishidamaru.com/?post_type=fishing&paged=1", note:"" },
+
   // ---------- 09-04 18:00回 追加分 ----------
   { id:"2026-09-04-wanko-miura-02", date:"2026-09-04", area:"wanko-miura", spot:"走水港（横須賀市）政信丸", spotType:"沖-釣り船",
     method:"LTタチウオ・アジ船", species:["タチウオ","アジ"], result:"タチウオ60〜105cm 4〜15匹、アジ23〜30cm 4〜18匹",
