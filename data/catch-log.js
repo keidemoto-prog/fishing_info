@@ -8,11 +8,43 @@
  *   { obs:"観測地点名", waterTempC, weather, windMS, windDir, waveM, airTempC, time:"YYYY-MM-DD" }
  */
 window.CATCH_LOG_META = {
-  lastUpdated: "2026-09-04 06:00",
-  lastRunNote: "3件追加（東京湾口三浦1・湾口内房1・相模湾1）"
+  lastUpdated: "2026-09-04 12:00",
+  lastRunNote: "6件追加（相模湾3・東京湾口三浦2・駿河湾1）"
 };
 
 window.CATCH_LOG = [
+  // ---------- 09-04 12:00回 追加分 ----------
+  { id:"2026-09-04-sagami-01", date:"2026-09-04", area:"sagami", spot:"片瀬漁港（藤沢市）島きち丸", spotType:"沖-釣り船",
+    method:"LTルアー船（五目）", species:["カマス","イナダ","アジ","カンパチ","カサゴ","サバ"], result:"カマス21〜27cm 5〜15匹、イナダ30〜40cm 0〜10匹。ほか豆アジ・カンパチ・カサゴ・サバも混獲（ホウボウは対象魚種外のため除外）",
+    tideName:"小潮", waterTempC:null, waterTempSource:"", weather:"", windMS:null, windDir:"", airTempC:null,
+    nearby:{ obs:"Open-Meteo（相模湾中央）", waterTempC:27.1, weather:"弱い雨", windMS:3.81, windDir:"北", waveM:0.66, airTempC:26.3, time:"2026-09-04" },
+    sourceName:"ちょうあり 島きち丸釣果", sourceUrl:"https://www.chowari.jp/ship/00701/catch/", note:"" },
+  { id:"2026-09-04-sagami-02", date:"2026-09-04", area:"sagami", spot:"西湘エリア堤防（小田原）", spotType:"堤防",
+    method:"エギング", species:["アオリイカ"], result:"アオリイカ950g 1匹",
+    waterTempC:null, waterTempSource:"", weather:"", windMS:null, windDir:"", airTempC:null,
+    nearby:{ obs:"Open-Meteo（西湘）", waterTempC:27.1, weather:"弱い雨", windMS:2.62, windDir:"北東", waveM:0.66, airTempC:26.2, time:"2026-09-04" },
+    sourceName:"かめや釣具 西湘釣果情報", sourceUrl:"https://kameya-choka.com/kanto-tokai/archives/f-info/543015", note:"" },
+  { id:"2026-09-04-wanko-miura-01", date:"2026-09-04", area:"wanko-miura", spot:"金田湾（三浦市南下浦町）中根ボート", spotType:"沖-ボート",
+    method:"レンタルボート釣り（アジ）", species:["アジ"], result:"村上さん大アジ約15匹、金子さん40cm前後10匹前後、ほか複数人がアジ釣果",
+    waterTempC:null, waterTempSource:"", weather:"", windMS:null, windDir:"", airTempC:null,
+    nearby:{ obs:"Open-Meteo（東京湾口・三浦）", waterTempC:27.3, weather:"霧雨", windMS:5.50, windDir:"北東", waveM:0.72, airTempC:27.2, time:"2026-09-04" },
+    sourceName:"中根ボート ブログ", sourceUrl:"https://ameblo.jp/nakane-boat/entry-12976489397.html", note:"" },
+  { id:"2026-09-03-sagami-06", date:"2026-09-03", area:"sagami", spot:"片瀬漁港（藤沢市）島きち丸", spotType:"沖-釣り船",
+    method:"LTルアー船（五目）", species:["イナダ"], result:"イナダ37〜43cm 0〜5匹（スマガツオ・ハタ類は対象魚種外のため除外）",
+    tideName:"小潮", waterTempC:null, waterTempSource:"", weather:"", windMS:null, windDir:"", airTempC:null,
+    nearby:{ obs:"Open-Meteo（相模湾中央）", waterTempC:27.6, weather:"霧雨", windMS:5.68, windDir:"南西", waveM:0.66, airTempC:29.0, time:"2026-09-03" },
+    sourceName:"ちょうあり 島きち丸釣果", sourceUrl:"https://www.chowari.jp/ship/00701/catch/", note:"" },
+  { id:"2026-09-03-wanko-miura-04", date:"2026-09-03", area:"wanko-miura", spot:"金田湾（三浦市南下浦町）中根ボート", spotType:"沖-ボート",
+    method:"レンタルボート釣り（マダイ・アジ）", species:["マダイ","アジ"], result:"小松さんマダイ・アジ（30cm前後）、中島さんマダイ（水深17m）、柳川さんアジ",
+    waterTempC:null, waterTempSource:"", weather:"", windMS:null, windDir:"", airTempC:null,
+    nearby:{ obs:"Open-Meteo（東京湾口・三浦）", waterTempC:27.4, weather:"霧雨", windMS:7.87, windDir:"南", waveM:0.62, airTempC:28.5, time:"2026-09-03" },
+    sourceName:"中根ボート ブログ", sourceUrl:"https://ameblo.jp/nakane-boat/entry-12977663951.html", note:"" },
+  { id:"2026-09-03-suruga-01", date:"2026-09-03", area:"suruga", spot:"焼津市海岸", spotType:"砂浜",
+    method:"ショアジギング（タチウオ狙い）", species:["タチウオ"], result:"タチウオ指2.5〜3本幅 5本。3:30〜6:30、明け方の青物狙いは潮動かず不発",
+    waterTempC:null, waterTempSource:"", weather:"", windMS:null, windDir:"", airTempC:null,
+    nearby:{ obs:"Open-Meteo（焼津沖）", waterTempC:28.0, weather:"霧雨", windMS:3.35, windDir:"北西", waveM:0.84, airTempC:28.5, time:"2026-09-03" },
+    sourceName:"イシグロ 焼津サーフ釣果", sourceUrl:"https://www.ishiguro-gr.com/enjoy/fishing/detail.php?id=49586", note:"" },
+
   // ---------- 09-04 06:00回 追加分 ----------
   { id:"2026-09-03-wanko-miura-03", date:"2026-09-03", area:"wanko-miura", spot:"三浦海岸（三浦市南下浦町）", spotType:"堤防",
     method:"エサ釣り（五目）", species:["マダイ","アジ","カワハギ"], result:"マダイ45cm、アジ42cm 3匹、カワハギ25cm 3匹（イトヨリは対象魚種外のため除外）。潮濁り気味でルアーの青物は渋かった",
