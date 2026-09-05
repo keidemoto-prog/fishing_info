@@ -8,11 +8,28 @@
  *   { obs:"観測地点名", waterTempC, weather, windMS, windDir, waveM, airTempC, time:"YYYY-MM-DD" }
  */
 window.CATCH_LOG_META = {
-  lastUpdated: "2026-09-05 06:00",
-  lastRunNote: "4件追加（東京湾奥2・東京湾口三浦1・駿河湾1）"
+  lastUpdated: "2026-09-05 12:00",
+  lastRunNote: "3件追加（相模湾2・東京湾口房総1）"
 };
 
 window.CATCH_LOG = [
+  // ---------- 09-05 12:00回 追加分 ----------
+  { id:"2026-09-04-sagami-05", date:"2026-09-04", area:"sagami", spot:"腰越漁港（鎌倉市）孝太郎丸", spotType:"沖-釣り船",
+    method:"コマセ五目（マダイ船）", species:["マダイ","イナダ","ソウダガツオ"], result:"マダイ0.40〜2.20kg 0〜5匹（トップ2名）。外道にイナダ・ソウダガツオも（イトヨリ・クロダイ・ハナダイは対象魚種外のため除外）",
+    tideName:"小潮", waterTempC:26.6, waterTempSource:"ちょうあり 孝太郎丸釣果", weather:"雨時々止む", windMS:2.1, windDir:"北", airTempC:27,
+    nearby:{ obs:"Open-Meteo（相模湾中央）", waterTempC:27.1, weather:"雨", windMS:4.66, windDir:"北", waveM:0.66, airTempC:26.3, time:"2026-09-04" },
+    sourceName:"ちょうあり 孝太郎丸釣果", sourceUrl:"https://www.chowari.jp/ship/00707/catch/", note:"" },
+  { id:"2026-09-04-sagami-06", date:"2026-09-04", area:"sagami", spot:"腰越漁港（鎌倉市）池田丸", spotType:"沖-釣り船",
+    method:"五目釣り", species:["マダイ","イナダ","アジ"], result:"マダイ0.30〜1.00kg 0〜3匹、イナダ30〜45cm 0〜7匹、アジ22〜35cm 2〜10匹（イトヨリ・イサキも混じるが対象魚種外のため除外）",
+    tideName:"小潮", waterTempC:26.6, waterTempSource:"ちょうあり 池田丸釣果", weather:"雨時々止む", windMS:2.1, windDir:"北", airTempC:27,
+    nearby:{ obs:"Open-Meteo（相模湾中央）", waterTempC:27.1, weather:"雨", windMS:4.66, windDir:"北", waveM:0.66, airTempC:26.3, time:"2026-09-04" },
+    sourceName:"ちょうあり 池田丸釣果", sourceUrl:"https://www.chowari.jp/ship/00297/catch/", note:"" },
+  { id:"2026-09-04-wanko-boso-01", date:"2026-09-04", area:"wanko-boso", spot:"竹岡港（千葉県富津市）豊国丸", spotType:"沖-釣り船",
+    method:"シャクリ五目", species:["マダイ","カワハギ","カサゴ"], result:"マダイ5匹（最大2.35kg、2.20kg）、カワハギ・カサゴも（ホウボウは対象魚種外のため除外）。前半流れ良く型出るも後半下げ潮流れず",
+    tideName:"小潮", waterTempC:27.2, waterTempSource:"ちょうあり 豊国丸釣果", weather:"曇りのち一時雨", windMS:2.2, windDir:"北北東", airTempC:30,
+    nearby:{ obs:"Open-Meteo（内房・竹岡沖）", waterTempC:27.6, weather:"雨", windMS:5.87, windDir:"北北東", waveM:0.8, airTempC:26.5, time:"2026-09-04" },
+    sourceName:"ちょうあり 豊国丸釣果", sourceUrl:"https://www.chowari.jp/ship/01209/catch/", note:"" },
+
   // ---------- 09-05 06:00回 追加分 ----------
   { id:"2026-09-04-wanko-miura-05", date:"2026-09-04", area:"wanko-miura", spot:"久比里（横須賀市）山下丸", spotType:"沖-釣り船",
     method:"カワハギ釣り", species:["カワハギ"], result:"カワハギ18〜29cm 5〜15匹",
