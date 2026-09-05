@@ -135,11 +135,32 @@
  *   { obs:"観測地点名", waterTempC, weather, windMS, windDir, waveM, airTempC, time:"YYYY-MM-DD" }
  */
 window.CATCH_LOG_META = {
-  lastUpdated: "2026-09-06 00:00",
-  lastRunNote: "4件追加（東京湾奥1・相模湾2・東京湾口房総1）"
+  lastUpdated: "2026-09-06 06:00",
+  lastRunNote: "4件追加（東京湾奥1・東京湾口三浦2・駿河湾1）"
 };
 
 window.CATCH_LOG = [
+  // ---------- 09-06 06:00回 追加分 ----------
+  { id:"2026-09-05-aoku-03", date:"2026-09-05", area:"aoku", spot:"金沢八景乙舳 村本海事", spotType:"沖-釣り船",
+    method:"タイラバ", species:["マダイ"], result:"マダイ0.70〜2.30kg 1〜2匹（船中7匹、6名全員マダイゲット）。外道にヒラメ・イサキも（対象魚種外のヒラメ以外は本文除外）",
+    tideName:"小潮", waterTempC:27.2, waterTempSource:"ちょうあり 村本海事釣果", weather:"曇り", windMS:3.3, windDir:"北東", airTempC:null,
+    nearby:{ obs:"Open-Meteo（東京湾奥）", waterTempC:26.7, weather:"雨", windMS:7.72, windDir:"北東", waveM:0.36, airTempC:25.6, time:"2026-09-05" },
+    sourceName:"ちょうあり 村本海事釣果", sourceUrl:"https://www.chowari.jp/ship/01580/catch/", note:"" },
+  { id:"2026-09-05-wanko-miura-04", date:"2026-09-05", area:"wanko-miura", spot:"久比里（横須賀市）山下丸", spotType:"沖-釣り船",
+    method:"アマダイ釣り", species:["アマダイ"], result:"アマダイ22〜32cm 0〜5匹。朝は薄濁り・微流れで低活性、日中に上向き",
+    tideName:"小潮", waterTempC:null, waterTempSource:"", weather:"", windMS:null, windDir:"", airTempC:null,
+    nearby:{ obs:"Open-Meteo（走水〜観音崎沖）", waterTempC:27.1, weather:"雨", windMS:7.71, windDir:"北東", waveM:0.56, airTempC:24.4, time:"2026-09-05" },
+    sourceName:"ちょうあり 山下丸釣果", sourceUrl:"https://www.chowari.jp/ship/00289/catch/", note:"" },
+  { id:"2026-09-05-wanko-miura-05", date:"2026-09-05", area:"wanko-miura", spot:"久比里（横須賀市）山下丸", spotType:"沖-釣り船",
+    method:"カワハギ釣り", species:["カワハギ"], result:"カワハギ17〜28cm 1〜14匹。小潮で潮動かず鴨居沖中心、活性低め",
+    tideName:"小潮", waterTempC:null, waterTempSource:"", weather:"", windMS:null, windDir:"", airTempC:null,
+    nearby:{ obs:"Open-Meteo（走水〜観音崎沖）", waterTempC:27.1, weather:"雨", windMS:7.71, windDir:"北東", waveM:0.56, airTempC:24.4, time:"2026-09-05" },
+    sourceName:"ちょうあり 山下丸釣果", sourceUrl:"https://www.chowari.jp/ship/00289/catch/", note:"" },
+  { id:"2026-09-05-suruga-01", date:"2026-09-05", area:"suruga", spot:"清水港", spotType:"沖-釣り船",
+    method:"エギング", species:["アオリイカ"], result:"アオリイカ100〜300g 3匹。港内各地で釣れ始め、潮通しの良いポイントが好調",
+    waterTempC:null, waterTempSource:"", weather:"", windMS:null, windDir:"", airTempC:null,
+    nearby:{ obs:"Open-Meteo（清水沖）", waterTempC:27.6, weather:"雨", windMS:7.88, windDir:"北東", waveM:1.16, airTempC:25.4, time:"2026-09-05" },
+    sourceName:"かめや釣具 清水店釣果", sourceUrl:"https://kameya-choka.com/kanto-tokai/archives/f-info/543305", note:"" },
   // ---------- 09-06 00:00回 追加分 ----------
   { id:"2026-09-05-aoku-02", date:"2026-09-05", area:"aoku", spot:"金沢八景平潟・柴漁港・金沢漁港（黒川丸・三喜丸・黒一丸）", spotType:"沖-釣り船",
     method:"タチウオ釣り（テンヤ／天秤）", species:["タチウオ"], result:"黒川丸65〜110cm 4〜13匹／三喜丸70〜115cm 9〜19匹／黒一丸60〜124cm 0〜10匹（午前0〜3匹・午後0〜10匹、船により差）",

@@ -8,3 +8,8 @@
 - 謇矩・縺ｮ縺ｨ縺翫ｊ縲∝腰菴滴TML・・tsuriha_all-in-one.html`/`dist/artifact.html`・峨・蜀咲函謌舌→ git commit/push 縺ｯ縺薙・蠕・`run-collect.ps1` 縺瑚・蜍輔〒陦後≧縺溘ａ縲√％縺薙〒縺ｯ陦後▲縺ｦ縺・∪縺帙ｓ縲・
 build-single: all-in-one 99958 chars / docs/index.html 99958 / dist/artifact.html 99799
 === 2026-09-06 00:05 end (claude exit 0) ===
+
+=== 2026-09-06 06:00 start ===
+All steps from 蜿朱寔謇矩・md are done: added 4 new deduplicated records (aoku 1, wanko-miura 2, suruga 1) to `data/catch-log.js`, updated `CATCH_LOG_META`, logged the run in `logs/2026-09-06.md`, and verified the JS parses correctly. Per step 9, I'm stopping here 窶・HTML rebuild and git commit/push are handled by `run-collect.ps1` after this.
+build-single: all-in-one 102203 chars / docs/index.html 102203 / dist/artifact.html 102044
+=== 2026-09-06 06:05 end (claude exit 0) ===
