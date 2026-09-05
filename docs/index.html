@@ -135,11 +135,47 @@
  *   { obs:"観測地点名", waterTempC, weather, windMS, windDir, waveM, airTempC, time:"YYYY-MM-DD" }
  */
 window.CATCH_LOG_META = {
-  lastUpdated: "2026-09-05 12:00",
-  lastRunNote: "3件追加（相模湾2・東京湾口房総1）"
+  lastUpdated: "2026-09-05 18:00",
+  lastRunNote: "7件追加（相模湾3・東京湾口三浦3・東京湾奥1）"
 };
 
 window.CATCH_LOG = [
+  // ---------- 09-05 18:00回 追加分 ----------
+  { id:"2026-09-05-sagami-01", date:"2026-09-05", area:"sagami", spot:"平塚新港 庄治郎丸", spotType:"沖-釣り船",
+    method:"五目釣り／シイラ狙い（2便）", species:["マダイ","イナダ","アジ","シイラ"], result:"第1便：マダイ0.85kg 1匹、イナダ37〜44cm 0〜6匹、アジ25〜35cm 0〜20匹（クロダイ・ホウボウ・イトヨリ等は対象魚種外のため除外）／第2便：シイラ31〜72cm 2〜4匹（ヒット76・キャッチ34）",
+    tideName:"小潮", waterTempC:27.5, waterTempSource:"ちょうあり 庄治郎丸釣果", weather:"曇り", windMS:3.0, windDir:"北東", airTempC:26,
+    nearby:{ obs:"Open-Meteo（相模湾中央）", waterTempC:27.0, weather:"雨", windMS:5.71, windDir:"北東", waveM:0.70, airTempC:24.7, time:"2026-09-05" },
+    sourceName:"ちょうあり 庄治郎丸釣果", sourceUrl:"https://www.chowari.jp/ship/01081/catch/", note:"" },
+  { id:"2026-09-05-sagami-02", date:"2026-09-05", area:"sagami", spot:"腰越漁港（鎌倉市）池田丸", spotType:"沖-釣り船",
+    method:"LT五目釣り", species:["アジ","イナダ","マダイ"], result:"アジ20〜41cm 1〜20匹、イナダ30〜38cm 0〜2匹、マダイ28〜35cm 0〜1匹（ハナダイ・アマダイ・イトヨリも交じり好調）",
+    tideName:"小潮", waterTempC:27.2, waterTempSource:"ちょうあり 池田丸釣果", weather:"曇り", windMS:3.0, windDir:"北東", airTempC:25,
+    nearby:{ obs:"Open-Meteo（相模湾中央）", waterTempC:27.0, weather:"雨", windMS:5.71, windDir:"北東", waveM:0.70, airTempC:24.7, time:"2026-09-05" },
+    sourceName:"ちょうあり 池田丸釣果", sourceUrl:"https://www.chowari.jp/ship/00297/catch/", note:"" },
+  { id:"2026-09-05-sagami-03", date:"2026-09-05", area:"sagami", spot:"真鶴港 誠いち丸", spotType:"沖-釣り船",
+    method:"コマセ五目", species:["マダイ","アジ","サバ"], result:"マダイ2.80〜3.20kg 0〜1匹。その他アジ・サバ・イトヨリも交じる（イトヨリは対象魚種外のため除外、アジ・サバは匹数記載なし）",
+    tideName:"小潮", waterTempC:27.5, waterTempSource:"ちょうあり 誠いち丸釣果", weather:"曇り", windMS:4.2, windDir:"東北東", airTempC:26,
+    nearby:{ obs:"Open-Meteo（西湘・真鶴沖）", waterTempC:26.9, weather:"雨", windMS:5.00, windDir:"北東", waveM:0.74, airTempC:24.5, time:"2026-09-05" },
+    sourceName:"ちょうあり 誠いち丸釣果", sourceUrl:"https://www.chowari.jp/ship/00873/catch/", note:"" },
+  { id:"2026-09-05-wanko-miura-01", date:"2026-09-05", area:"wanko-miura", spot:"松輪江奈漁港（三浦市）太郎八丸", spotType:"沖-釣り船",
+    method:"泳がせ・LTアジ", species:["アジ"], result:"朝は食い渋るも場所移動後に大型アジが継続ヒット。泳がせ狙いの客はブリの姿を確認との情報あり（水揚げ数は記載なし）",
+    tideName:"小潮", waterTempC:27.2, waterTempSource:"ちょうあり 太郎八丸釣果", weather:"曇り", windMS:5.4, windDir:"北東", airTempC:25,
+    nearby:{ obs:"Open-Meteo（剣崎沖）", waterTempC:27.9, weather:"雨", windMS:8.13, windDir:"北東", waveM:0.98, airTempC:24.6, time:"2026-09-05" },
+    sourceName:"ちょうあり 太郎八丸釣果", sourceUrl:"https://www.chowari.jp/ship/01379/catch/", note:"" },
+  { id:"2026-09-05-wanko-miura-02", date:"2026-09-05", area:"wanko-miura", spot:"浦賀港（横須賀市）みのる丸", spotType:"沖-釣り船",
+    method:"カサゴ釣り", species:["カサゴ"], result:"カサゴ12〜25cm 合計22匹（午前不調も午後好転、型良し）",
+    tideName:"小潮", waterTempC:27.9, waterTempSource:"ちょうあり みのる丸釣果", weather:"曇り", windMS:3.3, windDir:"北東", airTempC:25,
+    nearby:{ obs:"Open-Meteo（走水〜観音崎沖）", waterTempC:27.1, weather:"雨", windMS:7.71, windDir:"北東", waveM:0.56, airTempC:24.4, time:"2026-09-05" },
+    sourceName:"ちょうあり みのる丸釣果", sourceUrl:"https://www.chowari.jp/ship/00945/catch/", note:"" },
+  { id:"2026-09-05-wanko-miura-03", date:"2026-09-05", area:"wanko-miura", spot:"観音崎周辺 中根ボート", spotType:"沖-ボート",
+    method:"レンタルボート釣り", species:["マダイ","アジ"], result:"小松さんマダイ・アジ30cm前後、中島さんマダイ（水深17m）、柳川さんアジ（各客ごとの単発釣果、詳細匹数記載なし）",
+    waterTempC:null, waterTempSource:"", weather:"", windMS:null, windDir:"", airTempC:null,
+    nearby:{ obs:"Open-Meteo（走水〜観音崎沖）", waterTempC:27.1, weather:"雨", windMS:7.71, windDir:"北東", waveM:0.56, airTempC:24.4, time:"2026-09-05" },
+    sourceName:"中根ボート ブログ", sourceUrl:"https://ameblo.jp/nakane-boat/entry-12977663951.html", note:"投稿本文は日付明記なし。タイトルが翌6日の予報言及＋『本日の釣行』という文脈から09-05と推定" },
+  { id:"2026-09-05-aoku-01", date:"2026-09-05", area:"aoku", spot:"本牧漁港（横浜市）長崎屋", spotType:"沖-釣り船",
+    method:"シロギス釣り", species:["キス（シロギス）"], result:"キス（シロギス）13〜25cm 13〜131匹（トップ131匹）。良型中心にアタリ続き好調（副産物のマダコ・ホウボウ・アジ・マダイは対象魚種または匹数不明のため本文除外）",
+    tideName:"小潮", waterTempC:27.9, waterTempSource:"ちょうあり 長崎屋釣果", weather:"曇り", windMS:3.3, windDir:"北東", airTempC:25,
+    nearby:{ obs:"Open-Meteo（東京湾奥）", waterTempC:26.8, weather:"雨", windMS:7.89, windDir:"北東", waveM:0.38, airTempC:25.5, time:"2026-09-05" },
+    sourceName:"ちょうあり 長崎屋釣果", sourceUrl:"https://www.chowari.jp/ship/00154/catch/", note:"" },
   // ---------- 09-05 12:00回 追加分 ----------
   { id:"2026-09-04-sagami-05", date:"2026-09-04", area:"sagami", spot:"腰越漁港（鎌倉市）孝太郎丸", spotType:"沖-釣り船",
     method:"コマセ五目（マダイ船）", species:["マダイ","イナダ","ソウダガツオ"], result:"マダイ0.40〜2.20kg 0〜5匹（トップ2名）。外道にイナダ・ソウダガツオも（イトヨリ・クロダイ・ハナダイは対象魚種外のため除外）",
