@@ -135,11 +135,32 @@
  *   { obs:"観測地点名", waterTempC, weather, windMS, windDir, waveM, airTempC, time:"YYYY-MM-DD" }
  */
 window.CATCH_LOG_META = {
-  lastUpdated: "2026-09-05 18:00",
-  lastRunNote: "7件追加（相模湾3・東京湾口三浦3・東京湾奥1）"
+  lastUpdated: "2026-09-06 00:00",
+  lastRunNote: "4件追加（東京湾奥1・相模湾2・東京湾口房総1）"
 };
 
 window.CATCH_LOG = [
+  // ---------- 09-06 00:00回 追加分 ----------
+  { id:"2026-09-05-aoku-02", date:"2026-09-05", area:"aoku", spot:"金沢八景平潟・柴漁港・金沢漁港（黒川丸・三喜丸・黒一丸）", spotType:"沖-釣り船",
+    method:"タチウオ釣り（テンヤ／天秤）", species:["タチウオ"], result:"黒川丸65〜110cm 4〜13匹／三喜丸70〜115cm 9〜19匹／黒一丸60〜124cm 0〜10匹（午前0〜3匹・午後0〜10匹、船により差）",
+    waterTempC:null, waterTempSource:"", weather:"", windMS:null, windDir:"", airTempC:null,
+    nearby:{ obs:"Open-Meteo（東京湾奥）", waterTempC:26.7, weather:"雨", windMS:7.72, windDir:"北東", waveM:0.36, airTempC:25.6, time:"2026-09-05" },
+    sourceName:"ちょうあり 東京湾タチウオ釣果", sourceUrl:"https://www.chowari.jp/catcharea/?area=56&fish=316", note:"" },
+  { id:"2026-09-05-sagami-04", date:"2026-09-05", area:"sagami", spot:"福浦港（湯河原町）雅裕丸", spotType:"沖-釣り船",
+    method:"コマセ五目", species:["マダイ","アジ","サバ","アマダイ"], result:"マダイ最大2.00kg。アジ・サバ・アマダイも交じる（オキメバル・カンコ・イトヨリは対象魚種外のため除外、匹数記載なし）",
+    tideName:"小潮", waterTempC:null, waterTempSource:"", weather:"", windMS:null, windDir:"", airTempC:null,
+    nearby:{ obs:"Open-Meteo（相模湾中央）", waterTempC:26.8, weather:"雨", windMS:5.58, windDir:"北東", waveM:0.68, airTempC:24.7, time:"2026-09-05" },
+    sourceName:"ちょうあり 雅裕丸釣果", sourceUrl:"https://www.chowari.jp/ship/01194/", note:"" },
+  { id:"2026-09-05-sagami-05", date:"2026-09-05", area:"sagami", spot:"早川漁港（小田原市）光義丸・茅ヶ崎港（茅ヶ崎市）まごうの丸・長井漆山港（横須賀市）かねい丸・小坪漁港（逗子市）太郎丸", spotType:"沖-釣り船",
+    method:"カツオ釣り（コマセ）", species:["カツオ"], result:"光義丸は複数名アタリで数本（匹数記載なし）／まごうの丸2.60〜3.80kg 0〜3匹／かねい丸2.00〜3.00kg 0〜4匹（トップ4本）／太郎丸2.00〜3.40kg 0〜2匹",
+    waterTempC:null, waterTempSource:"", weather:"", windMS:null, windDir:"", airTempC:null,
+    nearby:{ obs:"Open-Meteo（相模湾中央）", waterTempC:26.8, weather:"雨", windMS:5.58, windDir:"北東", waveM:0.68, airTempC:24.7, time:"2026-09-05" },
+    sourceName:"ちょうあり 相模湾カツオ釣果", sourceUrl:"https://www.chowari.jp/catcharea/?area=92&fish=308", note:"" },
+  { id:"2026-09-05-wanko-boso-01", date:"2026-09-05", area:"wanko-boso", spot:"金谷沖10m（富津市）さえむ丸", spotType:"沖-釣り船",
+    method:"ビシアジ釣り", species:["アジ","イナダ","ヒラメ","キジハタ"], result:"マアジ20〜25cm 78〜204匹（トップ204匹は今季最高数）。外道にイナダ・ヒラメ・キジハタも交じる（数記載なし）",
+    waterTempC:null, waterTempSource:"", weather:"", windMS:null, windDir:"", airTempC:null,
+    nearby:{ obs:"Open-Meteo（金谷沖）", waterTempC:27.6, weather:"雨", windMS:6.31, windDir:"北東", waveM:0.88, airTempC:24.2, time:"2026-09-05" },
+    sourceName:"金谷港さえむ丸ブログ", sourceUrl:"https://saemumaru.hatenablog.com/", note:"" },
   // ---------- 09-05 18:00回 追加分 ----------
   { id:"2026-09-05-sagami-01", date:"2026-09-05", area:"sagami", spot:"平塚新港 庄治郎丸", spotType:"沖-釣り船",
     method:"五目釣り／シイラ狙い（2便）", species:["マダイ","イナダ","アジ","シイラ"], result:"第1便：マダイ0.85kg 1匹、イナダ37〜44cm 0〜6匹、アジ25〜35cm 0〜20匹（クロダイ・ホウボウ・イトヨリ等は対象魚種外のため除外）／第2便：シイラ31〜72cm 2〜4匹（ヒット76・キャッチ34）",
