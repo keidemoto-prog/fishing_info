@@ -23,3 +23,14 @@ build-single: all-in-one 102203 chars / docs/index.html 102203 / dist/artifact.h
 `data/catch-log.js` 縺ｯ124莉ｶ繝ｻ驥崎､・↑縺励〒讒区枚讀懆ｨｼ貂医∩縲～CATCH_LOG_META` 譖ｴ譁ｰ貂医∩縲～logs/2026-09-06.md` 縺ｫ隕九◆URL縺ｨ謗｡蜷ｦ繧定ｨ倬鹸縺励∪縺励◆縲よ焔鬆・・9逡ｪ縺ｮ縺ｨ縺翫ｊ縲∝腰菴滴TML・・tsuriha_all-in-one.html`/`dist/artifact.html`・峨・蜀咲函謌舌→ git commit/push 縺ｯ縺薙・蠕・`run-collect.ps1` 縺瑚・蜍輔〒陦後≧縺溘ａ縲√％縺薙〒縺ｯ陦後▲縺ｦ縺・∪縺帙ｓ縲・
 build-single: all-in-one 105696 chars / docs/index.html 105696 / dist/artifact.html 105537
 === 2026-09-06 12:06 end (claude exit 0) ===
+
+=== 2026-09-06 18:00 start ===
+Only the intended files (`data/catch-log.js` and `logs/2026-09-06.md`) were touched, plus `run-2026-09-06.log` which is written by the wrapper script itself 窶・not by me.
+
+Summary of this 18:00 collection run:
+- Added **8 new records** to `data/catch-log.js` (譚ｱ莠ｬ貉ｾ螂･1繝ｻ逶ｸ讓｡貉ｾ3繝ｻ譚ｱ莠ｬ貉ｾ蜿｣荳画ｵｦ4): 蠎・ｲｻ驛惹ｸｸ縺ｮ3繧ｳ繝ｼ繧ｹ蛻・09-06)縲∵・驫荳ｸ(09-06)縲∝柱蠖ｦ荳ｸ(09-05縲∝燕蝗槭・譌･莉倅ｸ肴・迸ｭ縺ｧ隕矩√▲縺ｦ縺・◆縺悟・遒ｺ隱阪〒謗｡逕ｨ)縲ヾSM豬ｦ雉2莉ｶ(09-05)縲？IT荳画ｵｦ豬ｷ蟯ｸ(09-05)
+- 驥鷹㍾荳ｸ(驥醍伐貍∵ｸｯ)縺ｯWebSearch隕∫ｴ・〒繝偵ャ繝医＠縺溘′蜈ｬ蠑上し繧､繝育峩謗･遒ｺ隱阪〒陬丈ｻ倥￠縺悟叙繧後★荳肴治逕ｨ縺ｨ縺励◆
+- JS讒区枚讀懆ｨｼ貂医∩(132莉ｶ縲・㍾隍・↑縺・縲～logs/2026-09-06.md`縺ｫ隧ｳ邏ｰ繝ｭ繧ｰ繧定ｿｽ險俶ｸ医∩
+- 謇矩・←縺翫ｊ縲∝腰菴滴TML蜀咲函謌舌→git commit/push縺ｯ縺薙・蠕形run-collect.ps1`縺瑚・蜍輔〒陦後≧縺溘ａ縺薙％縺ｧ縺ｯ螳滓命縺励※縺・∪縺帙ｓ縲・
+build-single: all-in-one 110196 chars / docs/index.html 110196 / dist/artifact.html 110037
+=== 2026-09-06 18:06 end (claude exit 0) ===
