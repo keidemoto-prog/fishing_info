@@ -13,3 +13,13 @@ build-single: all-in-one 99958 chars / docs/index.html 99958 / dist/artifact.htm
 All steps from 蜿朱寔謇矩・md are done: added 4 new deduplicated records (aoku 1, wanko-miura 2, suruga 1) to `data/catch-log.js`, updated `CATCH_LOG_META`, logged the run in `logs/2026-09-06.md`, and verified the JS parses correctly. Per step 9, I'm stopping here 窶・HTML rebuild and git commit/push are handled by `run-collect.ps1` after this.
 build-single: all-in-one 102203 chars / docs/index.html 102203 / dist/artifact.html 102044
 === 2026-09-06 06:05 end (claude exit 0) ===
+
+=== 2026-09-06 12:00 start ===
+謇矩・←縺翫ｊ縺ｫ螳御ｺ・＠縺ｾ縺励◆縲・
+**莉雁屓・・9-06 12:00蝗橸ｼ峨・邨先棡・・莉ｶ霑ｽ蜉**・域擲莠ｬ貉ｾ蜿｣荳画ｵｦ2繝ｻ譚ｱ莠ｬ貉ｾ蜿｣謌ｿ邱・繝ｻ逶ｸ讓｡貉ｾ3・・- 豁｣豬ｷ荳ｸ・井ｸ画ｵｦ蟶ょ殴蟠弱・譚ｾ霈ｪ・・ 09-06 繝ｯ繝ｩ繧ｵ/繝槭ム繧､/繧､繝翫ム縲・9-05 繝ｯ繝ｩ繧ｵ/繝槭ム繧､
+- 雎雁嵜荳ｸ・育ｫｹ蟯｡貂ｯ・・ 09-05 繝槭ム繧､/繝悶Μ/繧ｫ繧ｵ繧ｴ
+- 縺｡縺後＆縺堺ｸｸ・郁桁繝ｶ蟠取ｸｯ・・ 09-05 繝槭ム繧､/繝ｯ繝ｩ繧ｵ・医ち繧､莠皮岼萓ｿ・峨√い繝槭ム繧､・医い繝槭ム繧､萓ｿ・・- 縺､縺ｭ荳ｸ・井ｽ仙ｳｶ貂ｯ・・ 09-05 繝槭ム繧､/繧｢繧ｸ/繧ｽ繧ｦ繝繧ｬ繝・が
+
+`data/catch-log.js` 縺ｯ124莉ｶ繝ｻ驥崎､・↑縺励〒讒区枚讀懆ｨｼ貂医∩縲～CATCH_LOG_META` 譖ｴ譁ｰ貂医∩縲～logs/2026-09-06.md` 縺ｫ隕九◆URL縺ｨ謗｡蜷ｦ繧定ｨ倬鹸縺励∪縺励◆縲よ焔鬆・・9逡ｪ縺ｮ縺ｨ縺翫ｊ縲∝腰菴滴TML・・tsuriha_all-in-one.html`/`dist/artifact.html`・峨・蜀咲函謌舌→ git commit/push 縺ｯ縺薙・蠕・`run-collect.ps1` 縺瑚・蜍輔〒陦後≧縺溘ａ縲√％縺薙〒縺ｯ陦後▲縺ｦ縺・∪縺帙ｓ縲・
+build-single: all-in-one 105696 chars / docs/index.html 105696 / dist/artifact.html 105537
+=== 2026-09-06 12:06 end (claude exit 0) ===
