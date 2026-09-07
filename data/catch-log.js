@@ -8,11 +8,52 @@
  *   { obs:"観測地点名", waterTempC, weather, windMS, windDir, waveM, airTempC, time:"YYYY-MM-DD" }
  */
 window.CATCH_LOG_META = {
-  lastUpdated: "2026-09-07 12:00",
-  lastRunNote: "10件追加（東京湾奥3・東京湾口三浦2・東京湾口房総1・相模湾1・駿河湾3）"
+  lastUpdated: "2026-09-08 06:00",
+  lastRunNote: "8件追加（東京湾奥3・東京湾口三浦1・駿河湾4）"
 };
 
 window.CATCH_LOG = [
+  // ---------- 09-08 06:00回 追加分 ----------
+  { id:"2026-09-07-aoku-01", date:"2026-09-07", area:"aoku", spot:"本牧海づり施設", spotType:"釣り公園",
+    method:"サビキ・ウキ釣り等", species:["アジ","イワシ","コノシロ","タチウオ"], result:"アジ174尾14〜27cm、イワシ80尾12〜13cm、コノシロ46尾25〜28cm、タチウオ4尾80〜82cm",
+    tideName:"", waterTempC:25, waterTempSource:"横浜フィッシングピアーズ 本牧海づり施設釣果ページ本文", weather:"雨（午前）", windMS:null, windDir:"", airTempC:null,
+    nearby:{ obs:"Open-Meteo（東京湾奥・横浜沖）", waterTempC:25.9, weather:"強い雨", windMS:6.55, windDir:"北", waveM:1.44, airTempC:24.0, time:"2026-09-07" },
+    sourceName:"横浜フィッシングピアーズ 本牧海づり施設 釣果", sourceUrl:"https://www.fishing-v.jp/choka/choka_detail.php?s=11284&pageID=1", note:"" },
+  { id:"2026-09-07-aoku-02", date:"2026-09-07", area:"aoku", spot:"大黒海づり施設", spotType:"釣り公園",
+    method:"サビキ釣り", species:["アジ"], result:"アジ157尾16〜24cm",
+    tideName:"", waterTempC:25, waterTempSource:"横浜フィッシングピアーズ 大黒海づり施設釣果ページ本文", weather:"", windMS:null, windDir:"", airTempC:null,
+    nearby:{ obs:"Open-Meteo（東京湾奥・横浜沖）", waterTempC:25.9, weather:"強い雨", windMS:6.55, windDir:"北", waveM:1.44, airTempC:24.0, time:"2026-09-07" },
+    sourceName:"横浜フィッシングピアーズ 大黒海づり施設 釣果", sourceUrl:"https://www.fishing-v.jp/choka/choka_detail.php?s=11285&pageID=1", note:"" },
+  { id:"2026-09-07-aoku-03", date:"2026-09-07", area:"aoku", spot:"呑川（大田区東糀谷）", spotType:"河口",
+    method:"ルアー（チニング／ハードルアー、ガイドボート）", species:["マゴチ"], result:"マゴチ好調（バイト継続。チヌ・キビレも混じったが対象魚種外のため除外）",
+    tideName:"若潮", waterTempC:28.5, waterTempSource:"記事本文記載", weather:"曇り時々雨", windMS:2.0, windDir:"北北西", airTempC:27,
+    nearby:{ obs:"Open-Meteo（東京湾奥・横浜沖）", waterTempC:25.9, weather:"強い雨", windMS:6.55, windDir:"北", waveM:1.44, airTempC:24.0, time:"2026-09-07" },
+    sourceName:"釣割 ゴーゴーガイドサービス 釣果情報", sourceUrl:"https://www.chowari.jp/ship/01725/catch/", note:"" },
+  { id:"2026-09-07-wanko-miura-01", date:"2026-09-07", area:"wanko-miura", spot:"浦賀", spotType:"護岸",
+    method:"ライトゲーム（アジング中の外道）", species:["シーバス"], result:"ヒラスズキ30cm 1匹",
+    tideName:"", waterTempC:null, waterTempSource:"", weather:"", windMS:10.0, windDir:"南南西", airTempC:26.0,
+    nearby:{ obs:"Open-Meteo（東京湾口・浦賀沖）", waterTempC:26.0, weather:"強い雨", windMS:10.72, windDir:"北", waveM:1.36, airTempC:26.7, time:"2026-09-07" },
+    sourceName:"ANGLERS", sourceUrl:"https://anglers.jp/fishings/5502081", note:"アジ狙いの外道。気圧1004hPa" },
+  { id:"2026-09-07-suruga-02", date:"2026-09-07", area:"suruga", spot:"三保", spotType:"堤防",
+    method:"（方法記載なし）", species:["タチウオ"], result:"タチウオ（サイズ・数記載なし）",
+    tideName:"", waterTempC:null, waterTempSource:"", weather:"", windMS:null, windDir:"", airTempC:null,
+    nearby:{ obs:"Open-Meteo（清水・三保沖）", waterTempC:26.7, weather:"強い雨", windMS:6.86, windDir:"北東", waveM:1.84, airTempC:25.2, time:"2026-09-07" },
+    sourceName:"ANGLERS", sourceUrl:"https://anglers.jp/areas/167", note:"個別釣果パーマリンク不明のためエリア一覧ページを出典として使用" },
+  { id:"2026-09-08-suruga-01", date:"2026-09-08", area:"suruga", spot:"三保", spotType:"堤防",
+    method:"（方法記載なし）", species:["タチウオ"], result:"タチウオ（サイズ・数記載なし）",
+    tideName:"", waterTempC:null, waterTempSource:"", weather:"", windMS:null, windDir:"", airTempC:null,
+    nearby:{ obs:"Open-Meteo（清水・三保沖）", waterTempC:26.7, weather:"強い雨", windMS:3.30, windDir:"北東", waveM:1.74, airTempC:27.7, time:"2026-09-08" },
+    sourceName:"ANGLERS", sourceUrl:"https://anglers.jp/areas/167", note:"個別釣果パーマリンク不明のためエリア一覧ページを出典として使用" },
+  { id:"2026-09-08-suruga-02", date:"2026-09-08", area:"suruga", spot:"瀬戸川河口（焼津市）", spotType:"河口",
+    method:"（方法記載なし）", species:["シーバス"], result:"シーバス（サイズ・数記載なし）",
+    tideName:"", waterTempC:null, waterTempSource:"", weather:"", windMS:null, windDir:"", airTempC:null,
+    nearby:{ obs:"Open-Meteo（焼津沖）", waterTempC:27.1, weather:"強い雨", windMS:2.92, windDir:"北東", waveM:1.86, airTempC:27.6, time:"2026-09-08" },
+    sourceName:"ANGLERS", sourceUrl:"https://anglers.jp/areas/167", note:"個別釣果パーマリンク不明のためエリア一覧ページを出典として使用" },
+  { id:"2026-09-08-suruga-03", date:"2026-09-08", area:"suruga", spot:"沼津エリアの堤防", spotType:"堤防",
+    method:"エギング", species:["アオリイカ"], result:"1kgオーバー1杯＋小型数杯",
+    tideName:"", waterTempC:null, waterTempSource:"", weather:"", windMS:null, windDir:"", airTempC:null,
+    nearby:{ obs:"Open-Meteo（沼津沖）", waterTempC:26.8, weather:"雨", windMS:1.53, windDir:"北", waveM:1.40, airTempC:28.6, time:"2026-09-08" },
+    sourceName:"かめや釣具 関東・東海エリア釣果情報", sourceUrl:"https://kameya-choka.com/kanto-tokai/archives/f-info/543346", note:"" },
   // ---------- 09-07 12:00回 追加分 ----------
   { id:"2026-09-06-aoku-05", date:"2026-09-06", area:"aoku", spot:"本牧海づり施設", spotType:"釣り公園",
     method:"サビキ・ちょい投げ等", species:["アジ","カサゴ","キス","タチウオ"], result:"アジ174匹14〜27cm、カサゴ7匹15〜20.5cm、シロギス4匹15〜16cm、タチウオ4匹80〜82cm",
