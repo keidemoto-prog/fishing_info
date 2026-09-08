@@ -8,11 +8,28 @@
  *   { obs:"観測地点名", waterTempC, weather, windMS, windDir, waveM, airTempC, time:"YYYY-MM-DD" }
  */
 window.CATCH_LOG_META = {
-  lastUpdated: "2026-09-08 18:00",
-  lastRunNote: "3件追加（東京湾口三浦2・相模湾1）"
+  lastUpdated: "2026-09-09 00:00",
+  lastRunNote: "3件追加（東京湾奥1・駿河湾2）"
 };
 
 window.CATCH_LOG = [
+  // ---------- 09-09 00:00回 追加分 ----------
+  { id:"2026-09-08-aoku-01", date:"2026-09-08", area:"aoku", spot:"金沢漁港（横浜市金沢区）", spotType:"沖-釣り船",
+    method:"テンヤタチウオ船", species:["タチウオ","サワラ"], result:"太刀魚・サワラ（サイズ・数記載なし）",
+    tideName:"", waterTempC:null, waterTempSource:"", weather:"", windMS:null, windDir:"", airTempC:null,
+    nearby:{ obs:"Open-Meteo（東京湾奥・横浜沖）", waterTempC:25.8, weather:"弱い雨", windMS:4.05, windDir:"南", waveM:1.26, airTempC:30.0, time:"2026-09-08" },
+    sourceName:"忠彦丸（釣割）", sourceUrl:"https://www.chowari.jp/ship/00703/", note:"" },
+  { id:"2026-09-08-suruga-07", date:"2026-09-08", area:"suruga", spot:"三保", spotType:"護岸",
+    method:"ルアー釣り（青物のナブラ撃ち中に外道）", species:["スズキ"], result:"セイゴ（タイリクスズキ）20.0cm 1匹",
+    tideName:"", waterTempC:null, waterTempSource:"", weather:"", windMS:0.8, windDir:"南", airTempC:26.0,
+    nearby:{ obs:"Open-Meteo（清水・三保沖）", waterTempC:26.7, weather:"強い雨", windMS:3.30, windDir:"北東", waveM:1.74, airTempC:27.7, time:"2026-09-08" },
+    sourceName:"ANGLERS個人投稿", sourceUrl:"https://anglers.jp/fishings/5502971", note:"風向・気温は投稿内実測値" },
+  { id:"2026-09-08-suruga-08", date:"2026-09-08", area:"suruga", spot:"三保", spotType:"護岸",
+    method:"エギング", species:["アオリイカ"], result:"79cm 1杯／20cm 1杯（計2杯）",
+    tideName:"中潮", waterTempC:null, waterTempSource:"", weather:"", windMS:1.7, windDir:"南", airTempC:27.0,
+    nearby:{ obs:"Open-Meteo（清水・三保沖）", waterTempC:26.7, weather:"強い雨", windMS:3.30, windDir:"北東", waveM:1.74, airTempC:27.7, time:"2026-09-08" },
+    sourceName:"ANGLERS個人投稿", sourceUrl:"https://anglers.jp/fishings/5502641", note:"風向・気温は投稿内実測値" },
+
   // ---------- 09-08 18:00回 追加分 ----------
   { id:"2026-09-08-wanko-miura-01", date:"2026-09-08", area:"wanko-miura", spot:"鴨居沖", spotType:"沖-釣り船",
     method:"アジ五目（ビシアジ）", species:["アジ"], result:"21〜35cm 13〜23匹",
