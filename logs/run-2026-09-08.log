@@ -23,3 +23,12 @@ All steps of 蜿朱寔謇矩・md (1窶・) are complete for the 12:00 run. P
 **Summary:** 6 new catch records added (2 譚ｱ莠ｬ貉ｾ螂･ additional-species records at 譛ｬ迚ｧ/螟ｧ鮟・for 09-07, 4 鬧ｿ豐ｳ貉ｾ records at 荳我ｿ・遏ｳ豢･豬・for 09-07縲・9-08). 逶ｸ讓｡貉ｾ繝ｻ荳画ｵｦ繝ｻ謌ｿ邱・had zero new records 窶・heavy rain (螟ｧ髮ｨ隴ｦ蝣ｱ, 蜈ｨ闊ｹ莨題飴) suppressed fishing activity and site updates through 09-07/08. `data/catch-log.js` now has 187 records, syntax-validated, no ID or date+spot+species duplicates. META and `logs/2026-09-08.md` updated accordingly.
 build-single: all-in-one 122839 chars / docs/index.html 122839 / dist/artifact.html 122015
 === 2026-09-08 12:10 end (claude exit 0) ===
+
+=== 2026-09-08 18:00 start ===
+All steps of `蜿朱寔謇矩・md` (1窶・) are complete for the 18:00 run.
+
+**Summary:** Added 3 new catch records 窶・謌ｿ荳ｸ (Kamoi, wanko-miura) 繧｢繧ｸ, 螟ｧ譚ｾ荳ｸ (Matsuwa, wanko-miura) 繝ｯ繝ｩ繧ｵ, 豬ｷ蜉帑ｸｸ (Nagai, sagami) 繧ｷ繧､繝ｩ 窶・all dated 2026-09-08, all with `sourceUrl` and Open-Meteo/Kanagawa buoy `nearby` data (weak rain, south wind, ~26窶・7邃・water temp). `data/catch-log.js` now has 190 records, syntax-validated via node vm, no ID or date+spot+species duplicates. META updated (`lastUpdated: 2026-09-08 18:00`), and `logs/2026-09-08.md` has the 18:00-run details appended.
+
+Per step 9, I'm stopping here 窶・HTML rebuild (`tsuriha_all-in-one.html`/`dist/artifact.html`), git commit/push, and the Express artifact republish are handled automatically by `run-collect.ps1` after this session ends, not from this headless run.
+build-single: all-in-one 122839 chars / docs/index.html 122839 / dist/artifact.html 122015
+=== 2026-09-08 18:03 end (claude exit 0) ===

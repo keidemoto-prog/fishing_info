@@ -8,11 +8,27 @@
  *   { obs:"観測地点名", waterTempC, weather, windMS, windDir, waveM, airTempC, time:"YYYY-MM-DD" }
  */
 window.CATCH_LOG_META = {
-  lastUpdated: "2026-09-08 12:00",
-  lastRunNote: "6件追加（東京湾奥2・駿河湾4）"
+  lastUpdated: "2026-09-08 18:00",
+  lastRunNote: "3件追加（東京湾口三浦2・相模湾1）"
 };
 
 window.CATCH_LOG = [
+  // ---------- 09-08 18:00回 追加分 ----------
+  { id:"2026-09-08-wanko-miura-01", date:"2026-09-08", area:"wanko-miura", spot:"鴨居沖", spotType:"沖-釣り船",
+    method:"アジ五目（ビシアジ）", species:["アジ"], result:"21〜35cm 13〜23匹",
+    tideName:"", waterTempC:null, waterTempSource:"", weather:"", windMS:null, windDir:"", airTempC:null,
+    nearby:{ obs:"神奈川県水産技術センター（城ヶ島沖ブイ）水温／Open-Meteo（三浦沖）", waterTempC:26.15, weather:"弱い雨", windMS:10.3, windDir:"南", waveM:1.42, airTempC:28.7, time:"2026-09-08" },
+    sourceName:"房丸（釣割）", sourceUrl:"https://www.chowari.jp/ship/00690/", note:"" },
+  { id:"2026-09-08-sagami-01", date:"2026-09-08", area:"sagami", spot:"長井沖", spotType:"沖-釣り船",
+    method:"シイラ（トローリング）", species:["シイラ"], result:"60〜80cm 4〜6匹",
+    tideName:"", waterTempC:null, waterTempSource:"", weather:"", windMS:null, windDir:"", airTempC:null,
+    nearby:{ obs:"Open-Meteo（長井沖）", waterTempC:27.0, weather:"弱い雨", windMS:8.8, windDir:"南", waveM:1.46, airTempC:29.2, time:"2026-09-08" },
+    sourceName:"海力丸（釣割）", sourceUrl:"https://www.chowari.jp/ship/01470/", note:"" },
+  { id:"2026-09-08-wanko-miura-02", date:"2026-09-08", area:"wanko-miura", spot:"松輪沖", spotType:"沖-釣り船",
+    method:"ジギング／五目", species:["ワラサ"], result:"3〜4kg 船中0〜10本",
+    tideName:"", waterTempC:null, waterTempSource:"", weather:"", windMS:null, windDir:"", airTempC:null,
+    nearby:{ obs:"神奈川県水産技術センター（城ヶ島沖ブイ）水温／Open-Meteo（三浦沖）", waterTempC:26.15, weather:"弱い雨", windMS:10.3, windDir:"南", waveM:1.42, airTempC:28.7, time:"2026-09-08" },
+    sourceName:"大松丸（釣割）", sourceUrl:"https://www.chowari.jp/ship/00453/", note:"" },
   // ---------- 09-08 12:00回 追加分 ----------
   { id:"2026-09-07-aoku-04", date:"2026-09-07", area:"aoku", spot:"本牧海づり施設", spotType:"釣り公園",
     method:"サビキ釣り・ウキ釣り等", species:["カサゴ","サバ","メバル"], result:"カサゴ2匹15cm、サバ6匹26〜27cm、メバル1匹15cm（沖桟橋・渡桟橋・新護岸。同日のアジ・イワシ・コノシロ・タチウオは既ログのため除外）",
