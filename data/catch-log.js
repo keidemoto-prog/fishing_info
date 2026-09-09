@@ -8,11 +8,43 @@
  *   { obs:"観測地点名", waterTempC, weather, windMS, windDir, waveM, airTempC, time:"YYYY-MM-DD" }
  */
 window.CATCH_LOG_META = {
-  lastUpdated: "2026-09-09 18:00",
-  lastRunNote: "6件追加（東京湾奥1・東京湾口三浦2・相模湾1・駿河湾2）"
+  lastUpdated: "2026-09-10 00:00",
+  lastRunNote: "6件追加（東京湾奥2・東京湾口三浦1・房総1・駿河湾2）"
 };
 
 window.CATCH_LOG = [
+  // ---------- 09-10 00:00回 追加分 ----------
+  { id:"2026-09-09-aoku-01", date:"2026-09-09", area:"aoku", spot:"柴沖（横浜市金沢区・柴漁港発）", spotType:"沖-釣り船",
+    method:"ビシアジ（LT）", species:["アジ"], result:"マアジ 20〜44cm 20〜51匹。朝一は特大級、その後は中型が数釣れる。悪天候続きでひさびさの出船",
+    tideName:"中潮", waterTempC:27.4, waterTempSource:"はやぶさ丸 釣果ページ（実測）", weather:"曇り時々雨", windMS:null, windDir:"", airTempC:null,
+    nearby:{ obs:"Open-Meteo（柴沖・横浜金沢）", waterTempC:26.3, weather:"雨", windMS:10.94, windDir:"南", waveM:1.62, airTempC:29.3, time:"2026-09-09" },
+    sourceName:"はやぶさ丸（柴漁港）", sourceUrl:"https://www.chowari.jp/ship/01085/catch/", note:"" },
+  { id:"2026-09-09-aoku-02", date:"2026-09-09", area:"aoku", spot:"盤州干潟（木更津）", spotType:"砂浜",
+    method:"ルアー（シンペン→鉄板系を沈めて流す）", species:["マゴチ"], result:"マゴチ 47.0cm 1匹。小雨・ナブラの中でシーバスのバイトも。ウナギがルアーに絡むトラブルあり",
+    tideName:"中潮", waterTempC:null, waterTempSource:"", weather:"", windMS:4.7, windDir:"南西", airTempC:27.0,
+    nearby:{ obs:"Open-Meteo（盤州干潟）", waterTempC:26.6, weather:"雨", windMS:10.25, windDir:"南", waveM:1.26, airTempC:29.3, time:"2026-09-09" },
+    sourceName:"ANGLERS個人投稿", sourceUrl:"https://anglers.jp/fishings/5503878", note:"気温・風・気圧・潮名は投稿内実測値" },
+  { id:"2026-09-09-wanko-miura-06", date:"2026-09-09", area:"wanko-miura", spot:"城ヶ島", spotType:"地磯",
+    method:"エギング（エギ王K 3.0号）", species:["アオリイカ"], result:"アオリイカ 2杯（22:13・22:18にヒット）。雨の中でも反応良好",
+    tideName:"中潮", waterTempC:null, waterTempSource:"", weather:"", windMS:10.6, windDir:"北東", airTempC:22.0,
+    nearby:{ obs:"Open-Meteo（城ヶ島沖）", waterTempC:26.9, weather:"弱い雨", windMS:11.68, windDir:"南西", waveM:2.46, airTempC:29.1, time:"2026-09-09" },
+    sourceName:"ANGLERS個人投稿", sourceUrl:"https://anglers.jp/fishings/5504071", note:"気温・風・気圧・潮名は投稿内実測値" },
+  { id:"2026-09-09-wanko-boso-01", date:"2026-09-09", area:"wanko-boso", spot:"館山湾（沖ノ島周辺）", spotType:"護岸",
+    method:"カワハギ釣り", species:["カワハギ"], result:"カワハギ 1匹（14時頃）。13〜15時の短時間",
+    tideName:"中潮", waterTempC:null, waterTempSource:"", weather:"", windMS:11.9, windDir:"南西", airTempC:27.0,
+    nearby:{ obs:"Open-Meteo（館山湾）", waterTempC:27.0, weather:"雨", windMS:9.23, windDir:"南西", waveM:2.58, airTempC:29.0, time:"2026-09-09" },
+    sourceName:"ANGLERS個人投稿", sourceUrl:"https://anglers.jp/fishings/5503886", note:"気温・風・気圧・潮名は投稿内実測値。釣座は投稿に明記なし（館山湾カワハギの前例＝沖ノ島護岸に倣い護岸と判定）" },
+  { id:"2026-09-09-suruga-04", date:"2026-09-09", area:"suruga", spot:"瀬戸川河口（焼津市）", spotType:"河口",
+    method:"ルアー（ブローウィン125スリム）", species:["シーバス"], result:"シーバス 90.0cm 1本（自己記録更新）。雨の増水がプラスに働いた様子",
+    tideName:"中潮", waterTempC:null, waterTempSource:"", weather:"", windMS:1.1, windDir:"南西", airTempC:25.0,
+    nearby:{ obs:"Open-Meteo（瀬戸川河口沖）", waterTempC:27.2, weather:"強い雨", windMS:5.42, windDir:"南西", waveM:2.36, airTempC:29.9, time:"2026-09-09" },
+    sourceName:"ANGLERS個人投稿", sourceUrl:"https://anglers.jp/fishings/5504009", note:"気温・風・気圧・潮名は投稿内実測値。09-08-suruga-02（同河口のヒラメ）とは別日" },
+  { id:"2026-09-09-suruga-05", date:"2026-09-09", area:"suruga", spot:"石津浜", spotType:"砂浜",
+    method:"ショアジギング（メタルジグ）", species:["タチウオ"], result:"タチウオ 1匹（登録サイズ11cm＝指幅級の小型）。20:32の単発",
+    tideName:"中潮", waterTempC:null, waterTempSource:"", weather:"", windMS:1.1, windDir:"南西", airTempC:25.0,
+    nearby:{ obs:"Open-Meteo（石津浜沖）", waterTempC:27.2, weather:"強い雨", windMS:5.42, windDir:"南西", waveM:2.36, airTempC:29.8, time:"2026-09-09" },
+    sourceName:"ANGLERS個人投稿", sourceUrl:"https://anglers.jp/fishings/5503969", note:"気温・風・気圧・潮名は投稿内実測値。09-09-suruga-02（石津浜ショゴ）とは別種・別投稿" },
+
   // ---------- 09-09 18:00回 追加分 ----------
   { id:"2026-09-09-wanko-miura-04", date:"2026-09-09", area:"wanko-miura", spot:"観音崎〜走水沖", spotType:"沖-釣り船",
     method:"タチウオ テンヤ/テンビン", species:["タチウオ"], result:"教至丸（走水港）60〜127cm 4〜17匹、メーター級交じり。小川丸（大津港）でもテンヤ最大127cm・22匹頭。上げ潮が速まると食い渋り",
