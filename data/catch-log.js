@@ -8,11 +8,43 @@
  *   { obs:"観測地点名", waterTempC, weather, windMS, windDir, waveM, airTempC, time:"YYYY-MM-DD" }
  */
 window.CATCH_LOG_META = {
-  lastUpdated: "2026-09-09 12:00",
-  lastRunNote: "5件追加（東京湾口三浦3・東京湾奥1・駿河湾1）"
+  lastUpdated: "2026-09-09 18:00",
+  lastRunNote: "6件追加（東京湾奥1・東京湾口三浦2・相模湾1・駿河湾2）"
 };
 
 window.CATCH_LOG = [
+  // ---------- 09-09 18:00回 追加分 ----------
+  { id:"2026-09-09-wanko-miura-04", date:"2026-09-09", area:"wanko-miura", spot:"観音崎〜走水沖", spotType:"沖-釣り船",
+    method:"タチウオ テンヤ/テンビン", species:["タチウオ"], result:"教至丸（走水港）60〜127cm 4〜17匹、メーター級交じり。小川丸（大津港）でもテンヤ最大127cm・22匹頭。上げ潮が速まると食い渋り",
+    tideName:"中潮", waterTempC:27.4, waterTempSource:"教至丸・小川丸 釣果ページ（実測）", weather:"曇りのち一時雨", windMS:8.3, windDir:"南南西", airTempC:null,
+    nearby:{ obs:"Open-Meteo（観音崎沖）", waterTempC:26.5, weather:"弱い雨", windMS:9.84, windDir:"南南西", waveM:2.10, airTempC:28.9, time:"2026-09-09" },
+    sourceName:"教至丸（走水港）", sourceUrl:"https://www.chowari.jp/ship/00845/catch/", note:"同海域の小川丸（大津漁港）も同日タチウオ好調。2船ぶんをまとめた1レコード" },
+  { id:"2026-09-09-wanko-miura-05", date:"2026-09-09", area:"wanko-miura", spot:"大津沖", spotType:"沖-釣り船",
+    method:"ビシアジ（LT）", species:["アジ"], result:"マアジ 20〜37cm 7〜63匹（大津沖〜観音崎沖）",
+    tideName:"中潮", waterTempC:27.4, waterTempSource:"小川丸 釣果ページ（実測）", weather:"", windMS:null, windDir:"", airTempC:null,
+    nearby:{ obs:"Open-Meteo（観音崎沖）", waterTempC:26.5, weather:"弱い雨", windMS:9.84, windDir:"南南西", waveM:2.10, airTempC:28.9, time:"2026-09-09" },
+    sourceName:"小川丸（大津漁港）", sourceUrl:"https://www.chowari.jp/ship/00458/catch/", note:"" },
+  { id:"2026-09-09-suruga-02", date:"2026-09-09", area:"suruga", spot:"石津浜", spotType:"砂浜",
+    method:"ショアジギング", species:["ショゴ"], result:"ショゴ 30.0cm 2匹（寄せ際に1匹バラシ、大型のラインブレイクも）。平日でほぼ貸切、朝一の払い出しで反応",
+    tideName:"中潮", waterTempC:null, waterTempSource:"", weather:"", windMS:5.8, windDir:"南西", airTempC:26.0,
+    nearby:{ obs:"Open-Meteo（石津浜沖）", waterTempC:27.2, weather:"強い雨", windMS:6.82, windDir:"南西", waveM:2.06, airTempC:29.9, time:"2026-09-09" },
+    sourceName:"ANGLERS個人投稿", sourceUrl:"https://anglers.jp/fishings/5503539", note:"気温・風・気圧は投稿内実測値" },
+  { id:"2026-09-09-suruga-03", date:"2026-09-09", area:"suruga", spot:"内浦湾（沼津）", spotType:"護岸",
+    method:"ライトショアジギング（メタルジグ）", species:["アジ"], result:"アジ（表層カウント5秒で反応良、数の詳細記載なし）。夕マヅメ16:57〜17:25の短時間。オキエソ3匹も交じる",
+    tideName:"中潮", waterTempC:null, waterTempSource:"", weather:"", windMS:8.3, windDir:"南西", airTempC:27.0,
+    nearby:{ obs:"Open-Meteo（内浦湾）", waterTempC:26.8, weather:"強い雨", windMS:5.83, windDir:"南西", waveM:1.88, airTempC:29.0, time:"2026-09-09" },
+    sourceName:"ANGLERS個人投稿", sourceUrl:"https://anglers.jp/fishings/5503708", note:"気温・風・気圧・潮名は投稿内実測値" },
+  { id:"2026-09-09-sagami-01", date:"2026-09-09", area:"sagami", spot:"熱海港", spotType:"堤防",
+    method:"カゴ釣り", species:["ソウダガツオ"], result:"マルソウダ 複数（サイズ記載なし、隣の釣り人も2尾）。ウスバハギの餌取りが多い",
+    tideName:"中潮", waterTempC:null, waterTempSource:"", weather:"", windMS:6.1, windDir:"南西", airTempC:26.0,
+    nearby:{ obs:"Open-Meteo（熱海港沖）", waterTempC:26.9, weather:"雨", windMS:9.59, windDir:"南西", waveM:1.8, airTempC:29.4, time:"2026-09-09" },
+    sourceName:"ANGLERS個人投稿", sourceUrl:"https://anglers.jp/fishings/5503655", note:"気温・風・気圧・潮名は投稿内実測値。熱海は相模湾南西端（既ログの湯河原・真鶴に倣いsagami判定）" },
+  { id:"2026-09-08-aoku-03", date:"2026-09-08", area:"aoku", spot:"大黒海づり施設", spotType:"釣り公園",
+    method:"サビキ釣り・投げ釣り等", species:["アジ","カサゴ","カマス","サバ","キス（シロギス）","コノシロ","イワシ"], result:"マアジ138匹15〜23cm、カサゴ21匹16〜22cm、カマス7匹22〜25cm、サバ5匹25〜27cm、シロギス9匹16〜19cm、コノシロ10匹24〜27cm、カタクチイワシ3匹（サッパ228匹・クロダイ等は対象外）",
+    tideName:"", waterTempC:23.5, waterTempSource:"横浜フィッシングピアーズ 大黒海づり施設釣果ページ本文", weather:"", windMS:null, windDir:"", airTempC:null,
+    nearby:{ obs:"Open-Meteo（東京湾奥・大黒）", waterTempC:25.9, weather:"弱い雨", windMS:6.26, windDir:"南", waveM:0.92, airTempC:28.7, time:"2026-09-08" },
+    sourceName:"横浜フィッシングピアーズ 大黒海づり施設 釣果", sourceUrl:"https://www.fishing-v.jp/choka/choka_detail.php?s=11285&pageID=1", note:"09-07分（2026-09-07-aoku-02/05）とは別日。9/8は本牧海づり施設は施設点検で休業" },
+
   // ---------- 09-09 12:00回 追加分 ----------
   { id:"2026-09-09-wanko-miura-02", date:"2026-09-09", area:"wanko-miura", spot:"松輪沖", spotType:"沖-釣り船",
     method:"コマセ五目", species:["マダイ","ワラサ","イナダ"], result:"マダイ0.6〜1.4kg 0〜1匹、ワラサ3.0〜4.8kg 2〜9匹、イナダ1.0〜1.5kg 1〜4匹。時化模様の中の出船",
