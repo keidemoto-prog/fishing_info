@@ -8,11 +8,38 @@
  *   { obs:"観測地点名", waterTempC, weather, windMS, windDir, waveM, airTempC, time:"YYYY-MM-DD" }
  */
 window.CATCH_LOG_META = {
-  lastUpdated: "2026-09-09 06:00",
-  lastRunNote: "7件追加（東京湾口三浦2・相模湾2・駿河湾3）"
+  lastUpdated: "2026-09-09 12:00",
+  lastRunNote: "5件追加（東京湾口三浦3・東京湾奥1・駿河湾1）"
 };
 
 window.CATCH_LOG = [
+  // ---------- 09-09 12:00回 追加分 ----------
+  { id:"2026-09-09-wanko-miura-02", date:"2026-09-09", area:"wanko-miura", spot:"松輪沖", spotType:"沖-釣り船",
+    method:"コマセ五目", species:["マダイ","ワラサ","イナダ"], result:"マダイ0.6〜1.4kg 0〜1匹、ワラサ3.0〜4.8kg 2〜9匹、イナダ1.0〜1.5kg 1〜4匹。時化模様の中の出船",
+    tideName:"中潮", waterTempC:27.4, waterTempSource:"正海丸 釣果ページ（実測）", weather:"", windMS:null, windDir:"", airTempC:null,
+    nearby:{ obs:"Open-Meteo（剣崎沖）", waterTempC:26.9, weather:"強い雨", windMS:10.88, windDir:"南西", waveM:2.46, airTempC:29.1, time:"2026-09-09" },
+    sourceName:"正海丸（松輪江奈漁港）", sourceUrl:"https://www.chowari.jp/ship/01696/catch/", note:"" },
+  { id:"2026-09-09-wanko-miura-03", date:"2026-09-09", area:"wanko-miura", spot:"剣崎沖", spotType:"沖-釣り船",
+    method:"ワラサ船（コマセ）", species:["ワラサ"], result:"ワラサ 全員安打（ダブルヒット・やり取り中のバラシ多数、サイズ・数の詳細記載なし）。海況悪く船酔い者も",
+    tideName:"中潮", waterTempC:null, waterTempSource:"", weather:"", windMS:13.9, windDir:"南南西", airTempC:27.0,
+    nearby:{ obs:"Open-Meteo（剣崎沖）", waterTempC:26.9, weather:"強い雨", windMS:10.88, windDir:"南西", waveM:2.46, airTempC:29.1, time:"2026-09-09" },
+    sourceName:"松輪間口港 八兵衛丸（ANGLERS公式投稿）", sourceUrl:"https://anglers.jp/fishings/5503484", note:"風・気温・気圧・潮名は投稿内実測値。正海丸（松輪沖）のワラサと同一魚群の可能性" },
+  { id:"2026-09-09-wanko-miura-01", date:"2026-09-09", area:"wanko-miura", spot:"三浦海岸", spotType:"砂浜",
+    method:"岸釣り（ルアー）", species:["ソウダガツオ"], result:"ソウダガツオ 35.0cm 1尾",
+    tideName:"中潮", waterTempC:null, waterTempSource:"", weather:"", windMS:14.2, windDir:"南南西", airTempC:27.0,
+    nearby:{ obs:"Open-Meteo（三浦海岸沖）", waterTempC:26.5, weather:"雨", windMS:7.88, windDir:"南西", waveM:2.10, airTempC:29.3, time:"2026-09-09" },
+    sourceName:"ANGLERS個人投稿", sourceUrl:"https://anglers.jp/fishings/5503374", note:"風・気温・気圧・潮名は投稿内実測値" },
+  { id:"2026-09-09-suruga-01", date:"2026-09-09", area:"suruga", spot:"三保", spotType:"護岸",
+    method:"ショアキャスティング（トップウォーター）", species:["ショゴ"], result:"トップウォーターで1匹（サイズ・数の詳細記載なし）。ジグには反応薄く朝マヅメのトップのみ",
+    tideName:"中潮", waterTempC:null, waterTempSource:"", weather:"", windMS:3.6, windDir:"西南西", airTempC:26.0,
+    nearby:{ obs:"Open-Meteo（三保）", waterTempC:27.1, weather:"強い雨", windMS:8.51, windDir:"南", waveM:2.02, airTempC:29.8, time:"2026-09-09" },
+    sourceName:"ANGLERS個人投稿", sourceUrl:"https://anglers.jp/fishings/5503386", note:"風・気温・気圧・潮名は投稿内実測値" },
+  { id:"2026-09-08-aoku-02", date:"2026-09-08", area:"aoku", spot:"金沢八景沖", spotType:"沖-釣り船",
+    method:"タチウオ天秤/テンヤ", species:["タチウオ"], result:"65〜100cm 2〜21匹（弁天屋＝金沢八景瀬戸橋、米元釣船店＝金沢八景平潟。テンヤで115cm級も）",
+    tideName:"中潮", waterTempC:27.5, waterTempSource:"弁天屋・米元釣船店 釣果ページ（実測）", weather:"", windMS:null, windDir:"", airTempC:null,
+    nearby:{ obs:"Open-Meteo（金沢八景沖）", waterTempC:25.9, weather:"弱い雨", windMS:3.96, windDir:"南", waveM:1.30, airTempC:30.8, time:"2026-09-08" },
+    sourceName:"釣割 東京湾タチウオ釣果", sourceUrl:"https://www.chowari.jp/catcharea/?area=56&fish=316", note:"09-08-aoku-01（金沢漁港・忠彦丸）とは別港・別船。金沢八景の複数船ぶんをまとめた1レコード" },
+
   // ---------- 09-09 06:00回 追加分 ----------
   { id:"2026-09-08-wanko-miura-03", date:"2026-09-08", area:"wanko-miura", spot:"走水沖", spotType:"沖-釣り船",
     method:"タチウオ天秤/テンヤ", species:["タチウオ"], result:"テンビン仕掛け6〜38匹（最大110cm）、テンヤ仕掛け11〜29匹（最大129cm）。水深65mで朝一の食いが活発、1m超の特大サイズ多数",
