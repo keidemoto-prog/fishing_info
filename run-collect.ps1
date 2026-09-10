@@ -8,7 +8,15 @@ $claude  = "C:\Users\DEMOTO\.local\bin\claude.exe"
 $stamp   = Get-Date -Format "yyyy-MM-dd"
 $logFile = Join-Path $dir ("logs\run-{0}.log" -f $stamp)
 
+# This vault (and this script) is synced to 4 PCs via Dropbox, but only ONE machine must
+# actually collect + commit + push, or the pushes collide. Run only on the designated PC.
+$RUNNER_PC = "DESKTOP-DLBHAAC"   # 自宅PC. To move the job: change this + register the task there.
 New-Item -ItemType Directory -Force (Join-Path $dir "logs") | Out-Null
+if ($env:COMPUTERNAME -ne $RUNNER_PC) {
+    Add-Content -Encoding utf8 $logFile ("`r`n=== {0} skipped on {1} (runner = {2}) ===" -f (Get-Date -Format "yyyy-MM-dd HH:mm"), $env:COMPUTERNAME, $RUNNER_PC)
+    exit 0
+}
+
 Set-Location $dir
 Add-Content -Encoding utf8 $logFile ("`r`n=== {0} start ===" -f (Get-Date -Format "yyyy-MM-dd HH:mm"))
 
