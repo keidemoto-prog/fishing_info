@@ -135,11 +135,33 @@
  *   { obs:"観測地点名", waterTempC, weather, windMS, windDir, waveM, airTempC, time:"YYYY-MM-DD" }
  */
 window.CATCH_LOG_META = {
-  lastUpdated: "2026-09-11 00:00",
-  lastRunNote: "3件追加（東京湾口三浦1・相模湾1・駿河湾1）"
+  lastUpdated: "2026-09-11 06:00",
+  lastRunNote: "4件追加（東京湾奥2・東京湾口三浦1・駿河湾1）"
 };
 
 window.CATCH_LOG = [
+  // ---------- 09-11 06:00回 追加分 ----------
+  { id:"2026-09-11-suruga-01", date:"2026-09-11", area:"suruga", spot:"片浜海岸（沼津市）", spotType:"砂浜",
+    method:"ショアジギング／ルアー（メタルジグ）", species:["タチウオ","カマス","サバ"], result:"3:27前後の短時間でタチウオ13・カマス5・サバ1。開始1時間は不発、3時ごろからタチウオが連発。最後は良型（F4級）にラインを切られて終了",
+    tideName:"大潮", waterTempC:null, waterTempSource:"", weather:"雨", windMS:4.4, windDir:"東北東", airTempC:21.0,
+    nearby:{ obs:"Open-Meteo（片浜海岸沖）", waterTempC:25.6, weather:"強い雨", windMS:6.0, windDir:"東", waveM:0.56, airTempC:23.1, time:"2026-09-11" },
+    sourceName:"ANGLERS個人投稿（孤独なアングラーs）", sourceUrl:"https://anglers.jp/fishings/5505229", note:"気温・風・気圧(1018hPa)・潮名(月齢29.4)は投稿内実測値。同磯09-10のソウダ・ショゴ・カツオは 2026-09-10-suruga-01/02/03" },
+  { id:"2026-09-11-aoku-01", date:"2026-09-11", area:"aoku", spot:"根岸湾（横浜市磯子区）", spotType:"護岸",
+    method:"ルアー（ビームスティック 蛍光レモン）", species:["シーバス"], result:"02:09にシーバス32.0cm 1本。増水・濁り・流れゴミの中、大型のバイトを外したあとピックアップ寸前で乗った小型1本",
+    tideName:"大潮", waterTempC:null, waterTempSource:"", weather:"", windMS:2.8, windDir:"北東", airTempC:19.0,
+    nearby:{ obs:"Open-Meteo（根岸湾）", waterTempC:25.2, weather:"強い雨", windMS:3.1, windDir:"北", waveM:0.48, airTempC:20.8, time:"2026-09-11" },
+    sourceName:"ANGLERS個人投稿（ながー リターンアングラー）", sourceUrl:"https://anglers.jp/fishings/5505213", note:"気温・風・気圧(1020hPa)・潮名(月齢29.4)は投稿内実測値" },
+  { id:"2026-09-11-aoku-02", date:"2026-09-11", area:"aoku", spot:"平潟湾（横浜市金沢区）", spotType:"護岸",
+    method:"ルアー（ワーム シルバーウルフ アーバンクローラー2.5／MKリグ ボトムずる引き）", species:["マゴチ"], result:"03:03にマゴチ44.0cm 1匹。ボトムをずる引き・ノック・ポーズで早朝に1本",
+    tideName:"大潮", waterTempC:null, waterTempSource:"", weather:"", windMS:6.1, windDir:"北東", airTempC:21.0,
+    nearby:{ obs:"Open-Meteo（平潟湾）", waterTempC:25.3, weather:"強い雨", windMS:3.0, windDir:"北", waveM:0.48, airTempC:20.9, time:"2026-09-11" },
+    sourceName:"ANGLERS個人投稿（J502）", sourceUrl:"https://anglers.jp/fishings/5505227", note:"気温・風・気圧(1019hPa)・潮名(月齢29.4)は投稿内実測値" },
+  { id:"2026-09-10-wanko-miura-04", date:"2026-09-10", area:"wanko-miura", spot:"城ヶ島", spotType:"地磯",
+    method:"エギング（エギ王K LIVE 3.0号）", species:["アオリイカ"], result:"22:30〜23:50にアオリイカ1杯。雨の中を粘って本命ヒット",
+    tideName:"大潮", waterTempC:null, waterTempSource:"", weather:"", windMS:6.4, windDir:"北東", airTempC:20.0,
+    nearby:{ obs:"Open-Meteo（城ヶ島）", waterTempC:25.8, weather:"弱い雨", windMS:10.1, windDir:"北東", waveM:1.68, airTempC:22.8, time:"2026-09-10" },
+    sourceName:"ANGLERS個人投稿", sourceUrl:"https://anglers.jp/fishings/5505154", note:"気温・風・気圧(1020hPa)・潮名(月齢28.4)は投稿内実測値。前日09-09の城ヶ島アオリイカは 2026-09-09-wanko-miura-06" },
+
   // ---------- 09-11 00:00回 追加分 ----------
   { id:"2026-09-10-wanko-miura-03", date:"2026-09-10", area:"wanko-miura", spot:"松輪沖", spotType:"沖-釣り船",
     method:"LT五目（ライトタックル）", species:["マダイ","アジ"], result:"棒面丸（松輪江奈港）のLT五目船。6時出船、前半に時合。良型アジとカイワリが交じり、マダイもポツポツ。バラシもあり。実測水温27.3℃",
