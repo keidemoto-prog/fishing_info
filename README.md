@@ -64,12 +64,22 @@ https://keidemoto-prog.github.io/fishing_info/
 3. （任意）PCがスリープしていて時刻を逃したとき用に、タスクスケジューラのGUIで
    当該タスク → プロパティ → 設定 →「スケジュールされた時刻にタスクを開始できなかった場合、すぐにタスクを実行する」にチェック。
 
-登録内容の確認 / 手動実行 / 削除：
+登録内容の確認 / 手動実行 / 削除（PowerShell 推奨。cmd だと日本語タスク名が化けることがある）：
+```powershell
+Get-ScheduledTask     -TaskName "釣果ログ収集"
+Start-ScheduledTask   -TaskName "釣果ログ収集"
+Unregister-ScheduledTask -TaskName "釣果ログ収集" -Confirm:$false
 ```
-schtasks /Query /TN "釣果ログ収集" /V /FO LIST
-schtasks /Run   /TN "釣果ログ収集"
-schtasks /Delete /TN "釣果ログ収集" /F
-```
+
+### 実行するPCは1台だけ
+
+この vault は Dropbox で4台のPCに同期される。**このタスクを登録してよいのは自宅PC（`DESKTOP-DLBHAAC`）だけ**。
+2台以上で走ると git push がぶつかる。安全策として `run-collect.ps1` 冒頭に
+「`$env:COMPUTERNAME` が `DESKTOP-DLBHAAC` でなければ即終了（ログに `skipped` と残す）」ガードを入れてある。
+runner を別PCに移すときは `run-collect.ps1` の `$RUNNER_PC` を書き換え＋そのPCでタスク登録し、旧PCのタスクを削除する。
+
+**他の3台**で PowerShell を開き `Get-ScheduledTask -TaskName "釣果ログ収集"` → 出てきたら
+`Unregister-ScheduledTask -TaskName "釣果ログ収集" -Confirm:$false` で消す（ガードがあるので消し忘れても実害はないが、無駄に起動しないように）。
 
 ## 調整したいとき
 - 集める魚種・エリア・情報源 → `収集手順.md` を編集
