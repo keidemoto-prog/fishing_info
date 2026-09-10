@@ -8,11 +8,53 @@
  *   { obs:"観測地点名", waterTempC, weather, windMS, windDir, waveM, airTempC, time:"YYYY-MM-DD" }
  */
 window.CATCH_LOG_META = {
-  lastUpdated: "2026-09-10 00:00",
-  lastRunNote: "6件追加（東京湾奥2・東京湾口三浦1・房総1・駿河湾2）"
+  lastUpdated: "2026-09-10 06:00",
+  lastRunNote: "8件追加（東京湾奥4・相模湾2・駿河湾2）"
 };
 
 window.CATCH_LOG = [
+  // ---------- 09-10 06:00回 追加分 ----------
+  { id:"2026-09-10-suruga-01", date:"2026-09-10", area:"suruga", spot:"片浜海岸（沼津市）", spotType:"砂浜",
+    method:"ショアジギング（メタルジグ）", species:["ソウダガツオ","タチウオ"], result:"朝マヅメに鳥山でソウダガツオが爆釣。GENP＝ソウダ15＋タチウオ2（サイズアップ）、晴天ウッチー＝ソウダ1。数日ぶりの好天で回遊がまとまった",
+    tideName:"大潮", waterTempC:null, waterTempSource:"", weather:"", windMS:5.3, windDir:"東", airTempC:22.0,
+    nearby:{ obs:"Open-Meteo（片浜海岸沖）", waterTempC:26.6, weather:"弱い雨", windMS:3.59, windDir:"東", waveM:1.44, airTempC:24.0, time:"2026-09-10" },
+    sourceName:"ANGLERS個人投稿", sourceUrl:"https://anglers.jp/fishings/5504333", note:"同磯の複数投稿（5504224・5504402）をまとめた1レコード。気温・風・気圧・潮名は投稿内実測値" },
+  { id:"2026-09-10-suruga-02", date:"2026-09-10", area:"suruga", spot:"片浜海岸（沼津市）", spotType:"砂浜",
+    method:"ショアジギング（メタルジグ）", species:["ショゴ"], result:"ショゴ 37.0cm を2匹。鳥山のソウダ回遊に混じって。数日休養後の遠征",
+    tideName:"大潮", waterTempC:null, waterTempSource:"", weather:"", windMS:5.3, windDir:"東", airTempC:22.0,
+    nearby:{ obs:"Open-Meteo（片浜海岸沖）", waterTempC:26.6, weather:"弱い雨", windMS:3.59, windDir:"東", waveM:1.44, airTempC:24.0, time:"2026-09-10" },
+    sourceName:"ANGLERS個人投稿", sourceUrl:"https://anglers.jp/fishings/5504402", note:"気温・風・気圧・潮名は投稿内実測値。同磯の 2026-09-10-suruga-01（ソウダ・タチウオ）とは別投稿・別種" },
+  { id:"2026-09-10-aoku-01", date:"2026-09-10", area:"aoku", spot:"海辺つり公園（横浜市金沢区）", spotType:"釣り公園",
+    method:"ジグサビキ", species:["ショゴ"], result:"ショゴ 27.0cm。ジグサビキに2匹同時ヒット。悪天候の中の早朝釣行",
+    tideName:"大潮", waterTempC:null, waterTempSource:"", weather:"", windMS:10.0, windDir:"北東", airTempC:21.0,
+    nearby:{ obs:"Open-Meteo（海辺つり公園・金沢区）", waterTempC:26.3, weather:"弱い雨", windMS:5.25, windDir:"北", waveM:1.06, airTempC:22.2, time:"2026-09-10" },
+    sourceName:"ANGLERS個人投稿", sourceUrl:"https://anglers.jp/fishings/5504254", note:"気温・風・気圧・潮名は投稿内実測値" },
+  { id:"2026-09-10-aoku-02", date:"2026-09-10", area:"aoku", spot:"東京湾湾奥（千葉県側）", spotType:"護岸",
+    method:"ルアー（ナレージ65）", species:["スズキ"], result:"セイゴ（マルスズキ）52.0cm 1尾。場所移動後の一投目で",
+    tideName:"大潮", waterTempC:null, waterTempSource:"", weather:"", windMS:5.6, windDir:"北北東", airTempC:20.0,
+    nearby:{ obs:"Open-Meteo（東京湾奥・千葉）", waterTempC:26.3, weather:"霧雨", windMS:8.42, windDir:"北", waveM:0.48, airTempC:22.3, time:"2026-09-10" },
+    sourceName:"ANGLERS個人投稿", sourceUrl:"https://anglers.jp/fishings/5504412", note:"気温・風・気圧・潮名は投稿内実測値。セイゴ＝スズキ若魚として対象魚種「スズキ」で記録" },
+  { id:"2026-09-10-sagami-01", date:"2026-09-10", area:"sagami", spot:"国府津海岸（小田原市）", spotType:"砂浜",
+    method:"ルアー（ジャックアイ マキマキ40g）", species:["カマス"], result:"カマス 23〜26cm 5匹＋サバ1匹。5:40〜9:48。隣の釣り人はイナダも。同日ファィア氏も国府津でカマス",
+    tideName:"大潮", waterTempC:null, waterTempSource:"", weather:"", windMS:7.5, windDir:"北東", airTempC:21.0,
+    nearby:{ obs:"Open-Meteo（国府津海岸沖）", waterTempC:26.4, weather:"弱い雨", windMS:4.74, windDir:"北東", waveM:1.16, airTempC:22.3, time:"2026-09-10" },
+    sourceName:"ANGLERS個人投稿", sourceUrl:"https://anglers.jp/fishings/5504378", note:"気温・風・気圧・潮名は投稿内実測値。同投稿者の連投5件（5504378）＋ファィア氏（5504355）をまとめた" },
+  { id:"2026-09-09-aoku-03", date:"2026-09-09", area:"aoku", spot:"八幡橋沖（横浜市・磯子）", spotType:"沖-釣り船",
+    method:"コマセ真鯛", species:["マダイ"], result:"マダイ 0.5〜1.7kg 0〜3匹（クロダイも交じる）。雨と風でも反応良く、午後の潮止まりに群れに当たった",
+    tideName:"中潮", waterTempC:27.4, waterTempSource:"鴨下丸kawana 釣果ページ（実測）", weather:"曇り時々雨", windMS:8.3, windDir:"南南西", airTempC:null,
+    nearby:{ obs:"Open-Meteo（八幡橋沖）", waterTempC:26.3, weather:"雨", windMS:5.35, windDir:"南", waveM:1.58, airTempC:30.2, time:"2026-09-09" },
+    sourceName:"鴨下丸kawana（横浜市八幡橋）", sourceUrl:"https://www.chowari.jp/ship/01509/catch/", note:"船名にkawanaと付くが母港は横浜・磯子で漁場は東京湾内。天気・風・水温は釣果ページの実測値" },
+  { id:"2026-09-09-sagami-02", date:"2026-09-09", area:"sagami", spot:"小田原沖（小田原新港発）", spotType:"沖-釣り船",
+    method:"タイラバ／コマセ五目", species:["マダイ","イナダ","アマダイ","サバ","カサゴ","ソウダガツオ"], result:"マダイ30〜67cm 0〜3匹、イナダ35〜40cm 0〜2匹、アマダイ2尾、ほかサバ・カサゴ・ソウダも。雨＆ウネリのなかタイラバで真鯛がポツポツ",
+    tideName:"中潮", waterTempC:27.3, waterTempSource:"藤八丸 釣果ページ（実測）", weather:"雨", windMS:null, windDir:"", airTempC:null,
+    nearby:{ obs:"Open-Meteo（小田原沖）", waterTempC:26.7, weather:"雨", windMS:9.34, windDir:"南", waveM:1.64, airTempC:29.1, time:"2026-09-09" },
+    sourceName:"藤八丸（小田原新港）", sourceUrl:"https://www.chowari.jp/ship/00843/catch/", note:"" },
+  { id:"2026-09-09-aoku-04", date:"2026-09-09", area:"aoku", spot:"東京湾奥（呑川・旭橋発／羽田周辺）", spotType:"沖-ボート",
+    method:"ボートキャスティング（TGベイト＋ブレード）", species:["サワラ"], result:"サワラ 1本（サイズ・数の詳細記載なし）。午後便、風の中。投げ倒しても食わずおしゃべりに変えた途端ヒット",
+    tideName:"中潮", waterTempC:28.3, waterTempSource:"ゴーゴーガイドサービス 釣果ページ（実測）", weather:"", windMS:null, windDir:"", airTempC:null,
+    nearby:{ obs:"Open-Meteo（東京湾奥・羽田）", waterTempC:26.1, weather:"雨", windMS:5.54, windDir:"南", waveM:1.14, airTempC:30.3, time:"2026-09-09" },
+    sourceName:"ゴーゴーガイドサービス（呑川・旭橋）", sourceUrl:"https://www.chowari.jp/ship/01725/catch/", note:"羽田発の東京湾ボートシーバス便でのサワラ" },
+
   // ---------- 09-10 00:00回 追加分 ----------
   { id:"2026-09-09-aoku-01", date:"2026-09-09", area:"aoku", spot:"柴沖（横浜市金沢区・柴漁港発）", spotType:"沖-釣り船",
     method:"ビシアジ（LT）", species:["アジ"], result:"マアジ 20〜44cm 20〜51匹。朝一は特大級、その後は中型が数釣れる。悪天候続きでひさびさの出船",
