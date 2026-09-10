@@ -135,11 +135,28 @@
  *   { obs:"観測地点名", waterTempC, weather, windMS, windDir, waveM, airTempC, time:"YYYY-MM-DD" }
  */
 window.CATCH_LOG_META = {
-  lastUpdated: "2026-09-10 18:00",
-  lastRunNote: "5件追加（東京湾口三浦2・相模湾2・駿河湾1）"
+  lastUpdated: "2026-09-11 00:00",
+  lastRunNote: "3件追加（東京湾口三浦1・相模湾1・駿河湾1）"
 };
 
 window.CATCH_LOG = [
+  // ---------- 09-11 00:00回 追加分 ----------
+  { id:"2026-09-10-wanko-miura-03", date:"2026-09-10", area:"wanko-miura", spot:"松輪沖", spotType:"沖-釣り船",
+    method:"LT五目（ライトタックル）", species:["マダイ","アジ"], result:"棒面丸（松輪江奈港）のLT五目船。6時出船、前半に時合。良型アジとカイワリが交じり、マダイもポツポツ。バラシもあり。実測水温27.3℃",
+    tideName:"大潮", waterTempC:27.3, waterTempSource:"棒面丸 釣果ページ（実測）", weather:"曇り時々雨", windMS:8.3, windDir:"北北東", airTempC:null,
+    nearby:{ obs:"Open-Meteo（松輪沖）", waterTempC:26.4, weather:"弱い雨", windMS:7.5, windDir:"北北東", waveM:1.34, airTempC:22.4, time:"2026-09-10" },
+    sourceName:"棒面丸（松輪江奈港）", sourceUrl:"https://www.chowari.jp/ship/00331/catch/", note:"同港のワラサ・コマセ真鯛船は別レコード 2026-09-10-wanko-miura-02。本レコードはLT五目船で良型アジ・カイワリ交じり（カイワリは対象魚種外）。マダイは両船で重複" },
+  { id:"2026-09-10-sagami-04", date:"2026-09-10", area:"sagami", spot:"国府津海岸（小田原市）", spotType:"砂浜",
+    method:"ショアジギング／ルアー（Rサーディン）", species:["ショゴ"], result:"夕方16:51にショゴ35.0cm 1匹。同海岸は同日朝にカマスも（別レコード）。青物の接岸が続く",
+    tideName:"大潮", waterTempC:null, waterTempSource:"", weather:"", windMS:5.0, windDir:"北北東", airTempC:21.0,
+    nearby:{ obs:"Open-Meteo（国府津海岸沖）", waterTempC:26.4, weather:"弱い雨", windMS:4.74, windDir:"北東", waveM:1.16, airTempC:22.3, time:"2026-09-10" },
+    sourceName:"ANGLERS個人投稿", sourceUrl:"https://anglers.jp/fishings/5504835", note:"気温・風・気圧(1018hPa)・潮名は投稿内実測値。同日朝の国府津カマスは 2026-09-10-sagami-01" },
+  { id:"2026-09-10-suruga-04", date:"2026-09-10", area:"suruga", spot:"瀬戸川河口（焼津市）", spotType:"河口",
+    method:"ルアー（ブローウィン125スリム）", species:["シーバス"], result:"22:04にシーバス67.0cm 1本。素振りに来て数投で単発ヒット。前日09-09は同河口で90cm",
+    tideName:"大潮", waterTempC:null, waterTempSource:"", weather:"", windMS:5.6, windDir:"北東", airTempC:21.0,
+    nearby:{ obs:"Open-Meteo（瀬戸川河口沖）", waterTempC:26.5, weather:"雨", windMS:7.1, windDir:"北東", waveM:1.74, airTempC:24.0, time:"2026-09-10" },
+    sourceName:"ANGLERS個人投稿（山の猫）", sourceUrl:"https://anglers.jp/fishings/5505105", note:"気温・風・気圧(1019hPa)・潮名は投稿内実測値。前日09-09の同河口シーバス90cmは 2026-09-09-suruga-04" },
+
   // ---------- 09-10 18:00回 追加分 ----------
   { id:"2026-09-10-wanko-miura-01", date:"2026-09-10", area:"wanko-miura", spot:"走水沖／観音崎沖", spotType:"沖-釣り船",
     method:"タチウオ テンヤ・テンビン／ビシアジ（LT）", species:["タチウオ","アジ"], result:"走水沖（水深60m）でタチウオ65〜110cm 4〜18匹、観音崎沖（水深30m）でアジ25〜38cm 0〜4匹。雨が時々止む中の出船。13日からワラサ船を開始予定",
