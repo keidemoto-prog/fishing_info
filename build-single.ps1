@@ -6,10 +6,14 @@
 # ASCII-only on purpose so Windows PowerShell 5.1 parses it regardless of BOM.
 
 $dir = $PSScriptRoot
-$srcFile = Get-ChildItem $dir -Filter *.html |
-           Where-Object { $_.Name -ne 'tsuriha_all-in-one.html' } |
-           Select-Object -First 1
-if (-not $srcFile) { Write-Error "viewer .html not found in $dir"; exit 1 }
+# Pick the viewer by CONTENT, not by name/order: it is the .html that loads data/catch-log.js.
+# (An earlier bug: the collector once saved a scraped source page as ssm_tmp.html, which sorts
+#  before the Japanese-named viewer, so "first *.html" silently built the wrong page for days.)
+$srcFile = Get-ChildItem $dir -Filter *.html | Where-Object {
+    (Get-Content -Raw -Encoding UTF8 $_.FullName) -match '<script src="data/catch-log\.js">'
+} | Select-Object -First 1
+if (-not $srcFile) { Write-Error "viewer .html (the one loading data/catch-log.js) not found in $dir"; exit 1 }
+Write-Output ("build-single: source = {0}" -f $srcFile.Name)
 
 $src = Get-Content -Raw -Encoding UTF8 $srcFile.FullName
 $d1  = Get-Content -Raw -Encoding UTF8 (Join-Path $dir "data\catch-log.js")

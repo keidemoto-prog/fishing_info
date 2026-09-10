@@ -28,11 +28,20 @@ $claudeExit = $LASTEXITCODE
 Add-Content -Encoding utf8 $logFile ("=== {0} end (claude exit {1}) ===" -f (Get-Date -Format "yyyy-MM-dd HH:mm"), $claudeExit)
 
 # Commit + push so GitHub Pages (keidemoto-prog/fishing_info -> docs/) picks up the new data.
-# git output goes to a non-tracked file so the tracked run log stays clean between runs.
+# Full git chatter -> non-tracked logs\git-*.log (git prints progress to stderr, which PS 5.1
+# renders noisily even on success - that noise is harmless). A one-line PASS/FAIL + unpushed-
+# count summary also goes to the tracked run log so a real failure is easy to spot.
 # First push must be done once by hand so the credential is cached; after that this is unattended.
 if (Test-Path (Join-Path $dir ".git")) {
     $gitLog = Join-Path $dir ("logs\git-{0}.log" -f $stamp)
-    & git -C $dir add -A                                                            2>&1 | Out-File -Append -Encoding utf8 $gitLog
-    & git -C $dir commit -m ("auto: collect {0}" -f (Get-Date -Format "yyyy-MM-dd HH:mm")) 2>&1 | Out-File -Append -Encoding utf8 $gitLog
-    & git -C $dir push                                                              2>&1 | Out-File -Append -Encoding utf8 $gitLog
+    Add-Content -Encoding utf8 $gitLog ("--- {0} ---" -f (Get-Date -Format "yyyy-MM-dd HH:mm"))
+
+    # Pull first: 4 PCs sync this vault, so origin/main may be ahead of this working copy.
+    & git -C $dir pull --rebase --autostash 2>&1 | ForEach-Object { $_.ToString() } | Out-File -Append -Encoding utf8 $gitLog
+    & git -C $dir add -A                    2>&1 | ForEach-Object { $_.ToString() } | Out-File -Append -Encoding utf8 $gitLog
+    & git -C $dir commit -m ("auto: collect {0}" -f (Get-Date -Format "yyyy-MM-dd HH:mm")) 2>&1 | ForEach-Object { $_.ToString() } | Out-File -Append -Encoding utf8 $gitLog
+    & git -C $dir push                      2>&1 | ForEach-Object { $_.ToString() } | Out-File -Append -Encoding utf8 $gitLog
+    $pushExit = $LASTEXITCODE
+    $unpushed = (& git -C $dir rev-list --count "origin/main..HEAD" 2>$null)
+    Add-Content -Encoding utf8 $logFile ("git: push exit {0}, unpushed commits: {1}" -f $pushExit, $unpushed)
 }
