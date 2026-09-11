@@ -135,11 +135,18 @@
  *   { obs:"観測地点名", waterTempC, weather, windMS, windDir, waveM, airTempC, time:"YYYY-MM-DD" }
  */
 window.CATCH_LOG_META = {
-  lastUpdated: "2026-09-11 06:00",
-  lastRunNote: "4件追加（東京湾奥2・東京湾口三浦1・駿河湾1）"
+  lastUpdated: "2026-09-11 12:00",
+  lastRunNote: "1件追加（相模湾1）"
 };
 
 window.CATCH_LOG = [
+  // ---------- 09-11 12:00回 追加分 ----------
+  { id:"2026-09-10-sagami-05", date:"2026-09-10", area:"sagami", spot:"腰越漁港（鎌倉市）孝太郎丸", spotType:"沖-釣り船",
+    method:"コマセ五目（タイ船）", species:["マダイ","カンパチ","アジ"], result:"マダイ0.40〜1.70kg 0〜3匹。カンパチ・アジも交じる（クロダイ・イトヨリも交じるが対象魚種外）。小雨が降ったり止んだりで北風・ナギ",
+    tideName:"大潮", waterTempC:27.7, waterTempSource:"ちょうあり 孝太郎丸釣果", weather:"小雨時々止む", windMS:null, windDir:"北", airTempC:null,
+    nearby:{ obs:"Open-Meteo（腰越・鎌倉沖）", waterTempC:25.7, weather:"雨", windMS:4.9, windDir:"北", waveM:1.22, airTempC:21.3, time:"2026-09-10" },
+    sourceName:"ちょうあり 孝太郎丸釣果", sourceUrl:"https://www.chowari.jp/ship/00707/catch/", note:"" },
+
   // ---------- 09-11 06:00回 追加分 ----------
   { id:"2026-09-11-suruga-01", date:"2026-09-11", area:"suruga", spot:"片浜海岸（沼津市）", spotType:"砂浜",
     method:"ショアジギング／ルアー（メタルジグ）", species:["タチウオ","カマス","サバ"], result:"3:27前後の短時間でタチウオ13・カマス5・サバ1。開始1時間は不発、3時ごろからタチウオが連発。最後は良型（F4級）にラインを切られて終了",
