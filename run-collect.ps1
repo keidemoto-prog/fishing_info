@@ -46,7 +46,14 @@ if (Test-Path (Join-Path $dir ".git")) {
 
     # Pull first: 4 PCs sync this vault, so origin/main may be ahead of this working copy.
     & git -C $dir pull --rebase --autostash 2>&1 | ForEach-Object { $_.ToString() } | Out-File -Append -Encoding utf8 $gitLog
-    & git -C $dir add -A                    2>&1 | ForEach-Object { $_.ToString() } | Out-File -Append -Encoding utf8 $gitLog
+
+    # Stage ONLY the collector's own known output paths - never "add -A". This folder is
+    # synced live to 3 other PCs; a stray file dropped here by mistake (2026-09-11: a note
+    # with live API keys, unrelated to this project, landed in this folder and got swept
+    # into a commit by "add -A", blocking every push for 5 days via GitHub push protection)
+    # must never be auto-committed. Anything genuinely new to track goes in by hand.
+    & git -C $dir add -- data/catch-log.js data/catch-log.sample.js docs/index.html docs/.nojekyll tsuriha_all-in-one.html logs/ `
+        2>&1 | ForEach-Object { $_.ToString() } | Out-File -Append -Encoding utf8 $gitLog
     & git -C $dir commit -m ("auto: collect {0}" -f (Get-Date -Format "yyyy-MM-dd HH:mm")) 2>&1 | ForEach-Object { $_.ToString() } | Out-File -Append -Encoding utf8 $gitLog
     & git -C $dir push                      2>&1 | ForEach-Object { $_.ToString() } | Out-File -Append -Encoding utf8 $gitLog
     $pushExit = $LASTEXITCODE
