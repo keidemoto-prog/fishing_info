@@ -23,3 +23,22 @@ git: push exit 0, unpushed commits: 0
 build-single: source = 釣果ログ.html
 build-single: all-in-one 209365 chars / docs/index.html 209365 / dist/artifact.html 209206
 === 2026-09-16 02:21 end (claude exit 0) ===
+git: push exit 0, unpushed commits: 0
+
+=== 2026-09-16 06:00 start ===
+Done. I read `蜿朱寔謇矩・md` (the vault's daily fishing-catch collection procedure) and carried out its 9 steps:
+
+1. Confirmed today = 2026-09-16 (Wednesday, so normal today+yesterday period, not the Monday catch-up case).
+2. Checked chowari, 遏ｳ逕ｰ荳ｸ, 豬懷鴻魑･, SSM豬ｦ雉, 縺九ａ繧・・蜈ｷ, 荳ｭ譬ｹ繝懊・繝・ TSURINEWS, YouTube, and other harbor blogs for 09-15/09-16 catches in the target species list.
+3. Found 2 genuinely new, sourced records and added them to the top of `data/catch-log.js`:
+   - **髟ｷ蟠主ｱ・*・域悽迚ｧ貍∵ｸｯ繝ｻ讓ｪ豬懷ｸ・ aoku・・9-15 繧ｷ繝ｭ繧ｮ繧ｹ 14窶・4cm, top 189蛹ｹ
+   - **逾樊・ｸｸ**・育罰豈疲ｸｯ繝ｻ髱吝ｲ｡蟶よｸ・ｰｴ蛹ｺ, suruga・・9-15 繧ｿ繝√え繧ｪ・医Ν繧｢繝ｼ/繝・Φ繝､/繧ｨ繧ｵ・・4. Caught one false lead (驟貞撃蟾晄ｲｳ蜿｣繧ｫ繝槭せ) that turned out to be the same article/URL as an existing 2026-09-11 record, so I excluded it as a duplicate rather than double-counting.
+5. Updated `CATCH_LOG_META` (`lastUpdated: 2026-09-16 06:00`, "2莉ｶ霑ｽ蜉・域擲莠ｬ貉ｾ螂･1繝ｻ鬧ｿ豐ｳ貉ｾ1・・).
+6. Logged the run (sources checked, what was excluded/why) in `logs/2026-09-16.md` under a new "06:00蝗・ section.
+7. Validated `data/catch-log.js` with Node's `vm` 窶・303 records, no duplicate IDs, no duplicate date+spot+species keys.
+8. Stopped there, per the procedure 窶・I did not touch `tsuriha_all-in-one.html`, `dist/artifact.html`, or any `.ps1`, and created no new files. HTML regen and git commit/push are left to `run-collect.ps1`.
+
+Note: 髱吝ｲ｡繧､繧ｷ繧ｰ繝ｭ (suruga source) timed out repeatedly this run 窶・worth another look next cycle.
+build-single: source = 釣果ログ.html
+build-single: all-in-one 210543 chars / docs/index.html 210543 / dist/artifact.html 210384
+=== 2026-09-16 06:07 end (claude exit 0) ===

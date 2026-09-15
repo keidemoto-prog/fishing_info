@@ -135,11 +135,24 @@
  *   { obs:"観測地点名", waterTempC, weather, windMS, windDir, waveM, airTempC, time:"YYYY-MM-DD" }
  */
 window.CATCH_LOG_META = {
-  lastUpdated: "2026-09-16 00:00",
-  lastRunNote: "13件追加（東京湾奥3・相模湾5・東京湾口三浦2・駿河湾3）"
+  lastUpdated: "2026-09-16 06:00",
+  lastRunNote: "2件追加（東京湾奥1・駿河湾1）"
 };
 
 window.CATCH_LOG = [
+  // ---------- 09-16 06:00回 追加分（09-15〜09-16対象） ----------
+  { id:"2026-09-15-aoku-02", date:"2026-09-15", area:"aoku", spot:"本牧漁港（横浜市）長崎屋", spotType:"沖-釣り船",
+    method:"シロギス釣り", species:["キス（シロギス）"],
+    result:"シロギス14〜24cm 30〜189匹（トップ189匹、多くは40〜50匹前後）。凪で好調",
+    tideName:"", waterTempC:23.7, waterTempSource:"長崎屋 釣果ページ本文（実測）", weather:"", windMS:null, windDir:"", airTempC:null,
+    nearby:{ obs:"Open-Meteo（本牧沖）", waterTempC:25.5, weather:"弱い雨", windMS:5.69, windDir:"南", waveM:0.64, airTempC:26.8, time:"2026-09-15" },
+    sourceName:"長崎屋 釣果", sourceUrl:"https://www.nagasakimaru.net/search/ChokaDetail/378266/", note:"" },
+  { id:"2026-09-15-suruga-02", date:"2026-09-15", area:"suruga", spot:"由比港（外港・静岡市清水区）神栄丸", spotType:"沖-釣り船",
+    method:"タチウオ釣り（ルアー・テンヤ・エサ）", species:["タチウオ"],
+    result:"ルアー2.5〜4本指36〜62匹、テンヤ45匹、エサ2.5〜4本指18〜40匹",
+    tideName:"", waterTempC:null, waterTempSource:"", weather:"", windMS:null, windDir:"", airTempC:null,
+    nearby:{ obs:"Open-Meteo（由比沖）", waterTempC:25.9, weather:"雨", windMS:1.88, windDir:"北", waveM:0.50, airTempC:25.7, time:"2026-09-15" },
+    sourceName:"神栄丸 釣果", sourceUrl:"https://www.zineimaru.com/search/ChokaDetail/378269/", note:"" },
   // ---------- 09-16 00:00回 追加分（09-14〜09-16対象、前回18:00回以降の遅延分含む） ----------
   { id:"2026-09-15-suruga-01", date:"2026-09-15", area:"suruga", spot:"江の浦港（沼津市）伊勝丸", spotType:"沖-釣り船",
     method:"深場アジ", species:["アジ"],
