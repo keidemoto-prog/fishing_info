@@ -52,3 +52,19 @@ git: push exit 0, unpushed commits: 0
 build-single: source = 釣果ログ.html
 build-single: all-in-one 211175 chars / docs/index.html 211175 / dist/artifact.html 211016
 === 2026-09-16 12:04 end (claude exit 0) ===
+
+=== 2026-09-16 18:00 start ===
+Collection procedure complete for the 18:00 round. Summary:
+
+- Confirmed today = 2026-09-16 (Wednesday, normal today+yesterday period)
+- Checked chowari, 遏ｳ逕ｰ荳ｸ, 縺九ａ繧・・蜈ｷ, 繧､繧ｷ繧ｰ繝ｭ, TSURINEWS, YouTube for new 09-15縲・9-16 catches
+- Added **4 new records** to `data/catch-log.js`: 譚ｱ莠ｬ貉ｾ螂･1 (鮟貞ｷ昜ｸｸ: 繧｢繧ｸ繝ｻ繧ｿ繝√え繧ｪ), 逶ｸ讓｡貉ｾ1 (蟄晄ｼ∽ｸｸ: 繧｢繧ｫ繝上ち遲・, 鬧ｿ豐ｳ貉ｾ2 (隘ｿ莨願ｱ・い繧ｸ繝ｳ繧ｰ, 隨ｬ荳蛾ｾ崎ｳ荳ｸ繧ｿ繝√え繧ｪ)
+- Excluded several candidates as duplicates or out-of-scope (蟷ｳ蝪壽眠貂ｯ繧ｷ繝ｧ繧ｴ = same as an existing 09-13 record; 逶ｸ讓｡蟾晄ｲｳ蜿｣繝√レ, 螟ｧ螳昜ｸｸ繝繝ｩ繧ｵ繧ｭ繧､繧ｫ = off target-species list; 蟾晏･医＞繧九°豬懷・蝨・= Izu east coast, doesn't fit either area definition)
+- Updated `CATCH_LOG_META` (`lastUpdated: 2026-09-16 18:00`)
+- Validated `data/catch-log.js` with Node's `vm` 窶・308 records, no duplicate IDs or duplicate date+spot+species keys
+- Logged the run details in `logs/2026-09-16.md`
+
+Per the procedure, I stopped here 窶・didn't touch `tsuriha_all-in-one.html`, `dist/`, or any `.ps1`, and created no new files. HTML regeneration and git commit/push are left to `run-collect.ps1`.
+build-single: source = 釣果ログ.html
+build-single: all-in-one 213568 chars / docs/index.html 213568 / dist/artifact.html 213409
+=== 2026-09-16 18:03 end (claude exit 0) ===

@@ -8,11 +8,36 @@
  *   { obs:"観測地点名", waterTempC, weather, windMS, windDir, waveM, airTempC, time:"YYYY-MM-DD" }
  */
 window.CATCH_LOG_META = {
-  lastUpdated: "2026-09-16 12:00",
-  lastRunNote: "1件追加（相模湾1）"
+  lastUpdated: "2026-09-16 18:00",
+  lastRunNote: "4件追加（東京湾奥1・相模湾1・駿河湾2）"
 };
 
 window.CATCH_LOG = [
+  // ---------- 09-16 18:00回 追加分（09-15〜09-16対象） ----------
+  { id:"2026-09-16-aoku-01", date:"2026-09-16", area:"aoku", spot:"金沢八景平潟（横浜市金沢区）黒川丸", spotType:"沖-釣り船",
+    method:"LTアジ／タチウオ テンヤ", species:["アジ","タチウオ"],
+    result:"アジ18〜25cm 20〜56匹。タチウオ65〜105cm 2〜22匹。走水沖〜猿島沖",
+    tideName:"中潮", waterTempC:null, waterTempSource:"", weather:"", windMS:null, windDir:"", airTempC:null,
+    nearby:{ obs:"Open-Meteo（金沢八景沖）", waterTempC:25.5, weather:"雨", windMS:4.05, windDir:"北東", waveM:0.50, airTempC:24.5, time:"2026-09-16" },
+    sourceName:"金沢八景 黒川丸（chowari）", sourceUrl:"https://www.chowari.jp/ship/00150/catch/", note:"" },
+  { id:"2026-09-16-sagami-02", date:"2026-09-16", area:"sagami", spot:"長井新宿港（横須賀市）孝漁丸", spotType:"沖-釣り船",
+    method:"五目釣り", species:["アカハタ","オオモンハタ","カワハギ"],
+    result:"アカハタ30〜40cm 5〜8匹。オオモンハタ・カワハギも釣れた。潮が速く旋回を繰り返しポツポツ",
+    tideName:"中潮", waterTempC:null, waterTempSource:"", weather:"", windMS:null, windDir:"", airTempC:null,
+    nearby:{ obs:"Open-Meteo（長井新宿沖）", waterTempC:25.4, weather:"雨", windMS:5.78, windDir:"北東", waveM:0.70, airTempC:25.7, time:"2026-09-16" },
+    sourceName:"孝漁丸（chowari）", sourceUrl:"https://www.chowari.jp/ship/00872/catch/", note:"" },
+  { id:"2026-09-14-suruga-03", date:"2026-09-14", area:"suruga", spot:"西伊豆エリア", spotType:"堤防",
+    method:"アジング（ジグヘッド+ワーム、夜間）", species:["アジ"],
+    result:"マアジ20cm前後 10〜30匹。0.8〜1.2gジグヘッドにクリア系ワーム2インチ。夜釣り",
+    tideName:"", waterTempC:null, waterTempSource:"", weather:"", windMS:null, windDir:"", airTempC:null,
+    nearby:{ obs:"Open-Meteo（西伊豆）", waterTempC:26.6, weather:"霧雨", windMS:3.98, windDir:"南", waveM:0.66, airTempC:27.5, time:"2026-09-14" },
+    sourceName:"かめや釣具富士店", sourceUrl:"https://kameya-choka.com/kanto-tokai/archives/f-info/543619", note:"具体的な釣り場名（堤防名等）は記事に記載なし、spotTypeは推定" },
+  { id:"2026-09-15-suruga-03", date:"2026-09-15", area:"suruga", spot:"清水周辺（静岡市）第三龍賀丸", spotType:"沖-釣り船",
+    method:"タチウオ釣り（天秤エサ・ジギング・テンヤ）深夜便", species:["タチウオ"],
+    result:"タチウオ2.5〜5本指 28〜66匹（竿頭60匹超）。深夜0時〜5時の便",
+    tideName:"", waterTempC:null, waterTempSource:"", weather:"", windMS:null, windDir:"", airTempC:null,
+    nearby:{ obs:"Open-Meteo（清水沖）", waterTempC:26.1, weather:"雨", windMS:2.30, windDir:"西", waveM:0.66, airTempC:25.9, time:"2026-09-15" },
+    sourceName:"第三龍賀丸（イシグロ）", sourceUrl:"https://www.ishiguro-gr.com/enjoy/fishing/detail.php?id=49694", note:"出船港の具体名は記事に記載なし" },
   // ---------- 09-16 12:00回 追加分（09-15〜09-16対象） ----------
   { id:"2026-09-16-sagami-01", date:"2026-09-16", area:"sagami", spot:"片瀬漁港（藤沢市）島きち丸", spotType:"沖-釣り船",
     method:"LTルアー船", species:["カマス","サワラ","カンパチ","イナダ","アジ","サバ"],
