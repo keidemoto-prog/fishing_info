@@ -1,0 +1,12 @@
+﻿
+=== 2026-09-17 00:00 start ===
+Completed the 00:00 collection run for 2026-09-17, covering the normal 09-16縲・9-17 window.
+
+**5 new records added** (checked against existing entries for duplicates, all new): 譚第悽豬ｷ莠・(aoku, 繝槭ム繧､繝ｻ繧｢繧ｪ繝ｪ繧､繧ｫ), 蟄晏､ｪ驛惹ｸｸ (sagami, 莠皮岼), and three 譚ｾ霈ｪ豎溷･域ｼ∵ｸｯ boats 窶・縺ゅ∪縺輔￠繧・ｸｸ繝ｻ豬憺斡荳ｸ繝ｻ譽帝擇荳ｸ (wanko-miura, 繝ｯ繝ｩ繧ｵ繝ｻ繝槭ム繧､繝ｻ繧ｽ繧ｦ繝繧ｬ繝・が荳ｭ蠢・. Followed the established convention of treating chowari's on-page water temp/wind figures as suspect regional widget values (confirmed identical across multiple boats again) and used Open-Meteo `nearby` data instead, keeping only `tideName` from the page.
+
+Checked ~15 sources (chowari full list + area pages + 5 ship pages, 遏ｳ逕ｰ荳ｸ, 豬懷鴻魑･, SSM豬ｦ雉, 縺九ａ繧・ 繧､繧ｷ繧ｰ繝ｭﾃ・ [timed out again, same as last run], 荳ｭ譬ｹ繝懊・繝・ 繧ｹ繝ｼ繝代・繝輔ぅ繝・す繝ｳ繧ｰ [403], 繧ｵ繝九・繧ｵ繧､繝・ TSURINEWS, YouTube) 窶・no other qualifying catches in the target period. Noted a typhoon approaching Kanto (from 荳ｭ譬ｹ繝懊・繝・s closure notice), consistent with the rain/wind values pulled from Open-Meteo.
+
+`data/catch-log.js` validated via Node (313 records, no duplicate IDs or date+spot+species keys) and `logs/2026-09-17.md` written. Per the procedure, stopped here 窶・did not touch the standalone HTML or git commit/push, which `run-collect.ps1` handles next.
+build-single: source = 釣果ログ.html
+build-single: all-in-one 216708 chars / docs/index.html 216708 / dist/artifact.html 216549
+=== 2026-09-17 00:06 end (claude exit 0) ===

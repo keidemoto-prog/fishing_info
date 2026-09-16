@@ -135,11 +135,43 @@
  *   { obs:"観測地点名", waterTempC, weather, windMS, windDir, waveM, airTempC, time:"YYYY-MM-DD" }
  */
 window.CATCH_LOG_META = {
-  lastUpdated: "2026-09-16 18:00",
-  lastRunNote: "4件追加（東京湾奥1・相模湾1・駿河湾2）"
+  lastUpdated: "2026-09-17 00:00",
+  lastRunNote: "5件追加（東京湾奥1・相模湾1・東京湾口三浦3）"
 };
 
 window.CATCH_LOG = [
+  // ---------- 09-17 00:00回 追加分（09-16〜09-17対象） ----------
+  { id:"2026-09-16-aoku-02", date:"2026-09-16", area:"aoku", spot:"金沢八景乙舳（横浜市金沢区）村本海事", spotType:"沖-釣り船",
+    method:"タイラバ／アオリイカ", species:["マダイ","アオリイカ"],
+    result:"マダイ0.5〜1.1kg 0〜3枚（船中10枚、外道ホウボウ）。アオリイカ0.10〜0.20kg 0〜3杯（外道シリヤケイカ）",
+    tideName:"中潮", waterTempC:null, waterTempSource:"", weather:"", windMS:null, windDir:"", airTempC:null,
+    nearby:{ obs:"Open-Meteo（金沢八景沖）", waterTempC:25.5, weather:"雨", windMS:4.05, windDir:"北東", waveM:0.50, airTempC:24.5, time:"2026-09-16" },
+    sourceName:"村本海事（chowari）", sourceUrl:"https://www.chowari.jp/ship/01580/catch/",
+    note:"chowariページ実測欄（水温24.3℃・風北北東3.3m/s）は同日他船と一致し地域共通ウィジェットの疑いを踏襲、nearbyのみ使用" },
+  { id:"2026-09-16-sagami-03", date:"2026-09-16", area:"sagami", spot:"腰越漁港（鎌倉市）孝太郎丸", spotType:"沖-釣り船",
+    method:"タイ船（五目）", species:["マダイ","サバ","アジ","イナダ","カワハギ"],
+    result:"マダイ0.40〜1.00kg 1匹。ほかサバ・アジ・イナダ・カワハギも交じる（ヤイトガツオ・ハナダイ・アミフエフキ・イトヨリダイは対象魚種外のため除外）",
+    tideName:"中潮", waterTempC:null, waterTempSource:"", weather:"", windMS:null, windDir:"", airTempC:null,
+    nearby:{ obs:"Open-Meteo（腰越沖）", waterTempC:25.5, weather:"雨", windMS:4.50, windDir:"北北東", waveM:0.58, airTempC:25.6, time:"2026-09-16" },
+    sourceName:"孝太郎丸（chowari）", sourceUrl:"https://www.chowari.jp/ship/00707/catch/", note:"" },
+  { id:"2026-09-16-wanko-miura-01", date:"2026-09-16", area:"wanko-miura", spot:"松輪江奈漁港（三浦市）あまさけや丸", spotType:"沖-釣り船",
+    method:"ワラサ乗合", species:["ワラサ","マダイ","ソウダガツオ"],
+    result:"ワラサ2.50〜4.50kg 0〜6匹（船中トップ6本）。マダイ・シマアジ・ヒラソウダも交じる（シマアジは対象魚種外、ヒラソウダはソウダガツオとして記録）",
+    tideName:"中潮", waterTempC:null, waterTempSource:"", weather:"", windMS:null, windDir:"", airTempC:null,
+    nearby:{ obs:"Open-Meteo（松輪沖）", waterTempC:25.5, weather:"雨", windMS:8.28, windDir:"北東", waveM:0.88, airTempC:26.1, time:"2026-09-16" },
+    sourceName:"あまさけや丸（chowari）", sourceUrl:"https://www.chowari.jp/ship/01036/catch/", note:"" },
+  { id:"2026-09-16-wanko-miura-02", date:"2026-09-16", area:"wanko-miura", spot:"松輪江奈漁港（三浦市）浜鈴丸", spotType:"沖-釣り船",
+    method:"ワラサ船", species:["ワラサ","マダイ","ソウダガツオ"],
+    result:"ワラサ竿頭5匹（トップ5本、4本・3本釣った方も複数名）。マダイ・ヒラソーダ（ソウダガツオ）も釣果あり。バラシ多数",
+    tideName:"中潮", waterTempC:null, waterTempSource:"", weather:"", windMS:null, windDir:"", airTempC:null,
+    nearby:{ obs:"Open-Meteo（松輪沖）", waterTempC:25.5, weather:"雨", windMS:8.28, windDir:"北東", waveM:0.88, airTempC:26.1, time:"2026-09-16" },
+    sourceName:"浜鈴丸（chowari）", sourceUrl:"https://www.chowari.jp/ship/01037/catch/", note:"" },
+  { id:"2026-09-16-wanko-miura-03", date:"2026-09-16", area:"wanko-miura", spot:"松輪江奈漁港（三浦市）棒面丸", spotType:"沖-釣り船",
+    method:"ライトタックルマダイ船／ワラサ乗合", species:["マダイ","ワラサ"],
+    result:"マダイ船：後半に釣れたが大型のバラシあり（詳細サイズ・匹数記載なし）。ワラサ乗合：剣崎沖水深40mでワラサ・マダイ・イサキ混じり（イサキは対象魚種外のため除外）。2便を1レコードに集約",
+    tideName:"中潮", waterTempC:null, waterTempSource:"", weather:"", windMS:null, windDir:"", airTempC:null,
+    nearby:{ obs:"Open-Meteo（松輪沖）", waterTempC:25.5, weather:"雨", windMS:8.28, windDir:"北東", waveM:0.88, airTempC:26.1, time:"2026-09-16" },
+    sourceName:"棒面丸（chowari）", sourceUrl:"https://www.chowari.jp/ship/00331/catch/", note:"" },
   // ---------- 09-16 18:00回 追加分（09-15〜09-16対象） ----------
   { id:"2026-09-16-aoku-01", date:"2026-09-16", area:"aoku", spot:"金沢八景平潟（横浜市金沢区）黒川丸", spotType:"沖-釣り船",
     method:"LTアジ／タチウオ テンヤ", species:["アジ","タチウオ"],
