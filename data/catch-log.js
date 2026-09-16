@@ -8,11 +8,18 @@
  *   { obs:"観測地点名", waterTempC, weather, windMS, windDir, waveM, airTempC, time:"YYYY-MM-DD" }
  */
 window.CATCH_LOG_META = {
-  lastUpdated: "2026-09-16 06:00",
-  lastRunNote: "2件追加（東京湾奥1・駿河湾1）"
+  lastUpdated: "2026-09-16 12:00",
+  lastRunNote: "1件追加（相模湾1）"
 };
 
 window.CATCH_LOG = [
+  // ---------- 09-16 12:00回 追加分（09-15〜09-16対象） ----------
+  { id:"2026-09-16-sagami-01", date:"2026-09-16", area:"sagami", spot:"片瀬漁港（藤沢市）島きち丸", spotType:"沖-釣り船",
+    method:"LTルアー船", species:["カマス","サワラ","カンパチ","イナダ","アジ","サバ"],
+    result:"カマス21〜27cm 12〜65匹（爆釣）。サワラ・カンパチ・イナダ・アジ・サバ混じる",
+    tideName:"中潮", waterTempC:null, waterTempSource:"", weather:"", windMS:null, windDir:"", airTempC:null,
+    nearby:{ obs:"Open-Meteo（片瀬・江の島沖）", waterTempC:25.5, weather:"雨", windMS:4.80, windDir:"北", waveM:0.66, airTempC:25.3, time:"2026-09-16" },
+    sourceName:"島きち丸（chowari）", sourceUrl:"https://www.chowari.jp/ship/00701/catch/", note:"" },
   // ---------- 09-16 06:00回 追加分（09-15〜09-16対象） ----------
   { id:"2026-09-15-aoku-02", date:"2026-09-15", area:"aoku", spot:"本牧漁港（横浜市）長崎屋", spotType:"沖-釣り船",
     method:"シロギス釣り", species:["キス（シロギス）"],
