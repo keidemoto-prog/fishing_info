@@ -10,3 +10,12 @@ Checked ~15 sources (chowari full list + area pages + 5 ship pages, 遏ｳ逕ｰ
 build-single: source = 釣果ログ.html
 build-single: all-in-one 216708 chars / docs/index.html 216708 / dist/artifact.html 216549
 === 2026-09-17 00:06 end (claude exit 0) ===
+git: push exit 0, unpushed commits: 0
+
+=== 2026-09-17 06:00 start ===
+Per the procedure, step 9 says to stop here 窶・`run-collect.ps1` handles regenerating the standalone HTML and git commit/push after this.
+
+**螳御ｺ・*: 2026-09-17 06:00蝗槭・蜿朱寔繧貞ｮ溯｡後＠縺ｾ縺励◆縲ら嶌讓｡貉ｾ縺ｧ譁ｰ隕・莉ｶ・亥ｹｳ蝪壽ｼ∵ｸｯ 雎頑ｼ∽ｸｸ縲∝ｹｳ蝪壽眠貂ｯ 蠎・ｲｻ驛惹ｸｸ・峨ｒ霑ｽ蜉縺励～data/catch-log.js`・・15莉ｶ縲・㍾隍・↑縺励ｒ讀懆ｨｼ貂医∩・峨→ `logs/2026-09-17.md` 繧呈峩譁ｰ縺励∪縺励◆縲ゆｸ｡闊ｹ縺ｨ繧Ｄhowari繝壹・繧ｸ縺ｮ豌ｴ貂ｩ繝ｻ鬚ｨ縺ｮ螳滓ｸｬ蛟､縺悟ｮ悟・荳閾ｴ縺励※縺・◆縺溘ａ縲∵里蟄倥・驕狗畑繝ｫ繝ｼ繝ｫ騾壹ｊOpen-Meteo縺ｮ霑鷹團隕ｳ貂ｬ蛟､繧剃ｻ｣逕ｨ縺励※縺・∪縺吶ょ腰菴滴TML蜀咲函謌舌→git push莉･髯阪・ `run-collect.ps1` 縺ｫ蟋斐・縺ｾ縺吶・
+build-single: source = 釣果ログ.html
+build-single: all-in-one 218114 chars / docs/index.html 218114 / dist/artifact.html 217955
+=== 2026-09-17 06:03 end (claude exit 0) ===

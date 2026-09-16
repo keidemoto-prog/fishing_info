@@ -8,11 +8,26 @@
  *   { obs:"観測地点名", waterTempC, weather, windMS, windDir, waveM, airTempC, time:"YYYY-MM-DD" }
  */
 window.CATCH_LOG_META = {
-  lastUpdated: "2026-09-17 00:00",
-  lastRunNote: "5件追加（東京湾奥1・相模湾1・東京湾口三浦3）"
+  lastUpdated: "2026-09-17 06:00",
+  lastRunNote: "2件追加（相模湾2）"
 };
 
 window.CATCH_LOG = [
+  // ---------- 09-17 06:00回 追加分（09-16〜09-17対象） ----------
+  { id:"2026-09-16-sagami-04", date:"2026-09-16", area:"sagami", spot:"平塚漁港（平塚市）豊漁丸", spotType:"沖-釣り船",
+    method:"仕立イナダ船", species:["イナダ","マダイ","アジ","カンパチ"],
+    result:"イナダ38〜48cm 0〜5匹。マダイ計1匹。ほかアジ・カンパチも釣れた（クロダイ・ハナダイは対象魚種外のため除外）",
+    tideName:"中潮", waterTempC:null, waterTempSource:"", weather:"", windMS:null, windDir:"", airTempC:null,
+    nearby:{ obs:"Open-Meteo（平塚沖）", waterTempC:25.4, weather:"雨", windMS:6.17, windDir:"北", waveM:0.66, airTempC:24.1, time:"2026-09-16" },
+    sourceName:"豊漁丸（chowari）", sourceUrl:"https://www.chowari.jp/ship/00826/catch/",
+    note:"chowariページ実測欄（水温25.6℃等）は同日の庄治郎丸と完全一致し地域共通ウィジェットの疑いを踏襲、nearbyのみ使用" },
+  { id:"2026-09-16-sagami-05", date:"2026-09-16", area:"sagami", spot:"平塚新港（平塚市）庄治郎丸", spotType:"沖-釣り船",
+    method:"五目釣り", species:["シイラ","イナダ","アジ","カマス","スズキ","マダイ","アマダイ"],
+    result:"シイラ55〜100cm 10〜16匹。イナダ36〜43cm 0〜4匹。アジ18〜38cm 10〜30匹。カマス20〜28cm 10〜25匹。スズキ5.20kg 1匹。マダイ0.90kg 1匹。アマダイ25〜40cm 3〜5匹",
+    tideName:"中潮", waterTempC:null, waterTempSource:"", weather:"", windMS:null, windDir:"", airTempC:null,
+    nearby:{ obs:"Open-Meteo（平塚沖）", waterTempC:25.4, weather:"雨", windMS:6.17, windDir:"北", waveM:0.66, airTempC:24.1, time:"2026-09-16" },
+    sourceName:"庄治郎丸（chowari）", sourceUrl:"https://www.chowari.jp/ship/01081/catch/",
+    note:"chowariページ実測欄（水温25.6℃等）は同日の豊漁丸と完全一致し地域共通ウィジェットの疑いを踏襲、nearbyのみ使用" },
   // ---------- 09-17 00:00回 追加分（09-16〜09-17対象） ----------
   { id:"2026-09-16-aoku-02", date:"2026-09-16", area:"aoku", spot:"金沢八景乙舳（横浜市金沢区）村本海事", spotType:"沖-釣り船",
     method:"タイラバ／アオリイカ", species:["マダイ","アオリイカ"],
