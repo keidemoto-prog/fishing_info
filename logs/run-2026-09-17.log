@@ -19,3 +19,16 @@ Per the procedure, step 9 says to stop here 窶・`run-collect.ps1` handles rege
 build-single: source = 釣果ログ.html
 build-single: all-in-one 218114 chars / docs/index.html 218114 / dist/artifact.html 217955
 === 2026-09-17 06:03 end (claude exit 0) ===
+git: push exit 0, unpushed commits: 0
+
+=== 2026-09-17 12:00 start ===
+Done 窶・completed the 12:00 collection run for 2026-09-17 (window 09-16縲・9-17).
+
+**1 new record added**: 驥醍伐貍∵ｸｯ・井ｸ画ｵｦ蟶ゑｼ蛾≡驥堺ｸｸ (wanko-miura, 繝槭ム繧､繝ｻ繧｢繧ｸ; other species on the page were outside the target list and excluded). Followed the established convention of treating chowari's on-page water temp/wind as a suspect regional widget value and substituted Open-Meteo `nearby` data, keeping only `tideName` from the page.
+
+Checked: chowari full catch list (today's 3 entries 窶・the other two were Wakayama/Hiroshima, out of scope), yesterday's list of ship names (none in our target Kanto/Suruga areas), TSURINEWS, YouTube search, 遏ｳ逕ｰ荳ｸ (stale since 09-14), SSM豬ｦ雉 (stale since 09-13) 窶・no other qualifying catches in the target period.
+
+`data/catch-log.js` validated via Node (316 records, no duplicate IDs or date+spot+species keys) and `logs/2026-09-17.md` updated. Per the procedure, stopping here 窶・did not touch the standalone HTML or git commit/push, which `run-collect.ps1` handles next.
+build-single: source = 釣果ログ.html
+build-single: all-in-one 218870 chars / docs/index.html 218870 / dist/artifact.html 218711
+=== 2026-09-17 12:03 end (claude exit 0) ===

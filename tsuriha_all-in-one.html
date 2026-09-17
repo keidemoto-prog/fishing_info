@@ -135,11 +135,19 @@
  *   { obs:"観測地点名", waterTempC, weather, windMS, windDir, waveM, airTempC, time:"YYYY-MM-DD" }
  */
 window.CATCH_LOG_META = {
-  lastUpdated: "2026-09-17 06:00",
-  lastRunNote: "2件追加（相模湾2）"
+  lastUpdated: "2026-09-17 12:00",
+  lastRunNote: "1件追加（東京湾口三浦1）"
 };
 
 window.CATCH_LOG = [
+  // ---------- 09-17 12:00回 追加分（09-16〜09-17対象） ----------
+  { id:"2026-09-17-wanko-miura-01", date:"2026-09-17", area:"wanko-miura", spot:"金田漁港（三浦市）金重丸", spotType:"沖-釣り船",
+    method:"ウィリー五目", species:["マダイ","アジ"],
+    result:"朝から食い活発、10時前にクーラー満タンで早上がり。マダイ・アジのほかカイワリ・ハナダイ・イサキ・イトヨリダイ・イラ・オニカサゴが交じる（対象魚種外は除外、匹数内訳の記載なし）",
+    tideName:"小潮", waterTempC:null, waterTempSource:"", weather:"", windMS:null, windDir:"", airTempC:null,
+    nearby:{ obs:"Open-Meteo（金田湾沖）", waterTempC:25.1, weather:"霧雨", windMS:10.60, windDir:"北東", waveM:0.76, airTempC:24.4, time:"2026-09-17" },
+    sourceName:"金重丸（chowari）", sourceUrl:"https://www.chowari.jp/ship/01219/catch/",
+    note:"chowariページ実測欄（水温25.4℃・風北北東10.1m/s）は過去の運用ルール通りOpen-Meteoの近隣観測値を代用、tideNameのみページ値を採用" },
   // ---------- 09-17 06:00回 追加分（09-16〜09-17対象） ----------
   { id:"2026-09-16-sagami-04", date:"2026-09-16", area:"sagami", spot:"平塚漁港（平塚市）豊漁丸", spotType:"沖-釣り船",
     method:"仕立イナダ船", species:["イナダ","マダイ","アジ","カンパチ"],
