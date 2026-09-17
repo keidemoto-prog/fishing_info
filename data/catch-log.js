@@ -8,11 +8,19 @@
  *   { obs:"観測地点名", waterTempC, weather, windMS, windDir, waveM, airTempC, time:"YYYY-MM-DD" }
  */
 window.CATCH_LOG_META = {
-  lastUpdated: "2026-09-18 00:00",
-  lastRunNote: "6件追加（東京湾奥1・相模湾1・駿河湾4）"
+  lastUpdated: "2026-09-18 06:00",
+  lastRunNote: "1件追加（東京湾口三浦1）"
 };
 
 window.CATCH_LOG = [
+  // ---------- 09-18 06:00回 追加分（09-17〜09-18対象） ----------
+  { id:"2026-09-17-wanko-miura-03", date:"2026-09-17", area:"wanko-miura", spot:"間口漁港（三浦市）丸又丸", spotType:"沖-釣り船",
+    method:"ワラサ仕立て船", species:["ワラサ","イナダ","サバ","ソウダガツオ"],
+    result:"ワラサ 竿頭2匹（トップ2名が各2匹）、船中空船なし。イナダ・ヒラソーダ（ソウダガツオとして記録）・サバも交じる。シマアジ（ゲスト）は対象魚種外のため除外。北北東の風強く海悪い",
+    tideName:"小潮", waterTempC:null, waterTempSource:"", weather:"", windMS:null, windDir:"", airTempC:null,
+    nearby:{ obs:"Open-Meteo（間口漁港沖）", waterTempC:25.4, weather:"霧雨", windMS:10.9, windDir:"北東", waveM:1.36, airTempC:24.2, time:"2026-09-17" },
+    sourceName:"丸又丸（chowari）", sourceUrl:"https://www.chowari.jp/ship/00927/catch/",
+    note:"chowariページ実測欄（水温25.4℃・風北北東10.1m/s）は既存記録と同様にOpen-Meteoの近隣観測値を代用、tideNameのみページ値を採用" },
   // ---------- 09-18 00:00回 追加分（09-17〜09-18対象、一部09-16拾い直し） ----------
   { id:"2026-09-17-aoku-01", date:"2026-09-17", area:"aoku", spot:"羽田（大田区）かめだや", spotType:"沖-釣り船",
     method:"アジ釣り", species:["アジ"],
