@@ -135,11 +135,54 @@
  *   { obs:"観測地点名", waterTempC, weather, windMS, windDir, waveM, airTempC, time:"YYYY-MM-DD" }
  */
 window.CATCH_LOG_META = {
-  lastUpdated: "2026-09-17 18:00",
-  lastRunNote: "8件追加（東京湾奥1・相模湾4・東京湾口三浦1・駿河湾1、ほか既存1件を更新）"
+  lastUpdated: "2026-09-18 00:00",
+  lastRunNote: "6件追加（東京湾奥1・相模湾1・駿河湾4）"
 };
 
 window.CATCH_LOG = [
+  // ---------- 09-18 00:00回 追加分（09-17〜09-18対象、一部09-16拾い直し） ----------
+  { id:"2026-09-17-aoku-01", date:"2026-09-17", area:"aoku", spot:"羽田（大田区）かめだや", spotType:"沖-釣り船",
+    method:"アジ釣り", species:["アジ"],
+    result:"17〜26cm 0〜10匹。北東の強風で厳しい状況",
+    tideName:"小潮", waterTempC:null, waterTempSource:"", weather:"", windMS:null, windDir:"", airTempC:null,
+    nearby:{ obs:"Open-Meteo（羽田沖）", waterTempC:24.4, weather:"雨", windMS:4.93, windDir:"北", waveM:0.58, airTempC:24.2, time:"2026-09-17" },
+    sourceName:"かめだや（chowari）", sourceUrl:"https://www.chowari.jp/ship/00702/",
+    note:"" },
+  { id:"2026-09-17-sagami-01", date:"2026-09-17", area:"sagami", spot:"片瀬漁港（藤沢市）ゆうせい丸", spotType:"沖-釣り船",
+    method:"カサゴ釣り", species:["カサゴ"],
+    result:"15〜27cm 13〜28匹。北風強く苦戦するも数釣り",
+    tideName:"小潮", waterTempC:null, waterTempSource:"", weather:"", windMS:null, windDir:"", airTempC:null,
+    nearby:{ obs:"Open-Meteo（片瀬沖）", waterTempC:24.7, weather:"弱い雨", windMS:5.81, windDir:"北", waveM:0.62, airTempC:24.4, time:"2026-09-17" },
+    sourceName:"ゆうせい丸（chowari）", sourceUrl:"https://www.chowari.jp/ship/00366/",
+    note:"" },
+  { id:"2026-09-17-suruga-01", date:"2026-09-17", area:"suruga", spot:"久料港（沼津市）魚磯丸", spotType:"沖-釣り船",
+    method:"五目釣り", species:["マダイ","サバ","ソウダガツオ"],
+    result:"マダイは小型サイズ、ほかサバ・ヒラソウダ（ソウダガツオとして記録）。イサキも交じるが対象魚種外のため除外。反応少なく苦戦、天気良好で東風",
+    tideName:"小潮", waterTempC:null, waterTempSource:"", weather:"", windMS:null, windDir:"", airTempC:null,
+    nearby:{ obs:"Open-Meteo（沼津沖）", waterTempC:25.3, weather:"弱い雨", windMS:5.99, windDir:"東", waveM:0.70, airTempC:27.0, time:"2026-09-17" },
+    sourceName:"魚磯丸（chowari）", sourceUrl:"https://www.chowari.jp/ship/01244/",
+    note:"" },
+  { id:"2026-09-17-suruga-02", date:"2026-09-17", area:"suruga", spot:"三保海岸（静岡市）", spotType:"砂浜",
+    method:"ショアジギング", species:["ソウダガツオ"],
+    result:"35cm 2匹。40gメタルジグに反応、強風の中でも日中から活性あり",
+    tideName:"", waterTempC:null, waterTempSource:"", weather:"", windMS:null, windDir:"", airTempC:null,
+    nearby:{ obs:"Open-Meteo（三保）", waterTempC:25.4, weather:"霧雨", windMS:5.80, windDir:"東", waveM:1.10, airTempC:26.8, time:"2026-09-17" },
+    sourceName:"イシグロ静岡中吉田店", sourceUrl:"https://www.ishiguro-gr.com/enjoy/fishing/detail.php?id=49714",
+    note:"" },
+  { id:"2026-09-16-suruga-02", date:"2026-09-16", area:"suruga", spot:"沼津サーフ", spotType:"砂浜",
+    method:"投げ釣り", species:["カワハギ"],
+    result:"10〜18cm 15匹。投げカワハギ仕掛けでアタリ連発",
+    tideName:"", waterTempC:null, waterTempSource:"", weather:"", windMS:null, windDir:"", airTempC:null,
+    nearby:{ obs:"Open-Meteo（沼津沖）", waterTempC:25.6, weather:"雨", windMS:3.86, windDir:"東", waveM:0.52, airTempC:24.0, time:"2026-09-16" },
+    sourceName:"イシグロ沼津店", sourceUrl:"https://www.ishiguro-gr.com/enjoy/fishing/detail.php?id=49720",
+    note:"" },
+  { id:"2026-09-suruga-01", date:"2026-09", area:"suruga", spot:"静浦港（沼津市）光進丸", spotType:"沖-釣り船",
+    method:"タチウオ釣り", species:["タチウオ"],
+    result:"良い人で20本",
+    tideName:"", waterTempC:null, waterTempSource:"", weather:"", windMS:null, windDir:"", airTempC:null,
+    nearby:null,
+    sourceName:"かめや釣具小田原店", sourceUrl:"https://kameya-choka.com/kanto-tokai/archives/f-info/543605",
+    note:"釣行日の記載なし（投稿日2026-09-16）のため年-月のみで記録" },
   // ---------- 09-17 12:00回 追加分（09-16〜09-17対象） ----------
   { id:"2026-09-17-wanko-miura-01", date:"2026-09-17", area:"wanko-miura", spot:"金田漁港（三浦市）金重丸", spotType:"沖-釣り船",
     method:"ウィリー五目", species:["マダイ","アジ","ワラサ","タチウオ"],

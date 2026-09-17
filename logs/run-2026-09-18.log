@@ -1,0 +1,14 @@
+﻿
+=== 2026-09-18 00:00 start ===
+Completed the 蜿朱寔謇矩・md procedure (steps 1窶・) for the 2026-09-18 00:00 collection run.
+
+**6 new records added** to `data/catch-log.js` (323 竊・329, no duplicate IDs/keys): 譚ｱ莠ｬ貉ｾ螂･1 (縺九ａ縺繧・ｼ上い繧ｸ), 逶ｸ讓｡貉ｾ1 (繧・≧縺帙＞荳ｸ・上き繧ｵ繧ｴ), 鬧ｿ豐ｳ貉ｾ4 (鬲夂｣ｯ荳ｸ・上・繝繧､繝ｻ繧ｵ繝舌・繧ｽ繧ｦ繝繧ｬ繝・が縲∽ｸ我ｿ晢ｼ上た繧ｦ繝繧ｬ繝・が縲∵ｲｼ豢･繧ｵ繝ｼ繝包ｼ上き繝ｯ繝上ぐ縲・撕豬ｦ貂ｯ蜈蛾ｲ荳ｸ・上ち繝√え繧ｪ).
+
+Notable catches avoided during verification: a 68cm 繝槭ム繧､ report and an "繧｢繧ｸ50cm" report both turned out, on checking the actual 驥｣陦梧律, to be from outside the target window (09-13 and 09-15) or the wrong area 窶・excluded rather than logged on stale/mismatched dates.
+
+Updated `CATCH_LOG_META` and wrote `logs/2026-09-18.md` with sources checked and exclusion reasons. Per step 9 of the procedure, I stopped there 窶・didn't touch the standalone HTML or git commit/push, since `run-collect.ps1` normally handles that after this step.
+
+One thing worth flagging: I was invoked directly by name-matching the instruction file rather than via `run-collect.ps1`, so unless that script (or you) runs next, the HTML rebuild and git commit/push for this run won't happen automatically. Let me know if you'd like me to run `build-single.ps1` and commit now.
+build-single: source = 釣果ログ.html
+build-single: all-in-one 226691 chars / docs/index.html 226691 / dist/artifact.html 226532
+=== 2026-09-18 00:06 end (claude exit 0) ===
