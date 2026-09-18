@@ -135,11 +135,31 @@
  *   { obs:"観測地点名", waterTempC, weather, windMS, windDir, waveM, airTempC, time:"YYYY-MM-DD" }
  */
 window.CATCH_LOG_META = {
-  lastUpdated: "2026-09-18 18:00",
-  lastRunNote: "7件追加（相模湾2・東京湾口三浦4・駿河湾1）"
+  lastUpdated: "2026-09-19 00:00",
+  lastRunNote: "3件追加（相模湾1・東京湾奥1・東京湾口三浦1）"
 };
 
 window.CATCH_LOG = [
+  // ---------- 09-19 00:00回 追加分（09-18〜09-19対象） ----------
+  { id:"2026-09-18-sagami-03", date:"2026-09-18", area:"sagami", spot:"茅ヶ崎港（茅ヶ崎市）まごうの丸", spotType:"沖-釣り船",
+    method:"五目船", species:["イナダ","ワラサ","アジ"],
+    result:"イナワラ（イナダ・ワラサ）45〜60cm 1〜3尾、アジ27〜35cm 0〜10尾",
+    tideName:"小潮", waterTempC:26.1, waterTempSource:"chowari 釣行当日の気象（実測水温）", weather:"晴れ時々曇り", windMS:7.1, windDir:"北", airTempC:27,
+    nearby:{ obs:"Open-Meteo（茅ヶ崎沖）", waterTempC:24.6, weather:"晴れ時々曇り", windMS:8.22, windDir:"北", waveM:0.72, airTempC:23.7, time:"2026-09-18" },
+    sourceName:"まごうの丸（chowari）", sourceUrl:"https://www.chowari.jp/ship/00448/catch/", note:"" },
+  { id:"2026-09-18-aoku-01", date:"2026-09-18", area:"aoku", spot:"木更津沖（深川吉野屋）", spotType:"沖-釣り船",
+    method:"サワラ船", species:["サワラ"],
+    result:"サワラ72〜88cm 0〜2尾。広範囲にベイト反応、後半北上して反応確認、バラシ多め",
+    tideName:"小潮", waterTempC:25.8, waterTempSource:"chowari 釣行当日の気象（実測水温）", weather:"曇り", windMS:7.3, windDir:"北", airTempC:24,
+    nearby:{ obs:"Open-Meteo（木更津沖）", waterTempC:23.9, weather:"曇り", windMS:11.36, windDir:"北", waveM:0.66, airTempC:22.9, time:"2026-09-18" },
+    sourceName:"深川吉野屋（chowari）", sourceUrl:"https://www.chowari.jp/ship/00271/catch/", note:"" },
+  { id:"2026-09-18-wanko-miura-03", date:"2026-09-18", area:"wanko-miura", spot:"走水沖（深川吉野屋）", spotType:"沖-釣り船",
+    method:"タチウオジギング", species:["タチウオ"],
+    result:"タチウオ65〜116cm 1〜21尾。走水沖からスタート、北東風やや強めもジグでポツポツHIT、バラシ多め",
+    tideName:"小潮", waterTempC:25.8, waterTempSource:"chowari 釣行当日の気象（実測水温）", weather:"曇り", windMS:7.3, windDir:"北", airTempC:24,
+    nearby:{ obs:"Open-Meteo（走水沖）", waterTempC:24.3, weather:"曇り", windMS:10.39, windDir:"北", waveM:0.70, airTempC:23.3, time:"2026-09-18" },
+    sourceName:"深川吉野屋（chowari）", sourceUrl:"https://www.chowari.jp/ship/00271/catch/", note:"" },
+
   // ---------- 09-18 18:00回 追加分（09-17〜09-18対象） ----------
   { id:"2026-09-18-sagami-02", date:"2026-09-18", area:"sagami", spot:"腰越漁港（鎌倉市）喜久丸", spotType:"沖-釣り船",
     method:"五目船", species:["イナダ","サバ","ソウダガツオ"],
