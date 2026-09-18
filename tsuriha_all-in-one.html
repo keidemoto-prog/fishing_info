@@ -135,11 +135,24 @@
  *   { obs:"観測地点名", waterTempC, weather, windMS, windDir, waveM, airTempC, time:"YYYY-MM-DD" }
  */
 window.CATCH_LOG_META = {
-  lastUpdated: "2026-09-18 06:00",
-  lastRunNote: "1件追加（東京湾口三浦1）"
+  lastUpdated: "2026-09-18 12:00",
+  lastRunNote: "2件追加（相模湾2）"
 };
 
 window.CATCH_LOG = [
+  // ---------- 09-18 12:00回 追加分（09-17〜09-18対象） ----------
+  { id:"2026-09-18-sagami-01", date:"2026-09-18", area:"sagami", spot:"片瀬漁港（藤沢市）島きち丸", spotType:"沖-釣り船",
+    method:"LTルアー船", species:["カマス","カンパチ","ソウダガツオ","サバ"],
+    result:"カマス21〜26cm 40〜61匹。カンパチ・丸ソーダ（ソウダガツオとして記録）・サバも交じる",
+    tideName:"小潮", waterTempC:26.1, waterTempSource:"chowari 釣行当日の気象（実測水温）", weather:"曇り", windMS:7.1, windDir:"北", airTempC:23,
+    nearby:{ obs:"Open-Meteo（片瀬・江の島沖）", waterTempC:24.6, weather:"弱い霧雨", windMS:7.16, windDir:"北", waveM:0.66, airTempC:23.4, time:"2026-09-18" },
+    sourceName:"島きち丸（chowari）", sourceUrl:"https://www.chowari.jp/ship/00701/catch/", note:"" },
+  { id:"2026-09-17-sagami-02", date:"2026-09-17", area:"sagami", spot:"茅ヶ崎港（茅ヶ崎市）ちがさき丸", spotType:"沖-釣り船",
+    method:"LT五目／タイ五目／LTアマダイ", species:["アジ","カマス","ワラサ","オオモンハタ","マダイ","アマダイ"],
+    result:"ちがさき丸の3便。3号船LT五目：アジ16〜38cm 15〜41匹、カマス28〜35cm 2〜38匹、ワラサ・オオモンハタ・マダイも交じる。10号タイ五目船：マダイ0.80〜3.70kg 0〜3匹、ワラサも交じる（ハナダイは対象魚種外のため除外）。18号アマダイ船：アマダイ26〜38cm 0〜3匹（イトヨリは対象魚種外のため除外）",
+    tideName:"小潮", waterTempC:25.9, waterTempSource:"chowari 釣行当日の気象（実測水温）", weather:"曇り時々晴れ", windMS:5.7, windDir:"北", airTempC:27,
+    nearby:{ obs:"Open-Meteo（茅ヶ崎沖）", waterTempC:24.7, weather:"霧雨", windMS:7.03, windDir:"北東", waveM:0.62, airTempC:24.6, time:"2026-09-17" },
+    sourceName:"ちがさき丸（chowari）", sourceUrl:"https://www.chowari.jp/ship/01079/catch/", note:"" },
   // ---------- 09-18 06:00回 追加分（09-17〜09-18対象） ----------
   { id:"2026-09-17-wanko-miura-03", date:"2026-09-17", area:"wanko-miura", spot:"間口漁港（三浦市）丸又丸", spotType:"沖-釣り船",
     method:"ワラサ仕立て船", species:["ワラサ","イナダ","サバ","ソウダガツオ"],
