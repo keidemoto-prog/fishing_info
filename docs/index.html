@@ -135,11 +135,49 @@
  *   { obs:"観測地点名", waterTempC, weather, windMS, windDir, waveM, airTempC, time:"YYYY-MM-DD" }
  */
 window.CATCH_LOG_META = {
-  lastUpdated: "2026-09-18 12:00",
-  lastRunNote: "2件追加（相模湾2）"
+  lastUpdated: "2026-09-18 18:00",
+  lastRunNote: "7件追加（相模湾2・東京湾口三浦4・駿河湾1）"
 };
 
 window.CATCH_LOG = [
+  // ---------- 09-18 18:00回 追加分（09-17〜09-18対象） ----------
+  { id:"2026-09-18-sagami-02", date:"2026-09-18", area:"sagami", spot:"腰越漁港（鎌倉市）喜久丸", spotType:"沖-釣り船",
+    method:"五目船", species:["イナダ","サバ","ソウダガツオ"],
+    result:"イナダ0〜2尾38〜45cm、ゴマサバ（サバとして記録）0〜8尾23〜32cm、ソーダ（ソウダガツオとして記録）2〜10尾20〜40cm（ハナダイ・イトヨリは対象魚種外のため除外）",
+    tideName:"小潮", waterTempC:26.1, waterTempSource:"chowari 釣行当日の気象（実測水温）", weather:"曇り", windMS:7.1, windDir:"北", airTempC:24,
+    nearby:{ obs:"Open-Meteo（腰越・江の島沖）", waterTempC:24.5, weather:"曇り", windMS:7.16, windDir:"北", waveM:0.64, airTempC:23.0, time:"2026-09-18" },
+    sourceName:"喜久丸（chowari）", sourceUrl:"https://www.chowari.jp/ship/00270/catch/", note:"" },
+  { id:"2026-09-18-wanko-miura-01", date:"2026-09-18", area:"wanko-miura", spot:"松輪江奈漁港（三浦市）大松丸", spotType:"沖-釣り船",
+    method:"ワラサ仕立て船", species:["ワラサ"],
+    result:"ワラサ0〜5尾3.00〜4.00kg",
+    tideName:"小潮", waterTempC:25.9, waterTempSource:"chowari 釣行当日の気象（実測水温）", weather:"曇り", windMS:11.6, windDir:"北", airTempC:25,
+    nearby:{ obs:"Open-Meteo（松輪・金田沖）", waterTempC:26.6, weather:"曇り", windMS:12.03, windDir:"北", waveM:1.26, airTempC:22.6, time:"2026-09-18" },
+    sourceName:"大松丸（chowari）", sourceUrl:"https://www.chowari.jp/ship/00453/catch/", note:"" },
+  { id:"2026-09-17-wanko-miura-04", date:"2026-09-17", area:"wanko-miura", spot:"松輪江奈漁港（三浦市）大松丸", spotType:"沖-釣り船",
+    method:"ワラサ仕立て船", species:["ワラサ"],
+    result:"ワラサ1〜9尾3.00〜4.00kg",
+    tideName:"小潮", waterTempC:25.4, waterTempSource:"chowari 釣行当日の気象（実測水温）", weather:"曇り", windMS:10.1, windDir:"北北東", airTempC:25,
+    nearby:{ obs:"Open-Meteo（松輪・金田沖）", waterTempC:25.4, weather:"霧雨", windMS:10.90, windDir:"北東", waveM:1.36, airTempC:23.9, time:"2026-09-17" },
+    sourceName:"大松丸（chowari）", sourceUrl:"https://www.chowari.jp/ship/00453/catch/", note:"" },
+  { id:"2026-09-18-wanko-miura-02", date:"2026-09-18", area:"wanko-miura", spot:"金田漁港（三浦市）金重丸", spotType:"沖-釣り船",
+    method:"ウィリー五目", species:["マダイ","アジ"],
+    result:"マダイ・アジ中心の五目（クロダイ・ハナダイ・イトヨリダイ・カイワリは対象魚種外のため除外）",
+    tideName:"小潮", waterTempC:26.1, waterTempSource:"chowari 釣行当日の気象（実測水温）", weather:"曇り", windMS:11.6, windDir:"北", airTempC:25,
+    nearby:{ obs:"Open-Meteo（松輪・金田沖）", waterTempC:26.6, weather:"曇り", windMS:12.03, windDir:"北", waveM:1.26, airTempC:22.6, time:"2026-09-18" },
+    sourceName:"金重丸（chowari）", sourceUrl:"https://www.chowari.jp/ship/01219/catch/", note:"" },
+  { id:"2026-09-17-suruga-03", date:"2026-09-17", area:"suruga", spot:"三保サーフ（静岡市）", spotType:"砂浜",
+    method:"ライトショアジギング", species:["タチウオ"],
+    result:"タチウオ12匹 F2〜F4.5。朝マズメ・夕マズメ共に回遊あり",
+    tideName:"", waterTempC:null, waterTempSource:"", weather:"", windMS:null, windDir:"", airTempC:null,
+    nearby:{ obs:"Open-Meteo（三保）", waterTempC:25.4, weather:"霧雨", windMS:5.80, windDir:"東", waveM:1.10, airTempC:26.8, time:"2026-09-17" },
+    sourceName:"かめや釣具 清水店", sourceUrl:"https://kameya-choka.com/kanto-tokai/archives/f-info/543729", note:"" },
+  { id:"2026-09-sagami-02", date:"2026-09", area:"sagami", spot:"平塚サーフ（平塚市）", spotType:"砂浜",
+    method:"投げ釣り（キス）", species:["キス（シロギス）"],
+    result:"シロギス 好調に釣れる。連日の雨で濁りが入る状況下でも安定して釣果",
+    tideName:"", waterTempC:null, waterTempSource:"", weather:"", windMS:null, windDir:"", airTempC:null,
+    nearby:null,
+    sourceName:"かめや釣具 平塚店", sourceUrl:"https://kameya-choka.com/kanto-tokai/archives/f-info/543724",
+    note:"釣行日「2026年9月中旬」とのみ記載で日が特定できないため年-月のみで記録" },
   // ---------- 09-18 12:00回 追加分（09-17〜09-18対象） ----------
   { id:"2026-09-18-sagami-01", date:"2026-09-18", area:"sagami", spot:"片瀬漁港（藤沢市）島きち丸", spotType:"沖-釣り船",
     method:"LTルアー船", species:["カマス","カンパチ","ソウダガツオ","サバ"],
