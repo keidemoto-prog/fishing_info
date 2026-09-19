@@ -1,0 +1,12 @@
+﻿
+=== 2026-09-20 00:00 start ===
+[mcp-sdk] SEP-2352: stored OAuth credential has no 'issuer' stamp (pre-upgrade storage or provider not round-tripping the value). SEP-2352 isolation is inactive for this read; ensure your provider round-trips the issuer field.
+Done. Summary of this run (2026-09-20 00:00, period 09-19縲・9-20):
+
+- Added 4 new records to `data/catch-log.js` (譚ｱ莠ｬ貉ｾ螂･3: 縺ｲ繧峨＞荳ｸ/鮟剃ｸ荳ｸ/鮟貞ｷ昜ｸｸ縺ｮ繧ｿ繝√え繧ｪ繝ｻ繧｢繧ｸ繝ｻ繧ｷ繝ｭ繧ｮ繧ｹ縲・ｧｿ豐ｳ貉ｾ1: 豐ｼ豢･繧ｵ繝ｼ繝輔・繧ｫ繝ｯ繝上ぐ), now 357 total records, validated as clean JS with no duplicate IDs or duplicate (date+spot+species) keys.
+- Excluded 遖冗視荳ｸ (遖丈ｺ慕恁) and 繝輔ぅ繝・す繝ｳ繧ｰ繝懊・繝育ｩｺ鬚ｨ (蜥梧ｭ悟ｱｱ逵・ 窶・outside target areas. Excluded a 縺九ａ繧・・蜈ｷ 讓ｪ豬懊い繧ｸ險倅ｺ蟻s a duplicate of an existing record.
+- Updated `CATCH_LOG_META` and appended the run notes to `logs/2026-09-20.md`.
+- Per the procedure, stopping here 窶・`run-collect.ps1` will handle rebuilding the standalone HTML/docs files and the git commit/push.
+build-single: source = 釣果ログ.html
+build-single: all-in-one 243877 chars / docs/index.html 243877 / dist/artifact.html 243718
+=== 2026-09-20 00:03 end (claude exit 0) ===

@@ -8,11 +8,36 @@
  *   { obs:"観測地点名", waterTempC, weather, windMS, windDir, waveM, airTempC, time:"YYYY-MM-DD" }
  */
 window.CATCH_LOG_META = {
-  lastUpdated: "2026-09-19 18:00",
-  lastRunNote: "6件追加（東京湾口三浦3・東京湾奥2・駿河湾1）"
+  lastUpdated: "2026-09-20 00:00",
+  lastRunNote: "4件追加（東京湾奥3・駿河湾1）"
 };
 
 window.CATCH_LOG = [
+  // ---------- 09-20 00:00回 追加分（09-19〜09-20対象） ----------
+  { id:"2026-09-19-aoku-04", date:"2026-09-19", area:"aoku", spot:"川崎沖・本牧沖 ひらい丸", spotType:"沖-釣り船",
+    method:"LTアジ船・タチウオ船・シロギス天ぷら仕立船", species:["アジ","タチウオ","キス（シロギス）"],
+    result:"アジ17〜28cm 22〜68匹／タチウオ65〜105cm 10〜57匹／シロギス13〜20cm お土産程度（3便を1記事に併記のため統合）",
+    tideName:"小潮", waterTempC:25.6, waterTempSource:"chowari 釣行当日の気象（実測水温）", weather:"曇り一時雨", windMS:5.7, windDir:"北", airTempC:null,
+    nearby:{ obs:"Open-Meteo（東京湾奥）", waterTempC:23.8, weather:"弱い雨", windMS:8.40, windDir:"北", waveM:0.56, airTempC:23.4, time:"2026-09-19" },
+    sourceName:"ひらい丸（chowari）", sourceUrl:"https://www.chowari.jp/ship/00833/catch/", note:"" },
+  { id:"2026-09-19-aoku-05", date:"2026-09-19", area:"aoku", spot:"金沢漁港（横浜市） 黒一丸", spotType:"沖-釣り船",
+    method:"タチウオ船", species:["タチウオ"],
+    result:"タチウオ60〜121cm 6〜41匹",
+    tideName:"小潮", waterTempC:25.9, waterTempSource:"chowari 釣行当日の気象（実測水温）", weather:"曇り一時雨", windMS:6.9, windDir:"北", airTempC:null,
+    nearby:{ obs:"Open-Meteo（東京湾奥）", waterTempC:23.8, weather:"弱い雨", windMS:8.40, windDir:"北", waveM:0.56, airTempC:23.4, time:"2026-09-19" },
+    sourceName:"黒一丸（chowari）", sourceUrl:"https://www.chowari.jp/ship/00008/catch/", note:"" },
+  { id:"2026-09-19-aoku-06", date:"2026-09-19", area:"aoku", spot:"金沢八景平潟 黒川丸", spotType:"沖-釣り船",
+    method:"アジ船・ショートタチウオ船", species:["アジ","タチウオ"],
+    result:"アジ5〜32匹（18〜25cm）／タチウオ3〜18匹（65〜105cm）。台風接近のため翌日以降出船中止",
+    tideName:"小潮", waterTempC:25.9, waterTempSource:"chowari 釣行当日の気象（実測水温）", weather:"曇り一時雨", windMS:6.9, windDir:"北", airTempC:null,
+    nearby:{ obs:"Open-Meteo（東京湾奥）", waterTempC:23.8, weather:"弱い雨", windMS:8.40, windDir:"北", waveM:0.56, airTempC:23.4, time:"2026-09-19" },
+    sourceName:"黒川丸（chowari）", sourceUrl:"https://www.chowari.jp/ship/00150/catch/", note:"" },
+  { id:"2026-09-18-suruga-02", date:"2026-09-18", area:"suruga", spot:"沼津サーフ（沼津市）", spotType:"砂浜",
+    method:"投げ釣り（ちょい投げ）", species:["カワハギ"],
+    result:"カワハギ8匹（最大13cm）。16:30〜18:30、岸から約30mのポイントで釣行。小型多くリリースサイズが多数",
+    tideName:"", waterTempC:null, waterTempSource:"", weather:"", windMS:null, windDir:"", airTempC:null,
+    nearby:{ obs:"Open-Meteo（駿河湾）", waterTempC:25.4, weather:"晴れ時々曇り", windMS:10.10, windDir:"東", waveM:0.72, airTempC:26.1, time:"2026-09-18" },
+    sourceName:"イシグロ富士店", sourceUrl:"https://www.ishiguro-gr.com/enjoy/fishing/detail.php?id=49755", note:"" },
   // ---------- 09-19 18:00回 追加分（09-18〜09-19対象） ----------
   { id:"2026-09-19-wanko-miura-02", date:"2026-09-19", area:"wanko-miura", spot:"間口漁港（三浦市）松雄丸", spotType:"沖-釣り船",
     method:"タチウオ船", species:["タチウオ"],
