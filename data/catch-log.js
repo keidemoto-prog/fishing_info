@@ -8,11 +8,49 @@
  *   { obs:"観測地点名", waterTempC, weather, windMS, windDir, waveM, airTempC, time:"YYYY-MM-DD" }
  */
 window.CATCH_LOG_META = {
-  lastUpdated: "2026-09-19 12:00",
-  lastRunNote: "6件追加（東京湾奥5・東京湾口三浦1）"
+  lastUpdated: "2026-09-19 18:00",
+  lastRunNote: "6件追加（東京湾口三浦3・東京湾奥2・駿河湾1）"
 };
 
 window.CATCH_LOG = [
+  // ---------- 09-19 18:00回 追加分（09-18〜09-19対象） ----------
+  { id:"2026-09-19-wanko-miura-02", date:"2026-09-19", area:"wanko-miura", spot:"間口漁港（三浦市）松雄丸", spotType:"沖-釣り船",
+    method:"タチウオ船", species:["タチウオ"],
+    result:"タチウオ70〜100cm。朝からポツポツ帰りまで出ていた",
+    tideName:"小潮", waterTempC:25.8, waterTempSource:"chowari 釣行当日の気象（実測水温）", weather:"曇り一時雨", windMS:9.6, windDir:"北北東", airTempC:null,
+    nearby:{ obs:"Open-Meteo（三浦・金田湾沖）", waterTempC:25.5, weather:"霧雨", windMS:11.10, windDir:"北", waveM:1.38, airTempC:23.3, time:"2026-09-19" },
+    sourceName:"松雄丸（chowari）", sourceUrl:"https://www.chowari.jp/ship/01168/catch/", note:"" },
+  { id:"2026-09-19-wanko-miura-03", date:"2026-09-19", area:"wanko-miura", spot:"鴨居大室漁港（横須賀市）房丸", spotType:"沖-釣り船",
+    method:"LTアジ船", species:["アジ"],
+    result:"アジ午前1〜24匹（23〜35cm）／午後8〜26匹（22〜35cm）。外道カサゴ。連日の北風強風で釣況やや低調",
+    tideName:"小潮", waterTempC:25.5, waterTempSource:"chowari 釣行当日の気象（実測水温）", weather:"曇り一時雨", windMS:6.9, windDir:"北", airTempC:null,
+    nearby:{ obs:"Open-Meteo（三浦・金田湾沖）", waterTempC:25.5, weather:"霧雨", windMS:11.10, windDir:"北", waveM:1.38, airTempC:23.3, time:"2026-09-19" },
+    sourceName:"房丸（chowari）", sourceUrl:"https://www.chowari.jp/ship/00690/catch/", note:"" },
+  { id:"2026-09-19-wanko-miura-04", date:"2026-09-19", area:"wanko-miura", spot:"金田漁港（三浦市）邦丸", spotType:"沖-釣り船",
+    method:"ワラサ・マダイ五目船", species:["ワラサ","マダイ"],
+    result:"ワラサ2.5〜3.0kg 0〜2匹、マダイ0.7kg 1匹（他イサキ3〜8匹）。連日の北風強風で釣果いまひとつ",
+    tideName:"小潮", waterTempC:25.8, waterTempSource:"chowari 釣行当日の気象（実測水温）", weather:"曇り一時雨", windMS:9.6, windDir:"北北東", airTempC:null,
+    nearby:{ obs:"Open-Meteo（三浦・金田湾沖）", waterTempC:25.5, weather:"霧雨", windMS:11.10, windDir:"北", waveM:1.38, airTempC:23.3, time:"2026-09-19" },
+    sourceName:"邦丸-金田漁港-（chowari）", sourceUrl:"https://www.chowari.jp/ship/01600/catch/", note:"" },
+  { id:"2026-09-19-aoku-02", date:"2026-09-19", area:"aoku", spot:"江戸川放水路（市川市妙典）たかはし遊船", spotType:"沖-釣り船",
+    method:"シロギス・ハゼ船", species:["キス（シロギス）"],
+    result:"シロギス13〜22cm 7〜50匹（連休初日、風の影響で数は伸びず風表ポイントで確保。他ハゼ5〜14cm多数）",
+    tideName:"小潮", waterTempC:25.8, waterTempSource:"chowari 釣行当日の気象（実測水温）", weather:"曇り一時雨", windMS:5.7, windDir:"北", airTempC:null,
+    nearby:{ obs:"Open-Meteo（市川・江戸川放水路沖）", waterTempC:23.9, weather:"弱い雨", windMS:8.40, windDir:"北", waveM:0.50, airTempC:22.9, time:"2026-09-19" },
+    sourceName:"たかはし遊船（chowari）", sourceUrl:"https://www.chowari.jp/ship/00720/catch/", note:"" },
+  { id:"2026-09-19-aoku-03", date:"2026-09-19", area:"aoku", spot:"平和島（大田区）船宿まる八", spotType:"沖-釣り船",
+    method:"LTショートアジ船", species:["アジ"],
+    result:"アジ18〜28cm 5〜36匹。潮の影響で食いつきやや悪く、晩のおかず程度",
+    tideName:"小潮", waterTempC:25.6, waterTempSource:"chowari 釣行当日の気象（実測水温）", weather:"曇り一時雨", windMS:6.9, windDir:"北", airTempC:null,
+    nearby:{ obs:"Open-Meteo（市川・江戸川放水路沖）", waterTempC:23.9, weather:"弱い雨", windMS:8.40, windDir:"北", waveM:0.50, airTempC:22.9, time:"2026-09-19" },
+    sourceName:"船宿まる八（chowari）", sourceUrl:"https://www.chowari.jp/ship/00976/catch/", note:"" },
+  { id:"2026-09-18-suruga-01", date:"2026-09-18", area:"suruga", spot:"沼津サーフ（沼津市）", spotType:"砂浜",
+    method:"ルアー（メタルジグ）", species:["タチウオ"],
+    result:"タチウオF4サイズまで3匹。夜間釣行、メタルジグ35gアカキン系に反応",
+    tideName:"", waterTempC:null, waterTempSource:"", weather:"", windMS:null, windDir:"", airTempC:null,
+    nearby:{ obs:"Open-Meteo（沼津沖）", waterTempC:25.4, weather:"晴れ", windMS:6.90, windDir:"東", waveM:0.72, airTempC:26.4, time:"2026-09-18" },
+    sourceName:"かめや釣具 関東・東海", sourceUrl:"https://kameya-choka.com/kanto-tokai/archives/f-info/543737", note:"" },
+
   // ---------- 09-19 12:00回 追加分（09-18〜09-19対象） ----------
   { id:"2026-09-19-wanko-miura-01", date:"2026-09-19", area:"wanko-miura", spot:"久比里（横須賀市）山下丸", spotType:"沖-釣り船",
     method:"シロアマダイ狙い", species:["アマダイ"],

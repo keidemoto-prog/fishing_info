@@ -31,3 +31,10 @@ No new files were created outside `data/catch-log.js` and `logs/`, per the "don'
 build-single: source = 釣果ログ.html
 build-single: all-in-one 237902 chars / docs/index.html 237902 / dist/artifact.html 237743
 === 2026-09-19 12:08 end (claude exit 0) ===
+git: push exit 0, unpushed commits: 0
+
+=== 2026-09-19 18:00 start ===
+All 9 steps of the 蜿朱寔謇矩・md are complete: checked date/period, browsed sources across all three bay areas, added 6 new catch records (only target species, deduped, with real article data plus Open-Meteo nearby fallback), updated `CATCH_LOG_META`, wrote the run log to `logs/2026-09-19.md`, and validated `data/catch-log.js` as syntactically correct JS (353 records, no duplicate IDs or date+spot+species keys). Per the instructions, HTML regeneration is left to `run-collect.ps1` and not attempted here.
+build-single: source = 釣果ログ.html
+build-single: all-in-one 241483 chars / docs/index.html 241483 / dist/artifact.html 241324
+=== 2026-09-19 18:03 end (claude exit 0) ===
