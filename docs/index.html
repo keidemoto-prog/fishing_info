@@ -135,11 +135,18 @@
  *   { obs:"観測地点名", waterTempC, weather, windMS, windDir, waveM, airTempC, time:"YYYY-MM-DD" }
  */
 window.CATCH_LOG_META = {
-  lastUpdated: "2026-09-20 00:00",
-  lastRunNote: "4件追加（東京湾奥3・駿河湾1）"
+  lastUpdated: "2026-09-20 06:00",
+  lastRunNote: "1件追加（相模湾1）"
 };
 
 window.CATCH_LOG = [
+  // ---------- 09-20 06:00回 追加分（09-19〜09-20対象） ----------
+  { id:"2026-09-19-sagami-01", date:"2026-09-19", area:"sagami", spot:"葉山芝崎港（葉山町） 五エム丸", spotType:"沖-釣り船",
+    method:"アマダイ船", species:["アマダイ","マダイ","アジ","サバ","カサゴ"],
+    result:"アマダイ25〜47cm 0〜4匹。他に大アジ（平均35cm前後）・秋サバ・マダイ・カサゴ等の混獲あり。潮流不安定も時間とともに釣果向上、レンタルタックル利用者が好成績",
+    tideName:"小潮", waterTempC:25.5, waterTempSource:"chowari 釣行当日の気象（実測水温）", weather:"曇り一時雨", windMS:6.9, windDir:"北", airTempC:null,
+    nearby:{ obs:"Open-Meteo（葉山沖）", waterTempC:25.7, weather:"弱い雨", windMS:8.79, windDir:"北", waveM:1.46, airTempC:23.1, time:"2026-09-19" },
+    sourceName:"五エム丸（chowari）", sourceUrl:"https://www.chowari.jp/ship/00318/catch/", note:"" },
   // ---------- 09-20 00:00回 追加分（09-19〜09-20対象） ----------
   { id:"2026-09-19-aoku-04", date:"2026-09-19", area:"aoku", spot:"川崎沖・本牧沖 ひらい丸", spotType:"沖-釣り船",
     method:"LTアジ船・タチウオ船・シロギス天ぷら仕立船", species:["アジ","タチウオ","キス（シロギス）"],
