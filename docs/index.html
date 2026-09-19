@@ -135,11 +135,48 @@
  *   { obs:"観測地点名", waterTempC, weather, windMS, windDir, waveM, airTempC, time:"YYYY-MM-DD" }
  */
 window.CATCH_LOG_META = {
-  lastUpdated: "2026-09-19 00:00",
-  lastRunNote: "3件追加（相模湾1・東京湾奥1・東京湾口三浦1）"
+  lastUpdated: "2026-09-19 12:00",
+  lastRunNote: "6件追加（東京湾奥5・東京湾口三浦1）"
 };
 
 window.CATCH_LOG = [
+  // ---------- 09-19 12:00回 追加分（09-18〜09-19対象） ----------
+  { id:"2026-09-19-wanko-miura-01", date:"2026-09-19", area:"wanko-miura", spot:"久比里（横須賀市）山下丸", spotType:"沖-釣り船",
+    method:"シロアマダイ狙い", species:["アマダイ"],
+    result:"シロアマダイ38〜46cm 1〜1匹。大風の中の出船で海ガチャガチャ、活性があったのは朝の上げ潮のみで下げ潮はほぼ反応なし",
+    tideName:"小潮", waterTempC:25.9, waterTempSource:"chowari 釣行当日の気象（実測水温）", weather:"曇り一時雨", windMS:6.9, windDir:"北", airTempC:null,
+    nearby:{ obs:"Open-Meteo（三浦・久比里沖）", waterTempC:25.5, weather:"雨", windMS:11.10, windDir:"北", waveM:1.38, airTempC:23.1, time:"2026-09-19" },
+    sourceName:"山下丸（chowari）", sourceUrl:"https://www.chowari.jp/ship/00289/catch/", note:"当日の具体的な釣り場（剣崎沖など）記載なし" },
+  { id:"2026-09-19-aoku-01", date:"2026-09-19", area:"aoku", spot:"横浜エリア（詳細地点不明）", spotType:"沖-釣り船",
+    method:"アジング", species:["アジ"],
+    result:"アジ8匹（サイズ記載なし）。ケイムラワームに好反応",
+    tideName:"", waterTempC:null, waterTempSource:"", weather:"", windMS:null, windDir:"", airTempC:null,
+    nearby:{ obs:"Open-Meteo（横浜沖）", waterTempC:23.9, weather:"雨", windMS:8.4, windDir:"北", waveM:0.50, airTempC:22.8, time:"2026-09-19" },
+    sourceName:"かめや釣具 関東・東海 釣果", sourceUrl:"https://kameya-choka.com/kanto-tokai/archives/f-info/543713", note:"" },
+  { id:"2026-09-18-aoku-02", date:"2026-09-18", area:"aoku", spot:"柴漁港（横浜市磯子区）三喜丸", spotType:"沖-釣り船",
+    method:"タチウオ船／アジ船", species:["タチウオ","アジ"],
+    result:"タチウオ70〜113cm 11〜22匹（猿島沖50m、朝から良型混じり好調）。アジ18〜28cm 12〜76匹（富岡沖〜本牧沖10〜25m、海悪く潮速く釣り辛い）",
+    tideName:"小潮", waterTempC:25.9, waterTempSource:"chowari 釣行当日の気象（実測水温）", weather:"曇り", windMS:8.9, windDir:"北", airTempC:24,
+    nearby:{ obs:"Open-Meteo（金沢八景沖）", waterTempC:24.5, weather:"曇り", windMS:5.63, windDir:"北", waveM:0.64, airTempC:22.8, time:"2026-09-18" },
+    sourceName:"三喜丸（chowari）", sourceUrl:"https://www.chowari.jp/ship/00272/catch/", note:"" },
+  { id:"2026-09-18-aoku-03", date:"2026-09-18", area:"aoku", spot:"金沢八景瀬戸橋（横浜市金沢区）弁天屋", spotType:"沖-釣り船",
+    method:"タチ・アジリレー／サワラ・シロギス船", species:["タチウオ","アジ","サワラ","キス（シロギス）"],
+    result:"タチウオ65〜115cm 1〜17匹、アジ18〜25cm 0〜6匹、サワラ最大2.00kg 0〜1匹、シロギス16〜22cm 12〜60匹。タチウオは魚影濃く皆GET、サワラは反応の割にアタリ少なめ",
+    tideName:"小潮", waterTempC:26.1, waterTempSource:"chowari 釣行当日の気象（実測水温）", weather:"曇り", windMS:8.9, windDir:"北", airTempC:23,
+    nearby:{ obs:"Open-Meteo（金沢八景沖）", waterTempC:24.5, weather:"曇り", windMS:5.63, windDir:"北", waveM:0.64, airTempC:22.8, time:"2026-09-18" },
+    sourceName:"弁天屋（chowari）", sourceUrl:"https://www.chowari.jp/ship/00300/catch/", note:"" },
+  { id:"2026-09-18-aoku-04", date:"2026-09-18", area:"aoku", spot:"金沢八景平潟（横浜市金沢区）米元釣船店", spotType:"沖-釣り船",
+    method:"マダイ一日便／LTアジ船（ショート）／タチウオ船（ショート）", species:["マダイ","アジ","カサゴ","キス（シロギス）","タチウオ"],
+    result:"米元釣船店の3便。マダイ一日便：マダイ0.60〜1.00kg 0〜1匹、北東風で海悪く本命渋い、アジも少し交じる。LTアジ船：アジ20〜27cm 18〜46匹（バチコン24〜58尾、赤灯沖25m前後）、カサゴ・シロギス・タチウオも交じる。タチウオ船：タチウオ75〜123cm 6〜24匹（天秤1人9本）",
+    tideName:"小潮", waterTempC:26.1, waterTempSource:"chowari 釣行当日の気象（実測水温）", weather:"曇り", windMS:8.9, windDir:"北", airTempC:24,
+    nearby:{ obs:"Open-Meteo（金沢八景沖）", waterTempC:24.5, weather:"曇り", windMS:5.63, windDir:"北", waveM:0.64, airTempC:22.8, time:"2026-09-18" },
+    sourceName:"米元釣船店（chowari）", sourceUrl:"https://www.chowari.jp/ship/00836/catch/", note:"" },
+  { id:"2026-09-18-aoku-05", date:"2026-09-18", area:"aoku", spot:"金沢八景平潟（横浜市金沢区）黒川丸", spotType:"沖-釣り船",
+    method:"アジ船／ショートタチウオ仕立", species:["アジ","タチウオ"],
+    result:"アジ18〜25cm 0〜8匹（北風で波陰狙うも食い渋り）。タチウオ65〜105cm 11〜31匹（仕立船、2番手20匹・貸し竿15匹と好調）",
+    tideName:"小潮", waterTempC:26.1, waterTempSource:"chowari 釣行当日の気象（実測水温）", weather:"曇り", windMS:8.9, windDir:"北", airTempC:23,
+    nearby:{ obs:"Open-Meteo（金沢八景沖）", waterTempC:24.5, weather:"曇り", windMS:5.63, windDir:"北", waveM:0.64, airTempC:22.8, time:"2026-09-18" },
+    sourceName:"黒川丸（chowari）", sourceUrl:"https://www.chowari.jp/ship/00150/catch/", note:"" },
   // ---------- 09-19 00:00回 追加分（09-18〜09-19対象） ----------
   { id:"2026-09-18-sagami-03", date:"2026-09-18", area:"sagami", spot:"茅ヶ崎港（茅ヶ崎市）まごうの丸", spotType:"沖-釣り船",
     method:"五目船", species:["イナダ","ワラサ","アジ"],

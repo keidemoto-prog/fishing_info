@@ -13,3 +13,21 @@ You've hit your session limit ﾂｷ resets 11am (Asia/Tokyo)
 build-single: source = 釣果ログ.html
 build-single: all-in-one 234065 chars / docs/index.html 234065 / dist/artifact.html 233906
 === 2026-09-19 06:07 end (claude exit 1) ===
+git: push exit 0, unpushed commits: 0
+
+=== 2026-09-19 12:00 start ===
+All 9 steps from 蜿朱寔謇矩・md are complete:
+
+1. Confirmed today's date (2026-09-19).
+2. Determined the target window: normal 2-day period (09-18縲・9-19), since the 06:00 run failed on a session limit and effectively collected nothing new.
+3-4. Checked chowari (ship pages + catcharea), 縺九ａ繧・・蜈ｷ, 繧､繧ｷ繧ｰ繝ｭ, 遏ｳ逕ｰ荳ｸ, 豬懷鴻魑･, TSURINEWS, and YouTube for new catches in scope.
+5. Added 6 new non-duplicate records to `data/catch-log.js` (5 譚ｱ莠ｬ貉ｾ螂･/aoku, 1 譚ｱ莠ｬ貉ｾ蜿｣荳画ｵｦ/wanko-miura), each with real in-article tide/water-temp/weather data where available, and genuine Open-Meteo lookups (not guessed values) for `nearby`.
+6. Updated `CATCH_LOG_META` (`lastUpdated: 2026-09-19 12:00`, note on 6 additions).
+7. Wrote the 12:00 run's log entry to `logs/2026-09-19.md`.
+8. Verified via Node that the file parses correctly with 347 total records and no duplicate IDs or (date+spot+species) keys.
+9. Stopping here 窶・HTML regeneration and the mobile Artifact page are handled by `run-collect.ps1` and the README's separate process, not this step.
+
+No new files were created outside `data/catch-log.js` and `logs/`, per the "don't create new files in this folder" rule.
+build-single: source = 釣果ログ.html
+build-single: all-in-one 237902 chars / docs/index.html 237902 / dist/artifact.html 237743
+=== 2026-09-19 12:08 end (claude exit 0) ===
