@@ -135,11 +135,24 @@
  *   { obs:"観測地点名", waterTempC, weather, windMS, windDir, waveM, airTempC, time:"YYYY-MM-DD" }
  */
 window.CATCH_LOG_META = {
-  lastUpdated: "2026-09-20 06:00",
-  lastRunNote: "1件追加（相模湾1）"
+  lastUpdated: "2026-09-20 12:00",
+  lastRunNote: "2件追加（東京湾奥2）"
 };
 
 window.CATCH_LOG = [
+  // ---------- 09-20 12:00回 追加分（09-19〜09-20対象） ----------
+  { id:"2026-09-20-aoku-01", date:"2026-09-20", area:"aoku", spot:"Dマリーナ横浜市 SEAKURO", spotType:"沖-ボート",
+    method:"シーバスルアー船（夜間）", species:["シーバス"],
+    result:"シーバス最大84cm、中小型中心。深夜のミノーイングで各ポイント活発に反応、ボイル多数",
+    tideName:"長潮", waterTempC:25.3, waterTempSource:"SEAKURO記事内記載", weather:"雨", windMS:4.9, windDir:"北東", airTempC:23,
+    nearby:{ obs:"Open-Meteo（東京湾奥）", waterTempC:23.7, weather:"雨", windMS:9.34, windDir:"北東", waveM:0.80, airTempC:24.1, time:"2026-09-20" },
+    sourceName:"SEAKURO（chowari）", sourceUrl:"https://www.chowari.jp/ship/00206/catch/", note:"chowariのエリア分類は相模湾表記だが所在地はDマリーナ横浜（東京湾奥）のためareaはaokuとして記録" },
+  { id:"2026-09-19-aoku-07", date:"2026-09-19", area:"aoku", spot:"木場（江東区） 深川吉野屋", spotType:"沖-釣り船",
+    method:"マアジ船・サワラ船・タチウオ船", species:["アジ","サワラ","タチウオ"],
+    result:"マアジ10〜87匹18〜28cm／サワラ0〜3匹60〜94cm／タチウオ1〜33匹65〜118cm（3便を1記事扱いで統合）",
+    tideName:"小潮", waterTempC:25.6, waterTempSource:"chowari 釣行当日の気象（実測水温）", weather:"曇り一時雨", windMS:null, windDir:"", airTempC:null,
+    nearby:{ obs:"Open-Meteo（東京湾奥）", waterTempC:23.8, weather:"弱い雨", windMS:8.40, windDir:"北", waveM:0.56, airTempC:23.4, time:"2026-09-19" },
+    sourceName:"深川吉野屋（chowari）", sourceUrl:"https://www.chowari.jp/ship/00271/catch/", note:"" },
   // ---------- 09-20 06:00回 追加分（09-19〜09-20対象） ----------
   { id:"2026-09-19-sagami-01", date:"2026-09-19", area:"sagami", spot:"葉山芝崎港（葉山町） 五エム丸", spotType:"沖-釣り船",
     method:"アマダイ船", species:["アマダイ","マダイ","アジ","サバ","カサゴ"],
