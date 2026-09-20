@@ -30,3 +30,15 @@ git: push exit 0, unpushed commits: 0
 build-single: source = 釣果ログ.html
 build-single: all-in-one 245864 chars / docs/index.html 245864 / dist/artifact.html 245705
 === 2026-09-20 12:03 end (claude exit 0) ===
+git: push exit 0, unpushed commits: 0
+
+=== 2026-09-20 18:00 start ===
+All steps of the procedure (1窶・) are complete. Per step 9, I stop here 窶・rebuilding the standalone HTML files and git commit/push is handled by `run-collect.ps1` afterward.
+
+**Summary of this run (2026-09-20 18:00, period 09-19縲・9-20):**
+- Added 4 new records to `data/catch-log.js` (譚ｱ莠ｬ貉ｾ螂･4: 譟贋ｸｸ縲域惠譖ｴ豢･繝ｻ繧ｵ繝ｯ繝ｩ/繧ｿ繝√え繧ｪ縲峨∝ｼ∝､ｩ螻九・荳牙万荳ｸ繝ｻ邀ｳ蜈・・闊ｹ蠎励医＞縺壹ｌ繧・9-19蛻・・繧ｿ繝√え繧ｪ髢｢騾｣縲・, now 364 total, validated with Node (no duplicate IDs or date+spot+species keys).
+- Excluded out-of-area/duplicate items (荳・ｦ丈ｸｸ繝ｻ陌惹ｸｸ繝ｻFISHING FOOL繝ｻ驥｣闊ｹ縺ゅ＞荳ｸ, a duplicate 鮟剃ｸ荳ｸ trip, an old TSURINEWS article, and already-recorded 縺九ａ繧・繧､繧ｷ繧ｰ繝ｭ items).
+- Updated `CATCH_LOG_META` and appended run notes to `logs/2026-09-20.md`.
+build-single: source = 釣果ログ.html
+build-single: all-in-one 248374 chars / docs/index.html 248374 / dist/artifact.html 248215
+=== 2026-09-20 18:05 end (claude exit 0) ===
