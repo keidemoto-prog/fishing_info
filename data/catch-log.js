@@ -8,11 +8,18 @@
  *   { obs:"観測地点名", waterTempC, weather, windMS, windDir, waveM, airTempC, time:"YYYY-MM-DD" }
  */
 window.CATCH_LOG_META = {
-  lastUpdated: "2026-09-20 18:00",
-  lastRunNote: "4件追加（東京湾奥4）"
+  lastUpdated: "2026-09-21 00:00",
+  lastRunNote: "1件追加（相模湾1）"
 };
 
 window.CATCH_LOG = [
+  // ---------- 09-21 00:00回 追加分（09-19〜09-21対象。台風25号接近で19日夜以降ほぼ全域出船中止のため新規釣果少なし） ----------
+  { id:"2026-09-19-sagami-02", date:"2026-09-19", area:"sagami", spot:"長井港（横須賀市長井）", spotType:"沖-釣り船",
+    method:"かかり釣り（筏釣り）", species:["マゴチ"],
+    result:"マゴチ51cm 0〜1匹（他イシモチ35cm・シマダイ20〜22cm・オオモンハタ23cmなど混獲、黒鯛バラシ2名）。潮が流れず苦戦、餌取り多数。翌20・21日は台風25号接近のため出船中止",
+    tideName:"", waterTempC:24, waterTempSource:"長井かかり釣りセンター記事内記載", weather:"曇り", windMS:null, windDir:"北", airTempC:null,
+    nearby:{ obs:"Open-Meteo（長井港沖）", waterTempC:26.8, weather:"雨", windMS:8.37, windDir:"北", waveM:1.70, airTempC:23.3, time:"2026-09-19" },
+    sourceName:"長井かかり釣りセンター", sourceUrl:"https://www.nagaikakarizuri.com/2026/09/19/%E6%B5%B7%E4%B8%8A%E3%80%81%E5%8C%97%E3%81%AE%E9%A2%A8%E3%81%A7%E3%81%97%E3%81%9F%E3%80%82%E6%98%8E%E6%97%A5%EF%BC%88%EF%BC%92%EF%BC%90%E6%97%A5%EF%BC%89%E6%98%8E%E5%BE%8C%E6%97%A5%EF%BC%88%EF%BC%92/", note:"" },
   // ---------- 09-20 18:00回 追加分（09-19〜09-20対象） ----------
   { id:"2026-09-20-aoku-02", date:"2026-09-20", area:"aoku", spot:"木更津港（木更津市） 柊丸", spotType:"沖-釣り船",
     method:"船釣り（サワラ・タチウオ）", species:["サワラ","タチウオ"],

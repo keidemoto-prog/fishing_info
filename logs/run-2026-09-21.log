@@ -1,0 +1,13 @@
+﻿
+=== 2026-09-21 00:00 start ===
+Completed the daily fishing-catch collection run (`蜿朱寔謇矩・md`, steps 1窶・):
+
+- **Period covered**: 2026-09-19縲・1 (normal window 窶・today + yesterday)
+- **Context**: Typhoon 25 (Dujeon) made its closest approach to Kanto around 9/21, so nearly all boats across Tokyo Bay/Sagami Bay/Suruga Bay were cancelled from the night of 9/19 through 9/21, and the previous run (9/20 18:00) had already thoroughly covered 9/19窶・0. New, non-duplicate catches were scarce.
+- **Added**: 1 record 窶・繝槭ざ繝・(51cm) at 髟ｷ莠墓ｸｯ (Yokosuka), 髟ｷ莠輔°縺九ｊ驥｣繧翫そ繝ｳ繧ｿ繝ｼ, 2026-09-19 (actual reported water temp 24ﾂｰC/譖・ｊ/蛹鈴｢ｨ, Open-Meteo used for missing wind speed/wave/air temp).
+- Rejected leads: a 蜊・痩繝ｻ蜍晏ｱｱ blog whose extracted content turned out to be about Okinawa (unreliable, discarded), and two boats (Hyogo/Osaka) that were out of the target region.
+- Updated `data/catch-log.js` meta (`lastUpdated: 2026-09-21 00:00`), verified the file still parses as valid JS with no duplicate IDs or (date+spot+species) keys (365 records total), and wrote `logs/2026-09-21.md` with sources checked and notes.
+- Per the procedure, stopped there 窶・HTML regeneration and any git commit are handled by `run-collect.ps1` afterward, not by me.
+build-single: source = 釣果ログ.html
+build-single: all-in-one 249281 chars / docs/index.html 249281 / dist/artifact.html 249122
+=== 2026-09-21 00:06 end (claude exit 0) ===
