@@ -11,3 +11,16 @@ Completed the daily fishing-catch collection run (`蜿朱寔謇矩・md`, ste
 build-single: source = 釣果ログ.html
 build-single: all-in-one 249281 chars / docs/index.html 249281 / dist/artifact.html 249122
 === 2026-09-21 00:06 end (claude exit 0) ===
+git: push exit 0, unpushed commits: 0
+
+=== 2026-09-21 06:00 start ===
+Only `data/catch-log.js` and `logs/` were modified, as required (`run-2026-09-21.log` was already modified before I started, by `run-collect.ps1` itself). The file is valid JavaScript.
+
+Per step 9 of the procedure, I stop here 窶・HTML regeneration (`tsuriha_all-in-one.html`/`dist/artifact.html`) and any git commit are handled by `run-collect.ps1` afterward, not by me.
+
+**Summary**: This Monday 06:00 run covered the extended Fri窶溺on window per the weekly rule. Found 8 new catch records (2 Tokyo Bay inner/aoku, 3 Tokyo Bay mouth/Miura, 3 Sagami Bay) from sources not recently cross-checked against the `area=92` (Sagami) chowari filter and a previously-unvisited boat (蟆丞ｳｯ荳ｸ, Chiba). Appended them to `data/catch-log.js`, updated the meta block, wrote the `logs/2026-09-21.md` entry, and verified the file parses with no duplicate IDs or duplicate (date+spot+species) keys (373 records total).
+
+One process note: I initially created a few temporary HTML/text scratch files inside the `驥｣繧・` folder while debugging a Shift-JIS vs UTF-8 decoding issue 窶・caught it against the procedure's explicit "no new files in this folder" rule and deleted them immediately, moving remaining scratch work to a temp directory outside the vault.
+build-single: source = 釣果ログ.html
+build-single: all-in-one 253718 chars / docs/index.html 253718 / dist/artifact.html 253559
+=== 2026-09-21 06:13 end (claude exit 0) ===
