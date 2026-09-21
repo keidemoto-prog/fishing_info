@@ -8,11 +8,18 @@
  *   { obs:"観測地点名", waterTempC, weather, windMS, windDir, waveM, airTempC, time:"YYYY-MM-DD" }
  */
 window.CATCH_LOG_META = {
-  lastUpdated: "2026-09-22 00:00",
-  lastRunNote: "0件追加。9/21も台風25号の影響で大半の船宿・レンタルボートが休船継続、9/19以前の分は既存レコードと重複"
+  lastUpdated: "2026-09-22 06:00",
+  lastRunNote: "1件追加（駿河湾1）。台風25号明けで9/21〜22は大半の船宿・レンタルボートが依然休船（中根ボート・オオモリボート等は21日も荒天で欠航）。相模湾・東京湾のchowari/船宿ブログは9/19〜20止まりで新規なし"
 };
 
 window.CATCH_LOG = [
+  // ---------- 09-22 06:00回 追加分（通常window=09-21〜22対象。台風25号明けで大半休船、新規は僅少） ----------
+  { id:"2026-09-20-suruga-01", date:"2026-09-20", area:"suruga", spot:"三保サーフ（静岡市）", spotType:"砂浜",
+    method:"ライトショアジギング", species:["ショゴ"],
+    result:"ショゴ30〜40cm 3匹",
+    tideName:"", waterTempC:null, waterTempSource:"", weather:"", windMS:null, windDir:"", airTempC:null,
+    nearby:{ obs:"Open-Meteo（三保）", waterTempC:25.7, weather:"強い雨", windMS:8.10, windDir:"東", waveM:1.40, airTempC:25.1, time:"2026-09-20" },
+    sourceName:"かめや釣具 清水店", sourceUrl:"https://kameya-choka.com/kanto-tokai/archives/f-info/543914", note:"" },
   // ---------- 09-21 18:00回 追加分（通常window=09-20〜21対象。台風25号通過直後で新規は僅少） ----------
   { id:"2026-09-20-wanko-miura-02", date:"2026-09-20", area:"wanko-miura", spot:"松輪江奈漁港（三浦市）成銀丸", spotType:"沖-釣り船",
     method:"コマセ五目（ワラサ）", species:["ワラサ","マダイ","シマアジ"],
