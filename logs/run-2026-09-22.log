@@ -1,0 +1,8 @@
+﻿
+=== 2026-09-22 00:00 start ===
+Only the allowed files were touched. Per step 9 of the procedure, I stop here 窶・HTML regeneration (`tsuriha_all-in-one.html`/`dist/artifact.html`) and the git commit are handled by `run-collect.ps1` afterward, not by me.
+
+**Summary of this 00:00 run**: Normal window (9/21縲・/22). Checked chowari (general + area-filtered), TSURINEWS, all listed boat/shop blogs across the three bays, the two Yokohama fishing piers, Suruga-side sources, and YouTube. Typhoon 25 (Dujeon)'s aftermath continued to suppress boats through 9/21 (縺ｨ繧ゅ・縺ｾ繧・ 遏ｳ逕ｰ荳ｸ, 荳ｭ譬ｹ繝懊・繝・all explicitly posted cancellation notices through 9/21窶・2; the piers were closed 9/21). The few candidate leads found were all either duplicates of existing records (縺九ａ繧・干豌ｴ蟾昴す繝ｼ繝舌せ, SSM豬ｦ雉's 隨ｬ荳画ｵｷ蝣｡/迪ｿ蟲ｶ豐・蜑｣蟠取ｲ・reports turned out to be dated 9/16, already outside the window) or out of scope (縺・＞縺縺・isn't a tracked species; 繧､繧ｷ繧ｰ繝ｭ's 繧ｷ繝ｼ繝舌せ catch was at 蜷肴ｸｯ/Nagoya, not Suruga Bay). Net result: **0 new records**. Updated `CATCH_LOG_META` (`lastUpdated: 2026-09-22 00:00`), verified `data/catch-log.js` still parses with no duplicate IDs/keys (375 records, unchanged), and wrote `logs/2026-09-22.md`.
+build-single: source = 釣果ログ.html
+build-single: all-in-one 255007 chars / docs/index.html 255007 / dist/artifact.html 254848
+=== 2026-09-22 00:03 end (claude exit 0) ===
