@@ -8,11 +8,18 @@
  *   { obs:"観測地点名", waterTempC, weather, windMS, windDir, waveM, airTempC, time:"YYYY-MM-DD" }
  */
 window.CATCH_LOG_META = {
-  lastUpdated: "2026-09-21 12:00",
-  lastRunNote: "1件追加（相模湾1）。台風25号接近のため東京湾・相模湾・駿河湾とも9/20・21は大半の船が休船、新規釣果は少なめ"
+  lastUpdated: "2026-09-21 18:00",
+  lastRunNote: "1件追加（東京湾口三浦1）。台風25号通過後だが9/21も大半の船が休船継続、新規釣果は引き続き少なめ"
 };
 
 window.CATCH_LOG = [
+  // ---------- 09-21 18:00回 追加分（通常window=09-20〜21対象。台風25号通過直後で新規は僅少） ----------
+  { id:"2026-09-20-wanko-miura-02", date:"2026-09-20", area:"wanko-miura", spot:"松輪江奈漁港（三浦市）成銀丸", spotType:"沖-釣り船",
+    method:"コマセ五目（ワラサ）", species:["ワラサ","マダイ","シマアジ"],
+    result:"ワラサ2.00〜3.50kg 0〜10匹、マダイ0.40〜1.00kg 0〜2匹、シマアジ0.80〜1.20kg 0〜3匹。朝からダブル・トリプルヒットで好調、潮変わりでマダイ・シマアジも混じり「クーラー賑わい」。天候悪化のため10時半早上がり",
+    tideName:"長潮", waterTempC:25.4, waterTempSource:"成銀丸 釣果ページ（実測）", weather:"雨", windMS:7.1, windDir:"北東", airTempC:25,
+    nearby:null,
+    sourceName:"成銀丸（松輪江奈漁港）", sourceUrl:"https://www.chowari.jp/ship/00332/catch/", note:"同日同港の正海丸・伝五郎丸は既存レコード 2026-09-20-wanko-miura-01（同一の実測気象値）。airTempCのみ成銀丸ページに記載がなく同日同港の姉妹レコードと同値を採用" },
   // ---------- 09-21 12:00回 追加分（通常window=09-20〜21対象。台風25号のため大半の船宿が休船中で新規は僅少） ----------
   { id:"2026-09-sagami-03", date:"2026-09", area:"sagami", spot:"花水川河口（平塚市）", spotType:"河口",
     method:"ルアー（シーバス）", species:["シーバス"],
