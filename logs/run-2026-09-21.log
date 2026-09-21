@@ -24,3 +24,14 @@ One process note: I initially created a few temporary HTML/text scratch files in
 build-single: source = 釣果ログ.html
 build-single: all-in-one 253718 chars / docs/index.html 253718 / dist/artifact.html 253559
 === 2026-09-21 06:13 end (claude exit 0) ===
+git: push exit 0, unpushed commits: 0
+
+=== 2026-09-21 12:00 start ===
+Only the two files I'm allowed to touch (`data/catch-log.js`, `logs/2026-09-21.md`) were modified, plus `logs/run-2026-09-21.log`, which `run-collect.ps1` manages itself. No new files were created in the folder.
+
+Per step 9, I'm stopping here 窶・HTML regeneration (`tsuriha_all-in-one.html`/`dist/artifact.html`) and the git commit are handled automatically by `run-collect.ps1` after this.
+
+**Summary of this 12:00 run**: Normal window (9/20窶・1). Typhoon 25 (Dujeon) kept nearly all boats in Tokyo Bay/Sagami Bay/Suruga Bay canceled through 9/20窶・1 (confirmed via 遏ｳ逕ｰ荳ｸ, 荳ｭ譬ｹ繝懊・繝・ SSM豬ｦ雉, chowari, TSURINEWS, and news searches), so new catches were scarce. Added 1 record: 繧ｷ繝ｼ繝舌せ 43cm at 闃ｱ豌ｴ蟾晄ｲｳ蜿｣ (Hiratsuka, sagami), via 縺九ａ繧・・蜈ｷ蟷ｳ蝪壼ｺ・窶・dated `2026-09` since the article only said "mid-September." Rejected one candidate (隘ｿ貉伜､髦ｲ 繧｢繧ｪ繝ｪ繧､繧ｫ from 縺九ａ繧・・蜈ｷ蟆冗伐蜴溷ｺ・ as a duplicate of an already-recorded 9/19 entry with the same source URL. File verified as valid JS, 374 records, no duplicate IDs or (date+spot+species) keys.
+build-single: source = 釣果ログ.html
+build-single: all-in-one 254291 chars / docs/index.html 254291 / dist/artifact.html 254132
+=== 2026-09-21 12:03 end (claude exit 0) ===

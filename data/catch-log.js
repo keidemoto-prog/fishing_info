@@ -8,11 +8,18 @@
  *   { obs:"観測地点名", waterTempC, weather, windMS, windDir, waveM, airTempC, time:"YYYY-MM-DD" }
  */
 window.CATCH_LOG_META = {
-  lastUpdated: "2026-09-21 06:00",
-  lastRunNote: "8件追加（東京湾奥2・東京湾口三浦3・相模湾3）"
+  lastUpdated: "2026-09-21 12:00",
+  lastRunNote: "1件追加（相模湾1）。台風25号接近のため東京湾・相模湾・駿河湾とも9/20・21は大半の船が休船、新規釣果は少なめ"
 };
 
 window.CATCH_LOG = [
+  // ---------- 09-21 12:00回 追加分（通常window=09-20〜21対象。台風25号のため大半の船宿が休船中で新規は僅少） ----------
+  { id:"2026-09-sagami-03", date:"2026-09", area:"sagami", spot:"花水川河口（平塚市）", spotType:"河口",
+    method:"ルアー（シーバス）", species:["シーバス"],
+    result:"シーバス43cm 1匹（カゲロウMD98Fダウンクロスでヒット）",
+    tideName:"", waterTempC:null, waterTempSource:"", weather:"", windMS:null, windDir:"", airTempC:null,
+    nearby:null,
+    sourceName:"かめや釣具 平塚店", sourceUrl:"https://kameya-choka.com/kanto-tokai/archives/f-info/543867", note:"釣行日は「2026年9月中旬」とのみ記載で日不特定のため年-月のみ" },
   // ---------- 09-21 06:00回 追加分（月曜朝のため金・土・日・月=09-18〜09-21対象。台風25号通過直後で09-18〜20分の見落としを回収） ----------
   { id:"2026-09-20-aoku-03", date:"2026-09-20", area:"aoku", spot:"寒川港（千葉市）小峯丸", spotType:"沖-釣り船",
     method:"ルアーサワラ", species:["サワラ"],
