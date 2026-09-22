@@ -135,11 +135,36 @@
  *   { obs:"観測地点名", waterTempC, weather, windMS, windDir, waveM, airTempC, time:"YYYY-MM-DD" }
  */
 window.CATCH_LOG_META = {
-  lastUpdated: "2026-09-23 00:00",
-  lastRunNote: "4件追加（東京湾奥2・相模湾2）。TARGET（千葉市都川）でシーバス78匹＋チャーターサワラ2匹、隠徳丸（小田原早川）でシイラ、かめや釣具平塚店の記事から相模川クロダイを追加（いずれもちょうあり/かめやの実測・記載値）"
+  lastUpdated: "2026-09-23 06:00",
+  lastRunNote: "4件追加（東京湾奥3・相模湾1）。村本海事（横浜市金沢八景）でマダイ・アオリイカ・アジ（コース別に3件）、たいぞう丸（葉山鐙摺港）でシロアマダイ・マダイ（いずれもちょうあり実測値）"
 };
 
 window.CATCH_LOG = [
+  // ---------- 09-23 06:00回 追加分（通常window=09-22〜23対象） ----------
+  { id:"2026-09-22-aoku-04", date:"2026-09-22", area:"aoku", spot:"金沢八景沖（横浜市）", spotType:"沖-釣り船",
+    method:"タイラバ", species:["マダイ"],
+    result:"マダイ0.7〜1.6kg 0〜2匹",
+    tideName:"中潮", waterTempC:24.2, waterTempSource:"村本海事 釣果ページ（ちょうあり・実測）", weather:"晴れ後時々曇り", windMS:5.7, windDir:"北", airTempC:31,
+    nearby:null,
+    sourceName:"村本海事（横浜市金沢八景）釣果（ちょうあり）", sourceUrl:"https://www.chowari.jp/ship/01580/catch/", note:"波 北北東0.4m（最高31℃/最低22℃）" },
+  { id:"2026-09-22-aoku-05", date:"2026-09-22", area:"aoku", spot:"金沢八景沖（横浜市）", spotType:"沖-釣り船",
+    method:"ティップラン", species:["アオリイカ"],
+    result:"アオリイカ0.1〜0.3kg 0〜3匹",
+    tideName:"中潮", waterTempC:24.2, waterTempSource:"村本海事 釣果ページ（ちょうあり・実測）", weather:"晴れ後時々曇り", windMS:5.7, windDir:"北", airTempC:31,
+    nearby:null,
+    sourceName:"村本海事（横浜市金沢八景）釣果（ちょうあり）", sourceUrl:"https://www.chowari.jp/ship/01580/catch/", note:"波 北北東0.4m（最高31℃/最低22℃）" },
+  { id:"2026-09-22-aoku-06", date:"2026-09-22", area:"aoku", spot:"金沢八景沖（横浜市）", spotType:"沖-釣り船",
+    method:"LTアジ・バチコン", species:["アジ"],
+    result:"アジ16〜26cm 8〜12匹",
+    tideName:"中潮", waterTempC:24.2, waterTempSource:"村本海事 釣果ページ（ちょうあり・実測）", weather:"晴れ後時々曇り", windMS:5.7, windDir:"北", airTempC:31,
+    nearby:null,
+    sourceName:"村本海事（横浜市金沢八景）釣果（ちょうあり）", sourceUrl:"https://www.chowari.jp/ship/01580/catch/", note:"波 北北東0.4m（最高31℃/最低22℃）" },
+  { id:"2026-09-22-sagami-05", date:"2026-09-22", area:"sagami", spot:"葉山鐙摺港沖", spotType:"沖-釣り船",
+    method:"五目釣り（スポット企画）", species:["マダイ","アマダイ"],
+    result:"シロアマダイ34〜41cm 0〜1匹（本命）。他マダイ・イトヨリダイ・ソコイトヨリ等の多魚種（本命外は数値記載なし）",
+    tideName:"中潮", waterTempC:24.1, waterTempSource:"たいぞう丸 釣果ページ（ちょうあり・実測）", weather:"晴れ後時々曇り", windMS:5.7, windDir:"北", airTempC:31,
+    nearby:null,
+    sourceName:"たいぞう丸（葉山町鐙摺港）釣果（ちょうあり）", sourceUrl:"https://www.chowari.jp/ship/00449/catch/", note:"波 南1.1m（最高31℃/最低22℃）" },
   // ---------- 09-23 00:00回 追加分（通常window=09-22〜23対象） ----------
   { id:"2026-09-22-aoku-02", date:"2026-09-22", area:"aoku", spot:"都川河口（千葉市）", spotType:"河口",
     method:"ルアー（ナイトシーバス）", species:["シーバス"],
