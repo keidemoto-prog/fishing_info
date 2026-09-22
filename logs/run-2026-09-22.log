@@ -16,3 +16,12 @@ git: push exit 0, unpushed commits: 0
 build-single: source = 釣果ログ.html
 build-single: all-in-one 255672 chars / docs/index.html 255672 / dist/artifact.html 255513
 === 2026-09-22 06:03 end (claude exit 0) ===
+git: push exit 0, unpushed commits: 0
+
+=== 2026-09-22 12:00 start ===
+Only the two expected files (plus the run log written by `run-collect.ps1` itself) were touched 窶・no stray files created.
+
+12:00 collection run complete: added 1 new record 窶・**鄒ｽ逕ｰ豐・(譚ｱ莠ｬ貉ｾ螂･), PLAYFUL FISHING, 2026-09-21**, 繧｢繧ｸ繝ｻ繧ｭ繧ｹ繝ｻ繧ｷ繝ｼ繝舌せ莠皮岼 with actual measured tide/water-temp/weather from the boat's own log. All other checked sources (逶ｸ讓｡貉ｾ縺ｮ闊ｹ螳ｿ, 荳ｭ譬ｹ繝懊・繝・ 縺九ａ繧・・蜈ｷ, TSURINEWS, YouTube, 鬧ｿ豐ｳ貉ｾ etc.) showed no new qualifying catches for the 09-21縲・2 window, mostly due to continued post-typhoon closures. `data/catch-log.js` now has 377 records, verified as valid JS with no duplicate IDs or (date+spot+species) keys; `logs/2026-09-22.md` and `CATCH_LOG_META` updated per the procedure. Per step 9, HTML regeneration is left to `run-collect.ps1`.
+build-single: source = 釣果ログ.html
+build-single: all-in-one 256252 chars / docs/index.html 256252 / dist/artifact.html 256093
+=== 2026-09-22 12:03 end (claude exit 0) ===

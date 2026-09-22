@@ -8,11 +8,18 @@
  *   { obs:"観測地点名", waterTempC, weather, windMS, windDir, waveM, airTempC, time:"YYYY-MM-DD" }
  */
 window.CATCH_LOG_META = {
-  lastUpdated: "2026-09-22 06:00",
-  lastRunNote: "1件追加（駿河湾1）。台風25号明けで9/21〜22は大半の船宿・レンタルボートが依然休船（中根ボート・オオモリボート等は21日も荒天で欠航）。相模湾・東京湾のchowari/船宿ブログは9/19〜20止まりで新規なし"
+  lastUpdated: "2026-09-22 12:00",
+  lastRunNote: "1件追加（東京湾奥1）。台風25号明けで9/21も相模湾・三浦の船宿・レンタルボートは大半休船・荒天継続（正海丸/伝五郎丸/成銀丸は9/20止まり、中根ボート・オオモリボートは21日も欠航）だが、東京湾奥のPLAYFUL FISHING（羽田）は9/21実釣あり"
 };
 
 window.CATCH_LOG = [
+  // ---------- 09-22 12:00回 追加分（通常window=09-21〜22対象。台風25号明けで大半休船、新規は僅少） ----------
+  { id:"2026-09-21-aoku-01", date:"2026-09-21", area:"aoku", spot:"羽田沖（東京都大田区）", spotType:"沖-釣り船",
+    method:"船釣り（五目）", species:["アジ","キス","シーバス"],
+    result:"アジ・キス・シーバスなど五目で複数魚種。サイズ・匹数の具体的記載なし",
+    tideName:"若潮", waterTempC:24.5, waterTempSource:"PLAYFUL FISHING 釣果ページ（実測）", weather:"雨", windMS:3.3, windDir:"東北東", airTempC:25,
+    nearby:null,
+    sourceName:"PLAYFUL FISHING", sourceUrl:"https://www.chowari.jp/ship/01426/catch/", note:"波 南南東1.5m・気圧1001.4hPaの記載あり" },
   // ---------- 09-22 06:00回 追加分（通常window=09-21〜22対象。台風25号明けで大半休船、新規は僅少） ----------
   { id:"2026-09-20-suruga-01", date:"2026-09-20", area:"suruga", spot:"三保サーフ（静岡市）", spotType:"砂浜",
     method:"ライトショアジギング", species:["ショゴ"],
