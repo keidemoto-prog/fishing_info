@@ -8,11 +8,43 @@
  *   { obs:"観測地点名", waterTempC, weather, windMS, windDir, waveM, airTempC, time:"YYYY-MM-DD" }
  */
 window.CATCH_LOG_META = {
-  lastUpdated: "2026-09-22 12:00",
-  lastRunNote: "1件追加（東京湾奥1）。台風25号明けで9/21も相模湾・三浦の船宿・レンタルボートは大半休船・荒天継続（正海丸/伝五郎丸/成銀丸は9/20止まり、中根ボート・オオモリボートは21日も欠航）だが、東京湾奥のPLAYFUL FISHING（羽田）は9/21実釣あり"
+  lastUpdated: "2026-09-22 18:00",
+  lastRunNote: "5件追加（東京湾口三浦1・東京湾奥1・内房1・相模湾1・駿河湾1）。ちょうあり(chowari.jp)の実測データ（潮名・水温・天気・風・波・気圧）が揃う船が9/22は複数出船再開（瀬戸丸・金沢八景黒川丸・柊丸・太郎丸）、台風25号明けの回復傾向。三保サーフはかめや釣具の実測記事にイナダ追加（水温等はOpen-Meteo補完）"
 };
 
 window.CATCH_LOG = [
+  // ---------- 09-22 18:00回 追加分（通常window=09-21〜22対象。台風25号明けで出船再開が増加） ----------
+  { id:"2026-09-22-wanko-miura-01", date:"2026-09-22", area:"wanko-miura", spot:"松輪沖（江奈漁港・三浦市）", spotType:"沖-釣り船",
+    method:"カワハギ釣り", species:["カワハギ"],
+    result:"カワハギ 18〜29cm 0〜8匹",
+    tideName:"中潮", waterTempC:24.8, waterTempSource:"ちょうあり(chowari.jp) 瀬戸丸釣果ページ（実測）", weather:"晴れ時々曇り", windMS:5.8, windDir:"北北東", airTempC:32,
+    nearby:null,
+    sourceName:"瀬戸丸 釣果（ちょうあり）", sourceUrl:"https://www.chowari.jp/ship/00282/catch/", note:"波 南1.4m・気圧1008.1hPa（最高32℃/最低22℃）" },
+  { id:"2026-09-22-aoku-01", date:"2026-09-22", area:"aoku", spot:"金沢八景沖（横浜市）", spotType:"沖-釣り船",
+    method:"船釣り（アジ・タチウオ五目）", species:["アジ","タチウオ"],
+    result:"アジ18〜25cm 午前7〜29匹・午後9〜46匹／タチウオ65〜110cm 3〜16匹",
+    tideName:"中潮", waterTempC:24.2, waterTempSource:"ちょうあり(chowari.jp) 金沢八景黒川丸釣果ページ（実測）", weather:"晴れ後時々曇り", windMS:5.7, windDir:"北", airTempC:31,
+    nearby:null,
+    sourceName:"金沢八景 黒川丸 釣果（ちょうあり）", sourceUrl:"https://www.chowari.jp/ship/00150/catch/", note:"波 北北東0.4m・気圧1008.1hPa（最高31℃/最低22℃）" },
+  { id:"2026-09-22-wanko-boso-01", date:"2026-09-22", area:"wanko-boso", spot:"木更津港沖", spotType:"沖-釣り船",
+    method:"船釣り（サワラ狙い）", species:["サワラ"],
+    result:"サワラ72〜82cm 0〜3匹（ほかサゴシ50〜60cm 0〜3匹、時化後も好調継続）",
+    tideName:"中潮", waterTempC:24.1, waterTempSource:"ちょうあり(chowari.jp) 柊丸釣果ページ（実測）", weather:"晴れ後時々曇り", windMS:5.1, windDir:"北", airTempC:31,
+    nearby:null,
+    sourceName:"柊丸 釣果（ちょうあり）", sourceUrl:"https://www.chowari.jp/ship/01597/catch/", note:"波 北北西0.5m・気圧1008.3hPa（最高31℃/最低22℃）" },
+  { id:"2026-09-22-sagami-01", date:"2026-09-22", area:"sagami", spot:"小坪沖（逗子市）", spotType:"沖-釣り船",
+    method:"一本釣り（カツオ）", species:["カツオ"],
+    result:"ホンガツオ 4.50kg 1匹",
+    tideName:"中潮", waterTempC:24.1, waterTempSource:"ちょうあり(chowari.jp) 太郎丸釣果ページ（実測）", weather:"晴れ後時々曇り", windMS:5.7, windDir:"北", airTempC:31,
+    nearby:null,
+    sourceName:"太郎丸 釣果（ちょうあり）", sourceUrl:"https://www.chowari.jp/ship/01075/catch/", note:"波 南1.1m・気圧1008.1hPa（最高31℃/最低22℃）" },
+  { id:"2026-09-22-suruga-01", date:"2026-09-22", area:"suruga", spot:"三保サーフ（静岡市）", spotType:"砂浜",
+    method:"ライトショアジギング", species:["イナダ"],
+    result:"イナダ 46〜55cm 8匹。メインベイトはカタクチイワシ7〜10cm、30〜40gメタルジグ・10cm前後のミノー/シンペンに好反応",
+    waterTempC:null, waterTempSource:"", weather:"", windMS:null, windDir:"", airTempC:null,
+    nearby:{ obs:"Open-Meteo（駿河湾・三保沖）", waterTempC:25.6, weather:"晴れ時々曇り", windMS:5.7, windDir:"東", waveM:1.04, airTempC:28.8, time:"2026-09-22" },
+    sourceName:"かめや釣具 関東・東海 釣果", sourceUrl:"https://kameya-choka.com/kanto-tokai/archives/f-info/543942", note:"" },
+
   // ---------- 09-22 12:00回 追加分（通常window=09-21〜22対象。台風25号明けで大半休船、新規は僅少） ----------
   { id:"2026-09-21-aoku-01", date:"2026-09-21", area:"aoku", spot:"羽田沖（東京都大田区）", spotType:"沖-釣り船",
     method:"船釣り（五目）", species:["アジ","キス","シーバス"],

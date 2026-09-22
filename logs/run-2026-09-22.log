@@ -25,3 +25,14 @@ Only the two expected files (plus the run log written by `run-collect.ps1` itsel
 build-single: source = 釣果ログ.html
 build-single: all-in-one 256252 chars / docs/index.html 256252 / dist/artifact.html 256093
 === 2026-09-22 12:03 end (claude exit 0) ===
+git: push exit 0, unpushed commits: 0
+
+=== 2026-09-22 18:00 start ===
+Only the allowed files were touched (`logs/run-2026-09-22.log` is written by `run-collect.ps1` itself, not by me).
+
+**Summary of this 18:00 run**: Normal window (09-21縲・9-22). Checked chowari.jp's national latest-catch listing plus per-ship pages (found post-typhoon recovery: 4 boats across 3 bays now posting full measured tide/water-temp/weather/wind/wave/pressure data), the boat/shop blogs, kameya-choka's Kanto-Tokai listing, TSURINEWS, and YouTube. **Added 5 new records** (377竊・82): 轢ｬ謌ｸ荳ｸ 繧ｫ繝ｯ繝上ぐ (wanko-miura), 驥第ｲ｢蜈ｫ譎ｯ鮟貞ｷ昜ｸｸ 繧｢繧ｸ+繧ｿ繝√え繧ｪ (aoku), 譟贋ｸｸ 繧ｵ繝ｯ繝ｩ (wanko-boso), 螟ｪ驛惹ｸｸ 繝帙Φ繧ｬ繝・が/繧ｫ繝・が (sagami), and 荳我ｿ昴し繝ｼ繝・繧､繝翫ム (suruga, via kameya-choka + Open-Meteo for missing water-temp/weather). Excluded 隨ｬ8蟇ｿ蠎・ｸｸ (蜊嶺ｼ願ｱ・ as outside the three tracked bays, and two kameya-choka candidates that duplicated existing records. `data/catch-log.js` verified as valid JS with no duplicate IDs or (date+spot+species) keys; `CATCH_LOG_META` and `logs/2026-09-22.md` updated.
+
+Per step 9, I stop here 窶・HTML regeneration (`tsuriha_all-in-one.html`/`dist/artifact.html`) and the git commit are handled by `run-collect.ps1` afterward, not by me.
+build-single: source = 釣果ログ.html
+build-single: all-in-one 258887 chars / docs/index.html 258887 / dist/artifact.html 258728
+=== 2026-09-22 18:04 end (claude exit 0) ===
