@@ -1,0 +1,11 @@
+﻿
+=== 2026-09-23 00:00 start ===
+All steps of 蜿朱寔謇矩・md (steps 1窶・) are complete for the 2026-09-23 00:00 run.
+
+**Result:** 4 new records added to `data/catch-log.js` (譚ｱ莠ｬ貉ｾ螂･2繝ｻ逶ｸ讓｡貉ｾ2), validated as clean JS with no duplicate IDs or (date+spot+species) keys (382竊・86 total). Details logged in `logs/2026-09-23.md`.
+
+- TARGET・亥鴻闡牙ｸる・蟾晢ｼ俄・ aoku: 繧ｷ繝ｼ繝舌せ78蛹ｹ・九メ繝｣繝ｼ繧ｿ繝ｼ繧ｵ繝ｯ繝ｩ2蛹ｹ・・繝ｬ繧ｳ繝ｼ繝峨∝ｮ滓ｸｬ蛟､縺ゅｊ・・- 髫蠕ｳ荳ｸ・亥ｰ冗伐蜴溷ｸよ掠蟾晄ｼ∵ｸｯ・俄・ sagami: 繧ｷ繧､繝ｩ1蛹ｹ・亥ｮ滓ｸｬ蛟､縺ゅｊ・・- 縺九ａ繧・・蜈ｷ蟷ｳ蝪壼ｺ励・險倅ｺ銀・ sagami: 逶ｸ讓｡蟾昴け繝ｭ繝繧､1蛹ｹ・域律莉倅ｸ咲音螳壹・縺溘ａ蟷ｴ-譛医・縺ｿ・・
+Per step 9, the single-HTML regeneration (`tsuriha_all-in-one.html`/`dist/artifact.html`) is left to `run-collect.ps1`, and no other files in `驥｣繧・` were created or modified.
+build-single: source = 釣果ログ.html
+build-single: all-in-one 260815 chars / docs/index.html 260815 / dist/artifact.html 260656
+=== 2026-09-23 00:03 end (claude exit 0) ===

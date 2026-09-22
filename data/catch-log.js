@@ -8,11 +8,37 @@
  *   { obs:"観測地点名", waterTempC, weather, windMS, windDir, waveM, airTempC, time:"YYYY-MM-DD" }
  */
 window.CATCH_LOG_META = {
-  lastUpdated: "2026-09-22 18:00",
-  lastRunNote: "5件追加（東京湾口三浦1・東京湾奥1・内房1・相模湾1・駿河湾1）。ちょうあり(chowari.jp)の実測データ（潮名・水温・天気・風・波・気圧）が揃う船が9/22は複数出船再開（瀬戸丸・金沢八景黒川丸・柊丸・太郎丸）、台風25号明けの回復傾向。三保サーフはかめや釣具の実測記事にイナダ追加（水温等はOpen-Meteo補完）"
+  lastUpdated: "2026-09-23 00:00",
+  lastRunNote: "4件追加（東京湾奥2・相模湾2）。TARGET（千葉市都川）でシーバス78匹＋チャーターサワラ2匹、隠徳丸（小田原早川）でシイラ、かめや釣具平塚店の記事から相模川クロダイを追加（いずれもちょうあり/かめやの実測・記載値）"
 };
 
 window.CATCH_LOG = [
+  // ---------- 09-23 00:00回 追加分（通常window=09-22〜23対象） ----------
+  { id:"2026-09-22-aoku-02", date:"2026-09-22", area:"aoku", spot:"都川河口（千葉市）", spotType:"河口",
+    method:"ルアー（ナイトシーバス）", species:["シーバス"],
+    result:"シーバス25〜65cm 78匹（ナイトゲーム）。混獲でヒラスズキ30〜55cm 2匹（対象外種のためspeciesには含めずresultのみ記載）",
+    tideName:"中潮", waterTempC:23.7, waterTempSource:"TARGET 釣果ページ（ちょうあり・実測）", weather:"晴れ時々曇り", windMS:2.8, windDir:"北北西", airTempC:32,
+    nearby:null,
+    sourceName:"TARGET（千葉市都川）釣果（ちょうあり）", sourceUrl:"https://www.chowari.jp/ship/01427/catch/", note:"波 西北西0.2m・気圧1008.3hPa（最高32℃/最低22℃）月齢11.0" },
+  { id:"2026-09-22-aoku-03", date:"2026-09-22", area:"aoku", spot:"都川沖（千葉市）", spotType:"沖-釣り船",
+    method:"チャーター便（サワラ）", species:["サワラ"],
+    result:"サワラ70〜75cm 2匹",
+    tideName:"中潮", waterTempC:23.7, waterTempSource:"TARGET 釣果ページ（ちょうあり・実測）", weather:"晴れ時々曇り", windMS:2.8, windDir:"北北西", airTempC:32,
+    nearby:null,
+    sourceName:"TARGET（千葉市都川）釣果（ちょうあり）", sourceUrl:"https://www.chowari.jp/ship/01427/catch/", note:"波 西北西0.2m・気圧1008.3hPa（最高32℃/最低22℃）月齢11.0" },
+  { id:"2026-09-22-sagami-02", date:"2026-09-22", area:"sagami", spot:"早川沖（小田原市）", spotType:"沖-釣り船",
+    method:"シイラ釣り（キャスティング）", species:["シイラ"],
+    result:"シイラ 1匹（小型・終盤バラシもあり）",
+    tideName:"中潮", waterTempC:25.1, waterTempSource:"隠徳丸 釣果ページ（ちょうあり・実測）", weather:"晴れ後時々曇り", windMS:1.2, windDir:"南南東", airTempC:30,
+    nearby:null,
+    sourceName:"隠徳丸（小田原市早川漁港）釣果（ちょうあり）", sourceUrl:"https://www.chowari.jp/ship/00820/catch/", note:"波 南南東1.2m・気圧1007.8hPa（最高30℃/最低22℃）" },
+  { id:"2026-09-sagami-04", date:"2026-09", area:"sagami", spot:"相模川河口（平塚市）", spotType:"河口",
+    method:"ウキ釣り（コマセ）", species:["クロダイ"],
+    result:"クロダイ 1匹。水温が高くエサ取りが多いためコマセを集魚剤中心に配合",
+    tideName:"", waterTempC:null, waterTempSource:"", weather:"", windMS:null, windDir:"", airTempC:null,
+    nearby:null,
+    sourceName:"かめや釣具 平塚店", sourceUrl:"https://kameya-choka.com/kanto-tokai/archives/f-info/543937", note:"釣行日は「2026年9月中旬」とのみ記載で日不特定のため年-月のみ" },
+
   // ---------- 09-22 18:00回 追加分（通常window=09-21〜22対象。台風25号明けで出船再開が増加） ----------
   { id:"2026-09-22-wanko-miura-01", date:"2026-09-22", area:"wanko-miura", spot:"松輪沖（江奈漁港・三浦市）", spotType:"沖-釣り船",
     method:"カワハギ釣り", species:["カワハギ"],
