@@ -135,11 +135,24 @@
  *   { obs:"観測地点名", waterTempC, weather, windMS, windDir, waveM, airTempC, time:"YYYY-MM-DD" }
  */
 window.CATCH_LOG_META = {
-  lastUpdated: "2026-09-23 06:00",
-  lastRunNote: "4件追加（東京湾奥3・相模湾1）。村本海事（横浜市金沢八景）でマダイ・アオリイカ・アジ（コース別に3件）、たいぞう丸（葉山鐙摺港）でシロアマダイ・マダイ（いずれもちょうあり実測値）"
+  lastUpdated: "2026-09-23 12:00",
+  lastRunNote: "2件追加（相模湾1・駿河湾1）。石田丸（小田原・早川沖）でアジ・イナダ・タチウオ、かめや釣具富士店の沼津沖タチウオ情報"
 };
 
 window.CATCH_LOG = [
+  // ---------- 09-23 12:00回 追加分（通常window=09-22〜23対象） ----------
+  { id:"2026-09-22-sagami-06", date:"2026-09-22", area:"sagami", spot:"相模湾（小田原・早川沖）石田丸", spotType:"沖-釣り船",
+    method:"コマセ五目・ジギング", species:["アジ","イナダ","タチウオ"],
+    result:"マアジ24〜45cm 15匹／大アジ30〜45cm 10匹／イナダ45cm（がれば根）／タチウオ複数（富士山根〜がれば根）",
+    tideName:"中潮", waterTempC:null, waterTempSource:"", weather:"曇りのち晴れ", windMS:null, windDir:"", airTempC:null,
+    nearby:{ obs:"Open-Meteo（相模湾中央）", waterTempC:25.7, weather:"晴れ時々曇り", windMS:3.35, windDir:"北東", waveM:1.90, airTempC:29.6, time:"2026-09-22" },
+    sourceName:"石田丸 釣果ブログ", sourceUrl:"https://www.ishidamaru.com/?post_type=fishing&paged=1", note:"" },
+  { id:"2026-09-22-suruga-02", date:"2026-09-22", area:"suruga", spot:"沼津沖", spotType:"沖-釣り船",
+    method:"タチウオ（エサ・ルアー）", species:["タチウオ"],
+    result:"タチウオ F2〜F4サイズ 50〜60匹",
+    tideName:"", waterTempC:null, waterTempSource:"", weather:"", windMS:null, windDir:"", airTempC:null,
+    nearby:{ obs:"Open-Meteo（沼津沖）", waterTempC:25.6, weather:"晴れ時々曇り", windMS:3.47, windDir:"東", waveM:1.04, airTempC:28.3, time:"2026-09-22" },
+    sourceName:"かめや釣具 富士店 釣果情報", sourceUrl:"https://kameya-choka.com/kanto-tokai/archives/f-info/543951", note:"" },
   // ---------- 09-23 06:00回 追加分（通常window=09-22〜23対象） ----------
   { id:"2026-09-22-aoku-04", date:"2026-09-22", area:"aoku", spot:"金沢八景沖（横浜市）", spotType:"沖-釣り船",
     method:"タイラバ", species:["マダイ"],

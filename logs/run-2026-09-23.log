@@ -19,3 +19,12 @@ git: push exit 0, unpushed commits: 0
 build-single: source = 釣果ログ.html
 build-single: all-in-one 262699 chars / docs/index.html 262699 / dist/artifact.html 262540
 === 2026-09-23 06:02 end (claude exit 0) ===
+git: push exit 0, unpushed commits: 0
+
+=== 2026-09-23 12:00 start ===
+Only the expected files were touched 窶・`data/catch-log.js`, `logs/2026-09-23.md`, and the runner's own log. Per 蜿朱寔謇矩・md step 9, I'm stopping here; single-HTML regeneration and git commit/push are handled by `run-collect.ps1` afterward.
+
+**Summary (09-23 12:00 run):** added 2 new records (逶ｸ讓｡貉ｾ1繝ｻ鬧ｿ豐ｳ貉ｾ1) 窶・遏ｳ逕ｰ荳ｸ (蟆冗伐蜴溘・譌ｩ蟾晄ｲ・ 09-22): 繧｢繧ｸ繝ｻ繧､繝翫ム繝ｻ繧ｿ繝√え繧ｪ; 縺九ａ繧・・蜈ｷ蟇悟｣ｫ蠎・(豐ｼ豢･豐・ 09-22): 繧ｿ繝√え繧ｪ. Total records 390竊・92, validated as clean JS with no duplicate IDs or (date+spot+species) keys. Full patrol of store/boat blogs, TSURINEWS, ANGLERS, and YouTube found nothing else new for the 09-22縲・3 window; details are in `logs/2026-09-23.md`.
+build-single: source = 釣果ログ.html
+build-single: all-in-one 263881 chars / docs/index.html 263881 / dist/artifact.html 263722
+=== 2026-09-23 12:03 end (claude exit 0) ===
