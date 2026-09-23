@@ -8,11 +8,24 @@
  *   { obs:"観測地点名", waterTempC, weather, windMS, windDir, waveM, airTempC, time:"YYYY-MM-DD" }
  */
 window.CATCH_LOG_META = {
-  lastUpdated: "2026-09-23 12:00",
-  lastRunNote: "2件追加（相模湾1・駿河湾1）。石田丸（小田原・早川沖）でアジ・イナダ・タチウオ、かめや釣具富士店の沼津沖タチウオ情報"
+  lastUpdated: "2026-09-23 18:00",
+  lastRunNote: "2件追加（東京湾奥1・相模湾1）。須原屋（東葛西）でアジ・キス、雅裕丸（福浦港・湯河原）でマダイ・サバ"
 };
 
 window.CATCH_LOG = [
+  // ---------- 09-23 18:00回 追加分（通常window=09-22〜23対象） ----------
+  { id:"2026-09-23-aoku-01", date:"2026-09-23", area:"aoku", spot:"東葛西", spotType:"沖-釣り船",
+    method:"乗合船（LTアジ／シロキス）", species:["アジ","キス"],
+    result:"アジ18〜25cm 5〜50匹（ショートLTアジ船・全員お土産）／キス12〜23cm 8〜60匹（ショートシロキス船・トップ60匹）",
+    tideName:"中潮", waterTempC:null, waterTempSource:"", weather:"", windMS:null, windDir:"", airTempC:null,
+    nearby:{ obs:"Open-Meteo（葛西沖）", waterTempC:24.2, weather:"弱い雨", windMS:3.97, windDir:"北", waveM:0.22, airTempC:23.6, time:"2026-09-23" },
+    sourceName:"須原屋 釣果ブログ（ちょうあり）", sourceUrl:"https://www.chowari.jp/ship/00159/", note:"" },
+  { id:"2026-09-23-sagami-01", date:"2026-09-23", area:"sagami", spot:"福浦港沖（湯河原町）", spotType:"沖-釣り船",
+    method:"コマセ五目", species:["マダイ","サバ"],
+    result:"マダイ3.20kg／サバ／イトヨリ（イトヨリは対象魚種外のため参考記載）",
+    tideName:"中潮", waterTempC:null, waterTempSource:"", weather:"", windMS:null, windDir:"", airTempC:null,
+    nearby:{ obs:"Open-Meteo（湯河原沖）", waterTempC:26.3, weather:"霧雨", windMS:6.33, windDir:"北", waveM:1.02, airTempC:24.5, time:"2026-09-23" },
+    sourceName:"雅裕丸 釣果ブログ（ちょうあり）", sourceUrl:"https://www.chowari.jp/ship/01194/", note:"" },
   // ---------- 09-23 12:00回 追加分（通常window=09-22〜23対象） ----------
   { id:"2026-09-22-sagami-06", date:"2026-09-22", area:"sagami", spot:"相模湾（小田原・早川沖）石田丸", spotType:"沖-釣り船",
     method:"コマセ五目・ジギング", species:["アジ","イナダ","タチウオ"],
