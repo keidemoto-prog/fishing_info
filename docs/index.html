@@ -135,11 +135,48 @@
  *   { obs:"観測地点名", waterTempC, weather, windMS, windDir, waveM, airTempC, time:"YYYY-MM-DD" }
  */
 window.CATCH_LOG_META = {
-  lastUpdated: "2026-09-23 18:00",
-  lastRunNote: "2件追加（東京湾奥1・相模湾1）。須原屋（東葛西）でアジ・キス、雅裕丸（福浦港・湯河原）でマダイ・サバ"
+  lastUpdated: "2026-09-24 00:00",
+  lastRunNote: "6件追加（東京湾奥1・相模湾1・東京湾口1・内房2・駿河湾1）。はやぶさ丸（柴漁港）でアジ、つね丸（佐島港）でマダイ、あまさけや丸（松輪）でワラサ、勘次郎丸・さえむ丸（金谷港）でアジ・アオリイカ、橋安丸（焼津小川港）でタチウオ"
 };
 
 window.CATCH_LOG = [
+  // ---------- 09-24 00:00回 追加分（通常window=09-23〜24対象） ----------
+  { id:"2026-09-23-aoku-02", date:"2026-09-23", area:"aoku", spot:"柴漁港沖（横浜市金沢区）はやぶさ丸", spotType:"沖-釣り船",
+    method:"LTアジ", species:["アジ"],
+    result:"アジ21〜44cm 2〜43匹",
+    tideName:"", waterTempC:null, waterTempSource:"", weather:"", windMS:null, windDir:"", airTempC:null,
+    nearby:{ obs:"Open-Meteo（柴漁港沖）", waterTempC:25.3, weather:"雨", windMS:4.17, windDir:"北", waveM:0.64, airTempC:22.7, time:"2026-09-23" },
+    sourceName:"はやぶさ丸（柴漁港）", sourceUrl:"https://www.chowari.jp/ship/01085/catch/", note:"" },
+  { id:"2026-09-23-sagami-02", date:"2026-09-23", area:"sagami", spot:"佐島港（横須賀市）つね丸", spotType:"沖-釣り船",
+    method:"コマセ五目", species:["マダイ"],
+    result:"マダイ0.50〜2.00kg 0〜2匹",
+    tideName:"", waterTempC:null, waterTempSource:"", weather:"", windMS:null, windDir:"", airTempC:null,
+    nearby:{ obs:"Open-Meteo（佐島沖）", waterTempC:25.3, weather:"雨", windMS:4.17, windDir:"北", waveM:0.64, airTempC:22.0, time:"2026-09-23" },
+    sourceName:"ちょうあり つね丸釣果", sourceUrl:"https://www.chowari.jp/ship/00144/catch/", note:"" },
+  { id:"2026-09-23-wanko-miura-01", date:"2026-09-23", area:"wanko-miura", spot:"松輪江奈漁港（三浦市）あまさけや丸", spotType:"沖-釣り船",
+    method:"コマセ五目", species:["ワラサ"],
+    result:"ワラサ3.00〜4.00kg 0〜8匹",
+    tideName:"", waterTempC:null, waterTempSource:"", weather:"", windMS:null, windDir:"", airTempC:null,
+    nearby:{ obs:"Open-Meteo（松輪沖）", waterTempC:25.7, weather:"霧雨", windMS:9.45, windDir:"北東", waveM:1.10, airTempC:25.3, time:"2026-09-23" },
+    sourceName:"あまさけや丸（chowari）", sourceUrl:"https://www.chowari.jp/ship/01036/catch/", note:"" },
+  { id:"2026-09-23-wanko-boso-01", date:"2026-09-23", area:"wanko-boso", spot:"金谷港（富津市）勘次郎丸", spotType:"沖-釣り船",
+    method:"LTアジ", species:["アジ"],
+    result:"アジ22〜33cm 35〜70匹（朝は型揃いで食い良かったが後半やや下がる）",
+    tideName:"", waterTempC:null, waterTempSource:"", weather:"", windMS:null, windDir:"", airTempC:null,
+    nearby:{ obs:"Open-Meteo（内房・金谷沖）", waterTempC:25.4, weather:"弱い雨", windMS:4.14, windDir:"北東", waveM:0.72, airTempC:23.3, time:"2026-09-23" },
+    sourceName:"勘次郎丸（釣りビジョン）", sourceUrl:"https://www.fishing-v.jp/choka/detail.php?area%5B%5D=31", note:"" },
+  { id:"2026-09-23-wanko-boso-02", date:"2026-09-23", area:"wanko-boso", spot:"金谷港（富津市）さえむ丸", spotType:"沖-釣り船",
+    method:"ティップランエギング", species:["アオリイカ"],
+    result:"アオリイカ0.15〜0.5kg 船中18匹（底荒れで足切れバラシ数回）",
+    tideName:"", waterTempC:null, waterTempSource:"", weather:"", windMS:null, windDir:"", airTempC:null,
+    nearby:{ obs:"Open-Meteo（内房・金谷沖）", waterTempC:25.4, weather:"弱い雨", windMS:4.14, windDir:"北東", waveM:0.72, airTempC:23.3, time:"2026-09-23" },
+    sourceName:"さえむ丸（釣りビジョン）", sourceUrl:"https://www.fishing-v.jp/choka/detail.php?area%5B%5D=31", note:"" },
+  { id:"2026-09-23-suruga-01", date:"2026-09-23", area:"suruga", spot:"焼津小川港（焼津市）橋安丸", spotType:"沖-釣り船",
+    method:"タチウオ（エサ・ジギング）", species:["タチウオ"],
+    result:"餌釣り10〜32本／ジギング7〜13本",
+    tideName:"", waterTempC:null, waterTempSource:"", weather:"", windMS:null, windDir:"", airTempC:null,
+    nearby:{ obs:"Open-Meteo（焼津沖）", waterTempC:25.4, weather:"雨", windMS:4.42, windDir:"北東", waveM:1.00, airTempC:24.8, time:"2026-09-23" },
+    sourceName:"ちょうあり 駿河湾タチウオ釣果", sourceUrl:"https://www.chowari.jp/catcharea/?area=60&fish=316", note:"" },
   // ---------- 09-23 18:00回 追加分（通常window=09-22〜23対象） ----------
   { id:"2026-09-23-aoku-01", date:"2026-09-23", area:"aoku", spot:"東葛西", spotType:"沖-釣り船",
     method:"乗合船（LTアジ／シロキス）", species:["アジ","キス"],
