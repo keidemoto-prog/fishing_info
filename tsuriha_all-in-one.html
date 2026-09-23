@@ -135,12 +135,30 @@
  *   { obs:"観測地点名", waterTempC, weather, windMS, windDir, waveM, airTempC, time:"YYYY-MM-DD" }
  */
 window.CATCH_LOG_META = {
-  lastUpdated: "2026-09-24 00:00",
-  lastRunNote: "6件追加（東京湾奥1・相模湾1・東京湾口1・内房2・駿河湾1）。はやぶさ丸（柴漁港）でアジ、つね丸（佐島港）でマダイ、あまさけや丸（松輪）でワラサ、勘次郎丸・さえむ丸（金谷港）でアジ・アオリイカ、橋安丸（焼津小川港）でタチウオ"
+  lastUpdated: "2026-09-24 06:00",
+  lastRunNote: "3件追加（東京湾奥1・駿河湾2）。黒川丸（金沢八景）でタチウオ、かめや釣具清水店（三保サーフ）でタチウオ、イシグロ浜松高林店（清水港周辺）でアオリイカ"
 };
 
 window.CATCH_LOG = [
-  // ---------- 09-24 00:00回 追加分（通常window=09-23〜24対象） ----------
+  // ---------- 09-24 06:00回 追加分（通常window=09-23〜24対象） ----------
+  { id:"2026-09-23-aoku-03", date:"2026-09-23", area:"aoku", spot:"金沢八景（横浜市金沢区）黒川丸", spotType:"沖-釣り船",
+    method:"テンヤタチウオ", species:["タチウオ"],
+    result:"タチウオ65〜115cm 1〜18匹",
+    tideName:"", waterTempC:null, waterTempSource:"", weather:"", windMS:null, windDir:"", airTempC:null,
+    nearby:{ obs:"Open-Meteo（金沢八景沖）", waterTempC:25.3, weather:"雨", windMS:4.17, windDir:"北", waveM:0.64, airTempC:22.7, time:"2026-09-23" },
+    sourceName:"金沢八景 黒川丸（chowari）", sourceUrl:"https://www.chowari.jp/ship/00150/", note:"" },
+  { id:"2026-09-23-suruga-02", date:"2026-09-23", area:"suruga", spot:"三保サーフ（静岡市）", spotType:"砂浜",
+    method:"ライトショアジギング", species:["タチウオ"],
+    result:"タチウオ F2〜F3サイズ 8匹",
+    tideName:"", waterTempC:null, waterTempSource:"", weather:"", windMS:null, windDir:"", airTempC:null,
+    nearby:{ obs:"Open-Meteo（三保沖）", waterTempC:25.3, weather:"弱い雨", windMS:3.52, windDir:"北東", waveM:0.76, airTempC:24.8, time:"2026-09-23" },
+    sourceName:"かめや釣具 清水店", sourceUrl:"https://kameya-choka.com/kanto-tokai/archives/f-info/543957", note:"" },
+  { id:"2026-09-23-suruga-03", date:"2026-09-23", area:"suruga", spot:"清水港周辺（静岡市）", spotType:"堤防",
+    method:"エギング", species:["アオリイカ"],
+    result:"アオリイカ1杯（コロッケサイズ・幼体）",
+    tideName:"", waterTempC:null, waterTempSource:"", weather:"", windMS:null, windDir:"", airTempC:null,
+    nearby:{ obs:"Open-Meteo（三保沖）", waterTempC:25.3, weather:"弱い雨", windMS:3.52, windDir:"北東", waveM:0.76, airTempC:24.8, time:"2026-09-23" },
+    sourceName:"イシグロ浜松高林店", sourceUrl:"https://www.ishiguro-gr.com/enjoy/fishing/detail.php?id=49780", note:"" },
   { id:"2026-09-23-aoku-02", date:"2026-09-23", area:"aoku", spot:"柴漁港沖（横浜市金沢区）はやぶさ丸", spotType:"沖-釣り船",
     method:"LTアジ", species:["アジ"],
     result:"アジ21〜44cm 2〜43匹",
