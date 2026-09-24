@@ -8,11 +8,48 @@
  *   { obs:"観測地点名", waterTempC, weather, windMS, windDir, waveM, airTempC, time:"YYYY-MM-DD" }
  */
 window.CATCH_LOG_META = {
-  lastUpdated: "2026-09-24 18:00",
-  lastRunNote: "6件追加（相模湾3・東京湾口三浦側2・内房1）。愛正丸（葉山鐙摺港）でアジ・ワラサ、長井港かかり釣りでカンパチ・ソウダガツオ・アジ、小川丸（大津漁港）でアジ・タチウオ、川崎丸（富津）でアマダイ"
+  lastUpdated: "2026-09-25 00:00",
+  lastRunNote: "6件追加（相模湾2・東京湾口三浦側2・内房1・駿河湾1）。かりゆし丸（平塚沖）でカンパチ・イナダ・ソウダガツオ、石田丸（富士山根）でアジ・ショゴ・タチウオ、巳之助丸（竹岡沖）でカワハギ、山大丸（三保沖）でマダイ・アジ・サバ、中根ボート（金田湾）でアジ、横須賀海釣り公園でタチウオ"
 };
 
 window.CATCH_LOG = [
+  // ---------- 09-25 00:00回 追加分（通常window=09-24〜25対象） ----------
+  { id:"2026-09-24-wanko-boso-01", date:"2026-09-24", area:"wanko-boso", spot:"竹岡沖 巳之助丸", spotType:"沖-釣り船",
+    method:"カワハギ", species:["カワハギ"],
+    result:"15〜31cm 2〜23匹。朝は二枚潮で厳しいも流れが緩むと良型・30.5cmの大物も混じる。トップ23匹",
+    tideName:"大潮", waterTempC:24.7, waterTempSource:"巳之助丸 釣果ページ（実測）", weather:"晴れ後時々曇り", windMS:0.2, windDir:"北北西", airTempC:null,
+    nearby:{ obs:"Open-Meteo（内房・竹岡沖）", waterTempC:25.3, weather:"曇り", windMS:4.75, windDir:"北", waveM:0.70, airTempC:24.5, time:"2026-09-24" },
+    sourceName:"巳之助丸（久比里港・chowari）", sourceUrl:"https://www.chowari.jp/ship/00288/catch/", note:"" },
+  { id:"2026-09-24-sagami-02", date:"2026-09-24", area:"sagami", spot:"平塚新港 かりゆし丸", spotType:"沖-釣り船",
+    method:"五目釣り", species:["カンパチ","イナダ","ソウダガツオ","オオモンハタ"],
+    result:"カンパチ36〜47cm 6〜35匹（3点掛けも）／イナダ45〜47cm 0〜2匹／ソウダガツオ33〜37cm 0〜6匹／オオモンハタも交じる（ホウボウ・ハナダイ・スマガツオは対象魚種外）",
+    tideName:"大潮", waterTempC:25.5, waterTempSource:"かりゆし丸 釣果ページ（実測）", weather:"晴れ後時々曇り", windMS:1.1, windDir:"南東", airTempC:29,
+    nearby:{ obs:"Open-Meteo（相模湾中央）", waterTempC:25.8, weather:"霧雨", windMS:4.27, windDir:"北東", waveM:0.64, airTempC:24.9, time:"2026-09-24" },
+    sourceName:"かりゆし丸（chowari）", sourceUrl:"https://www.chowari.jp/ship/00908/catch/", note:"" },
+  { id:"2026-09-24-sagami-03", date:"2026-09-24", area:"sagami", spot:"相模湾（小田原・早川沖）富士山根 石田丸", spotType:"沖-釣り船",
+    method:"コマセ五目", species:["アジ","ショゴ","タチウオ"],
+    result:"マアジ24〜43cm 20匹／大アジ30〜43cm 15匹以上（富士山根沖側）。ショゴ（カンパチ）・タチウオも交じる（クロダイ・アナゴは対象魚種外）",
+    tideName:"大潮", waterTempC:null, waterTempSource:"", weather:"曇りのち晴れ", windMS:null, windDir:"", airTempC:null,
+    nearby:{ obs:"Open-Meteo（相模湾中央）", waterTempC:25.8, weather:"霧雨", windMS:4.27, windDir:"北東", waveM:0.64, airTempC:24.9, time:"2026-09-24" },
+    sourceName:"石田丸 釣果ブログ", sourceUrl:"https://www.ishidamaru.com/?post_type=fishing&paged=1", note:"" },
+  { id:"2026-09-24-suruga-01", date:"2026-09-24", area:"suruga", spot:"清水港（静岡市）三保沖 山大丸", spotType:"沖-釣り船",
+    method:"コマセ五目", species:["マダイ","アジ","サバ","イナダ","カンパチ"],
+    result:"マダイ0.70〜0.80kg 0〜1匹。ラスト1時間はアジ・サバ・イナダ・カンパチとバラエティ豊かに釣れた",
+    tideName:"大潮", waterTempC:25.8, waterTempSource:"山大丸 釣果ページ（実測）", weather:"晴れ後時々曇り", windMS:0.1, windDir:"西", airTempC:28,
+    nearby:{ obs:"Open-Meteo（清水・三保沖）", waterTempC:25.5, weather:"晴れ時々曇り", windMS:4.03, windDir:"南", waveM:0.40, airTempC:26.0, time:"2026-09-24" },
+    sourceName:"山大丸（chowari）", sourceUrl:"https://www.chowari.jp/ship/01343/catch/", note:"" },
+  { id:"2026-09-wanko-miura-01", date:"2026-09", area:"wanko-miura", spot:"横須賀海釣り公園", spotType:"釣り公園",
+    method:"ウキ釣り（ペラ餌）", species:["タチウオ"],
+    result:"タチウオ1匹（F3サイズ）。4時間の釣行で時合は30分ほど",
+    tideName:"", waterTempC:null, waterTempSource:"", weather:"", windMS:null, windDir:"", airTempC:null,
+    nearby:null,
+    sourceName:"かめや釣具 関東・東海 釣果（平塚店）", sourceUrl:"https://kameya-choka.com/kanto-tokai/archives/f-info/543991", note:"記事の日付表記は「9月中旬」で日が特定できないため年-月のみで記録" },
+  { id:"2026-09-24-wanko-miura-02", date:"2026-09-24", area:"wanko-miura", spot:"金田湾（三浦市） 中根ボート", spotType:"沖-ボート",
+    method:"ボート釣り（アジ）", species:["アジ"],
+    result:"中アジ複数（笠松さん2名、サイズ・匹数の詳細記載なし）",
+    tideName:"", waterTempC:null, waterTempSource:"", weather:"", windMS:null, windDir:"", airTempC:null,
+    nearby:{ obs:"Open-Meteo（金田湾沖）", waterTempC:24.6, weather:"曇り", windMS:5.10, windDir:"北", waveM:0.62, airTempC:24.6, time:"2026-09-24" },
+    sourceName:"中根ボート（ameblo）", sourceUrl:"https://ameblo.jp/nakane-boat/", note:"" },
   // ---------- 09-24 18:00回 追加分（通常window=09-23〜24対象） ----------
   { id:"2026-09-24-sagami-01", date:"2026-09-24", area:"sagami", spot:"葉山鐙摺港（葉山町） 愛正丸", spotType:"沖-釣り船",
     method:"LTアジ船・ワラサ便併記", species:["アジ","ワラサ"],
