@@ -135,11 +135,48 @@
  *   { obs:"観測地点名", waterTempC, weather, windMS, windDir, waveM, airTempC, time:"YYYY-MM-DD" }
  */
 window.CATCH_LOG_META = {
-  lastUpdated: "2026-09-24 12:00",
-  lastRunNote: "5件追加（東京湾奥3・相模湾2）。米元釣船店・弁天屋・三喜丸（いずれも金沢八景/柴漁港）でマダイ・アジ・タチウオ・カワハギ・サワラ・シロギス、藤八丸（小田原新港）でショゴ、浅八丸（平塚新港）でカツオ"
+  lastUpdated: "2026-09-24 18:00",
+  lastRunNote: "6件追加（相模湾3・東京湾口三浦側2・内房1）。愛正丸（葉山鐙摺港）でアジ・ワラサ、長井港かかり釣りでカンパチ・ソウダガツオ・アジ、小川丸（大津漁港）でアジ・タチウオ、川崎丸（富津）でアマダイ"
 };
 
 window.CATCH_LOG = [
+  // ---------- 09-24 18:00回 追加分（通常window=09-23〜24対象） ----------
+  { id:"2026-09-24-sagami-01", date:"2026-09-24", area:"sagami", spot:"葉山鐙摺港（葉山町） 愛正丸", spotType:"沖-釣り船",
+    method:"LTアジ船・ワラサ便併記", species:["アジ","ワラサ"],
+    result:"アジ25〜40cm 21〜66匹／ワラサ3.70kg 1匹（\"朝からド快晴風は北からそよ風、海は鏡のようなベタ凪\"）",
+    tideName:"大潮", waterTempC:24.7, waterTempSource:"愛正丸 釣果ページ（実測）", weather:"晴れ後時々曇り", windMS:0.2, windDir:"北北西", airTempC:29,
+    nearby:{ obs:"Open-Meteo（葉山鐙摺沖）", waterTempC:25.5, weather:"曇り", windMS:3.20, windDir:"北", waveM:0.54, airTempC:26.6, time:"2026-09-24" },
+    sourceName:"愛正丸（葉山鐙摺港・chowari）", sourceUrl:"https://www.chowari.jp/ship/00451/catch/", note:"" },
+  { id:"2026-09-23-sagami-05", date:"2026-09-23", area:"sagami", spot:"葉山鐙摺港（葉山町） 愛正丸", spotType:"沖-釣り船",
+    method:"LTアジ船", species:["アジ"],
+    result:"アジ25〜40cm 6〜27匹（\"天気予報のウソつき！ズブ濡れ修行と豪華デカアジ少々\"、終日降雨）",
+    tideName:"中潮", waterTempC:24.4, waterTempSource:"愛正丸 釣果ページ（実測）", weather:"雨時々止む", windMS:4.3, windDir:"北東", airTempC:22,
+    nearby:{ obs:"Open-Meteo（葉山鐙摺沖）", waterTempC:25.3, weather:"雨", windMS:4.17, windDir:"北", waveM:0.78, airTempC:22.7, time:"2026-09-23" },
+    sourceName:"愛正丸（葉山鐙摺港・chowari）", sourceUrl:"https://www.chowari.jp/ship/00451/catch/", note:"" },
+  { id:"2026-09-23-sagami-06", date:"2026-09-23", area:"sagami", spot:"長井港（横須賀市長井） かかり釣り", spotType:"沖-釣り船",
+    method:"かかり釣り（イカダ）", species:["カンパチ","ソウダガツオ","アジ"],
+    result:"カンパチ35〜40cm 0〜8匹／ソウダガツオ35〜40cm 0〜10匹／マアジ20cm前後 0〜10匹（対象魚種外のクロダイ・シマダイも好調）",
+    tideName:"", waterTempC:24, waterTempSource:"長井港カセ釣り情報ブログ（実測）", weather:"雨", windMS:null, windDir:"北", airTempC:null,
+    nearby:{ obs:"Open-Meteo（長井港沖）", waterTempC:25.3, weather:"雨", windMS:5.77, windDir:"北", waveM:0.90, airTempC:23.7, time:"2026-09-23" },
+    sourceName:"長井港カセ釣り情報（永井かかり釣り）", sourceUrl:"https://www.nagaikakarizuri.com/2026/09/23/%E6%B5%B7%E4%B8%8A%E5%8C%97%E3%81%AE%E9%A2%A8%E3%81%A7%E3%81%97%E3%81%9F%E3%80%82%E6%98%8E%E6%97%A5%EF%BC%88%EF%BC%92%EF%BC%94%E6%97%A5%EF%BC%89%E5%87%BA%E8%88%B9%E7%A2%BA%E5%AE%9A%E3%81%97%E3%81%A6-4/", note:"" },
+  { id:"2026-09-24-wanko-miura-01", date:"2026-09-24", area:"wanko-miura", spot:"大津漁港（横須賀市） 小川丸", spotType:"沖-釣り船",
+    method:"LTアジ船・タチウオ船", species:["アジ","タチウオ"],
+    result:"アジ23〜42cm 25〜80匹／タチウオ70〜127cm 3〜26匹",
+    tideName:"大潮", waterTempC:null, waterTempSource:"", weather:"", windMS:null, windDir:"", airTempC:null,
+    nearby:{ obs:"Open-Meteo（大津漁港沖）", waterTempC:24.6, weather:"霧雨", windMS:3.82, windDir:"北", waveM:0.42, airTempC:25.5, time:"2026-09-24" },
+    sourceName:"小川丸（大津漁港・chowari）", sourceUrl:"https://www.chowari.jp/ship/00458/catch/", note:"" },
+  { id:"2026-09-23-wanko-miura-02", date:"2026-09-23", area:"wanko-miura", spot:"大津漁港（横須賀市） 小川丸", spotType:"沖-釣り船",
+    method:"LTアジ船・タチウオ船", species:["アジ","タチウオ"],
+    result:"アジ20〜42cm 15〜50匹／タチウオ70〜126cm 3〜31匹",
+    tideName:"中潮", waterTempC:null, waterTempSource:"", weather:"", windMS:null, windDir:"", airTempC:null,
+    nearby:{ obs:"Open-Meteo（大津漁港沖）", waterTempC:24.6, weather:"雨", windMS:5.77, windDir:"北", waveM:0.58, airTempC:23.7, time:"2026-09-23" },
+    sourceName:"小川丸（大津漁港・chowari）", sourceUrl:"https://www.chowari.jp/ship/00458/catch/", note:"" },
+  { id:"2026-09-23-wanko-boso-03", date:"2026-09-23", area:"wanko-boso", spot:"富津（富津市） 川崎丸", spotType:"沖-釣り船",
+    method:"LTアマダイ五目船", species:["アマダイ"],
+    result:"白アマダイ37〜39cm 3尾（トップ2尾）／赤アマダイ35cm級 1尾。乗船13名（対象魚種外のイトヨリも43cm含め複数）",
+    tideName:"中潮", waterTempC:null, waterTempSource:"", weather:"", windMS:null, windDir:"", airTempC:null,
+    nearby:{ obs:"Open-Meteo（富津沖）", waterTempC:24.7, weather:"雨", windMS:4.92, windDir:"北東", waveM:0.52, airTempC:23.8, time:"2026-09-23" },
+    sourceName:"川崎丸（富津）", sourceUrl:"https://www.kawasakimaru.jp/blog/51908/", note:"" },
   // ---------- 09-24 12:00回 追加分（通常window=09-23〜24対象） ----------
   { id:"2026-09-23-aoku-04", date:"2026-09-23", area:"aoku", spot:"金沢八景平潟（横浜市金沢区） 米元釣船店", spotType:"沖-釣り船",
     method:"マダイ船・LTアジ船・タチウオ船（各便併記）", species:["マダイ","アジ","タチウオ"],

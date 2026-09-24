@@ -23,3 +23,15 @@ git: push exit 0, unpushed commits: 0
 build-single: source = 釣果ログ.html
 build-single: all-in-one 273112 chars / docs/index.html 273112 / dist/artifact.html 272953
 === 2026-09-24 12:03 end (claude exit 0) ===
+git: push exit 0, unpushed commits: 0
+
+=== 2026-09-24 18:00 start ===
+Only the permitted files were touched (`data/catch-log.js`, `logs/2026-09-24.md`, plus `logs/run-2026-09-24.log` which `run-collect.ps1` manages itself). No new files were created, per the "繧・ｉ縺ｪ縺・％縺ｨ" rule.
+
+Summary of this 18:00 collection run:
+- Added 6 new records to `data/catch-log.js` (414 total, no duplicate IDs or date+spot+species keys 窶・verified with Node): 3 逶ｸ讓｡貉ｾ (諢帶ｭ｣荳ｸ/闡牙ｱｱ髏呎村貂ｯ繧｢繧ｸ繝ｻ繝ｯ繝ｩ繧ｵ, 髟ｷ莠墓ｸｯ縺九°繧企・繧翫き繝ｳ繝代メ繝ｻ繧ｽ繧ｦ繝繧ｬ繝・が繝ｻ繧｢繧ｸ), 2 譚ｱ莠ｬ貉ｾ蜿｣荳画ｵｦ蛛ｴ (蟆丞ｷ昜ｸｸ/螟ｧ豢･貍∵ｸｯ繧｢繧ｸ繝ｻ繧ｿ繝√え繧ｪ, 09-23縺ｨ09-24縺ｮ2譌･蛻・, 1 蜀・袷 (蟾晏ｴ惹ｸｸ/蟇梧ｴ･繧｢繝槭ム繧､)
+- Updated `CATCH_LOG_META` and appended a log entry to `logs/2026-09-24.md`
+- Left `tsuriha_all-in-one.html`/`dist/artifact.html` regeneration and the git commit/push to `run-collect.ps1`'s post-processing, as instructed
+build-single: source = 釣果ログ.html
+build-single: all-in-one 276879 chars / docs/index.html 276879 / dist/artifact.html 276720
+=== 2026-09-24 18:04 end (claude exit 0) ===
