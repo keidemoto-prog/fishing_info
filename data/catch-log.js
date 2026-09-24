@@ -8,11 +8,42 @@
  *   { obs:"観測地点名", waterTempC, weather, windMS, windDir, waveM, airTempC, time:"YYYY-MM-DD" }
  */
 window.CATCH_LOG_META = {
-  lastUpdated: "2026-09-24 06:00",
-  lastRunNote: "3件追加（東京湾奥1・駿河湾2）。黒川丸（金沢八景）でタチウオ、かめや釣具清水店（三保サーフ）でタチウオ、イシグロ浜松高林店（清水港周辺）でアオリイカ"
+  lastUpdated: "2026-09-24 12:00",
+  lastRunNote: "5件追加（東京湾奥3・相模湾2）。米元釣船店・弁天屋・三喜丸（いずれも金沢八景/柴漁港）でマダイ・アジ・タチウオ・カワハギ・サワラ・シロギス、藤八丸（小田原新港）でショゴ、浅八丸（平塚新港）でカツオ"
 };
 
 window.CATCH_LOG = [
+  // ---------- 09-24 12:00回 追加分（通常window=09-23〜24対象） ----------
+  { id:"2026-09-23-aoku-04", date:"2026-09-23", area:"aoku", spot:"金沢八景平潟（横浜市金沢区） 米元釣船店", spotType:"沖-釣り船",
+    method:"マダイ船・LTアジ船・タチウオ船（各便併記）", species:["マダイ","アジ","タチウオ"],
+    result:"マダイ0.40〜4.30kg 0〜3匹（最大4.3kg）／アジ20〜49cm 3〜20匹／タチウオ65〜137cm 4〜20匹",
+    tideName:"中潮", waterTempC:23.8, waterTempSource:"米元釣船店 釣果ページ（実測）", weather:"雨時々止む", windMS:4.3, windDir:"北東", airTempC:null,
+    nearby:{ obs:"Open-Meteo（金沢八景沖）", waterTempC:25.3, weather:"雨", windMS:4.17, windDir:"北", waveM:0.64, airTempC:22.7, time:"2026-09-23" },
+    sourceName:"米元釣船店（chowari）", sourceUrl:"https://www.chowari.jp/ship/00836/catch/", note:"" },
+  { id:"2026-09-23-aoku-05", date:"2026-09-23", area:"aoku", spot:"金沢八景瀬戸橋（横浜市金沢区） 弁天屋", spotType:"沖-釣り船",
+    method:"タチウオ船・アジ船・カワハギ船・サワラ船・シロギス船（各便併記）", species:["タチウオ","アジ","カワハギ","サワラ","キス（シロギス）"],
+    result:"タチウオ70〜100cm 3〜18匹／アジ20〜30cm 4〜31匹／カワハギ15〜26cm 0〜8匹／サワラ2.00〜3.00kg 0〜3匹／シロギス17〜23cm 11〜40匹",
+    tideName:"中潮", waterTempC:23.8, waterTempSource:"弁天屋 釣果ページ（実測）", weather:"雨時々止む", windMS:4.3, windDir:"北東", airTempC:null,
+    nearby:{ obs:"Open-Meteo（金沢八景沖）", waterTempC:25.3, weather:"雨", windMS:4.17, windDir:"北", waveM:0.64, airTempC:22.7, time:"2026-09-23" },
+    sourceName:"弁天屋（chowari）", sourceUrl:"https://www.chowari.jp/ship/00300/catch/", note:"" },
+  { id:"2026-09-23-aoku-06", date:"2026-09-23", area:"aoku", spot:"柴漁港（横浜市磯子区） 三喜丸", spotType:"沖-釣り船",
+    method:"LTアジ船・タチウオ船", species:["アジ","タチウオ"],
+    result:"アジ18〜28cm 35〜140匹（小柴沖〜南本牧）／タチウオ68〜108cm 6〜26匹（猿島沖）",
+    tideName:"中潮", waterTempC:24.4, waterTempSource:"三喜丸 釣果ページ（実測）", weather:"雨時々止む", windMS:4.3, windDir:"北東", airTempC:null,
+    nearby:{ obs:"Open-Meteo（金沢八景沖）", waterTempC:25.3, weather:"雨", windMS:4.17, windDir:"北", waveM:0.64, airTempC:22.7, time:"2026-09-23" },
+    sourceName:"三喜丸（chowari）", sourceUrl:"https://www.chowari.jp/ship/00272/catch/", note:"" },
+  { id:"2026-09-23-sagami-03", date:"2026-09-23", area:"sagami", spot:"小田原新港（小田原市） 藤八丸", spotType:"沖-釣り船",
+    method:"コマセ五目", species:["ショゴ"],
+    result:"ショゴ（カンパチ幼魚）30〜40cm 5〜30匹。ほかマダイ・アジ・サバ・イトヒキアジ・ホウボウ・イトヨリも交じるが匹数記載なし（\"雨のお陰か、カンパチ入れ食い\"）",
+    tideName:"中潮", waterTempC:25.5, waterTempSource:"藤八丸 釣果ページ（実測）", weather:"雨", windMS:1.8, windDir:"北東", airTempC:23,
+    nearby:{ obs:"Open-Meteo（小田原沖）", waterTempC:26.3, weather:"雨", windMS:3.66, windDir:"北東", waveM:0.96, airTempC:23.1, time:"2026-09-23" },
+    sourceName:"藤八丸（小田原新港）", sourceUrl:"https://www.chowari.jp/ship/00843/catch/", note:"" },
+  { id:"2026-09-23-sagami-04", date:"2026-09-23", area:"sagami", spot:"平塚新港（平塚市） 浅八丸", spotType:"沖-釣り船",
+    method:"コマセカツオ", species:["カツオ"],
+    result:"カツオ（大型のみ）匹数・サイズの記載なし。朝はナブラ見つからずクルーズ、中盤に瀬回りでキメジ・マグロの追っかけもあったが本命は大型カツオのみで終了",
+    tideName:"中潮", waterTempC:24.9, waterTempSource:"浅八丸 釣果ページ（実測）", weather:"雨", windMS:3.7, windDir:"北北東", airTempC:null,
+    nearby:{ obs:"Open-Meteo（平塚沖）", waterTempC:26.1, weather:"弱い雨", windMS:5.06, windDir:"北", waveM:0.80, airTempC:23.2, time:"2026-09-23" },
+    sourceName:"浅八丸（chowari）", sourceUrl:"https://www.chowari.jp/ship/01080/catch/", note:"" },
   // ---------- 09-24 06:00回 追加分（通常window=09-23〜24対象） ----------
   { id:"2026-09-23-aoku-03", date:"2026-09-23", area:"aoku", spot:"金沢八景（横浜市金沢区）黒川丸", spotType:"沖-釣り船",
     method:"テンヤタチウオ", species:["タチウオ"],
