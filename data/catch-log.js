@@ -8,11 +8,24 @@
  *   { obs:"観測地点名", waterTempC, weather, windMS, windDir, waveM, airTempC, time:"YYYY-MM-DD" }
  */
 window.CATCH_LOG_META = {
-  lastUpdated: "2026-09-25 00:00",
-  lastRunNote: "6件追加（相模湾2・東京湾口三浦側2・内房1・駿河湾1）。かりゆし丸（平塚沖）でカンパチ・イナダ・ソウダガツオ、石田丸（富士山根）でアジ・ショゴ・タチウオ、巳之助丸（竹岡沖）でカワハギ、山大丸（三保沖）でマダイ・アジ・サバ、中根ボート（金田湾）でアジ、横須賀海釣り公園でタチウオ"
+  lastUpdated: "2026-09-25 06:00",
+  lastRunNote: "2件追加（相模湾1・駿河湾1）。庄治郎丸（平塚新港）でイナダ・カンパチ・ワラサ・マダイ・アマダイ・シイラ、魚磯丸（久料港）でマダイ・オオモンハタ・ソウダガツオ・サバ"
 };
 
 window.CATCH_LOG = [
+  // ---------- 09-25 06:00回 追加分（通常window=09-24〜25対象） ----------
+  { id:"2026-09-24-sagami-04", date:"2026-09-24", area:"sagami", spot:"平塚新港 庄治郎丸", spotType:"沖-釣り船",
+    method:"五目釣り（イナダ・カンパチ／シイラ／マグロ／アマダイ各コース）", species:["イナダ","カンパチ","ワラサ","マダイ","シイラ","アマダイ"],
+    result:"イナダ38〜45cm 0〜5匹／カンパチ35〜42cm 1〜20匹（ルアーで6〜20尾）／ワラサ2.30〜2.50kg 0〜1匹／マダイ0.50〜0.75kg 0〜1匹／シイラ50〜110cm 3〜8匹（ヒット153・キャッチ77）／アマダイ20〜36cm 1〜5匹（シロアマダイ含む）。マグロ45.30kg・キメジ7.50〜10.00kg・クロダイも釣れたが対象魚種外",
+    tideName:"大潮", waterTempC:25.5, waterTempSource:"庄治郎丸 釣果ページ（実測）", weather:"晴れ後時々曇り", windMS:1.1, windDir:"南東", airTempC:29,
+    nearby:{ obs:"Open-Meteo（相模湾・平塚沖）", waterTempC:25.8, weather:"曇り", windMS:2.62, windDir:"北東", waveM:0.64, airTempC:25.9, time:"2026-09-24" },
+    sourceName:"庄治郎丸（平塚新港・chowari）", sourceUrl:"https://www.chowari.jp/ship/01081/catch/", note:"" },
+  { id:"2026-09-24-suruga-02", date:"2026-09-24", area:"suruga", spot:"久料港（沼津市） 魚磯丸", spotType:"沖-釣り船",
+    method:"五目釣り", species:["マダイ","オオモンハタ","ソウダガツオ","サバ"],
+    result:"マダイ1.00kg 3人で1匹弱。オオモンハタ・ヒラソウダ・サバも交じる。キントキ・イサキも釣れたが対象魚種外",
+    tideName:"大潮", waterTempC:26.1, waterTempSource:"魚磯丸 釣果ページ（実測）", weather:"晴れ後時々曇り", windMS:0.9, windDir:"南西", airTempC:29,
+    nearby:{ obs:"Open-Meteo（駿河湾・久料沖）", waterTempC:25.5, weather:"曇り", windMS:2.93, windDir:"東", waveM:0.40, airTempC:27.9, time:"2026-09-24" },
+    sourceName:"魚磯丸（久料港・chowari）", sourceUrl:"https://www.chowari.jp/ship/01244/catch/", note:"" },
   // ---------- 09-25 00:00回 追加分（通常window=09-24〜25対象） ----------
   { id:"2026-09-24-wanko-boso-01", date:"2026-09-24", area:"wanko-boso", spot:"竹岡沖 巳之助丸", spotType:"沖-釣り船",
     method:"カワハギ", species:["カワハギ"],

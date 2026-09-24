@@ -10,3 +10,12 @@
 build-single: source = 釣果ログ.html
 build-single: all-in-one 280438 chars / docs/index.html 280438 / dist/artifact.html 280279
 === 2026-09-25 00:06 end (claude exit 0) ===
+git: push exit 0, unpushed commits: 0
+
+=== 2026-09-25 06:00 start ===
+Only the expected files changed 窶・`data/catch-log.js`, `logs/2026-09-25.md`, and the wrapper's own `logs/run-2026-09-25.log`. Per the procedure's step 9, I'm stopping here: `run-collect.ps1` will regenerate the standalone HTML and handle git add/commit/push afterward, so I won't touch those or commit myself.
+
+**Summary of this run (2026-09-25 06:00, 06:00蝗・:** Added 2 new catch records not yet in the log 窶・蠎・ｲｻ驛惹ｸｸ (蟷ｳ蝪壽眠貂ｯ, 逶ｸ讓｡貉ｾ: 繧､繝翫ム繝ｻ繧ｫ繝ｳ繝代メ繝ｻ繝ｯ繝ｩ繧ｵ繝ｻ繝槭ム繧､繝ｻ繧ｷ繧､繝ｩ繝ｻ繧｢繝槭ム繧､) and 鬲夂｣ｯ荳ｸ (荵・侭貂ｯ, 鬧ｿ豐ｳ貉ｾ: 繝槭ム繧､繝ｻ繧ｪ繧ｪ繝｢繝ｳ繝上ち繝ｻ繧ｽ繧ｦ繝繧ｬ繝・が繝ｻ繧ｵ繝・. Checked all listed sources for the 09-24縲・5 window; one boat (荵・ｯｿ荳ｸ) was excluded because its only catch (繝｡繝繧､) isn't in the target species list. `data/catch-log.js` now has 422 records, verified as valid JS with no duplicates.
+build-single: source = 釣果ログ.html
+build-single: all-in-one 281823 chars / docs/index.html 281823 / dist/artifact.html 281664
+=== 2026-09-25 06:03 end (claude exit 0) ===
