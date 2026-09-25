@@ -8,11 +8,43 @@
  *   { obs:"観測地点名", waterTempC, weather, windMS, windDir, waveM, airTempC, time:"YYYY-MM-DD" }
  */
 window.CATCH_LOG_META = {
-  lastUpdated: "2026-09-26 00:00",
-  lastRunNote: "6件追加（東京湾口三浦側3・東京湾奥1・駿河湾2）。あまさけや丸でワラサ・イナダ大爆発、深田正夫丸でマダイ・イナダ・カンパチ、中根ボートでマダイ、野毛屋釣船店でマダイ・タチウオ、沼津サーフでアオリイカ・ソウダガツオ、霞釣り公園でアジ"
+  lastUpdated: "2026-09-26 06:00",
+  lastRunNote: "5件追加（東京湾口三浦側2・東京湾奥1・相模湾1・駿河湾1）。教至丸でタチウオ、石田丸でアジ・ショゴ・タチウオ、SSM浦賀（羽田沖）でサワラ・イナダ、SSM浦賀（走水沖）でショゴ・タチウオ、静岡サーフでショゴ"
 };
 
 window.CATCH_LOG = [
+  // ---------- 09-26 06:00回 追加分（通常window=09-25〜26対象。00:00回以降の新着のみ） ----------
+  { id:"2026-09-25-wanko-miura-07", date:"2026-09-25", area:"wanko-miura", spot:"走水港（横須賀市） 教至丸", spotType:"沖-釣り船",
+    method:"タチウオ テンヤ", species:["タチウオ"],
+    result:"ショートタチウオ船で好調。タチウオ60〜123cm 9〜59匹、メーター級も交じる（走水〜台船西）",
+    tideName:"大潮", waterTempC:24.8, waterTempSource:"教至丸 釣果ページ（実測）", weather:"曇り時々晴れ", windMS:null, windDir:"", airTempC:null,
+    nearby:{ obs:"Open-Meteo（三浦・松輪沖）", waterTempC:24.7, weather:"曇り", windMS:5.37, windDir:"東", waveM:0.36, airTempC:24.9, time:"2026-09-25" },
+    sourceName:"教至丸（chowari）", sourceUrl:"https://www.chowari.jp/ship/00845/catch/", note:"" },
+  { id:"2026-09-25-sagami-06", date:"2026-09-25", area:"sagami", spot:"相模湾（小田原・早川沖）富士山根 石田丸", spotType:"沖-釣り船",
+    method:"コマセ五目（LTアジ）", species:["アジ","ショゴ","タチウオ"],
+    result:"マアジ23〜40cm 頭40匹（富士山オレンジブイ西側・丸根沖）／大アジ30〜40cm 9匹（富士山根・がれば根）。ほかカンパチ(ショゴ)・タチウオ（ヤマダ沖・がれば根）（クロダイは対象魚種外）",
+    tideName:"大潮", waterTempC:null, waterTempSource:"", weather:"曇りのち晴れ", windMS:null, windDir:"", airTempC:null,
+    nearby:{ obs:"Open-Meteo（小田原・早川沖）", waterTempC:25.6, weather:"曇り", windMS:5.05, windDir:"南南東", waveM:0.46, airTempC:24.6, time:"2026-09-25" },
+    sourceName:"石田丸 釣果ブログ", sourceUrl:"https://www.ishidamaru.com/?post_type=fishing&paged=1", note:"" },
+  { id:"2026-09-23-aoku-07", date:"2026-09-23", area:"aoku", spot:"羽田沖", spotType:"沖-ボート",
+    method:"ブレードジグ（レンタルボート）", species:["サワラ","イナダ"],
+    result:"サワラ7匹、イナダ2匹。バラシ多数で上げた数の倍以上のヒットあり",
+    tideName:"中潮", waterTempC:null, waterTempSource:"", weather:"", windMS:null, windDir:"", airTempC:null,
+    nearby:{ obs:"Open-Meteo（羽田沖）", waterTempC:23.8, weather:"小雨", windMS:3.28, windDir:"北北東", waveM:0.38, airTempC:24.1, time:"2026-09-23" },
+    sourceName:"SSM浦賀 釣果情報", sourceUrl:"https://www.ssm-uraga.jp/fishing", note:"記事掲載日は9/25だが釣行日は9/23。レンタル艇は航行範囲外" },
+  { id:"2026-09-23-wanko-miura-03", date:"2026-09-23", area:"wanko-miura", spot:"走水沖・浦賀水道航路出入口", spotType:"沖-ボート",
+    method:"海老ジグ／イカダマ（レンタルボート）", species:["ショゴ","タチウオ"],
+    result:"タチウオ1匹（走水沖・海老ジグ150g）、ショゴ1匹（浦賀水道航路第4赤ブイ付近）。台風通過後、雨の中の釣行（ホウボウは対象魚種外）",
+    tideName:"中潮", waterTempC:null, waterTempSource:"", weather:"", windMS:null, windDir:"", airTempC:null,
+    nearby:{ obs:"Open-Meteo（走水・浦賀水道）", waterTempC:24.4, weather:"霧雨", windMS:7.66, windDir:"北北東", waveM:0.58, airTempC:24.9, time:"2026-09-23" },
+    sourceName:"SSM浦賀 釣果情報", sourceUrl:"https://www.ssm-uraga.jp/fishing", note:"記事掲載日は9/25だが釣行日は9/23" },
+  { id:"2026-09-25-suruga-03", date:"2026-09-25", area:"suruga", spot:"静岡サーフ（詳細不明）", spotType:"砂浜",
+    method:"ショアジギング（ミノー／メタルジグ）", species:["ショゴ"],
+    result:"ショゴ 最大32cm 3匹。ナブラ撃ちで、フラットフィッシュ狙いの外道",
+    tideName:"", waterTempC:null, waterTempSource:"", weather:"", windMS:null, windDir:"", airTempC:null,
+    nearby:{ obs:"Open-Meteo（駿河湾中央）", waterTempC:25.4, weather:"霧雨", windMS:5.82, windDir:"東", waveM:0.26, airTempC:25.4, time:"2026-09-25" },
+    sourceName:"かめや釣具 静岡店 釣果情報", sourceUrl:"https://kameya-choka.com/kanto-tokai/archives/f-info/544038", note:"" },
+
   // ---------- 09-26 00:00回 追加分（通常window=09-25〜26対象。18:00回以降の新着のみ） ----------
   { id:"2026-09-25-wanko-miura-04", date:"2026-09-25", area:"wanko-miura", spot:"松輪江奈漁港（三浦市） あまさけや丸", spotType:"沖-釣り船",
     method:"五目釣り", species:["ワラサ","イナダ","マダイ","サワラ","アジ","サバ"],

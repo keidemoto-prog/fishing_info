@@ -6,3 +6,12 @@ Valid JS, no duplicate IDs or duplicate (date+spot+species) keys. 439 total reco
 build-single: source = 釣果ログ.html
 build-single: all-in-one 292353 chars / docs/index.html 292353 / dist/artifact.html 292194
 === 2026-09-26 00:06 end (claude exit 0) ===
+git: push exit 0, unpushed commits: 0
+
+=== 2026-09-26 06:00 start ===
+Valid JS, no duplicate IDs or duplicate (date+spot+species) keys. 444 total records (439 + 5 new). Per step 9, I stop here 窶・`run-collect.ps1` handles HTML regeneration and git commit/push afterward.
+
+**Summary of this run (2026-09-26 06:00):** Added 5 new catch records 窶・謨呵・荳ｸ・郁ｵｰ豌ｴ貂ｯ繝ｻ繧ｿ繝√え繧ｪ縲∵擲莠ｬ貉ｾ蜿｣荳画ｵｦ蛛ｴ・峨∫浹逕ｰ荳ｸ・亥ｰ冗伐蜴溘・譌ｩ蟾晄ｲ悶・繧｢繧ｸ/繧ｷ繝ｧ繧ｴ/繧ｿ繝√え繧ｪ縲∫嶌讓｡貉ｾ・峨ヾSM豬ｦ雉繝ｬ繝ｳ繧ｿ繝ｫ繝懊・繝暗・・育ｾｽ逕ｰ豐悶・繧ｵ繝ｯ繝ｩ/繧､繝翫ム・晄擲莠ｬ貉ｾ螂･縲∬ｵｰ豌ｴ豐悶・繧ｷ繝ｧ繧ｴ/繧ｿ繝√え繧ｪ・晄擲莠ｬ貉ｾ蜿｣荳画ｵｦ蛛ｴ縲√＞縺壹ｌ繧よ兜遞ｿ縺ｯ9/25莉倥□縺悟ｮ滄・譌･縺ｯ9/23・峨・撕蟯｡繧ｵ繝ｼ繝輔・繧ｷ繝ｧ繧ｴ・磯ｧｿ豐ｳ貉ｾ・峨・hecked all listed sources for the 09-25縲・6 window since the 00:00 run; excluded a duplicate 遏ｳ逕ｰ荳ｸ/貂・ｰｴ貂ｯ繧｢繧ｸ report, an out-of-boundary 驕蟾樒§ report, an already-recorded 讓ｪ鬆郁ｳ豬ｷ驥｣繧雁・蝨偵ち繝√え繧ｪ, and a TSURINEWS roundup with unreliable/ambiguous dates. `data/catch-log.js` verified as valid JS with 444 records, no duplicates.
+build-single: source = 釣果ログ.html
+build-single: all-in-one 295394 chars / docs/index.html 295394 / dist/artifact.html 295235
+=== 2026-09-26 06:06 end (claude exit 0) ===
