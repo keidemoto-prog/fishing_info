@@ -8,11 +8,24 @@
  *   { obs:"観測地点名", waterTempC, weather, windMS, windDir, waveM, airTempC, time:"YYYY-MM-DD" }
  */
 window.CATCH_LOG_META = {
-  lastUpdated: "2026-09-25 06:00",
-  lastRunNote: "2件追加（相模湾1・駿河湾1）。庄治郎丸（平塚新港）でイナダ・カンパチ・ワラサ・マダイ・アマダイ・シイラ、魚磯丸（久料港）でマダイ・オオモンハタ・ソウダガツオ・サバ"
+  lastUpdated: "2026-09-25 12:00",
+  lastRunNote: "2件追加（東京湾口三浦側2）。金重丸（金田漁港）でマダイ・サバ・ショゴ、中根ボート（金田湾）で真鯛2枚（日付曖昧のため月のみ記録）"
 };
 
 window.CATCH_LOG = [
+  // ---------- 09-25 12:00回 追加分（通常window=09-24〜25対象。06:00回以降の新着のみ） ----------
+  { id:"2026-09-25-wanko-miura-01", date:"2026-09-25", area:"wanko-miura", spot:"金田漁港（三浦市）金重丸", spotType:"沖-釣り船",
+    method:"ウィリー五目", species:["マダイ","サバ","ショゴ"],
+    result:"当たり多く10時半に早上がり。ハナダイ・カイワリ・イサキも交じったが対象魚種外のため除外",
+    tideName:"大潮", waterTempC:25.6, waterTempSource:"金重丸 釣果ページ（実測）", weather:"曇り時々晴れ", windMS:2.9, windDir:"東北東", airTempC:27,
+    nearby:{ obs:"Open-Meteo（三浦・金田湾沖）", waterTempC:24.6, weather:"霧雨", windMS:4.96, windDir:"東", waveM:0.32, airTempC:25.4, time:"2026-09-25" },
+    sourceName:"金重丸（chowari）", sourceUrl:"https://www.chowari.jp/ship/01219/catch/", note:"" },
+  { id:"2026-09-wanko-miura-02", date:"2026-09", area:"wanko-miura", spot:"金田湾（三浦市） 中根ボート", spotType:"沖-ボート",
+    method:"ボート釣り", species:["マダイ"],
+    result:"反町さん、真鯛2枚（サイズ・場所詳細の記載なし）",
+    tideName:"", waterTempC:null, waterTempSource:"", weather:"", windMS:null, windDir:"", airTempC:null,
+    nearby:null,
+    sourceName:"中根ボート（ameblo）", sourceUrl:"https://ameblo.jp/nakane-boat/entry-12979627357.html", note:"記事タイトルは「24日お店の電話故障中」で釣行日が24日か25日か本文から特定できないため年-月のみで記録" },
   // ---------- 09-25 06:00回 追加分（通常window=09-24〜25対象） ----------
   { id:"2026-09-24-sagami-04", date:"2026-09-24", area:"sagami", spot:"平塚新港 庄治郎丸", spotType:"沖-釣り船",
     method:"五目釣り（イナダ・カンパチ／シイラ／マグロ／アマダイ各コース）", species:["イナダ","カンパチ","ワラサ","マダイ","シイラ","アマダイ"],
