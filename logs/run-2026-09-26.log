@@ -1,0 +1,8 @@
+﻿
+=== 2026-09-26 00:00 start ===
+Valid JS, no duplicate IDs or duplicate (date+spot+species) keys. 439 total records (433 + 6 new). Per step 9, I stop here 窶・`run-collect.ps1` handles HTML regeneration and git commit/push afterward.
+
+**Summary of this run (2026-09-26 00:00):** Added 6 new catch records 窶・縺ゅ∪縺輔￠繧・ｸｸ繝ｻ豺ｱ逕ｰ豁｣螟ｫ荳ｸ繝ｻ荳ｭ譬ｹ繝懊・繝茨ｼ域擲莠ｬ貉ｾ蜿｣荳画ｵｦ蛛ｴ・峨・㍽豈帛ｱ矩・闊ｹ蠎暦ｼ域擲莠ｬ貉ｾ螂･・峨∵ｲｼ豢･繧ｵ繝ｼ繝輔・髴樣・繧雁・蝨抵ｼ磯ｧｿ豐ｳ貉ｾ・・ Checked all listed sources for the 09-25縲・6 window; excluded 莨頑擲蟶ょｮ・ｽ千ｾ取ｸｯ (doesn't fit the defined area boundaries) and a 遏ｳ逕ｰ荳ｸ article that turned out to be a duplicate of an existing 09-24 record. `data/catch-log.js` verified as valid JS with 439 records, no duplicates.
+build-single: source = 釣果ログ.html
+build-single: all-in-one 292353 chars / docs/index.html 292353 / dist/artifact.html 292194
+=== 2026-09-26 00:06 end (claude exit 0) ===

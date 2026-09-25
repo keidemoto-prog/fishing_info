@@ -135,11 +135,48 @@
  *   { obs:"観測地点名", waterTempC, weather, windMS, windDir, waveM, airTempC, time:"YYYY-MM-DD" }
  */
 window.CATCH_LOG_META = {
-  lastUpdated: "2026-09-25 18:00",
-  lastRunNote: "9件追加（相模湾5・東京湾口三浦側2・東京湾奥1・内房1）。太郎丸・庄治郎丸・ゆうせい丸・喜久丸・島きち丸で相模湾五目、岩伊丸・政信丸で三浦、SEAKUROでサワラ幼魚(サゴシ)・タチウオ、九左衛門丸でマダイ"
+  lastUpdated: "2026-09-26 00:00",
+  lastRunNote: "6件追加（東京湾口三浦側3・東京湾奥1・駿河湾2）。あまさけや丸でワラサ・イナダ大爆発、深田正夫丸でマダイ・イナダ・カンパチ、中根ボートでマダイ、野毛屋釣船店でマダイ・タチウオ、沼津サーフでアオリイカ・ソウダガツオ、霞釣り公園でアジ"
 };
 
 window.CATCH_LOG = [
+  // ---------- 09-26 00:00回 追加分（通常window=09-25〜26対象。18:00回以降の新着のみ） ----------
+  { id:"2026-09-25-wanko-miura-04", date:"2026-09-25", area:"wanko-miura", spot:"松輪江奈漁港（三浦市） あまさけや丸", spotType:"沖-釣り船",
+    method:"五目釣り", species:["ワラサ","イナダ","マダイ","サワラ","アジ","サバ"],
+    result:"ワラサ2.50〜4.50kg 0〜2匹／イナダ船中100本超えの大爆発／マダイ・サワラ・大型アジ・サバも交じる（ハナダイは対象魚種外）",
+    tideName:"大潮", waterTempC:25.6, waterTempSource:"あまさけや丸 釣果ページ（実測）", weather:"曇り時々晴れ", windMS:null, windDir:"", airTempC:null,
+    nearby:{ obs:"Open-Meteo（三浦・松輪沖）", waterTempC:24.7, weather:"曇り", windMS:5.37, windDir:"東", waveM:0.36, airTempC:24.9, time:"2026-09-25" },
+    sourceName:"あまさけや丸（chowari）", sourceUrl:"https://www.chowari.jp/ship/01036/catch/", note:"" },
+  { id:"2026-09-25-wanko-miura-05", date:"2026-09-25", area:"wanko-miura", spot:"佐島港（横須賀市） 深田正夫丸", spotType:"沖-釣り船",
+    method:"五目釣り", species:["マダイ","イナダ","カンパチ","サバ"],
+    result:"マダイ0.70〜2.00kg 0〜3匹／イナダ37cm 1匹／カンパチ30cm 1匹／サバ多数（小イサキ・ウマヅラ・ヒラソーダは対象魚種外）",
+    tideName:"", waterTempC:24.5, waterTempSource:"深田正夫丸 釣果ページ（実測）", weather:"曇り時々晴れ", windMS:2.4, windDir:"東北東", airTempC:27,
+    nearby:{ obs:"Open-Meteo（三浦・松輪沖）", waterTempC:24.7, weather:"曇り", windMS:5.37, windDir:"東", waveM:0.36, airTempC:24.9, time:"2026-09-25" },
+    sourceName:"深田正夫丸（chowari）", sourceUrl:"https://www.chowari.jp/ship/00796/catch/", note:"" },
+  { id:"2026-09-25-wanko-miura-06", date:"2026-09-25", area:"wanko-miura", spot:"金田湾（三浦市） 中根ボート", spotType:"沖-ボート",
+    method:"ボート釣り", species:["マダイ","カサゴ"],
+    result:"ホテル前ポイント（水深30〜40m）でマダイ3枚（上潮時）、潮が緩む時間帯はカサゴ釣り。反町さんはマダイ2匹2kg（下潮終了まで）",
+    tideName:"", waterTempC:null, waterTempSource:"", weather:"", windMS:null, windDir:"", airTempC:null,
+    nearby:{ obs:"Open-Meteo（三浦・松輪沖）", waterTempC:24.7, weather:"曇り", windMS:5.37, windDir:"東", waveM:0.36, airTempC:24.9, time:"2026-09-25" },
+    sourceName:"中根ボート（ameblo）", sourceUrl:"https://ameblo.jp/nakane-boat/entry-12979749511.html", note:"反町さんの釣果は既存の 2026-09-wanko-miura-02（日付未特定・別記事）と同一人物の可能性があるが、別記事・別掲載内容のため別レコードとして記録" },
+  { id:"2026-09-25-aoku-02", date:"2026-09-25", area:"aoku", spot:"金沢八景平潟（横浜市） 野毛屋釣船店", spotType:"沖-釣り船",
+    method:"ひとつテンヤ", species:["マダイ","タチウオ","カマス"],
+    result:"マダイ0.60〜1.40kg 0〜4匹。外道でタチウオ・カマスも（ホウボウ・トラフグ・ショウサイフグ・コモンフグは対象魚種外）",
+    tideName:"大潮", waterTempC:24.8, waterTempSource:"野毛屋釣船店 釣果ページ（実測）", weather:"曇り時々晴れ", windMS:2.4, windDir:"東北東", airTempC:27,
+    nearby:{ obs:"Open-Meteo（横浜沖）", waterTempC:23.9, weather:"曇り", windMS:6.17, windDir:"南東", waveM:0.14, airTempC:24.8, time:"2026-09-25" },
+    sourceName:"野毛屋釣船店（chowari）", sourceUrl:"https://www.chowari.jp/ship/00834/catch/", note:"" },
+  { id:"2026-09-25-suruga-01", date:"2026-09-25", area:"suruga", spot:"沼津サーフ（沼津市海岸）", spotType:"砂浜",
+    method:"エギング／ショアジギング", species:["アオリイカ","ソウダガツオ"],
+    result:"アオリイカ300〜400g 2杯（03:30〜07:30）／ソウダガツオ35cm 2匹",
+    tideName:"", waterTempC:null, waterTempSource:"", weather:"", windMS:null, windDir:"", airTempC:null,
+    nearby:{ obs:"Open-Meteo（駿河湾・沼津沖）", waterTempC:25.4, weather:"霧雨", windMS:5.82, windDir:"東", waveM:0.26, airTempC:25.4, time:"2026-09-25" },
+    sourceName:"イシグロ沼津店（釣り情報サイト）", sourceUrl:"https://www.ishiguro-gr.com/enjoy/fishing/detail.php?id=49814", note:"" },
+  { id:"2026-09-25-suruga-02", date:"2026-09-25", area:"suruga", spot:"霞埠頭 霞釣り公園（沼津市）", spotType:"釣り公園",
+    method:"サビキ釣り", species:["アジ"],
+    result:"アジ多数（06:00〜09:00）",
+    tideName:"", waterTempC:null, waterTempSource:"", weather:"", windMS:null, windDir:"", airTempC:null,
+    nearby:{ obs:"Open-Meteo（駿河湾・沼津沖）", waterTempC:25.4, weather:"霧雨", windMS:5.82, windDir:"東", waveM:0.26, airTempC:25.4, time:"2026-09-25" },
+    sourceName:"イシグロ西春店（釣り情報サイト）", sourceUrl:"https://www.ishiguro-gr.com/enjoy/fishing/detail.php?id=49801", note:"" },
   // ---------- 09-25 18:00回 追加分（通常window=09-24〜25対象。12:00回以降の新着のみ） ----------
   { id:"2026-09-25-sagami-01", date:"2026-09-25", area:"sagami", spot:"小坪漁港（逗子市） 太郎丸", spotType:"沖-釣り船",
     method:"カツオ・キハダ船（コマセ／ルアー）", species:["カツオ"], result:"ホンガツオ3.50〜6.00kg 0〜4匹。デカナブラに船団で対応、トップ4本",
