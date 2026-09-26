@@ -26,3 +26,12 @@ Per step 9, stopping here 窶・`run-collect.ps1` handles HTML regeneration and 
 build-single: source = 釣果ログ.html
 build-single: all-in-one 297673 chars / docs/index.html 297673 / dist/artifact.html 297514
 === 2026-09-26 12:06 end (claude exit 0) ===
+git: push exit 0, unpushed commits: 0
+
+=== 2026-09-26 18:00 start ===
+Only the expected files changed 窶・no stray files created. That completes the 謇矩・through step 8; per step 9, I stop here since `run-collect.ps1` handles the HTML regeneration and git commit/push after this.
+
+**Summary of this run (2026-09-26 18:00):** Added 8 new catch records for the 09-25縲・6 window (since the 12:00 run) 窶・謌ｿ荳ｸ/驥鷹㍾荳ｸ/荳ｸ蜿井ｸｸ/SSM豬ｦ雉ﾃ・ (wanko-miura), 豎逕ｰ荳ｸ (sagami), 隨ｬ2鄒主翠荳ｸ (wanko-boso), 譚第悽豬ｷ莠・(aoku). Checked chowari (national + areas 92/56/94), ishidamaru, ssm-uraga, ishiguro-gr, kameya-choka, hamachidori, super-fishing, sunnyside, tomiura-marineboat, nakane-boat, TSURINEWS, and YouTube. Notably excluded a false-positive "隘ｿ豬ｦ" squid catch that turned out to be Aichi (荳画ｲｳ貉ｾ), not Suruga Bay's Numazu-Nishiura, and confirmed the "隘ｿ貉倥し繝ｼ繝・ kameya article was the same source URL as an existing record (not new). `data/catch-log.js` verified as valid JS with 456 records, no duplicate IDs or (date+spot+species) keys.
+build-single: source = 釣果ログ.html
+build-single: all-in-one 301854 chars / docs/index.html 301854 / dist/artifact.html 301695
+=== 2026-09-26 18:14 end (claude exit 0) ===
