@@ -1,0 +1,8 @@
+﻿
+=== 2026-09-27 00:00 start ===
+`data/catch-log.js` 縺ｫ3莉ｶ霑ｽ蜉縺励゛avaScript縺ｨ縺励※豁｣縺励￥隱ｭ繧√ｋ縺薙→繝ｻ驥崎､・′縺ｪ縺・％縺ｨ繧堤｢ｺ隱阪＠縺ｾ縺励◆縲ゅΟ繧ｰ繝輔ぃ繧､繝ｫ (`logs/run-2026-09-27.log`) 縺ｯ `run-collect.ps1` 蛛ｴ縺梧賜莉悶Ο繝・け縺励※譖ｸ縺崎ｾｼ縺ｿ荳ｭ縺ｮ縺溘ａ縲∫峩謗･邱ｨ髮・・縺ｧ縺阪∪縺帙ｓ縺ｧ縺励◆・井ｻ悶・譌･谺｡繝ｭ繧ｰ縺ｨ蜷後§莉慕ｵ・∩縺ｧ縲√％縺ｮ譛邨ょｿ懃ｭ斐ユ繧ｭ繧ｹ繝医′閾ｪ蜍慕噪縺ｫ縺昴％縺ｸ繧ｭ繝｣繝励メ繝｣縺輔ｌ繧区Φ螳壹〒縺呻ｼ峨・
+**Summary of this run (2026-09-27 00:00):** Added 3 new catch records for the 09-26縲・7 window (since the 18:00 run on 09-26) 窶・繧・≧縺帙＞荳ｸ繝ｻ螟ｪ驛惹ｸｸ・育嶌讓｡貉ｾ縲∫援轢ｬ貍∵ｸｯ繝ｻ蟆丞擡貍∵ｸｯ縲√き繝・が荳ｭ蠢・ｼ峨∵ｭ｣豬ｷ荳ｸ・域擲莠ｬ貉ｾ蜿｣荳画ｵｦ蛛ｴ縲∵收霈ｪ豎溷･域ｼ∵ｸｯ縲√Ρ繝ｩ繧ｵ繝ｻ繧､繝翫ム繝ｻ繧ｫ繝・が・峨・hecked chowari (catcharea area=92&fish=308 繧ｫ繝・が縲］ational /catch/)縲（shidamaru縲《sm-uraga縲”amachidori縲（shiguro-gr縲〔ameya-choka縲《uper-fishing・・03縺ｧ蜿門ｾ嶺ｸ榊庄・峨《unnyside縲］akane-boat縲》omiura-marineboat縲ゝSURINEWS縲∵悽迚ｧ/螟ｧ鮟呈ｵｷ縺･繧頑命險ｭ縲〆ouTube for the 09-26縲・7 window. 隕九▽縺九▲縺滉ｻ悶・蛟呵｣懶ｼ・SM豬ｦ雉縺ｮ隕ｳ髻ｳ蟠取ｲ門､ｧ譬ｹ遲・/26險倅ｺ九√°繧√ｄ隘ｿ貉倥し繝ｼ繝輔・髱吝ｲ｡繧ｵ繝ｼ繝輔・貂・ｰｴ貂ｯ險倅ｺ九∽ｸｭ譬ｹ繝懊・繝医・7譌･縺ｮ莠育ｴ・・邨ゅｏ繧翫∪縺励◆縲崎ｨ倅ｺ句・縺ｮ繝帙ユ繝ｫ蜑阪・繝繧､繝ｻ繧ｫ繧ｵ繧ｴ・峨・縺・★繧後ｂ譛ｬ譌･縺ｮ00:00縲・8:00縺ｮ螳溯｡悟屓縺ｧ譌｢縺ｫ蜷御ｸURL繝ｻ蜷御ｸ蜀・ｮｹ縺ｧ險倬鹸貂医∩縺ｮ縺溘ａ驥崎､・→縺励※髯､螟悶＠縺ｾ縺励◆縲Ａdata/catch-log.js` 縺ｯ valid JS縲・59 records縲・㍾隍⑩D縺ｪ縺励・驥崎､・date+spot+species)繧ｭ繝ｼ縺ｪ縺励ｒ遒ｺ隱肴ｸ医∩縺ｧ縺吶・
+Per step 9, stopping here 窶・`run-collect.ps1` handles the HTML regeneration and git commit/push after this.
+build-single: source = 釣果ログ.html
+build-single: all-in-one 303457 chars / docs/index.html 303457 / dist/artifact.html 303298
+=== 2026-09-27 00:12 end (claude exit 0) ===

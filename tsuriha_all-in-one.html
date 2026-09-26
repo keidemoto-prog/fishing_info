@@ -135,11 +135,31 @@
  *   { obs:"観測地点名", waterTempC, weather, windMS, windDir, waveM, airTempC, time:"YYYY-MM-DD" }
  */
 window.CATCH_LOG_META = {
-  lastUpdated: "2026-09-26 18:00",
-  lastRunNote: "8件追加（東京湾口三浦側4・相模湾1・内房1・東京湾奥1）。房丸・金重丸・丸又丸・SSM浦賀レンタルボート2件（三浦側）、池田丸（相模湾）、第2美吉丸（内房）、村本海事（東京湾奥）"
+  lastUpdated: "2026-09-27 00:00",
+  lastRunNote: "3件追加（相模湾2・東京湾口三浦側1）。ゆうせい丸・太郎丸（相模湾、カツオ）、正海丸（三浦側、ワラサ・イナダ・カツオ）"
 };
 
 window.CATCH_LOG = [
+  // ---------- 09-27 00:00回 追加分（通常window=09-26〜27対象。09-26 18:00回以降の新着のみ） ----------
+  { id:"2026-09-26-sagami-02", date:"2026-09-26", area:"sagami", spot:"片瀬漁港（藤沢市） ゆうせい丸", spotType:"沖-釣り船",
+    method:"カツオ・カンパチ・アマダイ釣り", species:["カツオ","カンパチ","アマダイ","アジ","サバ","ソウダガツオ"],
+    result:"カツオ2.40〜6.00kg 0〜2匹／カンパチ28〜38cm 0〜4匹／アマダイ23〜38cm 0〜4匹。アジ・サバ・ソウダガツオも交じる（ハナダイ・モクアジ・スマは対象魚種外のため除外）。2枚潮で全体的に食い渋り",
+    tideName:"大潮", waterTempC:24.5, waterTempSource:"ゆうせい丸 釣果ページ（実測）", weather:"曇りのち一時雨", windMS:3.0, windDir:"北北東", airTempC:null,
+    nearby:null,
+    sourceName:"ゆうせい丸（chowari）", sourceUrl:"https://www.chowari.jp/ship/00366/catch/", note:"" },
+  { id:"2026-09-26-sagami-03", date:"2026-09-26", area:"sagami", spot:"小坪漁港（逗子市） 太郎丸", spotType:"沖-釣り船",
+    method:"カツオ釣り（コマセ）", species:["カツオ"],
+    result:"ホンガツオ3.50〜4.50kg 0〜1匹（カツオとして記録）。カツオ・キハダ混合ナブラに遭遇したが当たり渋くバラシも（キハダは対象魚種外のため除外）",
+    tideName:"大潮", waterTempC:24.1, waterTempSource:"太郎丸 釣果ページ（実測）", weather:"曇りのち一時雨", windMS:2.4, windDir:"北", airTempC:null,
+    nearby:null,
+    sourceName:"太郎丸（chowari）", sourceUrl:"https://www.chowari.jp/ship/01075/catch/", note:"" },
+  { id:"2026-09-26-wanko-miura-05", date:"2026-09-26", area:"wanko-miura", spot:"松輪江奈漁港（三浦市） 正海丸", spotType:"沖-釣り船",
+    method:"コマセ五目・カツオ釣り", species:["ワラサ","イナダ","カツオ"],
+    result:"ワラサ3.00〜4.80kg 0〜2匹／イナダ1.00〜1.80kg 0〜5匹／カツオ2.00〜4.00kg 0〜1匹。朝は青物好調、その後カツオを狙って沖へ移動しバラシ多数",
+    tideName:"大潮", waterTempC:25.4, waterTempSource:"正海丸 釣果ページ（実測）", weather:"曇り一時雨", windMS:2.0, windDir:"北", airTempC:null,
+    nearby:null,
+    sourceName:"正海丸（chowari）", sourceUrl:"https://www.chowari.jp/ship/01696/catch/", note:"" },
+
   // ---------- 09-26 18:00回 追加分（通常window=09-25〜26対象。12:00回以降の新着のみ） ----------
   { id:"2026-09-26-wanko-miura-01", date:"2026-09-26", area:"wanko-miura", spot:"鴨居大室漁港（横須賀市）", spotType:"沖-釣り船",
     method:"タイラバ", species:["マダイ","サワラ","ワラサ","タチウオ"],
