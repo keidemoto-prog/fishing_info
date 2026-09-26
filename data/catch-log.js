@@ -8,11 +8,24 @@
  *   { obs:"観測地点名", waterTempC, weather, windMS, windDir, waveM, airTempC, time:"YYYY-MM-DD" }
  */
 window.CATCH_LOG_META = {
-  lastUpdated: "2026-09-27 00:00",
-  lastRunNote: "3件追加（相模湾2・東京湾口三浦側1）。ゆうせい丸・太郎丸（相模湾、カツオ）、正海丸（三浦側、ワラサ・イナダ・カツオ）"
+  lastUpdated: "2026-09-27 06:00",
+  lastRunNote: "2件追加（東京湾奥1・駿河湾1）。えさ政釣船店（羽田、カワハギ）、風神丸（焼津、タチウオ）"
 };
 
 window.CATCH_LOG = [
+  // ---------- 09-27 06:00回 追加分（09-27 00:00回以降の新着のみ） ----------
+  { id:"2026-09-26-aoku-02", date:"2026-09-26", area:"aoku", spot:"羽田（大田区） えさ政釣船店", spotType:"沖-釣り船",
+    method:"カワハギ釣り", species:["カワハギ"],
+    result:"カワハギ15〜29cm 0〜10匹。最大28.5cm、25cm前後の良型多い（ヒガンフグも釣れたが対象魚種外のため除外）",
+    tideName:"", waterTempC:null, waterTempSource:"", weather:"", windMS:null, windDir:"", airTempC:null,
+    nearby:{ obs:"Open-Meteo（東京湾奥・羽田）", waterTempC:23.9, weather:"強い雨", windMS:4.61, windDir:"北", waveM:0.40, airTempC:22.9, time:"2026-09-26" },
+    sourceName:"えさ政釣船店（chowari）", sourceUrl:"https://www.chowari.jp/ship/00322/", note:"" },
+  { id:"2026-09-26-suruga-01", date:"2026-09-26", area:"suruga", spot:"焼津港（焼津市） 風神丸", spotType:"沖-釣り船",
+    method:"タチウオ釣り", species:["タチウオ"],
+    result:"タチウオ2.5〜4本指サイズ 複数尾",
+    tideName:"", waterTempC:null, waterTempSource:"", weather:"", windMS:null, windDir:"", airTempC:null,
+    nearby:{ obs:"Open-Meteo（駿河湾・焼津沖）", waterTempC:25.3, weather:"雨", windMS:4.96, windDir:"北北東", waveM:0.54, airTempC:23.4, time:"2026-09-26" },
+    sourceName:"風神丸（chowari）", sourceUrl:"https://www.chowari.jp/ship/01686/", note:"" },
   // ---------- 09-27 00:00回 追加分（通常window=09-26〜27対象。09-26 18:00回以降の新着のみ） ----------
   { id:"2026-09-26-sagami-02", date:"2026-09-26", area:"sagami", spot:"片瀬漁港（藤沢市） ゆうせい丸", spotType:"沖-釣り船",
     method:"カツオ・カンパチ・アマダイ釣り", species:["カツオ","カンパチ","アマダイ","アジ","サバ","ソウダガツオ"],

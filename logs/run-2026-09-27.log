@@ -6,3 +6,13 @@ Per step 9, stopping here 窶・`run-collect.ps1` handles the HTML regeneration 
 build-single: source = 釣果ログ.html
 build-single: all-in-one 303457 chars / docs/index.html 303457 / dist/artifact.html 303298
 === 2026-09-27 00:12 end (claude exit 0) ===
+git: push exit 0, unpushed commits: 0
+
+=== 2026-09-27 06:00 start ===
+`data/catch-log.js` 縺ｫ2莉ｶ霑ｽ蜉縺励゛avaScript縺ｨ縺励※豁｣縺励￥隱ｭ繧√ｋ縺薙→繝ｻ驥崎､・ｼ・ate+spot+species・峨′縺ｪ縺・％縺ｨ繧堤｢ｺ隱阪＠縺ｾ縺励◆縲ゅΟ繧ｰ繝輔ぃ繧､繝ｫ (`logs/run-2026-09-27.log`) 縺ｯ `run-collect.ps1` 蛛ｴ縺梧黒謐峨＠縺ｦ譖ｸ縺崎ｾｼ縺ｿ荳ｭ縺ｮ縺溘ａ縲∫峩謗･邱ｨ髮・・縺ｧ縺阪∪縺帙ｓ縺ｧ縺励◆・亥燕蝗樊律谺｡繝ｭ繧ｰ縺ｨ蜷後§莉慕ｵ・∩縺ｧ縲√％縺ｮ譛邨ょｿ懃ｭ斐ユ繧ｭ繧ｹ繝医′閾ｪ蜍慕噪縺ｫ縺昴％縺ｸ繧ｭ繝｣繝励メ繝｣縺輔ｌ繧区Φ螳壹〒縺呻ｼ峨・
+**Summary of this run (2026-09-27 06:00):** Added 2 new catch records for the window since the 00:00 run on 09-27 窶・縺医＆謾ｿ驥｣闊ｹ蠎暦ｼ域擲莠ｬ貉ｾ螂･繝ｻ鄒ｽ逕ｰ縲√き繝ｯ繝上ぐ・峨・｢ｨ逾樔ｸｸ・磯ｧｿ豐ｳ貉ｾ繝ｻ辟ｼ豢･縲√ち繝√え繧ｪ・峨・hecked chowari national `/catch/` listing, ishidamaru, ssm-uraga, hamachidori, ishiguro-gr (no new 09-27 entries at these four), plus a TSURINEWS/YouTube search 窶・no other qualifying new catches found in the short 6-hour window. One candidate (SSM豬ｦ雉 隕ｳ髻ｳ蟠取ｲ門､ｧ譬ｹ遲・09-26) was already recorded as `2026-09-26-wanko-miura-04`, so skipped as duplicate; another (遘狗伐螻九・閻ｰ雜頑ｼ∵ｸｯ縲√け繝ｭ繝繝・繝｡繝繧､/繧ｷ繝ｭ繝繝・ had no target species, so not recorded; ishiguro-gr's 驕蟾樒§豬ｷ蟯ｸ catch is outside the suruga area definition (Enshu-nada, not Suruga Bay), so excluded. `data/catch-log.js` is valid JS, 461 records, no duplicate IDs or duplicate (date+spot+species) keys confirmed.
+
+Per step 9, stopping here 窶・`run-collect.ps1` handles the HTML regeneration and git commit/push after this.
+build-single: source = 釣果ログ.html
+build-single: all-in-one 304587 chars / docs/index.html 304587 / dist/artifact.html 304428
+=== 2026-09-27 06:02 end (claude exit 0) ===
