@@ -8,11 +8,37 @@
  *   { obs:"観測地点名", waterTempC, weather, windMS, windDir, waveM, airTempC, time:"YYYY-MM-DD" }
  */
 window.CATCH_LOG_META = {
-  lastUpdated: "2026-09-26 06:00",
-  lastRunNote: "5件追加（東京湾口三浦側2・東京湾奥1・相模湾1・駿河湾1）。教至丸でタチウオ、石田丸でアジ・ショゴ・タチウオ、SSM浦賀（羽田沖）でサワラ・イナダ、SSM浦賀（走水沖）でショゴ・タチウオ、静岡サーフでショゴ"
+  lastUpdated: "2026-09-26 12:00",
+  lastRunNote: "4件追加（内房1・駿河湾2・相模湾1）。しまや丸でマハタ・アカハタ、清水港でアジ、沼津湾内ボートロックでアカハタ・オオモンハタ・ソウダガツオ、西湘サーフでソウダガツオ"
 };
 
 window.CATCH_LOG = [
+  // ---------- 09-26 12:00回 追加分（通常window=09-25〜26対象。06:00回以降の新着のみ） ----------
+  { id:"2026-09-25-wanko-boso-02", date:"2026-09-25", area:"wanko-boso", spot:"乙浜港（南房総市） しまや丸", spotType:"沖-釣り船",
+    method:"アジ泳がせ（当初アジ狙い）", species:["マハタ","アカハタ"],
+    result:"マハタ1.30〜3.10kg 0〜1匹、アカハタ多数交じる。台風の影響で9日ぶりの出船、バラシも多かった（AM5:00出船）",
+    tideName:"大潮", waterTempC:25.4, waterTempSource:"しまや丸 釣果ページ（実測）", weather:"曇り時々晴れ", windMS:4.5, windDir:"東北東", airTempC:28,
+    nearby:{ obs:"Open-Meteo（南房総・乙浜沖）", waterTempC:25.5, weather:"晴れ時々曇り", windMS:6.84, windDir:"東", waveM:0.98, airTempC:24.9, time:"2026-09-25" },
+    sourceName:"しまや丸（chowari）", sourceUrl:"https://www.chowari.jp/ship/00980/catch/", note:"" },
+  { id:"2026-09-24-suruga-04", date:"2026-09-24", area:"suruga", spot:"清水港（静岡市）", spotType:"堤防",
+    method:"アジング", species:["アジ"],
+    result:"アジ20cmまで 15匹（夕マズメの2時間後くらいから2時間ほど）",
+    tideName:"", waterTempC:null, waterTempSource:"", weather:"", windMS:null, windDir:"", airTempC:null,
+    nearby:{ obs:"Open-Meteo（清水・三保沖）", waterTempC:25.5, weather:"晴れ時々曇り", windMS:4.03, windDir:"南", waveM:0.40, airTempC:26.0, time:"2026-09-24" },
+    sourceName:"かめや釣具 静岡店 釣果情報", sourceUrl:"https://kameya-choka.com/kanto-tokai/archives/f-info/544031", note:"" },
+  { id:"2026-09-24-suruga-05", date:"2026-09-24", area:"suruga", spot:"沼津湾内", spotType:"沖-ボート",
+    method:"ボートロックフィッシュ", species:["アカハタ","オオモンハタ","ソウダガツオ"],
+    result:"アカハタ20〜35cm 11尾／オオモンハタ17〜32cm 2尾／ソウダガツオ35cm 2尾（オニカサゴは対象魚種外のため除外）",
+    tideName:"", waterTempC:null, waterTempSource:"", weather:"", windMS:null, windDir:"", airTempC:null,
+    nearby:{ obs:"Open-Meteo（沼津湾）", waterTempC:25.5, weather:"晴れ時々曇り", windMS:3.08, windDir:"西", waveM:0.40, airTempC:26.9, time:"2026-09-24" },
+    sourceName:"釣具のイシグロ 釣果情報", sourceUrl:"https://www.ishiguro-gr.com/enjoy/fishing/detail.php?id=49813", note:"" },
+  { id:"2026-09-sagami-05", date:"2026-09", area:"sagami", spot:"西湘サーフ", spotType:"砂浜",
+    method:"ショアジギング", species:["ソウダガツオ"],
+    result:"スタッフ釣果でソウダガツオ1匹。カタクチイワシパターンでジグにヒット",
+    tideName:"", waterTempC:null, waterTempSource:"", weather:"", windMS:null, windDir:"", airTempC:null,
+    nearby:null,
+    sourceName:"かめや釣具（平塚店） 釣果情報", sourceUrl:"https://kameya-choka.com/kanto-tokai/archives/f-info/544047", note:"釣行日は記事上「9月中旬」で日が特定できないため月のみ" },
+
   // ---------- 09-26 06:00回 追加分（通常window=09-25〜26対象。00:00回以降の新着のみ） ----------
   { id:"2026-09-25-wanko-miura-07", date:"2026-09-25", area:"wanko-miura", spot:"走水港（横須賀市） 教至丸", spotType:"沖-釣り船",
     method:"タチウオ テンヤ", species:["タチウオ"],

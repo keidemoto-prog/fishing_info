@@ -15,3 +15,14 @@ Valid JS, no duplicate IDs or duplicate (date+spot+species) keys. 444 total reco
 build-single: source = 釣果ログ.html
 build-single: all-in-one 295394 chars / docs/index.html 295394 / dist/artifact.html 295235
 === 2026-09-26 06:06 end (claude exit 0) ===
+git: push exit 0, unpushed commits: 0
+
+=== 2026-09-26 12:00 start ===
+Valid JS, no duplicate IDs or duplicate (date+spot+species) keys among the newly added records. 448 total records (444 + 4 new).
+
+**Summary of this run (2026-09-26 12:00):** Added 4 new catch records 窶・縺励∪繧・ｸｸ・井ｹ呎ｵ懈ｸｯ繝ｻ蜊玲袷邱丞ｸゑｼ峨〒繝槭ワ繧ｿ繝ｻ繧｢繧ｫ繝上ち縲∵ｸ・ｰｴ貂ｯ・磯撕蟯｡蟶ゑｼ峨〒繧｢繧ｸ縲∵ｲｼ豢･貉ｾ蜀・・繝ｼ繝医Ο繝・け繝輔ぅ繝・す繝･縺ｧ繧｢繧ｫ繝上ち繝ｻ繧ｪ繧ｪ繝｢繝ｳ繝上ち繝ｻ繧ｽ繧ｦ繝繧ｬ繝・が縲∬･ｿ貉倥し繝ｼ繝輔〒繧ｽ繧ｦ繝繧ｬ繝・が・磯・陦梧律縲・譛井ｸｭ譌ｬ縲阪〒譌･荳肴・縺ｮ縺溘ａ譛医・縺ｿ險倬鹸・峨・hecked chowari, fishing-v, ishidamaru, ssm-uraga, hamachidori, super-fishing (403), ishiguro-gr, kameya-choka, tomiura-marineboat, sunnyside, TSURINEWS, YouTube, daikoku/higashi-ogijima searches for the 09-25縲・6 window. Excluded: a 髱吝ｲ｡繧ｵ繝ｼ繝輔す繝ｧ繧ｴ article that was a duplicate of an existing 09-25 record, a 豐ｼ豢･繧ｵ繝ｼ繝・record that duplicated an existing entry, and two out-of-scope boats (螟ｧ髦ｪ繝ｻ豺ｱ譌･貂ｯ縺ｮ轣ｫ驕逅・ｸｸ縲∝・蠎ｫ繝ｻ闊槫ｭ舌・螟ｧ縺｡繧・ｓ荳ｸ). `data/catch-log.js` verified as valid JS with 448 records.
+
+Per step 9, stopping here 窶・`run-collect.ps1` handles HTML regeneration and git commit/push afterward.
+build-single: source = 釣果ログ.html
+build-single: all-in-one 297673 chars / docs/index.html 297673 / dist/artifact.html 297514
+=== 2026-09-26 12:06 end (claude exit 0) ===
