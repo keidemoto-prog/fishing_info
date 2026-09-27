@@ -7,3 +7,18 @@ HTML蜀咲函謌舌・git commit/push縺ｯ`run-collect.ps1`縺悟ｾ檎ｶ壹�
 build-single: source = 釣果ログ.html
 build-single: all-in-one 313216 chars / docs/index.html 313216 / dist/artifact.html 313057
 === 2026-09-28 00:04 end (claude exit 0) ===
+git: push exit 0, unpushed commits: 0
+
+=== 2026-09-28 06:00 start ===
+Only the expected files changed. Per step 9, I'm stopping here 窶・`run-collect.ps1` will regenerate the standalone HTML and handle git add/commit/push afterward.
+
+**Summary (2026-09-28 06:00 run):** Since this was the Monday morning run, I widened the check to the full weekend (Fri 09-25 窶・Mon 09-28) across chowari, ship blogs, Suruga-area sources, and YouTube, though most of that window was already covered by the preceding runs. Added 4 new records:
+- 縺溘＞縺槭≧荳ｸ (闡牙ｱｱ, 09-27): 繧ｷ繝ｭ繧｢繝槭ム繧､繝ｻ繝帙Φ繧ｬ繝・が
+- 遏ｳ逕ｰ荳ｸ (蟆冗伐蜴溘・譌ｩ蟾晄ｲ・ 09-27): 繝偵Λ繝｡繝ｻ繝ｯ繝ｩ繧ｵ邏壹・繧ｷ繝ｧ繧ｴ繝ｻ繧｢繧ｸ繝ｻ繝槭ざ繝√・繧ｿ繝√え繧ｪ
+- 譚第悽豬ｷ莠・(驥第ｲ｢蜈ｫ譎ｯ, 09-27): 繝槭ム繧､
+- 譚第悽豬ｷ莠・(驥第ｲ｢蜈ｫ譎ｯ, 09-26): 繝槭ム繧､繝ｻ繧｢繧ｪ繝ｪ繧､繧ｫ繝ｻ繧｢繧ｸ
+
+`data/catch-log.js` now has 482 records, verified as valid JS with no duplicate IDs or (date+spot+species) keys. Everything excluded (out-of-species, out-of-area like 驫ｭ豢ｲ/逾槫ｭ仙・蟲ｶ/蟆ｾ鮃ｲ, numberless mentions, duplicates of existing records) is logged with reasoning in `logs/2026-09-28.md`.
+build-single: source = 釣果ログ.html
+build-single: all-in-one 315547 chars / docs/index.html 315547 / dist/artifact.html 315388
+=== 2026-09-28 06:07 end (claude exit 0) ===
