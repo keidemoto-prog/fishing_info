@@ -8,11 +8,36 @@
  *   { obs:"観測地点名", waterTempC, weather, windMS, windDir, waveM, airTempC, time:"YYYY-MM-DD" }
  */
 window.CATCH_LOG_META = {
-  lastUpdated: "2026-09-27 12:00",
-  lastRunNote: "11件追加（東京湾奥4・東京湾口三浦側3・相模湾3・駿河湾1）"
+  lastUpdated: "2026-09-27 18:00",
+  lastRunNote: "4件追加（東京湾奥1・相模湾1・東京湾口房総側1・東京湾口三浦側1）"
 };
 
 window.CATCH_LOG = [
+  // ---------- 09-27 18:00回 追加分（09-27 12:00回以降の新着のみ） ----------
+  { id:"2026-09-27-aoku-01", date:"2026-09-27", area:"aoku", spot:"金沢八景平潟（横浜市） 黒川丸", spotType:"沖-釣り船",
+    method:"ライトアジ・タチウオ釣り", species:["アジ","タチウオ"],
+    result:"アジ18〜25cm 11〜41匹（午前アジ船、近場ポイント）／タチウオ65〜110cm 1〜20匹（午後タチウオ船、猿島沖〜走水沖）",
+    tideName:"大潮", waterTempC:23.7, waterTempSource:"黒川丸 釣果ページ（実測）", weather:"曇り", windMS:3.5, windDir:"北北東", airTempC:null,
+    nearby:null,
+    sourceName:"黒川丸（chowari）", sourceUrl:"https://www.chowari.jp/ship/00150/catch/", note:"" },
+  { id:"2026-09-27-sagami-02", date:"2026-09-27", area:"sagami", spot:"小田原新港（小田原市） 藤八丸", spotType:"沖-釣り船",
+    method:"ショウゴ・タイラバ五目", species:["ショゴ","マダイ","イナダ"],
+    result:"ショゴ30〜40cm 1〜8匹／マダイ（タイラバ）0〜3枚／イナダ30〜40cm 0〜2匹。ホウボウ・アオハタ・ミノカサゴ・アジ・サバも混じり",
+    tideName:"大潮", waterTempC:24.8, waterTempSource:"藤八丸 釣果ページ（実測）", weather:"曇り", windMS:1.5, windDir:"北東", airTempC:null,
+    nearby:null,
+    sourceName:"藤八丸（chowari）", sourceUrl:"https://www.chowari.jp/ship/00843/catch/", note:"" },
+  { id:"2026-09-27-wanko-boso-01", date:"2026-09-27", area:"wanko-boso", spot:"上総湊港（富津市） 加平丸", spotType:"沖-釣り船",
+    method:"仕立てのカワハギ釣り", species:["カワハギ"],
+    result:"カワハギ15〜27cm 2〜8匹",
+    tideName:"大潮", waterTempC:24.6, waterTempSource:"加平丸 釣果ページ（実測）", weather:"曇り", windMS:2.4, windDir:"北北東", airTempC:null,
+    nearby:null,
+    sourceName:"加平丸（chowari）", sourceUrl:"https://www.chowari.jp/ship/01218/catch/", note:"" },
+  { id:"2026-09-27-wanko-miura-01", date:"2026-09-27", area:"wanko-miura", spot:"松輪江奈漁港（三浦市） 新徳丸", spotType:"沖-釣り船",
+    method:"シマアジ釣り", species:["マダイ","イナダ"],
+    result:"シマアジ0.80〜1.30kg 0〜2匹（対象魚種外のため件数は非計上）、マダイ・イナダ・イサキ・メジナ混じり",
+    tideName:"大潮", waterTempC:24.8, waterTempSource:"新徳丸 釣果ページ（実測）", weather:"曇り", windMS:5.0, windDir:"北北東", airTempC:null,
+    nearby:null,
+    sourceName:"新徳丸（chowari）", sourceUrl:"https://www.chowari.jp/ship/01192/catch/", note:"" },
   // ---------- 09-27 12:00回 追加分（09-27 06:00回以降の新着のみ。通常window=09-26〜27対象） ----------
   { id:"2026-09-27-sagami-01", date:"2026-09-27", area:"sagami", spot:"小田原沖 もと明丸", spotType:"沖-釣り船",
     method:"ティップランエギング（アオリイカ）", species:["アオリイカ"],

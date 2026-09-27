@@ -34,3 +34,15 @@ HTML（`tsuriha_all-in-one.html` / `dist/artifact.html`）の再生成は `run-c
 build-single: source = 釣果ログ.html
 build-single: all-in-one 310256 chars / docs/index.html 310256 / dist/artifact.html 310097
 === 2026-09-27 12:08 end (claude exit 0) ===
+git: push exit 0, unpushed commits: 0
+
+=== 2026-09-27 18:00 start ===
+Per step 9, stopping here 窶・HTML regeneration and git commit/push are handled automatically by `run-collect.ps1`.
+
+## 螳御ｺ・ｱ蜻・
+2026-09-27 18:00蝗槭・蜿朱寔繧貞ｮ溯｡後＠縺ｾ縺励◆・・2:00蝗樔ｻ･髯阪・譁ｰ逹縺ｮ縺ｿ縲∝ｯｾ雎｡譛滄俣09-26縲・7・峨・
+- **`data/catch-log.js`**: 4莉ｶ霑ｽ蜉・域擲莠ｬ貉ｾ螂･1繝ｻ逶ｸ讓｡貉ｾ1繝ｻ譚ｱ莠ｬ貉ｾ蜿｣謌ｿ邱丞・1繝ｻ譚ｱ莠ｬ貉ｾ蜿｣荳画ｵｦ蛛ｴ1・峨・ode 縺ｧ valid JS 遒ｺ隱肴ｸ医∩縲・76莉ｶ縲・㍾隍⑩D繝ｻ驥崎､・く繝ｼ縺ｪ縺励・- **`logs/2026-09-27.md`**: 18:00蝗槭・繧ｻ繧ｯ繧ｷ繝ｧ繝ｳ繧定ｿｽ險倥＠縲∵治逕ｨ繝ｻ荳肴治逕ｨ縺ｮ蛻､譁ｭ譬ｹ諡繧定ｨ倬鹸縲・
+譁ｰ隕剰ｿｽ蜉: 鮟貞ｷ昜ｸｸ・磯≡豐｢蜈ｫ譎ｯ繝ｻ繧｢繧ｸ/繧ｿ繝√え繧ｪ・峨∬陸蜈ｫ荳ｸ・亥ｰ冗伐蜴溘・繧ｷ繝ｧ繧ｴ/繝槭ム繧､/繧､繝翫ム・峨∝刈蟷ｳ荳ｸ・井ｸ顔ｷ乗ｹ翫・繧ｫ繝ｯ繝上ぐ・峨∵眠蠕ｳ荳ｸ・域收霈ｪ繝ｻ繝槭ム繧､/繧､繝翫ム縲√す繝槭い繧ｸ縺ｯ蟇ｾ雎｡鬲夂ｨｮ螟厄ｼ峨４SM豬ｦ雉縺ｮ繧ｭ繝上ム繝槭げ繝ｭ繧・う繧ｷ繧ｰ繝ｭ縺ｮ驕蟾樒§險倅ｺ九↑縺ｩ蟇ｾ雎｡螟悶・繧ゅ・縺ｯ髯､螟悶＠縺ｦ縺・∪縺吶・
+build-single: source = 釣果ログ.html
+build-single: all-in-one 312175 chars / docs/index.html 312175 / dist/artifact.html 312016
+=== 2026-09-27 18:03 end (claude exit 0) ===
