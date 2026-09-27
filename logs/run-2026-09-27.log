@@ -16,3 +16,21 @@ Per step 9, stopping here 窶・`run-collect.ps1` handles the HTML regeneration 
 build-single: source = 釣果ログ.html
 build-single: all-in-one 304587 chars / docs/index.html 304587 / dist/artifact.html 304428
 === 2026-09-27 06:02 end (claude exit 0) ===
+git: push exit 0, unpushed commits: 0
+
+=== 2026-09-27 12:00 start ===
+Step 8 (JS validity check) was already confirmed via Node. Step 9 says to stop here — the HTML regeneration is handled automatically by `run-collect.ps1`, and the mobile Artifact page isn't updated from this headless run.
+
+## 完了報告
+
+2026-09-27 12:00回の収集を実行しました（収集手順.md の手順1〜9に従い、対象期間09-26〜27、前回06:00回以降の新着のみ）。
+
+- **`data/catch-log.js`**: 11件追加（東京湾奥4・東京湾口三浦側3・相模湾3・駿河湾1）。Nodeで有効なJavaScriptとして読み込み確認済み、重複ID・重複(date+spot+species)キーなし（計472件）。
+- **`logs/2026-09-27.md`**: 新規作成し、見たソースと採用・不採用の判断根拠を記録。
+
+主な新規追加: 米元釣船店・鴨下丸kawana・野毛屋釣船店・忠彦丸（横浜、東京湾奥）、黒川本家・浜鈴丸・SSM浦賀（三浦側）、豊漁丸・たいぞう丸・もと明丸（相模湾）、真正丸（駿河湾・沼津）。SSM浦賀の観音崎沖記事や中根ボートの記事など、既存レコードと同一だったものは重複として除外しました。
+
+HTML（`tsuriha_all-in-one.html` / `dist/artifact.html`）の再生成は `run-collect.ps1` が後続で行うため、ここでは行っていません。
+build-single: source = 釣果ログ.html
+build-single: all-in-one 310256 chars / docs/index.html 310256 / dist/artifact.html 310097
+=== 2026-09-27 12:08 end (claude exit 0) ===
