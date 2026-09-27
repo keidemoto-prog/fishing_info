@@ -8,11 +8,24 @@
  *   { obs:"観測地点名", waterTempC, weather, windMS, windDir, waveM, airTempC, time:"YYYY-MM-DD" }
  */
 window.CATCH_LOG_META = {
-  lastUpdated: "2026-09-27 18:00",
-  lastRunNote: "4件追加（東京湾奥1・相模湾1・東京湾口房総側1・東京湾口三浦側1）"
+  lastUpdated: "2026-09-28 00:00",
+  lastRunNote: "2件追加（相模湾2）"
 };
 
 window.CATCH_LOG = [
+  // ---------- 09-28 00:00回 追加分（09-27 18:00回以降の新着のみ） ----------
+  { id:"2026-09-27-sagami-04", date:"2026-09-27", area:"sagami", spot:"長井港（三浦市） 儀兵衛丸", spotType:"沖-ボート",
+    method:"イカダ釣り（カワハギ）", species:["カワハギ"],
+    result:"カワハギ13.5〜29.5cm 2〜9匹（6:30出船）",
+    tideName:"", waterTempC:null, waterTempSource:"", weather:"", windMS:null, windDir:"", airTempC:null,
+    nearby:{ obs:"Open-Meteo（長井・佐島沖）", waterTempC:25.0, weather:"霧雨", windMS:3.32, windDir:"北北東", waveM:0.46, airTempC:21.7, time:"2026-09-27" },
+    sourceName:"儀兵衛丸", sourceUrl:"https://gihee.com/blog.php?f=d&id=159124", note:"" },
+  { id:"2026-09-27-sagami-03", date:"2026-09-27", area:"sagami", spot:"片瀬漁港（藤沢市） ゆうせい丸", spotType:"沖-釣り船",
+    method:"カツオ・アマダイ釣り", species:["カツオ","アマダイ"],
+    result:"カツオ3.00〜8.70kg 0〜3匹（船中11本）／アマダイ23〜41cm 0〜7匹（シロアマダイ船中3匹）",
+    tideName:"大潮", waterTempC:23.7, waterTempSource:"ゆうせい丸 釣果ページ（実測）", weather:"曇り", windMS:2.9, windDir:"北北東", airTempC:null,
+    nearby:null,
+    sourceName:"ゆうせい丸（chowari）", sourceUrl:"https://www.chowari.jp/ship/00366/catch/", note:"" },
   // ---------- 09-27 18:00回 追加分（09-27 12:00回以降の新着のみ） ----------
   { id:"2026-09-27-aoku-01", date:"2026-09-27", area:"aoku", spot:"金沢八景平潟（横浜市） 黒川丸", spotType:"沖-釣り船",
     method:"ライトアジ・タチウオ釣り", species:["アジ","タチウオ"],
