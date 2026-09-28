@@ -37,3 +37,15 @@ Everything else checked was either already recorded (遏ｳ逕ｰ荳ｸ繝ｻ鮟
 build-single: source = 釣果ログ.html
 build-single: all-in-one 317821 chars / docs/index.html 317821 / dist/artifact.html 317662
 === 2026-09-28 12:03 end (claude exit 0) ===
+git: push exit 0, unpushed commits: 0
+
+=== 2026-09-28 18:00 start ===
+Only the two files I'm allowed to edit changed, plus `run-2026-09-28.log` which is the script's own run log (not mine to touch). Work for this run is complete — no commit or HTML rebuild needed, per the instructions that's `run-collect.ps1`'s job.
+
+**Summary of the 18:00 collection run:**
+- Added 11 new catch records (409-27〜09-28) across aoku (1), wanko-miura (2), wanko-boso (2), and sagami (6), each with a valid `sourceUrl` and either article-reported water temp/tide/weather or an Open-Meteo `nearby` fallback.
+- Excluded out-of-scope items: an off-target species (エソ), an unquantified catch, a Mie-prefecture location that superficially resembled the Suruga area, and several already-logged duplicates.
+- Verified `data/catch-log.js` still parses as valid JS (497 records, no duplicate IDs or date+spot+species keys) and logged full source/exclusion notes in `logs/2026-09-28.md`.
+build-single: source = 釣果ログ.html
+build-single: all-in-one 323623 chars / docs/index.html 323623 / dist/artifact.html 323464
+=== 2026-09-28 18:09 end (claude exit 0) ===
