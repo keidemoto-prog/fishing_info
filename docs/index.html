@@ -135,11 +135,24 @@
  *   { obs:"観測地点名", waterTempC, weather, windMS, windDir, waveM, airTempC, time:"YYYY-MM-DD" }
  */
 window.CATCH_LOG_META = {
-  lastUpdated: "2026-09-29 00:00",
-  lastRunNote: "10件追加（東京湾奥2・東京湾口三浦6・相模湾2）"
+  lastUpdated: "2026-09-29 06:00",
+  lastRunNote: "2件追加（東京湾奥1・東京湾口三浦1）"
 };
 
 window.CATCH_LOG = [
+  // ---------- 09-29 06:00回 追加分（対象期間09-28〜29、00:00回以降の新着） ----------
+  { id:"2026-09-28-wanko-miura-07", date:"2026-09-28", area:"wanko-miura", spot:"新安浦港（横須賀市） こうゆう丸", spotType:"沖-釣り船",
+    method:"太刀魚釣り", species:["タチウオ"],
+    result:"タチウオ70〜123cm 5〜19匹。ドラゴン級交じりで全員お土産確保",
+    tideName:"中潮", waterTempC:23.3, waterTempSource:"こうゆう丸 釣果ページ（chowari・実測）", weather:"雨", windMS:6.1, windDir:"南南西", airTempC:null,
+    nearby:null,
+    sourceName:"こうゆう丸（chowari）", sourceUrl:"https://www.chowari.jp/ship/00562/catch/", note:"" },
+  { id:"2026-09-28-aoku-04", date:"2026-09-28", area:"aoku", spot:"金沢八景瀬戸橋（横浜市） 弁天屋", spotType:"沖-釣り船",
+    method:"太刀魚釣り", species:["タチウオ"],
+    result:"タチウオ70〜100cm 0〜8匹",
+    tideName:"中潮", waterTempC:23.2, waterTempSource:"弁天屋 釣果ページ（chowari・実測）", weather:"雨", windMS:6.1, windDir:"南南西", airTempC:null,
+    nearby:null,
+    sourceName:"弁天屋（chowari）", sourceUrl:"https://www.chowari.jp/ship/00300/catch/", note:"" },
   // ---------- 09-29 00:00回 追加分（対象期間09-28〜29、18:00回以降の新着） ----------
   { id:"2026-09-28-aoku-02", date:"2026-09-28", area:"aoku", spot:"金沢八景平潟（横浜市） 野毛屋釣船店", spotType:"沖-釣り船",
     method:"ひとつテンヤ＆タイラバ（タイ・カマス・ホウボウ船）", species:["マダイ","カマス"],
