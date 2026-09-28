@@ -22,3 +22,18 @@ Only the expected files changed. Per step 9, I'm stopping here 窶・`run-collec
 build-single: source = 釣果ログ.html
 build-single: all-in-one 315547 chars / docs/index.html 315547 / dist/artifact.html 315388
 === 2026-09-28 06:07 end (claude exit 0) ===
+git: push exit 0, unpushed commits: 0
+
+=== 2026-09-28 12:00 start ===
+Only the expected files changed. Per step 9, I'm stopping here 窶・`run-collect.ps1` will regenerate the standalone HTML and handle git add/commit/push afterward.
+
+**Summary (2026-09-28 12:00 run):** Checked sources for the 09-27縲・8 window (focus on anything new since the 06:07 run): SSM豬ｦ雉, 遏ｳ逕ｰ荳ｸ, 豬懷鴻魑･, 譚第悽豬ｷ莠・ chowari (鮟貞ｷ昜ｸｸ + 繧ｿ繝√え繧ｪ area search), and web searches for 09-28 catches. Added 4 new records, all from SSM豬ｦ雉 (荳画ｵｦ繝ｻ繝ｬ繝ｳ繧ｿ繝ｫ繝懊・繝・ 09-27, wanko-miura):
+- 隨ｬ荳画ｵｷ蝣｡蜻ｨ霎ｺ: 繝悶Μ繝ｻ繧｢繧ｸ繝ｻ繧ｷ繝ｧ繧ｴ繝ｻ繧ｽ繧ｦ繝繧ｬ繝・が
+- 蟆丞｡壽ｹ莉倩ｿ・ 繝槭ム繧､50cm
+- 迪ｿ蟲ｶ縺ｨ隨ｬ荳画ｵｷ蝣｡縺ｮ髢・ 繧ｵ繝ｯ繝ｩ繝ｻ繧ｵ繧ｴ繧ｷ
+- 蜑｣蟠取ｲ匁ｵｷ閠∵ｹ莉倩ｿ・ 繧ｵ繝ｯ繝ｩ繝ｻ繝ｯ繝ｩ繧ｵ繝ｻ繧､繝翫ム繝ｻ繝槭ム繧､繝ｻ繝槭ワ繧ｿ繝ｻ繧ｪ繧ｪ繝｢繝ｳ繝上ち繝ｻ繧ｫ繧ｵ繧ｴ
+
+Everything else checked was either already recorded (遏ｳ逕ｰ荳ｸ繝ｻ鮟貞ｷ昜ｸｸ 09-27 duplicate existing entries), out of the target species list (繧ｨ繧ｽ, 繝帙え繝懊え), or not yet posted (no 09-28 catch numbers found anywhere as of noon). `data/catch-log.js` now has 486 records, verified as valid JS with no duplicate IDs or (date+spot+species) keys. Details and exclusion reasoning logged in `logs/2026-09-28.md`.
+build-single: source = 釣果ログ.html
+build-single: all-in-one 317821 chars / docs/index.html 317821 / dist/artifact.html 317662
+=== 2026-09-28 12:03 end (claude exit 0) ===

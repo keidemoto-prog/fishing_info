@@ -135,11 +135,37 @@
  *   { obs:"観測地点名", waterTempC, weather, windMS, windDir, waveM, airTempC, time:"YYYY-MM-DD" }
  */
 window.CATCH_LOG_META = {
-  lastUpdated: "2026-09-28 06:00",
-  lastRunNote: "4件追加（相模湾2・東京湾奥2）"
+  lastUpdated: "2026-09-28 12:00",
+  lastRunNote: "4件追加（東京湾口三浦4）"
 };
 
 window.CATCH_LOG = [
+  // ---------- 09-28 12:00回 追加分（対象期間09-27〜28、06:00回以降の新着） ----------
+  { id:"2026-09-27-wanko-miura-02", date:"2026-09-27", area:"wanko-miura", spot:"第三海堡周辺", spotType:"沖-ボート",
+    method:"レンタルボート五目釣り", species:["ブリ","アジ","ショゴ","ソウダガツオ"],
+    result:"ブリ1匹（30分格闘の末ネットイン、記録更新）／アジ1匹／ショゴ1匹／ソウダガツオ1匹（ホウボウは対象魚種外）",
+    tideName:"", waterTempC:null, waterTempSource:"", weather:"", windMS:null, windDir:"", airTempC:null,
+    nearby:{ obs:"Open-Meteo（三浦・松輪沖）", waterTempC:24.6, weather:"霧雨", windMS:5.01, windDir:"北", waveM:0.68, airTempC:22.6, time:"2026-09-27" },
+    sourceName:"SSM浦賀 釣果情報", sourceUrl:"https://www.ssm-uraga.jp/fishing", note:"" },
+  { id:"2026-09-27-wanko-miura-03", date:"2026-09-27", area:"wanko-miura", spot:"小塚根付近", spotType:"沖-ボート",
+    method:"レンタルボート釣り", species:["マダイ"],
+    result:"マダイ50cm 1匹。初めての船釣りでキャッチ",
+    tideName:"", waterTempC:null, waterTempSource:"", weather:"", windMS:null, windDir:"", airTempC:null,
+    nearby:{ obs:"Open-Meteo（三浦・松輪沖）", waterTempC:24.6, weather:"霧雨", windMS:5.01, windDir:"北", waveM:0.68, airTempC:22.6, time:"2026-09-27" },
+    sourceName:"SSM浦賀 釣果情報", sourceUrl:"https://www.ssm-uraga.jp/fishing", note:"" },
+  { id:"2026-09-27-wanko-miura-04", date:"2026-09-27", area:"wanko-miura", spot:"猿島と第三海堡の間", spotType:"沖-ボート",
+    method:"レンタルボート釣り", species:["サワラ"],
+    result:"サワラ1匹、サゴシ(サワラ幼魚)5匹",
+    tideName:"", waterTempC:null, waterTempSource:"", weather:"", windMS:null, windDir:"", airTempC:null,
+    nearby:{ obs:"Open-Meteo（三浦・松輪沖）", waterTempC:24.6, weather:"霧雨", windMS:5.01, windDir:"北", waveM:0.68, airTempC:22.6, time:"2026-09-27" },
+    sourceName:"SSM浦賀 釣果情報", sourceUrl:"https://www.ssm-uraga.jp/fishing", note:"" },
+  { id:"2026-09-27-wanko-miura-05", date:"2026-09-27", area:"wanko-miura", spot:"剣崎沖海老根付近", spotType:"沖-ボート",
+    method:"レンタルボート五目釣り", species:["サワラ","ワラサ","イナダ","マダイ","マハタ","オオモンハタ","カサゴ"],
+    result:"サワラ4匹／ワラサ2匹／イナダ1匹／マダイ1匹／マハタ1匹／オオモンハタ1匹／カサゴ1匹",
+    tideName:"", waterTempC:null, waterTempSource:"", weather:"", windMS:null, windDir:"", airTempC:null,
+    nearby:{ obs:"Open-Meteo（三浦・松輪沖）", waterTempC:24.6, weather:"霧雨", windMS:5.01, windDir:"北", waveM:0.68, airTempC:22.6, time:"2026-09-27" },
+    sourceName:"SSM浦賀 釣果情報", sourceUrl:"https://www.ssm-uraga.jp/fishing", note:"" },
+
   // ---------- 09-28 06:00回 追加分（金-月まとめてチェック、00:00回以降の新着） ----------
   { id:"2026-09-27-aoku-02", date:"2026-09-27", area:"aoku", spot:"金沢八景乙舳（横浜市金沢区） 村本海事", spotType:"沖-釣り船",
     method:"タイラバ（マダイ）", species:["マダイ"],
