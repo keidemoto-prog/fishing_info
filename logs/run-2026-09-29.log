@@ -1,0 +1,11 @@
+﻿
+=== 2026-09-29 00:00 start ===
+Collection run complete. Summary (this response is captured into `logs/run-2026-09-29.log` automatically by the wrapper script that invoked me, so no separate log write is needed or possible 窶・that file is locked because the very same `run-collect.ps1` instance is piping my output into it as it runs):
+
+- **蟇ｾ雎｡譛滄俣**: 2026-09-28縲・9-29・磯壼ｸｸ蝗橸ｼ・- **霑ｽ蜉**: 10莉ｶ・域擲莠ｬ貉ｾ螂･2繝ｻ譚ｱ莠ｬ貉ｾ蜿｣荳画ｵｦ6繝ｻ逶ｸ讓｡貉ｾ2・峨√☆縺ｹ縺ｦ2026-09-28蛻・- **諠・ｱ貅・*: chowari.jp・・/catch/`, `/catcharea/?area=56,92`縲∝推闊ｹ縺ｮ`/ship/xxxxx/catch/`繧ｵ繝悶・繝ｼ繧ｸ9莉ｶ・峨（shidamaru.com縲］agaikakarizuri.com縲（shiguro-gr.com縲仝ebSearch・磯ｧｿ豐ｳ貉ｾ驥｣譫懊・隘ｿ莨願ｱ・慍逎ｯ繝ｻ逶ｸ讓｡貉ｾ繧ｫ繝・がYouTube・・- **鬧ｿ豐ｳ貉ｾ繝ｻ譚ｱ莠ｬ貉ｾ蜿｣謌ｿ邱・*: 譁ｰ逹縺ｪ縺・- **驥崎､・愛螳・*: `date+spot(+闊ｹ蜷・+species`縺ｧ譌｢蟄・07莉ｶ縺ｨ遯∝粋縲・㍾隍・↑縺励ｒ遒ｺ隱搾ｼ・ode eval縺ｧ讀懆ｨｼ貂医∩・・- **JS讒区枚**: `node -e` 縺ｧ繝代・繧ｹ遒ｺ隱肴ｸ医∩縲・07繝ｬ繧ｳ繝ｼ繝・- `data/catch-log.js` 縺ｮ `CATCH_LOG_META` 繧よ峩譁ｰ貂医∩
+- 蜊倅ｽ滴TML・・tsuriha_all-in-one.html`遲会ｼ峨・蜀咲函謌舌・git commit/push 縺ｯ縺薙・縺ゅ→ `run-collect.ps1` 縺瑚・蜍輔〒陦後≧縺溘ａ縲√％縺薙〒縺ｯ菴輔ｂ縺励※縺・∪縺帙ｓ
+
+豌励▼縺・ chowari縺ｮ繧ｨ繝ｪ繧｢髮・ｨ医・繝ｼ繧ｸ縺ｯ謨ｰ驥上・縺ｿ縺縺後∬飴縺斐→縺ｮ`/catch/`繧ｵ繝悶・繝ｼ繧ｸ縺ｫ縺ｯ螳滓ｸｬ縺ｮ豌ｴ貂ｩ繝ｻ貎ｮ蜷阪・螟ｩ豌励・鬚ｨ縺瑚ｼ峨▲縺ｦ縺翫ｊ縲∵ｬ｡蝗樔ｻ･髯阪ｂ縺昴■繧峨ｒ蜆ｪ蜈医☆繧九→邊ｾ蠎ｦ縺御ｸ翫′繧翫∪縺吶・
+build-single: source = 釣果ログ.html
+build-single: all-in-one 328471 chars / docs/index.html 328471 / dist/artifact.html 328312
+=== 2026-09-29 00:06 end (claude exit 0) ===
