@@ -8,11 +8,30 @@
  *   { obs:"観測地点名", waterTempC, weather, windMS, windDir, waveM, airTempC, time:"YYYY-MM-DD" }
  */
 window.CATCH_LOG_META = {
-  lastUpdated: "2026-09-29 18:00",
-  lastRunNote: "5件追加（東京湾口2・相模湾1・駿河湾2）"
+  lastUpdated: "2026-09-30 00:00",
+  lastRunNote: "3件追加（東京湾奥1・東京湾口1・駿河湾1）"
 };
 
 window.CATCH_LOG = [
+  // ---------- 09-30 00:00回 追加分（対象期間09-29〜30、18:00回以降の新着） ----------
+  { id:"2026-09-29-aoku-01", date:"2026-09-29", area:"aoku", spot:"金沢八景平潟（横浜市） 黒川丸", spotType:"沖-釣り船",
+    method:"太刀魚釣り（仕立船・走水沖）", species:["タチウオ"],
+    result:"タチウオ65〜110cm 2〜12匹。貸し竿利用者も5〜6匹程度",
+    tideName:"中潮", waterTempC:23.1, waterTempSource:"黒川丸 釣果ページ（chowari・実測）", weather:"雨", windMS:null, windDir:"", airTempC:null,
+    nearby:null,
+    sourceName:"黒川丸（chowari）", sourceUrl:"https://www.chowari.jp/ship/00150/catch/", note:"" },
+  { id:"2026-09-29-wanko-miura-03", date:"2026-09-29", area:"wanko-miura", spot:"久里浜港（横須賀市） 黒川本家", spotType:"沖-釣り船",
+    method:"太刀魚・LTアジ", species:["タチウオ","アジ"],
+    result:"タチウオ70〜100cm 4〜9匹／アジ24〜40cm 7〜20匹",
+    tideName:"中潮", waterTempC:23.4, waterTempSource:"黒川本家 釣果ページ（chowari・実測）", weather:"雨", windMS:null, windDir:"", airTempC:null,
+    nearby:null,
+    sourceName:"黒川本家（chowari）", sourceUrl:"https://www.chowari.jp/ship/00457/catch/", note:"" },
+  { id:"2026-09-29-suruga-01", date:"2026-09-29", area:"suruga", spot:"久料港（沼津市） 魚磯丸", spotType:"沖-釣り船",
+    method:"マダイ五目", species:["マダイ"],
+    result:"マダイ0.4〜0.8kg 4匹（イサキ・イナダ・サバ混獲、匹数記載なし）",
+    tideName:"中潮", waterTempC:24.7, waterTempSource:"魚磯丸 釣果ページ（chowari・実測）", weather:"雨", windMS:null, windDir:"", airTempC:24,
+    nearby:null,
+    sourceName:"魚磯丸（chowari）", sourceUrl:"https://www.chowari.jp/ship/01244/catch/", note:"" },
   // ---------- 09-29 18:00回 追加分（対象期間09-28〜29、12:00回以降の新着） ----------
   { id:"2026-09-29-wanko-miura-01", date:"2026-09-29", area:"wanko-miura", spot:"松輪江奈漁港（三浦市） 正海丸", spotType:"沖-釣り船",
     method:"ワラサ・イナダ五目", species:["ワラサ","イナダ","マダイ","ソウダガツオ"],

@@ -49,3 +49,4 @@ Per step 9, HTML regeneration and git commit/push are handled by `run-collect.ps
 build-single: source = 釣果ログ.html
 build-single: all-in-one 334146 chars / docs/index.html 334146 / dist/artifact.html 333987
 === 2026-09-29 18:03 end (claude exit 0) ===
+git: push exit 0, unpushed commits: 0
