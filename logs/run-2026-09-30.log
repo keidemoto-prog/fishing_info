@@ -10,3 +10,34 @@ JS讒区枚縺ｮ讀懆ｨｼ繧ょｮ御ｺ・ｼ・22莉ｶ縲・㍾隍・↑�
 build-single: source = 釣果ログ.html
 build-single: all-in-one 335546 chars / docs/index.html 335546 / dist/artifact.html 335387
 === 2026-09-30 00:03 end (claude exit 0) ===
+git: push exit 0, unpushed commits: 0
+
+=== 2026-09-30 06:00 start ===
+I worked through all 9 steps in `蜿朱寔謇矩・md` for the 06:00 run on 2026-09-30. I added 4 new catch records, all from 2026-09-29.
+
+**New records:**
+| Area | Boat (port) | Catch |
+|---|---|---|
+| Sagami Bay (逶ｸ讓｡貉ｾ) | 縺溘＞縺槭≧荳ｸ (Hayama, 髏呎村貂ｯ) | Skipjack tuna (繧ｫ繝・が) 2.6窶・.2kg, 5窶・2 per angler; frigate tuna (繧ｽ繧ｦ繝繧ｬ繝・が) mixed in |
+| Sagami Bay | 莠斐お繝荳ｸ (Hayama, 闃晏ｴ取ｸｯ) | Skipjack tuna 3.4窶・.1kg, 3窶・ per angler |
+| Sagami Bay | 莠斐お繝荳ｸ (same boat, tilefish trip) | Tilefish (繧｢繝槭ム繧､) 20窶・5cm, 2窶・ per angler; rockfish (繧ｫ繧ｵ繧ｴ) mixed in |
+| Tokyo Bay mouth, Miura side | 豬憺斡荳ｸ (譚ｾ霈ｪ豎溷･域ｼ∵ｸｯ) | Skipjack tuna 4窶・kg (the report gives no counts) |
+
+- **Weather and water data:** each record has the water temperature and weather from the boat's own report. I also filled the nearby-observation fields from Open-Meteo (heavy rain, northeast wind).
+- **Checks:** none of the 4 new records duplicates an existing one, and `data/catch-log.js` still loads correctly with 526 records in total.
+- **Summary line:** the update time is now "2026-09-30 06:00" and the run note reads "4莉ｶ霑ｽ蜉".
+- **Run notes:** I added this run's notes to `logs/2026-09-30.md`, including the URLs I checked and what I left out.
+
+**Left out on purpose:**
+- A squid (繧｢繧ｪ繝ｪ繧､繧ｫ) catch at Manazuru port: it was fished on 9/27, and the report gives no size or count.
+- 豐ｻ荵・ｸｸ at Ito: that's outside the areas this log covers.
+- No catches for 9/30 itself had been posted yet at 06:00.
+- Still nothing new from the Boso side of the bay mouth.
+- 驥｣繧翫ン繧ｸ繝ｧ繝ｳ's page returned a "page not found" error.
+
+**Existing duplicates:** the old data already contains 7 pairs of records that share the same date, place and fish. They came from earlier runs, not this one. The rules only allow fixing records that are clearly wrong, so I left them alone.
+
+I didn't touch the combined HTML page; `run-collect.ps1` rebuilds it automatically after this.
+build-single: source = 釣果ログ.html
+build-single: all-in-one 338055 chars / docs/index.html 338055 / dist/artifact.html 337896
+=== 2026-09-30 06:02 end (claude exit 0) ===

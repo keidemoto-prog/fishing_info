@@ -8,11 +8,36 @@
  *   { obs:"観測地点名", waterTempC, weather, windMS, windDir, waveM, airTempC, time:"YYYY-MM-DD" }
  */
 window.CATCH_LOG_META = {
-  lastUpdated: "2026-09-30 00:00",
-  lastRunNote: "3件追加（東京湾奥1・東京湾口1・駿河湾1）"
+  lastUpdated: "2026-09-30 06:00",
+  lastRunNote: "4件追加（東京湾口1・相模湾3・駿河湾0）"
 };
 
 window.CATCH_LOG = [
+  // ---------- 09-30 06:00回 追加分（対象期間09-29〜30、00:00回以降の新着） ----------
+  { id:"2026-09-29-sagami-02", date:"2026-09-29", area:"sagami", spot:"葉山鐙摺港（葉山町） たいぞう丸", spotType:"沖-釣り船",
+    method:"キハダ・本ガツオ船（コマセ）", species:["カツオ","ソウダガツオ"],
+    result:"ホンガツオ2.6〜8.2kg 5〜12匹。キメジ・ヒラソーダ混じり（数の記載なし）",
+    tideName:"中潮", waterTempC:23.4, waterTempSource:"たいぞう丸 釣果ページ（chowari・実測）", weather:"雨", windMS:5.6, windDir:"北東", airTempC:21,
+    nearby:{ obs:"Open-Meteo（相模湾 葉山沖）", waterTempC:24.9, weather:"強い雨", windMS:5.7, windDir:"北東", waveM:0.84, airTempC:24.1, time:"2026-09-29" },
+    sourceName:"たいぞう丸（chowari）", sourceUrl:"https://www.chowari.jp/ship/00449/catch/", note:"波 南南西0.8m。朝から一日中ナブラ、バラシ多数も皆さん大漁" },
+  { id:"2026-09-29-sagami-03", date:"2026-09-29", area:"sagami", spot:"葉山芝崎港（葉山町） 五エム丸", spotType:"沖-釣り船",
+    method:"キハダ・カツオ船（コマセ）", species:["カツオ","ソウダガツオ"],
+    result:"カツオ3.4〜7.1kg 3〜9匹。ヒラソーダ混じり（数の記載なし）",
+    tideName:"中潮", waterTempC:23.4, waterTempSource:"五エム丸 釣果ページ（chowari・実測）", weather:"雨", windMS:5.6, windDir:"北東", airTempC:null,
+    nearby:{ obs:"Open-Meteo（相模湾 葉山沖）", waterTempC:24.9, weather:"強い雨", windMS:5.7, windDir:"北東", waveM:0.84, airTempC:24.1, time:"2026-09-29" },
+    sourceName:"五エム丸（chowari）", sourceUrl:"https://www.chowari.jp/ship/00318/catch/", note:"大型が多くバラシ連発、取り込めたのはヒット数の1/3ほど" },
+  { id:"2026-09-29-sagami-04", date:"2026-09-29", area:"sagami", spot:"葉山芝崎港（葉山町） 五エム丸", spotType:"沖-釣り船",
+    method:"アマダイ船", species:["アマダイ","カサゴ"],
+    result:"アマダイ20〜35cm 2〜5匹。イトヨリ・オニカサゴ・カサゴ混じり",
+    tideName:"中潮", waterTempC:23.4, waterTempSource:"五エム丸 釣果ページ（chowari・実測）", weather:"雨", windMS:5.6, windDir:"北東", airTempC:null,
+    nearby:{ obs:"Open-Meteo（相模湾 葉山沖）", waterTempC:24.9, weather:"強い雨", windMS:5.7, windDir:"北東", waveM:0.84, airTempC:24.1, time:"2026-09-29" },
+    sourceName:"五エム丸（chowari）", sourceUrl:"https://www.chowari.jp/ship/00318/catch/", note:"朝一のみ潮が流れ、以降は単発で厳しめ" },
+  { id:"2026-09-29-wanko-miura-04", date:"2026-09-29", area:"wanko-miura", spot:"松輪江奈漁港（三浦市） 浜鈴丸", spotType:"沖-釣り船",
+    method:"カツオ・キハダ船", species:["カツオ"],
+    result:"カツオ4〜6kg（0〜数匹。竿頭数の記載なし）。キハダの反応多いもヒットなし",
+    tideName:"中潮", waterTempC:24.3, waterTempSource:"浜鈴丸 釣果ページ（chowari・実測）", weather:"雨", windMS:6.1, windDir:"北東", airTempC:null,
+    nearby:{ obs:"Open-Meteo（城ヶ島沖〜松輪沖）", waterTempC:25.1, weather:"強い雨", windMS:5.3, windDir:"北東", waveM:1.16, airTempC:24.5, time:"2026-09-29" },
+    sourceName:"浜鈴丸（chowari）", sourceUrl:"https://www.chowari.jp/ship/01037/catch/", note:"波 南南西1.0m。近場でキハダ・カツオの反応多数" },
   // ---------- 09-30 00:00回 追加分（対象期間09-29〜30、18:00回以降の新着） ----------
   { id:"2026-09-29-aoku-01", date:"2026-09-29", area:"aoku", spot:"金沢八景平潟（横浜市） 黒川丸", spotType:"沖-釣り船",
     method:"太刀魚釣り（仕立船・走水沖）", species:["タチウオ"],
