@@ -35,3 +35,17 @@ Logged sources and exclusions to `logs/2026-09-29.md`. Driven wholly by `蜿朱�
 build-single: source = 釣果ログ.html
 build-single: all-in-one 331647 chars / docs/index.html 331647 / dist/artifact.html 331488
 === 2026-09-29 12:03 end (claude exit 0) ===
+git: push exit 0, unpushed commits: 0
+
+=== 2026-09-29 18:00 start ===
+18:00 collection run complete, driven entirely by `蜿朱寔謇矩・md` (the project's own scheduled-collection instructions 窶・three earlier runs today already followed the same procedure).
+
+**Summary:**
+- Added 5 new non-duplicate records to `data/catch-log.js` (514 竊・519), covering the gap left by earlier runs: 譚ｱ莠ｬ貉ｾ蜿｣荳画ｵｦ2莉ｶ繝ｻ逶ｸ讓｡貉ｾ1莉ｶ繝ｻ鬧ｿ豐ｳ貉ｾ2莉ｶ・磯ｧｿ豐ｳ貉ｾ縺ｯ譛ｬ譌･蛻昴・霑ｽ蜉・・- Updated `CATCH_LOG_META` (`lastUpdated`, `lastRunNote`)
+- Logged sources, exclusions, and a nearby-data fallback note to `logs/2026-09-29.md`
+- Verified `data/catch-log.js` still parses as valid JS and has no `date+spot+species` duplicates
+
+Per step 9, HTML regeneration and git commit/push are handled by `run-collect.ps1` itself afterward, so I stopped here.
+build-single: source = 釣果ログ.html
+build-single: all-in-one 334146 chars / docs/index.html 334146 / dist/artifact.html 333987
+=== 2026-09-29 18:03 end (claude exit 0) ===

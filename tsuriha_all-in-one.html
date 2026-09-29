@@ -135,11 +135,42 @@
  *   { obs:"観測地点名", waterTempC, weather, windMS, windDir, waveM, airTempC, time:"YYYY-MM-DD" }
  */
 window.CATCH_LOG_META = {
-  lastUpdated: "2026-09-29 12:00",
-  lastRunNote: "5件追加（東京湾奥4・相模湾1）"
+  lastUpdated: "2026-09-29 18:00",
+  lastRunNote: "5件追加（東京湾口2・相模湾1・駿河湾2）"
 };
 
 window.CATCH_LOG = [
+  // ---------- 09-29 18:00回 追加分（対象期間09-28〜29、12:00回以降の新着） ----------
+  { id:"2026-09-29-wanko-miura-01", date:"2026-09-29", area:"wanko-miura", spot:"松輪江奈漁港（三浦市） 正海丸", spotType:"沖-釣り船",
+    method:"ワラサ・イナダ五目", species:["ワラサ","イナダ","マダイ","ソウダガツオ"],
+    result:"ワラサ3.0〜4.8kg 0〜2本／イナダ1.0〜1.8kg 2〜10本／マダイ0.8〜1.3kg 0〜2本／ヒラソーダガツオ30〜35cm 3〜5本",
+    tideName:"中潮", waterTempC:24.3, waterTempSource:"正海丸 釣果ページ（chowari・実測）", weather:"雨", windMS:null, windDir:"", airTempC:null,
+    nearby:null,
+    sourceName:"正海丸（chowari）", sourceUrl:"https://www.chowari.jp/ship/01696/catch/", note:"" },
+  { id:"2026-09-29-sagami-01", date:"2026-09-29", area:"sagami", spot:"小坪港（逗子市） 太郎丸", spotType:"沖-釣り船",
+    method:"カツオ船", species:["カツオ"],
+    result:"カツオ（ホンガツオ）2.6〜7.0kg 3〜10本、ヒラソーダガツオ交じり",
+    tideName:"中潮", waterTempC:23.4, waterTempSource:"太郎丸 釣果ページ（chowari・実測）", weather:"雨", windMS:null, windDir:"", airTempC:null,
+    nearby:null,
+    sourceName:"太郎丸（chowari）", sourceUrl:"https://www.chowari.jp/ship/01075/catch/", note:"" },
+  { id:"2026-09-29-wanko-miura-02", date:"2026-09-29", area:"wanko-miura", spot:"金田湾（三浦市） 金重丸", spotType:"沖-釣り船",
+    method:"ティップランエギング（アオリイカ）", species:["アオリイカ"],
+    result:"アオリイカ 初挑戦の参加者も含め全員ゲット（匹数・サイズ記載なし）",
+    tideName:"中潮", waterTempC:24.4, waterTempSource:"金重丸 釣果ページ（chowari・実測）", weather:"雨", windMS:6.1, windDir:"北東", airTempC:null,
+    nearby:null,
+    sourceName:"金重丸（chowari・息子船）", sourceUrl:"https://www.chowari.jp/ship/01219/catch/", note:"" },
+  { id:"2026-09-28-suruga-01", date:"2026-09-28", area:"suruga", spot:"沼津サーフ（沼津市）", spotType:"砂浜",
+    method:"ショアジギング（メタルグライダー）", species:["カンパチ","ソウダガツオ","タチウオ"],
+    result:"カンパチ30〜36cm 10匹／ソウダガツオ約35cm 3匹／タチウオ1匹（F3）",
+    tideName:"", waterTempC:null, waterTempSource:"", weather:"雨", windMS:null, windDir:"", airTempC:null,
+    nearby:{ obs:"Open-Meteo（沼津沖）", waterTempC:24.8, weather:"雨", windMS:4.4, windDir:"南西", waveM:0.96, airTempC:24.8, time:"2026-09-28" },
+    sourceName:"イシグロ沼津店", sourceUrl:"https://www.ishiguro-gr.com/enjoy/fishing/detail.php?id=49850", note:"" },
+  { id:"2026-09-28-suruga-02", date:"2026-09-28", area:"suruga", spot:"焼津小川港（焼津市） 橋安丸", spotType:"沖-釣り船",
+    method:"太刀魚釣り（餌・ジギング）", species:["タチウオ"],
+    result:"タチウオ 餌釣り30〜43本／ジギング3〜31本",
+    tideName:"中潮", waterTempC:25.3, waterTempSource:"橋安丸 釣果ページ（chowari・実測）", weather:"雨時々止む", windMS:0.5, windDir:"南", airTempC:27,
+    nearby:null,
+    sourceName:"橋安丸（chowari）", sourceUrl:"https://www.chowari.jp/ship/01719/catch/", note:"" },
   // ---------- 09-29 12:00回 追加分（対象期間09-28〜29、06:00回以降の新着） ----------
   { id:"2026-09-28-aoku-05", date:"2026-09-28", area:"aoku", spot:"柴漁港（横浜市金沢区） 三喜丸", spotType:"沖-釣り船",
     method:"太刀魚釣り", species:["タチウオ"],
