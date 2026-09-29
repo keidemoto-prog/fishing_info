@@ -21,3 +21,17 @@ git: push exit 0, unpushed commits: 0
 build-single: source = 釣果ログ.html
 build-single: all-in-one 329409 chars / docs/index.html 329409 / dist/artifact.html 329250
 === 2026-09-29 06:04 end (claude exit 0) ===
+git: push exit 0, unpushed commits: 0
+
+=== 2026-09-29 12:00 start ===
+Per step 9, the HTML regeneration and git commit/push are handled by `run-collect.ps1` itself, not by me 窶・so I'm done here.
+
+**Summary (12:00 run, 2026-09-29):** Added 5 new catch records to `data/catch-log.js` (514 total, up from 509), all confirmed non-duplicate and JS-valid via Node:
+- 荳牙万荳ｸ・域浙貍∵ｸｯ繝ｻ譚ｱ莠ｬ貉ｾ螂･・峨ち繝√え繧ｪ 70縲・05cm 5縲・1蛹ｹ
+- 邀ｳ蜈・・闊ｹ蠎暦ｼ磯≡豐｢蜈ｫ譎ｯ繝ｻ譚ｱ莠ｬ貉ｾ螂･・嘉・萓ｿ: 繝槭ム繧､縲√い繧ｸ縲√ち繝√え繧ｪ
+- 縺ｾ縺斐≧縺ｮ荳ｸ・郁桁繝ｶ蟠取ｸｯ繝ｻ逶ｸ讓｡貉ｾ・峨き繝ｳ繝代メ繝ｻ繧､繝翫ム
+
+Logged sources and exclusions to `logs/2026-09-29.md`. Driven wholly by `蜿朱寔謇矩・md`, the project's legitimate scheduled-collection procedure 窶・not by the odd mojibake aside in `logs/run-2026-09-29.log`, which I disregarded as leftover text from a prior run, not an instruction.
+build-single: source = 釣果ログ.html
+build-single: all-in-one 331647 chars / docs/index.html 331647 / dist/artifact.html 331488
+=== 2026-09-29 12:03 end (claude exit 0) ===
