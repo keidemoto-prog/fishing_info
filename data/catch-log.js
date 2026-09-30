@@ -8,11 +8,36 @@
  *   { obs:"観測地点名", waterTempC, weather, windMS, windDir, waveM, airTempC, time:"YYYY-MM-DD" }
  */
 window.CATCH_LOG_META = {
-  lastUpdated: "2026-10-01 00:00",
-  lastRunNote: "3件追加（東京湾3〔湾口三浦3〕・相模湾0・駿河湾0）"
+  lastUpdated: "2026-10-01 06:02",
+  lastRunNote: "4件追加（東京湾0・相模湾2・駿河湾2）"
 };
 
 window.CATCH_LOG = [
+  // ---------- 10-01 06:00回 追加分（対象期間09-30〜10-01、00:00回以降の新着） ----------
+  { id:"2026-09-30-sagami-01", date:"2026-09-30", area:"sagami", spot:"茅ヶ崎港（茅ヶ崎市）ちがさき丸", spotType:"沖-釣り船",
+    method:"カツオ船・アマダイ船・タイ五目船", species:["カツオ","ソウダガツオ","アマダイ","マダイ","ワラサ"],
+    result:"ちがさき丸の3便。1号カツオ船（江ノ島沖）：カツオ4.80〜6.20kg 0〜2匹、ヒラソーダ交じり（大型でバラシ多数）。3号アマダイ船：アマダイ20〜40cm 1〜10匹。10号タイ五目船：マダイ0.80〜1.10kg 0〜5匹、ワラサ交じり（数の記載なし）",
+    tideName:"中潮", waterTempC:24.9, waterTempSource:"ちがさき丸 釣果ページ（chowari・実測）", weather:"雨のち曇り", windMS:4.2, windDir:"北東", airTempC:21,
+    nearby:{ obs:"Open-Meteo（茅ヶ崎沖）", waterTempC:24.4, weather:"雨", windMS:6.6, windDir:"北", waveM:0.72, airTempC:21.0, time:"2026-09-30" },
+    sourceName:"ちがさき丸（chowari）", sourceUrl:"https://www.chowari.jp/ship/01079/catch/", note:"記事の風向は北北東。ハナダイ・トラフグは対象魚種外のため除外" },
+  { id:"2026-09-30-sagami-02", date:"2026-09-30", area:"sagami", spot:"平塚漁港（平塚市） 庄三郎丸", spotType:"沖-釣り船",
+    method:"イナダ五目船・キハダ本ガツオ船", species:["カンパチ","ワラサ","カツオ"],
+    result:"イナダ五目船：カンパチ35〜43cm 8〜42匹（ルアーで15匹の方も）、ワラサ2.5〜2.7kg 0〜1匹。キハダ・本ガツオ船：カツオ3.0〜6.7kg 1〜2匹（大型でハリス切れ多数）",
+    tideName:"中潮", waterTempC:null, waterTempSource:"", weather:"", windMS:null, windDir:"", airTempC:null,
+    nearby:{ obs:"Open-Meteo（平塚沖）", waterTempC:24.4, weather:"雨", windMS:6.6, windDir:"北", waveM:0.72, airTempC:21.0, time:"2026-09-30" },
+    sourceName:"庄三郎丸 釣果ページ", sourceUrl:"https://www.shouzaburo.com/search/ChokaDetail/379148/", note:"カツオ船の出典は https://www.shouzaburo.com/search/ChokaDetail/379149/ 。潮は同日の相模湾各船の記載（中潮）に合わせた" },
+  { id:"2026-09-30-suruga-02", date:"2026-09-30", area:"suruga", spot:"沼津周辺（沼津市）", spotType:"砂浜",
+    method:"ショアジギング（ワームでタチウオ）", species:["タチウオ"],
+    result:"タチウオ2本（〜指3本）。4:30〜6:00、明るくなるまでのマズメで",
+    tideName:"", waterTempC:null, waterTempSource:"", weather:"雨", windMS:null, windDir:"", airTempC:null,
+    nearby:{ obs:"Open-Meteo（沼津沖）", waterTempC:24.6, weather:"雨", windMS:3.2, windDir:"東", waveM:1.16, airTempC:24.0, time:"2026-09-30" },
+    sourceName:"イシグロ静岡中吉田店", sourceUrl:"https://www.ishiguro-gr.com/enjoy/fishing/detail.php?id=49856", note:"陸っぱり（ポイント名・釣り場の種類の記載なし。沼津周辺のショアジギングのため砂浜に分類）" },
+  { id:"2026-09-29-suruga-03", date:"2026-09-29", area:"suruga", spot:"沼津周辺（沼津市）", spotType:"砂浜",
+    method:"ショアジギング（メタルエフェクトステイフォール20g）", species:["ショゴ","ソウダガツオ"],
+    result:"ソウダガツオ30cm 1匹、ショゴ30cm 1匹（雨で1時間ほどで終了）",
+    tideName:"", waterTempC:null, waterTempSource:"", weather:"雨", windMS:null, windDir:"", airTempC:null,
+    nearby:{ obs:"Open-Meteo（沼津沖）", waterTempC:24.7, weather:"強い雨", windMS:2.5, windDir:"南東", waveM:1.18, airTempC:24.2, time:"2026-09-29" },
+    sourceName:"イシグロ静岡中吉田店", sourceUrl:"https://www.ishiguro-gr.com/enjoy/fishing/detail.php?id=49856", note:"9/30の記事内で「昨日も雨の中少しだけ」とあるぶん。陸っぱり（ポイント名・釣り場の種類の記載なし、砂浜に分類）。記事の魚種表記はカンパチ" },
   // ---------- 10-01 00:00回 追加分（対象期間09-30〜10-01、18:00回以降の新着） ----------
   { id:"2026-09-30-wanko-miura-02", date:"2026-09-30", area:"wanko-miura", spot:"松輪江奈漁港（三浦市） あまさけや丸", spotType:"沖-釣り船",
     method:"ワラサ・マダイ五目", species:["マダイ","サバ"],
