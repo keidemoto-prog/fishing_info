@@ -135,11 +135,30 @@
  *   { obs:"観測地点名", waterTempC, weather, windMS, windDir, waveM, airTempC, time:"YYYY-MM-DD" }
  */
 window.CATCH_LOG_META = {
-  lastUpdated: "2026-09-30 18:00",
-  lastRunNote: "5件追加（東京湾3〔湾奥1・湾口三浦1・湾口房総1〕・相模湾0・駿河湾2）"
+  lastUpdated: "2026-10-01 00:00",
+  lastRunNote: "3件追加（東京湾3〔湾口三浦3〕・相模湾0・駿河湾0）"
 };
 
 window.CATCH_LOG = [
+  // ---------- 10-01 00:00回 追加分（対象期間09-30〜10-01、18:00回以降の新着） ----------
+  { id:"2026-09-30-wanko-miura-02", date:"2026-09-30", area:"wanko-miura", spot:"松輪江奈漁港（三浦市） あまさけや丸", spotType:"沖-釣り船",
+    method:"ワラサ・マダイ五目", species:["マダイ","サバ"],
+    result:"マダイ0.5〜1.0kg 0〜3枚（トップ3枚）。サバ混じり（数の記載なし）。ワラサは出ず",
+    tideName:"中潮", waterTempC:24.7, waterTempSource:"あまさけや丸 釣果ページ（chowari・実測）", weather:"曇り一時雨", windMS:8.1, windDir:"北東", airTempC:21,
+    nearby:{ obs:"Open-Meteo（松輪沖）", waterTempC:25.4, weather:"雨", windMS:8.5, windDir:"北東", waveM:1.14, airTempC:21.9, time:"2026-09-30" },
+    sourceName:"あまさけや丸（chowari）", sourceUrl:"https://www.chowari.jp/ship/01036/catch/", note:"記事の風向は北北東。雨風が強まるタフなコンディション" },
+  { id:"2026-09-30-wanko-miura-03", date:"2026-09-30", area:"wanko-miura", spot:"松輪江奈漁港（三浦市） 浜鈴丸", spotType:"沖-釣り船",
+    method:"ワラサマダイ五目船", species:["ワラサ","マダイ"],
+    result:"ワラサ竿頭2本（4名）、マダイ竿頭3枚",
+    tideName:"中潮", waterTempC:24.3, waterTempSource:"浜鈴丸 釣果ページ（chowari・実測）", weather:"曇り一時雨", windMS:8.1, windDir:"北東", airTempC:21,
+    nearby:{ obs:"Open-Meteo（松輪沖）", waterTempC:25.4, weather:"雨", windMS:8.5, windDir:"北東", waveM:1.14, airTempC:21.9, time:"2026-09-30" },
+    sourceName:"浜鈴丸（chowari）", sourceUrl:"https://www.chowari.jp/ship/01037/catch/", note:"記事の風向は北北東。連日出ていたシマアジはこの日出ず" },
+  { id:"2026-09-30-wanko-miura-04", date:"2026-09-30", area:"wanko-miura", spot:"間口漁港（三浦市） 丸又丸", spotType:"沖-釣り船",
+    method:"マダイ・ワラサ乗合", species:["ワラサ","イナダ","マダイ"],
+    result:"ワラサ・イナダとも全員安打（3名）、マダイ顔出し。シマアジ混じり（数・サイズの記載なし）",
+    tideName:"中潮", waterTempC:24.7, waterTempSource:"丸又丸 釣果ページ（chowari・実測）", weather:"曇り一時雨", windMS:8.1, windDir:"北東", airTempC:21,
+    nearby:{ obs:"Open-Meteo（間口沖）", waterTempC:25.4, weather:"雨", windMS:9.9, windDir:"北東", waveM:1.14, airTempC:21.6, time:"2026-09-30" },
+    sourceName:"丸又丸（chowari）", sourceUrl:"https://www.chowari.jp/ship/00927/catch/", note:"記事の風向は北北東" },
   // ---------- 09-30 18:00回 追加分（対象期間09-29〜30、12:00回以降の新着） ----------
   { id:"2026-09-30-aoku-01", date:"2026-09-30", area:"aoku", spot:"金沢八景乙舳（横浜市） 村本海事", spotType:"沖-釣り船",
     method:"タイラバ（BakuBakuタイラバ船）", species:["マダイ","タチウオ"],

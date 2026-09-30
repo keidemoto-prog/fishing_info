@@ -1,0 +1,26 @@
+﻿
+=== 2026-10-01 00:00 start ===
+I finished the midnight (0:00) collection run for October 1 and went through every step in `蜿朱寔謇矩・md` in order, 1 through 9.
+
+**Result: 3 records added.** All three are September 30 catches from boats at the Miura end of the Tokyo Bay mouth (search covered Sept 30窶徹ct 1):
+
+| Boat (port) | Catch |
+|---|---|
+| 縺ゅ∪縺輔￠繧・ｸｸ (譚ｾ霈ｪ豎溷･・ | 繝槭ム繧､ 0.5窶・.0kg, 0窶・ per angler, plus some 繧ｵ繝・ No 繝ｯ繝ｩ繧ｵ |
+| 豬憺斡荳ｸ (譚ｾ霈ｪ豎溷･・ | 繝ｯ繝ｩ繧ｵ top 2 per angler, 繝槭ム繧､ top 3 |
+| 荳ｸ蜿井ｸｸ (髢灘哨) | Everyone caught 繝ｯ繝ｩ繧ｵ and 繧､繝翫ム; a few 繝槭ム繧､ and some 繧ｷ繝槭い繧ｸ |
+
+- **Sea and weather data:** Water temperature, weather and wind come from the boats' own reports. The nearby-observation values are from Open-Meteo. On Sept 30 it was rainy with a northeast wind and waves of about 1.1m.
+- **Checks:** None of the three duplicates an existing record. I loaded `data/catch-log.js` with node and it reads without errors, now 544 records. I also updated the "last updated" time and the run note.
+- **Log:** The URLs I checked and the catches I rejected are written to `logs/2026-10-01.md`.
+
+**Rejected or not found:**
+- **逵滄ｶｴ貂ｯ 繧｢繧ｪ繝ｪ繧､繧ｫ:** the fishing date was Sept 27 (outside the window) and the report gives no size or count.
+- **Other boats:** several were outside the three bays we track.
+- **Nothing new:** no new Sept 30 catches for 逶ｸ讓｡貉ｾ or 鬧ｿ豐ｳ貉ｾ, and no Oct 1 catches yet because it's only midnight.
+- **Broken source:** the 驥｣繧翫ン繧ｸ繝ｧ繝ｳ catch page returns a 404 error, so it couldn't be checked.
+
+I didn't rebuild the single-file HTML page or touch the phone (Artifact) page. Step 9 says `run-collect.ps1` rebuilds the HTML on its own after this, and the phone page can't be updated from this automated run. I didn't commit anything to git either.
+build-single: source = 釣果ログ.html
+build-single: all-in-one 349465 chars / docs/index.html 349465 / dist/artifact.html 349306
+=== 2026-10-01 00:02 end (claude exit 0) ===
