@@ -135,11 +135,24 @@
  *   { obs:"観測地点名", waterTempC, weather, windMS, windDir, waveM, airTempC, time:"YYYY-MM-DD" }
  */
 window.CATCH_LOG_META = {
-  lastUpdated: "2026-10-02 00:10",
-  lastRunNote: "2件追加（駿河湾2）"
+  lastUpdated: "2026-10-02 06:15",
+  lastRunNote: "2件追加（東京湾奥2）"
 };
 
 window.CATCH_LOG = [
+  // ---------- 10-02 06:00回 追加分（対象期間10-01〜10-02） ----------
+  { id:"2026-10-01-aoku-60", date:"2026-10-01", area:"aoku", spot:"根岸橋周辺（横浜市） BLUE LANE YOKOHAMA", spotType:"沖-釣り船",
+    method:"ビッグベイト・ジグ単（シーバス&アジ）", species:["シーバス","アジ"],
+    result:"シーバス・アジとも連発（数・サイズの記載なし）。終盤キジハタをバラし",
+    tideName:"中潮", waterTempC:24.0, waterTempSource:"BLUE LANE YOKOHAMA 釣果ページ（chowari・実測）", weather:"晴れ", windMS:6.0, windDir:"北", airTempC:28,
+    nearby:{ obs:"Open-Meteo（横浜沖）", waterTempC:23.2, weather:"霧雨", windMS:3.52, windDir:"北", waveM:0.82, airTempC:27.2, time:"2026-10-01" },
+    sourceName:"BLUE LANE YOKOHAMA（chowari）", sourceUrl:"https://www.chowari.jp/ship/01733/", note:"ゲスト1名のソロチャーター" },
+  { id:"2026-10-01-aoku-61", date:"2026-10-01", area:"aoku", spot:"荒川・笹目橋（戸田市）湾奥 けやき丸", spotType:"沖-釣り船",
+    method:"キャスティング（サワラ）", species:["サワラ"],
+    result:"サワラ 0〜1匹（粘って1本ヒット）",
+    tideName:"中潮", waterTempC:null, waterTempSource:"", weather:"晴れ", windMS:4.9, windDir:"北", airTempC:29,
+    nearby:{ obs:"Open-Meteo（湾奥）", waterTempC:22.8, weather:"霧雨", windMS:7.4, windDir:"北", waveM:0.54, airTempC:24.7, time:"2026-10-01" },
+    sourceName:"けやき丸（chowari）", sourceUrl:"https://www.chowari.jp/ship/00736/", note:"" },
   // ---------- 10-02 00:00回 追加分（対象期間10-01〜10-02） ----------
   { id:"2026-10-01-suruga-91", date:"2026-10-01", area:"suruga", spot:"焼津港（焼津市） 興栄丸", spotType:"沖-釣り船",
     method:"アマダイ（シロアマダイ）・午後アオリイカ（ティップラン）", species:["アマダイ","アオリイカ"],
