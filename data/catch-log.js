@@ -8,11 +8,24 @@
  *   { obs:"観測地点名", waterTempC, weather, windMS, windDir, waveM, airTempC, time:"YYYY-MM-DD" }
  */
 window.CATCH_LOG_META = {
-  lastUpdated: "2026-10-01 18:10",
-  lastRunNote: "5件追加（東京湾2・相模湾1・駿河湾2）"
+  lastUpdated: "2026-10-02 00:10",
+  lastRunNote: "2件追加（駿河湾2）"
 };
 
 window.CATCH_LOG = [
+  // ---------- 10-02 00:00回 追加分（対象期間10-01〜10-02） ----------
+  { id:"2026-10-01-suruga-91", date:"2026-10-01", area:"suruga", spot:"焼津港（焼津市） 興栄丸", spotType:"沖-釣り船",
+    method:"アマダイ（シロアマダイ）・午後アオリイカ（ティップラン）", species:["アマダイ","アオリイカ"],
+    result:"シロアマダイ0.10〜1.90kg 0〜12匹（シーズン開幕、2桁続出・型あり）。午後アオリイカ0.10〜0.60kg 0〜3杯（序盤渋く中盤から上向き）",
+    tideName:"中潮", waterTempC:25.2, waterTempSource:"興栄丸 釣果ページ（chowari・実測）", weather:"晴れ時々曇り", windMS:0.9, windDir:"東南東", airTempC:null,
+    nearby:{ obs:"Open-Meteo（焼津沖）", waterTempC:24.9, weather:"晴れ時々曇り", windMS:9.59, windDir:"北東", waveM:1.14, airTempC:25.8, time:"2026-10-01" },
+    sourceName:"興栄丸（chowari）", sourceUrl:"https://www.chowari.jp/ship/01399/catch/", note:"同日のアマダイ便とアオリイカ便を1レコードに" },
+  { id:"2026-09-30-suruga-90", date:"2026-09-30", area:"suruga", spot:"江の浦港沖（沼津市） イシグロ富士店", spotType:"沖-釣り船",
+    method:"ジギング・サーベルテンヤ・バランサー（タチウオ）", species:["タチウオ"],
+    result:"タチウオ34匹（F2〜4）、同行者は20〜60匹超。3釣法とも反応良好（16:30〜23:00）",
+    tideName:"", waterTempC:null, waterTempSource:"", weather:"", windMS:null, windDir:"", airTempC:null,
+    nearby:{ obs:"Open-Meteo（沼津・江の浦沖）", waterTempC:24.5, weather:"雨", windMS:5.32, windDir:"東", waveM:1.14, airTempC:23.2, time:"2026-09-30" },
+    sourceName:"釣具のイシグロ 富士店", sourceUrl:"https://www.ishiguro-gr.com/enjoy/fishing/detail.php?id=49858", note:"" },
   // ---------- 10-01 18:00回 追加分（対象期間09-30〜10-01、12:00回以降の新着） ----------
   { id:"2026-10-01-wanko-miura-01", date:"2026-10-01", area:"wanko-miura", spot:"松輪江奈漁港（三浦市） 伝五郎丸", spotType:"沖-釣り船",
     method:"コマセ五目（ワラサ・イナダ・マダイ）", species:["イナダ","ワラサ","マダイ","ソウダガツオ"],
