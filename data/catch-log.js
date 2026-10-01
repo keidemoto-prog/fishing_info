@@ -8,11 +8,18 @@
  *   { obs:"観測地点名", waterTempC, weather, windMS, windDir, waveM, airTempC, time:"YYYY-MM-DD" }
  */
 window.CATCH_LOG_META = {
-  lastUpdated: "2026-10-01 06:02",
-  lastRunNote: "4件追加（東京湾0・相模湾2・駿河湾2）"
+  lastUpdated: "2026-10-01 12:05",
+  lastRunNote: "1件追加（東京湾1・相模湾0・駿河湾0）"
 };
 
 window.CATCH_LOG = [
+  // ---------- 10-01 12:00回 追加分（対象期間09-30〜10-01、06:00回以降の新着） ----------
+  { id:"2026-09-30-wanko-miura-05", date:"2026-09-30", area:"wanko-miura", spot:"松輪江奈漁港（三浦市） 成銀丸", spotType:"沖-釣り船",
+    method:"コマセ五目（剣崎沖）", species:["ワラサ","マダイ","イナダ"],
+    result:"1便目：ワラサ3.0〜5.2kg 0〜3匹、マダイ0.5〜2.0kg 0〜8匹、イナダ1.0〜1.8kg 0〜6匹（ワラサがあちこちでヒットし盛り上がる）。2便目：ワラサ2.0〜3.5kg 0〜1匹、イナダ0.8〜1.0kg 0〜3匹（食い渋り）",
+    tideName:"中潮", waterTempC:24.3, waterTempSource:"成銀丸 釣果ページ（chowari・実測）", weather:"曇り一時雨", windMS:8.1, windDir:"北東", airTempC:null,
+    nearby:{ obs:"Open-Meteo（松輪沖）", waterTempC:25.4, weather:"雨", windMS:8.5, windDir:"北東", waveM:1.14, airTempC:21.9, time:"2026-09-30" },
+    sourceName:"成銀丸（chowari）", sourceUrl:"https://www.chowari.jp/ship/00332/catch/", note:"同日の2便を1レコードに。記事の風向は北北東。nearby は同日同港の既存レコード（正海丸ほか）と同じ松輪沖の値" },
   // ---------- 10-01 06:00回 追加分（対象期間09-30〜10-01、00:00回以降の新着） ----------
   { id:"2026-09-30-sagami-01", date:"2026-09-30", area:"sagami", spot:"茅ヶ崎港（茅ヶ崎市）ちがさき丸", spotType:"沖-釣り船",
     method:"カツオ船・アマダイ船・タイ五目船", species:["カツオ","ソウダガツオ","アマダイ","マダイ","ワラサ"],
