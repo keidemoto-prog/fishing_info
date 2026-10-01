@@ -8,11 +8,42 @@
  *   { obs:"観測地点名", waterTempC, weather, windMS, windDir, waveM, airTempC, time:"YYYY-MM-DD" }
  */
 window.CATCH_LOG_META = {
-  lastUpdated: "2026-10-01 12:05",
-  lastRunNote: "1件追加（東京湾1・相模湾0・駿河湾0）"
+  lastUpdated: "2026-10-01 18:10",
+  lastRunNote: "5件追加（東京湾2・相模湾1・駿河湾2）"
 };
 
 window.CATCH_LOG = [
+  // ---------- 10-01 18:00回 追加分（対象期間09-30〜10-01、12:00回以降の新着） ----------
+  { id:"2026-10-01-wanko-miura-01", date:"2026-10-01", area:"wanko-miura", spot:"松輪江奈漁港（三浦市） 伝五郎丸", spotType:"沖-釣り船",
+    method:"コマセ五目（ワラサ・イナダ・マダイ）", species:["イナダ","ワラサ","マダイ","ソウダガツオ"],
+    result:"イナダ1.0〜1.5kg 1〜5匹（全員安打）、ワラサ2.5〜4.0kg 0〜1匹（船中3本）、マダイ0.8〜2.3kg 0〜2匹。ゲストにヒラソウダ・スマガツオ",
+    tideName:"中潮", waterTempC:24.7, waterTempSource:"伝五郎丸 釣果ページ（chowari・実測）", weather:"曇りのち時々晴れ", windMS:9.0, windDir:"北", airTempC:28,
+    nearby:{ obs:"Open-Meteo（松輪沖）", waterTempC:26.4, weather:"霧雨", windMS:9.5, windDir:"北", waveM:1.28, airTempC:25.3, time:"2026-10-01" },
+    sourceName:"伝五郎丸（chowari）", sourceUrl:"https://www.chowari.jp/ship/01191/catch/", note:"記事の波は1.1m" },
+  { id:"2026-10-01-wanko-miura-02", date:"2026-10-01", area:"wanko-miura", spot:"金田湾（三浦市） 金重丸", spotType:"沖-釣り船",
+    method:"ジギング五目・コマセ五目", species:["マダイ","ショゴ","ワラサ","イナダ","カワハギ","ソウダガツオ","サバ"],
+    result:"ジギング五目：マダイ・ショゴ・カイワリ・ハナダイ・イサキ（しゃくり方をつかむと全員入れ食い）。コマセ五目：ワラサ・イナダ・ショゴ・マダイ・カワハギ・ヒラソウダ・サバほか多彩（サイズ・数の記載なし）",
+    tideName:"中潮", waterTempC:25.0, waterTempSource:"金重丸 釣果ページ（chowari・実測）", weather:"曇りのち時々晴れ", windMS:9.0, windDir:"北", airTempC:28,
+    nearby:{ obs:"Open-Meteo（金田湾）", waterTempC:25.3, weather:"霧雨", windMS:10.1, windDir:"北", waveM:1.00, airTempC:24.8, time:"2026-10-01" },
+    sourceName:"金重丸（chowari）", sourceUrl:"https://www.chowari.jp/ship/01219/catch/", note:"同日の2便を1レコードに" },
+  { id:"2026-10-01-sagami-01", date:"2026-10-01", area:"sagami", spot:"平塚漁港（平塚市） 庄三郎丸", spotType:"沖-釣り船",
+    method:"イナダ五目船・キハダ本ガツオ船", species:["カンパチ","イナダ","カマス","マダイ","アジ","カツオ","ソウダガツオ"],
+    result:"イナダ五目船：カンパチ35〜43cm 1〜11匹、イナダ38〜45cm 0〜4匹、カマス15〜31cm、マダイ・アジ交じり（近場不調で遠征）。キハダ・本ガツオ船：カツオ4.1〜5.0kg 1〜4匹、大ソーダ〜2.3kg 0〜3匹、エビングでキメジ7.4kg",
+    tideName:"中潮", waterTempC:null, waterTempSource:"", weather:"晴れ（日中に回復・凪）", windMS:null, windDir:"", airTempC:null,
+    nearby:{ obs:"Open-Meteo（平塚沖）", waterTempC:24.5, weather:"晴れ時々曇り", windMS:7.0, windDir:"北", waveM:0.84, airTempC:27.2, time:"2026-10-01" },
+    sourceName:"庄三郎丸 釣果ページ", sourceUrl:"https://www.shouzaburo.com/search/ChokaDetail/379199/", note:"カツオ船の出典は https://www.shouzaburo.com/search/ChokaDetail/379200/ 。潮は同日の相模湾・三浦各船の記載（中潮）に合わせた" },
+  { id:"2026-10-01-suruga-01", date:"2026-10-01", area:"suruga", spot:"沼津市内堤防", spotType:"堤防",
+    method:"ショアジギング（ブランカ28g）", species:["タチウオ","カマス"],
+    result:"タチウオ8-20匹（指3〜3.5本）、カマス1匹28cm。3:00〜5:00、フォールで食う",
+    tideName:"", waterTempC:null, waterTempSource:"", weather:"", windMS:null, windDir:"", airTempC:null,
+    nearby:{ obs:"Open-Meteo（沼津沖）", waterTempC:24.8, weather:"晴れ時々曇り", windMS:6.2, windDir:"東", waveM:0.90, airTempC:25.6, time:"2026-10-01" },
+    sourceName:"イシグロ駿東柿田川店", sourceUrl:"https://www.ishiguro-gr.com/enjoy/fishing/detail.php?id=49862", note:"数は記事の表記「タチウオ8-20匹」のまま" },
+  { id:"2026-09-30-suruga-04", date:"2026-09-30", area:"suruga", spot:"沼津港（沼津市）", spotType:"堤防",
+    method:"ショアジギング（夜・メタルジグ30g）", species:["タチウオ"],
+    result:"タチウオ1匹（指3本）。21:30〜0:00、夜光カラーに反応なく UVピンクゼブラに替えて数投でヒット",
+    tideName:"", waterTempC:null, waterTempSource:"", weather:"", windMS:null, windDir:"", airTempC:null,
+    nearby:{ obs:"Open-Meteo（沼津沖）", waterTempC:24.6, weather:"雨", windMS:3.2, windDir:"東", waveM:1.16, airTempC:24.0, time:"2026-09-30" },
+    sourceName:"イシグロ静岡中吉田店", sourceUrl:"https://www.ishiguro-gr.com/enjoy/fishing/detail.php?id=49859", note:"同日朝の沼津周辺（49856）とは別記事・夜の部。nearby は同日既存レコードと同値" },
   // ---------- 10-01 12:00回 追加分（対象期間09-30〜10-01、06:00回以降の新着） ----------
   { id:"2026-09-30-wanko-miura-05", date:"2026-09-30", area:"wanko-miura", spot:"松輪江奈漁港（三浦市） 成銀丸", spotType:"沖-釣り船",
     method:"コマセ五目（剣崎沖）", species:["ワラサ","マダイ","イナダ"],
