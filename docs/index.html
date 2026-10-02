@@ -135,11 +135,24 @@
  *   { obs:"観測地点名", waterTempC, weather, windMS, windDir, waveM, airTempC, time:"YYYY-MM-DD" }
  */
 window.CATCH_LOG_META = {
-  lastUpdated: "2026-10-02 06:15",
+  lastUpdated: "2026-10-02 12:15",
   lastRunNote: "2件追加（東京湾奥2）"
 };
 
 window.CATCH_LOG = [
+  // ---------- 10-02 12:00回 追加分（対象期間10-01〜10-02） ----------
+  { id:"2026-10-01-aoku-62", date:"2026-10-01", area:"aoku", spot:"海老取川（大田区） PLAYFUL FISHING", spotType:"沖-釣り船",
+    method:"ルアー（シーバス・夜）", species:["シーバス"],
+    result:"シーバス 連発（数・サイズの記載なし）。2時間で好調のため早上がり",
+    tideName:"", waterTempC:24.0, waterTempSource:"PLAYFUL FISHING 釣果ページ（chowari・実測）", weather:"晴れ", windMS:6.0, windDir:"北", airTempC:28,
+    nearby:{ obs:"Open-Meteo（羽田沖）", waterTempC:22.8, weather:"霧雨", windMS:6.6, windDir:"北", waveM:0.48, airTempC:25.7, time:"2026-10-01" },
+    sourceName:"PLAYFUL FISHING（chowari）", sourceUrl:"https://www.chowari.jp/ship/01426/catch/", note:"" },
+  { id:"2026-10-01-aoku-63", date:"2026-10-01", area:"aoku", spot:"寒川港（千葉市） 守山丸", spotType:"沖-釣り船",
+    method:"ルアー五目（サワラ・サゴシ）", species:["サワラ","タチウオ"],
+    result:"サワラ64〜75cm 0〜1本。サゴシ・タチウオも混じる",
+    tideName:"", waterTempC:23.8, waterTempSource:"守山丸 釣果ページ（chowari・実測）", weather:"曇り時々晴れ", windMS:2.8, windDir:"北", airTempC:26,
+    nearby:{ obs:"Open-Meteo（千葉沖）", waterTempC:23.0, weather:"霧雨", windMS:3.51, windDir:"北", waveM:0.42, airTempC:27.4, time:"2026-10-01" },
+    sourceName:"守山丸（chowari）", sourceUrl:"https://www.chowari.jp/ship/01016/catch/", note:"" },
   // ---------- 10-02 06:00回 追加分（対象期間10-01〜10-02） ----------
   { id:"2026-10-01-aoku-60", date:"2026-10-01", area:"aoku", spot:"根岸橋周辺（横浜市） BLUE LANE YOKOHAMA", spotType:"沖-釣り船",
     method:"ビッグベイト・ジグ単（シーバス&アジ）", species:["シーバス","アジ"],

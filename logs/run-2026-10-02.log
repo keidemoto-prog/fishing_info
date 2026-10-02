@@ -21,3 +21,21 @@ git: push exit 0, unpushed commits: 0
 build-single: source = 釣果ログ.html
 build-single: all-in-one 362307 chars / docs/index.html 362307 / dist/artifact.html 362148
 === 2026-10-02 06:01 end (claude exit 0) ===
+git: push exit 0, unpushed commits: 0
+
+=== 2026-10-02 12:00 start ===
+I added 2 new records to `data/catch-log.js`, both Tokyo Bay head (譚ｱ莠ｬ貉ｾ螂･), for the 12:00 run (10/1窶・0/2). The file loads as valid JavaScript: 560 records, no duplicate ids.
+
+- **PLAYFUL FISHING (豬ｷ閠∝叙蟾・:** 10/1 seabass, repeated hits, water temperature 24.0邃・as reported in the post.
+- **螳亥ｱｱ荳ｸ (蟇貞ｷ晄ｸｯ):** 10/1 Spanish mackerel, 64窶・5cm, 0窶・ fish, water temperature 23.8邃・as reported in the post.
+
+I filled the nearby sea and weather data from Open-Meteo for both. I left the tide name blank for both because the source says "蟆乗ｽｮ" but other 10/1 records say "荳ｭ貎ｮ". The screen will calculate it from the date.
+
+I skipped 譴・干荳ｸ and 荳画ｬ｡驛惹ｸｸ (red sea bream off Asahi City, 譌ｭ蟶・, which are outside the target areas.
+
+This run only checked the 驥｣蜑ｲ (chowari) pages. I did not go through the other sources in the instruction file (遏ｳ逕ｰ荳ｸ, 豬懷鴻魑･, the Ishiguro stores, YouTube and so on), so there may be reports I missed.
+
+I also updated `lastUpdated` and `lastRunNote` and added this run's entry to `logs/2026-10-02.md`.
+build-single: source = 釣果ログ.html
+build-single: all-in-one 363537 chars / docs/index.html 363537 / dist/artifact.html 363378
+=== 2026-10-02 12:00 end (claude exit 0) ===
