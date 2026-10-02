@@ -8,11 +8,24 @@
  *   { obs:"観測地点名", waterTempC, weather, windMS, windDir, waveM, airTempC, time:"YYYY-MM-DD" }
  */
 window.CATCH_LOG_META = {
-  lastUpdated: "2026-10-02 18:20",
-  lastRunNote: "3件追加（東京湾口三浦3）"
+  lastUpdated: "2026-10-03 00:10",
+  lastRunNote: "2件追加（相模湾1・駿河湾1）"
 };
 
 window.CATCH_LOG = [
+  // ---------- 10-03 00:00回 追加分（対象期間10-02〜10-03） ----------
+  { id:"2026-10-02-sagami-01", date:"2026-10-02", area:"sagami", spot:"平塚新港（平塚市） かりゆし丸", spotType:"沖-釣り船",
+    method:"五目釣り", species:["カンパチ","アジ","マダイ","オオモンハタ","アマダイ"],
+    result:"カンパチ35〜38cm 1〜5匹（食い渋り）、マダイ0〜2匹、アジ24〜30cm 3匹、オオモンハタ28cm、シロアマダイ40cm。ハナダイ・ホウボウ等も",
+    tideName:"小潮", waterTempC:24.8, waterTempSource:"かりゆし丸 釣果ページ（chowari・実測）", weather:"曇り一時雨", windMS:5.1, windDir:"北北東", airTempC:null,
+    nearby:{ obs:"Open-Meteo（相模湾中央）", waterTempC:24.0, weather:"曇り", windMS:7.6, windDir:"北", waveM:0.72, airTempC:23.3, time:"2026-10-02" },
+    sourceName:"かりゆし丸（chowari）", sourceUrl:"https://www.chowari.jp/ship/00908/catch/", note:"" },
+  { id:"2026-10-02-suruga-01", date:"2026-10-02", area:"suruga", spot:"久料港（沼津市） 魚磯丸", spotType:"沖-釣り船",
+    method:"泳がせ釣り（アジ）", species:["ショゴ","イナダ"],
+    result:"ショゴ・イナダ（数・サイズ記載なし）。エサ取りの反応は十分あるが食い渋り、バラシあり",
+    tideName:"小潮", waterTempC:24.4, waterTempSource:"魚磯丸 釣果ページ（chowari・実測）", weather:"晴れ時々曇り", windMS:2.9, windDir:"東北東", airTempC:null,
+    nearby:{ obs:"Open-Meteo（沼津沖）", waterTempC:24.4, weather:"霧雨", windMS:6.14, windDir:"東", waveM:0.52, airTempC:26.1, time:"2026-10-02" },
+    sourceName:"魚磯丸（chowari）", sourceUrl:"https://www.chowari.jp/ship/01244/catch/", note:"" },
   // ---------- 10-02 18:00回 追加分（対象期間10-01〜10-02） ----------
   { id:"2026-10-02-wanko-miura-01", date:"2026-10-02", area:"wanko-miura", spot:"鴨居大室漁港（横須賀市） 房丸", spotType:"沖-釣り船",
     method:"アジ釣り（午前・午後）", species:["アジ"],
