@@ -8,11 +8,30 @@
  *   { obs:"観測地点名", waterTempC, weather, windMS, windDir, waveM, airTempC, time:"YYYY-MM-DD" }
  */
 window.CATCH_LOG_META = {
-  lastUpdated: "2026-10-02 12:15",
-  lastRunNote: "2件追加（東京湾奥2）"
+  lastUpdated: "2026-10-02 18:20",
+  lastRunNote: "3件追加（東京湾口三浦3）"
 };
 
 window.CATCH_LOG = [
+  // ---------- 10-02 18:00回 追加分（対象期間10-01〜10-02） ----------
+  { id:"2026-10-02-wanko-miura-01", date:"2026-10-02", area:"wanko-miura", spot:"鴨居大室漁港（横須賀市） 房丸", spotType:"沖-釣り船",
+    method:"アジ釣り（午前・午後）", species:["アジ"],
+    result:"アジ22〜40cm 13〜35匹（午前13〜25匹・午後17〜35匹）。カサゴが外道",
+    tideName:"小潮", waterTempC:24.0, waterTempSource:"房丸 釣果ページ（chowari・実測）", weather:"曇り一時雨", windMS:5.1, windDir:"北北東", airTempC:null,
+    nearby:{ obs:"Open-Meteo（湾口三浦）", waterTempC:24.1, weather:"晴れ時々曇り", windMS:6.09, windDir:"北東", waveM:0.70, airTempC:23.3, time:"2026-10-02" },
+    sourceName:"房丸（chowari）", sourceUrl:"https://www.chowari.jp/ship/00690/catch/", note:"" },
+  { id:"2026-10-02-wanko-miura-02", date:"2026-10-02", area:"wanko-miura", spot:"佐島港（横須賀市） 志平丸", spotType:"沖-釣り船",
+    method:"五目釣り", species:["マダイ","カンパチ"],
+    result:"マダイ0.60〜1.50kg 0〜2匹、カンパチ0〜3匹。イサキ・メジナ等も",
+    tideName:"小潮", waterTempC:24.1, waterTempSource:"志平丸 釣果ページ（chowari・実測）", weather:"曇り一時雨", windMS:5.1, windDir:"北北東", airTempC:23,
+    nearby:{ obs:"Open-Meteo（湾口三浦）", waterTempC:24.1, weather:"晴れ時々曇り", windMS:6.09, windDir:"北東", waveM:0.70, airTempC:23.3, time:"2026-10-02" },
+    sourceName:"志平丸（chowari）", sourceUrl:"https://www.chowari.jp/ship/00346/catch/", note:"" },
+  { id:"2026-10-02-wanko-miura-03", date:"2026-10-02", area:"wanko-miura", spot:"金田漁港（三浦市） 岩伊丸", spotType:"沖-釣り船",
+    method:"ウィリー五目", species:["マダイ","マハタ"],
+    result:"カイワリ23〜26cm 8匹、マダイ0.30〜1.00kg 3匹、イサキ34〜36cm 3匹、マハタ28〜35cm 2匹",
+    tideName:"小潮", waterTempC:25.1, waterTempSource:"岩伊丸 釣果ページ（chowari・実測）", weather:"曇りのち雨", windMS:6.4, windDir:"北北東", airTempC:null,
+    nearby:{ obs:"Open-Meteo（湾口三浦）", waterTempC:24.1, weather:"晴れ時々曇り", windMS:6.09, windDir:"北東", waveM:0.70, airTempC:23.3, time:"2026-10-02" },
+    sourceName:"岩伊丸（chowari）", sourceUrl:"https://www.chowari.jp/ship/01213/catch/", note:"" },
   // ---------- 10-02 12:00回 追加分（対象期間10-01〜10-02） ----------
   { id:"2026-10-01-aoku-62", date:"2026-10-01", area:"aoku", spot:"海老取川（大田区） PLAYFUL FISHING", spotType:"沖-釣り船",
     method:"ルアー（シーバス・夜）", species:["シーバス"],
