@@ -8,11 +8,18 @@
  *   { obs:"観測地点名", waterTempC, weather, windMS, windDir, waveM, airTempC, time:"YYYY-MM-DD" }
  */
 window.CATCH_LOG_META = {
-  lastUpdated: "2026-10-03 12:10",
-  lastRunNote: "1件追加（相模湾1）"
+  lastUpdated: "2026-10-03 18:10",
+  lastRunNote: "1件追加（東京湾奥1）"
 };
 
 window.CATCH_LOG = [
+  // ---------- 10-03 18:00回 追加分（対象期間10-02〜10-03） ----------
+  { id:"2026-10-03-aoku-01", date:"2026-10-03", area:"aoku", spot:"金沢八景（横浜市） 黒川丸", spotType:"沖-釣り船",
+    method:"アジ・タチウオ釣り", species:["アジ","タチウオ"],
+    result:"アジ17〜25cm 3〜35匹、タチウオ65〜105cm 3〜18匹（横須賀沖）",
+    tideName:"小潮", waterTempC:24.1, waterTempSource:"黒川丸 釣果ページ（chowari・実測）", weather:"曇りのち時々晴れ", windMS:5.8, windDir:"北北東", airTempC:null,
+    nearby:{ obs:"Open-Meteo（金沢八景沖）", waterTempC:23.3, weather:"晴れ時々曇り", windMS:4.35, windDir:"北東", waveM:0.44, airTempC:22.6, time:"2026-10-03" },
+    sourceName:"黒川丸（chowari）", sourceUrl:"https://www.chowari.jp/ship/00150/catch/", note:"" },
   // ---------- 10-03 12:00回 追加分（対象期間10-02〜10-03） ----------
   { id:"2026-10-02-sagami-02", date:"2026-10-02", area:"sagami", spot:"早川漁港（小田原市） 光義丸", spotType:"沖-釣り船",
     method:"落とし込み・五目釣り", species:["イナダ","カンパチ","オオモンハタ","アマダイ"],
