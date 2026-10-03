@@ -19,3 +19,27 @@ The metadata (last-updated time and run note) is updated, and the run notes are 
 build-single: source = 釣果ログ.html
 build-single: all-in-one 371103 chars / docs/index.html 371103 / dist/artifact.html 370944
 === 2026-10-04 00:02 end (claude exit 0) ===
+git: push exit 0, unpushed commits: 0
+
+=== 2026-10-04 06:00 start ===
+I ran all 9 steps in `蜿朱寔謇矩・md` (the 6:00 run on 2026-10-04, a Sunday, so the normal window of 10/3窶・0/4). I added 4 new catches from 10/3:
+
+| Area | Where | Catch |
+|---|---|---|
+| 譚ｱ莠ｬ貉ｾ螂･ (inner Tokyo Bay) | 鄒ｽ逕ｰ 縺医＆謾ｿ驥｣闊ｹ蠎・| Kawahagi 14窶・0cm, 0窶・7 per person, water 23.8邃・|
+| 貉ｾ蜿｣荳画ｵｦ (bay mouth, Miura side) | 荵・ｯ秘㈹ 螻ｱ荳倶ｸｸ | Amadai 23窶・2cm, 1窶・ per person, plus some madai, water 23.8邃・|
+| 貉ｾ蜿｣謌ｿ邱・(bay mouth, Boso side) | 遶ｹ蟯｡豐・(螻ｱ荳倶ｸｸ) | Kawahagi 15窶・8cm, 1窶・8 per person, water 23.8邃・|
+| 逶ｸ讓｡貉ｾ (Sagami Bay) | 遖乗ｵｦ貂ｯ 繧医＠縺ｲ縺穂ｸｸ | Bonito up to 8kg, best angler 4 fish (reported through 縺九ａ繧・ｰ冗伐蜴溷ｺ・ |
+
+- **Saved:** the 4 records are at the top of `data/catch-log.js`, and the summary line is updated ("4莉ｶ霑ｽ蜉・域擲莠ｬ貉ｾ3繝ｻ逶ｸ讓｡貉ｾ1繝ｻ鬧ｿ豐ｳ貉ｾ0・・). The file still loads as valid JavaScript and now has 576 records.
+- **Sea and weather:** the boats' own pages gave water temperature, weather and wind. For all 4, I also filled in nearby readings from Open-Meteo, the free weather service the procedure names.
+- **Area choice:** 螻ｱ荳倶ｸｸ's kawahagi trip leaves from 荵・ｯ秘㈹ on the Miura side, but it fished off 遶ｹ蟯｡. I filed it under the Boso side because that's where the fish were caught.
+- **Uncertain detail:** the bonito report recommends a leader of "18縲・0蜿ｷ". My page reader gave me an English translation, so the unit "蜿ｷ" is my best reading, not checked against the Japanese original.
+- **Skipped:** catches outside the region (鮖ｿ蟲ｶ, 螟ｧ蜴・ 螳・ｽ千ｾ・, fish not on the target list (繝偵ぎ繝ｳ繝輔げ, 繝上ぞ, 繧｢繧ｫ繝繝・ and boats with no new posts (遏ｳ逕ｰ荳ｸ). Nothing for 10/4 was posted yet.
+- **Not checked this run:** YouTube, 繧､繧ｷ繧ｰ繝ｭ and the other shop blogs. Earlier runs also skipped them.
+- **Log:** the URLs I checked and what I left out are in `logs/2026-10-04.md`.
+
+No new files were created in the `驥｣繧柿 folder. Rebuilding the single-file pages happens automatically in `run-collect.ps1` after this, so I didn't touch them (step 9).
+build-single: source = 釣果ログ.html
+build-single: all-in-one 373508 chars / docs/index.html 373508 / dist/artifact.html 373349
+=== 2026-10-04 06:01 end (claude exit 0) ===

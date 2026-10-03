@@ -8,11 +8,36 @@
  *   { obs:"観測地点名", waterTempC, weather, windMS, windDir, waveM, airTempC, time:"YYYY-MM-DD" }
  */
 window.CATCH_LOG_META = {
-  lastUpdated: "2026-10-04 00:15",
-  lastRunNote: "4件追加（東京湾1・相模湾0・駿河湾3）"
+  lastUpdated: "2026-10-04 06:10",
+  lastRunNote: "4件追加（東京湾3・相模湾1・駿河湾0）"
 };
 
 window.CATCH_LOG = [
+  // ---------- 10-04 06:00回 追加分（対象期間10-03〜10-04） ----------
+  { id:"2026-10-03-aoku-03", date:"2026-10-03", area:"aoku", spot:"羽田（大田区） えさ政釣船店", spotType:"沖-釣り船",
+    method:"カワハギ釣り", species:["カワハギ"],
+    result:"カワハギ14〜30cm 0〜17匹。25cm超え複数。前日ほど活発ではない",
+    tideName:"小潮", waterTempC:23.8, waterTempSource:"えさ政釣船店 釣果ページ（chowari・実測）", weather:"曇り後晴れ", windMS:6.2, windDir:"北東", airTempC:null,
+    nearby:{ obs:"Open-Meteo（羽田沖）", waterTempC:22.7, weather:"曇り", windMS:7.15, windDir:"北東", waveM:0.3, airTempC:22.3, time:"2026-10-03" },
+    sourceName:"えさ政釣船店（chowari）", sourceUrl:"https://www.chowari.jp/ship/00322/catch/", note:"" },
+  { id:"2026-10-03-wanko-miura-01", date:"2026-10-03", area:"wanko-miura", spot:"久比里（横須賀市） 山下丸", spotType:"沖-釣り船",
+    method:"アマダイ釣り", species:["アマダイ","マダイ"],
+    result:"アマダイ23〜42cm 1〜8匹（オデコなし）。外道にマダイなど。やや濁り",
+    tideName:"小潮", waterTempC:23.8, waterTempSource:"山下丸 釣果ページ（chowari・実測）", weather:"曇り時々晴れ", windMS:5.8, windDir:"北北東", airTempC:null,
+    nearby:{ obs:"Open-Meteo（久里浜沖）", waterTempC:24.5, weather:"晴れ時々曇り", windMS:9.26, windDir:"北東", waveM:0.6, airTempC:22.8, time:"2026-10-03" },
+    sourceName:"山下丸（chowari）", sourceUrl:"https://www.chowari.jp/ship/00289/catch/", note:"" },
+  { id:"2026-10-03-wanko-boso-01", date:"2026-10-03", area:"wanko-boso", spot:"竹岡沖（久比里 山下丸）", spotType:"沖-釣り船",
+    method:"カワハギ釣り", species:["カワハギ"],
+    result:"カワハギ15〜28cm 1〜18匹。潮が二枚潮気味でタナ取りが鍵",
+    tideName:"小潮", waterTempC:23.8, waterTempSource:"山下丸 釣果ページ（chowari・実測）", weather:"曇り時々晴れ", windMS:5.8, windDir:"北北東", airTempC:null,
+    nearby:{ obs:"Open-Meteo（竹岡沖）", waterTempC:24.1, weather:"晴れ時々曇り", windMS:8.01, windDir:"北東", waveM:0.48, airTempC:23.0, time:"2026-10-03" },
+    sourceName:"山下丸（chowari）", sourceUrl:"https://www.chowari.jp/ship/00289/catch/", note:"出船は久比里、釣り場は竹岡沖" },
+  { id:"2026-10-03-sagami-01", date:"2026-10-03", area:"sagami", spot:"福浦港（湯河原町） よしひさ丸", spotType:"沖-釣り船",
+    method:"カツオ釣り（釣法記載なし）", species:["カツオ"],
+    result:"本ガツオ 最大8kg、トップ4本。大型回遊中でハリス18〜20号推奨",
+    tideName:"", waterTempC:null, waterTempSource:"", weather:"", windMS:null, windDir:"", airTempC:null,
+    nearby:{ obs:"Open-Meteo（福浦沖）", waterTempC:24.3, weather:"晴れ時々曇り", windMS:9.44, windDir:"北東", waveM:1.14, airTempC:22.4, time:"2026-10-03" },
+    sourceName:"かめや釣具 小田原店", sourceUrl:"https://kameya-choka.com/kanto-tokai/archives/f-info/544294", note:"" },
   // ---------- 10-04 00:00回 追加分（対象期間10-03〜10-04） ----------
   { id:"2026-10-03-suruga-01", date:"2026-10-03", area:"suruga", spot:"久料港（沼津市） 魚磯丸", spotType:"沖-釣り船",
     method:"泳がせ・落とし込み", species:["ワラサ","カンパチ","アカハタ"],
