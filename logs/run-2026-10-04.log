@@ -1,0 +1,21 @@
+﻿
+=== 2026-10-04 00:00 start ===
+I ran the 00:00 collection for 2026-10-04 (all 9 steps in `蜿朱寔謇矩・md`). It added **4 new catch records**, and `data/catch-log.js` still loads as valid JavaScript: 572 records after the run.
+
+**What was added** (searching 10/3窶・0/4):
+- **鬲夂｣ｯ荳ｸ (Kuryo port, Numazu, Suruga Bay), 10/3**: one 5.1 kg 繝ｯ繝ｩ繧ｵ, plus 繧ｫ繝ｳ繝代メ and 繧｢繧ｫ繝上ち. The report gives the water temperature as 24.3 ﾂｰC.
+- **Fuji surf beach (Suruga Bay), 10/3**: 3 繧ｿ繝√え繧ｪ caught at night, up to "F3.5" (the report's size grade), from 縺九ａ繧・・蜈ｷ's Fuji store.
+- **Shimizu port (Suruga Bay), 10/2**: up to 13 繧｢繧ｸ (up to 21 cm), plus 繧ｫ繧ｵ繧ｴ and 繧ｫ繝槭せ, from 縺九ａ繧・・蜈ｷ's Shimizu store.
+- **譚第悽豬ｷ莠・(Kanazawa-hakkei, inner Tokyo Bay), 10/3**: 8 繝槭ム繧､ across the boat (0.6窶・.4 kg), plus 繧｢繧ｪ繝ｪ繧､繧ｫ and 繧｢繧ｸ. Water temperature 24.1 ﾂｰC. The 18:00 run skipped this boat because only squid was posted then; 繝槭ム繧､ and 繧｢繧ｸ have been added since.
+
+None of these duplicate existing entries. For each one I filled in the nearby sea temperature, waves, weather and wind from Open-Meteo for that date and spot.
+
+**Things you might want to check:**
+- The Shimizu catch is from 10/2, one day before the 10/3窶・0/4 search window. It was posted on 10/3 and earlier runs never picked it up, so I included it. The log says so.
+- The fishing-v.jp results page listed in the instructions now returns "page not found" (404). The link probably needs updating.
+- No 10/4 reports were posted yet, and I didn't search YouTube or several of the shop blogs this run.
+
+The metadata (last-updated time and run note) is updated, and the run notes are in `logs/2026-10-04.md`. As the instructions say, the single-page HTML is rebuilt automatically by `run-collect.ps1` after this run, so I didn't touch it.
+build-single: source = 釣果ログ.html
+build-single: all-in-one 371103 chars / docs/index.html 371103 / dist/artifact.html 370944
+=== 2026-10-04 00:02 end (claude exit 0) ===

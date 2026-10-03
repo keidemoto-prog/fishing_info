@@ -135,11 +135,36 @@
  *   { obs:"観測地点名", waterTempC, weather, windMS, windDir, waveM, airTempC, time:"YYYY-MM-DD" }
  */
 window.CATCH_LOG_META = {
-  lastUpdated: "2026-10-03 18:10",
-  lastRunNote: "1件追加（東京湾奥1）"
+  lastUpdated: "2026-10-04 00:15",
+  lastRunNote: "4件追加（東京湾1・相模湾0・駿河湾3）"
 };
 
 window.CATCH_LOG = [
+  // ---------- 10-04 00:00回 追加分（対象期間10-03〜10-04） ----------
+  { id:"2026-10-03-suruga-01", date:"2026-10-03", area:"suruga", spot:"久料港（沼津市） 魚磯丸", spotType:"沖-釣り船",
+    method:"泳がせ・落とし込み", species:["ワラサ","カンパチ","アカハタ"],
+    result:"ワラサ5.1kg 1本、カンパチ・アカハタ（数記載なし）。マトウダイも。前半潮速く喰い渋り、バラシあり",
+    tideName:"小潮", waterTempC:24.3, waterTempSource:"魚磯丸 釣果ページ（chowari・実測）", weather:"曇り時々晴れ", windMS:3.1, windDir:"東", airTempC:25,
+    nearby:{ obs:"Open-Meteo（沼津沖）", waterTempC:24.5, weather:"晴れ時々曇り", windMS:6.2, windDir:"東", waveM:0.4, airTempC:22.9, time:"2026-10-03" },
+    sourceName:"魚磯丸（chowari）", sourceUrl:"https://www.chowari.jp/ship/01244/catch/", note:"" },
+  { id:"2026-10-03-suruga-02", date:"2026-10-03", area:"suruga", spot:"富士サーフ（富士市）", spotType:"砂浜",
+    method:"夜釣り（メタルジグ40g・波止テンヤ・エサ釣り）", species:["タチウオ"],
+    result:"タチウオ F3.5まで 3匹。釣果が上がってきている",
+    tideName:"", waterTempC:null, waterTempSource:"", weather:"", windMS:null, windDir:"", airTempC:null,
+    nearby:{ obs:"Open-Meteo（富士海岸沖）", waterTempC:24.5, weather:"晴れ時々曇り", windMS:5.81, windDir:"東", waveM:0.32, airTempC:24.4, time:"2026-10-03" },
+    sourceName:"かめや釣具 富士店", sourceUrl:"https://kameya-choka.com/kanto-tokai/archives/f-info/544356", note:"" },
+  { id:"2026-10-02-suruga-02", date:"2026-10-02", area:"suruga", spot:"清水港内（静岡市）", spotType:"堤防",
+    method:"アジング（ジグヘッド0.6〜1.3g）", species:["アジ","カサゴ","カマス"],
+    result:"アジ21cmまで 13匹。ほかカサゴ・カマス",
+    tideName:"", waterTempC:null, waterTempSource:"", weather:"", windMS:null, windDir:"", airTempC:null,
+    nearby:{ obs:"Open-Meteo（清水沖）", waterTempC:24.8, weather:"霧雨", windMS:6.22, windDir:"東", waveM:0.6, airTempC:26.2, time:"2026-10-02" },
+    sourceName:"かめや釣具 清水店", sourceUrl:"https://kameya-choka.com/kanto-tokai/archives/f-info/544336", note:"" },
+  { id:"2026-10-03-aoku-02", date:"2026-10-03", area:"aoku", spot:"金沢八景（横浜市） 村本海事", spotType:"沖-釣り船",
+    method:"タイラバ・ティップラン・アジ釣り", species:["マダイ","アオリイカ","アジ"],
+    result:"マダイ0.6〜1.4kg 0〜2枚（船中8枚）、アオリイカ0.1〜0.35kg 0〜3杯、アジ18〜24cm 3〜8匹。北東風強くポイント限定",
+    tideName:"小潮", waterTempC:24.1, waterTempSource:"村本海事 釣果ページ（chowari・実測）", weather:"曇りのち時々晴れ", windMS:5.8, windDir:"北北東", airTempC:24,
+    nearby:{ obs:"Open-Meteo（金沢八景沖）", waterTempC:23.3, weather:"晴れ時々曇り", windMS:4.35, windDir:"北東", waveM:0.44, airTempC:22.6, time:"2026-10-03" },
+    sourceName:"村本海事（chowari）", sourceUrl:"https://www.chowari.jp/ship/01580/catch/", note:"" },
   // ---------- 10-03 18:00回 追加分（対象期間10-02〜10-03） ----------
   { id:"2026-10-03-aoku-01", date:"2026-10-03", area:"aoku", spot:"金沢八景（横浜市） 黒川丸", spotType:"沖-釣り船",
     method:"アジ・タチウオ釣り", species:["アジ","タチウオ"],
