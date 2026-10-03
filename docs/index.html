@@ -135,11 +135,18 @@
  *   { obs:"観測地点名", waterTempC, weather, windMS, windDir, waveM, airTempC, time:"YYYY-MM-DD" }
  */
 window.CATCH_LOG_META = {
-  lastUpdated: "2026-10-03 06:10",
-  lastRunNote: "1件追加（東京湾奥1）"
+  lastUpdated: "2026-10-03 12:10",
+  lastRunNote: "1件追加（相模湾1）"
 };
 
 window.CATCH_LOG = [
+  // ---------- 10-03 12:00回 追加分（対象期間10-02〜10-03） ----------
+  { id:"2026-10-02-sagami-02", date:"2026-10-02", area:"sagami", spot:"早川漁港（小田原市） 光義丸", spotType:"沖-釣り船",
+    method:"落とし込み・五目釣り", species:["イナダ","カンパチ","オオモンハタ","アマダイ"],
+    result:"イナダ・カンパチ好調。オオモンハタ・アマダイも（数・サイズ記載なし）",
+    tideName:"小潮", waterTempC:25.0, waterTempSource:"光義丸 釣果ページ（chowari・実測）", weather:"曇り一時雨", windMS:2.7, windDir:"北東", airTempC:null,
+    nearby:{ obs:"Open-Meteo（西湘）", waterTempC:24.3, weather:"曇り", windMS:6.32, windDir:"北東", waveM:0.8, airTempC:24.0, time:"2026-10-02" },
+    sourceName:"光義丸（chowari）", sourceUrl:"https://www.chowari.jp/ship/01672/catch/", note:"" },
   // ---------- 10-03 06:00回 追加分（対象期間10-02〜10-03） ----------
   { id:"2026-10-02-aoku-03", date:"2026-10-02", area:"aoku", spot:"羽田（大田区） えさ政釣船店", spotType:"沖-釣り船",
     method:"カワハギ釣り", species:["カワハギ"],
