@@ -135,11 +135,30 @@
  *   { obs:"観測地点名", waterTempC, weather, windMS, windDir, waveM, airTempC, time:"YYYY-MM-DD" }
  */
 window.CATCH_LOG_META = {
-  lastUpdated: "2026-10-05 00:20",
-  lastRunNote: "6件追加（東京湾4・相模湾1・駿河湾1）"
+  lastUpdated: "2026-10-05 06:20",
+  lastRunNote: "3件追加（東京湾奥2・相模湾1）"
 };
 
 window.CATCH_LOG = [
+  // ---------- 10-05 06:00回 追加分（月曜朝＝10-02〜10-05対象） ----------
+  { id:"2026-10-04-aoku-04", date:"2026-10-04", area:"aoku", spot:"京浜島・勝島運河（品川区） 小林丸", spotType:"沖-釣り船",
+    method:"シロギス", species:["キス（シロギス）","アジ","マダイ"],
+    result:"シロギス15〜24cm 4〜21匹／イシモチ多数、アジ・マダイ・ホウボウも混じる",
+    tideName:"小潮", waterTempC:23.4, waterTempSource:"小林丸 釣果ページ（chowari・実測）", weather:"曇り", windMS:6.0, windDir:"北北東", airTempC:24,
+    nearby:{ obs:"Open-Meteo（京浜島沖）", waterTempC:22.6, weather:"晴れ時々曇り", windMS:4.0, windDir:"北", waveM:0.26, airTempC:22.6, time:"2026-10-04" },
+    sourceName:"小林丸（chowari）", sourceUrl:"https://www.chowari.jp/ship/00946/catch/", note:"外道のイシモチ・ホウボウは対象外" },
+  { id:"2026-10-03-aoku-06", date:"2026-10-03", area:"aoku", spot:"京浜島・勝島運河（品川区） 小林丸", spotType:"沖-釣り船",
+    method:"アジ", species:["アジ"],
+    result:"アジ16〜28cm 6〜34匹（30匹近く釣る人多数）",
+    tideName:"小潮", waterTempC:null, waterTempSource:"", weather:"晴れ", windMS:6.2, windDir:"北東", airTempC:25,
+    nearby:{ obs:"Open-Meteo（京浜島沖）", waterTempC:22.7, weather:"曇り", windMS:4.0, windDir:"北東", waveM:0.14, airTempC:22.8, time:"2026-10-03" },
+    sourceName:"小林丸（chowari）", sourceUrl:"https://www.chowari.jp/ship/00946/catch/", note:"" },
+  { id:"2026-10-04-sagami-03", date:"2026-10-04", area:"sagami", spot:"葉山鐙摺港（葉山町） たいぞう丸", spotType:"沖-釣り船",
+    method:"アマダイ五目（タイラバ）・キハダ／ホンガツオ", species:["アマダイ","カツオ","ソウダガツオ"],
+    result:"アマダイ25〜47cm 1〜5匹（最大46.5cm）／ホンガツオ2.8〜7.5kg 0〜1本（大型の反応もバラシ続出）・ヒラソーダ0〜3本",
+    tideName:"小潮", waterTempC:23.5, waterTempSource:"たいぞう丸 釣果ページ（chowari・実測）", weather:"晴れ時々曇り", windMS:5.8, windDir:"北北東", airTempC:24,
+    nearby:{ obs:"Open-Meteo（葉山沖）", waterTempC:24.3, weather:"晴れ時々曇り", windMS:6.66, windDir:"北", waveM:0.8, airTempC:22.6, time:"2026-10-04" },
+    sourceName:"たいぞう丸（chowari）", sourceUrl:"https://www.chowari.jp/ship/00449/catch/", note:"" },
   // ---------- 10-05 00:00回 追加分（対象期間10-04〜10-05＋10-03遅着分） ----------
   { id:"2026-10-04-sagami-02", date:"2026-10-04", area:"sagami", spot:"片瀬漁港（藤沢市） ゆうせい丸", spotType:"沖-釣り船",
     method:"アマダイ・イナダ五目・カツオキハダ・ライト泳がせ＆ロックフィッシュ五目", species:["アマダイ","イナダ","カンパチ","カツオ","カサゴ","アカハタ"],
