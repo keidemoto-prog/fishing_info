@@ -135,11 +135,36 @@
  *   { obs:"観測地点名", waterTempC, weather, windMS, windDir, waveM, airTempC, time:"YYYY-MM-DD" }
  */
 window.CATCH_LOG_META = {
-  lastUpdated: "2026-10-04 12:15",
-  lastRunNote: "9件追加（東京湾4・相模湾3・駿河湾2）"
+  lastUpdated: "2026-10-04 18:20",
+  lastRunNote: "4件追加（東京湾3・相模湾1・駿河湾0）"
 };
 
 window.CATCH_LOG = [
+  // ---------- 10-04 18:00回 追加分（対象期間10-03〜10-04） ----------
+  { id:"2026-10-04-aoku-01", date:"2026-10-04", area:"aoku", spot:"金沢八景（横浜市） 黒川丸", spotType:"沖-釣り船",
+    method:"LTアジ（午前・午後）・ショートタチウオ", species:["アジ","タチウオ"],
+    result:"アジ 午前18〜25cm 7〜27匹／午後18〜26cm 15〜51匹（良型主体で食い活発）／タチウオ65〜115cm 3〜20本",
+    tideName:"小潮", waterTempC:23.6, waterTempSource:"黒川丸 釣果ページ（chowari・実測）", weather:"晴れ後時々曇り", windMS:5.8, windDir:"北北東", airTempC:null,
+    nearby:{ obs:"Open-Meteo（横須賀沖）", waterTempC:23.3, weather:"曇り", windMS:8.02, windDir:"北東", waveM:0.6, airTempC:22.5, time:"2026-10-04" },
+    sourceName:"黒川丸（chowari）", sourceUrl:"https://www.chowari.jp/ship/00150/catch/", note:"釣り場は横須賀沖周辺" },
+  { id:"2026-10-04-aoku-02", date:"2026-10-04", area:"aoku", spot:"金沢漁港（横浜市） 黒一丸", spotType:"沖-釣り船",
+    method:"タチウオ・LTアジ・カワハギ", species:["タチウオ","アジ","カワハギ"],
+    result:"タチウオ60〜115cm 2〜12本／アジ18〜29cm 9〜30匹／カワハギ16〜27cm 0〜16匹（小型混じり）",
+    tideName:"小潮", waterTempC:23.6, waterTempSource:"黒一丸 釣果ページ（chowari・実測）", weather:"晴れ後時々曇り", windMS:5.8, windDir:"北北東", airTempC:null,
+    nearby:{ obs:"Open-Meteo（横須賀沖）", waterTempC:23.3, weather:"曇り", windMS:8.02, windDir:"北東", waveM:0.6, airTempC:22.5, time:"2026-10-04" },
+    sourceName:"黒一丸（chowari）", sourceUrl:"https://www.chowari.jp/ship/00008/catch/", note:"" },
+  { id:"2026-10-04-wanko-boso-01", date:"2026-10-04", area:"wanko-boso", spot:"上総湊港（富津市） 加平丸", spotType:"沖-釣り船",
+    method:"カワハギ（乗合）", species:["カワハギ"],
+    result:"カワハギ15〜26cm 4〜13匹",
+    tideName:"小潮", waterTempC:24.8, waterTempSource:"加平丸 釣果ページ（chowari・実測）", weather:"晴れ後時々曇り", windMS:4.4, windDir:"北北東", airTempC:null,
+    nearby:{ obs:"Open-Meteo（上総湊沖）", waterTempC:23.6, weather:"曇り", windMS:7.09, windDir:"北東", waveM:0.56, airTempC:22.8, time:"2026-10-04" },
+    sourceName:"加平丸（chowari）", sourceUrl:"https://www.chowari.jp/ship/01218/catch/", note:"" },
+  { id:"2026-10-04-sagami-01", date:"2026-10-04", area:"sagami", spot:"真鶴港 誠いち丸", spotType:"沖-釣り船",
+    method:"マダイ（コマセ、深場狙い）", species:["マダイ"],
+    result:"マダイ0.4〜5.2kg 0〜3枚（潮が動かず食い渋り）。外道メダイ2.8〜3.3kg",
+    tideName:"小潮", waterTempC:24.7, waterTempSource:"誠いち丸 釣果ページ（chowari・実測）", weather:"曇り時々晴れ", windMS:5.1, windDir:"北東", airTempC:null,
+    nearby:{ obs:"Open-Meteo（真鶴沖）", waterTempC:24.1, weather:"曇り", windMS:6.37, windDir:"北東", waveM:1.4, airTempC:22.3, time:"2026-10-04" },
+    sourceName:"誠いち丸（chowari）", sourceUrl:"https://www.chowari.jp/ship/00873/catch/", note:"メダイは対象外魚種のためspeciesに含めず" },
   // ---------- 10-04 12:00回 追加分（対象期間10-03〜10-04） ----------
   { id:"2026-10-04-suruga-01", date:"2026-10-04", area:"suruga", spot:"狩野川河口付近（沼津市）", spotType:"河口",
     method:"ルアー（120mmシャローミノー）", species:["シーバス"],
