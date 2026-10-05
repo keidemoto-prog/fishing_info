@@ -135,11 +135,24 @@
  *   { obs:"観測地点名", waterTempC, weather, windMS, windDir, waveM, airTempC, time:"YYYY-MM-DD" }
  */
 window.CATCH_LOG_META = {
-  lastUpdated: "2026-10-06 00:20",
-  lastRunNote: "1件追加（東京湾奥1）"
+  lastUpdated: "2026-10-06 06:20",
+  lastRunNote: "2件追加（東京湾奥0・湾口三浦1・相模湾1・駿河湾0）"
 };
 
 window.CATCH_LOG = [
+  // ---------- 10-06 06:00回 追加分（火曜朝・通常期間 10-05〜10-06） ----------
+  { id:"2026-10-05-wanko-miura-01", date:"2026-10-05", area:"wanko-miura", spot:"新安浦港（横須賀市） こうゆう丸", spotType:"沖-釣り船",
+    method:"タチウオ", species:["タチウオ"],
+    result:"タチウオ70〜110cm 7〜27本。中型〜良型主体にメーター級・ドラゴン級混じる",
+    tideName:"小潮", waterTempC:23.3, waterTempSource:"こうゆう丸 釣果ページ（chowari・実測）", weather:"曇り", windMS:8.0, windDir:"北", airTempC:null,
+    nearby:{ obs:"Open-Meteo（横須賀沖）", waterTempC:23.2, weather:"霧雨", windMS:5.81, windDir:"北", waveM:0.96, airTempC:21.5, time:"2026-10-05" },
+    sourceName:"こうゆう丸（chowari）", sourceUrl:"https://www.chowari.jp/ship/00562/catch/", note:"" },
+  { id:"2026-10-05-sagami-02", date:"2026-10-05", area:"sagami", spot:"葉山鐙摺港（葉山町） たいぞう丸", spotType:"沖-釣り船",
+    method:"カツオ・キハダ", species:["カツオ"],
+    result:"カツオ3.6〜8.6kg（キハダ32.1kgも）",
+    tideName:"小潮", waterTempC:23.3, waterTempSource:"たいぞう丸 釣果ページ（chowari・実測）", weather:"曇り", windMS:8.0, windDir:"北", airTempC:null,
+    nearby:{ obs:"Open-Meteo（葉山沖）", waterTempC:24.4, weather:"霧雨", windMS:7.84, windDir:"北", waveM:1.44, airTempC:21.3, time:"2026-10-05" },
+    sourceName:"たいぞう丸（chowari）", sourceUrl:"https://www.chowari.jp/ship/00449/catch/", note:"" },
   // ---------- 10-06 00:00回 追加分（火曜0時・通常期間 10-05〜10-06） ----------
   { id:"2026-10-05-aoku-01", date:"2026-10-05", area:"aoku", spot:"金沢漁港（横浜市） 忠彦丸", spotType:"沖-釣り船",
     method:"ライトアジ", species:["アジ"],
