@@ -8,11 +8,54 @@
  *   { obs:"観測地点名", waterTempC, weather, windMS, windDir, waveM, airTempC, time:"YYYY-MM-DD" }
  */
 window.CATCH_LOG_META = {
-  lastUpdated: "2026-10-05 06:20",
-  lastRunNote: "3件追加（東京湾奥2・相模湾1）"
+  lastUpdated: "2026-10-05 12:20",
+  lastRunNote: "7件追加（東京湾奥2・湾口三浦2・湾口房総1・相模湾2）"
 };
 
 window.CATCH_LOG = [
+  // ---------- 10-05 12:00回 追加分（月曜昼・通常期間 10-04〜10-05） ----------
+  { id:"2026-10-04-aoku-05", date:"2026-10-04", area:"aoku", spot:"横浜 八幡橋 鴨下丸kawana（横浜沖）", spotType:"沖-釣り船",
+    method:"マダイ（極浅棚）", species:["マダイ","アジ"],
+    result:"マダイ0.4〜1.2kg 0〜5匹（トップ5枚）／中〜大アジ・クロダイ混じる",
+    tideName:"小潮", waterTempC:23.5, waterTempSource:"鴨下丸kawana 釣果ページ（chowari）", weather:"晴れ後時々曇り", windMS:null, windDir:"北北東", airTempC:24,
+    nearby:{ obs:"Open-Meteo（横須賀沖）", waterTempC:23.3, weather:"曇り", windMS:8.02, windDir:"北東", waveM:0.6, airTempC:22.5, time:"2026-10-04" },
+    sourceName:"鴨下丸kawana（chowari）", sourceUrl:"https://www.chowari.jp/ship/01509/catch/", note:"クロダイは対象外" },
+  { id:"2026-10-04-aoku-06", date:"2026-10-04", area:"aoku", spot:"金沢八景 平潟 米元釣船店（一日便）", spotType:"沖-釣り船",
+    method:"マダイ（水深25m前後）", species:["マダイ","アジ"],
+    result:"マダイ0.4〜2.4kg 0〜7匹／アジ・クロダイ・イシダイ混じる（前半にアタリ集中、ハリス切れあり）",
+    tideName:"小潮", waterTempC:23.6, waterTempSource:"米元釣船店 釣果ページ（chowari）", weather:"晴れ後時々曇り", windMS:null, windDir:"北北東", airTempC:24,
+    nearby:{ obs:"Open-Meteo（横須賀沖）", waterTempC:23.3, weather:"曇り", windMS:8.02, windDir:"北東", waveM:0.6, airTempC:22.5, time:"2026-10-04" },
+    sourceName:"米元釣船店（chowari）", sourceUrl:"https://www.chowari.jp/ship/00836/catch/", note:"" },
+  { id:"2026-10-04-wanko-miura-03", date:"2026-10-04", area:"wanko-miura", spot:"走水沖 米元釣船店（金沢八景平潟発）", spotType:"沖-釣り船",
+    method:"タチウオ（ショート便・テンヤ可・棚40〜60m）", species:["タチウオ"],
+    result:"タチウオ65〜121cm 1〜15匹（F2〜F3中心、F4良型も）。テンヤ3〜15本",
+    tideName:"小潮", waterTempC:23.6, waterTempSource:"米元釣船店 釣果ページ（chowari）", weather:"晴れ後時々曇り", windMS:null, windDir:"北北東", airTempC:24,
+    nearby:{ obs:"Open-Meteo（走水沖）", waterTempC:23.3, weather:"晴れ時々曇り", windMS:8.36, windDir:"北東", waveM:0.6, airTempC:22.7, time:"2026-10-04" },
+    sourceName:"米元釣船店（chowari）", sourceUrl:"https://www.chowari.jp/ship/00836/catch/", note:"" },
+  { id:"2026-10-04-wanko-miura-04", date:"2026-10-04", area:"wanko-miura", spot:"城ヶ島東側 ちがさき丸（茅ヶ崎港発）1号船", spotType:"沖-釣り船",
+    method:"カツオ・キメジ（エビング）", species:["カツオ","ソウダガツオ"],
+    result:"カツオ4.5〜8.8kg 0〜2本（トップ2本）・ヒラソーダ交じり／キメジ2本。大型が多くバラシ多数",
+    tideName:"小潮", waterTempC:24.6, waterTempSource:"ちがさき丸 釣果ページ（chowari）", weather:"晴れ後時々曇り", windMS:null, windDir:"北北東", airTempC:24,
+    nearby:{ obs:"Open-Meteo（城ヶ島沖）", waterTempC:25.4, weather:"曇り", windMS:10.16, windDir:"北東", waveM:1.04, airTempC:23.0, time:"2026-10-04" },
+    sourceName:"ちがさき丸（chowari）", sourceUrl:"https://www.chowari.jp/ship/01079/catch/", note:"キメジは対象外" },
+  { id:"2026-10-04-sagami-04", date:"2026-10-04", area:"sagami", spot:"茅ヶ崎港 まごうの丸", spotType:"沖-釣り船",
+    method:"タイ五目・LTアマダイ・本ガツオ／キハダ・ライト五目", species:["マダイ","アマダイ","カツオ","カンパチ"],
+    result:"マダイ0.8〜3.0kg 0〜2匹／アマダイ20〜53cm 1〜5匹／ホンガツオ2.3〜8.3kg 0〜1本／カンパチ30〜38cm 0〜3匹／キメジ0〜1本",
+    tideName:"小潮", waterTempC:24.6, waterTempSource:"まごうの丸 釣果ページ（chowari）", weather:"晴れ後時々曇り", windMS:null, windDir:"北北東", airTempC:24,
+    nearby:{ obs:"Open-Meteo（茅ヶ崎沖）", waterTempC:24.3, weather:"晴れ時々曇り", windMS:8.14, windDir:"北東", waveM:0.94, airTempC:22.8, time:"2026-10-04" },
+    sourceName:"まごうの丸（chowari）", sourceUrl:"https://www.chowari.jp/ship/00448/catch/", note:"キメジは対象外" },
+  { id:"2026-10-04-sagami-05", date:"2026-10-04", area:"sagami", spot:"茅ヶ崎港 ちがさき丸 3号船（LT五目）", spotType:"沖-釣り船",
+    method:"LT五目（アジ・サバ狙い→五目）", species:["アジ","ソウダガツオ","マダイ","カンパチ"],
+    result:"アジ22〜38cm 7〜38匹／ヒラソウダ・マダイ・カンパチ・ヘダイ・ハナダイ・カイワリ交じり",
+    tideName:"小潮", waterTempC:24.6, waterTempSource:"ちがさき丸 釣果ページ（chowari）", weather:"晴れ後時々曇り", windMS:null, windDir:"北北東", airTempC:24,
+    nearby:{ obs:"Open-Meteo（茅ヶ崎沖）", waterTempC:24.3, weather:"晴れ時々曇り", windMS:8.14, windDir:"北東", waveM:0.94, airTempC:22.8, time:"2026-10-04" },
+    sourceName:"ちがさき丸（chowari）", sourceUrl:"https://www.chowari.jp/ship/01079/catch/", note:"" },
+  { id:"2026-10-04-wanko-boso-03", date:"2026-10-04", area:"wanko-boso", spot:"竹岡港（富津市） 豊国丸", spotType:"沖-釣り船",
+    method:"一つテンヤ（マダイ）", species:["マダイ","ブリ"],
+    result:"マダイ合計3匹（最大2.25kg）／ブリ5.7kg（一つテンヤ）。二枚潮で苦戦・バラシ連発",
+    tideName:"小潮", waterTempC:24.8, waterTempSource:"豊国丸 釣果ページ（chowari）", weather:"晴れ後時々曇り", windMS:null, windDir:"北北東", airTempC:25,
+    nearby:{ obs:"Open-Meteo（竹岡沖）", waterTempC:24.7, weather:"曇り", windMS:7.37, windDir:"北東", waveM:0.76, airTempC:23.0, time:"2026-10-04" },
+    sourceName:"豊国丸（chowari）", sourceUrl:"https://www.chowari.jp/ship/01209/catch/", note:"" },
   // ---------- 10-05 06:00回 追加分（月曜朝＝10-02〜10-05対象） ----------
   { id:"2026-10-04-aoku-04", date:"2026-10-04", area:"aoku", spot:"京浜島・勝島運河（品川区） 小林丸", spotType:"沖-釣り船",
     method:"シロギス", species:["キス（シロギス）","アジ","マダイ"],
