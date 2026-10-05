@@ -135,11 +135,18 @@
  *   { obs:"観測地点名", waterTempC, weather, windMS, windDir, waveM, airTempC, time:"YYYY-MM-DD" }
  */
 window.CATCH_LOG_META = {
-  lastUpdated: "2026-10-05 12:20",
-  lastRunNote: "7件追加（東京湾奥2・湾口三浦2・湾口房総1・相模湾2）"
+  lastUpdated: "2026-10-05 18:20",
+  lastRunNote: "1件追加（相模湾1）"
 };
 
 window.CATCH_LOG = [
+  // ---------- 10-05 18:00回 追加分（月曜夕・通常期間 10-04〜10-05） ----------
+  { id:"2026-10-05-sagami-01", date:"2026-10-05", area:"sagami", spot:"佐島港（横須賀市） 佐島海楽園", spotType:"沖-釣り船",
+    method:"カワハギ", species:["カワハギ"],
+    result:"カワハギ15〜29cm 5〜13匹（トップ13匹）。濁りあり・潮ほぼ動かず",
+    tideName:"", waterTempC:23.3, waterTempSource:"佐島海楽園 釣果ページ（chowari）", weather:"", windMS:null, windDir:"", airTempC:null,
+    nearby:{ obs:"Open-Meteo（佐島沖）", waterTempC:25.7, weather:"曇り", windMS:9.61, windDir:"北", waveM:2.0, airTempC:21.9, time:"2026-10-05" },
+    sourceName:"佐島海楽園（chowari）", sourceUrl:"https://www.chowari.jp/ship/00296/", note:"" },
   // ---------- 10-05 12:00回 追加分（月曜昼・通常期間 10-04〜10-05） ----------
   { id:"2026-10-04-aoku-05", date:"2026-10-04", area:"aoku", spot:"横浜 八幡橋 鴨下丸kawana（横浜沖）", spotType:"沖-釣り船",
     method:"マダイ（極浅棚）", species:["マダイ","アジ"],
