@@ -8,11 +8,18 @@
  *   { obs:"観測地点名", waterTempC, weather, windMS, windDir, waveM, airTempC, time:"YYYY-MM-DD" }
  */
 window.CATCH_LOG_META = {
-  lastUpdated: "2026-10-05 18:20",
-  lastRunNote: "1件追加（相模湾1）"
+  lastUpdated: "2026-10-06 00:20",
+  lastRunNote: "1件追加（東京湾奥1）"
 };
 
 window.CATCH_LOG = [
+  // ---------- 10-06 00:00回 追加分（火曜0時・通常期間 10-05〜10-06） ----------
+  { id:"2026-10-05-aoku-01", date:"2026-10-05", area:"aoku", spot:"金沢漁港（横浜市） 忠彦丸", spotType:"沖-釣り船",
+    method:"ライトアジ", species:["アジ"],
+    result:"アジが釣れた（匹数・サイズの記載なし）",
+    tideName:"小潮", waterTempC:23.3, waterTempSource:"忠彦丸 釣果ページ（chowari）", weather:"曇り", windMS:8.0, windDir:"北", airTempC:null,
+    nearby:{ obs:"Open-Meteo（金沢沖）", waterTempC:23.2, weather:"霧雨", windMS:7.6, windDir:"北", waveM:0.96, airTempC:21.7, time:"2026-10-05" },
+    sourceName:"忠彦丸（chowari）", sourceUrl:"https://www.chowari.jp/ship/00703/catch/", note:"" },
   // ---------- 10-05 18:00回 追加分（月曜夕・通常期間 10-04〜10-05） ----------
   { id:"2026-10-05-sagami-01", date:"2026-10-05", area:"sagami", spot:"佐島港（横須賀市） 佐島海楽園", spotType:"沖-釣り船",
     method:"カワハギ", species:["カワハギ"],
