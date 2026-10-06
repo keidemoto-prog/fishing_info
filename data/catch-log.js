@@ -8,11 +8,36 @@
  *   { obs:"観測地点名", waterTempC, weather, windMS, windDir, waveM, airTempC, time:"YYYY-MM-DD" }
  */
 window.CATCH_LOG_META = {
-  lastUpdated: "2026-10-06 06:20",
-  lastRunNote: "2件追加（東京湾奥0・湾口三浦1・相模湾1・駿河湾0）"
+  lastUpdated: "2026-10-06 12:20",
+  lastRunNote: "4件追加（東京湾奥1・湾口三浦1・相模湾0・駿河湾2）"
 };
 
 window.CATCH_LOG = [
+  // ---------- 10-06 12:00回 追加分（火曜昼・通常期間 10-05〜10-06） ----------
+  { id:"2026-10-06-wanko-miura-01", date:"2026-10-06", area:"wanko-miura", spot:"走水港（横須賀市） 治丸", spotType:"沖-釣り船",
+    method:"タチウオ", species:["タチウオ"],
+    result:"タチウオ70〜95cm 1〜4匹（7:00〜11:00早上がり）。釣り始めはパラパラと上がり、潮が緩むとパタリと食いが止まった",
+    tideName:"若潮", waterTempC:23.2, waterTempSource:"治丸 釣果ページ（chowari・実測）", weather:"", windMS:5.9, windDir:"北北東", airTempC:null,
+    nearby:{ obs:"Open-Meteo（走水沖）", waterTempC:23.4, weather:"曇り", windMS:10.01, windDir:"北", waveM:1.36, airTempC:23.7, time:"2026-10-06" },
+    sourceName:"治丸（chowari）", sourceUrl:"https://www.chowari.jp/ship/00877/catch/", note:"" },
+  { id:"2026-10-05-aoku-02", date:"2026-10-05", area:"aoku", spot:"木場（江東区） 深川吉野屋（扇島沖〜湾奥・海堡北〜走水沖）", spotType:"沖-釣り船",
+    method:"マアジ船・サワラ船・タチウオ船", species:["アジ","サワラ","タチウオ"],
+    result:"マアジ16〜32cm 33〜85匹（25〜30cm超の良型主体）／サワラ55〜88cm 0〜7匹（後半に極太サワラ、今季一番サイズ）／タチウオ65〜112cm 6〜43匹（海堡北側の浅場、ジグ）（3便を1記事扱いで統合）",
+    tideName:"長潮", waterTempC:23.2, waterTempSource:"chowari 釣行当日の気象（実測水温）", weather:"", windMS:6.8, windDir:"北", airTempC:null,
+    nearby:{ obs:"Open-Meteo（東京湾奥・扇島沖）", waterTempC:22.6, weather:"霧雨", windMS:7.53, windDir:"北", waveM:0.56, airTempC:21.7, time:"2026-10-05" },
+    sourceName:"深川吉野屋（chowari）", sourceUrl:"https://www.chowari.jp/ship/00271/catch/", note:"" },
+  { id:"2026-10-05-suruga-01", date:"2026-10-05", area:"suruga", spot:"三保サーフ（静岡市清水区）", spotType:"砂浜",
+    method:"エギング", species:["アオリイカ"],
+    result:"アオリイカ200〜300g 3杯。夕マズメに連発（エギングロッド8.3ft・2500番）",
+    tideName:"長潮", waterTempC:null, waterTempSource:"", weather:"", windMS:null, windDir:"", airTempC:null,
+    nearby:{ obs:"Open-Meteo（三保沖）", waterTempC:24.7, weather:"霧雨", windMS:8.34, windDir:"北東", waveM:0.96, airTempC:25.1, time:"2026-10-05" },
+    sourceName:"かめや釣具 清水店", sourceUrl:"https://kameya-choka.com/kanto-tokai/archives/f-info/544489", note:"" },
+  { id:"2026-10-04-suruga-01", date:"2026-10-04", area:"suruga", spot:"富士サーフ（富士市）", spotType:"砂浜",
+    method:"メタルジグ（夜釣り）", species:["タチウオ"],
+    result:"タチウオ F4まで 2匹（メタルジグ40g・夜釣り）。富士サーフではタチウオの釣果が上がってきており、エサ釣り・波止テンヤでも釣れている",
+    tideName:"小潮", waterTempC:null, waterTempSource:"", weather:"", windMS:null, windDir:"", airTempC:null,
+    nearby:{ obs:"Open-Meteo（富士沖）", waterTempC:24.6, weather:"晴れ時々曇り", windMS:11.72, windDir:"東", waveM:0.82, airTempC:23.3, time:"2026-10-04" },
+    sourceName:"かめや釣具 富士店", sourceUrl:"https://kameya-choka.com/kanto-tokai/archives/f-info/544462", note:"" },
   // ---------- 10-06 06:00回 追加分（火曜朝・通常期間 10-05〜10-06） ----------
   { id:"2026-10-05-wanko-miura-01", date:"2026-10-05", area:"wanko-miura", spot:"新安浦港（横須賀市） こうゆう丸", spotType:"沖-釣り船",
     method:"タチウオ", species:["タチウオ"],
