@@ -135,11 +135,36 @@
  *   { obs:"観測地点名", waterTempC, weather, windMS, windDir, waveM, airTempC, time:"YYYY-MM-DD" }
  */
 window.CATCH_LOG_META = {
-  lastUpdated: "2026-10-07 00:20",
-  lastRunNote: "3件追加（東京湾奥0・湾口三浦1・湾口房総1・相模湾0・駿河湾1）"
+  lastUpdated: "2026-10-07 06:15",
+  lastRunNote: "4件追加（東京湾奥0・湾口三浦2・湾口房総1・相模湾1・駿河湾0）"
 };
 
 window.CATCH_LOG = [
+  // ---------- 10-07 06:00回 追加分（水曜朝・通常期間 10-06〜10-07） ----------
+  { id:"2026-10-06-wanko-miura-05", date:"2026-10-06", area:"wanko-miura", spot:"剣崎沖 巳之助丸", spotType:"沖-釣り船",
+    method:"アマダイ", species:["アマダイ"],
+    result:"アマダイ30〜43cm 0〜2匹（トップ2匹、最大43cm）。キダイ交じり",
+    tideName:"若潮", waterTempC:23.3, waterTempSource:"巳之助丸 釣果ページ（chowari・実測）", weather:"曇り時々晴れ", windMS:5.9, windDir:"北北東", airTempC:28,
+    nearby:{ obs:"Open-Meteo（剣崎沖）", waterTempC:26.3, weather:"曇り", windMS:9.6, windDir:"北", waveM:2.82, airTempC:24.8, time:"2026-10-06" },
+    sourceName:"巳之助丸（久比里港・chowari）", sourceUrl:"https://www.chowari.jp/ship/00288/catch/", note:"nearbyの水温・波高は陸寄りグリッドで実態と乖離の可能性（実測23.3℃）。同船・同日のアジ便は 2026-10-06-wanko-miura-06、カワハギ便は 2026-10-06-wanko-boso-03" },
+  { id:"2026-10-06-wanko-miura-06", date:"2026-10-06", area:"wanko-miura", spot:"観音崎沖 巳之助丸", spotType:"沖-釣り船",
+    method:"LTアジ（ビシアジ）", species:["アジ"],
+    result:"アジ21〜36cm 40〜130匹（トップ130匹）。朝から活性高く2点3点掛け連発、小型主体。下げ〜上げの二枚潮",
+    tideName:"若潮", waterTempC:null, waterTempSource:"", weather:"", windMS:null, windDir:"", airTempC:null,
+    nearby:{ obs:"Open-Meteo（観音崎沖）", waterTempC:23.3, weather:"曇り", windMS:10.1, windDir:"北", waveM:1.3, airTempC:24.5, time:"2026-10-06" },
+    sourceName:"巳之助丸（久比里港・chowari）", sourceUrl:"https://www.chowari.jp/ship/00288/catch/", note:"" },
+  { id:"2026-10-06-wanko-boso-03", date:"2026-10-06", area:"wanko-boso", spot:"竹岡沖 巳之助丸", spotType:"沖-釣り船",
+    method:"カワハギ", species:["カワハギ"],
+    result:"カワハギ15〜30cm 0〜18匹（2隻出し、トップ18匹）。台風のうねりと濁り潮で苦戦、移動を重ねる",
+    tideName:"若潮", waterTempC:null, waterTempSource:"", weather:"", windMS:null, windDir:"", airTempC:null,
+    nearby:{ obs:"Open-Meteo（竹岡〜金谷沖 35.10,139.80）", waterTempC:25.0, weather:"曇り", windMS:9.49, windDir:"北", waveM:2.28, airTempC:24.9, time:"2026-10-06" },
+    sourceName:"巳之助丸（久比里港・chowari）", sourceUrl:"https://www.chowari.jp/ship/00288/catch/", note:"" },
+  { id:"2026-10-sagami-01", date:"2026-10", area:"sagami", spot:"平塚近辺のサーフ", spotType:"砂浜",
+    method:"ジグサビキ（メタルジグ30g）", species:["カマス"],
+    result:"カマス1匹。ジグではなくサビキに食った",
+    tideName:"", waterTempC:null, waterTempSource:"", weather:"", windMS:null, windDir:"", airTempC:null,
+    nearby:null,
+    sourceName:"かめや釣具 平塚店", sourceUrl:"https://kameya-choka.com/kanto-tokai/archives/f-info/544496", note:"釣行日は「10月上旬」で日付不明のため年-月のみ" },
   // ---------- 10-07 00:00回 追加分（水曜0時・通常期間 10-06〜10-07） ----------
   { id:"2026-10-06-wanko-boso-02", date:"2026-10-06", area:"wanko-boso", spot:"保田港（鋸南町） 東丸", spotType:"沖-釣り船",
     method:"マダイ・イナダ", species:["マダイ"],

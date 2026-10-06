@@ -9,3 +9,26 @@
 build-single: source = 釣果ログ.html
 build-single: all-in-one 397572 chars / docs/index.html 397572 / dist/artifact.html 397413
 === 2026-10-07 00:03 end (claude exit 0) ===
+git: push exit 0, unpushed commits: 0
+
+=== 2026-10-07 06:00 start ===
+I ran all 9 steps in `蜿朱寔謇矩・md` for the 06:00 run, which covers October 6窶・. I added 4 new catch records to `data/catch-log.js`.
+
+| Boat / shop | Date | Place | Catch |
+|---|---|---|---|
+| 蟾ｳ荵句勧荳ｸ | 10/6 | 蜑｣蟠取ｲ・(貉ｾ蜿｣荳画ｵｦ) | 繧｢繝槭ム繧､ 30窶・3cm, 0窶・ per angler; water temp 23.3邃・from the boat's own report |
+| 蟾ｳ荵句勧荳ｸ | 10/6 | 隕ｳ髻ｳ蟠取ｲ・(貉ｾ蜿｣荳画ｵｦ) | 繧｢繧ｸ 21窶・6cm, 40窶・30 per angler |
+| 蟾ｳ荵句勧荳ｸ | 10/6 | 遶ｹ蟯｡豐・(貉ｾ蜿｣謌ｿ邱・ | 繧ｫ繝ｯ繝上ぐ 15窶・0cm, 0窶・8 per angler |
+| 縺九ａ繧・ｹｳ蝪壼ｺ・| early October | 蟷ｳ蝪・surf (逶ｸ讓｡貉ｾ) | 繧ｫ繝槭せ ﾃ・ |
+
+- **Dates:** The 繧ｫ繝槭せ report only says "early October", so its date is recorded as month-only ("2026-10") and it has no nearby weather data.
+- **Nearby conditions:** The other three use weather and sea data from Open-Meteo. For 蜑｣蟠取ｲ・ Open-Meteo gives a water temperature of 26.3邃・ but the boat measured 23.3邃・ I noted that on the record.
+- **Check:** The updated file loads correctly as JavaScript and now has 624 records. `lastUpdated` and `lastRunNote` are updated, and the run notes are in `logs/2026-10-07.md`.
+- **Skipped:** Two boats in Niigata and Fukui (outside the target areas), and 縺九ａ繧・ｰ冗伐蜴溷ｺ・s "50 繧ｿ繝√え繧ｪ from the breakwater" post, because it gives no date or place. Nothing from October 7 had been posted yet, and the YouTube search found nothing usable.
+
+**Needs your decision:** Two older records share the same ID, `2026-10-04-suruga-01`. They aren't from this run, and I left them alone because the instructions only allow fixing records that are clearly wrong. You may want to rename one.
+
+As the instructions say, I stopped there. `run-collect.ps1` regenerates the single-file HTML pages, and the phone page has to be updated separately. I didn't commit anything and didn't create any files in the folder.
+build-single: source = 釣果ログ.html
+build-single: all-in-one 399907 chars / docs/index.html 399907 / dist/artifact.html 399748
+=== 2026-10-07 06:01 end (claude exit 0) ===
