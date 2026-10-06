@@ -8,11 +8,36 @@
  *   { obs:"観測地点名", waterTempC, weather, windMS, windDir, waveM, airTempC, time:"YYYY-MM-DD" }
  */
 window.CATCH_LOG_META = {
-  lastUpdated: "2026-10-06 12:20",
-  lastRunNote: "4件追加（東京湾奥1・湾口三浦1・相模湾0・駿河湾2）"
+  lastUpdated: "2026-10-06 18:20",
+  lastRunNote: "4件追加（東京湾奥1・湾口三浦2・湾口房総1・相模湾0・駿河湾0）"
 };
 
 window.CATCH_LOG = [
+  // ---------- 10-06 18:00回 追加分（火曜夕・通常期間 10-05〜10-06） ----------
+  { id:"2026-10-06-wanko-miura-02", date:"2026-10-06", area:"wanko-miura", spot:"走水港（横須賀市） 政信丸", spotType:"沖-釣り船",
+    method:"アジ船", species:["アジ","カサゴ","マダイ","サワラ"],
+    result:"アジ20〜42cm 7〜76匹（平均25cm、黄金アジ）。外道にカサゴ・マダイ・サワラが混じる",
+    tideName:"若潮", waterTempC:23.2, waterTempSource:"政信丸 釣果ページ（chowari・実測）", weather:"晴れ時々曇り", windMS:5.9, windDir:"北北東", airTempC:28,
+    nearby:{ obs:"Open-Meteo（走水沖）", waterTempC:23.4, weather:"曇り", windMS:10.23, windDir:"北", waveM:1.36, airTempC:24.1, time:"2026-10-06" },
+    sourceName:"政信丸（chowari）", sourceUrl:"https://www.chowari.jp/ship/00861/catch/", note:"" },
+  { id:"2026-10-06-wanko-miura-03", date:"2026-10-06", area:"wanko-miura", spot:"間口漁港（三浦市） 孫武丸", spotType:"沖-釣り船",
+    method:"マダイ・イナダ", species:["マダイ","イナダ"],
+    result:"マダイ0.6〜1.5kg 2〜4匹／イナダ1.0〜1.2kg 1〜5匹。朝は潮が速く食い渋ったが、潮が緩んでから安定",
+    tideName:"若潮", waterTempC:24.9, waterTempSource:"孫武丸 釣果ページ（chowari・実測）", weather:"曇り時々晴れ", windMS:8.1, windDir:"北北東", airTempC:null,
+    nearby:{ obs:"Open-Meteo（間口沖）", waterTempC:26.3, weather:"曇り", windMS:9.81, windDir:"北", waveM:3.36, airTempC:24.5, time:"2026-10-06" },
+    sourceName:"孫武丸（chowari）", sourceUrl:"https://www.chowari.jp/ship/00916/catch/", note:"nearbyの水温・波高はグリッドが陸寄りで実態と乖離の可能性（実測は24.9℃）" },
+  { id:"2026-10-06-wanko-boso-01", date:"2026-10-06", area:"wanko-boso", spot:"金谷漁港（富津市） 勘次郎丸", spotType:"沖-釣り船",
+    method:"アジ船", species:["アジ"],
+    result:"アジ24〜38cm 31〜69匹。今日も型揃い",
+    tideName:"若潮", waterTempC:24.9, waterTempSource:"勘次郎丸 釣果ページ（chowari・実測）", weather:"曇り時々晴れ", windMS:5.2, windDir:"北北東", airTempC:null,
+    nearby:{ obs:"Open-Meteo（金谷沖）", waterTempC:24.4, weather:"曇り", windMS:9.52, windDir:"北", waveM:1.74, airTempC:24.4, time:"2026-10-06" },
+    sourceName:"勘次郎丸（chowari）", sourceUrl:"https://www.chowari.jp/ship/00984/catch/", note:"" },
+  { id:"2026-10-06-aoku-01", date:"2026-10-06", area:"aoku", spot:"金沢八景（横浜市） 黒川丸", spotType:"沖-釣り船",
+    method:"アジ船", species:["アジ"],
+    result:"アジ18〜26cm 26〜72匹。朝イチから良型が好反応。別船のタチウオは前半全員安打、後半はアジも",
+    tideName:"若潮", waterTempC:23.2, waterTempSource:"黒川丸 釣果ページ（chowari・実測）", weather:"曇り時々晴れ", windMS:5.9, windDir:"北北東", airTempC:28,
+    nearby:{ obs:"Open-Meteo（金沢沖）", waterTempC:23.4, weather:"曇り", windMS:8.51, windDir:"北", waveM:1.36, airTempC:24.3, time:"2026-10-06" },
+    sourceName:"黒川丸（chowari）", sourceUrl:"https://www.chowari.jp/ship/00150/catch/", note:"" },
   // ---------- 10-06 12:00回 追加分（火曜昼・通常期間 10-05〜10-06） ----------
   { id:"2026-10-06-wanko-miura-01", date:"2026-10-06", area:"wanko-miura", spot:"走水港（横須賀市） 治丸", spotType:"沖-釣り船",
     method:"タチウオ", species:["タチウオ"],
