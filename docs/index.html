@@ -135,11 +135,30 @@
  *   { obs:"観測地点名", waterTempC, weather, windMS, windDir, waveM, airTempC, time:"YYYY-MM-DD" }
  */
 window.CATCH_LOG_META = {
-  lastUpdated: "2026-10-06 18:20",
-  lastRunNote: "4件追加（東京湾奥1・湾口三浦2・湾口房総1・相模湾0・駿河湾0）"
+  lastUpdated: "2026-10-07 00:20",
+  lastRunNote: "3件追加（東京湾奥0・湾口三浦1・湾口房総1・相模湾0・駿河湾1）"
 };
 
 window.CATCH_LOG = [
+  // ---------- 10-07 00:00回 追加分（水曜0時・通常期間 10-06〜10-07） ----------
+  { id:"2026-10-06-wanko-boso-02", date:"2026-10-06", area:"wanko-boso", spot:"保田港（鋸南町） 東丸", spotType:"沖-釣り船",
+    method:"マダイ・イナダ", species:["マダイ"],
+    result:"マダイ1.2〜3.1kg 0〜3匹（2kgクラス4匹）。潮が速く二枚潮で糸絡みに苦戦、イナダは不発",
+    tideName:"若潮", waterTempC:24.9, waterTempSource:"東丸 釣果ページ（chowari・実測）", weather:"曇り時々晴れ", windMS:5.2, windDir:"北北東", airTempC:28,
+    nearby:{ obs:"Open-Meteo（保田沖）", waterTempC:25.0, weather:"曇り", windMS:8.54, windDir:"北", waveM:2.28, airTempC:24.8, time:"2026-10-06" },
+    sourceName:"東丸（chowari）", sourceUrl:"https://www.chowari.jp/ship/01018/", note:"" },
+  { id:"2026-10-06-wanko-miura-04", date:"2026-10-06", area:"wanko-miura", spot:"松輪江奈漁港（三浦市） 棒面丸", spotType:"沖-釣り船",
+    method:"ライトタックルマダイ", species:["マダイ","サバ","アジ"],
+    result:"剣崎沖・水深約40mでマダイ・イサキ交じり「良い感じ」。サバ・アジ・ウスバハギも混じる（匹数の記載なし）",
+    tideName:"若潮", waterTempC:24.9, waterTempSource:"棒面丸 釣果ページ（chowari・実測）", weather:"曇り時々晴れ", windMS:8.1, windDir:"北北東", airTempC:28,
+    nearby:{ obs:"Open-Meteo（剣崎沖）", waterTempC:26.3, weather:"曇り", windMS:9.6, windDir:"北", waveM:2.82, airTempC:24.8, time:"2026-10-06" },
+    sourceName:"棒面丸（chowari）", sourceUrl:"https://www.chowari.jp/ship/00331/", note:"nearbyの水温・波高はグリッドが陸寄りで実態と乖離の可能性（実測は24.9℃）。chowariの潮名表記は10/6=若潮に統一" },
+  { id:"2026-10-06-suruga-01", date:"2026-10-06", area:"suruga", spot:"焼津小川港（焼津市） 橋安丸", spotType:"沖-釣り船",
+    method:"タチウオジギング", species:["タチウオ"],
+    result:"タチウオ 3〜9本程度（F3〜F3.5のジグ）。朝のうねりで青物から切り替え、渋め",
+    tideName:"若潮", waterTempC:24.7, waterTempSource:"橋安丸 釣果ページ（chowari・実測）", weather:"晴れ後時々曇り", windMS:0.2, windDir:"北東", airTempC:30,
+    nearby:{ obs:"Open-Meteo（焼津沖）", waterTempC:24.9, weather:"晴れ時々曇り", windMS:9.02, windDir:"南東", waveM:2.26, airTempC:25.5, time:"2026-10-06" },
+    sourceName:"橋安丸（chowari）", sourceUrl:"https://www.chowari.jp/ship/01719/", note:"本数は「9-3」表記を3〜9本と解釈" },
   // ---------- 10-06 18:00回 追加分（火曜夕・通常期間 10-05〜10-06） ----------
   { id:"2026-10-06-wanko-miura-02", date:"2026-10-06", area:"wanko-miura", spot:"走水港（横須賀市） 政信丸", spotType:"沖-釣り船",
     method:"アジ船", species:["アジ","カサゴ","マダイ","サワラ"],
