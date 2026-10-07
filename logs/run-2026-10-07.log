@@ -51,3 +51,31 @@ git: push exit 0, unpushed commits: 0
 build-single: source = 釣果ログ.html
 build-single: all-in-one 401752 chars / docs/index.html 401752 / dist/artifact.html 401593
 === 2026-10-07 12:02 end (claude exit 0) ===
+git: push exit 0, unpushed commits: 0
+
+=== 2026-10-07 18:00 start ===
+I ran all 9 steps in `蜿朱寔謇矩・md` for this evening's run (2026-10-07 18:00, covering fishing on 10/06窶・0/07). **36 new catch records** are now in `data/catch-log.js`.
+
+**What was added**
+- **By area:** Tokyo inner bay 6, Tokyo Bay mouth (Miura side) 17, Tokyo Bay mouth (Bﾅ行ﾅ・side) 5, Sagami Bay 6, Suruga Bay 2.
+- **Source:** all 36 come from each boat's own catch page on chowari.jp. The water temperature, tide, weather and wind are the boat's own figures.
+- **Nearby conditions:** I filled the "nearby" sea and weather readings from Open-Meteo for 13 spots near where the boats fished.
+- **Main catches:** yellowtail (繧､繝翫ム/繝ｯ繝ｩ繧ｵ) and red sea bream off Matsuwa and Kurihama, horse mackerel boats around Kanazawa and Kannonzaki, cutlassfish off Hashirimizu, filefish at Katsuyama and Sunosaki, red grouper at Nagai, and tilefish at Shimizu.
+
+**Checks**
+- The file still loads as valid JavaScript: 663 records (627 before + 36).
+- A script confirmed none of the new records repeats an existing date + spot, and none repeats an existing record ID.
+- I updated `lastUpdated` and `lastRunNote` at the top of the file. The run notes, URLs checked and rejected items are in `logs/2026-10-07.md`.
+- Only `data/catch-log.js` and `logs/2026-10-07.md` were changed. No new files were created in `驥｣繧・`, and my temporary scripts are deleted.
+
+**Things you should know**
+- **Earlier runs were missing reports.** Many 10/06 catches were on chowari list pages 3窶・, which the earlier runs apparently didn't reach. I added those too. I stopped at page 9, so the next run should look at page 10 onward.
+- **Not checked this time:** YouTube and most boat-shop blogs (Nakane Boat and others). The Kameya and Ishidamaru blogs had nothing new, and the Fishing Vision catch page returned "page not found".
+- **繧､繝翫Ρ繝ｩ (mid-size yellowtail):** fish of 2.7窶・ kg were recorded as 繝ｯ繝ｩ繧ｵ, matching how a 2.5 kg catch was recorded before. One with no size given was recorded as 繧､繝翫ム.
+- **Left out:** squid catches, and fish not on the target list, such as 繧､繧ｵ繧ｭ. Boats from Itﾅ・and Shimoda are outside the three bays, so I left them out too.
+- **Open-Meteo vs boats:** between Matsuwa and Nagai, its water temperatures run 1窶・ 邃・warmer than the boats' own readings.
+
+As the instructions say, `run-collect.ps1` rebuilds the single-file HTML after this. The smartphone page has to be updated separately.
+build-single: source = 釣果ログ.html
+build-single: all-in-one 423636 chars / docs/index.html 423636 / dist/artifact.html 423477
+=== 2026-10-07 18:07 end (claude exit 0) ===
