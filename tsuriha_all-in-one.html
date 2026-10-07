@@ -135,11 +135,30 @@
  *   { obs:"観測地点名", waterTempC, weather, windMS, windDir, waveM, airTempC, time:"YYYY-MM-DD" }
  */
 window.CATCH_LOG_META = {
-  lastUpdated: "2026-10-07 06:15",
-  lastRunNote: "4件追加（東京湾奥0・湾口三浦2・湾口房総1・相模湾1・駿河湾0）"
+  lastUpdated: "2026-10-07 12:20",
+  lastRunNote: "3件追加（東京湾奥2・湾口三浦0・湾口房総1・相模湾0・駿河湾0）"
 };
 
 window.CATCH_LOG = [
+  // ---------- 10-07 12:00回 追加分（水曜昼・通常期間 10-06〜10-07） ----------
+  { id:"2026-10-07-aoku-01", date:"2026-10-07", area:"aoku", spot:"江戸川放水路 林遊船", spotType:"沖-釣り船",
+    method:"ルアー五目（キャスティング・ジギング）", species:["サワラ"],
+    result:"サワラ70〜90cm 0〜3匹（午前ルアー五目チャーター、船中9匹）",
+    tideName:"中潮", waterTempC:23.1, waterTempSource:"林遊船 釣果ページ（chowari・実測）", weather:"曇り時々晴れ", windMS:6.4, windDir:"北北西", airTempC:null,
+    nearby:{ obs:"Open-Meteo（船橋〜市川沖）", waterTempC:22.4, weather:"曇り", windMS:8.3, windDir:"北", waveM:0.32, airTempC:22.4, time:"2026-10-07" },
+    sourceName:"林遊船（chowari）", sourceUrl:"https://www.chowari.jp/ship/00880/catch/", note:"" },
+  { id:"2026-10-06-aoku-02", date:"2026-10-06", area:"aoku", spot:"江戸川放水路 林遊船", spotType:"沖-釣り船",
+    method:"ルアー五目（キャスティング・ジギング）", species:["サワラ"],
+    result:"サワラ75〜83cm 1〜3匹（全員安打）",
+    tideName:"若潮", waterTempC:23.1, waterTempSource:"林遊船 釣果ページ（chowari・実測）", weather:"曇り時々晴れ", windMS:5.1, windDir:"北北東", airTempC:null,
+    nearby:{ obs:"Open-Meteo（船橋〜市川沖）", waterTempC:22.5, weather:"曇り", windMS:9.1, windDir:"北", waveM:0.38, airTempC:24.8, time:"2026-10-06" },
+    sourceName:"林遊船（chowari）", sourceUrl:"https://www.chowari.jp/ship/00880/catch/", note:"" },
+  { id:"2026-10-06-wanko-boso-04", date:"2026-10-06", area:"wanko-boso", spot:"竹岡港（富津市） 豊国丸", spotType:"沖-釣り船",
+    method:"マダイ（コマセ・ジギング）", species:["マダイ","カサゴ"],
+    result:"マダイ 船中7枚（最大4.05kg）、カサゴ交じり。前半は二枚潮で苦戦、後半上げ潮で型が出て早上がり",
+    tideName:"若潮", waterTempC:24.9, waterTempSource:"豊国丸 釣果ページ（chowari・実測）", weather:"曇り時々晴れ", windMS:4.6, windDir:"北北東", airTempC:null,
+    nearby:{ obs:"Open-Meteo（竹岡沖）", waterTempC:24.5, weather:"曇り", windMS:10.2, windDir:"北", waveM:1.88, airTempC:24.6, time:"2026-10-06" },
+    sourceName:"豊国丸（chowari）", sourceUrl:"https://www.chowari.jp/ship/01209/catch/", note:"ハタ類（種不明）・ホウボウ・キビレ等は対象外/種不明のため species に含めず" },
   // ---------- 10-07 06:00回 追加分（水曜朝・通常期間 10-06〜10-07） ----------
   { id:"2026-10-06-wanko-miura-05", date:"2026-10-06", area:"wanko-miura", spot:"剣崎沖 巳之助丸", spotType:"沖-釣り船",
     method:"アマダイ", species:["アマダイ"],
