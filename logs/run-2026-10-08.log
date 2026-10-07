@@ -10,3 +10,23 @@
 build-single: source = 釣果ログ.html
 build-single: all-in-one 457967 chars / docs/index.html 457967 / dist/artifact.html 457808
 === 2026-10-08 00:06 end (claude exit 0) ===
+git: push exit 1, unpushed commits: 1
+
+=== 2026-10-08 06:00 start ===
+The 06:00 run (Thursday 10/8) is done: 1 new catch was added, from 鬧ｿ豐ｳ貉ｾ. I followed every step in `蜿朱寔謇矩・md`; the step 9 page rebuild is left to `run-collect.ps1`, as the file says.
+
+- **Period checked:** 10/7窶・0/8, the normal period (it isn't Monday).
+- **New record:** 莨雁享荳ｸ (豎溘・豬ｦ貂ｯ, 豐ｼ豢･蟶・ on 10/7, jigging for 繧ｿ繝√え繧ｪ, 70窶・5cm, 8窶・5 fish. The boat's page gives a water temperature of 24.5邃・ Nearby conditions for the day come from Open-Meteo for the 豐ｼ豢･ offshore area.
+- **Nothing else new for 10/7:** most of that day's catches were already recorded in the 00:00 run. 驥取ｯ帛ｱ・(繧ｷ繝ｧ繧ｦ繧ｵ繧､繝輔げ only) and 蜩ｲ螟ｫ荳ｸ (繧ｭ繝上ム only) caught only fish that aren't on the target list. 荳狗伐 and 莨頑擲 are outside the target area.
+- **Nothing for 10/8 yet:** no catches for today are posted on chowari, and the shop and boat blogs, YouTube and the web search had nothing new either.
+- **File updated:** `data/catch-log.js` now has 722 records. The header now says "updated 2026-10-08 06:20" with a note for 1 addition. It loads as valid JavaScript, with no duplicate IDs, no duplicate date/place/fish entries, and no records missing a source link.
+- **Log:** a "06:00蝗・ section was added to `logs/2026-10-08.md`.
+- **No new files in `驥｣繧・`:** temporary files were kept outside the folder and deleted afterwards.
+
+Sources:
+- [chowari 驥｣譫懈ュ蝣ｱ](https://www.chowari.jp/catch/)
+- [莨雁享荳ｸ 驥｣譫彎(https://www.chowari.jp/ship/00182/catch/)
+- [anglers.jp](https://anglers.jp//catches/6300631) (web search result, not used)
+build-single: source = 釣果ログ.html
+build-single: all-in-one 458601 chars / docs/index.html 458601 / dist/artifact.html 458442
+=== 2026-10-08 06:02 end (claude exit 0) ===

@@ -135,11 +135,18 @@
  *   { obs:"観測地点名", waterTempC, weather, windMS, windDir, waveM, airTempC, time:"YYYY-MM-DD" }
  */
 window.CATCH_LOG_META = {
-  lastUpdated: "2026-10-08 00:40",
-  lastRunNote: "58件追加（東京湾奥22・湾口三浦15・湾口房総2・相模湾15・駿河湾4）"
+  lastUpdated: "2026-10-08 06:20",
+  lastRunNote: "1件追加（東京湾0・相模湾0・駿河湾1）"
 };
 
 window.CATCH_LOG = [
+  // ---------- 10-08 06:00回 追加分（木曜朝・通常期間 10-07〜10-08） ----------
+  { id:"2026-10-07-suruga-03", date:"2026-10-07", area:"suruga", spot:"江の浦港（沼津市） 伊勝丸", spotType:"沖-釣り船",
+    method:"ジギング（タチウオ）", species:["タチウオ"],
+    result:"タチウオ 70〜85cm 8〜15匹。最近好調だったが群れが散って大苦戦、大移動の末にお土産確保",
+    tideName:"中潮", waterTempC:24.5, waterTempSource:"伊勝丸 釣果ページ（chowari・実測）", weather:"曇り", windMS:1.5, windDir:"東", airTempC:26,
+    nearby:{ obs:"Open-Meteo（江の浦・沼津沖）", waterTempC:25.1, weather:"晴れ時々曇り", windMS:3.75, windDir:"東", waveM:0.58, airTempC:23.7, time:"2026-10-07" },
+    sourceName:"伊勝丸（chowari）", sourceUrl:"https://www.chowari.jp/ship/00182/catch/", note:"" },
   // ---------- 10-08 00:00回 追加分（木曜深夜・通常期間 10-07〜10-08。chowari 一覧10ページ以降の取りこぼし分を含む） ----------
   { id:"2026-10-07-sagami-06", date:"2026-10-07", area:"sagami", spot:"間口漁港（三浦市初声町） 丸又丸", spotType:"沖-釣り船",
     method:"タチウオ仕立て", species:["タチウオ"],
