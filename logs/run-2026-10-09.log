@@ -1,0 +1,20 @@
+﻿
+=== 2026-10-09 00:00 start ===
+I'm Claude (Claude Code) running on this PC. I followed `蜿朱寔謇矩・md` steps 1窶・ for the 00:00 run on 2026-10-09 (Friday), so the collection period was 10/8窶・0/9.
+
+**24 new catches were added** to `data/catch-log.js`: 14 Tokyo Bay, 6 Sagami Bay and 4 Suruga Bay. All come from chowari (the fishing-boat catch-report site), which I checked on pages 1窶・0.
+- **10/8 (21 catches):** these were posted after the last run. Most are from boats at the mouth of Tokyo Bay on the Miura side (Matsuwa, Kaneda, Kamoi, Kurihama, Kubiri). Others are from Hiratsuka, Sajima, Katase, Nagai, Manazuru, Kotsubo, Hota, Yaizu and Kuryﾅ・
+- **10/7 (3 catches) missed by earlier runs:** Kﾅ酵ﾅｫ-maru, a second hairtail (繧ｿ繝√え繧ｪ) trip from Tadahiko-maru, and Gonsuke-maru at Matsuzaki.
+- **Water temperature, tide, weather and wind** come from each boat's report. The nearby sea and weather readings come from Open-Meteo; I fetched 6 new spots and reused values already in the log for the rest.
+- **Not added:** catches of species outside the target list (e.g. squid, puffer, yellowfin tuna, blackthroat seaperch) and boats outside the three areas (Itﾅ・ Shimoda, the outer Bﾅ行ﾅ・coast, etc.). Nothing was posted for 10/9 yet. As in past late-night runs, I didn't check the boats' own blogs or YouTube.
+
+**Other updates:**
+- `CATCH_LOG_META` now reads "2026-10-09 00:20 / 24莉ｶ霑ｽ蜉・域擲莠ｬ貉ｾ14繝ｻ逶ｸ讓｡貉ｾ6繝ｻ鬧ｿ豐ｳ貉ｾ4・・.
+- The URLs I checked, my judgement calls and observations are in the new file `logs/2026-10-09.md`. One observation: many boats said the current was fast.
+
+**Check:** `data/catch-log.js` loads correctly as JavaScript and now holds 792 records. There are no duplicate IDs, no duplicate date/spot/species entries, and no records missing a source URL.
+
+I created no files in the `驥｣繧柿 folder other than that log; temporary files went to the system temp folder. As the procedure says, `run-collect.ps1` rebuilds the single-file HTML pages after this, so I didn't touch them.
+build-single: source = 釣果ログ.html
+build-single: all-in-one 501303 chars / docs/index.html 501303 / dist/artifact.html 501144
+=== 2026-10-09 00:04 end (claude exit 0) ===
