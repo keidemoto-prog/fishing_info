@@ -135,11 +135,54 @@
  *   { obs:"観測地点名", waterTempC, weather, windMS, windDir, waveM, airTempC, time:"YYYY-MM-DD" }
  */
 window.CATCH_LOG_META = {
-  lastUpdated: "2026-10-09 00:20",
-  lastRunNote: "24件追加（東京湾14・相模湾6・駿河湾4）"
+  lastUpdated: "2026-10-09 06:20",
+  lastRunNote: "7件追加（東京湾1・相模湾6・駿河湾0）"
 };
 
 window.CATCH_LOG = [
+  // ---------- 10-09 06:00回 追加分（金曜朝・通常期間 10-08〜10-09。chowari 10/8 後発2件＋石田丸・サニーサイドの新着） ----------
+  { id:"2026-10-08-sagami-16", date:"2026-10-08", area:"sagami", spot:"葉山鐙摺港（葉山町） たいぞう丸（カツオ船）", spotType:"沖-釣り船",
+    method:"キハダ・カツオ（コマセ）", species:["カツオ","ソウダガツオ"],
+    result:"ホンガツオ2.5〜3.7kg 0〜1匹、キメジ・ヒラソーダ混じり。カツオ・キメジ・ヒラソーダ・キハダの混合ナブラ、バラシ多め",
+    tideName:"中潮", waterTempC:23.4, waterTempSource:"たいぞう丸 釣果ページ（chowari・釣行当日の気象）", weather:"晴れ", windMS:4.4, windDir:"北北東", airTempC:null,
+    nearby:{ obs:"Open-Meteo（葉山沖）", waterTempC:24.0, weather:"晴れ", windMS:6.74, windDir:"北東", waveM:0.76, airTempC:23.0, time:"2026-10-08" },
+    sourceName:"たいぞう丸（chowari）", sourceUrl:"https://www.chowari.jp/ship/00449/catch/", note:"キハダは2回当たるも針伸び・バラシ（対象外魚種）。最高25℃/最低17℃" },
+  { id:"2026-10-08-aoku-03", date:"2026-10-08", area:"aoku", spot:"大黒運河（横浜市） PALLAS FISHING GUIDE SERVICE", spotType:"沖-ボート",
+    method:"ルアーシーバス（仕立）", species:["スズキ"],
+    result:"スズキが釣れました（数・サイズの記載なし）",
+    tideName:"中潮", waterTempC:23.4, waterTempSource:"PALLAS 釣果ページ（chowari・釣行当日の気象）", weather:"晴れ", windMS:4.2, windDir:"北北東", airTempC:null,
+    nearby:{ obs:"Open-Meteo（横浜沖・大黒）", waterTempC:22.4, weather:"晴れ", windMS:5.14, windDir:"北東", waveM:0.32, airTempC:22.8, time:"2026-10-08" },
+    sourceName:"PALLAS FISHING GUIDE SERVICE（chowari）", sourceUrl:"https://www.chowari.jp/ship/01428/catch/", note:"" },
+  { id:"2026-10-08-sagami-17", date:"2026-10-08", area:"sagami", spot:"相模湾（小田原・早川沖）富士山根・がれば根 石田丸", spotType:"沖-釣り船",
+    method:"コマセ（アジ）", species:["アジ","タチウオ"],
+    result:"マアジ23〜40cm 頭9匹・大アジ30〜40cm 7匹（富士山根沖側で大アジ）、他タチウオ",
+    tideName:"中潮（うす濁り）", waterTempC:null, waterTempSource:"", weather:"曇りのち晴れ", windMS:null, windDir:"", airTempC:null,
+    nearby:{ obs:"Open-Meteo（小田原・早川沖）", waterTempC:24.2, weather:"晴れ時々曇り", windMS:4.18, windDir:"北東", waveM:1.14, airTempC:22.5, time:"2026-10-08" },
+    sourceName:"石田丸 釣果ブログ", sourceUrl:"https://www.ishidamaru.com/?post_type=fishing&paged=1", note:"久しぶりの出船。朝は北風やや強く、のち穏やか" },
+  { id:"2026-10-08-sagami-18", date:"2026-10-08", area:"sagami", spot:"葉山 サニーサイド（レンタルボート）マリーナ沖", spotType:"沖-ボート",
+    method:"カワハギ（アサリエサ）・ジグ", species:["カワハギ","ショゴ"],
+    result:"カワハギ23.5〜24.5cm含む4匹、ショゴ4匹（水深23m）",
+    tideName:"中潮", waterTempC:null, waterTempSource:"", weather:"", windMS:null, windDir:"", airTempC:null,
+    nearby:{ obs:"Open-Meteo（葉山沖）", waterTempC:24.0, weather:"晴れ", windMS:6.74, windDir:"北東", waveM:0.76, airTempC:23.0, time:"2026-10-08" },
+    sourceName:"サニーサイド 釣果情報", sourceUrl:"https://www.sunnyside.co.jp/fishing/", note:"" },
+  { id:"2026-10-03-sagami-05", date:"2026-10-03", area:"sagami", spot:"葉山 サニーサイド（レンタルボート）亀城根沖", spotType:"沖-ボート",
+    method:"ジギング", species:["オオモンハタ"],
+    result:"オオモンハタ50cm 1匹（水深30m、青物狙い）",
+    tideName:"小潮", waterTempC:null, waterTempSource:"", weather:"", windMS:null, windDir:"", airTempC:null,
+    nearby:{ obs:"Open-Meteo（葉山沖）", waterTempC:23.9, weather:"曇り", windMS:7.29, windDir:"北東", waveM:0.5, airTempC:22.3, time:"2026-10-03" },
+    sourceName:"サニーサイド 釣果情報", sourceUrl:"https://www.sunnyside.co.jp/fishing/", note:"10/8掲載の後発投稿" },
+  { id:"2026-10-02-sagami-03", date:"2026-10-02", area:"sagami", spot:"葉山 サニーサイド（レンタルボート）亀城根沖・マリーナ沖", spotType:"沖-ボート",
+    method:"ジギング／オキアミエサ釣り", species:["マダイ","オオモンハタ","イナダ","サバ"],
+    result:"マダイ1・オオモンハタ3・イナダ1・ソコイトヨリ3・サバ2（オオモンハタ・イナダはジグ、他はオキアミ。水深30m）",
+    tideName:"小潮", waterTempC:null, waterTempSource:"", weather:"", windMS:null, windDir:"", airTempC:null,
+    nearby:{ obs:"Open-Meteo（葉山沖）", waterTempC:24.0, weather:"晴れ時々曇り", windMS:8.37, windDir:"北東", waveM:0.62, airTempC:23.4, time:"2026-10-02" },
+    sourceName:"サニーサイド 釣果情報", sourceUrl:"https://www.sunnyside.co.jp/fishing/", note:"10/8掲載の後発投稿" },
+  { id:"2026-10-02-sagami-04", date:"2026-10-02", area:"sagami", spot:"葉山 サニーサイド（レンタルボート）マリーナ沖 1つ目の定置網先", spotType:"沖-ボート",
+    method:"タイラバ", species:["アマダイ","オオモンハタ","アカハタ"],
+    result:"シロアマダイ50cm 1匹・オオモンハタ1・アカハタ1（水深40〜50m、フグの猛攻の中で最後の一投）",
+    tideName:"小潮", waterTempC:null, waterTempSource:"", weather:"", windMS:null, windDir:"", airTempC:null,
+    nearby:{ obs:"Open-Meteo（葉山沖）", waterTempC:24.0, weather:"晴れ時々曇り", windMS:8.37, windDir:"北東", waveM:0.62, airTempC:23.4, time:"2026-10-02" },
+    sourceName:"サニーサイド 釣果情報", sourceUrl:"https://www.sunnyside.co.jp/fishing/", note:"10/8掲載の後発投稿" },
   // ---------- 10-09 00:00回 追加分（金曜深夜・通常期間 10-08〜10-09。chowari 10/8 後発投稿＋10/7 取りこぼし3件） ----------
   { id:"2026-10-08-wanko-miura-11", date:"2026-10-08", area:"wanko-miura", spot:"金田漁港（三浦市）金重丸（SLJ船）", spotType:"沖-釣り船",
     method:"スーパーライトジギング（SLJ）", species:["サワラ","カンパチ","アカハタ","オオモンハタ","タチウオ","サバ"],
