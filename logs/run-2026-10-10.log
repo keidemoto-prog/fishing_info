@@ -17,3 +17,28 @@ Sources:
 build-single: source = 釣果ログ.html
 build-single: all-in-one 576363 chars / docs/index.html 576363 / dist/artifact.html 576204
 === 2026-10-10 06:08 end (claude exit 0) ===
+git: push exit 0, unpushed commits: 0
+
+=== 2026-10-10 12:00 start ===
+I followed every step in `蜿朱寔謇矩・md` for the 12:00 run on 2026-10-10 and added **13 new catch records** to `data/catch-log.js` (Tokyo Bay 8, Sagami Bay 2, Suruga Bay 3).
+
+**What was added:**
+- **10 from chowari**, all fishing trips on 10/9 that were posted after the 06:00 run. They include a cutlassfish of up to 134 cm off Hashirimizu (謨呵・荳ｸ), bonito up to 7.7 kg out of Hiratsuka (豬・・荳ｸ), and ten 75窶・8 cm sea bass from a Nomigawa charter.
+- **3 from the Kameya tackle shop:** horse mackerel in the Yokohama area (10/9), red grouper in West Izu (10/9), and filefish at Miho (10/7).
+  - The Miho one was fished on 10/7, which is outside the normal 10/9窶・0/10 window. I included it because it was only posted on 10/10, so later runs would never pick it up.
+
+**Sources with nothing new:** 遏ｳ逕ｰ荳ｸ had no trip on 10/10, and its 10/9 catch was already in the log. SSM豬ｦ雉, 豬懷鴻魑･, 荳ｭ譬ｹ繝懊・繝・ 繧ｵ繝九・繧ｵ繧､繝・ Ishiguro and the YouTube search turned up nothing new for this period. No trips fished on 10/10 in Tokyo, Kanagawa, Chiba or Shizuoka had been posted to chowari yet.
+
+**Skipped:** catches of species not on the target list (squid, splendid alfonsino, yellowfin tuna and so on), and catches from areas outside the three bays, such as Ohara, Katsuura, Ito and Atami.
+
+**Checks:** the file loads in node without errors and now has 927 records. Every record has a source URL, and none of the 13 new records duplicates an existing one.
+- One new ID clashed with an existing one, so I renamed mine to `2026-10-09-aoku-1205`.
+- The duplicate check found 7 older records (9/1窶・/22) that share the same date, spot and species. I didn't add or touch them, and I left them as they are.
+
+I updated `CATCH_LOG_META` and added notes for this run to `logs/2026-10-10.md`. I edited only those two files and created no new files in `驥｣繧・`. As step 9 says, rebuilding the single-file HTML is left to `run-collect.ps1`.
+
+Sources:
+- [YouTube search results](https://www.youtube.com/watch?v=Ok0AyLCWLqY) (none were usable recent catch reports)
+build-single: source = 釣果ログ.html
+build-single: all-in-one 584283 chars / docs/index.html 584283 / dist/artifact.html 584124
+=== 2026-10-10 12:05 end (claude exit 0) ===
