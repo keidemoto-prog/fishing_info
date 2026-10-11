@@ -145,7 +145,7 @@
     {id:"matrix", label:"月 × 魚種"}
   ];
   var SPOT_TYPES = ["堤防","護岸","釣り公園","砂浜","地磯","河口","沖-釣り船","沖-ボート","沖-カヤック","沖-SUP"];
-  var SPECIES_MASTER = ["アイナメ","アジ","アオリイカ","イワシ","カサゴ","カワハギ","カンパチ","サヨリ","カマス","シーバス","スズキ","タチウオ","ヒラメ","マダイ","マゴチ","メバル","シイラ","キス","シロギス","ショゴ","ワカシ","イナダ","ワラサ","ブリ","サワラ","ソウダガツオ","カツオ","アマダイ","サバ","オオモンハタ","キジハタ","アカハタ","マハタ","コノシロ"];
+  var SPECIES_MASTER = ["アイナメ","アジ","アオリイカ","イワシ","カサゴ","カワハギ","カンパチ","サヨリ","カマス","シーバス","スズキ","タチウオ","ヒラメ","マダイ","マゴチ","メバル","シイラ","キス","ショゴ","ワカシ","イナダ","ワラサ","ブリ","サワラ","ソウダガツオ","カツオ","アマダイ","サバ","オオモンハタ","キジハタ","アカハタ","マハタ","コノシロ"];
   var TIDES = ["大潮","中潮","小潮","長潮","若潮"];
 
   var LSKEY = "tsuriLog.v1";
@@ -169,18 +169,22 @@
     if(age<0) age += syn;
     return age;
   }
+  // 正午の月齢で潮名を決める。境界は船宿・釣果サイト掲載の潮名（2026-09〜10 の638件）に合わせて調整（635件一致）
   function tideFromDate(dateStr){
-    var kd = Math.floor(moonAge(dateStr)) + 1; // 旧暦日の近似 1..30
-    if(kd>30) kd=30;
-    if([1,2,3,16,17,18].indexOf(kd)>=0) return "大潮";
-    if([7,8,9,22,23,24].indexOf(kd)>=0) return "小潮";
-    if(kd===10||kd===25) return "長潮";
-    if(kd===11||kd===26) return "若潮";
-    return "中潮";
+    var a = moonAge(dateStr);
+    if(a<1 || a>=27 || (a>=12 && a<15.8)) return "大潮";
+    if(a<5 || (a>=10 && a<12) || (a>=15.8 && a<20) || (a>=25 && a<27)) return "中潮";
+    if(a<8 || (a>=20 && a<23)) return "小潮";
+    if(a<9 || (a>=23 && a<24)) return "長潮";
+    return "若潮";
   }
+  // 魚種の表記ゆれを1つにまとめる
+  var SPECIES_ALIAS = {"シロギス":"キス","キス（シロギス）":"キス"};
+  function normSpecies(s){ s = String(s).trim(); return SPECIES_ALIAS[s] || s; }
 
   var recs = raw.map(function(r,i){
-    var sp = Array.isArray(r.species)? r.species.slice() : (r.species? [r.species] : []);
+    var sp = (Array.isArray(r.species)? r.species : (r.species? [r.species] : [])).map(normSpecies)
+      .filter(function(s,i,a){ return a.indexOf(s)===i; });
     var d = (r.date || "").trim();
     var approx = /^\d{4}-\d{2}$/.test(d);        // "YYYY-MM" = 日付があいまい（月のみ）
     var full = /^\d{4}-\d{2}-\d{2}$/.test(d);
