@@ -13,3 +13,32 @@
 build-single: source = 釣果ログ.html
 build-single: all-in-one 747649 chars / docs/index.html 747649 / dist/artifact.html 747490
 === 2026-10-12 00:06 end (claude exit 0) ===
+git: push exit 0, unpushed commits: 0
+
+=== 2026-10-12 06:00 start ===
+I ran all 9 steps of `蜿朱寔謇矩・md` for the Monday 06:00 run. Because it's the Monday morning run, it covered Friday to Monday (10/9窶・0/12).
+
+**Result: 28 records added to `data/catch-log.js`** (譚ｱ莠ｬ貉ｾ13繝ｻ逶ｸ讓｡貉ｾ14繝ｻ鬧ｿ豐ｳ貉ｾ1), bringing the total to 1215.
+- All 28 come from chowari: posts for 10/9窶・0/11 that went up after earlier runs had already checked those dates. On chowari's list, these late posts show up at the top of each date's section, which is how they were missed.
+  - 10/11: 4 records (豬ｷ逵滉ｸｸ, 髫蠕ｳ荳ｸ, 譽帝擇荳ｸ, 雎頑ｼ∽ｸｸ)
+  - 10/10: 10 records (縺九ａ縺繧・ 繧・≧縺帙＞荳ｸ, 縺輔ｏ豬ｦ and others)
+  - 10/9: 14 records (蟾ｳ荵句勧荳ｸ, 縺｡縺後＆縺堺ｸｸ, 縺ｲ繧峨＞荳ｸ, 豬ｷ貂｡ and others)
+- Water temperature, weather and wind come from each boat's chowari page.
+- The "nearby" readings mostly reuse values already stored for the same place and day. I fetched new Open-Meteo data for only two points: 逕ｰ蟄舌・豬ｦ (10/9) and 蟆丞擡 (10/10).
+- The other sources had nothing new in range:
+  - SSM豬ｦ雉, 遏ｳ逕ｰ荳ｸ, 荳ｭ譬ｹ繝懊・繝・ 豬懷鴻魑･, 繧ｵ繝九・繧ｵ繧､繝・ 蟇梧ｵｦ繝槭Μ繝ｳ繝懊・繝・and 繧ｹ繝ｼ繝代・繝輔ぅ繝・す繝ｳ繧ｰ had no new posts.
+  - 縺九ａ繧・and 繧､繧ｷ繧ｰ繝ｭ only had new posts outside the target area.
+  - A YouTube search found no recent videos with a known fishing date.
+
+**One correction during the run:** I briefly added 驍ｦ荳ｸ (驥醍伐) for 10/9, but it was already in the file. The duplicate check caught it and I removed it. This is noted in the log, and no existing records were changed.
+
+**Check:** the file loads correctly in node, with no duplicate IDs or duplicate (date, spot, species) entries, and every record has a source URL. Line endings are still CRLF. The run's notes are at the top of `logs/2026-10-12.md`, and `lastUpdated` / `lastRunNote` are updated.
+
+I only changed `data/catch-log.js` and `logs/2026-10-12.md`; working files went in a temp folder outside `驥｣繧・`. The single-file HTML rebuild and git push are done by `run-collect.ps1` after this. The phone page (Artifact) can't be updated from this run.
+
+Sources (YouTube search, nothing used):
+- [遘九・逶ｸ讓｡貉ｾ・√う繝翫ム莠皮岼驥｣繧馨(https://www.youtube.com/watch?v=k2W74rejVzM)
+- [縲先擲莠ｬ貉ｾ縲題憶蝙狗・驥｣・∵擲莠ｬ貉ｾ縺ｮ繧ｿ繝√え繧ｪ](https://www.youtube.com/watch?v=Ok0AyLCWLqY)
+build-single: source = 釣果ログ.html
+build-single: all-in-one 764644 chars / docs/index.html 764644 / dist/artifact.html 764485
+=== 2026-10-12 06:08 end (claude exit 0) ===
