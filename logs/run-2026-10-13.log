@@ -27,3 +27,34 @@ Sources:
 build-single: source = 釣果ログ.html
 build-single: all-in-one 843230 chars / docs/index.html 843230 / dist/artifact.html 843071
 === 2026-10-13 00:08 end (claude exit 0) ===
+git: push exit 0, unpushed commits: 0
+
+=== 2026-10-13 06:00 start ===
+I followed every step of `蜿朱寔謇矩・md` (the 06:00 run on Tuesday 2026-10-13) and added **23 new catch records** to `data/catch-log.js`.
+
+**What was added** (all from chowari, posted after the 00:00 run):
+- **Breakdown:** 15 for 10/12 and 8 posted late for 10/11.
+- **By area:** Tokyo Bay inner 3, bay mouth (Miura side) 1, Sagami Bay 18, Suruga Bay 1.
+- **Main catches:**
+  - Sagami Bay: tilefish (繧｢繝槭ム繧､, up to 45窶・1cm), skipjack tuna (繧ｫ繝・が, up to 10.5kg) and amberjack (繧ｫ繝ｳ繝代メ).
+  - Tokyo Bay: cutlassfish (繧ｿ繝√え繧ｪ), horse mackerel (繧｢繧ｸ) and whiting (繧ｭ繧ｹ).
+  - Suruga Bay: cutlassfish at 豎溘・豬ｦ.
+- **No 10/13 catches yet:** none had been posted at 6am.
+- **Other sources:** SSM豬ｦ雉, 繧ｵ繝九・繧ｵ繧､繝・ 縺九ａ繧・ 繧､繧ｷ繧ｰ繝ｭ, 遏ｳ逕ｰ荳ｸ and the other boat blogs had nothing new. Their latest posts were already recorded or outside the target area.
+- **YouTube:** one search turned up no recent video with an identifiable date and place.
+- **Ocean and weather data:** most values reuse readings already stored for the same spot and day. The only new download was Open-Meteo for 闌・Ω蟠取ｲ・on 10/12.
+
+**Left out on purpose:** boats from 邯ｲ莉｣, 螳・ｽ千ｾ・ 莨頑擲, 豬懷錐貉・and 荵呎ｵ・(outside the target area). I also skipped two TARGET trips from 10/11, as the previous run did, because I can't tell whether they duplicate records already in the file.
+
+**Checks:** the file loads correctly as JavaScript (1367 records). There are no duplicate IDs, no duplicate (date, spot, fish) entries among the new records, no missing source URLs, and no fish outside the target list. The original line-ending format (CRLF) is kept.
+
+**Other updates:** `CATCH_LOG_META` now shows lastUpdated 2026-10-13 06:30. A 06:00 section was added at the top of `logs/2026-10-13.md` with the URLs checked, what was skipped and why, and observations.
+
+Per step 9, I stopped there. `run-collect.ps1` rebuilds the single-file HTML next, and the phone (Artifact) page can't be updated from this run. No new files were created in `驥｣繧・`; temporary files went to the system temp folder.
+
+Sources:
+- [譚ｱ莠ｬ貉ｾ繝ｻ逶ｸ讓｡貉ｾ縺ｮ豐夜・繧翫・繧ｹ繧ｹ繝｡ - YouTube](https://www.youtube.com/channel/UCt8IlqIiU11LM0_3lH1Dp8Q)
+- [縲千･槫･亥ｷ晉恁譟先園縲第眠繧ｦ繧ｭ驥｣繧願｣・ｙ縺ｧ遘九・莠ｺ豌鈴ｭ夐｣逋ｺ・・ｼ溪ｦ - YouTube](https://www.youtube.com/watch?v=XSzFmnG4VyA) (not used: no specific place or date)
+build-single: source = 釣果ログ.html
+build-single: all-in-one 857547 chars / docs/index.html 857547 / dist/artifact.html 857388
+=== 2026-10-13 06:04 end (claude exit 0) ===
