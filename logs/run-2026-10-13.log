@@ -1,0 +1,29 @@
+﻿
+=== 2026-10-13 00:00 start ===
+The 00:00 collection run for 2026-10-13 is finished. I followed `蜿朱寔謇矩・md` steps 1窶・ and added **41 records** to `data/catch-log.js`.
+
+- **Breakdown:** Tokyo Bay 25 (inner bay 13, Miura side of the bay mouth 8, Boso side of the bay mouth 4), Sagami Bay 12, Suruga Bay 4.
+- **Dates:**
+  - 34 are trips from 10/12 that were posted after the 18:00 run.
+  - 7 are trips from 10/11 that were posted late.
+  - No catches from today (10/13) have been posted yet.
+- **Source:** All 41 came from chowari. The other boat and shop blogs had nothing new, or only posts already recorded. One YouTube search found no recent video with a clear trip date and spot.
+- **Sea and weather data:** Water temperature, weather, wind and air temperature are taken from each catch's chowari post. The nearby readings use Open-Meteo. I fetched 9 new locations and reused existing values for the rest.
+- **Left out:**
+  - Boats outside the target areas, such as Otohama, Ajiro and Shimoda.
+  - Catches of fish not on the target list, such as pufferfish, squid and tuna only.
+  - Two of TARGET's 10/11 sea bass trips. It wasn't clear whether the two existing 10/11 records already include them, so I skipped them to avoid duplicates. This is noted in the log.
+- **Check:** `node` loads the file without errors and it now has 1,344 records. None of the 41 new records duplicate an existing one, all have a source URL, and every species is on the target list. The file's existing line endings are unchanged.
+  - There are 7 old duplicate pairs from September that were already in the file. I left them alone.
+- **Summary line on the page:** "41莉ｶ霑ｽ蜉・域擲莠ｬ貉ｾ25繝ｻ逶ｸ讓｡貉ｾ12繝ｻ鬧ｿ豐ｳ貉ｾ4・・, last updated 2026-10-13 00:30.
+- **Run log:** I created `logs/2026-10-13.md` with the URLs checked, what was left out, the decisions made and what I noticed.
+
+Per step 9, I didn't rebuild the all-in-one HTML or the phone page. `run-collect.ps1` rebuilds the HTML afterwards, and the phone page has to be updated separately as described in the README. The only files I changed in the `驥｣繧・` folder are `data/catch-log.js` and the new log file.
+
+Sources:
+- [驥｣蜑ｲ 驥｣譫懈ュ蝣ｱ](https://www.chowari.jp/catch/)
+- [SSM豬ｦ雉](https://www.ssm-uraga.jp/fishing) / [縺九ａ繧・・蜈ｷ](https://kameya-choka.com/kanto-tokai/) / [繧､繧ｷ繧ｰ繝ｭ](https://www.ishiguro-gr.com/enjoy/fishing/) / [繧ｵ繝九・繧ｵ繧､繝云(https://www.sunnyside.co.jp/fishing/)
+- YouTube search results: [譚ｱ莠ｬ貉ｾ繝ｻ逶ｸ讓｡貉ｾ縺ｮ豐夜・繧翫・繧ｹ繧ｹ繝｡](https://www.youtube.com/channel/UCt8IlqIiU11LM0_3lH1Dp8Q), [縲千･槫･亥ｷ晉恁譟先園縲第眠繧ｦ繧ｭ驥｣繧願｣・ｙ縺ｧ窶ｦ](https://www.youtube.com/watch?v=XSzFmnG4VyA) (neither had a clear trip date and spot, so not used)
+build-single: source = 釣果ログ.html
+build-single: all-in-one 843230 chars / docs/index.html 843230 / dist/artifact.html 843071
+=== 2026-10-13 00:08 end (claude exit 0) ===
