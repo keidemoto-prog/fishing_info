@@ -83,3 +83,30 @@ Sources:
 build-single: source = 釣果ログ.html
 build-single: all-in-one 884171 chars / docs/index.html 884171 / dist/artifact.html 884012
 === 2026-10-13 12:07 end (claude exit 0) ===
+git: push exit 0, unpushed commits: 0
+
+=== 2026-10-13 18:00 start ===
+The 18:00 collection run is done. I followed every step in `蜿朱寔謇矩・md` and added **32 new catch records** to `data/catch-log.js`.
+
+| Area | Added |
+|---|---|
+| 譚ｱ莠ｬ貉ｾ螂･ | 11 |
+| 貉ｾ蜿｣荳画ｵｦ | 7 |
+| 貉ｾ蜿｣謌ｿ邱・| 6 |
+| 逶ｸ讓｡貉ｾ | 6 |
+| 鬧ｿ豐ｳ貉ｾ | 2 |
+
+- **What's new:** 24 records are from today (10/13). The other 8 are 10/12 and 10/11 trips that were posted late (縺九ａ縺繧・ 遖丈ｸｸ, 螳臥伐荳ｸ and 豼ｱ逕滉ｸｸ). All of them come from chowari.
+- **The other sources had nothing usable:** none of the boat blogs had new 10/13 posts. 縺九ａ繧・s only new post was a freshwater 繧ｵ繧ｯ繝ｩ繝槭せ report. 繧､繧ｷ繧ｰ繝ｭ's new posts were all from 豬懷錐貉・or Aichi/Mie, outside the target areas. One YouTube search found no recent video with a clear date and place.
+- **Left out:** I skipped boats that only reported fish not on the list (繧ｭ繝上ム, 繝､繝ｪ繧､繧ｫ, 繧ｹ繝ｫ繝｡繧､繧ｫ, 繝上ぞ and so on). I also skipped boats outside the target areas (蜍晄ｵｦ, 魘ｨ蟾・ 螟ｧ蜴・ 邯ｲ莉｣).
+- **Sea and weather data:** each record has the water temperature and weather from chowari's 驥｣陦悟ｽ捺律縺ｮ豌苓ｱ｡ section. The nearby values come from Open-Meteo.
+- **Check:** `data/catch-log.js` loads correctly with node and now holds 1,443 records. There are no duplicate IDs and no duplicate date + spot + fish. Every record has a source URL, and all fish are on the list. The file's original CRLF line endings are kept.
+- **Log and meta:** `lastUpdated` and `lastRunNote` are updated. The 18:00 entry is at the top of `logs/2026-10-13.md`.
+
+I only changed `data/catch-log.js` and `logs/2026-10-13.md`, and created no files inside `驥｣繧・`. Temporary files went to the system Temp folder. As step 9 says, `run-collect.ps1` rebuilds the standalone HTML next, so I didn't touch it.
+
+Source checked for YouTube:
+- [YouTube search results](https://www.youtube.com/watch?v=XSzFmnG4VyA) (the "逾槫･亥ｷ晉恁譟先園" video gives no specific place or date, so it wasn't used)
+build-single: source = 釣果ログ.html
+build-single: all-in-one 903713 chars / docs/index.html 903713 / dist/artifact.html 903554
+=== 2026-10-13 18:07 end (claude exit 0) ===
