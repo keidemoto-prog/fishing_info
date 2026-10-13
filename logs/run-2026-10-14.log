@@ -23,3 +23,23 @@ Sources:
 build-single: source = 釣果ログ.html
 build-single: all-in-one 919335 chars / docs/index.html 919335 / dist/artifact.html 919176
 === 2026-10-14 00:05 end (claude exit 0) ===
+git: push exit 0, unpushed commits: 0
+
+=== 2026-10-14 06:00 start ===
+I ran the 06:00 collection for 2026-10-14 by following `蜿朱寔謇矩・md` from step 1 to step 9. This run added **2 catches, both in Sagami Bay (闡牙ｱｱ)**.
+
+- **New records (both trips on 10/13):**
+  - **莠斐お繝荳ｸ**: LT繧｢繝槭ム繧､ boat, biggest fish 47cm (one 繧ｷ繝ｭ繧｢繝・42cm). Its 繧ｭ繝上ム/繧ｫ繝・が boat caught nothing. I combined the two boats into one record, the same way earlier records for this boat do it.
+  - **縺溘＞縺槭≧荳ｸ**: 繧｢繝槭ム繧､莠皮岼 boat, biggest fish 49cm, top angler caught 6.
+- **Sea and weather data:** water temperature, weather and wind come from each catch post's own "驥｣陦悟ｽ捺律縺ｮ豌苓ｱ｡" section. The `nearby` values reuse the Open-Meteo 闡牙ｱｱ豐・numbers for 10/13 that an earlier run had already fetched.
+- **Sources checked:**
+  - On chowari, only 11 catches were posted since the 00:00 run. The other 9 were outside the target areas (Wakayama, Fukui, Yamagata).
+  - 縺九ａ繧・and 繧､繧ｷ繧ｰ繝ｭ had nothing new for these areas.
+  - None of the boat blogs had posts for 10/13窶・0/14.
+  - There are no 10/14 catches yet; most boats cancelled for bad weather.
+- **Skipped:** I did not search YouTube this run, although the instructions say to check it every time. I've noted this in the log.
+- **Files and checks:** `data/catch-log.js` still loads as valid JavaScript (now 1471 records). It has no duplicate IDs and no duplicate date/spot/fish entries, and its Windows line endings are unchanged. I updated `lastUpdated` and `lastRunNote`, and added the 06:00 section to the top of `logs/2026-10-14.md`.
+- **Left for later:** I put no new files in the `驥｣繧・` folder (temporary files went to a separate temp folder). As step 9 says, I did not rebuild the single-file HTML; `run-collect.ps1` does that next.
+build-single: source = 釣果ログ.html
+build-single: all-in-one 920776 chars / docs/index.html 920776 / dist/artifact.html 920617
+=== 2026-10-14 06:03 end (claude exit 0) ===

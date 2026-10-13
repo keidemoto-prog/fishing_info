@@ -135,11 +135,22 @@
  *   { obs:"観測地点名", waterTempC, weather, windMS, windDir, waveM, airTempC, time:"YYYY-MM-DD" }
  */
 window.CATCH_LOG_META = {
-  lastUpdated: "2026-10-14 00:04",
-  lastRunNote: "26件追加（東京湾奥5・湾口三浦10・湾口房総1・相模湾7・駿河湾3）"
+  lastUpdated: "2026-10-14 06:10",
+  lastRunNote: "2件追加（東京湾0・相模湾2・駿河湾0）"
 };
 
 window.CATCH_LOG = [
+  // ---------- 10-14 06:00回 追加分（chowari 10/13 後発 計2件） ----------
+  { id:"2026-10-13-sagami-06dd01", date:"2026-10-13", area:"sagami", spot:"葉山芝崎港（葉山町） 五エム丸", spotType:"沖-釣り船",
+    method:"LTアマダイ船（仕立・乗合）／キハダカツオ船", species:["アマダイ"], result:"アマダイ 仕立30〜47cm 0〜3匹（シロアマ42cm含む）、乗合22〜39cm 0〜3匹。潮流れず前半苦戦、後半アタリ。イトヨリ・アジ・カイワリ・ハナダイ混じり。キハダカツオ船は1ヒットのみでバラシ、釣果なし",
+    tideName:"中潮", waterTempC:22.8, waterTempSource:"五エム丸 釣果ページ（chowari・釣行当日の気象）", weather:"曇り", windMS:5.7, windDir:"北", airTempC:25,
+    nearby:{ obs:"Open-Meteo（葉山沖）", waterTempC:23.6, weather:"晴れ時々曇り", windMS:7.89, windDir:"北", waveM:0.92, airTempC:22.6, time:"2026-10-13" },
+    sourceName:"五エム丸（chowari）", sourceUrl:"https://www.chowari.jp/ship/00318/catch/", note:"2便（LTアマダイ船・キハダカツオ船）を1件にまとめた。シロアマダイはアマダイとして記録" },
+  { id:"2026-10-13-sagami-06dd02", date:"2026-10-13", area:"sagami", spot:"葉山鐙摺港（葉山町） たいぞう丸（アマダイ五目船）", spotType:"沖-釣り船",
+    method:"アマダイ五目", species:["アマダイ", "マダイ", "サバ"], result:"アマダイ24〜49cm 0〜6匹（最大49cm、中型シロアマダイ2匹）。トップ6匹、2番手4匹、オデコ2名。流れ無し・濁り潮。オニカサゴ・ソコイトヨリ・ハナダイ・レンコダイ・マダイ・サバ混じり",
+    tideName:"中潮", waterTempC:22.8, waterTempSource:"たいぞう丸 釣果ページ（chowari・釣行当日の気象）", weather:"曇り", windMS:5.7, windDir:"北", airTempC:25,
+    nearby:{ obs:"Open-Meteo（葉山沖）", waterTempC:23.6, weather:"晴れ時々曇り", windMS:7.89, windDir:"北", waveM:0.92, airTempC:22.6, time:"2026-10-13" },
+    sourceName:"たいぞう丸（chowari）", sourceUrl:"https://www.chowari.jp/ship/00449/catch/", note:"シロアマダイはアマダイとして記録" },
   // ---------- 10-14 00:00回 追加分（chowari 10/13・10/12 後発 計26件） ----------
   { id:"2026-10-13-sagami-00d01", date:"2026-10-13", area:"sagami", spot:"長井荒崎漁港（横須賀市） 丸伊丸", spotType:"沖-釣り船",
     method:"ルアーシイラ・カンパチジギング", species:["シイラ", "カンパチ"], result:"シイラ60〜91cm 0〜10匹、カンパチ0.8〜2.4kg 0〜3匹。他ホウボウ・アオハタ・オニカサゴ",
