@@ -58,3 +58,28 @@ Sources:
 build-single: source = 釣果ログ.html
 build-single: all-in-one 857547 chars / docs/index.html 857547 / dist/artifact.html 857388
 === 2026-10-13 06:04 end (claude exit 0) ===
+git: push exit 0, unpushed commits: 0
+
+=== 2026-10-13 12:00 start ===
+I ran the 12:00 collection by following every step in `蜿朱寔謇矩・md` (1窶・). It added **44 new catch records** to `data/catch-log.js`, and the file still loads correctly.
+
+**What was added** (date range: 10/12窶・0/13, the normal window for a Tuesday run):
+- **By area:** Tokyo Bay inner 23, Tokyo Bay mouth (Miura side) 3, Tokyo Bay mouth (Boso side) 3, Sagami Bay 9, Suruga Bay 6.
+- **By source:** 42 come from chowari. These are 10/12 trips that boats posted this morning, after the 06:00 run. One of them (逾･遖丈ｸｸ in Fukuura) had been missed by the 00:00 run. The other two are a shore jigging 繧ｫ繝ｳ繝代メ (amberjack) at Shimizu port from Ishiguro, and a shore 繧ｨ繧ｮ繝ｳ繧ｰ 繧｢繧ｪ繝ｪ繧､繧ｫ (squid) in the Numazu area on 10/13 from Kameya.
+- **Sea and weather data:** water temperature, weather, wind and air temperature come from each chowari post's "conditions on the fishing day". The `nearby` values come from Open-Meteo. I fetched four new points (Hayakawa/Odawara, Heda, Manazuru/Fukuura, Numazu 10/13). The rest reuse values already logged for the same spot and day.
+- **Excluded:**
+  - Species not on the list: 繧ｭ繝上ム (yellowfin tuna) only, 繧ｹ繝ｫ繝｡繧､繧ｫ (squid), 繧､繧ｵ繧ｭ, 繝槭ム繧ｳ (octopus), 繝輔げ (pufferfish), 繧ｯ繝ｭ繝繧､ (black sea bream).
+  - Boats outside the areas: Usami and Kamogawa.
+  - YouTube: no dated, located videos turned up.
+- **Two judgment calls:** 遘狗伐螻・posted 10/9窶・0/12 together, so I recorded it once as 10/12. The Kameya Numazu post says both "2譚ｯ" and "4譚ｯ", so I recorded 4 and noted the conflict in the record.
+
+**Checks (step 8):** The file loads in node with 1,411 records. There are no duplicate IDs and no duplicate (date, spot, species) entries. Every record has a source URL, every species is on the allowed list, and the CRLF line endings are kept.
+
+The only files changed are `data/catch-log.js` and `logs/2026-10-13.md`. I added a 12:00 section to the log with the URLs checked, the counts and notes. `run-2026-10-13.log` was already modified before I started. Rebuilding the single-file HTML is left to `run-collect.ps1`, as step 9 says.
+
+Sources:
+- [譚ｱ莠ｬ貉ｾ繝ｻ逶ｸ讓｡貉ｾ縺ｮ豐夜・繧翫・繧ｹ繧ｹ繝｡ - YouTube](https://www.youtube.com/channel/UCt8IlqIiU11LM0_3lH1Dp8Q)
+- [縲千･槫･亥ｷ晉恁譟先園縲第眠繧ｦ繧ｭ驥｣繧願｣・ｙ縺ｧ遘九・莠ｺ豌鈴ｭ夐｣逋ｺ・・ｼ溪ｦ - YouTube](https://www.youtube.com/watch?v=XSzFmnG4VyA)
+build-single: source = 釣果ログ.html
+build-single: all-in-one 884171 chars / docs/index.html 884171 / dist/artifact.html 884012
+=== 2026-10-13 12:07 end (claude exit 0) ===
