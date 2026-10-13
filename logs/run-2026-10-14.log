@@ -1,0 +1,25 @@
+﻿
+=== 2026-10-14 00:00 start ===
+I followed `蜿朱寔謇矩・md` steps 1窶・ for the 10/14 00:00 run and added 26 new catch records to `data/catch-log.js`.
+
+1. **Date and period:** It's Wednesday 2026-10-14, so I covered 10/13窶・0/14. No 10/14 catches exist yet because most boats cancelled for the forecast bad weather.
+2. **Searching:** chowari was the only source with new posts in the target areas. I checked pages 1窶・0, which held 84 new posts. The other boat and shop blogs (kameya, 繧､繧ｷ繧ｰ繝ｭ, SSM豬ｦ雉, 繧ｵ繝九・繧ｵ繧､繝・and the rest) had nothing new for these areas. One YouTube search found nothing usable.
+3. **What was added (26 records):**
+   - By area: 譚ｱ莠ｬ貉ｾ螂･ 5, 貉ｾ蜿｣荳画ｵｦ 10, 貉ｾ蜿｣謌ｿ邱・1, 逶ｸ讓｡貉ｾ 7, 鬧ｿ豐ｳ貉ｾ 3.
+   - By date: 20 from 10/13 and 6 from 10/12 that were posted late.
+   - Water temperature, weather and wind come from each boat's "驥｣陦悟ｽ捺律縺ｮ豌苓ｱ｡" on chowari.
+   - `nearby` uses Open-Meteo. I fetched 4 new points (闡牙ｱｱ豐・ 蟷ｳ蝪壽ｲ・and 隘ｿ豬ｦ繝ｻ荵・侭豐・for 10/13, and 蟆冗伐蜴溘・譌ｩ蟾晄ｲ・for 10/12). The rest reuse values already in the file for the same spot and day.
+4. **Two judgment calls, both noted in the record:**
+   - 螟ｪ驛主・荳ｸ's posts list the fish only as "繧､繧ｫ". The trip was tip-run egi fishing, so I recorded it as 繧｢繧ｪ繝ｪ繧､繧ｫ.
+   - 襍､豐ｼ荳ｸ's catch table shows only 繧ｨ繧ｽ, but its comment says a 5.7kg 繝槭ワ繧ｿ was caught, so I recorded 繝槭ワ繧ｿ.
+5. **Header and memo:** `CATCH_LOG_META` is updated, and the run memo is in `logs/2026-10-14.md` (URLs checked, rejected posts, notes).
+6. **Check:** `data/catch-log.js` loads correctly in node, now with 1469 records. There are no duplicate ids or duplicate (date, spot, species) entries, every record has a source URL, and every species is on the allowed list. Line endings are still CRLF.
+7. **Rules:** The only changes in `驥｣繧・` are `data/catch-log.js` and files under `logs/`; scratch files went to the system temp folder. As step 9 says, I did not touch the single-file HTML or the Artifact, because `run-collect.ps1` rebuilds the HTML.
+
+Sources:
+- [chowari 驥｣譫懈ュ蝣ｱ](https://www.chowari.jp/catch/)
+- [Open-Meteo](https://open-meteo.com/)
+- Web search for recent YouTube videos (no relevant results): [譚ｱ莠ｬ貉ｾ~逶ｸ讓｡貉ｾ 髮ｻ霆翫〒陦後￠繧矩・繧雁ｴ繧ｬ繧､繝・0](https://www.maruzenjunkudo.co.jp/products/9784864477390), [shimano fune_tanken](https://fish.shimano.com/ja-JP/content/fishingstyle/article/fune_tanken/index.html), [tsurihack](https://tsurihack.com/8923)
+build-single: source = 釣果ログ.html
+build-single: all-in-one 919335 chars / docs/index.html 919335 / dist/artifact.html 919176
+=== 2026-10-14 00:05 end (claude exit 0) ===
