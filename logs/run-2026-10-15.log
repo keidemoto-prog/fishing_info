@@ -1,0 +1,22 @@
+﻿
+=== 2026-10-15 00:00 start ===
+I ran all 9 steps in `蜿朱寔謇矩・md` for the 0:00 run (Thursday 2026-10-15). I added 16 new catches to `data/catch-log.js`: 譚ｱ莠ｬ貉ｾ9繝ｻ逶ｸ讓｡貉ｾ3繝ｻ鬧ｿ豐ｳ貉ｾ4. The file now has 1,536 records.
+
+**What was added** (all from chowari, which lists each boat's catches)
+- **10/14 (13 catches):** 莠秘ヮ荳ｸ, 縺薙≧繧・≧荳ｸ, 蠢蠖ｦ荳ｸ ﾃ・ (繧ｿ繝√え繧ｪ, 繧｢繧ｸ), 縺ゅ∪縺輔￠繧・ｸｸ (繝槭ム繧､, plus 4縲・kg 繝ｯ繝ｩ繧ｵ), 縺ｯ繧・・縺穂ｸｸ, 蜥悟ｽｦ荳ｸ, 荵・ｿ晏ｼ倅ｸｸ, 荳ｸ蜿井ｸｸ, 逾･遖丈ｸｸ, 讖句ｮ我ｸｸ (譛晏ｸｰ繧翫ち繝√え繧ｪ, 48 fish on bait), 鬲夂｣ｯ荳ｸ ﾃ・.
+- **Posted late for earlier days (3 catches):** 蜆ｪ逾樔ｸｸ and 逵滓ｭ｣荳ｸ for 10/13, and 繝励Ξ繧｢繝・せ for 10/11 (蜻大ｷ・繧ｷ繝ｼ繝舌せ 75縲・0cm).
+- No catches for 10/15 have been posted yet.
+
+**How the gaps were filled**
+- Water temperature, weather and wind come from the weather data chowari shows for each fishing day.
+- For the "nearby" sea readings I fetched new Open-Meteo values for 6 spots on 10/14. The rest reuse values already in the file for the same spot and day.
+- I left out anything outside the target areas (螟匁袷, 蜊嶺ｼ願ｱ・ 莨頑擲) and catches of non-target fish (繧ｭ繝上ム only, 繝輔げ).
+
+**Other sources:** 縺九ａ繧・ 豬懷鴻魑･, SSM豬ｦ雉, 繧､繧ｷ繧ｰ繝ｭ, 遏ｳ逕ｰ荳ｸ and the other boat and shop blogs had nothing new that fits. 遏ｳ逕ｰ荳ｸ didn't go out on 10/14 because of strong southwest wind. As in the last few runs, I didn't search YouTube this time.
+
+**Check:** The file still loads as valid JavaScript. There are no duplicate ids or duplicate catches, every record has a source link, and every fish is on the target list. One mishap: a `sed` edit converted the file's line endings to LF. I converted them back to CRLF, so the diff shows only the new records and the two header lines.
+
+The source URLs, rejected posts and decisions are in `logs/2026-10-15.md`. The only files touched are `data/catch-log.js` and that log; I created nothing else in `驥｣繧・`. Rebuilding the single-file HTML is left to `run-collect.ps1`, which does it after this step.
+build-single: source = 釣果ログ.html
+build-single: all-in-one 959242 chars / docs/index.html 959242 / dist/artifact.html 959083
+=== 2026-10-15 00:06 end (claude exit 0) ===
