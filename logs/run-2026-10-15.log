@@ -20,3 +20,30 @@ The source URLs, rejected posts and decisions are in `logs/2026-10-15.md`. The o
 build-single: source = 釣果ログ.html
 build-single: all-in-one 959242 chars / docs/index.html 959242 / dist/artifact.html 959083
 === 2026-10-15 00:06 end (claude exit 0) ===
+git: push exit 0, unpushed commits: 0
+
+=== 2026-10-15 06:00 start ===
+I ran all 9 steps in `蜿朱寔謇矩・md` for the 06:00 run on Thursday 2026-10-15. **No new catches were added.** Everything posted since the 00:00 run was outside the target areas.
+
+**What I checked**
+- **chowari (pages 1窶・60):** only 5 new posts since last time. They came from 螢ｽ荳ｸ (Wakayama, 2 posts), 驕頑ｼ∬飴TRIDENTfisherman (Fukuoka, 2 posts) and 螟ｧ譬・ｸｸ (魘ｨ蟾晏ｰ乗ｹ・ on the outer Bﾅ行ﾅ・coast). None of these are in Tokyo Bay, Sagami Bay or Suruga Bay.
+- **Shop and boat blogs:** nothing new that fits.
+  - 縺九ａ繧・ no new posts.
+  - 豬懷鴻魑･ and SSM豬ｦ雉: their 10/14 posts are already recorded.
+  - 繧､繧ｷ繧ｰ繝ｭ: the new posts are from 譚ｱ莨願ｱ・and 荳画ｲｳ, outside the area.
+  - 遏ｳ逕ｰ荳ｸ: didn't go out on 10/14.
+  - 荳ｭ譬ｹ繝懊・繝・ no new post; an old post was just edited.
+  - 繧ｵ繝九・繧ｵ繧､繝・ 蟇梧ｵｦ, 繧ｹ繝ｼ繝代・繝輔ぅ繝・す繝ｳ繧ｰ: nothing new.
+- **YouTube:** one web search found one possible video. I didn't record it because the spot is only given as "逾槫･亥ｷ晉恁譟先園" (somewhere in Kanagawa) and the date only as September窶徹ctober.
+- No catches for 10/15 have been posted yet. They should show up in the 12:00 run.
+
+**What changed**
+- `data/catch-log.js`: only the two header lines changed (`lastUpdated: "2026-10-15 06:02"` and the run note). There are still 1,536 records.
+- `logs/2026-10-15.md`: added a 06:00 entry at the top with the URLs I checked and why the posts were left out.
+- Node still loads the data file as valid JavaScript, and there are no duplicate ids.
+- I created no new files in `驥｣繧・`; temporary downloads went to `/tmp/tsuri`. The single-file HTML gets rebuilt afterwards by `run-collect.ps1`, so I didn't touch it.
+
+Search source: [縲千･槫･亥ｷ晉恁譟先園縲第眠繧ｦ繧ｭ驥｣繧願｣・ｙ縺ｧ遘九・莠ｺ豌鈴ｭ夐｣逋ｺ・・ｼ歉(https://www.youtube.com/watch?v=XSzFmnG4VyA)
+build-single: source = 釣果ログ.html
+build-single: all-in-one 959258 chars / docs/index.html 959258 / dist/artifact.html 959099
+=== 2026-10-15 06:02 end (claude exit 0) ===

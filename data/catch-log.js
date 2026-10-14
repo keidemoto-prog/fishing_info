@@ -8,8 +8,8 @@
  *   { obs:"観測地点名", waterTempC, weather, windMS, windDir, waveM, airTempC, time:"YYYY-MM-DD" }
  */
 window.CATCH_LOG_META = {
-  lastUpdated: "2026-10-15 00:05",
-  lastRunNote: "16件追加（東京湾9・相模湾3・駿河湾4）"
+  lastUpdated: "2026-10-15 06:02",
+  lastRunNote: "0件追加（東京湾0・相模湾0・駿河湾0）。前回以降の新着は対象エリア外のみ"
 };
 
 window.CATCH_LOG = [
