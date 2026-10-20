@@ -10,7 +10,7 @@ $logFile = Join-Path $dir ("logs\run-{0}.log" -f $stamp)
 
 # This vault (and this script) is synced to 4 PCs via Dropbox, but only ONE machine must
 # actually collect + commit + push, or the pushes collide. Run only on the designated PC.
-$RUNNER_PC = "DESKTOP-DLBHAAC"   # 自宅PC. To move the job: change this + register the task there.
+$RUNNER_PC = "DESKTOP-DLBHAAC"   # home PC. To move the job: change this + register the task there.
 New-Item -ItemType Directory -Force (Join-Path $dir "logs") | Out-Null
 if ($env:COMPUTERNAME -ne $RUNNER_PC) {
     Add-Content -Encoding utf8 $logFile ("`r`n=== {0} skipped on {1} (runner = {2}) ===" -f (Get-Date -Format "yyyy-MM-dd HH:mm"), $env:COMPUTERNAME, $RUNNER_PC)
@@ -25,9 +25,39 @@ Add-Content -Encoding utf8 $logFile ("`r`n=== {0} start ===" -f (Get-Date -Forma
 # claude a short ASCII prompt and let it open the instruction file itself.
 $task = 'This folder has a Japanese instruction file: the single .md file whose name is NOT README.md. Read that file completely and carry out every numbered step in it, from step 1 to the last step.'
 
-& $claude -p $task --dangerously-skip-permissions --add-dir $dir 2>&1 |
-    ForEach-Object { $_.ToString() } | Out-File -Append -Encoding utf8 $logFile
+# Decode claude's UTF-8 output correctly so the Japanese text in the logs is readable.
+try { [Console]::OutputEncoding = [System.Text.Encoding]::UTF8 } catch { }
+
+# Auth: the normal browser login expires about every 30 days (it broke the job on 2026-09-15
+# and 2026-10-16). setup-claude-token.ps1 creates a 1-year token and stores it encrypted (DPAPI,
+# this Windows user only) OUTSIDE the vault and repo. If that file exists we use it; if not, or
+# if the token is rejected, we fall back to the normal stored login.
+$tokenFile = Join-Path $env:USERPROFILE ".fishing-claude-token.dpapi"
+$authMode  = "stored-login"
+if (Test-Path $tokenFile) {
+    try {
+        $sec  = ConvertTo-SecureString (Get-Content -Raw $tokenFile).Trim()
+        $bstr = [Runtime.InteropServices.Marshal]::SecureStringToBSTR($sec)
+        $plain = [Runtime.InteropServices.Marshal]::PtrToStringBSTR($bstr)
+        [Runtime.InteropServices.Marshal]::ZeroFreeBSTR($bstr)
+        if ($plain -like "sk-ant-*") { $env:CLAUDE_CODE_OAUTH_TOKEN = $plain; $authMode = "long-lived-token" }
+        $plain = $null
+    } catch { }
+}
+Add-Content -Encoding utf8 $logFile ("auth: {0}" -f $authMode)
+
+$out = & $claude -p $task --dangerously-skip-permissions --add-dir $dir 2>&1 | ForEach-Object { $_.ToString() }
 $claudeExit = $LASTEXITCODE
+$out | Out-File -Append -Encoding utf8 $logFile
+
+if ($claudeExit -ne 0 -and $authMode -eq "long-lived-token" -and (($out -join "`n") -match "authenticate")) {
+    Add-Content -Encoding utf8 $logFile "auth: long-lived token was rejected -> retrying once with the stored login"
+    Remove-Item Env:CLAUDE_CODE_OAUTH_TOKEN -ErrorAction SilentlyContinue
+    $out = & $claude -p $task --dangerously-skip-permissions --add-dir $dir 2>&1 | ForEach-Object { $_.ToString() }
+    $claudeExit = $LASTEXITCODE
+    $out | Out-File -Append -Encoding utf8 $logFile
+}
+Remove-Item Env:CLAUDE_CODE_OAUTH_TOKEN -ErrorAction SilentlyContinue
 
 # Rebuild the standalone / docs / artifact files from whatever the run produced.
 & (Join-Path $dir "build-single.ps1") 2>&1 |

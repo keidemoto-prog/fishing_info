@@ -77,6 +77,8 @@
   .card .top{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;font-size:12.5px;color:var(--muted)}
   .card .sp{margin:4px 0}
   .banner{background:var(--accent-soft);border:1px solid var(--accent);border-radius:10px;padding:9px 12px;font-size:13px;margin-bottom:12px}
+  .banner.warn{background:var(--panel);border:2px solid var(--warm);color:var(--text)}
+  .banner.warn b{color:var(--warm)}
   .empty{padding:40px 12px;text-align:center;color:var(--muted)}
   .sp-picker{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:12px}
   .sp-picker .tab{font-size:12.5px}
@@ -11755,6 +11757,18 @@ window.CATCH_LOG_SAMPLE = [
   if(usingSample){
     var bn=el("div","banner","<b>サンプル表示中</b>　これは画面確認用のダミーです。<code>収集手順.md</code> に沿って毎日の収集を実行すると、実データ（<code>data/catch-log.js</code>）に置き換わります。");
     document.getElementById("bannerHost").appendChild(bn);
+  }
+  // 収集停止の警告：最終収集から24時間以上たっていたら赤い帯を出す。
+  // 閲覧時にブラウザ側で計算するので、収集ジョブ自体が止まっていても表示される。
+  if(!usingSample && META.lastUpdated){
+    var lu = new Date(String(META.lastUpdated).replace(" ","T")+":00+09:00");
+    var hrs = (Date.now() - lu.getTime())/3600000;
+    if(isFinite(hrs) && hrs >= 24){
+      var days = Math.floor(hrs/24);
+      var ago = days>=1 ? (days+"日前") : (Math.floor(hrs)+"時間前");
+      var wn=el("div","banner warn","<b>【注意】自動収集が止まっている可能性があります。</b>　最終収集は "+esc(META.lastUpdated)+"（"+ago+"）です。自宅PCで Claude のログインが切れていないか確認してください。");
+      document.getElementById("bannerHost").appendChild(wn);
+    }
   }
   document.getElementById("foot").innerHTML =
     "潮回り・月齢は日付からの簡易計算（記録に潮名があればそれを優先）。日付があいまいな記録は「◯月頃」とだけ表示し、潮・月齢は計算しない。"+
