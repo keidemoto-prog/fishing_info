@@ -8,11 +8,53 @@
  *   { obs:"観測地点名", waterTempC, weather, windMS, windDir, waveM, airTempC, time:"YYYY-MM-DD" }
  */
 window.CATCH_LOG_META = {
-  lastUpdated: "2026-10-21 00:00",
-  lastRunNote: "423件追加（東京湾260・相模湾125・駿河湾38）。10/16〜10/20 は認証切れで収集が止まっていたため、chowari の 10/15〜10/20 分（10/12〜14 の後発含む）とブログ各所をまとめて回収"
+  lastUpdated: "2026-10-21 06:00",
+  lastRunNote: "8件追加（東京湾7・相模湾1・駿河湾0）。chowari の 10/18〜10/20 後発分と、前回取りこぼした中根ボート 10/16・10/18"
 };
 
 window.CATCH_LOG = [
+  // ---------- 10-21 06:00回 追加分（chowari 後発 6件＋中根ボート 2件） ----------
+
+  { id:"2026-10-20-aoku-21b001", date:"2026-10-20", area:"aoku", spot:"金沢漁港（横浜市） 忠彦丸", spotType:"沖-釣り船",
+    method:"ライトアジ船（LT）", species:["アジ"], result:"アジ",
+    tideName:"長潮", waterTempC:21.8, waterTempSource:"忠彦丸 釣果ページ（chowari・釣行当日の気象）", weather:"曇り", windMS:8.5, windDir:"南南西", airTempC:26,
+    nearby:{ obs:"Open-Meteo（八景沖）", waterTempC:23.3, weather:"霧雨", windMS:7.46, windDir:"南西", waveM:0.84, airTempC:25, time:"2026-10-20" },
+    sourceName:"忠彦丸（chowari）", sourceUrl:"https://www.chowari.jp/ship/00703/catch/", note:"" },
+  { id:"2026-10-19-aoku-21b002", date:"2026-10-19", area:"aoku", spot:"金沢漁港（横浜市） 忠彦丸", spotType:"沖-釣り船",
+    method:"ライトアジ船（LT）", species:["アジ"], result:"アジ",
+    tideName:"小潮", waterTempC:21.7, waterTempSource:"忠彦丸 釣果ページ（chowari・釣行当日の気象）", weather:"晴れ後時々曇り", windMS:6.6, windDir:"南西", airTempC:27,
+    nearby:{ obs:"Open-Meteo（八景沖）", waterTempC:23.1, weather:"晴れ時々曇り", windMS:8.65, windDir:"南西", waveM:0.7, airTempC:24.2, time:"2026-10-19" },
+    sourceName:"忠彦丸（chowari）", sourceUrl:"https://www.chowari.jp/ship/00703/catch/", note:"" },
+  { id:"2026-10-18-aoku-21b003", date:"2026-10-18", area:"aoku", spot:"金沢漁港（横浜市） 忠彦丸", spotType:"沖-釣り船",
+    method:"タチウオ船（テンヤ・天秤）", species:["タチウオ", "サワラ"], result:"タチウオ、サワラ（2投稿を1件に）",
+    tideName:"小潮", waterTempC:22, waterTempSource:"忠彦丸 釣果ページ（chowari・釣行当日の気象）", weather:"晴れ", windMS:3.4, windDir:"北北東", airTempC:24,
+    nearby:{ obs:"Open-Meteo（八景沖）", waterTempC:23.1, weather:"晴れ", windMS:6.41, windDir:"南東", waveM:0.4, airTempC:22.6, time:"2026-10-18" },
+    sourceName:"忠彦丸（chowari）", sourceUrl:"https://www.chowari.jp/ship/00703/catch/", note:"" },
+  { id:"2026-10-18-aoku-21b004", date:"2026-10-18", area:"aoku", spot:"品川堀（品川区） 三河屋", spotType:"沖-釣り船",
+    method:"キス船", species:["キス（シロギス）"], result:"キス 13～23cm 15～83匹、イシモチ",
+    tideName:"小潮", waterTempC:21.8, waterTempSource:"三河屋 釣果ページ（chowari・釣行当日の気象）", weather:"晴れ", windMS:2.6, windDir:"北東", airTempC:24,
+    nearby:{ obs:"Open-Meteo（羽田沖）", waterTempC:22.3, weather:"晴れ", windMS:6.89, windDir:"南東", waveM:0.32, airTempC:22.2, time:"2026-10-18" },
+    sourceName:"三河屋（chowari）", sourceUrl:"https://www.chowari.jp/ship/00698/catch/", note:"対象魚種外（イシモチ）は result のみに記載" },
+  { id:"2026-10-18-aoku-21b005", date:"2026-10-18", area:"aoku", spot:"金沢漁港（横浜市） 久保弘丸", spotType:"沖-釣り船",
+    method:"ビシアジ船", species:["アジ"], result:"アジ",
+    tideName:"小潮", waterTempC:22, waterTempSource:"久保弘丸 釣果ページ（chowari・釣行当日の気象）", weather:"晴れ", windMS:3.4, windDir:"北北東", airTempC:24,
+    nearby:{ obs:"Open-Meteo（八景沖）", waterTempC:23.1, weather:"晴れ", windMS:6.41, windDir:"南東", waveM:0.4, airTempC:22.6, time:"2026-10-18" },
+    sourceName:"久保弘丸（chowari）", sourceUrl:"https://www.chowari.jp/ship/00141/catch/", note:"" },
+  { id:"2026-10-18-sagami-21b006", date:"2026-10-18", area:"sagami", spot:"佐島港（横須賀市） つね丸", spotType:"沖-釣り船",
+    method:"マダイ船", species:["マダイ", "アジ", "イナダ", "ワラサ", "ソウダガツオ", "アマダイ", "サバ"], result:"マダイ 1.40～2.30kg 0～2匹、アジ、キントキ、メイチダイ、イナダ、ワラサ、ヒラソーダ、アマダイ、イトヨリ、イナワラ、サバ",
+    tideName:"小潮", waterTempC:22, waterTempSource:"つね丸 釣果ページ（chowari・釣行当日の気象）", weather:"晴れ", windMS:3.4, windDir:"北北東", airTempC:24,
+    nearby:{ obs:"Open-Meteo（長井沖）", waterTempC:25, weather:"晴れ", windMS:7.63, windDir:"南東", waveM:0.62, airTempC:22.7, time:"2026-10-18" },
+    sourceName:"つね丸（chowari）", sourceUrl:"https://www.chowari.jp/ship/00144/catch/", note:"対象魚種外（キントキ・メイチダイ・イトヨリ）は result のみに記載" },
+  { id:"2026-10-18-wanko-miura-21b007", date:"2026-10-18", area:"wanko-miura", spot:"観音崎周辺 中根ボート", spotType:"沖-ボート",
+    method:"レンタルボート（手漕ぎ・2馬力）", species:["アジ", "キジハタ", "マダイ", "カワハギ"], result:"大アジ（ギガアジ）ラッシュ・クーラー満タン、キジハタ2kgオーバー、マダイ3.5kg（水深35m）、マダイ2枚ほか、カワハギ6枚。ウマヅラハギ混じり",
+    tideName:"小潮", waterTempC:null, waterTempSource:"", weather:"", windMS:null, windDir:"", airTempC:null,
+    nearby:{ obs:"Open-Meteo（観音崎〜走水沖）", waterTempC:22.9, weather:"晴れ", windMS:6.55, windDir:"東", waveM:0.38, airTempC:22.6, time:"2026-10-18" },
+    sourceName:"なかね貸ボート店ブログ（中根ボート）", sourceUrl:"https://ameblo.jp/nakane-boat/entry-12981912698.html", note:"記事「１８日釣果」（2026-10-18投稿）。利用者名は記録しない" },
+  { id:"2026-10-16-wanko-miura-21b008", date:"2026-10-16", area:"wanko-miura", spot:"観音崎周辺 中根ボート", spotType:"沖-ボート",
+    method:"レンタルボート（手漕ぎ・2馬力）", species:["マダイ"], result:"マダイ45cm、イシダイ28cm、メジナ、ウマヅラハギ",
+    tideName:"中潮", waterTempC:null, waterTempSource:"", weather:"", windMS:null, windDir:"", airTempC:null,
+    nearby:{ obs:"Open-Meteo（観音崎〜走水沖）", waterTempC:22.9, weather:"霧雨", windMS:6.81, windDir:"北", waveM:0.32, airTempC:22.9, time:"2026-10-16" },
+    sourceName:"なかね貸ボート店ブログ（中根ボート）", sourceUrl:"https://ameblo.jp/nakane-boat/entry-12981763792.html", note:"記事は 2026-10-16 19:49 投稿・本文「本日ありがとうございました」から釣行日 10/16 と判断。イシダイ・メジナ等は対象魚種外" },
   // ---------- 10-21 00:00回 追加分（10/16〜10/21 の認証切れ停止ぶんをまとめて回収。chowari 375件＋SSM浦賀・浜千鳥・石田丸・サニーサイド・かめや・イシグロ 48件） ----------
   { id:"2026-10-20-aoku-21a001", date:"2026-10-20", area:"aoku", spot:"寒川港（千葉市） 小峯丸", spotType:"沖-釣り船",
     method:"シーバス船（ルアー）", species:["シーバス", "アジ", "サワラ", "タチウオ", "イナダ"], result:"シーバス 34～79cm 6～26匹、アジ、サワラ 74～81cm 0～2匹、サゴシ、タチウオ、イナダ",
