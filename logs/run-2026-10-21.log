@@ -109,3 +109,25 @@ One thing to keep in mind: I counted Yaizu boats as Suruga Bay, as earlier runs 
 build-single: source = 釣果ログ.html
 build-single: all-in-one 1276630 chars / docs/index.html 1276630 / dist/artifact.html 1276471
 === 2026-10-21 18:05 end (claude exit 0) ===
+git: push exit 0, unpushed commits: 0
+
+=== 2026-10-21 23:20 start ===
+I followed all 9 steps in `収集手順.md` (the fishing-log collection instructions) for tonight's late run. **30 new catch records were added to `data/catch-log.js`.**
+
+- **Records added:** 26 from Tokyo Bay, 0 from Sagami Bay and 4 from Suruga Bay. The fishing dates are October 18–20.
+  - 29 came from chowari, from posts newer than the ones the 18:00 run picked up.
+  - 1 came from an Ishiguro tackle-shop post: a 66 cm seabass caught near Yaizu on 10/20, which the 18:00 run had missed. The post doesn't say what kind of fishing spot it was, so I recorded it as a river mouth and said so in the record's note.
+- **Records skipped:** 9 were outside the target areas (outer Bōsō and south Izu), 2 had no species from the target list, and 1 was already in the log.
+- **Sea and weather data:** I filled in nearby water temperature, weather, wind and waves from the free Open-Meteo weather service.
+- **Check:** the file loads correctly as JavaScript and now holds 2,099 records with no duplicate IDs. Every new record has a source link and only target species. The only other change in the file is the two "last updated" summary lines at the top.
+- **Log:** I added a "23:20回" (23:20 run) section to `logs/2026-10-21.md` listing the URLs checked and what was added or skipped.
+
+**One thing to watch:** the SSM浦賀 (Uraga) and サニーサイド (Sunnyside) sites are showing "under maintenance" until 10/22, time not given, so I couldn't check them. The next run will need to look at them again. The other blogs had nothing new since 18:00. The two YouTube searches found no videos with a clear fishing date and place.
+
+As the instructions say, I didn't rebuild the single-file HTML pages or republish the phone page. `run-collect.ps1` rebuilds the HTML pages automatically, and the phone page is updated separately. No new files were created in the `釣り` folder; my working files are in the session's scratch folder.
+
+Search results checked:
+- [YouTube XSzFmnG4VyA](https://www.youtube.com/watch?v=XSzFmnG4VyA) — not used: it gives only "somewhere in Kanagawa, September–October 2026", so the place and date can't be pinned down.
+build-single: source = 釣果ログ.html
+build-single: all-in-one 1294191 chars / docs/index.html 1294191 / dist/artifact.html 1294032
+=== 2026-10-21 23:25 end (claude exit 0) ===
