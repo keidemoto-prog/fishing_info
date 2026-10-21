@@ -8,17 +8,28 @@ $claude  = "C:\Users\DEMOTO\.local\bin\claude.exe"
 $stamp   = Get-Date -Format "yyyy-MM-dd"
 $logFile = Join-Path $dir ("logs\run-{0}.log" -f $stamp)
 
+# Append to the run log, retrying if the file is briefly locked (this folder is synced by
+# Dropbox; on 2026-10-21 one "auth:" line silently vanished from the log, most likely for that
+# reason). Never lets a locked log lose a line: last resort is a side file.
+function Log($lines) {
+    foreach ($attempt in 1..8) {
+        try { $lines | Out-File -Append -Encoding utf8 -FilePath $logFile -ErrorAction Stop; return }
+        catch { Start-Sleep -Milliseconds 700 }
+    }
+    try { $lines | Out-File -Append -Encoding utf8 -FilePath ($logFile + ".fallback") } catch { }
+}
+
 # This vault (and this script) is synced to 4 PCs via Dropbox, but only ONE machine must
 # actually collect + commit + push, or the pushes collide. Run only on the designated PC.
 $RUNNER_PC = "DESKTOP-DLBHAAC"   # home PC. To move the job: change this + register the task there.
 New-Item -ItemType Directory -Force (Join-Path $dir "logs") | Out-Null
 if ($env:COMPUTERNAME -ne $RUNNER_PC) {
-    Add-Content -Encoding utf8 $logFile ("`r`n=== {0} skipped on {1} (runner = {2}) ===" -f (Get-Date -Format "yyyy-MM-dd HH:mm"), $env:COMPUTERNAME, $RUNNER_PC)
+    Log ("`r`n=== {0} skipped on {1} (runner = {2}) ===" -f (Get-Date -Format "yyyy-MM-dd HH:mm"), $env:COMPUTERNAME, $RUNNER_PC)
     exit 0
 }
 
 Set-Location $dir
-Add-Content -Encoding utf8 $logFile ("`r`n=== {0} start ===" -f (Get-Date -Format "yyyy-MM-dd HH:mm"))
+Log ("`r`n=== {0} start ===" -f (Get-Date -Format "yyyy-MM-dd HH:mm"))
 
 # Do NOT pass the instruction text as an argument: PS 5.1 mangles long/quoted argv for native
 # exes (that leaked "-NoProfile" from the .md into claude and broke every run). Instead give
@@ -44,26 +55,26 @@ if (Test-Path $tokenFile) {
         $plain = $null
     } catch { }
 }
-Add-Content -Encoding utf8 $logFile ("auth: {0}" -f $authMode)
+Log ("auth: {0}" -f $authMode)
 
 $out = & $claude -p $task --dangerously-skip-permissions --add-dir $dir 2>&1 | ForEach-Object { $_.ToString() }
 $claudeExit = $LASTEXITCODE
-$out | Out-File -Append -Encoding utf8 $logFile
+Log $out
 
 if ($claudeExit -ne 0 -and $authMode -eq "long-lived-token" -and (($out -join "`n") -match "authenticate")) {
-    Add-Content -Encoding utf8 $logFile "auth: long-lived token was rejected -> retrying once with the stored login"
+    Log "auth: long-lived token was rejected -> retrying once with the stored login"
     Remove-Item Env:CLAUDE_CODE_OAUTH_TOKEN -ErrorAction SilentlyContinue
     $out = & $claude -p $task --dangerously-skip-permissions --add-dir $dir 2>&1 | ForEach-Object { $_.ToString() }
     $claudeExit = $LASTEXITCODE
-    $out | Out-File -Append -Encoding utf8 $logFile
+    Log $out
 }
 Remove-Item Env:CLAUDE_CODE_OAUTH_TOKEN -ErrorAction SilentlyContinue
 
 # Rebuild the standalone / docs / artifact files from whatever the run produced.
-& (Join-Path $dir "build-single.ps1") 2>&1 |
-    ForEach-Object { $_.ToString() } | Out-File -Append -Encoding utf8 $logFile
+$buildOut = & (Join-Path $dir "build-single.ps1") 2>&1 | ForEach-Object { $_.ToString() }
+Log $buildOut
 
-Add-Content -Encoding utf8 $logFile ("=== {0} end (claude exit {1}) ===" -f (Get-Date -Format "yyyy-MM-dd HH:mm"), $claudeExit)
+Log ("=== {0} end (claude exit {1}) ===" -f (Get-Date -Format "yyyy-MM-dd HH:mm"), $claudeExit)
 
 # Commit + push so GitHub Pages (keidemoto-prog/fishing_info -> docs/) picks up the new data.
 # Full git chatter -> non-tracked logs\git-*.log (git prints progress to stderr, which PS 5.1
@@ -88,5 +99,5 @@ if (Test-Path (Join-Path $dir ".git")) {
     & git -C $dir push                      2>&1 | ForEach-Object { $_.ToString() } | Out-File -Append -Encoding utf8 $gitLog
     $pushExit = $LASTEXITCODE
     $unpushed = (& git -C $dir rev-list --count "origin/main..HEAD" 2>$null)
-    Add-Content -Encoding utf8 $logFile ("git: push exit {0}, unpushed commits: {1}" -f $pushExit, $unpushed)
+    Log ("git: push exit {0}, unpushed commits: {1}" -f $pushExit, $unpushed)
 }
