@@ -8,8 +8,8 @@
  *   { obs:"観測地点名", waterTempC, weather, windMS, windDir, waveM, airTempC, time:"YYYY-MM-DD" }
  */
 window.CATCH_LOG_META = {
-  lastUpdated: "2026-10-21 23:20",
-  lastRunNote: "30件追加（東京湾26・相模湾0・駿河湾4）。chowari の 10/18〜10/20 後発分（八景・柴・豆や・さわ浦・新安浦・竹岡・洲崎・江梨・田子の浦ほか）＋イシグロ 焼津シーバス。SSM浦賀・サニーサイドはサイトがメンテナンス中"
+  lastUpdated: "2026-10-22 00:04",
+  lastRunNote: "0件追加（東京湾0・相模湾0・駿河湾0）。23:20回以降の chowari 新着は松崎のシマアジ（対象魚種外）のみ、各ブログも新着なし。SSM浦賀・サニーサイドはメンテナンス中のまま"
 };
 
 window.CATCH_LOG = [
