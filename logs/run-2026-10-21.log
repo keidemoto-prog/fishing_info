@@ -91,3 +91,21 @@ Per step 9, `run-collect.ps1` rebuilds the HTML pages automatically after this. 
 build-single: source = 釣果ログ.html
 build-single: all-in-one 1262031 chars / docs/index.html 1262031 / dist/artifact.html 1261872
 === 2026-10-21 12:03 end (claude exit 0) ===
+git: push exit 0, unpushed commits: 0
+
+=== 2026-10-21 18:00 start ===
+auth: stored-login
+I've finished the 18:00 run of `収集手順.md` (steps 1–9). **25 records were added**: Tokyo Bay 16, Sagami Bay 6, Suruga Bay 3.
+
+- **New catches:** all 25 came from chowari. Five of them are trips from today (10/21): Hakkei and Kanazawa horse mackerel, a Kaneda filefish boat, a Kaneda red sea bream mixed-catch boat, and Shinyamashita horse mackerel. The rest are 10/18–10/20 reports posted since 12:00.
+- **Other sources:** none of the boat or shop blogs had new posts (SSM Uraga, Hamachidori, Ishidamaru, Sunnyside, Kameya, Nakane Boat, Tomiura, Super Fishing). Ishiguro's only new post was from Ito, which is outside the three bays. Two YouTube searches found no recent videos with a usable date and place.
+- **Skipped:** 18 posts outside the three bays (Ohara, Katsuura, Kamogawa, Ito, etc.) and 5 posts with no species from the target list (yellowfin tuna, squid, etc.).
+- **Sea and weather data:** I fetched new Open-Meteo values for 10/14–10/21. For the 10/21 trips these are today's values, which may still be partly forecast at 18:00.
+- **Checks:** `data/catch-log.js` loads as valid JavaScript (2069 records), with no duplicate IDs. Every new record has a source URL and only uses species from the target list. `lastUpdated` is set to "2026-10-21 18:00". The URLs I checked and the details are in the 18:00 section of `logs/2026-10-21.md`.
+
+I only changed `data/catch-log.js` and `logs/2026-10-21.md`. My scripts and a backup of the data file from before the merge are in the temp folder (`%TEMP%/tsuri1021d`). I didn't commit anything: per step 9, `run-collect.ps1` rebuilds the single-file pages and handles git after this.
+
+One thing to keep in mind: I counted Yaizu boats as Suruga Bay, as earlier runs did. Strictly, Yaizu is southwest of Miho, outside the range written in the instructions. If you want only up to Shimizu/Miho, those records (3 this run) would need to be excluded from now on.
+build-single: source = 釣果ログ.html
+build-single: all-in-one 1276630 chars / docs/index.html 1276630 / dist/artifact.html 1276471
+=== 2026-10-21 18:05 end (claude exit 0) ===
