@@ -8,8 +8,8 @@
  *   { obs:"観測地点名", waterTempC, weather, windMS, windDir, waveM, airTempC, time:"YYYY-MM-DD" }
  */
 window.CATCH_LOG_META = {
-  lastUpdated: "2026-10-22 00:04",
-  lastRunNote: "0件追加（東京湾0・相模湾0・駿河湾0）。23:20回以降の chowari 新着は松崎のシマアジ（対象魚種外）のみ、各ブログも新着なし。SSM浦賀・サニーサイドはメンテナンス中のまま"
+  lastUpdated: "2026-10-22 06:10",
+  lastRunNote: "0件追加（東京湾0・相模湾0・駿河湾0）。00:00回以降、chowari・各ブログとも新着なし。SSM浦賀・サニーサイドはメンテナンス中、石田丸・富浦マリンボートは一時エラー(502)"
 };
 
 window.CATCH_LOG = [
