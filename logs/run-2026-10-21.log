@@ -57,3 +57,37 @@ YouTube検索で参照したページ：
 build-single: source = 釣果ログ.html
 build-single: all-in-one 1248955 chars / docs/index.html 1248955 / dist/artifact.html 1248796
 === 2026-10-21 06:07 end (claude exit 0) ===
+git: push exit 0, unpushed commits: 0
+
+=== 2026-10-21 12:00 start ===
+auth: stored-login
+I finished the 12:00 collection run and followed every step in `収集手順.md` (steps 1–9). I added **23 new catch records** to `data/catch-log.js`: 19 for Tokyo Bay, 2 for Sagami Bay and 2 for Suruga Bay.
+
+**Where the new records came from**
+- **chowari (22 records):** posts that appeared after the 06:00 run. They cover:
+  - Kubiri boats (巳之助丸, 山下丸): horse mackerel and filefish, Oct 18–20
+  - 教至丸 at Hashirimizu: hairtail
+  - せどおと丸 at Matsuwa: 3–3.5kg ワラサ
+  - 長崎屋 at Honmoku: up to 168 kisu
+  - 米元釣船店 at Hakkei and 新明丸 at the Tsurumi River: horse mackerel, hairtail and flathead
+  - 海力丸 at Nagai: マハタ grouper
+  - 第十五祥運丸 at Numazu Shizuura: hairtail
+- **Kameya Hiratsuka store (1 record):** a young sea bass (セイゴ) from the Sagami River. The post only says "mid-October", so I saved the date as month only ("2026-10"), as the instructions require.
+
+**Checked but nothing added**
+- **Shop and boat blogs:** SSM Uraga only had kinmedai, which isn't on the species list. The other blogs had nothing new since 06:00.
+- **YouTube:** I ran two searches. None of the recent videos gave a clear fishing date and place, so I added none.
+- **Rejected chowari posts (11):** 6 were outside the covered area (Ohara and Kamogawa on the outer Boso coast). 5 were only pufferfish or octopus, which aren't on the species list.
+
+**Checks**
+- The file loads correctly as JavaScript and now has 2,044 records.
+- There are no duplicate IDs, every new record has a source URL, and every species is on the list.
+- I updated the last-updated time and run note at the top of the file.
+- Today's notes are in `logs/2026-10-21.md`.
+
+For nearby sea and weather values, I reused the Open-Meteo readings already fetched in the 00:00 run, which cover the same dates. I created no new files in the `釣り` folder: the scripts and the pre-edit backup are in a temporary folder (`%TEMP%/tsuri1021c`).
+
+Per step 9, `run-collect.ps1` rebuilds the HTML pages automatically after this. The smartphone page can't be updated from this run; use the "スマホで見る" method in the README for that.
+build-single: source = 釣果ログ.html
+build-single: all-in-one 1262031 chars / docs/index.html 1262031 / dist/artifact.html 1261872
+=== 2026-10-21 12:03 end (claude exit 0) ===
