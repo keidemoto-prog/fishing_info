@@ -8,11 +8,27 @@
  *   { obs:"観測地点名", waterTempC, weather, windMS, windDir, waveM, airTempC, time:"YYYY-MM-DD" }
  */
 window.CATCH_LOG_META = {
-  lastUpdated: "2026-10-22 06:10",
-  lastRunNote: "0件追加（東京湾0・相模湾0・駿河湾0）。00:00回以降、chowari・各ブログとも新着なし。SSM浦賀・サニーサイドはメンテナンス中、石田丸・富浦マリンボートは一時エラー(502)"
+  lastUpdated: "2026-10-22 12:02",
+  lastRunNote: "3件追加（東京湾1・相模湾2・駿河湾0）。chowari 新着2件（仁丸・池田丸）＋かめや平塚店 相模川マゴチ。SSM浦賀・サニーサイドはメンテナンス中、富浦マリンボートは一時エラー(502)"
 };
 
 window.CATCH_LOG = [
+  // ---------- 10-22 12:00回 追加分（chowari 2件＋かめや1件） ----------
+  { id:"2026-10-21-aoku-22c001", date:"2026-10-21", area:"aoku", spot:"金沢漁港（横浜市） 仁丸", spotType:"沖-釣り船",
+    method:"LTアジ五目", species:["アジ", "ヒラメ"], result:"アジ 16～27cm 37～50匹、ヒラメ1枚、イナワラ1本混じり（南西風強く釣りにくい）",
+    tideName:"若潮", waterTempC:21.7, waterTempSource:"仁丸 釣果ページ（chowari・釣行当日の気象）", weather:"曇り時々晴れ", windMS:9.4, windDir:"南南西", airTempC:29,
+    nearby:{ obs:"Open-Meteo（八景沖）", waterTempC:22.8, weather:"霧雨", windMS:9.79, windDir:"南西", waveM:1.74, airTempC:26.2, time:"2026-10-21" },
+    sourceName:"仁丸（chowari）", sourceUrl:"https://www.chowari.jp/ship/00010/catch/", note:"イナワラ（イナダとワラサの中間サイズ）は区分が特定できないため species に入れず result のみに記載" },
+  { id:"2026-10-22-sagami-22c002", date:"2026-10-22", area:"sagami", spot:"腰越漁港（鎌倉市） 池田丸", spotType:"沖-釣り船",
+    method:"カワハギ船", species:["カワハギ"], result:"カワハギ 15～27cm 0～1匹、ハナダイ 26～33cm 0～1匹（風波が残り途中で中止）",
+    tideName:"中潮", waterTempC:22.1, waterTempSource:"池田丸 釣果ページ（chowari・釣行当日の気象）", weather:"晴れ時々曇り", windMS:5.5, windDir:"北北東", airTempC:25,
+    nearby:{ obs:"Open-Meteo（腰越・小坪沖）", waterTempC:24.3, weather:"曇り", windMS:6.07, windDir:"北", waveM:1.88, airTempC:24.9, time:"2026-10-22" },
+    sourceName:"池田丸（chowari）", sourceUrl:"https://www.chowari.jp/ship/00297/catch/", note:"対象魚種外（ハナダイ）は result のみに記載" },
+  { id:"2026-10-sagami-22c003", date:"2026-10", area:"sagami", spot:"相模川（平塚市・茅ヶ崎市）", spotType:"河口",
+    method:"ルアー（鬼丸12g）", species:["マゴチ"], result:"マゴチ1匹（スレ掛かり）",
+    tideName:"", waterTempC:null, waterTempSource:"", weather:"", windMS:null, windDir:"", airTempC:null,
+    nearby:null,
+    sourceName:"かめや釣具 平塚店", sourceUrl:"https://kameya-choka.com/kanto-tokai/archives/f-info/545040", note:"釣行日は「2026年10月中旬」のみで日が特定できないため年-月で記録（2026-10-22 掲載）" },
   // ---------- 10-21 23:20回 追加分（chowari 後発 29件＋イシグロ1件） ----------
   { id:"2026-10-20-aoku-21e001", date:"2026-10-20", area:"aoku", spot:"鹿本橋（江戸川区） 船宿豆や", spotType:"沖-釣り船",
     method:"アジ船（LT）", species:["アジ"], result:"アジ 16～25cm 8～65匹",

@@ -48,3 +48,34 @@ YouTube検索で見た動画:
 build-single: source = 釣果ログ.html
 build-single: all-in-one 1294166 chars / docs/index.html 1294166 / dist/artifact.html 1294007
 === 2026-10-22 06:03 end (claude exit 0) ===
+git: push exit 0, unpushed commits: 0
+
+=== 2026-10-22 12:00 start ===
+auth: long-lived-token
+I ran steps 1–9 of `収集手順.md` for the 12:00 run on 2026-10-22 (Thursday). This run added **3 records** (東京湾 1, 相模湾 2, 駿河湾 0).
+
+- **Steps 1–2 (date and period):** It's a normal weekday, so I looked for catches from 10/21–10/22 that were posted after the 06:00 run.
+- **Steps 3–4 (searching the sources):**
+  - **釣割 (chowari):** 20 new posts since the 06:00 run. Only 2 were in our area:
+    - 仁丸 (金沢漁港), 10/21: アジ 37–50 fish, plus one ヒラメ.
+    - 池田丸 (腰越), 10/22: カワハギ 0–1 fish. The trip was stopped partway because of leftover wind and waves.
+  - **かめや平塚店:** a new post about a マゴチ caught at 相模川. The post only says "mid-October", so I recorded the date as 2026-10, as the rules say. That also means no weather or sea data could be attached.
+  - **Other blogs:**
+    - イシグロ had one new post, but it was from 浜名湖, which is outside our area.
+    - 石田丸, 浜千鳥, 中根ボート and スーパーフィッシング had nothing new.
+    - SSM浦賀 and サニーサイド are still down for maintenance, and 富浦マリンボート is still giving an error. I'll check them again next run.
+  - **YouTube:** none of the results was a recent trip with a clear date and place.
+- **One judgement call:** the 仁丸 post also mentions an イナワラ, a size between イナダ and ワラサ. I couldn't tell which of those two fish-list entries it belongs to, so I wrote it only in the result text and not in the species list.
+- **Steps 5–6 (adding the records):** I added the 3 records to the top of `data/catch-log.js`. None duplicates an existing record. I also updated the last-updated time and the summary line.
+- **Step 7 (log):** I added a note for this run to `logs/2026-10-22.md` with the pages I checked and the results.
+- **Step 8 (check):** `data/catch-log.js` loads without errors. It now has 2102 records and no repeated IDs. The line endings are unchanged.
+- **Step 9:** I stopped here. `run-collect.ps1` rebuilds the combined HTML pages automatically after this.
+
+I didn't create any new files in the `釣り/` folder. The backup and scratch files are in a temporary folder outside it.
+
+Sources:
+- [東京湾 電気ウキ釣り（2026年9〜10月）](https://www.youtube.com/watch?v=XSzFmnG4VyA) (rejected: place and timing unclear)
+- [仁丸 釣果](https://www.chowari.jp/ship/00010/catch/) / [池田丸 釣果](https://www.chowari.jp/ship/00297/catch/) / [かめや 相模川マゴチ](https://kameya-choka.com/kanto-tokai/archives/f-info/545040)
+build-single: source = 釣果ログ.html
+build-single: all-in-one 1295944 chars / docs/index.html 1295944 / dist/artifact.html 1295785
+=== 2026-10-22 12:02 end (claude exit 0) ===
