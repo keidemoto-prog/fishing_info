@@ -1,0 +1,26 @@
+﻿
+=== 2026-10-23 00:00 start ===
+auth: long-lived-token
+I ran every step in `収集手順.md` (steps 1–9) for today's 00:00 run (Fri 2026-10-23), and added **19 records** to `data/catch-log.js`.
+
+- **Added:** 11 in Tokyo Bay (2 in the inner bay, 9 on the Miura side of the bay mouth), 8 in Sagami Bay, 0 in Suruga Bay. All are 10/22 trips posted on chowari.
+- **Where they came from:** chowari had 29 new posts. I kept only those in the target areas with target species. Fish outside the list (yellowfin tuna, イサキ and so on) appear only in each record's result text.
+- **Other sources:** none of the boat or tackle-shop blogs had anything new. 石田丸 did not sail on 10/22 because of strong north wind. The new イシグロ posts are all outside the area. SSM浦賀 and サニーサイド only show catches we already have. The YouTube search found no recent video with an identifiable date and spot.
+- **Sea conditions:** every record has nearby water temperature, weather, wind, wave height and air temperature from Open-Meteo, plus the water temperature and tide listed on chowari's own page.
+- **Checks:**
+  - The data file loads cleanly: 2,149 records.
+  - No duplicate IDs, and no duplicate date + spot + species combinations.
+  - Line endings are unchanged from the original.
+  - A backup of the file before the change is in a temporary folder.
+- **Log:** I created `logs/2026-10-23.md` with the URLs checked, the count and what I left out. I created no other files in `釣り/`.
+
+**Needs your decision:** whether boats from 伊東 and 網代 count as Sagami Bay. The area table stops at 真鶴, so I left out 村正丸 (伊東) again this time, as in the last run.
+
+Rebuilding the single-file HTML is left to `run-collect.ps1`, as the instructions say.
+
+Sources:
+- [釣割 釣果情報](https://www.chowari.jp/catch/)
+- [YouTube search result (not used)](https://www.youtube.com/watch?v=XSzFmnG4VyA)
+build-single: source = 釣果ログ.html
+build-single: all-in-one 1324748 chars / docs/index.html 1324748 / dist/artifact.html 1324589
+=== 2026-10-23 00:03 end (claude exit 0) ===
