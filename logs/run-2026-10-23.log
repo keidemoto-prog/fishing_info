@@ -24,3 +24,28 @@ Sources:
 build-single: source = 釣果ログ.html
 build-single: all-in-one 1324748 chars / docs/index.html 1324748 / dist/artifact.html 1324589
 === 2026-10-23 00:03 end (claude exit 0) ===
+git: push exit 0, unpushed commits: 0
+
+=== 2026-10-23 06:00 start ===
+auth: long-lived-token
+I ran all 9 steps in `収集手順.md` for the 06:00 run on 2026-10-23 (Friday). **No new catches were added.**
+
+1. **Date and period:** 2026-10-23 (Friday), so the normal window applies: 10/22 to 10/23. The Monday weekend rule doesn't apply.
+2. **What I checked:**
+   - **chowari** (the main catch-report site): no new posts since the 00:00 run.
+   - **The boat and tackle-shop blogs** (石田丸, 浜千鳥, かめや, イシグロ, 中根ボート, スーパーフィッシング, 富浦マリンボート, SSM浦賀, サニーサイド): nothing new. SSM浦賀 and サニーサイド loaded fine this time, but they only show posts we already have.
+   - **YouTube** (one search): no recent video with a clear fishing date and place. The one possible match had already been checked on 10/12 and is old.
+3. **Records:** none to add, so nothing to check for duplicates.
+4. **`data/catch-log.js`:** I only changed `lastUpdated` (now "2026-10-23 06:01") and `lastRunNote` ("0件追加…"). I checked the file still loads as JavaScript: 2,149 records, with no duplicate IDs and no duplicate date + place + fish entries. Line endings are the same as before.
+5. **Log:** I added a 06:00 section to `logs/2026-10-23.md` listing the URLs I checked.
+6. **Not done here, as the instructions say:** `run-collect.ps1` rebuilds the all-in-one HTML automatically after this. The phone page can't be updated from this run.
+
+No new files were created in `釣り/`. A backup of the data file from before the change is in a temp folder outside the vault (`%TEMP%/t23b/`).
+
+Sources:
+- [Autumn in Sagami Bay! Japanese Spanish mackerel five-item ...](https://www.youtube.com/watch?v=k2W74rejVzM)
+- [コマセカツオが絶好調！強烈な引きがたまらない！相模湾｜2026.8.8](https://www.youtube.com/watch?v=H4yBL1chf7I)
+- [東京湾・相模湾の沖釣りのススメ](https://www.youtube.com/channel/UCt8IlqIiU11LM0_3lH1Dp8Q)
+build-single: source = 釣果ログ.html
+build-single: all-in-one 1324754 chars / docs/index.html 1324754 / dist/artifact.html 1324595
+=== 2026-10-23 06:02 end (claude exit 0) ===
