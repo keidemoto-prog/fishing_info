@@ -1,0 +1,26 @@
+﻿
+=== 2026-10-24 00:00 start ===
+auth: long-lived-token
+I ran every step of `収集手順.md` (steps 1–9) for the 10/24 00:00 run. **25 new records were added**: 12 Tokyo Bay, 12 Sagami Bay and 1 Suruga Bay.
+
+- **Period:** 10/23–10/24, counting only posts that appeared after the 10/23 18:00 run.
+- **Where they came from:**
+  - 24 records are from chowari. There were 48 new posts, all from 10/23 fishing trips, and these 24 were in our areas with species on the list. Among them: Yoshinoya (タチウオ, サワラ and アジ boats), Yuseimaru (4 boats), Gomumaru (カツオ, シイラ, アオリイカ, アマダイ), Kujiemonmaru from 伊戸 (マダイ) and Ikatsumaru from 江の浦 (タチウオ 30–50).
+  - 1 record is from the Kameya Hiratsuka shop: a small ヒラメ (ソゲ) caught on the 相模川. The report gives only "October 2026", so it's dated `2026-10` with no nearby sea data.
+- **Sea and weather data:** where the chowari post gave water temperature, weather and wind for the day, I used those. Nearby values come from Open-Meteo for 15 points, all for 10/23.
+- **Not added:** boats outside our areas (鹿嶋, 南知多, 勝浦, 大原 and others), and posts with no target species (フグ, イカ, or キハダ only).
+- **Check:** `data/catch-log.js` loads correctly with node (2221 records), with no duplicate IDs and no duplicate date + place + species. Line endings are unchanged. A backup of the file before editing is in the temp folder (`%TEMP%/t24a`).
+- **Log:** written to `logs/2026-10-24.md`. Apart from `data/catch-log.js`, that log is the only file I added or changed in the `釣り/` folder.
+- **YouTube:** one search found no recent fishing videos.
+
+**Decision for you:** Kameya's Odawara shop posted a new report on 10/23: 3 アオリイカ caught by egging on a 沼津 breakwater, with no fishing date given. It has the same date, place and species as an existing record (`2026-10-suruga-0601`), so the duplicate rule blocked it. It is probably a different catch, so tell me if you want it added. This is noted in the log.
+
+Rebuilding the single-file HTML is left to `run-collect.ps1`, as step 9 says.
+
+Sources:
+- [chowari 釣果情報](https://www.chowari.jp/catch/)
+- [かめや釣具 相模川 ソゲ](https://kameya-choka.com/kanto-tokai/archives/f-info/545072)
+- [かめや釣具 沼津エリア アオリイカ](https://kameya-choka.com/kanto-tokai/archives/f-info/544993)
+build-single: source = 釣果ログ.html
+build-single: all-in-one 1368283 chars / docs/index.html 1368283 / dist/artifact.html 1368124
+=== 2026-10-24 00:06 end (claude exit 0) ===
