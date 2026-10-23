@@ -83,3 +83,50 @@ Sources:
 build-single: source = 釣果ログ.html
 build-single: all-in-one 1332087 chars / docs/index.html 1332087 / dist/artifact.html 1331928
 === 2026-10-23 12:04 end (claude exit 0) ===
+git: push exit 0, unpushed commits: 0
+
+=== 2026-10-23 18:00 start ===
+auth: long-lived-token
+収集手順.md の手順1〜9を、10月23日18時の回として最後まで実行しました。今回の釣果は35件増えて、合計2196件です。
+
+**追加した35件**
+- **東京湾 16件**（湾奥6・三浦側6・房総側4）
+- **相模湾 16件**
+- **駿河湾 3件**
+
+内訳は、釣割（chowari）の新着から32件、葉山のサニーサイドから3件（10/22のレンタルボートの釣果）です。目立った釣果は、長井のティップランでのアオリイカ（船中65杯）、松輪・勝山のワラサ（勝山はブリサイズも数本）、平塚のカンパチ、沼津・久料のオオモンハタ13匹でした。
+
+**判断したこと**
+- 同じ船・同じ日の2投稿（成銀丸の2隻、魚磯丸の午前便と午後便）は、それぞれ1件にまとめました。
+- キハダ・イサキ・カイワリ・ヤリイカなど対象外の魚は、`result`（釣果の説明欄）に書くだけにしました。
+- 大原・飯岡・茨城・和歌山などエリア外の船は記録していません。
+
+**確認できたこと**
+- `data/catch-log.js` は node で正しく読み込めました。
+- id の重複も、「日付・場所・魚種」の重複もありません。改行コードは元のまま（CRLF）です。
+- 見たURLや見送った理由は、`logs/2026-10-23.md` の「18:00回」に書きました。
+- `釣り/` フォルダに新しいファイルは作っていません。作業用ファイルは一時フォルダ（`%TEMP%/t23d`）に置いています。
+
+**確認できなかったこと**
+- 中根ボートのブログは、今回は中身を読み取れませんでした。
+- YouTube は1回検索しましたが、YouTube動画が1件も出ず、該当なしでした。
+
+**決めていただきたいこと**
+1. サニーサイドに **10/17・10/18 の釣果**（ワラサ・アマダイなど）が今日になって新しく載りました。手順の対象期間（昨日と今日）から外れるので見送りましたが、遅れて載った分も入れるかどうかを決めていただきたいです。
+2. **伊東・宇佐美の船**（今回は治久丸）は、相模湾の範囲表に伊東が無いため、前回までと同じく見送りました。範囲に入れるかどうかの判断も、まだ残っています。
+
+スマホ用の単体HTMLは、このあと `run-collect.ps1` が自動で作り直します。
+
+Sources:
+- [東京湾~相模湾 電車で行ける釣り場ガイド40](https://www.maruzenjunkudo.co.jp/products/9784864477390)
+- [fish.shimano.com](https://fish.shimano.com/ja-JP/content/fishingstyle/article/fune_tanken/profile.html)
+- [anglers.jp](https://anglers.jp//catches/6300631)
+- [www.tv-tokyo.co.jp](https://www.tv-tokyo.co.jp/tsuri/database/html/110820.html)
+- [fish.shimano.com](https://fish.shimano.com/ja-JP/content/fishingstyle/article/fune_tanken/index.html)
+- [tsurihack.com](https://tsurihack.com/8635)
+- [resemom.jp](https://resemom.jp/release/prtimes/20241220/131648.html)
+- [週刊つりニュース 関東版](https://www.fujisan.co.jp/product/1281697688/b/list/)
+- [booklive.jp](https://booklive.jp/product/index/title_id/416910/vol_no/185)
+build-single: source = 釣果ログ.html
+build-single: all-in-one 1353001 chars / docs/index.html 1353001 / dist/artifact.html 1352842
+=== 2026-10-23 18:05 end (claude exit 0) ===
