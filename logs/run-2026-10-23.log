@@ -49,3 +49,37 @@ Sources:
 build-single: source = 釣果ログ.html
 build-single: all-in-one 1324754 chars / docs/index.html 1324754 / dist/artifact.html 1324595
 === 2026-10-23 06:02 end (claude exit 0) ===
+git: push exit 0, unpushed commits: 0
+
+=== 2026-10-23 12:00 start ===
+auth: long-lived-token
+I finished the 12:00 collection run and added **12 new catch records** (Tokyo Bay 9, Sagami Bay 3, Suruga Bay 0). Earlier I said 13; the correct count is 12.
+
+1. **Date and period:** It's Friday 2026-10-23, so I looked at catches from 10/22 and 10/23 that appeared after the 06:00 run.
+2. **Sources checked:**
+   - **chowari:** there were new posts since 06:00. 11 of the records come from there.
+   - **SSM浦賀:** one new 10/22 post (サゴシ, ショゴ, イナダ near the Uraga Channel buoys), which I added.
+   - **Other boat and shop blogs:** nothing new.
+     - 中根ボート: the "21日釣果" post in its list is an old one from 8/21.
+     - かめや: the newest post is a stock notice, not a catch.
+   - **YouTube** (one search): no recent video with a clear fishing date and place.
+3. **New records:** each one has the tide name, plus the water temperature and weather the boat posted for that day. I also filled in nearby sea and weather readings from Open-Meteo.
+   - **Tokyo Bay:**
+     - Inner bay: PLAYFUL FISHING (10/23, サワラ and タチウオ), 守山丸, ミナミ釣船, えさ政
+     - Bay mouth, Miura side: 教至丸, two 山下丸 trips, 第十五鈴米丸, SSM浦賀
+   - **Sagami Bay:** 五エム丸, 秋田屋, 浅八丸
+   - **Left out:** boats outside the three areas (鴨川, 茨城, 兵庫 and others), and trips that only caught fish not on the list (スルメイカ, キハダ).
+4. **Duplicates:** no new record matches an existing one on date, place and fish.
+5. **Run summary:** `lastUpdated` is now "2026-10-23 12:05", and `lastRunNote` says how many records were added in each area.
+6. **Log:** I added a 12:00 section to `logs/2026-10-23.md` with the URLs I checked, what I left out, and why.
+7. **Check:** `data/catch-log.js` still loads as JavaScript, with 2,161 records. There are no duplicate IDs, and the line endings are the same as before.
+8. **Not done here, as the instructions say:** `run-collect.ps1` rebuilds the all-in-one HTML after this run. The phone page can't be updated from this run.
+
+No new files were created in `釣り/`. Temporary files and a backup of the data file from before the change are in `%TEMP%/t23c/`, outside the vault.
+
+Sources:
+- [【神奈川県某所】新ウキ釣り装備で秋の人気魚連発！？…（不採用）](https://www.youtube.com/watch?v=XSzFmnG4VyA)
+- [東京湾・相模湾の沖釣りのススメ](https://www.youtube.com/channel/UCt8IlqIiU11LM0_3lH1Dp8Q)
+build-single: source = 釣果ログ.html
+build-single: all-in-one 1332087 chars / docs/index.html 1332087 / dist/artifact.html 1331928
+=== 2026-10-23 12:04 end (claude exit 0) ===
