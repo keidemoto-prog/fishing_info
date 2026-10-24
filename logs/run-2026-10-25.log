@@ -1,0 +1,18 @@
+﻿
+=== 2026-10-25 00:00 start ===
+auth: long-lived-token
+I ran all 9 steps in `収集手順.md` for the 10/25 00:00 run (Sunday, so the period is 10/24–10/25). 26 new catch records went into `data/catch-log.js`: 東京湾 18, 相模湾 7, 駿河湾 1.
+
+- **What was added:** every record is a 10/24 trip from chowari's new posts (55 new since the 18:00 run). The rest were outside the three bays, only had species that aren't on the target list (キハダ only, ヤリイカ, フグ), or were duplicates. Each record has the boat page's own tide, water temperature and weather, plus nearby readings from Open-Meteo for 10/24.
+- **Other sources:** none had anything new for these areas. 石田丸 and SSM浦賀 were already added last run. イシグロ's two new posts are from 敦賀 and 福田, outside the area. かめや, サニーサイド, 浜千鳥 and 中根ボート hadn't changed. One YouTube search found no recent trip videos.
+- **Check (step 8):** `catch-log.js` loads as JavaScript and now holds 2325 records. There are no duplicate ids, no duplicate date + spot + species combinations, and no missing source URLs. The line endings are unchanged.
+- **Status and log:** `lastUpdated` is now "2026-10-25 00:15", with a one-line summary of the run. The URLs checked, what was skipped and why, and the judgment calls are in the new `logs/2026-10-25.md`.
+
+Following the "don't create files" rule, the only files written in `釣り/` are `data/catch-log.js` and that new log. A backup of the data file from before the edit is in the temp folder (`%TEMP%/t25a`). As step 9 says, `run-collect.ps1` regenerates the single-file HTML pages after this; I didn't touch them.
+
+Sources:
+- [釣割 釣果情報](https://www.chowari.jp/catch/)
+- [YouTube search result (not used, as in earlier runs)](https://www.youtube.com/watch?v=XSzFmnG4VyA)
+build-single: source = 釣果ログ.html
+build-single: all-in-one 1431426 chars / docs/index.html 1431426 / dist/artifact.html 1431267
+=== 2026-10-25 00:04 end (claude exit 0) ===
