@@ -50,3 +50,43 @@ auth: long-lived-token
 build-single: source = 釣果ログ.html
 build-single: all-in-one 1375768 chars / docs/index.html 1375768 / dist/artifact.html 1375609
 === 2026-10-24 06:03 end (claude exit 0) ===
+git: push exit 0, unpushed commits: 0
+
+=== 2026-10-24 12:00 start ===
+auth: long-lived-token
+I'm Claude (Opus 5.5), running locally on this PC with access to the files. I followed `収集手順.md` steps 1–9 for the 12:00 collection run on 2026-10-24 (Saturday, so the normal window of 10/23–10/24 applied).
+
+**Added 23 records:** 20 in Tokyo Bay (東京湾), 2 in Sagami Bay (相模湾), 1 in Suruga Bay (駿河湾).
+- **Tokyo Bay, inner area (16):**
+  - 荒川屋 ×3, 米元釣船店 ×3, 弁天屋 (all 金沢八景)
+  - 三喜丸 ×2 (柴), 長崎屋 ×2 (本牧), 新明丸 (鶴見川), 打木屋 (新山下)
+  - ゴーゴーガイドサービス ×2 (呑川), えさ政 (羽田)
+- **Tokyo Bay, Boso side (3):** 豊国丸 (竹岡) マダイ, and two 赤沼丸 (洲崎) records: マダイ 5.5kg and マハタ.
+- **Tokyo Bay, Miura side (1):** 山下丸 (久比里) アマダイ.
+- **Sagami Bay (2):** まなぶ丸 (片瀬) アマダイ, and かめや 花水川サーフ アジ. The かめや post only says "late October", so its date is `"2026-10"` and `nearby` is null.
+- **Suruga Bay (1):** かめや 清水港 アカカマス, 22–34cm, 12 fish.
+
+**Sources checked:**
+- **chowari:** 47 new posts. The 4 from 10/24 itself were all outside the target area.
+- **Shop and boat blogs:** かめや had 2 new posts, which I added. イシグロ's new post was outside the area. The other blogs had nothing new, or had already been recorded.
+- **YouTube:** one search found no recent fishing videos.
+
+**Checks:**
+- `data/catch-log.js` loads in Node with 2,256 records. There are no duplicate IDs and no repeated date + spot + species.
+- Line endings are still CRLF, and `CATCH_LOG_META` is updated.
+- Notes for this run are appended to `logs/2026-10-24.md`.
+- I created no new files in `釣り/`. The backup of the original data file is in `%TEMP%/t24c`.
+
+**Judgment calls:**
+- For the two 赤沼丸 records, chowari's fish table only lists エソ, so I took マダイ and マハタ from the captain's comments.
+- I put 山下丸's アマダイ boat in the Miura area, matching its 10/22 record. The 00:00 run's log grouped this kind of trip under Boso instead, so the two runs disagree; you may want to pick one rule.
+
+As step 9 says, I didn't rebuild the single-file HTML. `run-collect.ps1` does that next, and I didn't commit anything.
+
+Sources:
+- [YouTube XSzFmnG4VyA](https://www.youtube.com/watch?v=XSzFmnG4VyA) (rejected again, as in earlier runs)
+- [かめや 545126](https://kameya-choka.com/kanto-tokai/archives/f-info/545126)
+- [かめや 545132](https://kameya-choka.com/kanto-tokai/archives/f-info/545132)
+build-single: source = 釣果ログ.html
+build-single: all-in-one 1389452 chars / docs/index.html 1389452 / dist/artifact.html 1389293
+=== 2026-10-24 12:03 end (claude exit 0) ===
