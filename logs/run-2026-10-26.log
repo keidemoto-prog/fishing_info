@@ -27,3 +27,21 @@ Sources:
 build-single: source = 釣果ログ.html
 build-single: all-in-one 1487090 chars / docs/index.html 1487090 / dist/artifact.html 1486931
 === 2026-10-26 00:06 end (claude exit 0) ===
+git: push exit 0, unpushed commits: 0
+
+=== 2026-10-26 06:00 start ===
+auth: long-lived-token
+I ran the Monday 06:00 collection from `収集手順.md`, steps 1 to 9. **No new catches were added this time.**
+
+- **Date range:** Monday morning, so the window was Fri–Mon (10/23–10/26). The earlier passes had already picked up the weekend's catches.
+- **chowari:** 4 posts are new since the 00:00 pass, and none qualify. Three are outside the target areas (手石 in 南伊豆, 平潟, 網代 in 熱海) and one is クロダイ only, which isn't on the species list.
+- **Shop and boat blogs:** 石田丸, SSM浦賀, サニーサイド, イシグロ, 浜千鳥 and 中根ボート have nothing new. かめや has one post I hadn't checked before (545153), but it's a store sale notice, not a catch report.
+- **YouTube:** one search found no recent fishing-trip videos ([search hit, previously rejected](https://www.youtube.com/watch?v=XSzFmnG4VyA)).
+- **Changed files:**
+  - `data/catch-log.js`: only the timestamp (`lastUpdated: 2026-10-26 06:01`) and the run note changed. Node still loads it, and it still has 2,416 records with Windows line endings.
+  - `logs/2026-10-26.md`: I added an entry for this pass with the pages checked, what was rejected, and the check result.
+
+I didn't create any new files in the `釣り/` folder; a backup copy is in the temp folder (`%TEMP%/t26b`). As step 9 says, `run-collect.ps1` rebuilds the single-file HTML pages next. The phone page still has to be updated separately, as described in README.
+build-single: source = 釣果ログ.html
+build-single: all-in-one 1487078 chars / docs/index.html 1487078 / dist/artifact.html 1486919
+=== 2026-10-26 06:02 end (claude exit 0) ===
