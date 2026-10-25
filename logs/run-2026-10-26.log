@@ -1,0 +1,29 @@
+﻿
+=== 2026-10-26 00:00 start ===
+auth: long-lived-token
+I ran all 9 steps in `収集手順.md` for the Monday 00:00 run. I added **35 new catch records** (an earlier progress note said 41; that was wrong). By bay: Tokyo Bay 25, Sagami Bay 8, Suruga Bay 2.
+
+- **Steps 1–2 (date range):** today is Mon 2026-10-26. The weekend catch-up rule is only for the Monday morning run, so this midnight run covered 10/25–10/26 as usual.
+- **Steps 3–4 (search and build records):**
+  - On chowari I read pages 1–15, which held 73 catches posted since the last run. 35 fit our three bays and fish list.
+  - 34 of them are 10/25 trips. The other is 愛正丸 (Hayama): the boat stayed in on 10/25, but its 10/25 post described the 10/24 trip, so I dated it 10/24.
+  - The other 38 were dropped: 31 were outside the three bays, and 7 caught only fish not on our list (フグ, キハダ, ヤリイカ and similar).
+  - The boat pages for 弁天屋 and 忠彦丸 each listed several boats in one post, so I split those into one record per boat, as earlier runs did.
+  - Water temperature and weather come from each boat's chowari page. Nearby readings come from Open-Meteo: 5 new points, plus values already fetched for 10/25.
+- **Other sources:** none had a new catch.
+  - The new かめや post is a sale notice, not a catch report.
+  - The new イシグロ post is from Mikawa Bay, outside our area.
+  - 石田丸, SSM浦賀, サニーサイド, 浜千鳥 and 中根ボート had nothing beyond what's already recorded.
+  - YouTube: no recent fishing videos in the search results ([example result, not used](https://www.youtube.com/watch?v=XSzFmnG4VyA)).
+- **Steps 5–6 (add records, update header):** no duplicates. The records are added at the top of `data/catch-log.js`, and `lastUpdated` / `lastRunNote` are updated.
+- **Step 7 (log):** I created `logs/2026-10-26.md` with the URLs checked, what was skipped and why, and the judgement calls.
+- **Step 8 (check the file):** node loads the file with 2,416 records. IDs and date/place/fish combinations are all unique, every record has a source link, and line endings are unchanged (CRLF).
+- **Step 9 (stop):** done. I didn't touch the combined HTML or anything else; `run-collect.ps1` rebuilds the HTML next.
+
+The only files I changed are `data/catch-log.js` and the new log. A backup of the data file from before the change is in the temp folder: `%TEMP%\t26a\catch-log.backup.js`.
+
+Sources:
+- [YouTube search result (not used)](https://www.youtube.com/watch?v=XSzFmnG4VyA)
+build-single: source = 釣果ログ.html
+build-single: all-in-one 1487090 chars / docs/index.html 1487090 / dist/artifact.html 1486931
+=== 2026-10-26 00:06 end (claude exit 0) ===
