@@ -8,11 +8,32 @@
  *   { obs:"観測地点名", waterTempC, weather, windMS, windDir, waveM, airTempC, time:"YYYY-MM-DD" }
  */
 window.CATCH_LOG_META = {
-  lastUpdated: "2026-10-27 00:20",
-  lastRunNote: "7件追加（東京湾6・相模湾1・駿河湾0）。chowari の 18:00 回以降の新着（10/26 釣行）7件（弁天屋は3便に分けた）。石田丸・SSM浦賀・サニーサイド・浜千鳥・中根ボート・かめや・イシグロ・YouTubeは新着なし"
+  lastUpdated: "2026-10-27 06:05",
+  lastRunNote: "4件追加（東京湾0・相模湾4・駿河湾0）。chowari の 00:00 回以降の新着（10/26 釣行）11件のうち、ちがさき丸（茅ヶ崎）の4便を採用。石田丸・SSM浦賀・サニーサイド・浜千鳥・中根ボート・かめや・イシグロ・YouTubeは新着なし"
 };
 
 window.CATCH_LOG = [
+  // ---------- 10-27 06:00回 追加分（chowari 4件） ----------
+  { id:"2026-10-26-sagami-27b001", date:"2026-10-26", area:"sagami", spot:"茅ヶ崎港（茅ヶ崎市） ちがさき丸 1号船 キハダ船", spotType:"沖-釣り船",
+    method:"キハダ（コマセ）", species:["カツオ"], result:"キハダ 最大53.10kg 0～1匹（バラシ多数、道糸切れ・呑まれ切れ）、カツオ交じり（数の記載なし）",
+    tideName:"大潮", waterTempC:24.3, waterTempSource:"ちがさき丸 釣果ページ（chowari・釣行当日の気象）", weather:"雨", windMS:4.2, windDir:"東北東", airTempC:19,
+    nearby:{ obs:"Open-Meteo（茅ヶ崎沖）", waterTempC:23.5, weather:"雨", windMS:7.1, windDir:"北", waveM:1.02, airTempC:20.6, time:"2026-10-26" },
+    sourceName:"ちがさき丸（chowari）", sourceUrl:"https://www.chowari.jp/ship/01079/catch/", note:"対象魚種外（キハダ）は result のみ。カツオは釣果表に魚種名のみで数の記載なし" },
+  { id:"2026-10-26-sagami-27b002", date:"2026-10-26", area:"sagami", spot:"茅ヶ崎港（茅ヶ崎市） ちがさき丸 3号船 キハダ・カツオ船", spotType:"沖-釣り船",
+    method:"キハダ・カツオ（コマセ）", species:["カツオ"], result:"ホンカツオ 7.20～8.60kg 0～3匹（中盤に反応）、キハダマグロ 26.40～73.50kg 0～1匹（ヒット5回、最大73.5kg）。シイラも水面に多数",
+    tideName:"大潮", waterTempC:24.3, waterTempSource:"ちがさき丸 釣果ページ（chowari・釣行当日の気象）", weather:"雨", windMS:4.2, windDir:"東北東", airTempC:19,
+    nearby:{ obs:"Open-Meteo（茅ヶ崎沖）", waterTempC:23.5, weather:"雨", windMS:7.1, windDir:"北", waveM:1.02, airTempC:20.6, time:"2026-10-26" },
+    sourceName:"ちがさき丸（chowari）", sourceUrl:"https://www.chowari.jp/ship/01079/catch/", note:"対象魚種外（キハダ）は result のみ。シイラは釣れた数の記載がないため species に入れず" },
+  { id:"2026-10-26-sagami-27b003", date:"2026-10-26", area:"sagami", spot:"茅ヶ崎港（茅ヶ崎市） ちがさき丸 タイ五目船", spotType:"沖-釣り船",
+    method:"タイ五目（コマセ）", species:["マダイ", "ブリ"], result:"マダイ 0.60～3.10kg 0～3匹、ブリ（数の記載なし）。反応の割にアタリ少なめ",
+    tideName:"大潮", waterTempC:24.3, waterTempSource:"ちがさき丸 釣果ページ（chowari・釣行当日の気象）", weather:"雨", windMS:4.2, windDir:"東北東", airTempC:19,
+    nearby:{ obs:"Open-Meteo（茅ヶ崎沖）", waterTempC:23.5, weather:"雨", windMS:7.1, windDir:"北", waveM:1.02, airTempC:20.6, time:"2026-10-26" },
+    sourceName:"ちがさき丸（chowari）", sourceUrl:"https://www.chowari.jp/ship/01079/catch/", note:"" },
+  { id:"2026-10-26-sagami-27b004", date:"2026-10-26", area:"sagami", spot:"茅ヶ崎港（茅ヶ崎市） ちがさき丸 アマダイ船", spotType:"沖-釣り船",
+    method:"アマダイ", species:["アマダイ"], result:"アマダイ 26～35cm 9～12匹（2名で12尾と9尾、中型主体）、イトヨリ・アカボラ",
+    tideName:"大潮", waterTempC:24.3, waterTempSource:"ちがさき丸 釣果ページ（chowari・釣行当日の気象）", weather:"雨", windMS:4.2, windDir:"東北東", airTempC:19,
+    nearby:{ obs:"Open-Meteo（茅ヶ崎沖）", waterTempC:23.5, weather:"雨", windMS:7.1, windDir:"北", waveM:1.02, airTempC:20.6, time:"2026-10-26" },
+    sourceName:"ちがさき丸（chowari）", sourceUrl:"https://www.chowari.jp/ship/01079/catch/", note:"対象魚種外（イトヨリ・アカボラ）は result のみ" },
   // ---------- 10-27 00:00回 追加分（chowari 7件） ----------
   { id:"2026-10-26-aoku-27a001", date:"2026-10-26", area:"aoku", spot:"木場（江東区） 深川 吉野屋 サワラ船", spotType:"沖-釣り船",
     method:"サワラ（キャスティング）", species:["サワラ"], result:"サワラ 50～55cm 0～1匹（サゴシ船中2本）。跳ね・ナブラはあるがアタリ遠く、後半の湾奥はタチウオのみ",
