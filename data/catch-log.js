@@ -8,11 +8,47 @@
  *   { obs:"観測地点名", waterTempC, weather, windMS, windDir, waveM, airTempC, time:"YYYY-MM-DD" }
  */
 window.CATCH_LOG_META = {
-  lastUpdated: "2026-10-26 18:20",
-  lastRunNote: "14件追加（東京湾7・相模湾6・駿河湾1）。chowari の 12:00 回以降の新着（10/25〜26 釣行）13件と、かめや富士店の沼津アオリイカ1件（年-月のみ）。石田丸・SSM浦賀・サニーサイド・浜千鳥・中根ボート・YouTubeは新着なし、イシグロはサイト応答なし"
+  lastUpdated: "2026-10-27 00:20",
+  lastRunNote: "7件追加（東京湾6・相模湾1・駿河湾0）。chowari の 18:00 回以降の新着（10/26 釣行）7件（弁天屋は3便に分けた）。石田丸・SSM浦賀・サニーサイド・浜千鳥・中根ボート・かめや・イシグロ・YouTubeは新着なし"
 };
 
 window.CATCH_LOG = [
+  // ---------- 10-27 00:00回 追加分（chowari 7件） ----------
+  { id:"2026-10-26-aoku-27a001", date:"2026-10-26", area:"aoku", spot:"木場（江東区） 深川 吉野屋 サワラ船", spotType:"沖-釣り船",
+    method:"サワラ（キャスティング）", species:["サワラ"], result:"サワラ 50～55cm 0～1匹（サゴシ船中2本）。跳ね・ナブラはあるがアタリ遠く、後半の湾奥はタチウオのみ",
+    tideName:"大潮", waterTempC:22.1, waterTempSource:"深川 吉野屋 釣果ページ（chowari・釣行当日の気象）", weather:"雨", windMS:6.9, windDir:"東北東", airTempC:19,
+    nearby:{ obs:"Open-Meteo（木更津沖）", waterTempC:22.2, weather:"雨", windMS:10.32, windDir:"北東", waveM:0.64, airTempC:20.7, time:"2026-10-26" },
+    sourceName:"深川 吉野屋（chowari）", sourceUrl:"https://www.chowari.jp/ship/00271/catch/", note:"" },
+  { id:"2026-10-26-aoku-27a002", date:"2026-10-26", area:"aoku", spot:"金沢八景平潟（横浜市） 荒川屋（タチウオ船）", spotType:"沖-釣り船",
+    method:"タチウオ乗合（テンビンほか）", species:["タチウオ"], result:"タチウオ 75～126cm 2～14匹。雨でライバル船少なく、8～12時中心にアタリ続く",
+    tideName:"大潮", waterTempC:22.4, waterTempSource:"荒川屋 釣果ページ（chowari・釣行当日の気象）", weather:"雨", windMS:5.6, windDir:"東北東", airTempC:19,
+    nearby:{ obs:"Open-Meteo（金沢八景沖）", waterTempC:22.7, weather:"雨", windMS:9.4, windDir:"北東", waveM:0.8, airTempC:21.5, time:"2026-10-26" },
+    sourceName:"荒川屋（chowari）", sourceUrl:"https://www.chowari.jp/ship/00007/catch/", note:"" },
+  { id:"2026-10-26-aoku-27a003", date:"2026-10-26", area:"aoku", spot:"金沢八景瀬戸橋（横浜市） 弁天屋 タチ・アジリレー船", spotType:"沖-釣り船",
+    method:"タチウオ・アジリレー", species:["タチウオ", "アジ"], result:"タチウオ 70～115cm 1～12匹（半日アタリ良く中型主体）、アジ 17～27cm 10～69匹（小・中・良型交じり）",
+    tideName:"大潮", waterTempC:22.4, waterTempSource:"弁天屋 釣果ページ（chowari・釣行当日の気象）", weather:"雨", windMS:5.6, windDir:"東北東", airTempC:19,
+    nearby:{ obs:"Open-Meteo（金沢八景沖）", waterTempC:22.7, weather:"雨", windMS:9.4, windDir:"北東", waveM:0.8, airTempC:21.5, time:"2026-10-26" },
+    sourceName:"弁天屋（chowari）", sourceUrl:"https://www.chowari.jp/ship/00300/catch/", note:"1件の釣果ページに3便。表の魚種順と船長コメントの便順から振り分け" },
+  { id:"2026-10-26-aoku-27a004", date:"2026-10-26", area:"aoku", spot:"金沢八景瀬戸橋（横浜市） 弁天屋 午前アジ船", spotType:"沖-釣り船",
+    method:"アジ（午前）", species:["アジ"], result:"アジ 20～28cm 11～46匹。良型のアタリ良く好調",
+    tideName:"大潮", waterTempC:22.4, waterTempSource:"弁天屋 釣果ページ（chowari・釣行当日の気象）", weather:"雨", windMS:5.6, windDir:"東北東", airTempC:19,
+    nearby:{ obs:"Open-Meteo（金沢八景沖）", waterTempC:22.7, weather:"雨", windMS:9.4, windDir:"北東", waveM:0.8, airTempC:21.5, time:"2026-10-26" },
+    sourceName:"弁天屋（chowari）", sourceUrl:"https://www.chowari.jp/ship/00300/catch/", note:"1件の釣果ページに3便。表の魚種順と船長コメントの便順から振り分け" },
+  { id:"2026-10-26-aoku-27a005", date:"2026-10-26", area:"aoku", spot:"金沢八景瀬戸橋（横浜市） 弁天屋 午後マダイ船", spotType:"沖-釣り船",
+    method:"マダイ（午後）", species:["マダイ"], result:"マダイ 0.80～2.60kg 1～6匹。波立ちで活性高く1～2kgが連発",
+    tideName:"大潮", waterTempC:22.4, waterTempSource:"弁天屋 釣果ページ（chowari・釣行当日の気象）", weather:"雨", windMS:5.6, windDir:"東北東", airTempC:19,
+    nearby:{ obs:"Open-Meteo（金沢八景沖）", waterTempC:22.7, weather:"雨", windMS:9.4, windDir:"北東", waveM:0.8, airTempC:21.5, time:"2026-10-26" },
+    sourceName:"弁天屋（chowari）", sourceUrl:"https://www.chowari.jp/ship/00300/catch/", note:"1件の釣果ページに3便。表の魚種順と船長コメントの便順から振り分け" },
+  { id:"2026-10-26-wanko-miura-27a006", date:"2026-10-26", area:"wanko-miura", spot:"間口漁港（三浦市） 丸又丸 コマセ真鯛・ワラサ船", spotType:"沖-釣り船",
+    method:"コマセ真鯛・ワラサ", species:["ワラサ", "マダイ", "イナダ", "ソウダガツオ"], result:"ワラサ トップ4本が2名、マダイは見た程度（表は竿頭4匹）、イナダ・ヒラソーダ交じり",
+    tideName:"大潮", waterTempC:24.6, waterTempSource:"丸又丸 釣果ページ（chowari・釣行当日の気象）", weather:"雨", windMS:7.1, windDir:"北東", airTempC:21,
+    nearby:{ obs:"Open-Meteo（間口沖）", waterTempC:24.6, weather:"雨", windMS:9.03, windDir:"北東", waveM:1.36, airTempC:21.2, time:"2026-10-26" },
+    sourceName:"丸又丸（chowari）", sourceUrl:"https://www.chowari.jp/ship/00927/catch/", note:"ヒラソーダ＝ソウダガツオ。イナダ・ヒラソーダは本文の記載から" },
+  { id:"2026-10-26-sagami-27a007", date:"2026-10-26", area:"sagami", spot:"茅ヶ崎港（茅ヶ崎市） まごうの丸", spotType:"沖-釣り船",
+    method:"本ガツオ&キハダ船／ライト五目船", species:["カンパチ", "マダイ"], result:"キハダマグロ 47.6kg 0～1匹、カンパチ 30～40cm 4～12匹、マダイ 0.30～0.80kg 5～12匹",
+    tideName:"大潮", waterTempC:24.3, waterTempSource:"まごうの丸 釣果ページ（chowari・釣行当日の気象）", weather:"雨", windMS:4.2, windDir:"東北東", airTempC:19,
+    nearby:{ obs:"Open-Meteo（茅ヶ崎沖）", waterTempC:23.5, weather:"雨", windMS:7.1, windDir:"北", waveM:1.02, airTempC:20.6, time:"2026-10-26" },
+    sourceName:"まごうの丸（chowari）", sourceUrl:"https://www.chowari.jp/ship/00448/catch/", note:"2便の釣果が1投稿にまとまっているため1件にした。対象魚種外（キハダマグロ）は result のみに記載" },
   // ---------- 10-26 18:00回 追加分（chowari 13件） ----------
   { id:"2026-10-26-wanko-boso-26d001", date:"2026-10-26", area:"wanko-boso", spot:"勝山漁港（鋸南町） 宝生丸", spotType:"沖-釣り船",
     method:"カワハギ乗合", species:["カワハギ"], result:"カワハギ 15～27cm 3～14匹。顔は見れてもその後が続かずポツポツ",
