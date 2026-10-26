@@ -76,3 +76,39 @@ auth: long-lived-token
 build-single: source = 釣果ログ.html
 build-single: all-in-one 1496087 chars / docs/index.html 1496087 / dist/artifact.html 1495928
 === 2026-10-26 12:05 end (claude exit 0) ===
+git: push exit 0, unpushed commits: 0
+
+=== 2026-10-26 18:00 start ===
+auth: long-lived-token
+I ran every step of `収集手順.md` for the 10/26 18:00 run, from date check to stop. **14 catches were added** (Tokyo Bay 7, Sagami Bay 6, Suruga Bay 1).
+
+**What was added**
+- **chowari: 13 catches** from posts since the 12:00 run, covering 10/25–26 trips.
+  - Tokyo Bay inner (2): 林遊船 lure mixed bag (サワラ, シーバス, ワラサ, イナダ) and TARGET シーバス up to 84cm.
+  - Tokyo Bay mouth, Miura side (4): 房丸 マダイ, やまてん丸 カワハギ (10/25), and ワラサ from 大松丸 and 成銀丸.
+  - Tokyo Bay mouth, Boso side (1): 宝生丸 カワハギ.
+  - Sagami Bay (6): まなぶ丸 アマダイ, three 庄治郎丸 trips (カンパチ mixed bag, カツオ, アマダイ), 池田丸 マダイ and 島きち丸 カワハギ.
+- **Suruga Bay, かめや 富士店: 1 catch.** アオリイカ around 500g, 3 caught near 沼津.
+  - The post gives no fishing date, so the date is recorded as month only ("2026-10").
+  - It doesn't say shore or boat. It was caught with an egi lure, so I set the spot type to 堤防 (pier/breakwater) as a judgement call and wrote that in the record's note field.
+
+**What wasn't added**
+- 12 chowari catches were outside the three bays (敦賀, 鹿嶋, 和歌山, 塩竈 and others).
+- The 平塚サーフ シロギス post from かめや is a repeat of a record already in the file for 2026-10, so I skipped it.
+- 石田丸, SSM浦賀, サニーサイド, 浜千鳥 and 中根ボート had nothing new.
+- YouTube had no fishing videos from October.
+- **イシグロ could not be checked:** its site returned an error (524) on both tries. It needs checking on the next run.
+
+**Files and check**
+- Water temperature and weather come from each boat's page. The nearby readings come from Open-Meteo: 7 new locations for 10/26.
+- `data/catch-log.js` loads correctly with 2,445 records. There are no duplicates and every record has a source link.
+- I added an 18:00 entry to `logs/2026-10-26.md`.
+- Only those two files were changed and no new files were created in `釣り/`. A backup of the data file from before the change is in the temp folder (`%TEMP%/t26d`).
+- As step 9 says, I stopped there; `run-collect.ps1` rebuilds the single-file HTML next.
+
+Sources:
+- [YouTube search result (not used)](https://www.youtube.com/watch?v=XSzFmnG4VyA)
+- [かめや 沼津 アオリイカ](https://kameya-choka.com/kanto-tokai/archives/f-info/545199)
+build-single: source = 釣果ログ.html
+build-single: all-in-one 1504572 chars / docs/index.html 1504572 / dist/artifact.html 1504413
+=== 2026-10-26 18:07 end (claude exit 0) ===
