@@ -64,3 +64,41 @@ Sources:
 build-single: source = 釣果ログ.html
 build-single: all-in-one 1511609 chars / docs/index.html 1511609 / dist/artifact.html 1511450
 === 2026-10-27 06:03 end (claude exit 0) ===
+git: push exit 0, unpushed commits: 0
+
+=== 2026-10-27 12:00 start ===
+auth: long-lived-token
+`収集手順.md` の手順1〜9を、2026-10-27 12:00 の回として最後まで実行しました。今回追加したのは4件です（東京湾2・相模湾2・駿河湾0）。
+
+**追加した釣果（どれも出典URL付き）**
+- **相模湾**
+  - 丸伊丸（長井荒崎）：ティップランでアオリイカ 0.20〜0.95kg、6〜8匹（10/26）
+  - 熱海沖（熱海港 静丸）：泳がせ釣りでヒラメ、良い人で2枚程度。記事に釣った日の記載がないので、日付は「2026-10」だけにしています（かめや小田原店）
+- **東京湾口（三浦側）**
+  - 佑幸丸（松輪江奈）：ワラサ 2.3〜4.0kg、1〜6匹。ヒラソウダ・アジ・マダイも交じり（10/26）
+  - 横須賀海釣り公園：テンヤでタチウオ（指2.5〜3本幅）2本（10/26、かめや釣具）
+
+**入れなかったもの**
+- 和歌山・加太の2件：対象エリアの外
+- 西伊豆沖のシマアジ：対象魚種リストにない
+- 平塚サーフのシロギス（10月中旬）：すでにある記録と日付・場所・魚種が同じなので重複
+
+石田丸・SSM浦賀・サニーサイド・浜千鳥・中根ボート・イシグロ・YouTube には新しい釣果がありませんでした。釣割では一覧にまだ出ていない投稿が1件ありそうなので、次の回で拾われるはずです。
+
+**確認したこと**
+- `data/catch-log.js` が JavaScript として正しく読み込めることを確認しました（全2460件）。
+- 重複なし、出典URLが抜けた記録もありません。
+- 更新日時と今回のまとめ文も書き換えました。
+
+見たURLや判断の理由は `logs/2026-10-27.md` の「12:00回」に書いてあります。`釣り/` フォルダに新しいファイルは作っていません。作業用の一時ファイルと変更前のバックアップは、別の一時フォルダ（`%TEMP%/t27c/`）に置いています。
+
+スマホ用の単体HTMLの作り直しは、手順どおり `run-collect.ps1` がこのあと自動で行います。
+
+Sources:
+- [釣割 釣果情報](https://www.chowari.jp/catch/)
+- [かめや釣具 横須賀海釣り公園 タチウオ](https://kameya-choka.com/kanto-tokai/archives/f-info/545233)
+- [かめや釣具 熱海沖 ヒラメ](https://kameya-choka.com/kanto-tokai/archives/f-info/545213)
+- [YouTube 検索結果（例: XSzFmnG4VyA・不採用）](https://www.youtube.com/watch?v=XSzFmnG4VyA)
+build-single: source = 釣果ログ.html
+build-single: all-in-one 1514026 chars / docs/index.html 1514026 / dist/artifact.html 1513867
+=== 2026-10-27 12:04 end (claude exit 0) ===

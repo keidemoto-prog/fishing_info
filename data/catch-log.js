@@ -8,11 +8,32 @@
  *   { obs:"観測地点名", waterTempC, weather, windMS, windDir, waveM, airTempC, time:"YYYY-MM-DD" }
  */
 window.CATCH_LOG_META = {
-  lastUpdated: "2026-10-27 06:05",
-  lastRunNote: "4件追加（東京湾0・相模湾4・駿河湾0）。chowari の 00:00 回以降の新着（10/26 釣行）11件のうち、ちがさき丸（茅ヶ崎）の4便を採用。石田丸・SSM浦賀・サニーサイド・浜千鳥・中根ボート・かめや・イシグロ・YouTubeは新着なし"
+  lastUpdated: "2026-10-27 12:10",
+  lastRunNote: "4件追加（東京湾2・相模湾2・駿河湾0）。chowari の 06:00 回以降の新着4件のうち丸伊丸（長井）アオリイカ・佑幸丸（松輪）ワラサを採用（加太2件はエリア外）。かめや釣具から横須賀海釣り公園タチウオ（10/26）・熱海沖ヒラメ（10月）を採用。石田丸・SSM浦賀・サニーサイド・浜千鳥・中根ボート・イシグロ・YouTubeは新着なし"
 };
 
 window.CATCH_LOG = [
+  // ---------- 10-27 12:00回 追加分（chowari 2件・かめや 2件） ----------
+  { id:"2026-10-26-sagami-27c001", date:"2026-10-26", area:"sagami", spot:"長井荒崎漁港（横須賀市） 丸伊丸", spotType:"沖-釣り船",
+    method:"ティップラン（アオリイカ）", species:["アオリイカ"], result:"アオリイカ 0.20～0.95kg 6～8匹（朝は乗り渋り、潮が流れ始めてからポツポツ、帰り際ダブルヒット）",
+    tideName:"大潮", waterTempC:22.4, waterTempSource:"丸伊丸 釣果ページ（chowari・釣行当日の気象）", weather:"雨", windMS:7.1, windDir:"北東", airTempC:19,
+    nearby:{ obs:"Open-Meteo（長井沖）", waterTempC:24.1, weather:"雨", windMS:10.04, windDir:"北東", waveM:1.2, airTempC:21.4, time:"2026-10-26" },
+    sourceName:"丸伊丸（chowari）", sourceUrl:"https://www.chowari.jp/ship/00795/catch/", note:"仕立船" },
+  { id:"2026-10-26-wanko-miura-27c002", date:"2026-10-26", area:"wanko-miura", spot:"松輪江奈漁港（三浦市） 佑幸丸", spotType:"沖-釣り船",
+    method:"ワラサ（コマセ・泳がせ）", species:["ワラサ", "ソウダガツオ", "アジ", "マダイ"], result:"ワラサ 2.30～4.00kg 1～6匹（朝イチと潮変わりに連続ヒット、釣れたアジの泳がせでも良型）。ヒラソウダ・アジ・マダイも交じる（数の記載なし）",
+    tideName:"大潮", waterTempC:24.6, waterTempSource:"佑幸丸 釣果ページ（chowari・釣行当日の気象）", weather:"雨", windMS:7.1, windDir:"北東", airTempC:21,
+    nearby:{ obs:"Open-Meteo（松輪剣崎沖）", waterTempC:24.4, weather:"雨", windMS:9.76, windDir:"北東", waveM:1.34, airTempC:21.4, time:"2026-10-26" },
+    sourceName:"佑幸丸（chowari）", sourceUrl:"https://www.chowari.jp/ship/01190/catch/", note:"仕立船。ヒラソウダ・アジ・マダイは本文に「釣れながら」とあるのみ" },
+  { id:"2026-10-26-wanko-miura-27c003", date:"2026-10-26", area:"wanko-miura", spot:"横須賀海釣り公園", spotType:"釣り公園",
+    method:"テンヤ（10・15g、シーバスロッド PE1.2号）", species:["タチウオ"], result:"タチウオ F2.5～3 2本（15gテンヤで釣れた）",
+    tideName:"", waterTempC:null, waterTempSource:"", weather:"", windMS:null, windDir:"", airTempC:null,
+    nearby:{ obs:"Open-Meteo（横須賀沖）", waterTempC:22.7, weather:"雨", windMS:5.91, windDir:"北東", waveM:0.8, airTempC:20.8, time:"2026-10-26" },
+    sourceName:"かめや釣具", sourceUrl:"https://kameya-choka.com/kanto-tokai/archives/f-info/545233", note:"10/27 掲載、釣行日 10/26" },
+  { id:"2026-10-sagami-27c004", date:"2026-10", area:"sagami", spot:"熱海沖（熱海港 静丸）", spotType:"沖-釣り船",
+    method:"泳がせ釣り（活きアジ）", species:["ヒラメ"], result:"ヒラメ 良い人で2枚程",
+    tideName:"", waterTempC:null, waterTempSource:"", weather:"", windMS:null, windDir:"", airTempC:null,
+    nearby:null,
+    sourceName:"かめや釣具 小田原店", sourceUrl:"https://kameya-choka.com/kanto-tokai/archives/f-info/545213", note:"10/27 掲載。釣行日の記載がないので年-月のみ" },
   // ---------- 10-27 06:00回 追加分（chowari 4件） ----------
   { id:"2026-10-26-sagami-27b001", date:"2026-10-26", area:"sagami", spot:"茅ヶ崎港（茅ヶ崎市） ちがさき丸 1号船 キハダ船", spotType:"沖-釣り船",
     method:"キハダ（コマセ）", species:["カツオ"], result:"キハダ 最大53.10kg 0～1匹（バラシ多数、道糸切れ・呑まれ切れ）、カツオ交じり（数の記載なし）",
