@@ -1,0 +1,23 @@
+﻿
+=== 2026-10-28 00:00 start ===
+auth: long-lived-token
+I finished the 10/28 00:00 collection run (steps 1–9 of `収集手順.md`) and added 14 new catches, all from fishing on 10/27.
+
+- **Added:** 東京湾 6, 相模湾 6, 駿河湾 2.
+  - 東京湾: 忠彦丸 (金沢), あまさけや丸 (松輪), 丸又丸 (間口), 五郎丸 ×2 (鴨居), 山賀丸 (南房総 小浦).
+  - 相模湾: 二階屋丸 and 治久丸 (宇佐美), かりゆし丸 (平塚), 愛正丸 (葉山), 祥福丸 (湯河原), 道乗丸 (長井).
+  - 駿河湾: 伊勝丸 ×2 (江の浦).
+- **Where they came from:** chowari had 25 new posts since the last run. I left out 5 that were outside the three bays and 6 with no target species (フグ, ハゼ, マグロ, キハダ, カイワリ).
+- **Port classification:** 宇佐美 (伊東市) appears for the first time. I put it in 相模湾 to match how 網代 is already filed. I filed 小浦漁港 as 湾口房総 because a search placed it near 岩井 on the 内房 side.
+- **Other sources:** 石田丸, SSM浦賀, サニーサイド, 浜千鳥 and かめや had nothing new. イシグロ's one new post was outside the area. One YouTube search found no recent fishing videos.
+- **Not checked:** 中根ボート's blog returned a 503 error, so it's left for the next run.
+- **Sea and weather data:** filled from Open-Meteo for each port's waters on 10/27.
+- **Checks:** `data/catch-log.js` loads correctly with 2,486 records. There are no duplicate IDs, no duplicate catches (same date, spot and species), and no missing source URLs. Its line endings are unchanged.
+- **Log:** I added the 00:00 run note to `logs/2026-10-28.md`, with the URLs checked, what I left out and why, and how I classified each port.
+
+I didn't touch any other files. As step 9 says, `run-collect.ps1` rebuilds the single-file HTML automatically after this.
+
+Sources: [chiba 25](https://www1.kaiho.mlit.go.jp/CEIS/3kan/chiba/chiba_25.pdf), [zouyousyoku tebiki 20](https://www.jfa.maff.go.jp/j/seibi/attach/pdf/zouyousyoku_tebiki-20.pdf), [myhome.nifty.com](https://myhome.nifty.com/smp/tochi/chiba/minamibososhi/), [www.pref.chiba.lg.jp](https://www.pref.chiba.lg.jp/suisan/event/h31/documents/r1tateyama.pdf), [yutura.net](https://yutura.net/channel/95582/video/89S3Lu4Lrr8/)
+build-single: source = 釣果ログ.html
+build-single: all-in-one 1530226 chars / docs/index.html 1530226 / dist/artifact.html 1530067
+=== 2026-10-28 00:04 end (claude exit 0) ===
