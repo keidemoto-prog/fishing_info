@@ -102,3 +102,30 @@ Sources:
 build-single: source = 釣果ログ.html
 build-single: all-in-one 1514026 chars / docs/index.html 1514026 / dist/artifact.html 1513867
 === 2026-10-27 12:04 end (claude exit 0) ===
+git: push exit 0, unpushed commits: 0
+
+=== 2026-10-27 18:00 start ===
+auth: long-lived-token
+I ran the 18:00 collection round from `収集手順.md`, all 9 steps. **12 new catch reports** went into `data/catch-log.js`, and node loads the file without errors.
+
+**Added (all from chowari, all fishing dates 10/27):**
+- **Tokyo Bay (6):**
+  - Inner bay: 黒川丸 (金沢八景), 林遊船 (江戸川放水路)
+  - Miura side: 金重丸 (金田), 伝五郎丸 (松輪), 大松丸 (松輪)
+  - Boso side: 彦次郎丸 (上総湊)
+- **Sagami Bay (5):** two 深田正夫丸 trips and 佐島海楽園 (佐島), 海力丸 (長井), 安菜丸 (網代)
+- **Suruga Bay (1):** 天陽丸 (焼津)
+
+**Not added:** 3 chowari reports from outside the three bays (師崎, 垂水, 和歌山), and 2 new Ishiguro posts that were also out of area. The boat and shop blogs (石田丸, SSM浦賀, サニーサイド, 浜千鳥, 中根ボート, かめや) had nothing new. The one YouTube search found no recent fishing videos.
+
+**Choices I made:**
+- **Species outside the list:** some fish on the boards aren't on the target list (イシモチ, スルメイカ, アカムツ, ウッカリカサゴ, etc.). These appear only in the result text, not as tagged species. シロアマダイ is tagged as アマダイ, as earlier entries do.
+- **深田正夫丸:** it posted two separate jigging reports for the same day. I named them "5名仕立" and "別仕立" so they aren't treated as duplicates.
+- **Weather:** water temperature and weather come from the boats' own pages. The nearby sea and weather values come from Open-Meteo for 10/27.
+
+**Checks:** the file now has 2,472 entries, with no duplicate IDs, no duplicate date + spot + species, and no missing source URLs. The original Windows line endings are unchanged.
+
+**Other files:** I added an 18:00 section to `logs/2026-10-27.md`. No new files were created in `釣り/`; the backup and working files are in a temp folder (`%TEMP%/t27d`). Per step 9, `run-collect.ps1` will rebuild the single-file HTML next, so I didn't touch it.
+build-single: source = 釣果ログ.html
+build-single: all-in-one 1521678 chars / docs/index.html 1521678 / dist/artifact.html 1521519
+=== 2026-10-27 18:03 end (claude exit 0) ===
