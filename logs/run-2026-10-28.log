@@ -21,3 +21,32 @@ Sources: [chiba 25](https://www1.kaiho.mlit.go.jp/CEIS/3kan/chiba/chiba_25.pdf),
 build-single: source = 釣果ログ.html
 build-single: all-in-one 1530226 chars / docs/index.html 1530226 / dist/artifact.html 1530067
 === 2026-10-28 00:04 end (claude exit 0) ===
+git: push exit 0, unpushed commits: 0
+
+=== 2026-10-28 06:00 start ===
+auth: long-lived-token
+I ran the 06:00 pass of the daily collection steps in `収集手順.md` (steps 1–9). It added **4 new catch records**, all from 10/27 trips.
+
+| Area | Spot | Fish |
+|---|---|---|
+| 相模湾 | 葉山鐙摺港 たいぞう丸 (アマダイ五目) | アマダイ, オオモンハタ, カサゴ |
+| 相模湾 | 葉山芝崎港 五エム丸 | アオリイカ (47 on the boat in total) |
+| 東京湾奥 | 大黒運河 PALLAS | シーバス |
+| 湾口房総 | 勝山漁港 利八丸 | ワラサ, アジ |
+
+- **Where they came from:** chowari had 5 new posts since the 00:00 run. I left out たいぞう丸's tuna boat because キハダ isn't on the species list. The 利八丸 アジ were caught to use as live bait, but I counted them as a catch and wrote that in the record's note.
+- **Sea and weather readings:** where the posts didn't say, I filled these in from Open-Meteo for 10/27.
+- **Other sources:** none of the other boat and shop sites had anything new. 石田丸 didn't go out on 10/28 because of strong north wind. 中根ボート loaded this time (it gave an error last run); its newest post is from 10/18. One YouTube search found no recent trip videos.
+- **Check:** `data/catch-log.js` loads as valid JavaScript with 2490 records. There are no duplicate IDs, no duplicate date + spot + species entries, and no records missing a source link.
+- **Updates:** I updated the "last updated" date and run note in the data file, and added a 06:00 section to `logs/2026-10-28.md`.
+- **Files:** I only changed those two files and created nothing new in `釣り/`. Scratch files and a backup of the data file are in a temp folder (`%TEMP%/t28b`).
+
+Rebuilding the single-file HTML and committing are left to `run-collect.ps1`, as step 9 says.
+
+Sources:
+- [chowari 釣果情報](https://www.chowari.jp/catch/)
+- [Open-Meteo](https://open-meteo.com/)
+- YouTube search results (nothing usable): [yutura.net](https://yutura.net/channel/95582/video/89S3Lu4Lrr8/), [maruzenjunkudo](https://www.maruzenjunkudo.co.jp/products/9784864477390), [fujisan.co.jp](https://www.fujisan.co.jp/product/1281697688/b/list/)
+build-single: source = 釣果ログ.html
+build-single: all-in-one 1532778 chars / docs/index.html 1532778 / dist/artifact.html 1532619
+=== 2026-10-28 06:02 end (claude exit 0) ===
