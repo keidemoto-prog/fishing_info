@@ -17,3 +17,31 @@ Sources: [tsurihack.com/5924](https://tsurihack.com/5924), [tsurihack.com/8923](
 build-single: source = 釣果ログ.html
 build-single: all-in-one 1569589 chars / docs/index.html 1569589 / dist/artifact.html 1569430
 === 2026-10-29 00:04 end (claude exit 0) ===
+git: push exit 0, unpushed commits: 0
+
+=== 2026-10-29 06:00 start ===
+auth: long-lived-token
+I finished the 06:00 collection run (all 9 steps in `収集手順.md`) and added 4 new catches.
+
+**Added: 4 records, all caught on 10/28** (Tokyo Bay 1, Sagami Bay 3, Suruga Bay 0)
+- **Inner Tokyo Bay:** TARGET (都川, Chiba), night seabass. 17 fish, 35–78cm.
+- **Sagami Bay:**
+  - 哲夫丸 (長井), tip-run squid fishing for アオリイカ. Biggest was 1kg.
+  - 藤八丸 (小田原新港), アオリイカ. 15 for the whole boat.
+  - 安菜丸 (網代), カワハギ, マダイ and ソウダガツオ. The ソウダガツオ comes from the report text ("ヒラソーダ") rather than the catch table, and I said so in the record's note.
+
+All 4 came from chowari: the only new reports since the 00:00 run were IDs 5344090–5344095. The other sources had nothing new:
+- 石田丸 posted no catch for 10/28 (it didn't go out because of strong north wind).
+- SSM浦賀, サニーサイド, 中根ボート, 浜千鳥, かめや and イシグロ had no new reports.
+- The YouTube search found no recent fishing videos.
+
+**What I changed**
+- **Sea and weather data:** For the near-by conditions I pulled new Open-Meteo values for off 小田原, off 網代 and off 千葉港, and reused the existing off-長井 values.
+- **`data/catch-log.js`:** Updated the last-updated time and the run note. Node loads it without errors (2,554 records), with no duplicate IDs, no repeated date + spot + species, and no record missing a source URL. Line endings are still CRLF.
+- **`logs/2026-10-29.md`:** Added a 06:00 section with the URLs I checked, the counts and the decisions I made.
+- No new files in `釣り/`. Temporary files and a backup of the data file are in a scratch folder outside it.
+
+`run-collect.ps1` rebuilds the single HTML page and commits after this; I didn't run either step myself.
+build-single: source = 釣果ログ.html
+build-single: all-in-one 1571908 chars / docs/index.html 1571908 / dist/artifact.html 1571749
+=== 2026-10-29 06:02 end (claude exit 0) ===
