@@ -1,0 +1,19 @@
+﻿
+=== 2026-10-29 00:00 start ===
+auth: long-lived-token
+I ran all 9 steps in `収集手順.md` for the 2026-10-29 00:00 run, covering catches from 10/28–10/29. **I added 20 new catch records** (Tokyo Bay 5, Sagami Bay 10, Suruga Bay 5).
+
+- **Steps 1–3, finding catches:** chowari had 32 new reports since the last run. I also checked every boat and shop blog in the list: Ishidamaru (didn't sail on 10/28 because of strong north wind), SSM Uraga, Sunnyside, Nakane Boat, Hamachidori, Kameya and Ishiguro, plus one YouTube search. Only Ishiguro had something new and usable: an Ito Seitoku-maru trip on 10/27 (kawahagi and aori squid).
+- **Step 4, building records:** 19 chowari reports were in the three bays and had listed species, plus the Ishiguro one. The rest were outside the area (the Pacific side of Chiba, Kansai, Kyushu and others) or only had fugu or kihada, which aren't on the list. I left out one Ishiguro mention of fishing at Shimizu because it gave no date and no type of spot. Water temperature and weather come from chowari's same-day conditions, and the nearby values come from Open-Meteo for 7 new points.
+- **Steps 5–6:** Each record went in only if its date + spot + species wasn't already there. I updated `lastUpdated` and `lastRunNote` (`data/catch-log.js`).
+- **Step 7:** `logs/2026-10-29.md` lists the URLs checked, what was added and skipped, and why.
+- **Step 8:** The file loads as valid JavaScript: 2,550 records, no duplicate IDs or catches, and every record has a source URL. Partway through, my write turned the line endings into a doubled CR. I fixed it, and the file now has normal CRLF line endings like before. A backup of the original is in the temp folder (`%TEMP%/t29a`).
+- **Step 9:** I stopped here. As the instructions say, `run-collect.ps1` rebuilds the single-file HTML afterwards.
+
+Only `data/catch-log.js` and the `logs/` folder were changed; nothing new was created anywhere else in `釣り/`.
+
+The YouTube search returned no recent fishing videos. The only links it returned were older articles:
+Sources: [tsurihack.com/5924](https://tsurihack.com/5924), [tsurihack.com/8923](https://tsurihack.com/8923), [anglers.jp/catches/6300631](https://anglers.jp//catches/6300631), [tk.oretsuri.com](https://tk.oretsuri.com)
+build-single: source = 釣果ログ.html
+build-single: all-in-one 1569589 chars / docs/index.html 1569589 / dist/artifact.html 1569430
+=== 2026-10-29 00:04 end (claude exit 0) ===
