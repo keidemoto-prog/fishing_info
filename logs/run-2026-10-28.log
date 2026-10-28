@@ -88,3 +88,36 @@ YouTube検索で見た結果（採用なし）：
 build-single: source = 釣果ログ.html
 build-single: all-in-one 1542526 chars / docs/index.html 1542526 / dist/artifact.html 1542367
 === 2026-10-28 12:05 end (claude exit 0) ===
+git: push exit 0, unpushed commits: 0
+
+=== 2026-10-28 18:00 start ===
+auth: long-lived-token
+I finished the 18:00 collection run and added **24 catch reports to `data/catch-log.js`**, all from today (10/28). The file now holds 2,530 records.
+
+| Area | Added | Main catches |
+|---|---|---|
+| Inner Tokyo Bay | 3 | Horse mackerel (Kurokawa-maru, Muramoto Kaiji, Jin-maru) |
+| Bay mouth, Miura side | 8 | Yellowtail, red sea bream, skipjack, bigfin reef squid, cutlassfish, filefish |
+| Bay mouth, Boso side | 1 | Fish On Daisho at Kazusaminato: tilefish and horse mackerel |
+| Sagami Bay | 12 | Koshigoe, Katase, Nagai, Sajima, Hiratsuka and Manazuru boats |
+| Suruga Bay | 0 | Nothing new |
+
+- **Where they came from:** all 24 are from the catch site chowari. Six of its listings hid the details behind a login, so I read them from each boat's own catch page.
+- **Other sources:** nothing new. Ishidamaru didn't sail today because of the strong north wind. The only new Ishiguro report was from Lake Hamana, which is outside your areas. No recent fishing videos turned up on YouTube.
+- **Left out:** reports from outside your areas (Oarai, Wakayama, Morozaki, Shimoda and others), and catches of species not on your list (octopus and spear squid).
+- **Fish mentioned in boat comments:** for Ikeda-maru and Shojiro-maru, I also counted fish named only in the captain's comments as catches. Each record has a note saying so.
+- **Sea conditions:** water temperature and weather come from chowari's same-day conditions, plus nearby values from the free Open-Meteo weather service.
+
+**Problem along the way:** one of my edits changed the line-break format of the whole file, which would have shown up as all ~13,000 lines changed. I restored the file from a backup I'd made before starting and redid the changes. Now only the 27 new lines and the 2 summary lines differ.
+
+**Checks:** the file loads correctly, and there are no duplicate records and no missing source links. I also added notes for this run to `logs/2026-10-28.md`, and I didn't create any new files in the `釣り/` folder.
+
+`run-collect.ps1` will rebuild the single-file HTML pages automatically, as usual.
+
+Sources:
+- [chowari catch reports](https://www.chowari.jp/catch/)
+- [Ishiguro fishing reports](https://www.ishiguro-gr.com/enjoy/fishing/)
+- [Ishidamaru](https://www.ishidamaru.com/?post_type=fishing&paged=1)
+build-single: source = 釣果ログ.html
+build-single: all-in-one 1557396 chars / docs/index.html 1557396 / dist/artifact.html 1557237
+=== 2026-10-28 18:04 end (claude exit 0) ===
