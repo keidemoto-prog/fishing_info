@@ -1,0 +1,39 @@
+﻿
+=== 2026-10-30 00:00 start ===
+auth: long-lived-token
+I ran the 10/30 00:00 collection from `収集手順.md` (steps 1–9) and added 21 new catches to `data/catch-log.js`. After adding them, node reads the file without errors and it now holds 2,627 records.
+
+**What was added** (19 trips on 10/29, one SSM浦賀 trip on 10/28, one on 10/25):
+- **東京湾 (10, all on the 三浦 side of the bay mouth):**
+  - Charter boats: 太郎八丸 and あまさけや丸 (松輪), 2 trips by 五郎丸 (鴨居), 黒川本家 (久里浜), やまてん丸 (久比里).
+  - SSM浦賀: 3 reports, dated 10/29, 10/28 and 10/25.
+  - 中根ボート: 1 report for 10/29.
+- **相模湾 (8):**
+  - 3 trips by ゆうせい丸 (片瀬).
+  - 政美丸 (腰越), including a 7.8kg ブリ.
+  - かりゆし丸 (平塚), 石田丸 (早川), 富丸 (真鶴), 治久丸 (宇佐美).
+- **駿河湾 (3):** 風神丸 (焼津) and 2 trips by 魚磯丸 (久料).
+
+**Judgement calls you may want to check:**
+- **清貢丸 (宇佐美), not recorded:** chowari's catch table says マダイ, but the text says it was a レンコ鯛 trip, which is a different fish.
+- **海上つり堀まるや (沼津), not recorded:** it's a pen stocked with farmed fish, and there's no earlier example of recording one.
+- **南伊豆 (手石港), not recorded:** I treated it as outside the area, since it has never been recorded before.
+- **政美丸's species:** the post text was garbled, so I read it as タチウオ and ヒラソーダ. I explained this in the record's note.
+- **Inferred species:** "カンパチの子供" (中根ボート) is recorded as ショゴ. For 太郎八丸, the ティップラン catch had no fish name, so I left it out of the species list.
+
+**Data and checks:**
+- No new catches came from サニーサイド, 浜千鳥, かめや (its new posts are all from Nagoya), イシグロ, or the YouTube search.
+- Where a post had no water temperature or weather, I used Open-Meteo values from the nearest sea area, as the instructions say.
+- No duplicate ids, no duplicate date + spot + species combinations, and every record has a source URL.
+
+The meta line (`lastUpdated` / `lastRunNote`) is updated. The URLs I checked and the reasons for each skip are in `logs/2026-10-30.md`. The only files I wrote in the folder are `data/catch-log.js` and that log. The single-file HTML gets rebuilt by `run-collect.ps1` afterwards, as step 9 says.
+
+Sources:
+- [釣割 釣果情報](https://www.chowari.jp/catch/)
+- [石田丸](https://www.ishidamaru.com/?post_type=fishing&paged=1)
+- [SSM浦賀 釣果](https://www.ssm-uraga.jp/fishing)
+- [なかね貸ボート店ブログ 29日釣果](https://ameblo.jp/nakane-boat/entry-12983030182.html)
+- [YouTube search result (old video, not used)](https://www.youtube.com/watch?v=XSzFmnG4VyA)
+build-single: source = 釣果ログ.html
+build-single: all-in-one 1616415 chars / docs/index.html 1616415 / dist/artifact.html 1616256
+=== 2026-10-30 00:09 end (claude exit 0) ===
