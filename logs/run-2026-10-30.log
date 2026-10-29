@@ -37,3 +37,30 @@ Sources:
 build-single: source = 釣果ログ.html
 build-single: all-in-one 1616415 chars / docs/index.html 1616415 / dist/artifact.html 1616256
 === 2026-10-30 00:09 end (claude exit 0) ===
+git: push exit 0, unpushed commits: 0
+
+=== 2026-10-30 06:00 start ===
+auth: long-lived-token
+I ran all 9 steps in `収集手順.md` for the 06:00 run on 2026-10-30. This run added **1 record**.
+
+**What was added (相模湾 1):**
+- **太一丸 (平塚漁港), 10/29:** a ティップラン trip that caught アオリイカ, 5 and 2 squid (中潮, water 24.3℃, cloudy).
+
+**What I checked:**
+- **chowari:** new posts since the 00:00 run were IDs 5344601–5344622. Only 太一丸 was in the area. The other 3 were outside the area (加古川, 淡路, 波崎).
+- **Shop and boat blogs:** 石田丸, SSM浦賀, 中根ボート, サニーサイド, 浜千鳥, かめや, イシグロ, 富浦 and スーパーフィッシング had nothing new since the 00:00 run.
+- **YouTube:** one search found no recent fishing-trip videos.
+
+**Data and checks:**
+- For the 10/29 平塚 sea and weather values, I reused the Open-Meteo values already in the file.
+- `data/catch-log.js` loads as valid JavaScript and now has 2628 records. There are no duplicate ids, no duplicate date + spot + species combinations, and every record has a source URL.
+
+The meta line (`lastUpdated` / `lastRunNote`) is updated. I added the URLs I checked to `logs/2026-10-30.md`. The only files I wrote in the folder are `data/catch-log.js` and that log; temporary files went to the scratchpad. The single-file HTML gets rebuilt by `run-collect.ps1` afterwards, as step 9 says.
+
+Sources:
+- [釣割 釣果情報](https://www.chowari.jp/catch/)
+- [太一丸（chowari）](https://www.chowari.jp/ship/01714/catch/)
+- [YouTube search result (old video, not used)](https://www.youtube.com/watch?v=XSzFmnG4VyA)
+build-single: source = 釣果ログ.html
+build-single: all-in-one 1616894 chars / docs/index.html 1616894 / dist/artifact.html 1616735
+=== 2026-10-30 06:01 end (claude exit 0) ===

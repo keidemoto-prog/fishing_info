@@ -137,11 +137,13 @@
  *   { obs:"観測地点名", waterTempC, weather, windMS, windDir, waveM, airTempC, time:"YYYY-MM-DD" }
  */
 window.CATCH_LOG_META = {
-  lastUpdated: "2026-10-30 00:30",
-  lastRunNote: "21件追加（東京湾10・相模湾8・駿河湾3）。chowari の 18:00 回以降の新着（5344419〜5344600）のうち対象エリア17件：湾口三浦（太郎八丸・あまさけや丸 松輪、五郎丸 鴨居2便、黒川本家 久里浜、やまてん丸 久比里）、相模湾（ゆうせい丸 片瀬3便、政美丸 腰越、かりゆし丸 平塚、富丸 真鶴、治久丸 宇佐美）、駿河湾（風神丸 焼津、魚磯丸 久料2便）。ほかに石田丸 10/29 アジ、SSM浦賀3件（10/29 剣崎沖・10/28 金田湾沖ほか・10/25 久里浜少年院沖）、中根ボート 10/29 観音崎。サニーサイド・浜千鳥・かめや・イシグロ・YouTubeは対象の新着なし"
+  lastUpdated: "2026-10-30 06:10",
+  lastRunNote: "1件追加（東京湾0・相模湾1・駿河湾0）。chowari の 00:00 回以降の新着（5344601〜5344622）のうち対象エリアは太一丸（平塚）のティップラン アオリイカ 10/29 の1件のみ。石田丸・SSM浦賀・中根ボート・サニーサイド・浜千鳥・かめや・イシグロ・YouTubeは新着なし"
 };
 
 window.CATCH_LOG = [
+  // ---------- 10-30 06:00回 追加分（chowari 1件） ----------
+  {id: "2026-10-29-sagami-30b001", date: "2026-10-29", area: "sagami", spot: "平塚漁港（平塚市） 太一丸", spotType: "沖-釣り船", method: "ティップラン（調査）", species: ["アオリイカ"], result: "アオリイカ 5杯と2杯（3時間ほど。1流し目から乗り、ダブルヒットあり・バラシ多数）", tideName: "中潮", waterTempC: 24.3, waterTempSource: "chowari 釣行当日の気象", weather: "曇り", windMS: 3.3, windDir: "北北東", airTempC: 18, nearby: {obs: "Open-Meteo（平塚沖）", waterTempC: 23.3, weather: "霧雨", windMS: 5.2, windDir: "北", waveM: 0.54, airTempC: 17.7, time: "2026-10-29"}, sourceName: "太一丸（chowari）", sourceUrl: "https://www.chowari.jp/ship/01714/catch/", note: ""},
   // ---------- 10-30 00:00回 追加分（chowari 17件・石田丸1・SSM浦賀3・中根ボート1） ----------
   {id: "2026-10-29-wanko-miura-30a001", date: "2026-10-29", area: "wanko-miura", spot: "松輪江奈漁港（三浦市） 太郎八丸", spotType: "沖-釣り船", method: "ワラサ＆ティップランのリレー", species: ["ワラサ", "ソウダガツオ"], result: "ワラサ トップ2本（ハリス切れあり）、他ソウダカツオなど。中盤からティップランに変えて全員ゲット", tideName: "中潮", waterTempC: 24.5, waterTempSource: "chowari 釣行当日の気象", weather: "曇りのち一時雨", windMS: 5.4, windDir: "北東", airTempC: 21, nearby: {obs: "Open-Meteo（松輪剣崎沖）", waterTempC: 25.3, weather: "霧雨", windMS: 8.62, windDir: "北東", waveM: 0.86, airTempC: 19.9, time: "2026-10-29"}, sourceName: "太郎八丸（chowari）", sourceUrl: "https://www.chowari.jp/ship/01379/catch/", note: "ティップランの釣果は本文に魚種名がないため species に入れていない"},
   {id: "2026-10-29-wanko-miura-30a002", date: "2026-10-29", area: "wanko-miura", spot: "松輪江奈漁港（三浦市） あまさけや丸", spotType: "沖-釣り船", method: "泳がせ釣り", species: ["ワラサ"], result: "ワラサ 3～5kg 1～5匹（トップ5本）。連日好ヒット", tideName: "中潮", waterTempC: 23.9, waterTempSource: "chowari 釣行当日の気象", weather: "曇りのち一時雨", windMS: 5.4, windDir: "北東", airTempC: 21, nearby: {obs: "Open-Meteo（松輪剣崎沖）", waterTempC: 25.3, weather: "霧雨", windMS: 8.62, windDir: "北東", waveM: 0.86, airTempC: 19.9, time: "2026-10-29"}, sourceName: "あまさけや丸（chowari）", sourceUrl: "https://www.chowari.jp/ship/01036/catch/", note: ""},
