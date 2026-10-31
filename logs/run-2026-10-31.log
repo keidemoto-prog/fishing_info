@@ -52,3 +52,38 @@ Sources:
 build-single: source = 釣果ログ.html
 build-single: all-in-one 1670077 chars / docs/index.html 1670077 / dist/artifact.html 1669918
 === 2026-10-31 06:03 end (claude exit 0) ===
+git: push exit 0, unpushed commits: 0
+
+=== 2026-10-31 12:00 start ===
+auth: long-lived-token
+I ran the 12:00 collection for 2026-10-31 (Saturday) using `収集手順.md`, steps 1–9. It added **15 records**, all trips on 10/30: 13 from Tokyo Bay, 2 from Sagami Bay and none from Suruga Bay.
+
+**What was added (all from chowari, the fishing-boat booking site)**
+- **Inner Tokyo Bay (12):**
+  - 弁天屋: 4 records, one per boat run (カワハギ, アジ morning/afternoon, タチウオ, マダイ)
+  - 米元釣船店: 2 runs (マダイ, LTアジ up to 45cm)
+  - 荒川屋, 打木屋, 長崎屋 and 三喜丸: アジ (三喜丸 caught up to 126 fish)
+  - 鴨下丸kawana: マダイ with some ワラサ
+  - 新明丸: マゴチ
+- **Boso side (1):** 豊国丸 (Takeoka), マダイ up to 3.10kg
+- **Sagami Bay (2):** まなぶ丸 (Katase), アマダイ up to 51cm; 藤八丸 (Odawara), アオリイカ
+
+**Not added**
+- 12 posts were outside the target areas (Kashima, Nakaminato, Aichi, Wakayama, Fukui, Hyogo, Miyagi).
+- 2 posts had no target species (長崎屋's octopus boat, 新明丸's pufferfish boat).
+- The other sources had nothing new: 石田丸, 中根ボート, SSM浦賀, サニーサイド, 浜千鳥, 富浦, スーパーフィッシング, かめや (only squid), イシグロ (only Tsu, outside the area). One YouTube search found no video with a clear fishing date.
+
+**Checks**
+- `data/catch-log.js` loads correctly as JavaScript and now holds 2731 records.
+- There are no duplicate IDs, no duplicate date+spot+species entries, and every record has a source URL.
+- The nearby sea and weather values all reused 10/30 readings already in the log, so nothing new had to be fetched.
+- The run summary (`lastUpdated` / `lastRunNote`) is updated, and the details are in `logs/2026-10-31.md`.
+
+I only changed `data/catch-log.js` and `logs/2026-10-31.md`. Temporary files went to `%TEMP%/t31c` (a backup is there), so nothing new was created in the `釣り/` folder. As step 9 says, `run-collect.ps1` regenerates the single HTML file afterwards, so I didn't touch it.
+
+Sources:
+- [釣割 釣果情報](https://www.chowari.jp/catch/)
+- YouTube search results checked (none used): [東京湾のタチウオ](https://www.youtube.com/watch?v=Ok0AyLCWLqY), [東京湾 電気ウキ](https://www.youtube.com/watch?v=XSzFmnG4VyA)
+build-single: source = 釣果ログ.html
+build-single: all-in-one 1678987 chars / docs/index.html 1678987 / dist/artifact.html 1678828
+=== 2026-10-31 12:03 end (claude exit 0) ===
