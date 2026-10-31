@@ -1,0 +1,28 @@
+﻿
+=== 2026-11-01 00:00 start ===
+auth: long-lived-token
+I followed all 9 steps in `収集手順.md` for the 00:00 run on Sunday 2026-11-01. The search period was 10/31–11/01, and I only collected posts that appeared after the 10/31 18:00 run.
+
+**Result: 40 records added** (Tokyo Bay 24 = inner bay 12, Miura side 11, Boso side 1; Sagami Bay 10; Suruga Bay 6). Every record is a 10/31 trip; there were no 11/01 reports yet.
+- **chowari:** 84 new posts. After keeping only the target areas and species, they became 38 records. Where one boat had two posts for the same day, spot and species, I merged them into one record (二階屋丸 and 魚磯丸).
+- **石田丸:** the 10/31 report (マダイ 77cm 5.2kg, アジ top angler 50, マゴチ).
+- **中根ボート:** the 10/31 19:43 post (マダイ 2, アジ).
+- The other boat and shop sites had nothing new, and the YouTube search found no recent trip videos.
+
+**Weather and sea data (`nearby`):** I fetched Open-Meteo for 7 new spots (久里浜, 葉山, 宇佐美, 熱海, 焼津, 清水, 久料). The other spots reuse the 10/31 values from the 18:00 run. Open-Meteo shows rain for 10/31 while the boats reported sunny weather, the same mismatch noted in the 18:00 log. The boats' own readings are stored separately from the Open-Meteo values.
+
+**Checks:** `data/catch-log.js` loads in node with 2,816 records. There are no duplicate IDs, no duplicate date + spot + species, and no records missing a source URL. Line endings are unchanged (CRLF). A backup of the file from before the change is in the temp folder (`%TEMP%/t1101a/catch-log.backup.js`).
+
+**Judgment calls:**
+- I counted 忠彦丸's 「シオ」 as カンパチ (young カンパチ).
+- I didn't put names of skippers' top anglers or customers in the records.
+- Fish mentioned only by name in a post (no count or size) went into the result/note text, not the species list.
+
+**Changed files:** `data/catch-log.js` (40 records and `CATCH_LOG_META` updated), plus the new `logs/2026-11-01.md` with the URLs checked, what was skipped, and the reasons. Nothing else in `釣り/` was created or edited. As step 9 says, `run-collect.ps1` will regenerate the standalone HTML and handle git automatically.
+
+Sources (YouTube check):
+- [【東京湾】良型爆釣！東京湾のタチウオ](https://www.youtube.com/watch?v=Ok0AyLCWLqY)
+- [【神奈川県某所】新ウキ釣り装備で秋の人気魚連発！？](https://www.youtube.com/watch?v=XSzFmnG4VyA)
+build-single: source = 釣果ログ.html
+build-single: all-in-one 1729544 chars / docs/index.html 1729544 / dist/artifact.html 1729385
+=== 2026-11-01 00:05 end (claude exit 0) ===
