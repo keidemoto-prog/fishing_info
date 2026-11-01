@@ -14,3 +14,36 @@ Sources: [chowari 釣果](https://www.chowari.jp/catch/), [石田丸](https://ww
 build-single: source = 釣果ログ.html
 build-single: all-in-one 1802346 chars / docs/index.html 1802346 / dist/artifact.html 1802187
 === 2026-11-02 00:07 end (claude exit 0) ===
+git: push exit 0, unpushed commits: 0
+
+=== 2026-11-02 06:00 start ===
+auth: long-lived-token
+`収集手順.md` の手順1〜9を最後まで実行しました。今回は月曜朝の回なので対象期間は金〜月（10/30〜11/02）ですが、金〜日の分はこれまでの回で取得済みです。そのため、前回（0時の回）より後に出た新着だけを探して追加しました。
+
+**追加した釣果：5件（すべて11/1の釣行。東京湾4・相模湾1・駿河湾0）**
+- こうゆう丸（横須賀・新安浦）：タチウオ 70〜135cm、1人0〜18匹
+- 五エム丸（葉山）：アマダイ 25〜48cm 0〜6匹、カワハギ 15〜27cm 0〜10枚
+- Friend☆Ship（江戸川放水路）：サワラ 最大2.7kg（ほかにサゴシ1匹）
+- 船宿豆や（鹿本橋）：タチウオ 70〜95cm。数は船宿が聞いていないので記録していません
+- HIT三浦海岸（貸しボート）：サワラ 72cm、ワラサ 65cm、ショゴ 42cm
+
+**見送ったもの**
+- 釣割（釣果サイト）の残りの新着14件：
+  - 13件は外房・茨城・関西などの対象エリア外
+  - 1件は魚磯丸（沼津）のイサキ船。マダイなどは魚の名前だけで数がなく、これまでと同じ判断で見送りました
+- 船宿・釣具店のブログとYouTubeには、対象になる新着はありませんでした
+
+**確認できたこと**
+- `data/catch-log.js` はJavaScriptとして正しく読み込めました（全2941件）。番号（id）の重複、同じ日・同じ場所・同じ魚の重複、出典URLの書き忘れはありません。
+- 最終更新日時（`lastUpdated`）と今回の要約（`lastRunNote`）を書き換えました。
+- `logs/2026-11-02.md` に「06:00回」として、見たURL・追加件数・判断の理由を書き足しました。
+- `釣り/` フォルダには新しいファイルを作っていません。作業用のファイルは一時フォルダに置きました。
+
+手順9のとおり、一つにまとめたページ（`tsuriha_all-in-one.html`）の作り直しとGitHubへの保存は、この後 `run-collect.ps1` が自動で行います。
+
+YouTube検索の参照元：
+- [東京湾・相模湾の沖釣りのススメ - YouTube](https://www.youtube.com/channel/UCt8IlqIiU11LM0_3lH1Dp8Q)
+- [コマセカツオが絶好調！相模湾｜2026.8.8 - YouTube](https://www.youtube.com/watch?v=H4yBL1chf7I)
+build-single: source = 釣果ログ.html
+build-single: all-in-one 1805679 chars / docs/index.html 1805679 / dist/artifact.html 1805520
+=== 2026-11-02 06:03 end (claude exit 0) ===
