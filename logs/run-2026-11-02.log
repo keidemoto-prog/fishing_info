@@ -1,0 +1,16 @@
+﻿
+=== 2026-11-02 00:00 start ===
+auth: long-lived-token
+I ran all 9 steps of `収集手順.md` (the 00:00 Monday run) and added **42 new catch records** to `data/catch-log.js`. All are from trips on 11/01: 21 in Tokyo Bay, 13 in Sagami Bay and 8 in Suruga Bay.
+
+- **Date range:** I used the normal range (11/01–11/02), not the Friday–Monday range. The instructions only use that for the Monday *morning* run, and the 10/26 log shows midnight runs were handled the same way.
+- **Where the catches came from:** chowari had 127 new reports since the last run. 41 were in the target areas with target fish. The other new one is Ishidamaru's 11/01 post (85cm 4.5kg ヒラメ, マダイ, アジ, イナダ, サバ). The other shop and boat blogs and YouTube had nothing new in range.
+- **What I left out:** catches outside the three bays (外房, 南伊豆, 茨城, Kansai and so on), boats that caught only non-target fish (キハダ, ヤリイカ, フグ, ムツ), and fish mentioned by name without a count or size, which went in the note field only. Where the same boat had two trips with the same date, place and fish (TARGET's night and morning trips, 二階屋丸 and 房丸's morning and afternoon trips), I combined them into one record.
+- **Sea and weather values:** water temperature, weather and wind came from chowari's same-day data where it had them. The nearby-conditions values came from Open-Meteo: 7 new points (焼津, 清水, 久料, 江の浦, 伊東, 真鶴・福浦, 逗子・小坪), and the 18:00 run's 11/01 values for the rest.
+- **Checked:** the file loads in node with 2936 records, no duplicate IDs, no duplicate date+place+fish entries, and every record has a source URL and only listed fish. While setting the update time, a shell command stripped the Windows line endings from the file. I restored it from the backup and redid the insert in Python, so the file is back to its original format.
+- **Files changed:** only `data/catch-log.js` and the new `logs/2026-11-02.md`, which lists the URLs checked, what was skipped and why. Nothing new was created anywhere else in `釣り/`. Rebuilding the single-file HTML is left to `run-collect.ps1`, as step 9 says.
+
+Sources: [chowari 釣果](https://www.chowari.jp/catch/), [石田丸](https://www.ishidamaru.com/?post_type=fishing&paged=1). The YouTube search found nothing in range; these were the newest results it returned: [1](https://www.youtube.com/watch?v=XSzFmnG4VyA), [2](https://www.youtube.com/watch?v=Ok0AyLCWLqY), [3](https://www.youtube.com/watch?v=BEypJJUHAKA).
+build-single: source = 釣果ログ.html
+build-single: all-in-one 1802346 chars / docs/index.html 1802346 / dist/artifact.html 1802187
+=== 2026-11-02 00:07 end (claude exit 0) ===
