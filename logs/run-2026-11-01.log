@@ -79,3 +79,47 @@ auth: long-lived-token
 build-single: source = 釣果ログ.html
 build-single: all-in-one 1748684 chars / docs/index.html 1748684 / dist/artifact.html 1748525
 === 2026-11-01 12:05 end (claude exit 0) ===
+git: push exit 0, unpushed commits: 0
+
+=== 2026-11-01 18:00 start ===
+auth: long-lived-token
+`収集手順.md` の手順1〜9を最後まで実行しました。今回は11/01 18:00の回です。記録を47件追加し、`data/catch-log.js` は全2894件になりました。
+
+**追加の内訳**（すべて11/01の釣果）
+- **東京湾：32件**
+  - 湾奥12件：金沢漁港・羽田・鮫洲・妙典・江戸川放水路・木更津など
+  - 三浦側11件：松輪のワラサ船が好調で、瀬戸丸は船中27本。久比里の山下丸はカワハギ竿頭33枚
+  - 房総側9件：上総湊・金谷・勝山・洲崎・伊戸など
+- **相模湾：15件**　佐島・長井のアオリイカ／カワハギ、腰越・平塚のアマダイ、宇佐美など
+- **駿河湾：0件**　対象の新着はありませんでした
+
+**情報源ごとの結果**
+- **釣割（chowari）**：前回以降の新着115件を全部見て、対象エリア・対象魚種の45件を採用しました。外房・茨城・関西などのエリア外と、キハダ・ヤリイカ・クロムツだけの便は除いています。
+- **SSM浦賀**：11/01掲載のうち2件を採用しました（竹岡沖のカワハギ、第二海堡のショゴ・ソウダガツオ）。
+- **その他の船宿・釣具店ブログと YouTube**：対象になる新着はありませんでした。
+
+**記録で判断したこと**
+- 近くの海況（水温・天気・風・波）は、11/01の21地点の値を Open-Meteo で取って入れました。
+- 魚種名だけで数もサイズも書かれていない魚は、魚種欄に入れずメモ欄に書きました。例外は佐助丸で、数の記載はありませんが「全員ワラサHIT」と明記されていたので魚種に入れ、その旨をメモに残しました。
+- SSM浦賀の竹岡沖は、エリア表に従って房総側にしました。SSMの過去の記録は三浦側が多いので、揃えたい場合は言ってください。
+
+**確認したこと**
+- `data/catch-log.js` が JavaScript として正しく読めることを node で確認しました。
+- id や「日付＋場所＋魚種」の重複、出典URLの欠け、対象外の魚種はありませんでした。
+- 見たURL・採用しなかった理由・判断の中身は `logs/2026-11-01.md` の「18:00回」に書いてあります。
+
+変更したのは `data/catch-log.js` と `logs/2026-11-01.md` だけで、`釣り/` フォルダに新しいファイルは作っていません。単体HTMLの作り直しは、手順どおりこの後 `run-collect.ps1` が自動で行います。
+
+Sources（YouTube 検索1回。直近の釣行動画はなく、採用なし）:
+- [booklive.jp](https://booklive.jp/product/index/title_id/416910/vol_no/211)
+- [東京湾~相模湾 電車で行ける釣り場ガイド40](https://www.maruzenjunkudo.co.jp/products/9784864477390)
+- [tk.oretsuri.com](https://tk.oretsuri.com)
+- [tv-tokyo.co.jp](https://www.tv-tokyo.co.jp/tsuri/database/html/110820.html)
+- [fish.shimano.com](https://fish.shimano.com/ja-JP/content/fishingstyle/article/fune_tanken/index.html)
+- [tsurihack.com/8923](https://tsurihack.com/8923)
+- [resemom.jp](https://resemom.jp/release/prtimes/20241220/131648.html)
+- [週刊つりニュース 関東版](https://www.fujisan.co.jp/product/1281697688/b/list/)
+- [tsurihack.com/9295](https://tsurihack.com/9295)
+build-single: source = 釣果ログ.html
+build-single: all-in-one 1776723 chars / docs/index.html 1776723 / dist/artifact.html 1776564
+=== 2026-11-01 18:07 end (claude exit 0) ===
