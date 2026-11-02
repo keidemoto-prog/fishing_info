@@ -1,0 +1,35 @@
+﻿
+=== 2026-11-03 00:00 start ===
+auth: long-lived-token
+I ran all 9 steps of `収集手順.md` for the 0:00 run on 11/03, and 21 new catch records went into `data/catch-log.js`.
+
+**Added (Tokyo Bay 11, Sagami Bay 6, Suruga Bay 4)**
+- **Trips on 11/02 (8 records, all from chowari):** 忠彦丸 (金沢漁港), 瀬戸丸 (熱海), あまさけや丸 (松輪), 二階屋丸 (宇佐美), 橋安丸 and 風神丸 (焼津), and two from 五郎丸 (鴨居: カワハギ and タチウオ).
+- **Trips on 11/01 (13 records):**
+  - 10 chowari posts that earlier runs never picked up, either posted after the 11/02 18:00 run or missed by it: 東丸 (保田), 長助丸, みのる丸, 小林丸, まなぶ丸, 濱生丸, 平作丸, 黒川本家 (新山下), PLAYFUL FISHING, ちがさき丸 LT五目.
+  - 愛正丸 (葉山): the boat didn't sail on 11/02, but its 11/02 post reported the 11/01 catch, so I dated it 11/01. I didn't use chowari's weather box because it shows 11/02 conditions.
+  - Two shore catches at 沼津サーフ from イシグロ沼津店's blog (カワハギ and タチウオ).
+
+**Two judgement calls on scope**
+- **11/01 catches:** the normal window for this run is 11/02–11/03, so 11/01 is strictly outside it. I added them because none were in the data yet and most were posted after the last run. The reason is recorded in the run log.
+- **下田:** 三昭丸 (下田) caught only キンメ, a fish not on the target list, so I left it out. That means I didn't have to decide whether 下田 counts as one of the three bays. It will come up again if a 下田 boat reports a target fish.
+
+**Not added**
+- Catches from outside the three bays.
+- Non-target species: キハダ, コウイカ, ハゼ, クロムツ.
+- Catches already in the data.
+- The other boat and shop blogs and one YouTube search had nothing new that qualified.
+
+**Checks**
+- The file loads as valid JavaScript (3,028 records).
+- There are no duplicate IDs and no duplicate date + spot + species combinations.
+- Every new record has a source URL, and every species is on the target list.
+- Line endings are still CRLF.
+
+The run log is in `logs/2026-11-03.md`. The only things I changed are `data/catch-log.js` and that new log file; the other changes in `logs/` (`run-2026-11-02.log` and `run-2026-11-03.log`) were already there before I started. A copy of the data file from before my changes is at `%TEMP%\t1103a\catch-log.backup.js`. As step 9 says, `run-collect.ps1` rebuilds the single-file HTML pages automatically after this.
+
+YouTube search result I checked:
+- [youtube.com: 【神奈川県某所】新ウキ釣り装備で秋の人気魚連発！？…【2026年9月～10月】](https://www.youtube.com/watch?v=XSzFmnG4VyA) (filmed Sept–Oct, too old, not added)
+build-single: source = 釣果ログ.html
+build-single: all-in-one 1858592 chars / docs/index.html 1858592 / dist/artifact.html 1858433
+=== 2026-11-03 00:07 end (claude exit 0) ===
