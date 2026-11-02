@@ -33,3 +33,42 @@ YouTube search result I checked:
 build-single: source = 釣果ログ.html
 build-single: all-in-one 1858592 chars / docs/index.html 1858592 / dist/artifact.html 1858433
 === 2026-11-03 00:07 end (claude exit 0) ===
+git: push exit 0, unpushed commits: 0
+
+=== 2026-11-03 06:00 start ===
+auth: long-lived-token
+I finished every step in `収集手順.md` for the 06:00 run and added **6 new catches**: 4 in 東京湾, 2 in 相模湾 and none in 駿河湾. The data file loads correctly as JavaScript (step 8).
+
+**What was added**
+- **教至丸 (走水), 11/02:** two records, one for タチウオ (65–123cm, 1–21 per person) and one for アジ (23–38cm, 4–20).
+- **ミナミ釣船 (六郷), 11/02:** タチウオ (0–8) and カワハギ (2). Two of its boats went out, but they have the same date and place, so I made them one record.
+- **フィッシュオン大勝 (上総湊), 11/02:** カワハギ (1–8).
+- **安菜丸 (網代), 11/02:** アオリイカ (4–9).
+- **かめや釣具 小田原店, 大磯沖 (与宗丸):** アマダイ. The article doesn't give the fishing day, so following earlier entries it is dated only "2026-11" and has no sea or weather data.
+
+For the five chowari catches, water temperature and weather come from the reports themselves. The nearby readings come from Open-Meteo: I fetched new ones for 網代, 羽田 and 竹岡, and for 走水 I reused readings from the previous run.
+
+**Not added**
+- Catches from outside the three bays, such as 大原 and 平潟.
+- A キハダ catch from 松輪, because キハダ isn't on the target list.
+- The other boat and shop blogs had nothing new for 11/02–03. 石田丸 didn't go out on 11/02.
+- One YouTube search found no recent videos with a clear fishing date.
+
+**Checks**
+- 3,034 records in total.
+- No duplicate IDs and no duplicate date + place + species.
+- Every new record has a source link, and every species is on the target list.
+
+**Files changed**
+- `data/catch-log.js`: the new records, plus the "last updated" time and note.
+- `logs/2026-11-03.md`: a new section for this run.
+- `logs/run-2026-11-03.log` was already changed before I started.
+
+I didn't create any new files in the `釣り` folder. A copy of the data file from before my changes is at `%TEMP%\t1103b\catch-log.backup.js`. As step 9 says, `run-collect.ps1` rebuilds the HTML pages after this, so I didn't touch them.
+
+Sources:
+- [YouTube search result (filmed Sept–Oct, too old to add)](https://www.youtube.com/watch?v=XSzFmnG4VyA)
+- [かめや釣具 大磯沖アマダイ](https://kameya-choka.com/kanto-tokai/archives/f-info/545619)
+build-single: source = 釣果ログ.html
+build-single: all-in-one 1862135 chars / docs/index.html 1862135 / dist/artifact.html 1861976
+=== 2026-11-03 06:03 end (claude exit 0) ===
