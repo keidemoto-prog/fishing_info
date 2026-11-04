@@ -1,0 +1,29 @@
+﻿
+=== 2026-11-05 00:00 start ===
+auth: long-lived-token
+I've finished the 0:00 collection for 11/05 (steps 1–9): **26 new catches were added** to `data/catch-log.js`.
+
+| Area | Added |
+|---|---|
+| 東京湾 (inner bay) | 9 |
+| 東京湾口 (Miura side) | 4 |
+| 東京湾口 (Boso side) | 0 |
+| 相模湾 | 8 |
+| 駿河湾 | 5 |
+
+- **Source:** all 26 come from chowari's posts published since the last run. 14 are 11/04 trips, 10 are 11/03 trips posted late, and 2 are 11/02 trips posted late.
+- **Other sources:** none of the boat or shop blogs had anything new in our areas. The two new イシグロ posts are from 敦賀 and 西尾, which are outside our areas. One YouTube search found no recent video with a clear fishing date.
+- **Skipped:** boats outside our areas (大原, 片貝, 小湊, 湖西 and others), and posts with no fish on our list (キハダ, フグ, キンメ・クロムツ).
+- **Sea and weather data:** filled from Open-Meteo for every record. Where the chowari post gave water temperature and weather for the day, those values are recorded too.
+- **Check:** the file loads as valid JavaScript with 3,256 records. There are no duplicate IDs, no duplicate date + spot + species, and every record has a source URL. I updated the "last updated" time and run note at the top of the file and wrote `logs/2026-11-05.md`.
+- **Line-ending slip:** my timestamp edit briefly changed the whole file's line endings. I put them back as they were, so the only changes in the file are the new records and those two summary lines. A backup of the original is in the temp folder (`%TEMP%/t1105a/`).
+
+No new files were created in `釣り/` except `logs/2026-11-05.md`. As step 9 says, `run-collect.ps1` rebuilds the single-file HTML pages after this.
+
+Sources:
+- [【東京湾】良型爆釣！東京湾のタチウオ【船釣り】 - YouTube](https://www.youtube.com/watch?v=Ok0AyLCWLqY)
+- [コマセカツオが絶好調！強烈な引きがたまらない！相模湾｜2026.8.8 - YouTube](https://www.youtube.com/watch?v=H4yBL1chf7I)
+- [【神奈川県某所】新ウキ釣り装備で秋の人気魚連発！？ - YouTube](https://www.youtube.com/watch?v=XSzFmnG4VyA)
+build-single: source = 釣果ログ.html
+build-single: all-in-one 1997918 chars / docs/index.html 1997918 / dist/artifact.html 1997759
+=== 2026-11-05 00:06 end (claude exit 0) ===
