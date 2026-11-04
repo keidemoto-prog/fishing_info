@@ -60,3 +60,40 @@ YouTubeの検索結果の例（いずれも古い動画で、不採用）: [東�
 build-single: source = 釣果ログ.html
 build-single: all-in-one 1940571 chars / docs/index.html 1940571 / dist/artifact.html 1940412
 === 2026-11-04 06:06 end (claude exit 0) ===
+git: push exit 0, unpushed commits: 0
+
+=== 2026-11-04 12:00 start ===
+auth: long-lived-token
+`収集手順.md` の手順1〜9をすべて実行しました（11月4日 12:00の回）。私は Claude（Claude Code）で、このPCのファイルを直接読み書きしています。
+
+**結果：39件追加（合計3,201件）**
+- **東京湾 31件**
+  - 湾奥 24件：米元・弁天屋・三喜丸・広島屋のタチウオ／アジ／マダイ／カワハギ／サワラ、長崎屋のシロギス、守山丸のサワラなど
+  - 湾口三浦 6件：教至丸・山下丸・平作丸
+  - 房総 1件：竹岡の豊国丸
+- **相模湾 6件**：腰越の3船（アマダイ・マダイ・ワラサ）、熱海、宇佐美、西湘サーフのショゴ（かめや釣具 小田原店）
+- **駿河湾 2件**：田子の浦と沼津のタチウオ（11/2釣行で、遅れて載った分）
+
+**判断したこと（念のため）**
+- 新着のほとんどは釣割（chowari）からです。ほかの船宿・釣具店ブログは新着がないか、前の回で登録済みでした。
+- 期間は「11/3〜11/4」ですが、遅れて載った11/2の2件も入れました。朝6時の回も同じ扱いだったので、それに合わせています。
+- 西湘サーフのショゴは釣った日が書かれていないので、日付を「2026-11」（年月だけ）にしました。手順書の決まりどおりで、画面には「11月頃」と出ます。
+- キハダ・ヤリイカ・フグ・マダコの船と、外房・茨城など対象エリア外の船は入れていません。
+- YouTube は1回検索しましたが、釣った日が分かる最近の動画はありませんでした。
+
+**確認したこと**
+- 追記後の `data/catch-log.js` は JavaScript として正しく読み込めます。
+- 番号（id）の重複、同じ日・場所・魚種の重複、出典URLの抜けはありません。魚種もすべて対象リスト内です。
+- 書き換えたのは `data/catch-log.js` と `logs/2026-11-04.md`（12:00回の記録を追記）だけで、`釣り/` フォルダに新しいファイルは作っていません。
+
+書き換え前のバックアップは、一時フォルダ（`%TEMP%\t1104c\catch-log.backup.js`）に残してあります。単体HTMLの作り直しと git の記録は、手順9のとおり `run-collect.ps1` がこのあと自動で行います。
+
+Sources（YouTube検索。採用はなし）:
+- [【神奈川県某所】新ウキ釣り装備で秋の人気魚連発！？](https://www.youtube.com/watch?v=XSzFmnG4VyA)
+- [東京湾・相模湾の沖釣りのススメ](https://www.youtube.com/channel/UCt8IlqIiU11LM0_3lH1Dp8Q)
+- [【東京湾】良型爆釣！東京湾のタチウオ](https://www.youtube.com/watch?v=Ok0AyLCWLqY)
+- [秋の東京湾で堤防釣りシーズン開幕?!](https://www.youtube.com/watch?v=ixm5RWOojhc)
+- [多彩な魚種を狙え！相模湾の青物五目釣行](https://www.youtube.com/watch?v=MnYAzq4x5wo)
+build-single: source = 釣果ログ.html
+build-single: all-in-one 1964030 chars / docs/index.html 1964030 / dist/artifact.html 1963871
+=== 2026-11-04 12:08 end (claude exit 0) ===
