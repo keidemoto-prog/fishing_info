@@ -51,3 +51,22 @@ auth: long-lived-token
 build-single: source = 釣果ログ.html
 build-single: all-in-one 1997900 chars / docs/index.html 1997900 / dist/artifact.html 1997741
 === 2026-11-05 06:03 end (claude exit 0) ===
+git: push exit 0, unpushed commits: 0
+
+=== 2026-11-05 12:00 start ===
+auth: long-lived-token
+I ran the 12:00 collection from `収集手順.md` (steps 1–9). It added **29 new catch records**: 19 in Tokyo Bay (東京湾), 10 in Sagami Bay (相模湾) and none in Suruga Bay (駿河湾).
+
+- **Where they came from:** all 29 are from 釣割 (chowari): 16 trips on 11/04, plus 13 older ones the site only just posted (9 from 11/03 and 4 from 11/02). The procedure normally covers yesterday and today, but earlier runs also took late-posted trips, so I did the same.
+- **What I skipped:** chowari had 56 new posts since the 6:00 run. The other 27 were outside the three bays, such as Wakayama or Ibaraki, or had no fish on the target list, such as キハダ, マダコ or ハゼ.
+- **Other sources:** none of the boat or shop blogs had anything new. The one YouTube search found no recent videos with a fishing date.
+- **Sea and weather data:** water temperature, weather and wind are the values chowari lists for each trip day. The "nearby" readings, including wave height, come from Open-Meteo for each spot and date.
+- **Checks:** `data/catch-log.js` loads correctly and now holds 3,285 records. There are no duplicates, every record has a source URL, and every species is on the target list. The summary note at the top of the file (`CATCH_LOG_META`) shows the time and these counts.
+- **Log:** I added a 12:00 section to `logs/2026-11-05.md` listing the URLs checked, what was skipped and why, and how unclear cases were handled. For example, I recorded ヒラソーダ as ソウダガツオ and left out customers' names.
+
+Only the data file and today's log were changed, and no new files were created in the `釣り/` folder. As the procedure says, `run-collect.ps1` regenerates the single-file HTML afterwards. The phone page on claude.ai can't be updated from this run.
+
+Sources: [YouTube search results (none usable)](https://www.youtube.com/watch?v=BEypJJUHAKA), [釣割 釣果情報](https://www.chowari.jp/catch/)
+build-single: source = 釣果ログ.html
+build-single: all-in-one 2015382 chars / docs/index.html 2015382 / dist/artifact.html 2015223
+=== 2026-11-05 12:06 end (claude exit 0) ===
