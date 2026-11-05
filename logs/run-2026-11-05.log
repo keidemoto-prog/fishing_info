@@ -70,3 +70,33 @@ Sources: [YouTube search results (none usable)](https://www.youtube.com/watch?v=
 build-single: source = 釣果ログ.html
 build-single: all-in-one 2015382 chars / docs/index.html 2015382 / dist/artifact.html 2015223
 === 2026-11-05 12:06 end (claude exit 0) ===
+git: push exit 0, unpushed commits: 0
+
+=== 2026-11-05 18:00 start ===
+auth: long-lived-token
+I ran the 18:00 collection for 2026-11-05 (steps 1–9 of `収集手順.md`) and added **14 new catch records** to `data/catch-log.js`.
+
+**What was added**
+- **Tokyo Bay: 12.** Inner bay 8, Miura side of the bay mouth 2, Boso side 2. Mostly sea bass, Spanish mackerel (サワラ), horse mackerel and yellowtail (ワラサ).
+- **Sagami Bay: 1.** Bigfin reef squid (アオリイカ) out of 佐島 on 11/03.
+- **Suruga Bay: 1.** Yellowtail and amberjack (ワラサ・カンパチ) out of 松崎 on 11/03.
+- **Sources:** 13 come from chowari (8 trips on 11/04 and 5 trips on 11/03 that were posted late). The other one is a Kameya post about shore fishing for horse mackerel in Yokohama on 11/05.
+- Each record has the tide, water temperature and weather for that day from chowari, plus nearby sea and weather readings from Open-Meteo.
+
+**What I skipped**
+- The other boat and shop blogs had nothing new since the last run.
+- My one YouTube search found no recent videos with a clear fishing date.
+- I left out boats outside the three bays, such as 大原 and other prefectures, and posts with no species from our list. That included the 11/05 赤沼丸 post, which was mostly a cancellation notice.
+
+**Checks**
+- The file loads correctly in node: 3,299 records, no duplicates, and every record has a source URL.
+- **One problem I fixed:** a `sed` edit partway through changed the file's Windows line endings. I restored it from the backup and redid the edit in Python, so the line endings now match the original.
+- The META note and the 18:00 section of `logs/2026-11-05.md` are updated. I created no new files in `釣り/`; the backup is in a temp folder.
+
+As the procedure says, `run-collect.ps1` rebuilds the single-file HTML after this. The smartphone page has to be updated separately.
+
+Sources:
+- [YouTube search result: 東京湾 釣り動画 (not dated, not used)](https://www.youtube.com/watch?v=BEypJJUHAKA)
+build-single: source = 釣果ログ.html
+build-single: all-in-one 2024064 chars / docs/index.html 2024064 / dist/artifact.html 2023905
+=== 2026-11-05 18:04 end (claude exit 0) ===
