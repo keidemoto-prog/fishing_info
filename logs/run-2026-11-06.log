@@ -28,3 +28,31 @@ YouTube search results checked (none had a usable recent trip):
 build-single: source = 釣果ログ.html
 build-single: all-in-one 2031183 chars / docs/index.html 2031183 / dist/artifact.html 2031024
 === 2026-11-06 00:05 end (claude exit 0) ===
+git: push exit 0, unpushed commits: 0
+
+=== 2026-11-06 06:00 start ===
+auth: long-lived-token
+I ran the 6:00 collection for 2026-11-06 following `収集手順.md`, and it added **3 new catch records**, all in inner Tokyo Bay (東京湾3・相模湾0・駿河湾0).
+
+**Added** (all from the booking site chowari):
+- 米元釣船店 (金沢八景), 11/04, light-tackle アジ: 30–40 fish each, best 40.
+- BLUE LANE YOKOHAMA (根岸), 11/04, big-bait シーバス: up to 79.5cm.
+- BLUE LANE YOKOHAMA (根岸), 11/03, mixed-target trip: アジ only. The サワラ they hooked all came off at the boat, so I didn't list サワラ as caught.
+
+**What I checked:**
+- **chowari pages 1–100:** 10 new posts. The other 7 were outside the three bays (福井, 愛知, 兵庫×2, 徳島, 新潟×2).
+- **Boat and tackle-shop blogs** (石田丸, 中根ボート, 浜千鳥, SSM浦賀, サニーサイド, 富浦, スーパーフィッシング, イシグロ, かめや): nothing new since the last run.
+- **HIT三浦海岸:** there's a new Instagram post, but its text couldn't be read, so I left it out. The next run can check it again.
+- **YouTube** ([search results](https://www.youtube.com/watch?v=XSzFmnG4VyA) etc.): no recent videos with an identifiable fishing date.
+- **Weather and water data:** I filled the `nearby` values from Open-Meteo (金沢八景沖・横浜港沖).
+
+**Steps 6–9:**
+- I updated the summary block at the top of `data/catch-log.js` (time 2026-11-06 06:00 and a one-line note) and added the 6:00 section to `logs/2026-11-06.md`.
+- The data file loads correctly with node (3,313 records), with no duplicate IDs or duplicate date+spot+species, and no missing source URLs.
+- I fixed a small formatting slip in the log as I wrote it.
+- I only changed `data/catch-log.js` and the log. As step 9 says, rebuilding the HTML is left to `run-collect.ps1`.
+
+**Earlier slip:** the 11/05 18:00 log entry has the same formatting slip, and I left it as it is.
+build-single: source = 釣果ログ.html
+build-single: all-in-one 2033206 chars / docs/index.html 2033206 / dist/artifact.html 2033047
+=== 2026-11-06 06:04 end (claude exit 0) ===
