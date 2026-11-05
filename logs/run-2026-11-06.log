@@ -1,0 +1,30 @@
+﻿
+=== 2026-11-06 00:00 start ===
+auth: long-lived-token
+I ran steps 1–9 of `収集手順.md` for the 0:00 run on Friday 2026-11-06. **11 new catch records** are now at the top of `data/catch-log.js`: 4 in Tokyo Bay, 5 in Sagami Bay and 2 in Suruga Bay.
+
+- **Search window:** catches from 11/05 and 11/06 (a normal weekday run), plus anything posted since the 11/05 18:00 run.
+- **Where the new records came from:**
+  - 10 from chowari (the boat booking site): 2 trips on 11/05 and 8 on 11/04.
+    - Tokyo Bay mouth: 黒川本家 (2 trips), 棒面丸 and 東丸.
+    - Sagami Bay: 隠徳丸, 愛正丸, 優神丸 (2 trips) and 政美丸.
+    - Suruga Bay: 権助丸.
+  - 1 from the Ishiguro tackle shop: night shore fishing for タチウオ at 清水港 on 11/04.
+  - Every other boat and shop blog had nothing new, and the one YouTube search found no video with a recent fishing date.
+- **Skipped:** 12 new chowari posts from boats outside the three bays, and 1 from 豊漁丸 that repeats a trip already recorded.
+- **Decisions you may want to check:**
+  - **Date changed:** chowari lists 愛正丸's post as an 11/05 trip, but the post says the boat was closed that day and describes 11/04. I recorded it as 11/04 and left out chowari's weather, which was for 11/05. Its weather comes only from the nearby observations.
+  - **イナワラ left out:** 政美丸 caught イナワラ of 2.1–2.8kg. Following earlier records, I kept it out of the species list and only mentioned it in the catch summary.
+- **Status:** I updated the last-updated time (00:05) and the run summary at the top of the file. I also created `logs/2026-11-06.md` with the pages checked, what was skipped and why, and the decisions above.
+- **Checks:** the file loads correctly in node (3310 records), with no duplicate IDs or catches, every record has a source link, and every species is on the allowed list. A backup of the file before this run is at `%TEMP%/t1106a/catch-log.backup.js`, outside the vault.
+
+No other files in `釣り/` were changed. `run-collect.ps1` rebuilds the HTML pages after this run.
+
+YouTube search results checked (none had a usable recent trip):
+- [東京湾・相模湾の沖釣りのススメ](https://www.youtube.com/channel/UCt8IlqIiU11LM0_3lH1Dp8Q)
+- [東京湾三浦 11月釣り物傾向分析](https://www.youtube.com/watch?v=qN1rnksr2OM)
+- [中村彩の東京湾鯛ラバ攻略 2026](https://www.youtube.com/watch?v=gbE1GLlYy7Q)
+- [コマセカツオが絶好調！相模湾｜2026.8.8](https://www.youtube.com/watch?v=H4yBL1chf7I)
+build-single: source = 釣果ログ.html
+build-single: all-in-one 2031183 chars / docs/index.html 2031183 / dist/artifact.html 2031024
+=== 2026-11-06 00:05 end (claude exit 0) ===
