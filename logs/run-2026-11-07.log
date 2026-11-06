@@ -38,3 +38,32 @@ Sources:
 build-single: source = 釣果ログ.html
 build-single: all-in-one 2068169 chars / docs/index.html 2068169 / dist/artifact.html 2068010
 === 2026-11-07 00:05 end (claude exit 0) ===
+git: push exit 0, unpushed commits: 0
+
+=== 2026-11-07 06:00 start ===
+auth: long-lived-token
+I ran all 9 steps in `収集手順.md` for the 6:00 run on 2026-11-07, and 15 new catch records are now in the log.
+
+- **Dates covered:** 11/06–11/07 (the normal window, since today is Saturday). Only posts that appeared after the 0:00 run were taken.
+- **Records added (all fished on 11/06, all from chowari):**
+  - **Tokyo Bay, 10:**
+    - Inner bay, 6: 忠彦丸, 深川 吉野屋 ×3, ゴーゴーガイドサービス, PALLAS.
+    - Miura side of the bay mouth, 3: 棒面丸 ×2, 教至丸.
+    - Boso side, 1: 東丸.
+  - **Sagami Bay, 5:** 二階屋丸, たいぞう丸, まごうの丸, 孝太郎丸, 弘美丸.
+  - **Suruga Bay:** none.
+- **Not added:**
+  - Boats outside the three bays: 16 posts.
+  - 隠徳丸's tuna only (キハダ isn't on the species list).
+  - HIT三浦海岸 has a new Instagram post, but it has no text to read, so I left it out.
+- **No new posts** on the other boat and shop blogs or on YouTube.
+- **Weather and water temperature:** taken from chowari's same-day weather for each boat. The one exception is 弘美丸, which only has the nearby Open-Meteo values. Every record also has the nearby Open-Meteo values filled in.
+- **Check:** `data/catch-log.js` loads correctly as JavaScript with 3,383 records, no duplicates, and every record has a source URL. Today's notes are in `logs/2026-11-07.md`.
+
+Only `data/catch-log.js` and the log notes were changed, and no new files were created in the `釣り` folder. Rebuilding the all-in-one HTML is left to `run-collect.ps1`, as the procedure says.
+
+Sources:
+- [YouTube search result (not used): 東京湾 船釣り タチウオ](https://www.youtube.com/watch?v=Ok0AyLCWLqY)
+build-single: source = 釣果ログ.html
+build-single: all-in-one 2077429 chars / docs/index.html 2077429 / dist/artifact.html 2077270
+=== 2026-11-07 06:04 end (claude exit 0) ===
