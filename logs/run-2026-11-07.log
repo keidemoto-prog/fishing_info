@@ -1,0 +1,40 @@
+﻿
+=== 2026-11-07 00:00 start ===
+auth: long-lived-token
+I ran all the steps in `収集手順.md` for this morning's 0:00 collection (Saturday 11/07, covering catches from 11/06–11/07). **22 new catch records were added** to `data/catch-log.js`.
+
+**Breakdown by area:**
+- **Tokyo Bay: 13**
+  - Inner bay (4): ミナミ釣船, えさ政, Friend☆Ship, 黒川丸
+  - Miura side of the bay mouth (5): 山下丸 ×2, 第十五鈴米丸, あまさけや丸, 房丸
+  - Boso side (4): 山賀丸, 利八丸, フィッシュオン大勝, 赤沼丸
+- **Sagami Bay: 5** — 愛正丸, 瀬戸丸 ×2, 治久丸, 石田丸
+- **Suruga Bay: 4** — 魚磯丸 ×3, 山大丸
+
+All 22 are 11/06 trips: 21 from 釣割 (chowari) and 1 from 石田丸's own blog.
+
+**Not recorded:**
+- Outside the three bays: boats in Ibaraki, Aichi, Wakayama, Niigata and elsewhere, plus all 4 new イシグロ posts (Gifu, Ise Bay and Mito in Aichi).
+- No target species: posts that were only キハダ, マグロ or フグ.
+- The other boat and shop blogs had nothing new, and one YouTube search found no recent videos with a clear fishing date.
+
+**Checks:**
+- The file loads correctly as JavaScript (3,368 records total).
+- No duplicates by id or by date + spot + species.
+- Every new record has a source URL, and all species are on the target list.
+- Partway through, a command changed the file's line endings. I restored the backup taken before the run and added the records again, so the line endings match the original.
+
+**Other updates:**
+- I updated `lastUpdated` and `lastRunNote`.
+- I wrote the URLs checked, what was skipped and the reasons to `logs/2026-11-07.md`.
+- The only new file is that log, and nothing was committed.
+- `run-collect.ps1` rebuilds the single-file HTML automatically after this run. Per the instructions, I didn't try to update the phone (Artifact) page.
+
+Sources:
+- [釣割 釣果情報](https://www.chowari.jp/catch/)
+- [石田丸 釣果](https://www.ishidamaru.com/?post_type=fishing&paged=1)
+- [釣具のイシグロ 釣り情報](https://www.ishiguro-gr.com/enjoy/fishing/)
+- YouTube search (nothing used): [東京湾 天秤タチウオ](https://www.youtube.com/watch?v=vQeeu4Te6ss), [相模湾 2025.11.8 秀吉丸](https://www.youtube.com/watch?v=i3zMe8QEB00)
+build-single: source = 釣果ログ.html
+build-single: all-in-one 2068169 chars / docs/index.html 2068169 / dist/artifact.html 2068010
+=== 2026-11-07 00:05 end (claude exit 0) ===
