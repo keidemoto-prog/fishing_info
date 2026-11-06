@@ -83,3 +83,28 @@ auth: long-lived-token
 build-single: source = 釣果ログ.html
 build-single: all-in-one 2036938 chars / docs/index.html 2036938 / dist/artifact.html 2036779
 === 2026-11-06 12:03 end (claude exit 0) ===
+git: push exit 0, unpushed commits: 0
+
+=== 2026-11-06 18:00 start ===
+auth: long-lived-token
+I finished the 18:00 collection run on 2026-11-06, following steps 1–9 of 収集手順.md. I added **27 records**: 21 from Tokyo Bay, 6 from Sagami Bay and none from Suruga Bay.
+
+- **Where they came from:** 24 came from chowari's new posts since the 12:00 run. The other 3 came from SSM浦賀, which published 11/03 trips on 11/06.
+  - 18 are from 11/06, mainly ワラサ around 松輪 and 勝山, カワハギ, アジ and マダイ.
+  - 6 were posted late but happened earlier: one on 11/05, two on 11/04 and three on 11/03. The 6:00 run had already added a late 11/03 post, so I included these the same way and marked each one in its note.
+- **Sea and weather data:** where the chowari post listed water temperature and weather, I used those values. Every record also has nearby observations from Open-Meteo for the trip date and location.
+- **Left out:** catches outside the three bays, species not on the target list (キハダ, ヤリイカ, メジナ and so on), one SSM entry whose fishing spot is listed as "secret" so I couldn't tell which area it belongs to, and one SSM entry that was already in the data.
+- **Checks:** I rechecked the other boat and shop blogs and searched YouTube once; none had anything new in scope. `data/catch-log.js` loads correctly with 3,346 records, with no duplicate IDs, no duplicate date + spot + species, no missing source URLs, and every new species on the target list.
+- **Judgment calls:** 孫武丸 is recorded as アジ only. Its post lists ワラサ 3.5–4.0kg in the numbers, but the text says the ワラサ were all lost.
+- **Files changed:** only `data/catch-log.js` (records added, plus `lastUpdated` and `lastRunNote`) and `logs/2026-11-06.md`, which has a new 18:00 section. No new files were created in the `釣り/` folder; a backup of the data file from before the change is in the temp folder.
+
+`run-collect.ps1` will rebuild the single-file HTML next. The phone page (claude.ai Artifact) can't be updated from this automatic run.
+
+Sources:
+- [釣割 釣果情報](https://www.chowari.jp/catch/)
+- [SSM浦賀 釣果情報](https://www.ssm-uraga.jp/fishing)
+- [釣具のイシグロ 釣り情報](https://www.ishiguro-gr.com/enjoy/fishing/)
+- [YouTube search result (no recent catches)](https://www.youtube.com/watch?v=BEypJJUHAKA)
+build-single: source = 釣果ログ.html
+build-single: all-in-one 2054156 chars / docs/index.html 2054156 / dist/artifact.html 2053997
+=== 2026-11-06 18:07 end (claude exit 0) ===
