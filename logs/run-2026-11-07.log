@@ -67,3 +67,39 @@ Sources:
 build-single: source = 釣果ログ.html
 build-single: all-in-one 2077429 chars / docs/index.html 2077429 / dist/artifact.html 2077270
 === 2026-11-07 06:04 end (claude exit 0) ===
+git: push exit 0, unpushed commits: 0
+
+=== 2026-11-07 12:00 start ===
+auth: long-lived-token
+I ran all 9 steps in `収集手順.md` for today's 12:00 run, and 7 new catch records are now in the log.
+
+- **Dates covered:** 11/06–11/07 (the normal window, since today is Saturday). I only took posts that appeared after the 6:00 run.
+- **Records added:**
+  - **Tokyo Bay, 4:**
+    - 黒川本家 (新山下): アジ, カサゴ.
+    - PLAYFUL FISHING: シーバス, アジ.
+    - 平作丸 (久里浜): ショゴ, カワハギ, アマダイ.
+    - 船宿 岩田屋 本店 (浦安): アジ. This one was fished on 11/03 but only posted today, so I added it late as earlier runs have done.
+  - **Sagami Bay, 2:**
+    - 富八丸 (宇佐美): マダイ, カンパチ.
+    - かめや釣具 平塚店: 真鶴エリア, アオリイカ 2杯.
+  - **Suruga Bay, 1:**
+    - かめや釣具 富士店: 富士サーフ, シーバス 70cm.
+- **Not added:**
+  - 16 posts from outside the three bays: mostly Ibaraki, plus 鴨川 (outer Boso), 師崎, 須磨 and 印南.
+  - はら丸's catch, which was キハダ only (not on the species list).
+- **No new posts** on the other boat and shop blogs or on YouTube.
+- **Weather and water temperature:**
+  - The 5 chowari records use chowari's same-day weather.
+  - The 2 かめや records leave those fields blank, because the posts don't give tide, weather or water temperature.
+  - Every record also has the nearby Open-Meteo values filled in.
+- **Check:** `data/catch-log.js` loads correctly as JavaScript with 3,390 records, no duplicates, and every record has a source URL. Today's notes are in `logs/2026-11-07.md`.
+
+Only `data/catch-log.js` and the log notes were changed, and no new files were created in the `釣り` folder. The before-edit backup is in a temp folder (`%TEMP%/t1107c`). Rebuilding the all-in-one HTML and the git commit are left to `run-collect.ps1`, as the procedure says.
+
+Sources:
+- [maruzenjunkudo.co.jp (search result, not used)](https://www.maruzenjunkudo.co.jp/products/9784864477390)
+- [fujisan.co.jp 週刊つりニュース (search result, not used)](https://www.fujisan.co.jp/product/1281697688/b/2806296/)
+build-single: source = 釣果ログ.html
+build-single: all-in-one 2081668 chars / docs/index.html 2081668 / dist/artifact.html 2081509
+=== 2026-11-07 12:04 end (claude exit 0) ===
