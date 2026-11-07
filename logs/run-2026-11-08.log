@@ -30,3 +30,43 @@ YouTube search checked:
 build-single: source = 釣果ログ.html
 build-single: all-in-one 2141852 chars / docs/index.html 2141852 / dist/artifact.html 2141693
 === 2026-11-08 00:06 end (claude exit 0) ===
+git: push exit 0, unpushed commits: 0
+
+=== 2026-11-08 06:00 start ===
+auth: long-lived-token
+`収集手順.md` の手順1〜9をすべて実行しました。11月8日（日）朝6時の回で、16件を追加しています。
+
+**追加した16件**（11/07の釣行14件と、今回はじめて掲載された11/04・11/05分の2件）。出典はすべて釣割です。
+- **東京湾 6件**
+  - 湾奥5件: 忠彦丸（金沢）のアジ・ワラサ・カワハギ・タチウオ2便。どれも数とサイズの記載はありません。
+  - 湾口三浦1件: 棒面丸（松輪）のマダイ・イナダ。
+- **相模湾 8件**: 安菜丸（網代）のヒラメ1.5kg・マゴチ45cm、大喜丸（網代）のアカハタ・オオモンハタ・カサゴ、直正丸と二階屋丸（宇佐美）、豊漁丸（平塚）、隠徳丸（早川）、海真丸（小田原）2件。
+- **駿河湾 2件**: 橋安丸（焼津小川）のタチウオ 7〜43本、興栄丸（焼津）のシロアマダイ 0〜11匹。
+
+**記録しなかったもの**
+- エリア外の船: 広島・銚子・大原・和歌山。
+- 対象魚種がない釣果: クロムツ、フグ。
+- ヒット三浦海岸のInstagramの新しい投稿2件: 本文が読めず、釣果を確認できませんでした。
+- 釣割以外の船宿・釣具店ブログ: 新しい釣果はありませんでした。
+- YouTube: 1回検索しましたが、釣行日が分かる最近の動画は見つかりませんでした。
+
+**仕上げと確認**
+- 釣り場近くの水温・天気・風・波（`nearby`）は、全件Open-Meteoの値で埋めました。
+- `data/catch-log.js` を読み込めることを確認しました。合計は3504件です。IDや「日付＋場所＋魚種」の重複、出典URLの抜け、対象外の魚種はありません。
+- 最終更新時刻と今回の件数メモ（`CATCH_LOG_META`）を更新し、`logs/2026-11-08.md` に今回の記録を足しました。
+- 変更したのは `data/catch-log.js` と `logs/2026-11-08.md` の2つだけで、`釣り/` に新しいファイルは作っていません。
+- スマホ用の1ファイル版ページの作り直しは、手順9のとおり `run-collect.ps1` がこのあと自動で行います。
+
+YouTube検索で返ってきたページ（使える情報はありませんでした）:
+- [丸善ジュンク堂 釣り場ガイド](https://www.maruzenjunkudo.co.jp/products/9784864477390)
+- [tk.oretsuri.com](https://tk.oretsuri.com)
+- [シマノ 船探検](https://fish.shimano.com/ja-JP/content/fishingstyle/article/fune_tanken/index.html)
+- [tsurihack 8953](https://tsurihack.com/8953)
+- [tsurihack 8923](https://tsurihack.com/8923)
+- [テレビ東京 釣り](https://www.tv-tokyo.co.jp/tsuri/database/html/110820.html)
+- [週刊つりニュース](https://www.fujisan.co.jp/product/1281697688/b/2806296/)
+- [booklive](https://booklive.jp/product/index/title_id/416910/vol_no/211)
+- [シマノ profile](https://fish.shimano.com/ja-JP/content/fishingstyle/article/fune_tanken/profile.html)
+build-single: source = 釣果ログ.html
+build-single: all-in-one 2151550 chars / docs/index.html 2151550 / dist/artifact.html 2151391
+=== 2026-11-08 06:05 end (claude exit 0) ===
