@@ -1,0 +1,32 @@
+﻿
+=== 2026-11-08 00:00 start ===
+auth: long-lived-token
+I followed `収集手順.md` steps 1–9 for the 2026-11-08 0:00 run and added **44 catch records** to `data/catch-log.js`.
+
+**What was added** (fishing dates 11/07, plus 6 trips from 11/06 that were posted late):
+- **Tokyo Bay: 24** — inner bay 11, Miura side of the bay mouth 9, Boso side 4
+- **Sagami Bay: 14**
+- **Suruga Bay: 6** — includes a 6.5kg buri (yellowtail) from 久料 and 25 シロアマダイ (white tilefish) on one Yaizu boat
+- **Sources:** 43 come from the chowari catch pages and 1 from the 石田丸 blog (11/07).
+- **Nothing new elsewhere:** the other shop and charter blogs, the tackle-shop pages and YouTube had no new in-area catches.
+
+**Records you may want to check:**
+- **石田丸:** the name field says "11/6" but the date field says 2026-11-07. I recorded it as 11/07 because the post describes a north wind, and 11/06 had southwest wind.
+- **TARGET:** this is a night trip separate from the morning trip recorded in the 18:00 run. I named the spot "TARGET ナイト" so the duplicate check doesn't treat the two as one.
+- **Left out:** catches from outside the three bays (Ibaraki, 外房, Aichi and others), and catches with no species on the target list (kihada tuna, kinme, squid other than aori, pufferfish).
+
+**Checks:** the file loads in node with 3,488 records. There are no duplicate ids or duplicate date+spot+species entries, every new record has a source URL, and every new species is on the target list. Line endings are unchanged.
+
+**Run notes:** `logs/2026-11-08.md` lists the URLs checked, each skip and why, and how each borderline record was handled.
+
+**Backup:** the file as it was before this run is at `%TEMP%\t1108a\catch-log.backup.js`.
+
+No other files in the folder were touched. Rebuilding `tsuriha_all-in-one.html` is left to `run-collect.ps1`, as step 9 says.
+
+YouTube search checked:
+- [東京湾のタチウオ](https://www.youtube.com/watch?v=Ok0AyLCWLqY)
+- [11月でもまだ釣れる！東京湾奥イナダ釣り](https://www.youtube.com/watch?v=BEypJJUHAKA)
+- [相模湾のイナダ五目](https://www.youtube.com/watch?v=1NWhGkz374k)
+build-single: source = 釣果ログ.html
+build-single: all-in-one 2141852 chars / docs/index.html 2141852 / dist/artifact.html 2141693
+=== 2026-11-08 00:06 end (claude exit 0) ===
