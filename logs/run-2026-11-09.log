@@ -32,3 +32,27 @@ YouTube search results I checked (nothing usable):
 build-single: source = 釣果ログ.html
 build-single: all-in-one 2258933 chars / docs/index.html 2258933 / dist/artifact.html 2258774
 === 2026-11-09 00:08 end (claude exit 0) ===
+git: push exit 0, unpushed commits: 0
+
+=== 2026-11-09 06:00 start ===
+auth: long-lived-token
+I've finished the Monday 6:00 run of `収集手順.md` (steps 1–9). I added **12 new catch records** to `data/catch-log.js`, which now holds 3,692 entries.
+
+- **Period:** Because this is the Monday morning run, the period was Friday to Monday (11/06–11/09). Earlier runs had already collected most of that, so I only added what was posted after the 0:00 run.
+- **Added by area:** Tokyo Bay inner 3, Sagami Bay 8, Suruga Bay 1. All of them come from chowari: 8 trips on 11/08 and 4 trips on 11/07 that were posted late. Examples are a 7.6 kg buri from 平塚, ちがさき丸's three boats, たいぞう丸 アマダイ, a 25-fish night シーバス trip from TARGET, and 風神丸's シロアマダイ (30 for the boat).
+- **Skipped:** catches outside the three bays (Hyogo, Wakayama, 大原, 勝浦, etc.) and fish not on the target list (キハダ, メダイ).
+- **Other sources:** The shop blogs, イシグロ, かめや and the YouTube search had nothing new to record. HIT三浦海岸 has a new Instagram post, but it has no caption, so I didn't use it.
+- **Run info:** `lastUpdated` is now "2026-11-09 06:00", and the run note is updated. I added a "06:00回" section to `logs/2026-11-09.md` listing the URLs checked, what was skipped and why, and the checks below.
+
+**Checks:** The file loads as valid JavaScript in node. There are no duplicate IDs, no duplicate date+spot+species entries, and no records without a source URL. Every new record uses only fish from the target list.
+
+One problem along the way: a text replacement I ran with `sed` changed the file's Windows line endings. I restored the file from the backup and redid the insert in Python, so the line endings match the original. I've noted this in the log. The backup is in the temp folder, `%TEMP%\t1109b`, and nothing new was created in `釣り/`.
+
+I didn't commit anything. `run-collect.ps1` rebuilds the single-file HTML and commits after this step.
+
+Sources:
+- [東京湾・相模湾の沖釣りのススメ - YouTube](https://www.youtube.com/channel/UCt8IlqIiU11LM0_3lH1Dp8Q)
+- [東京湾三浦 11月釣り物傾向分析 - YouTube](https://www.youtube.com/watch?v=qN1rnksr2OM)
+build-single: source = 釣果ログ.html
+build-single: all-in-one 2266436 chars / docs/index.html 2266436 / dist/artifact.html 2266277
+=== 2026-11-09 06:03 end (claude exit 0) ===
