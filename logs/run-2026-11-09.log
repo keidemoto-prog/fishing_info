@@ -1,0 +1,34 @@
+﻿
+=== 2026-11-09 00:00 start ===
+auth: long-lived-token
+I ran the 0:00 collection steps for 11/09 from step 1 through step 9 and added **69 catch records**. `data/catch-log.js` loads correctly as JavaScript and now holds 3,680 records.
+
+**Result**
+- **By area:** 54 Tokyo Bay (41 inner bay, 9 bay mouth on the Miura side, 4 on the Boso side), 12 Sagami Bay, 3 Suruga Bay.
+- **By date:** 45 trips on 11/08, plus 16 from 11/07 and 8 from 11/06 that were posted late.
+- **Source:** all 69 came from Chowari (釣割). It had 129 new posts since the last run, and I kept only those in the target areas with a target species.
+- **Notable catches:**
+  - 成銀丸 (Matsuwa): yellowtail (ワラサ) 0–13 per angler
+  - 長崎屋 (Honmoku): whiting (シロギス), top angler 145
+  - 三喜丸 (Shiba): horse mackerel (アジ) up to 157 per angler
+  - 米元 (Kanazawa-Hakkei): sea bream (マダイ) 3.7kg, and horse mackerel up to 47cm
+  - 橋安丸 (Yaizu): cutlassfish (タチウオ) 20–52 per angler
+- **Other sources:** I checked all the boat and shop blogs and one YouTube search. None had anything new in scope. The shop sites' newest posts were the same as last run, and the Ishiguro posts were outside the areas.
+- **Nearby sea conditions:** every new record has Open-Meteo values, with no missing water temperatures.
+
+**Judgment calls** (each is written in the record's note and in the log)
+- I put the Toda boat けやき丸 in the inner-bay area, as earlier records did. Chowari gave no water temperature for those trips, so that field is empty.
+- When a report only said a fish was caught without a count, I left it out of the species list if the wording was vague. 政美丸's "saw some flounder, yellowtail and amberjack" is one example. Fish listed as "also caught" stay in the list, as before.
+- For the 浜田丸 trip I used the water temperature written in the report itself (23.9℃) instead of Chowari's figure.
+
+**Checks:** no duplicate records, no missing source URLs, and every species is on the target list. Line endings are unchanged from before.
+
+`CATCH_LOG_META` is updated. The pages I checked, what I left out and why, and the judgment calls are in a new file, `logs/2026-11-09.md`. I created nothing else in the `釣り/` folder. My working files and a backup of the data file from before the edit are in `%TEMP%\t1109a\`. `run-collect.ps1` will rebuild the single-file HTML automatically next (step 9), so I didn't touch it.
+
+YouTube search results I checked (nothing usable):
+- [東京湾 タチウオ 船釣り](https://www.youtube.com/watch?v=Ok0AyLCWLqY)
+- [東京湾奥イナダ釣り](https://www.youtube.com/watch?v=BEypJJUHAKA)
+- [相模湾 落し込みサビキ](https://www.youtube.com/watch?v=HnfnMK1JZBE)
+build-single: source = 釣果ログ.html
+build-single: all-in-one 2258933 chars / docs/index.html 2258933 / dist/artifact.html 2258774
+=== 2026-11-09 00:08 end (claude exit 0) ===
