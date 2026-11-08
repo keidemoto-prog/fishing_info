@@ -70,3 +70,43 @@ YouTube検索で返ってきたページ（使える情報はありませんで�
 build-single: source = 釣果ログ.html
 build-single: all-in-one 2151550 chars / docs/index.html 2151550 / dist/artifact.html 2151391
 === 2026-11-08 06:05 end (claude exit 0) ===
+git: push exit 0, unpushed commits: 0
+
+=== 2026-11-08 12:00 start ===
+auth: long-lived-token
+I finished the 12:00 collection run, following every step in `収集手順.md` from 1 to 9. **I added 40 new catch records:**
+
+| Area | Records |
+|---|---|
+| Tokyo Bay (東京湾) | 18 (inner bay 5, Miura side of the bay mouth 13, Boso side 0) |
+| Sagami Bay (相模湾) | 18 |
+| Suruga Bay (駿河湾) | 4 |
+
+**Where they came from:**
+- **Chowari:** 27 records. Most are trips from 11/07. A few are trips from 11/04 and 11/06 that were posted late.
+- **SSM浦賀:** 7 records. This includes one 11/06 trip that earlier runs had missed.
+- **Sunnyside:** 3 records, from trips on 11/01 and 11/03 that were posted today.
+- **Kameya:** 3 records. Two of them don't give an exact trip day, so I recorded only the month (`2026-11`) and left the nearby-conditions field empty, as the rules say.
+
+**Checks:**
+- `data/catch-log.js` loads correctly as JavaScript and now has 3,544 records.
+- There are no duplicate IDs and no duplicate date + spot + species combinations.
+- Every record has a source URL, and every fish is on the target species list.
+- I updated the last-updated time and the run summary at the top of the file, and filled the nearby sea temperature, weather, wind and waves for every record from Open-Meteo.
+
+**What I left out:**
+- Reports from outside the three bays, such as Ibaraki, Kamogawa, Katsuura and Ohara.
+- Catches with no fish from the target list, such as yellowfin tuna (キハダ), pufferfish and spear squid (ヤリイカ).
+- The other boat shop and tackle shop blogs had no new catches.
+- One YouTube search turned up no recent videos with a clear fishing date. Relevant results it returned:
+  - [東京湾・相模湾の沖釣りのススメ](https://www.youtube.com/channel/UCt8IlqIiU11LM0_3lH1Dp8Q)
+  - [東京湾三浦 11月釣り物傾向分析](https://www.youtube.com/watch?v=qN1rnksr2OM)
+
+**Two judgment calls**, both written in the record notes and the log:
+- One boat's report gave two different sets of numbers for its cutlassfish (タチウオ) catch: the table said 60–110cm, 2–12 fish, and the text said 65–113cm, 0–13 fish. I used the text.
+- The West Izu rockfish (アカハタ) report didn't say whether the angler fished from rocks or a pier. I put "rocks" (地磯) as a best guess.
+
+I changed only `data/catch-log.js` and `logs/2026-11-08.md`, where I added a 12:00 section with the pages checked, what was left out and why, and the checks. I created no new files in `釣り/`; scratch files and a backup of the data file are in a temp folder. Rebuilding the single-file HTML happens automatically afterwards in `run-collect.ps1` (step 9), so I didn't do it.
+build-single: source = 釣果ログ.html
+build-single: all-in-one 2175983 chars / docs/index.html 2175983 / dist/artifact.html 2175824
+=== 2026-11-08 12:08 end (claude exit 0) ===
