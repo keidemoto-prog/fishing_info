@@ -110,3 +110,33 @@ I changed only `data/catch-log.js` and `logs/2026-11-08.md`, where I added a 12:
 build-single: source = 釣果ログ.html
 build-single: all-in-one 2175983 chars / docs/index.html 2175983 / dist/artifact.html 2175824
 === 2026-11-08 12:08 end (claude exit 0) ===
+git: push exit 0, unpushed commits: 0
+
+=== 2026-11-08 18:00 start ===
+auth: long-lived-token
+18:00回の収集手順を、手順1〜9まで最後まで実行しました。**67件**を追加し、`data/catch-log.js` は正しいJavaScriptとして読み込めることを確認済みです。
+
+**結果**
+- **追加**: 67件（東京湾53＝湾奥26・湾口三浦15・房総12／相模湾14／駿河湾0）。釣行日の内訳は 11/08 が46件、前日以前の分が後から掲載されたもの（11/07 が19件、11/06 が2件）です。
+- **出所**: 67件すべて釣割（chowari）です。前回以降に新しく載った147件のうち、対象エリアで対象魚種があるものだけを記録しました。茨城・和歌山・福岡などのエリア外や、キハダ・ヤリイカなど対象外の魚だけの記事は記録していません。
+- **主な釣果**:
+  - 平塚 庄治郎丸：イナダ 2〜12本
+  - 勝山 利八丸：泳がせワラサ 4.2〜6.7kg
+  - 林遊船：サワラ 85〜105cm
+  - TARGET：シーバス 60〜80cm 計11本
+  - SEAKURO：シーバス 85cm
+  - 松輪 せどおと丸：ワラサ 1〜6本
+- **その他の情報源**: 船宿・釣具店のブログ（石田丸・中根ボート・浜千鳥・SSM浦賀・サニーサイド・富浦・スーパーフィッシング・HIT三浦海岸・イシグロ・かめや）はすべて見ました。どれも対象の新着はありませんでした。YouTube も1回検索しましたが、釣行日が分かる直近の動画は見つかりませんでした。
+- **近くの海況（`nearby`）**: 全件 Open-Meteo の値で埋め、海水温と風の抜けはありません。
+- **確認したこと**: 重複なし、出典URLの抜けなし、魚種はすべて対象魚種リストの中です。改行コードも変更前と同じ状態です。
+- **記録の更新**: `CATCH_LOG_META` を更新し、`logs/2026-11-08.md` に見たURL・採用しなかった理由・判断メモを追記しました。
+- **ファイル**: `釣り/` に新しいファイルは作っていません。作業ファイルと変更前のバックアップは `%TEMP%\t1108d\` にあります。
+
+スマホ用のHTML（`tsuriha_all-in-one.html`）は、手順9のとおりこのあと `run-collect.ps1` が自動で作り直すので、触っていません。
+
+YouTube 検索の参照先（該当なし）:
+- [anglers.jp 釣果](https://anglers.jp//catches/6300631)
+- [テレビ東京 釣り番組データベース](https://www.tv-tokyo.co.jp/tsuri/database/html/110820.html)
+build-single: source = 釣果ログ.html
+build-single: all-in-one 2216782 chars / docs/index.html 2216782 / dist/artifact.html 2216623
+=== 2026-11-08 18:08 end (claude exit 0) ===
