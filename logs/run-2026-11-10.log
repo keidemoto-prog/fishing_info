@@ -33,3 +33,33 @@ As step 9 says, I didn't rebuild the single-file HTML pages; `run-collect.ps1` d
 build-single: source = 釣果ログ.html
 build-single: all-in-one 2302920 chars / docs/index.html 2302920 / dist/artifact.html 2302761
 === 2026-11-10 00:05 end (claude exit 0) ===
+git: push exit 0, unpushed commits: 0
+
+=== 2026-11-10 06:00 start ===
+auth: long-lived-token
+I ran all 9 steps in `収集手順.md` for the 6:00 collection on 2026-11-10 (Tuesday, so the period is 11/09–11/10). **5 new catch records were added.**
+
+**What was added** (all from chowari, the fishing-boat booking site):
+
+| Date | Area | Boat / place | Catch |
+|---|---|---|---|
+| 11/09 | 相模湾 | 太一丸 (Hiratsuka) | ブリ 7kg, 1 fish (on a キハダ charter) |
+| 11/08 | 相模湾 | 豊漁丸 (Hiratsuka) | アジ 3–13 per person, マダイ 2, イナダ 3, カンパチ (no count given) |
+| 11/08 | 東京湾奥 | Friend☆Ship (江戸川放水路) | サワラ 81cm and 88cm |
+| 11/08 | 湾口三浦 | こうゆう丸 (新安浦) | タチウオ 65–110cm, 0–9 per person |
+| 11/08 | 湾口三浦 | 太郎八丸 (松輪) | アオリイカ, best angler 4 |
+
+- **Skipped:** chowari had 18 new reports in total. 12 were outside the target areas (いすみ, 御宿, 兵庫, 和歌山, 福岡, 愛知, 浜名湖). 五エム丸's キハダ report was skipped because キハダ isn't on the species list.
+- **Other sources:** The shop blogs had nothing new; posts dated 11/08–11/09 were already in the log. One YouTube search found no recent videos with a clear fishing date.
+- **Sea and weather conditions:** filled in for every record from Open-Meteo.
+- **File updates:** the "last updated" time and summary note in `data/catch-log.js` are changed, and this run's notes are added to `logs/2026-11-10.md`.
+- **Check:** `data/catch-log.js` still loads correctly and now has 3,756 records, with no duplicates and none missing a source link.
+
+No new files were created in the `釣り` folder; temporary files are in `%TEMP%\t1110b`. As step 9 says, `run-collect.ps1` rebuilds the single-file HTML pages afterwards, so I didn't touch them. I also didn't commit anything; the script does that too.
+
+Sources (YouTube search, nothing used):
+- [東京湾奥ショアジギング 11月もイナダ](https://www.youtube.com/watch?v=kstkSEMLRuE)
+- [相模湾のイナダ五目](https://www.youtube.com/watch?v=1NWhGkz374k)
+build-single: source = 釣果ログ.html
+build-single: all-in-one 2306059 chars / docs/index.html 2306059 / dist/artifact.html 2305900
+=== 2026-11-10 06:03 end (claude exit 0) ===
