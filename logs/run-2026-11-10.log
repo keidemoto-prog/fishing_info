@@ -1,0 +1,35 @@
+﻿
+=== 2026-11-10 00:00 start ===
+auth: long-lived-token
+I ran all 9 steps in `収集手順.md` for this midnight run. 11 new catch records went into `data/catch-log.js`, which now holds 3,751.
+
+**What was added (all from chowari, the fishing-boat booking site)**
+- **Tokyo Bay (4):**
+  - Inner bay: 忠彦丸 アジ (no count given), TARGET night sea bass (20 fish on the boat, up to 79cm), 三河屋 シロギス (9–75 per person).
+  - Bōsō side: 浜田丸 マハタ and ヒラメ.
+- **Sagami Bay (7):** 長助丸 シイラ, 愛正丸 アジ and ワラサ, two trips from 優神丸 (the mixed-fish boat and the squid boat), 政美丸 カンパチ, 瀬戸丸 アオリイカ (up to 1.3kg) and 治久丸 シロアマダイ (up to 60cm).
+- **Suruga Bay:** nothing new.
+- 4 of the 11 are trips from 11/08 that were posted late; the other 7 are from 11/09.
+- Each record also has nearby sea temperature, weather, wind and wave height from Open-Meteo, with no gaps.
+
+**Judgement calls**
+- 愛正丸 didn't sail on 11/09. Their post describes the 11/08 trip, so I dated it 11/08 and didn't use the 11/09 weather that chowari showed with it.
+- One TARGET post (the 11/08 morning trip) was already in the data, so I skipped it.
+- I left out 28 posts: 26 from outside the three bays, one whose catch wasn't on the target fish list (キンメ・クロムツ), and the duplicate above.
+- The other sources had nothing new from the bays: the boat and shop blogs, Kameya, Ishiguro and HIT. One YouTube search found no videos from recent trips.
+
+**Checks**
+- The data file loads correctly as JavaScript.
+- There are no duplicate IDs, and no two records share the same date, place and fish.
+- Every record has a source link, and every new fish name is on the target list.
+- The file kept its Windows line endings.
+- A backup of the data file from before this run is in a temporary folder outside the vault (`%TEMP%/t1110a/catch-log.backup.js`).
+
+**Files changed**
+- `data/catch-log.js`: the 11 new records, plus an updated "last updated" time and run note.
+- `logs/2026-11-10.md`: a new log with the URLs checked, what was skipped and why, and the judgement calls.
+
+As step 9 says, I didn't rebuild the single-file HTML pages; `run-collect.ps1` does that next. I also didn't try to update the phone page, which can't be done from this automatic run.
+build-single: source = 釣果ログ.html
+build-single: all-in-one 2302920 chars / docs/index.html 2302920 / dist/artifact.html 2302761
+=== 2026-11-10 00:05 end (claude exit 0) ===
