@@ -102,3 +102,31 @@ YouTube search results I looked at (none were usable):
 build-single: source = 釣果ログ.html
 build-single: all-in-one 2312180 chars / docs/index.html 2312180 / dist/artifact.html 2312021
 === 2026-11-10 12:03 end (claude exit 0) ===
+git: push exit 0, unpushed commits: 0
+
+=== 2026-11-10 18:00 start ===
+auth: long-lived-token
+I ran the 18:00 collection from `収集手順.md`, steps 1–9. It added **13 records** to `data/catch-log.js`: 東京湾 8 (湾奥 4・湾口三浦 4・房総 0), 相模湾 5, 駿河湾 0.
+
+**What was added**
+- **chowari, 12 records**: 10 trips from today (11/10) and 2 from 11/09 that were posted late (さわ浦 サワラ, SEAKURO's night シーバス). Highlights:
+  - 成銀丸 (松輪): ワラサ 3–11 per person
+  - SEAKURO: シーバス up to 83cm
+  - 林遊船: シーバス 14 on one boat, plus サワラ
+  - 腰越 (喜久丸・池田丸): アマダイ, アジ, マダイ
+- **かめや平塚店, 1 record**: a ヒラメ from an unnamed river mouth near 平塚. The post only says "11月上旬", so the date is recorded as month only (`"2026-11"`) with no nearby weather data, as the rules say.
+- **Not added**: catches outside the three bays (勝浦, いすみ, 愛知, 和歌山, 兵庫, 長崎, 茨城) and the 小田原 ヤリイカ trip, which isn't on the species list.
+- **Other sources**: the shop and boat blogs had nothing new for these bays, and the YouTube search found no relevant videos.
+
+**Checks**
+- I filled in nearby sea temperature, weather, wind and waves from Open-Meteo for every dated record. No values are missing.
+- `CATCH_LOG_META` is updated (lastUpdated `2026-11-10 18:00`).
+- The file loads as valid JavaScript (3779 records). There are no duplicate IDs or duplicate date+spot+species entries, every record has a source URL, and all new species are on the list.
+- I added this run's notes to `logs/2026-11-10.md`. The only changed files are those two plus the run log that `run-collect.ps1` writes. Nothing new was created in the `釣り/` folder; the temporary files and the backup are in `%TEMP%/t1110d`.
+
+Per step 9, I didn't rebuild the single-file HTML. `run-collect.ps1` does that after this run.
+
+Search source used: [anglers.jp](https://anglers.jp//catches/6300631) (search result only, not used for a record)
+build-single: source = 釣果ログ.html
+build-single: all-in-one 2320409 chars / docs/index.html 2320409 / dist/artifact.html 2320250
+=== 2026-11-10 18:04 end (claude exit 0) ===
