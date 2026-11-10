@@ -63,3 +63,42 @@ Sources (YouTube search, nothing used):
 build-single: source = 釣果ログ.html
 build-single: all-in-one 2306059 chars / docs/index.html 2306059 / dist/artifact.html 2305900
 === 2026-11-10 06:03 end (claude exit 0) ===
+git: push exit 0, unpushed commits: 0
+
+=== 2026-11-10 12:00 start ===
+auth: long-lived-token
+I followed all 9 steps in `収集手順.md` for the 12:00 run on 2026-11-10 and added **10 new catch records** to `data/catch-log.js`.
+
+**Added (東京湾 7, 相模湾 1, 駿河湾 2):**
+- **東京湾奥 (6):**
+  - PLAYFUL (海老取川): シーバス, 11/09
+  - 弁天屋: タチウオ and アジ, 11/09
+  - 荒川屋: LTアジ, 11/09
+  - 小峯丸 (寒川港): シーバス and サワラ, 11/08 — one post, recorded as two
+  - 岩田屋: カワハギ, 11/08
+- **湾口三浦 (1):** 平作丸 (久里浜): ワラサ, マダイ, カワハギ, 11/09
+- **相模湾 (1):** ふみ丸 (真鶴): アカハタ 25匹, 11/08
+- **駿河湾 (2):**
+  - 昌福丸 (沼津): タチウオ up to 104匹, 11/08
+  - かめや富士店: 富士サーフ シーバス 68cm, 11/09
+
+**What I checked:**
+- 釣割: pages 1–60, which had 48 new posts. The ones not used were outside the target areas or had no target species (マダコ, キハダ, クロムツ).
+- The other shop and boat blogs: only かめや had a new usable post.
+- YouTube: one search, with no recent video that had a clear fishing date.
+
+**Updates and checks:**
+- Every record has a source URL and nearby sea and weather values from Open-Meteo.
+- I updated `lastUpdated` and `lastRunNote`, and added the 12:00 section to `logs/2026-11-10.md`.
+- The file loads as JavaScript with node (3,766 records), with no duplicate IDs and no duplicate date + spot + species entries.
+- I made no new files in `釣り/`; my temporary files and a backup copy are in the temp folder.
+
+`run-collect.ps1` rebuilds the single-file HTML pages next, as step 9 says. I didn't commit or push anything.
+
+YouTube search results I looked at (none were usable):
+- [東京湾奥イナダ釣り](https://www.youtube.com/watch?v=BEypJJUHAKA)
+- [東京湾奥ショアジギング](https://www.youtube.com/watch?v=kstkSEMLRuE)
+- [相模湾 落し込みサビキ](https://www.youtube.com/watch?v=HnfnMK1JZBE)
+build-single: source = 釣果ログ.html
+build-single: all-in-one 2312180 chars / docs/index.html 2312180 / dist/artifact.html 2312021
+=== 2026-11-10 12:03 end (claude exit 0) ===
