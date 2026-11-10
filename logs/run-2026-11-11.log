@@ -24,3 +24,35 @@ YouTube検索の結果（該当なし）：[tk.oretsuri.com](https://tk.oretsuri
 build-single: source = 釣果ログ.html
 build-single: all-in-one 2326800 chars / docs/index.html 2326800 / dist/artifact.html 2326641
 === 2026-11-11 00:05 end (claude exit 0) ===
+git: push exit 0, unpushed commits: 0
+
+=== 2026-11-11 06:00 start ===
+auth: long-lived-token
+I ran the 6:00 collection in 収集手順.md (steps 1–9) and added **6 new catches** to `data/catch-log.js`.
+
+**Step 1–2:** Today is Wed 2026-11-11, so the period is 11/10–11/11 (only posts newer than the 0:00 run).
+
+**Step 3–5:** All 6 new catches came from 釣割 (chowari). It had 15 new posts; the other 9 were outside the three bays or only had fish not on the target list (mostly キハダ and フグ).
+- 東京湾 (湾奥) 2: PALLAS (大黒運河) シーバス; 忠彦丸 (金沢漁港) ライトアジ. Neither post gives counts or sizes.
+- 相模湾 3: 五エム丸 (葉山) アオリイカ 0〜9杯; たいぞう丸 (葉山) アマダイ 23〜41cm 1〜8匹 and アジ; 椿丸 (小坪) on 11/08 with シロアマダイ 38〜44cm, マハタ and small マダイ. 椿丸 posted late.
+- 駿河湾 1: 橋安丸 (焼津) タチウオ, bait 30〜46本 and jigging 25〜56本.
+
+Water temperature, weather and wind come from the weather shown on each chowari post. The nearby values come from Open-Meteo: I fetched 大黒 and 小坪 fresh, and reused 葉山, 焼津 and 金沢八景 from earlier runs for the same day.
+
+The other blogs had nothing new. かめや平塚's ヒラメ was already recorded last run; イシグロ's 11/10 posts were クロダイ or 浜名湖, both outside the rules. My single YouTube search found no usable videos.
+
+**Step 6:** I set `lastUpdated` to "2026-11-11 06:00" and wrote the "6件追加…" note.
+
+**Step 7:** I added a 6:00 section to `logs/2026-11-11.md` with the URLs checked, what I skipped and why, and judgment notes.
+
+**Step 8:** The file loads as valid JavaScript with 3,795 records. There are no duplicate ids or duplicate date+spot+fish entries, every record has a source URL, and all new fish are on the target list.
+
+**Step 9:** I stopped there and made no commit; `run-collect.ps1` rebuilds the HTML afterwards and handles the commit. I created no new files in `釣り/`. The temporary files and a backup of `catch-log.js` from before the edit are in `%TEMP%\t1111b`.
+
+Sources:
+- [booklive.jp (search result)](https://booklive.jp/product/index/title_id/416910/vol_no/211)
+- [東京湾~相模湾 電車で行ける釣り場ガイド40](https://www.maruzenjunkudo.co.jp/products/9784864477390)
+- [週刊つりニュース 関東版](https://www.fujisan.co.jp/product/1281697688/b/list/)
+build-single: source = 釣果ログ.html
+build-single: all-in-one 2330701 chars / docs/index.html 2330701 / dist/artifact.html 2330542
+=== 2026-11-11 06:04 end (claude exit 0) ===
