@@ -30,3 +30,40 @@ Sources:
 build-single: source = 釣果ログ.html
 build-single: all-in-one 2400235 chars / docs/index.html 2400235 / dist/artifact.html 2400076
 === 2026-11-12 00:15 end (claude exit 0) ===
+git: push exit 0, unpushed commits: 0
+
+=== 2026-11-12 06:00 start ===
+auth: long-lived-token
+`収集手順.md` の手順1〜9を実行しました。今回は11/12 6:00回の分で、**8件を追加**しました（東京湾2＝湾奥1・湾口三浦1／相模湾6／駿河湾0）。
+
+**追加した釣果**
+- **藤八丸（小田原）**
+  - ティップランのアオリイカ：11/11は0〜3杯、11/09は0〜5杯（遅れて載った分）
+  - 仕立てのコマセ五目（11/10）：ショゴ・イナダ・カンパチ・ソウダガツオ・オオモンハタ
+- **五エム丸（葉山）**：11/11、1つの投稿にアオリイカ船とアマダイ船が入っていたので2件に分けました。アオリイカは0〜4杯（船全体で24杯）、アマダイは最大48cm。
+- **たいぞう丸（葉山）**：11/11、アマダイ 21〜41.5cm、0〜6匹。
+- **PALLAS（大黒運河）**：11/11、フライ釣りでシーバス、最大64cm。
+- **HIT三浦海岸（Instagram）**：11/11、金田湾でマダイ65cm・サワラ78cm・ワラサ64cm。
+
+水温・天気・風・波は、全件 Open-Meteo の近くの観測値で埋めました。
+
+**記録しなかったもの**
+- 村本海事 11/11：前回（0:00回）に入れた記録と同じ内容のため。
+- キハダ：対象魚種に入っていないため。
+- 和歌山・山形・浜名湖：対象エリアの外のため。
+- ほかの船宿・釣具店のブログには新しい釣果がなく、YouTube も1回検索して該当する動画は見つかりませんでした。
+
+**確認したこと**
+- `data/catch-log.js` は JavaScript として正しく読み込めます（3,908件 → 3,916件）。ID、日付・場所・魚種の組み合わせとも重複はなく、出典URLの欠けもありません。
+- `lastUpdated` と `lastRunNote` を更新し、`logs/2026-11-12.md` に6:00回の記録を追記しました。
+- 手を入れたのは、手順で許されている `data/catch-log.js` と `logs/` だけです。`釣り/` フォルダに新しいファイルは作っていません（作業用ファイルは一時フォルダに置いています）。
+
+手順9のとおり、スマホ・単体用のHTMLの作り直しは、この後 `run-collect.ps1` が自動で行います。
+
+Sources:
+- [anglers.jp](https://anglers.jp//catches/6416851)
+- [yutura.net](https://yutura.net/channel/11003/latest/)
+- [tsurihack.com](https://tsurihack.com/7869)
+build-single: source = 釣果ログ.html
+build-single: all-in-one 2405376 chars / docs/index.html 2405376 / dist/artifact.html 2405217
+=== 2026-11-12 06:03 end (claude exit 0) ===
