@@ -1,0 +1,32 @@
+﻿
+=== 2026-11-12 00:00 start ===
+auth: long-lived-token
+I ran all 9 steps of `収集手順.md`. This was the Thursday 11/12 0:00 run, and it added **113 records** to `data/catch-log.js`.
+
+**Missed runs:** the 11/11 12:00 and 18:00 runs never happened (the data file and run log both stopped at 6:00), so this run caught up on everything posted since then. The cause wasn't investigated; the PC may have been asleep.
+
+**Steps 1–4 (collection):**
+- **chowari:** I read pages 1–80 and found 135 new reports in the target areas, which became 112 records:
+  - by catch date: 11/11 70, 11/10 27, 11/09 5, 11/08 10
+  - by area: 東京湾 56 (湾奥 28, 湾口三浦 21, 房総 7), 相模湾 45, 駿河湾 11
+- **かめや釣具:** 1 record (沼津サーフ タチウオ 5匹, 11/10). Their 相模川河口 シーバス report has the same date, spot and species as an existing record, so the duplicate rule skipped it.
+- **Other shop blogs:** nothing new in the target areas. Everything new at イシグロ was outside the areas or the fish list.
+- **YouTube:** one search found no usable videos.
+- **Not recorded:** reports with no target species (tuna-only, フグ, ハゼ, マダコ, ヤリイカ and other squid) and reports outside the target areas.
+
+**Steps 5–6 (data file):** the new records are at the top of `window.CATCH_LOG`. `lastUpdated` is "2026-11-12 00:00", and the note gives the counts above and says why this run was a catch-up.
+
+**Step 7:** I wrote `logs/2026-11-12.md` with the URLs checked, what was rejected and why, and judgment calls such as name changes (シロアマダイ→アマダイ, ヒラソウダ→ソウダガツオ) and merged posts.
+
+**Step 8:** the file loads in node with 3908 records (3795 + 113). There are no duplicate ids or duplicate date+spot+species entries, every record has a source URL, and all new fish are on the target list.
+
+**Step 9:** I stopped there with no commit and no HTML rebuild, which `run-collect.ps1` handles. The only changes in `釣り/` are `data/catch-log.js` and `logs/2026-11-12.md`. Temporary files and a backup of `catch-log.js` from before the edit are in `%TEMP%\t1112a`.
+
+Sources:
+- [chowari 釣果情報](https://www.chowari.jp/catch/)
+- [かめや釣具 沼津サーフ タチウオ](https://kameya-choka.com/kanto-tokai/archives/f-info/545936)
+- [かめや釣具 相模川河口 シーバス](https://kameya-choka.com/kanto-tokai/archives/f-info/545935)
+- [fish.shimano.com](https://fish.shimano.com/ja-JP/content/fishingstyle/article/fune_tanken/profile.html), [anglers.jp](https://anglers.jp//catches/6399449), [yutura.net](https://yutura.net/channel/11003/latest/), [tsurihack.com](https://tsurihack.com/7869) (YouTube search results, none used)
+build-single: source = 釣果ログ.html
+build-single: all-in-one 2400235 chars / docs/index.html 2400235 / dist/artifact.html 2400076
+=== 2026-11-12 00:15 end (claude exit 0) ===
