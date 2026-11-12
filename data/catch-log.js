@@ -8,11 +8,14 @@
  *   { obs:"観測地点名", waterTempC, weather, windMS, windDir, waveM, airTempC, time:"YYYY-MM-DD" }
  */
 window.CATCH_LOG_META = {
-  lastUpdated: "2026-11-13 00:00",
-  lastRunNote: "29件追加（東京湾15＝湾奥3・湾口三浦9・房総3／相模湾8／駿河湾6）。chowari 29件（11/12 28件・11/11 後発1件＝興栄丸 焼津）。他ブログ・釣具店・YouTube は対象の新着なし"
+  lastUpdated: "2026-11-13 06:00",
+  lastRunNote: "2件追加（東京湾0／相模湾2／駿河湾0）。chowari 1件（11/12 たいぞう丸 葉山 アマダイ 0〜7）＋石田丸 1件（11/12 早川 アジ・ワラサ 3.4kg・マダイ 2.3kg）。他ブログ・釣具店・YouTube は対象の新着なし"
 };
 
 window.CATCH_LOG = [
+  // ---------- 11-13 6:00回 追加分（chowari 1件・石田丸 1件） ----------
+  {id: "2026-11-13-sagami-06c001", date: "2026-11-12", area: "sagami", spot: "葉山鐙摺港（葉山町） たいぞう丸 アマダイ五目船", spotType: "沖-釣り船", method: "アマダイ五目", species: ["アマダイ"], result: "アマダイ 25〜38cm 0〜7（トップ7・2番手4）/ アラ・ソコイトヨリ・ヒメコダイ・マルアジ・ユメカサゴ・ガンゾウ・クラカケ・エソ。前半浅場は潮流れず、後半深場でポツポツ", tideName: "中潮", waterTempC: 19.0, waterTempSource: "chowari 釣行当日の気象", weather: "晴れ", windMS: 2.7, windDir: "北北東", airTempC: 18.0, nearby: {obs: "Open-Meteo（葉山沖）", waterTempC: 21.7, weather: "晴れ", windMS: 7.03, windDir: "南西", waveM: 0.48, airTempC: 18.7, time: "2026-11-12"}, sourceName: "たいぞう丸（chowari）", sourceUrl: "https://www.chowari.jp/ship/00449/catch/", note: "同日のキハダ・本ガツオ船（5354514、キハダ 32.7〜60.1kg 3本）は対象外 choka 5354513"},
+  {id: "2026-11-13-sagami-06c002", date: "2026-11-12", area: "sagami", spot: "早川港（小田原市） 石田丸", spotType: "沖-ボート", method: "アジ（コマセ）＋泳がせ", species: ["アジ", "ワラサ", "マダイ", "イナダ", "サバ"], result: "マアジ 23〜30cm 頭15匹、大アジ 40cm 3匹 / ワラサ 3.4kg 73cm（泳がせ）/ マダイ 2.3kg 56cm / イナダ 50cm / クロダイ 50cm・44cm / 他 大サバ・イシモチ。穏やか（がれば根・富士山根沖側。アジは午前中がれば根、昼頃富士山根沖側）", tideName: "大潮", waterTempC: null, waterTempSource: "", weather: "曇りのち晴れ", windMS: null, windDir: "", airTempC: null, nearby: {obs: "Open-Meteo（早川沖）", waterTempC: 22.8, weather: "晴れ時々曇り", windMS: 6.84, windDir: "西", waveM: 0.58, airTempC: 18.7, time: "2026-11-12"}, sourceName: "石田丸 釣果", sourceUrl: "https://www.ishidamaru.com/?post_type=fishing&paged=1", note: "天気・潮は石田丸の記載（「大潮 澄み」「曇りのち晴れ」。暦上は中潮）。同日の2投稿（和田氏・木村氏）を1件に。クロダイ・イシモチは対象外のため result のみ"},
   // ---------- 11-13 0:00回 追加分（chowari 29件） ----------
   {id: "2026-11-13-wanko-boso-00c001", date: "2026-11-12", area: "wanko-boso", spot: "洲崎栄ノ浦港（館山市） 赤沼丸 午後ティップラン船", spotType: "沖-釣り船", method: "ティップラン", species: ["アオリイカ"], result: "アオリイカ 0.4〜1.0kg 0〜2。単発ヒットで数は伸びず、良型主体", tideName: "中潮", waterTempC: 21.9, waterTempSource: "chowari 釣行当日の気象", weather: "晴れ", windMS: 1.3, windDir: "北西", airTempC: 20.0, nearby: {obs: "Open-Meteo（洲崎沖）", waterTempC: 22.0, weather: "曇り", windMS: 10.1, windDir: "南西", waveM: 1.04, airTempC: 19.5, time: "2026-11-12"}, sourceName: "赤沼丸（chowari）", sourceUrl: "https://www.chowari.jp/ship/01418/catch/", note: "choka 5354252"},
   {id: "2026-11-13-sagami-00c002", date: "2026-11-12", area: "sagami", spot: "腰越漁港（鎌倉市） 政美丸", spotType: "沖-釣り船", method: "五目（コマセ）", species: ["ワラサ", "イナダ", "カワハギ", "ソウダガツオ", "サバ", "アジ"], result: "ワラサ 最大5.3kg 船中3 / イナダ / ハナダイ 0〜1 / カイワリ 0〜3 / イトヨリ / カワハギ / ヒラソーダ 0〜5 / サバ 1〜8 / アジ 19〜30cm 5〜13", tideName: "中潮", waterTempC: 19.1, waterTempSource: "chowari 釣行当日の気象", weather: "晴れ", windMS: 2.2, windDir: "北北東", airTempC: 18.0, nearby: {obs: "Open-Meteo（腰越沖）", waterTempC: 22.2, weather: "晴れ", windMS: 5.16, windDir: "西", waveM: 0.52, airTempC: 18.5, time: "2026-11-12"}, sourceName: "政美丸（chowari）", sourceUrl: "https://www.chowari.jp/ship/00153/catch/", note: "ヒラソーダ→ソウダガツオ choka 5354272"},
