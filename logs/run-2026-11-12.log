@@ -67,3 +67,34 @@ Sources:
 build-single: source = 釣果ログ.html
 build-single: all-in-one 2405376 chars / docs/index.html 2405376 / dist/artifact.html 2405217
 === 2026-11-12 06:03 end (claude exit 0) ===
+git: push exit 0, unpushed commits: 0
+
+=== 2026-11-12 12:00 start ===
+auth: long-lived-token
+I ran the 12:00 collection and completed every step in `収集手順.md`. It added **33 new catch records** to `data/catch-log.js`.
+
+**What was added**
+- **By area:** Tokyo Bay 25 (inner bay 20, Miura side of the bay mouth 4, Boso side 1), Sagami Bay 8, Suruga Bay 0.
+- **From chowari (32):** 30 trips on 11/11 and 2 late posts for 11/10. Examples: 長崎屋 キス top 131, 米元 タチウオ up to 100cm, 孝太郎丸 マダイ 21 on the boat, 豊国丸 マダイ 16 plus ショゴ and カンパチ, 小峯丸 サワラ 83cm.
+- **From かめや 平塚店 (1):** マゴチ 45cm at a nearby river mouth. The post only says "early November", so the date is stored as `2026-11` and there is no nearby weather.
+- **Nearby weather:** filled from Open-Meteo for all 19 port/date combinations, with no gaps.
+
+**What was left out**
+- かめや 小田原店's 大磯沖 アマダイ 50cm post gives no catch date or month, so I didn't record it.
+- 64 of the 96 new chowari posts were outside the target waters (外房, 東伊豆, other regions) or had no target species (マダコ, キハダ, ヤリイカ, etc.).
+- The shop blogs had nothing new in range. One YouTube search found no recent videos from these waters.
+
+**Checks**
+- The file still loads as valid JavaScript (3,949 records).
+- There are no duplicate IDs or duplicate date + spot + species combinations, and every record has a source URL.
+- `CATCH_LOG_META` is updated, and the run is recorded in `logs/2026-11-12.md`.
+- A backup of the file from before the change is in `%TEMP%/t1112c/`.
+
+I only changed `data/catch-log.js` and `logs/`. As the instructions say, `run-collect.ps1` regenerates the single-file HTML pages afterwards.
+
+Sources:
+- [【東京湾】良型爆釣！東京湾のタチウオ【船釣り】 - YouTube](https://www.youtube.com/watch?v=Ok0AyLCWLqY)
+- [11月でもまだ釣れる！東京湾奥イナダ釣り！ - YouTube](https://www.youtube.com/watch?v=BEypJJUHAKA)
+build-single: source = 釣果ログ.html
+build-single: all-in-one 2425449 chars / docs/index.html 2425449 / dist/artifact.html 2425290
+=== 2026-11-12 12:06 end (claude exit 0) ===
