@@ -98,3 +98,42 @@ Sources:
 build-single: source = 釣果ログ.html
 build-single: all-in-one 2425449 chars / docs/index.html 2425449 / dist/artifact.html 2425290
 === 2026-11-12 12:06 end (claude exit 0) ===
+git: push exit 0, unpushed commits: 0
+
+=== 2026-11-12 18:00 start ===
+auth: long-lived-token
+I ran all 9 steps of `収集手順.md` (the 18:00 run on 2026-11-12) and added **36 new catch records** to `data/catch-log.js`. The file still loads as valid JavaScript, now with 3,985 records.
+
+**What was added**
+- **By area:** Tokyo Bay 20 (inner bay 2, Miura side of the bay mouth 12, Boso side 6), Sagami Bay 13, Suruga Bay 3.
+- **From chowari (34):** 31 trips on 11/12 and 3 late posts for 11/11. Examples:
+  - 利八丸 (勝山) ワラサ 4.8〜7.8kg, about 30% of them ブリ size
+  - 政信丸 (走水) タチウオ up to 114cm
+  - 庄治郎丸 (平塚) イナダ 7〜16
+  - ちがさき丸 アマダイ up to 51cm
+  - 瀬戸丸 カワハギ, top angler 20
+  - 山大丸 (清水) シロアマダイ
+- **From the Ishiguro blog (2, both 11/11):** an アオリイカ (400g) caught from shore near 沼津, and a タチウオ on the 沼津 surf.
+  - The アオリイカ post doesn't say what kind of shore spot it was. I recorded it as 堤防 (breakwater) and said so in the record's note.
+- **Nearby weather and sea values:** filled from Open-Meteo for every record, with no gaps.
+
+**What was left out**
+- Posts with no target species: キハダ, ヤリイカ, シマアジ, ハゼ.
+- Posts from outside the target waters: Ibaraki, 外房, 下田, 東伊豆, and other regions.
+- The other shop blogs had nothing new in range. One YouTube search found no recent videos from these waters.
+
+**Checks**
+- No duplicate IDs or duplicate date + spot + species combinations.
+- Every record has a source URL, and every added fish is on the target list.
+- The run summary at the top of the data file is updated, and the run is recorded in `logs/2026-11-12.md`.
+
+One problem along the way: a quick text fix I made with the `sed` command converted every line ending in the data file from Windows to Unix format. I restored the file from my backup and redid the insert, and the diff now only shows the new lines. The run log mentions this too. The backup is at `%TEMP%\t1112d\catch-log.backup.js`.
+
+I only changed `data/catch-log.js` and `logs/2026-11-12.md`, and created no files in the `釣り` folder. As the instructions say, `run-collect.ps1` rebuilds the single-file HTML pages afterwards.
+
+Sources (YouTube search, no recent videos from these waters):
+- [11月でもまだ釣れる！東京湾奥イナダ釣り！](https://www.youtube.com/watch?v=BEypJJUHAKA)
+- [【東京湾奥ショアジギング】１１月もイナダのチャンス継続中！！](https://www.youtube.com/watch?v=kstkSEMLRuE)
+build-single: source = 釣果ログ.html
+build-single: all-in-one 2447714 chars / docs/index.html 2447714 / dist/artifact.html 2447555
+=== 2026-11-12 18:06 end (claude exit 0) ===
