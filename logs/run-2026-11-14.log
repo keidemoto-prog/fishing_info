@@ -28,3 +28,35 @@ YouTube search results checked (none were used):
 build-single: source = 釣果ログ.html
 build-single: all-in-one 2525174 chars / docs/index.html 2525174 / dist/artifact.html 2525015
 === 2026-11-14 00:10 end (claude exit 0) ===
+git: push exit 0, unpushed commits: 0
+
+=== 2026-11-14 06:00 start ===
+auth: long-lived-token
+I ran all 9 steps of `収集手順.md` for the 6:00 run. 14 new catches went into `data/catch-log.js`, and the file still loads as valid JavaScript (now 4,123 records).
+
+**What was added (steps 1–6):**
+- **Period checked:** 11/13–11/14 (a normal Saturday run). I only looked for posts that appeared after the 0:00 run.
+- **14 records**, all fishing on 11/13 and all from the boat-booking site chowari. By area: Tokyo Bay 8 (inner bay 3, Miura side 4, Boso side 1), Sagami Bay 5, Suruga Bay 1. The boats are 豊漁丸, 棒面丸 ×2, 東丸, 橋安丸, 忠彦丸, 五エム丸 ×2, 山下丸 ×2, ミナミ釣船, えさ政, and 孝太郎丸 ×2.
+- **Duplicates:** none of the 14 has the same date, place and fish as an existing record. All have a source link and only use fish from the allowed list.
+- **Nearby sea and weather values:** all filled from Open-Meteo. Two new points (保田沖・羽田沖) were fetched this time; the rest reuse the 0:00 run's values for the same day.
+- **Header:** `lastUpdated` is now "2026-11-14 06:00", with a one-line summary in `lastRunNote`.
+
+**Left out:**
+- One Kameya (かめや) shop post from 11/14 (Squid (アオリイカ) caught from a pier on the Seisho coast, west Sagami Bay). It gives no catch date or month, so I didn't record it. The 0:00 run skipped a similar post for the same reason.
+- Catches of fish not on the list: yellowfin tuna, spear squid and puffer.
+- Posts from outside the three bays.
+- The other shop and boat blogs had nothing new in the period. A YouTube search found only older videos.
+
+**Log and check (steps 7–8):** I added a 6:00 section at the top of `logs/2026-11-14.md` listing the pages I looked at, what was added and what was left out. Everything I downloaded went into a temporary folder outside `釣り/`, so no new files were created there.
+
+**Step 9:** I stopped there as instructed; `run-collect.ps1` rebuilds the single-file pages afterwards.
+
+**One thing for you:** eight downloaded pages are still sitting in the `釣り/` folder (hit, ishiguro, kameya, nakane, ssm, sunny, super and tomiura `.html`). An earlier run saved them there by mistake, and they came back after the 0:00 run moved them out. I left them alone. They don't affect the display page or the GitHub upload, but please delete these eight files by hand.
+
+Sources:
+- [釣割 釣果情報](https://www.chowari.jp/catch/)
+- [かめや釣具 546037](https://kameya-choka.com/kanto-tokai/archives/f-info/546037)
+- YouTube search: [相模湾マグロ釣り 2025年11月1日](https://www.youtube.com/watch?v=SQT-xJuaAog), [東京湾 天秤タチウオ](https://www.youtube.com/watch?v=vQeeu4Te6ss) (older videos only, nothing used)
+build-single: source = 釣果ログ.html
+build-single: all-in-one 2533832 chars / docs/index.html 2533832 / dist/artifact.html 2533673
+=== 2026-11-14 06:04 end (claude exit 0) ===
