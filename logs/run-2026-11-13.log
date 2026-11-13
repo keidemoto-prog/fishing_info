@@ -64,3 +64,35 @@ Sources:
 build-single: source = 釣果ログ.html
 build-single: all-in-one 2467256 chars / docs/index.html 2467256 / dist/artifact.html 2467097
 === 2026-11-13 06:03 end (claude exit 0) ===
+git: push exit 0, unpushed commits: 0
+
+=== 2026-11-13 12:00 start ===
+auth: long-lived-token
+I ran all 9 steps of `収集手順.md` (the 12:00 run, Friday 2026-11-13). **15 new catches were added** to `data/catch-log.js`.
+
+**What was added**
+- **By area:** 13 in Tokyo Bay (9 inner bay, 4 Miura side of the bay mouth), 2 in Sagami Bay, 0 in Suruga Bay.
+- **From chowari, 14 records:**
+  - 12 from 11/12: えさ政 (lure mixed trip, カワハギ), ミナミ釣船, ゴーゴー (2 trips), 小峯丸 LTアジ (up to 156 fish), けやき丸, 丸又丸 アオリ, 山下丸 (カワハギ top 25, アマダイ), 孝太郎丸 (マダイ up to 4.2kg, アマダイ).
+  - 2 from 11/11 posted late: 荒川屋 タチウオ and アジ.
+- **From SSM浦賀, 1 record:** a 11/08 catch in 金田湾 (マダイ 2, ワラサ 1), posted on 11/13.
+- **Updated:** `CATCH_LOG_META` is set to "2026-11-13 12:00" with the summary note. The run is logged as a "12:00回" section in `logs/2026-11-13.md`.
+
+**What was skipped**
+- **かめや 545955** (アオリイカ caught from a 西湘 breakwater): the article gives no catch date or month. The photo's file name suggests 10/19, so I didn't record it.
+- **Wrong species:** キハダ and ヤリイカ trips.
+- **Outside the target area:** 網代 (east Izu), the outer Boso coast, Ibaraki, and western Japan.
+- **Nothing new:** the other boat and shop blogs had no new catches, and the YouTube search found no recent usable video.
+
+**Two things worth knowing**
+- **Weather source:** Open-Meteo's normal weather address kept refusing the connection. For weather, wind and air temperature I used Open-Meteo's historical-forecast address instead, which serves the same model data. Sea temperature and waves came from the usual marine address. Every new record has its nearby readings filled in.
+- **Old duplicates:** the file loads correctly with 4031 records, and none of the new records duplicate anything. But I found 28 pairs of older records with the same date + place + species. Earlier runs had reported no duplicates, but the last saved version (before this run) already has the same 28 pairs, so this run didn't create them. Per the rules I left them alone. If you want them cleaned up, that would be a separate job.
+
+**Check and cleanup**
+- **No new files:** I created nothing inside `釣り/`. Temporary files and a backup of the data file are in `%TEMP%\t1113c\`.
+- **What happens next:** as step 9 says, `run-collect.ps1` will rebuild the single-page HTML and commit.
+
+Search used: [YouTube results](https://www.youtube.com/watch?v=BEypJJUHAKA) (nothing usable)
+build-single: source = 釣果ログ.html
+build-single: all-in-one 2476690 chars / docs/index.html 2476690 / dist/artifact.html 2476531
+=== 2026-11-13 12:09 end (claude exit 0) ===
