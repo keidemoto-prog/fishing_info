@@ -1,0 +1,30 @@
+﻿
+=== 2026-11-14 00:00 start ===
+auth: long-lived-token
+I ran all 9 steps of `収集手順.md` for the 2026-11-14 0:00 run, and 25 new catch records were added.
+
+**Results**
+- **What was added:** 15 from Tokyo Bay (5 inner bay, 9 Miura side, 1 Boso side), 6 from Sagami Bay and 4 from Suruga Bay. 24 came from the chowari catch site and 1 from 石田丸's blog. Most are from 11/13; 3 are 11/11–11/12 posts that went up late.
+- **Notable catches:** ワラサ from the Matsuwa boats, アマダイ up to 49cm (やまてん丸), マゴチ with 61 for the boat (濱生丸), アオリイカ up to 1.28kg (赤沼丸), and マダイ up to 3kg at Hayakawa (石田丸).
+- **What I left out:** posts with only キハダ (not on the species list), posts from outside the three bays (outer Boso, east Izu, etc.), and one post where it was unclear whether a ワラサ was actually caught.
+- **Weather and sea data:** every record has nearby water temperature, weather and wind values from Open-Meteo, with no gaps.
+- **Checks:** `data/catch-log.js` loads as valid JavaScript and now has 4,109 records. There are no duplicates and every record has a source link. `lastUpdated` and `lastRunNote` are updated.
+- **Log:** the URLs checked, what was skipped and why, and the judgement calls are in `logs/2026-11-14.md`.
+- **Other sources:** the other blogs had nothing new. A YouTube search turned up no recent videos from these areas.
+
+**Needs your attention: 8 leftover web pages in the `釣り` folder**
+The 18:00 run on 11/13 accidentally saved 8 copies of fishing-site pages into the `釣り` folder: `hit.html`, `ishiguro.html`, `kameya.html`, `nakane.html`, `ssm.html`, `sunny.html`, `super.html`, `tomiura.html`. Its log says they were moved out, but they were still there.
+
+I moved them out, but a few minutes later they were back with their original 11/13 18:03 timestamps. Dropbox seems to be putting them back, so I stopped trying.
+
+They don't cause problems right now. The build script picks the right page by its content, so the phone page won't break. They also aren't uploaded to GitHub. Still, please delete these 8 files yourself: in File Explorer, open the `釣り` folder, select them and press Delete. If they come back again, delete them on the other PCs too.
+
+As step 9 says, the all-in-one HTML gets rebuilt by `run-collect.ps1` after this. I didn't touch it.
+
+YouTube search results checked (none were used):
+- [anglers.jp catch 6366013](https://anglers.jp//catches/6366013)
+- [anglers.jp catch 6399449](https://anglers.jp//catches/6399449)
+- [yutura.net video](https://yutura.net/channel/37296/video/C4rwO42njOc/)
+build-single: source = 釣果ログ.html
+build-single: all-in-one 2525174 chars / docs/index.html 2525174 / dist/artifact.html 2525015
+=== 2026-11-14 00:10 end (claude exit 0) ===
