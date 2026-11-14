@@ -1,0 +1,27 @@
+﻿
+=== 2026-11-15 00:00 start ===
+auth: long-lived-token
+I ran all nine steps of `収集手順.md` for the 2026-11-15 0:00 run (Sunday, so it covered 11/14–11/15) and added **29 new catch records**.
+
+**What was added**
+- **By area:** 16 in Tokyo Bay (5 inner bay, 7 Miura side of the bay mouth, 4 Boso side), 10 in Sagami Bay, 3 in Suruga Bay.
+- **Sources:** 28 came from chowari, which had 99 new posts since the last run; the rest were outside the three bays or had no target species. The other one is Ishidamaru's 11/14 post: horse mackerel up to 51 per angler and a 2 kg red sea bream.
+- **Other sites:** Nakane Boat, Hamachidori, SSM Uraga, HIT, Super Fishing, Tomiura, Sunnyside, Ishiguro and Kameya had nothing new to record. One YouTube search found no recent videos that fit.
+- **Sea and weather data:** every record has nearby water temperature, weather, wind and waves from Open-Meteo, with no gaps.
+- **Summary line:** `lastUpdated` is now "2026-11-15 00:00", and `lastRunNote` holds the one-line summary.
+
+**Checks:** `data/catch-log.js` loads as valid JavaScript with 4,238 records. There are no duplicate IDs, no duplicates by date + spot + species, every record has a source URL, and every species is on the target list. The full notes are in the new file `logs/2026-11-15.md`.
+
+**Things you should know**
+- **One near-duplicate:** a 11/13 まなぶ丸 post first matched an existing record. It turned out to be a different boat (オヤジ号) with different numbers, so I recorded it with "オヤジ号" added to the spot name.
+- **Line-ending slip, now fixed:** a quick edit with `sed` changed the line endings of the whole data file. I rebuilt it from the backup I took before the edit, so the change against git is now only the 32 added lines and 2 updated lines.
+- **Please delete 8 leftover files by hand:** `hit.html`, `ishiguro.html`, `kameya.html`, `nakane.html`, `ssm.html`, `sunny.html`, `super.html` and `tomiura.html` are still in the `釣り/` folder from the 11/13 18:00 run. An earlier run tried moving them out, but they reappeared a few minutes later, which looks like Dropbox syncing them back. They don't break the page or the git push, but they break the folder rule.
+
+Rebuilding the single-file HTML pages (step 9) is left to `run-collect.ps1`, which does it automatically after this run.
+
+Sources:
+- [yutura.net channel listing](https://yutura.net/channel/37296/latest/?p=4)
+- [yutura.net channel latest](https://yutura.net/channel/11003/latest/)
+build-single: source = 釣果ログ.html
+build-single: all-in-one 2603434 chars / docs/index.html 2603434 / dist/artifact.html 2603275
+=== 2026-11-15 00:04 end (claude exit 0) ===
