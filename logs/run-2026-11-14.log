@@ -93,3 +93,40 @@ YouTube search results checked (none used): [東京湾奥イナダ](https://www.
 build-single: source = 釣果ログ.html
 build-single: all-in-one 2550696 chars / docs/index.html 2550696 / dist/artifact.html 2550537
 === 2026-11-14 12:08 end (claude exit 0) ===
+git: push exit 0, unpushed commits: 0
+
+=== 2026-11-14 18:00 start ===
+auth: long-lived-token
+I ran every step in `収集手順.md` for the 18:00 run on Saturday 11/14 and added **58 new catch records** to `data/catch-log.js`. The file still loads correctly as JavaScript.
+
+**What was added (steps 1–6)**
+- **Period:** 11/13–11/14, counting only posts that appeared after the 12:00 run.
+- **By area:** Tokyo Bay 37 (inner bay 13, Miura side 18, Boso side 6), Sagami Bay 19, Suruga Bay 2.
+- **chowari, 51 records:** 43 are trips on 11/14 and 8 were posted late for 11/12–11/13. Highlights:
+  - 瀬戸丸 caught 64 ワラサ across the boat, with a top angler at 13.
+  - 庄治郎丸 had イナダ, ワラサ and a 4.7kg マダイ.
+  - 丸裕 caught 50–92 アジ per angler and a 1.2kg キジハタ.
+  - Many カワハギ boats from Matsuwa, Maguchi, Nagai, Sajima and Koshigoe.
+  - 守山丸 caught 0–7 サワラ per angler on 11/13.
+- **Shop and marina blogs, 7 records:**
+  - SSM Uraga: 2 records.
+  - Sunnyside: 4 records, all at 亀城根沖 (サワラ, ワラサ and ショゴ).
+  - Kameya: 1 record, two アオリイカ caught from the Miho beach.
+- **One judgement call:** a 村本海事 post says "11月13日" in its text. But chowari's trip-date field says 11/14, and the catch numbers differ from the 11/13 record already in the log. I recorded it as 11/14 and explained this in its `note`.
+- **Duplicates:** none of the 58 has the same date, place and fish as an existing record. 4151 → 4209 records, all with a source link and only allowed fish.
+- **Nearby sea and weather values:** filled from Open-Meteo for every record.
+- **Header:** `lastUpdated` is now "2026-11-14 18:00", with a one-line summary in `lastRunNote`.
+
+**Left out**
+- Catches of fish not on the list: spear squid, yellowfin tuna and deep-water fish.
+- Posts from outside the three bays: the outer Boso coast, Ibaraki, Wakayama and similar.
+- One YouTube search found no recent videos.
+
+**Log and check (steps 7–9):** I added an 18:00 section at the top of `logs/2026-11-14.md` listing the pages I looked at, what was added and what was left out. Everything I downloaded went into a temporary folder outside `釣り/`, and I stopped at step 9 as instructed.
+
+**Please delete by hand:** the eight leftover downloaded pages from the 11/13 accident (hit, ishiguro, kameya, nakane, ssm, sunny, super and tomiura `.html`) are still in `釣り/`. I left them alone, as earlier runs did. They don't affect the display page or the GitHub upload.
+
+YouTube search results checked (none used): [東京湾 タチウオ](https://www.youtube.com/watch?v=Ok0AyLCWLqY), [東京湾奥イナダ](https://www.youtube.com/watch?v=BEypJJUHAKA), [相模湾 青物五目](https://www.youtube.com/watch?v=MnYAzq4x5wo)
+build-single: source = 釣果ログ.html
+build-single: all-in-one 2585671 chars / docs/index.html 2585671 / dist/artifact.html 2585512
+=== 2026-11-14 18:15 end (claude exit 0) ===
