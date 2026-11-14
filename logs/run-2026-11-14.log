@@ -60,3 +60,36 @@ Sources:
 build-single: source = 釣果ログ.html
 build-single: all-in-one 2533832 chars / docs/index.html 2533832 / dist/artifact.html 2533673
 === 2026-11-14 06:04 end (claude exit 0) ===
+git: push exit 0, unpushed commits: 0
+
+=== 2026-11-14 12:00 start ===
+auth: long-lived-token
+I worked through every step in `収集手順.md` for this 12:00 Saturday run and added **28 new catch records** to `data/catch-log.js`. The file still loads correctly as JavaScript.
+
+**What was added (steps 1–6)**
+- **Period:** 11/13–11/14, counting only posts that appeared after the 6:00 run.
+- **By area:** Tokyo Bay 18 (inner bay 15, Miura side 2, Boso side 1), Sagami Bay 7, Suruga Bay 3.
+- **26 records from chowari:**
+  - Almost all are trips on 11/13. Highlights: 米元 sea bream up to 4kg plus a 6kg ワラサ, 秋田屋 mixed trip with a 6kg sea bream, 長崎屋 and 荒川屋 キス with top catches of 108 and 94, 三喜丸 アジ 47–128 per angler, 新明丸 マゴチ, 吉野屋 タチウオ, サワラ and アジ, 豊国丸 13 sea bream for the boat, and ふじ丸 at Heda.
+  - One trip is from 11/14: 伊勝丸 at Enoura (アジ, サバ, マダイ).
+- **2 records from Kameya (かめや) shop posts:**
+  - Numazu surf, 11/13: twelve カワハギ up to 25cm.
+  - Sagami River: one マゴチ over 60cm. The post only says "November", so the date is recorded as "2026-11" with no nearby sea and weather values, as the instructions say. There is already a record for a different マゴチ at the Sagami River mouth in November from another Kameya post. To avoid a clash I gave this one the existing place name "相模川（平塚市・茅ヶ崎市）".
+- **Duplicates:** none of the 28 has the same date, place and fish as an existing record. 4123 → 4151 records, all with a source link and only allowed fish.
+- **Nearby sea and weather values:** filled from Open-Meteo. Five points were fetched new and the rest reuse earlier values for 11/13.
+- **Header:** `lastUpdated` is now "2026-11-14 12:00", with a one-line summary in `lastRunNote`.
+
+**Left out**
+- Catches of fish not on the list: yellowfin tuna, spear squid, octopus, puffer and cuttlefish.
+- Two fish that weren't actually landed: 丸又丸's ワラサ (only broken lines) and 邦丸's サワラ (only bite marks).
+- Posts from outside the three bays.
+- The other shop and boat blogs had nothing new, and one YouTube search found no recent videos.
+
+**Log and check (steps 7–9):** I added a 12:00 section at the top of `logs/2026-11-14.md` listing the pages I looked at, what was added and what was left out. Everything I downloaded went into a temporary folder outside `釣り/`, and I stopped at step 9 as instructed.
+
+**Please delete by hand:** eight leftover downloaded pages are still in `釣り/` (hit, ishiguro, kameya, nakane, ssm, sunny, super and tomiura `.html`). An earlier run saved them there by mistake on 11/13. I left them alone, as previous runs did. They don't affect the display page or the GitHub upload.
+
+YouTube search results checked (none used): [東京湾奥イナダ](https://www.youtube.com/watch?v=BEypJJUHAKA), [東京湾 タチウオ](https://www.youtube.com/watch?v=Ok0AyLCWLqY), [相模湾 青物五目](https://www.youtube.com/watch?v=MnYAzq4x5wo)
+build-single: source = 釣果ログ.html
+build-single: all-in-one 2550696 chars / docs/index.html 2550696 / dist/artifact.html 2550537
+=== 2026-11-14 12:08 end (claude exit 0) ===
