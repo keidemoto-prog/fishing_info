@@ -25,3 +25,37 @@ Sources:
 build-single: source = 釣果ログ.html
 build-single: all-in-one 2603434 chars / docs/index.html 2603434 / dist/artifact.html 2603275
 === 2026-11-15 00:04 end (claude exit 0) ===
+git: push exit 0, unpushed commits: 0
+
+=== 2026-11-15 06:00 start ===
+auth: long-lived-token
+I ran all nine steps of `収集手順.md` for the 2026-11-15 6:00 run. It covered 11/14–11/15 and added **15 new catch records**.
+
+**What was added**
+- **By area:** 10 in Tokyo Bay (4 inner bay, 6 Miura side of the bay mouth), 3 in Sagami Bay, 2 in Suruga Bay.
+- **chowari (9 posts):**
+  - 志平丸 (Sajima): red sea bream, wild yellowtail and smaller yellowtail (ワラサ・イナダ).
+  - たいぞう丸: tilefish 31–45 cm.
+  - 豊漁丸: horse mackerel and red sea bream.
+  - 橋安丸 (Yaizu) and 伊勝丸 (Enoura): hairtail.
+  - 忠彦丸: four separate boats (willie rig, hairtail, filefish and light-tackle horse mackerel).
+- **HIT三浦海岸 Instagram (6 groups on 11/14):** posted after the 0:00 run. The best catches were a 78 cm Spanish mackerel, 50 cm yellowtail and 11 filefish up to 30 cm.
+- **Other sites:** nothing new on the other boat and shop sites. kameya's one new post was off-area. The YouTube search found no recent videos that fit.
+- **Summary line:** `lastUpdated` is now "2026-11-15 06:00", and `lastRunNote` holds the one-line summary. The notes are at the top of `logs/2026-11-15.md`.
+
+**Checks:** `data/catch-log.js` loads as valid JavaScript with 4,253 records. There are no duplicate IDs or date + spot + species duplicates. Every new record has a source URL and only species on the target list. The original line endings were kept, so the change against git is just the added lines plus the two summary fields.
+
+**Things you should know**
+- **One record's date looks off:** 伊勝丸 posted its catch around 1:00 but labelled it 11/15. It is probably an overnight trip. I recorded the date as posted and noted the mismatch in the record.
+- **Weather gap on that record:** the Open-Meteo weather service timed out, so the nearby weather, wind and air temperature for 伊勝丸 are left empty rather than guessed. Its water temperature and wave height did come through, and the record still has the boat's own weather report.
+- **Please delete 8 leftover files by hand:** `hit.html`, `ishiguro.html`, `kameya.html`, `nakane.html`, `ssm.html`, `sunny.html`, `super.html` and `tomiura.html` are still in the `釣り/` folder from the 11/13 18:00 run. As in earlier runs, I left them alone and created no new files there.
+
+Rebuilding the single-file HTML pages (step 9) is left to `run-collect.ps1`, which does it automatically after this run.
+
+Sources:
+- [chowari 最新釣果](https://www.chowari.jp/catch/)
+- [HIT三浦海岸 Instagram feed](https://hitmiurakaigan.com/my-instagram-feed)
+- Web search for YouTube catch videos returned no relevant results (e.g. [tk.oretsuri.com](https://tk.oretsuri.com), [anglers.jp](https://anglers.jp//catches/6366013))
+build-single: source = 釣果ログ.html
+build-single: all-in-one 2612918 chars / docs/index.html 2612918 / dist/artifact.html 2612759
+=== 2026-11-15 06:05 end (claude exit 0) ===
