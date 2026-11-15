@@ -59,3 +59,35 @@ Sources:
 build-single: source = 釣果ログ.html
 build-single: all-in-one 2612918 chars / docs/index.html 2612918 / dist/artifact.html 2612759
 === 2026-11-15 06:05 end (claude exit 0) ===
+git: push exit 0, unpushed commits: 0
+
+=== 2026-11-15 12:00 start ===
+auth: long-lived-token
+I've done the 12:00 collection run that `収集手順.md` describes, all 9 steps. **I added 22 new catches** to the log, and the data file still loads correctly: 4,275 records, no errors.
+
+**What was added (all fished on 11/14):**
+- **Tokyo Bay, 19 catches:**
+  - Inner bay (16): horse mackerel, kisu, kawahagi, tachiuo, madai, sea bass, magochi and sawara from 小林丸, まる八, 和彦丸, えさ政, ゴーゴーガイド, 新明丸, 打木屋, 長崎屋, 米元, 弁天屋 and 荒川屋. The standout was 長崎屋's kisu, with a top count of 179.
+  - Mouth of the bay, Miura side (3): 教至丸 out of 走水, with horse mackerel and tachiuo up to 112cm. Also one SSM浦賀 rental boat at オッカブ根沖 with sawara, madai and shogo.
+- **Sagami Bay, 2 catches:** 秋田屋 out of 腰越 (warasa 3–4.5kg and others) and 福栄丸 out of 葉山 (madai and inada).
+- **Suruga Bay, 1 catch:** 釣り船ふじ丸 out of 戸田, night aori-ika (squid), 2–6 per angler.
+- **Left out:**
+  - Two items were already in the log: an SSM kawahagi catch and かめや's 相模川 seigo.
+  - Several catches were fish not on the target list, such as tuna and octopus.
+  - The rest were outside the three bays, including one from 布良.
+- **Other sources:** none of the other shop and boat blogs had anything new, and the YouTube search found no recent videos that fit.
+
+For the "nearby conditions" fields I reused the 11/14 readings from earlier runs, plus one new set for 戸田. The weather forecast service failed to connect again, but the past-weather service covered what was needed.
+
+I recorded today's notes at the top of `logs/2026-11-15.md`. I didn't create any new files in the `釣り/` folder.
+
+**Needs your action:** 8 stray web-page files are still in the `釣り/` folder: `hit.html`, `ishiguro.html`, `kameya.html`, `nakane.html`, `ssm.html`, `sunny.html`, `super.html` and `tomiura.html`. They're saved copies of source sites left by the 11/13 18:00 run. This is the same kind of mistake that broke the phone page before. As in earlier runs, I didn't delete them, so please delete them by hand.
+
+Sources:
+- [釣割 釣果情報](https://www.chowari.jp/catch/)
+- [SSM浦賀 釣果](https://www.ssm-uraga.jp/fishing)
+- [かめや釣具 関東・東海](https://kameya-choka.com/kanto-tokai/)
+- YouTube search results checked (none were recent enough to use): [東京湾のタチウオ](https://www.youtube.com/watch?v=Ok0AyLCWLqY), [東京湾奥イナダ](https://www.youtube.com/watch?v=BEypJJUHAKA), [相模湾 落し込みサビキ](https://www.youtube.com/watch?v=HnfnMK1JZBE)
+build-single: source = 釣果ログ.html
+build-single: all-in-one 2626821 chars / docs/index.html 2626821 / dist/artifact.html 2626662
+=== 2026-11-15 12:06 end (claude exit 0) ===
