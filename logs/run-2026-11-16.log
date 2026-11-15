@@ -1,0 +1,34 @@
+﻿
+=== 2026-11-16 00:00 start ===
+auth: long-lived-token
+`収集手順.md` の手順1〜9をすべて実行しました。今回は月曜0時の回で、朝の回ではないため、対象期間は通常どおり 11/15〜11/16 です。
+
+**追加したのは45件**で、すべて釣割（chowari）からです。内訳は東京湾24件（湾奥14・湾口三浦7・房総3）、相模湾14件、駿河湾7件です。
+- 目立った釣果：
+  - 浜鈴丸（松輪）：ワラサの入れ食いで、多い人は15本
+  - 成銀丸：ワラサ 3〜4kg、トップ7本
+  - やまてん丸：シロアマダイ 56.5cm（2.11kg）
+  - プレアデス（呑川）：シーバス、3人で60ヒット以上
+  - 長助丸（長井）：マハタ 1.8〜5.5kg、船中6本
+- 政美丸の1件は、サイト上の釣行日が 11/15 ですが、本文に「本日15日(日)祭礼にてお休み」とあるため 11/14 として記録しました。その日の天気・水温の欄は 11/15 のものなので使っていません。
+- 船宿ブログ・釣具店・YouTube は、新着がないか取得済みのものだけでした。YouTube の検索結果は古い動画か日付が分からないものばかりでした。
+
+**確認したこと**
+- `data/catch-log.js` は JavaScript として正しく読み込めます（全4380件）。
+- id の重複なし、日付・場所・魚種の組の重複なし、出典URLと近隣観測値（nearby）の欠けもありません。
+- 魚種はすべて対象リストに入っています。
+- 更新日時と実行メモ（META）を更新し、作業の記録を `logs/2026-11-16.md` に書きました。
+- 作業用の一時ファイルは一時フォルダに置き、`釣り/` には記録ファイル以外を作っていません。
+
+**手作業でお願いしたいこと：** `釣り/` 直下に、11/13 の事故で残ったファイル（hit / ishiguro / kameya / nakane / ssm / sunny / super / tomiura の `.html`）がまだあります。前回までの回と同じく手を付けていないので、エクスプローラーで削除してください。
+
+YouTube 検索で確認した動画（いずれも直近のものではないため不採用）:
+- [東京湾のタチウオ](https://www.youtube.com/watch?v=Ok0AyLCWLqY)
+- [相模湾 落し込みサビキ](https://www.youtube.com/watch?v=HnfnMK1JZBE)
+- [東京湾奥イナダ](https://www.youtube.com/watch?v=BEypJJUHAKA)
+- [相模湾のLT五目](https://www.youtube.com/watch?v=rMgveGS8VmQ)
+- [相模湾のイナダ五目](https://www.youtube.com/watch?v=1NWhGkz374k)
+- [相模湾の青物五目「釣りたいっ！」](https://www.youtube.com/watch?v=MnYAzq4x5wo)
+build-single: source = 釣果ログ.html
+build-single: all-in-one 2690267 chars / docs/index.html 2690267 / dist/artifact.html 2690108
+=== 2026-11-16 00:05 end (claude exit 0) ===
