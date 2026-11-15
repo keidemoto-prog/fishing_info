@@ -32,3 +32,28 @@ YouTube 検索で確認した動画（いずれも直近のものではないた
 build-single: source = 釣果ログ.html
 build-single: all-in-one 2690267 chars / docs/index.html 2690267 / dist/artifact.html 2690108
 === 2026-11-16 00:05 end (claude exit 0) ===
+git: push exit 0, unpushed commits: 0
+
+=== 2026-11-16 06:00 start ===
+auth: long-lived-token
+I ran the 6:00 collection run from steps 1–9 of `収集手順.md` and added 8 new catches.
+
+**What was added (Monday-morning run, period 11/13–11/16):** most of the weekend's catches were already picked up by the earlier runs, so this run only took what was posted after 0:00. All 8 are catches from 11/15 that came in late on chowari:
+- **Tokyo Bay (5):**
+  - Inner bay: Friend☆Ship (江戸川放水路) サワラ up to 3.4kg, ワラサ 3.3kg; 船宿豆や アジ 20–71; PALLAS (大黒運河) シーバス.
+  - Bay mouth: 太郎八丸 (松輪) ワラサ, マダイ, ソウダ; 東丸 (保田) マダイ 0.7–2.8kg.
+- **Sagami Bay (3):** 太一丸 (平塚), たいぞう丸 (葉山, アマダイ up to 49.5cm) and まなぶ丸 (片瀬), all アマダイ.
+- **Suruga Bay:** nothing new.
+
+**Sources checked:** chowari pages 1–70 (39 new posts; the rest were outside the target areas or had no target species). The 10 boat and tackle-shop blogs had nothing new since 0:00. One YouTube search found no recent video with a clear fishing date.
+
+**Checks:** `data/catch-log.js` loads as valid JavaScript (4,388 records) with no duplicate records. Every new record has a source URL and nearby sea and weather values. `lastUpdated` is now 2026-11-16 06:00 and the summary note is updated. The run notes are added to `logs/2026-11-16.md`. I only changed those two files; the single-file HTML rebuild runs separately in `run-collect.ps1`.
+
+**Please delete by hand:** eight stray files left by the 11/13 18:00 run are still in the `釣り/` folder: `hit.html`, `ishiguro.html`, `kameya.html`, `nakane.html`, `ssm.html`, `sunny.html`, `super.html` and `tomiura.html`. They don't break the phone page, because the build script picks the viewer page by its content. The rules say not to put extra files in this folder, so the automatic run leaves them alone.
+
+Sources:
+- [東京湾・相模湾の沖釣りのススメ - YouTube](https://www.youtube.com/channel/UCt8IlqIiU11LM0_3lH1Dp8Q)
+- [相模湾プレジャーボートで浅場・中深海五目釣り - YouTube](https://www.youtube.com/watch?v=CRvrCjb32ws)
+build-single: source = 釣果ログ.html
+build-single: all-in-one 2695331 chars / docs/index.html 2695331 / dist/artifact.html 2695172
+=== 2026-11-16 06:03 end (claude exit 0) ===
