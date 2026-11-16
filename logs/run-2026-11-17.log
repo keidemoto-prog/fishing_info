@@ -1,0 +1,34 @@
+﻿
+=== 2026-11-17 00:00 start ===
+auth: long-lived-token
+The 0:00 run (2026-11-17) is complete, steps 1–9. I added **20 records** to `data/catch-log.js`, which now holds 4,474.
+
+**What was added** (all from chowari: 12 trips from 11/16 and 8 from 11/15 that were posted late)
+- **東京湾 (14):** 湾奥 7, 湾口三浦 6, 房総 1. Highlights:
+  - あまさけや丸 caught 39 ワラサ across the boat on 11/15.
+  - 吉野屋 had タチウオ of 80〜105cm and up to 11 サワラ per person.
+  - 和彦丸 had アジ of 25〜42cm.
+  - 釣り船鶴 had マゴチ up to 53cm.
+- **相模湾 (4):** 愛正丸 had up to 11 ワラサ per person; the others are まごうの丸 ×2 and 祥福丸.
+- **駿河湾 (2):** 山大丸 シロアマダイ and 魚磯丸 マダイ五目.
+
+**Nothing new from the other sources:** the boat and shop blogs had no new posts since the 18:00 run. かめや and イシグロ only posted catches from outside the three bays (Kyoto and 浜名湖). The YouTube search found no recent videos.
+
+**Checks:** Node loads the file without errors. The 20 new records add no duplicates, every species is on the target list, and each has a source URL and `nearby` values. Line endings were kept as they were.
+
+**Points to know**
+- **East Izu (伊東・宇佐美):** earlier runs were inconsistent, sometimes filing these catches under 相模湾 and sometimes leaving them out. This time I left them out, since the area table ends 相模湾 at 真鶴. You may want to decide on one rule.
+- **Weather data:** Open-Meteo's normal weather endpoint timed out, so I took the weather values from its historical-forecast endpoint instead. Water temperature and waves came from the usual marine endpoint.
+- **Leftover files:** `hit.html`, `ishiguro.html`, `kameya.html`, `nakane.html`, `ssm.html`, `sunny.html`, `super.html` and `tomiura.html` are still in the `釣り/` folder from the 11/13 run. They don't break the page build, but please delete them by hand; the automatic run doesn't delete files.
+
+Step 9 needs no action from me: `run-collect.ps1` rebuilds the single-file HTML afterwards. Details, including every URL checked and why each skipped catch was left out, are in `logs/2026-11-17.md`.
+
+Sources:
+- [釣割 釣果情報](https://www.chowari.jp/catch/)
+- [かめや釣具 関東・東海 釣果](https://kameya-choka.com/kanto-tokai/)
+- [釣具のイシグロ 釣り情報](https://www.ishiguro-gr.com/enjoy/fishing/)
+- [石田丸](https://www.ishidamaru.com/?post_type=fishing&paged=1)
+- YouTube search (no recent matching videos), e.g. [東京湾のタチウオ](https://www.youtube.com/watch?v=Ok0AyLCWLqY)
+build-single: source = 釣果ログ.html
+build-single: all-in-one 2748599 chars / docs/index.html 2748599 / dist/artifact.html 2748440
+=== 2026-11-17 00:08 end (claude exit 0) ===
