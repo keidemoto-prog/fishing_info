@@ -32,3 +32,37 @@ Sources:
 build-single: source = 釣果ログ.html
 build-single: all-in-one 2748599 chars / docs/index.html 2748599 / dist/artifact.html 2748440
 === 2026-11-17 00:08 end (claude exit 0) ===
+git: push exit 0, unpushed commits: 0
+
+=== 2026-11-17 06:00 start ===
+auth: long-lived-token
+I ran the 6:00 collection for 2026-11-17, steps 1–9 of `収集手順.md`. It added **6 records** to `data/catch-log.js`, which now holds 4,480.
+
+**Added** (all from chowari, all fishing trips on 11/16 that were posted after the 0:00 run):
+- **東京湾 (4):**
+  - 忠彦丸 (金沢漁港): ライトアジ. The post gives no counts or sizes.
+  - PALLAS (大黒運河): シーバス. The post gives no counts or sizes.
+  - 棒面丸 (松輪): LTマダイ, with マダイ and イナダ.
+  - フィッシュオン大勝 (上総湊): カワハギ 16〜26cm, 4〜10 per person.
+- **相模湾 (1):** たいぞう丸 (葉山): アマダイ 28〜44cm, 2〜5 per person.
+- **駿河湾 (1):** 橋安丸 (焼津): タチウオ, 30〜61 per person by jigging.
+
+**Left out:** 14 other new chowari posts were outside the three bays. They include 宇佐美 (East Izu), which I left out to match the 0:00 run, plus 外房, 茨城, 兵庫 and elsewhere. The boat and shop blogs had nothing new for 11/16–17. かめや and イシグロ only had catches from outside the area. The YouTube search found no recent videos.
+
+**Checks:** Node loads the file without errors. There are no duplicate IDs and no duplicate date + place + species entries, and line endings are unchanged. The notes for this run (URLs checked, reasons for leaving catches out) are in `logs/2026-11-17.md`.
+
+**Points to know**
+- **Weather data:** Open-Meteo's normal weather endpoint timed out again, as it did at 0:00. I took the weather values from its historical-forecast endpoint instead; water temperature and waves came from the usual marine endpoint.
+- **Leftover files:** `hit.html`, `ishiguro.html`, `kameya.html`, `nakane.html`, `ssm.html`, `sunny.html`, `super.html` and `tomiura.html` are still in the `釣り/` folder from the 11/13 run. Please delete them by hand; the automatic run doesn't delete files.
+
+Step 9 needs no action from me: `run-collect.ps1` rebuilds the single-file HTML next.
+
+Sources:
+- [釣割 釣果情報](https://www.chowari.jp/catch/)
+- [かめや釣具 関東・東海 釣果](https://kameya-choka.com/kanto-tokai/)
+- [釣具のイシグロ 釣り情報](https://www.ishiguro-gr.com/enjoy/fishing/)
+- [石田丸](https://www.ishidamaru.com/?post_type=fishing&paged=1)
+- The web search for videos turned up only older or unrelated pages, for example [anglers.jp](https://anglers.jp//catches/6366013) and [tk.oretsuri.com](https://tk.oretsuri.com).
+build-single: source = 釣果ログ.html
+build-single: all-in-one 2752405 chars / docs/index.html 2752405 / dist/artifact.html 2752246
+=== 2026-11-17 06:04 end (claude exit 0) ===
