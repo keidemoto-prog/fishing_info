@@ -24,3 +24,37 @@ Source from the YouTube search:
 build-single: source = 釣果ログ.html
 build-single: all-in-one 2795980 chars / docs/index.html 2795980 / dist/artifact.html 2795821
 === 2026-11-18 00:04 end (claude exit 0) ===
+git: push exit 0, unpushed commits: 0
+
+=== 2026-11-18 06:00 start ===
+auth: long-lived-token
+`収集手順.md` の手順1〜9を最後まで実行し、11/18 6:00回の釣果を **12件** 追加しました。
+
+**追加した釣果（東京湾3・相模湾7・駿河湾2）**
+- **東京湾**
+  - 湾奥：忠彦丸（金沢漁港）のライトアジ
+  - 湾口の三浦側：棒面丸（松輪）のカワハギと、ライトタックルのマダイ船（マダイ・シロアマダイ・ワラサ・サワラ）
+- **相模湾**
+  - ちがさき丸（茅ヶ崎）：アマダイ 26〜37cm、タイ五目
+  - 五エム丸（葉山）：11/15〜17 のアマダイ 28〜47cm とアオリイカ
+  - 椿丸（小坪）：アマダイ 35〜52cm
+- **駿河湾**
+  - 橋安丸（焼津）：タチウオ 20〜41本
+  - イシグロ焼津店：焼津周辺の陸っぱりでカマス 30cm
+
+12件のうち11件は釣割（chowari）、1件はイシグロのページから取りました。
+
+- **記録しなかったもの:** キハダ・フグ・キンメ・ヒラスズキは対象魚種にないので外しました。外房・県外の釣果も範囲外として外しています。
+- **その他の情報源:** 船宿ブログ、かめや釣具、YouTube には新しい該当釣果はありませんでした。
+- **確認結果:** `data/catch-log.js` は JavaScript として正しく読み込めます（全4562件、重複なし）。更新日時は「2026-11-18 06:00」です。作業メモは `logs/2026-11-18.md` に書きました。
+- **スマホ用ページなど:** 単体HTMLの作り直しは、このあと `run-collect.ps1` が自動で行います（手順9のとおり、ここでは何もしていません）。
+
+**お願い：** `釣り/` フォルダに、11/13 の事故で残った余分なファイルが8つあります（`hit.html`, `ishiguro.html`, `kameya.html`, `nakane.html`, `ssm.html`, `sunny.html`, `super.html`, `tomiura.html`）。手順書で `釣り/` の中は触らないことになっているため、私は削除していません。スマホ用ページが壊れる原因になり得るので、お手すきのときにエクスプローラーで削除してください。
+
+YouTube 検索のソース（直近の該当動画はなし）:
+- [相模湾マグロ釣り 2025年11月1日](https://www.youtube.com/watch?v=SQT-xJuaAog)
+- [コマセカツオが絶好調！相模湾｜2026.8.8](https://www.youtube.com/watch?v=H4yBL1chf7I)
+- [【神奈川県某所】新ウキ釣り装備で秋の人気魚連発！？【2026年9月～10月】](https://www.youtube.com/watch?v=XSzFmnG4VyA)
+build-single: source = 釣果ログ.html
+build-single: all-in-one 2803354 chars / docs/index.html 2803354 / dist/artifact.html 2803195
+=== 2026-11-18 06:05 end (claude exit 0) ===
