@@ -1,0 +1,26 @@
+﻿
+=== 2026-11-18 00:00 start ===
+auth: long-lived-token
+I ran all 9 steps in `収集手順.md` for the 2026-11-18 0:00 run and added 16 new catch records.
+
+1. **Date:** 2026-11-18 (Wednesday), so the normal search window applied: Nov 17–18.
+2. **Sources checked:**
+   - chowari: pages 1–85, 39 new posts since the last run.
+   - All 10 shop and boat blogs: nothing new. Kameya's only posts on Nov 17 were shop news, Ishiguro's was from Lake Biwa (outside the area), and the rest were already handled earlier.
+   - One YouTube search: no recent video in the target area.
+3. **New records (all from chowari):** Tokyo Bay 9 (7 on the Miura side, 2 on the Boso side), Sagami Bay 5, Suruga Bay 2. Twelve trips were on Nov 17 and four on Nov 16. Each record has its tide, water temperature and weather, plus nearby readings from Open-Meteo, with no gaps.
+   - Skipped because the fish aren't on the target list: goby, kinme, pufferfish, yellowfin tuna.
+   - Skipped because they're outside the area: Atami, Usami, Ohara, Katsuura.
+4. **Dedup and update:** Checked date + spot + species against existing records: no duplicates. Then inserted the 16 at the top of `data/catch-log.js` and updated `lastUpdated` and `lastRunNote`.
+5. **Log:** Wrote `logs/2026-11-18.md` with the URLs checked, what was skipped and why, and the area and species decisions.
+6. **Check:** `data/catch-log.js` loads as valid JavaScript and now has 4,550 records. The record IDs are all unique, and every species is on the allowed list.
+
+As step 9 says, I didn't rebuild the single-file HTML pages; `run-collect.ps1` does that after this.
+
+**Needs your action:** eight saved web pages from the 11/13 accident are still sitting directly in the `釣り/` folder: `hit.html`, `ishiguro.html`, `kameya.html`, `nakane.html`, `ssm.html`, `sunny.html`, `super.html`, `tomiura.html`. I didn't delete them (the instructions only let me write to `data/catch-log.js` and `logs/`). Please delete them yourself.
+
+Source from the YouTube search:
+- [YouTube search results (none recent in the target area)](https://www.youtube.com/watch?v=XSzFmnG4VyA)
+build-single: source = 釣果ログ.html
+build-single: all-in-one 2795980 chars / docs/index.html 2795980 / dist/artifact.html 2795821
+=== 2026-11-18 00:04 end (claude exit 0) ===
