@@ -102,3 +102,34 @@ YouTube の確認に使った検索の一部（該当なし）:
 build-single: source = 釣果ログ.html
 build-single: all-in-one 2768439 chars / docs/index.html 2768439 / dist/artifact.html 2768280
 === 2026-11-17 12:06 end (claude exit 0) ===
+git: push exit 0, unpushed commits: 0
+
+=== 2026-11-17 18:00 start ===
+auth: long-lived-token
+I finished every step in `収集手順.md` for the 18:00 run. That file is the daily collection procedure for the catch log.
+
+**Result: 28 catches added**, all from chowari: Tokyo Bay 21 (inner bay 11, Miura side 8, Boso side 2), Sagami Bay 7, Suruga Bay 0. By trip date: 22 from 11/17, plus 2 from 11/16 and 4 from 11/15 that were posted late.
+
+Notable catches:
+- 利八丸 (Katsuyama) live-bait yellowtail: ワラサ 3.3–6.2kg, 2–5 per person, everyone caught one
+- 成銀丸 (Matsuwa): ワラサ 3–5kg, 0–6 per person
+- 弁天屋 (Kanazawa-Hakkei): サワラ, 40 for the whole boat
+- 林遊船 (Edogawa): サワラ・サゴシ, 26 for the whole boat
+
+**What I checked:**
+- **chowari:** pages 1–85. 68 new posts since the 12:00 run; the rest were outside the areas or not on the species list.
+- **Boat and shop blogs, Ishiguro, Kameya:** all ten sources. Nothing new in the target areas.
+- **YouTube:** one search, no recent videos that fit.
+- **Sea temperature and weather:** taken from Open-Meteo, nothing missing. Its main weather service kept timing out, so I used its backup service, as the earlier runs today did.
+
+**Checks:** `data/catch-log.js` loads correctly with 4,534 records. No duplicate records, and every new species is on the target list. I added a section for this run to `logs/2026-11-17.md`. One of my edits briefly broke the data file's line endings; I rebuilt it from a backup and checked it again. The final change to the data file is only the 28 new lines, one comment line and the 2 summary lines.
+
+**Needs your attention:** these 8 files are still in the `釣り/` folder, left over from the 11/13 run: `hit.html`, `ishiguro.html`, `kameya.html`, `nakane.html`, `ssm.html`, `sunny.html`, `super.html`, `tomiura.html`. Saved pages like these broke the phone page once before (Sept 7–10). The automatic run doesn't delete them, so please delete them yourself in File Explorer.
+
+Sources:
+- [【東京湾】良型爆釣！東京湾のタチウオ【船釣り】](https://www.youtube.com/watch?v=Ok0AyLCWLqY)
+- [11月でもまだ釣れる！東京湾奥イナダ釣り！](https://www.youtube.com/watch?v=BEypJJUHAKA)
+- [【相模湾】ハイシーズン到来！！相模湾のイナダ五目](https://www.youtube.com/watch?v=1NWhGkz374k)
+build-single: source = 釣果ログ.html
+build-single: all-in-one 2785959 chars / docs/index.html 2785959 / dist/artifact.html 2785800
+=== 2026-11-17 18:07 end (claude exit 0) ===
