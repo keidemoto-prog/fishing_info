@@ -58,3 +58,42 @@ YouTube 検索のソース（直近の該当動画はなし）:
 build-single: source = 釣果ログ.html
 build-single: all-in-one 2803354 chars / docs/index.html 2803354 / dist/artifact.html 2803195
 === 2026-11-18 06:05 end (claude exit 0) ===
+git: push exit 0, unpushed commits: 0
+
+=== 2026-11-18 12:00 start ===
+auth: long-lived-token
+I ran the 12:00 collection in `収集手順.md` (steps 1–9) and added **26 new catch records** to `data/catch-log.js`. The file still loads as valid JavaScript (4,588 records total).
+
+**By area:** Tokyo Bay 20 (inner bay 9, Miura side of the bay mouth 8, Boso side 3), Sagami Bay 3, Suruga Bay 3.
+
+**Where they came from:**
+- **chowari:** 24 records. 20 are trips on 11/17; the other 4 are 11/16 and 11/15 trips the boats posted late.
+- **Kameya:** 2 records.
+  - Ishizu Surf in Yaizu: 3 cutlassfish on 11/17.
+  - Sagami River: a flounder. The post only says "November", so I saved the date as `2026-11` and left the nearby sea readings empty.
+
+**Main catches:**
+- 守山丸 (Samukawa): Spanish mackerel 60–87cm, 2–13 per angler.
+- 黒川本家 (Shin-Yamashita): horse mackerel 40–101.
+- 荒川屋: whiting 35–54.
+- 巳之助丸: filefish up to 18.
+- 佐衛美丸: bigfin reef squid 9–12.
+
+**Checks:**
+- No duplicate IDs, and no new record repeats an existing date + spot + species. 丸又丸's 11/15 report was already in the data, so I skipped it.
+- Every species is on the target list and every record has a source URL.
+- Records without water temperature or weather in the post got nearby readings from Open-Meteo. Only the Sagami River flounder is missing them, because it has no exact date.
+
+**Sources with nothing new:** the boat and shop blogs, Ishiguro (its one new post is from Nagoya Port, outside our area), and YouTube.
+
+I wrote the log to `logs/2026-11-18.md`. As step 9 says, the all-in-one HTML files are rebuilt automatically by `run-collect.ps1`, so I didn't touch them. My temporary files are only in the scratchpad folder.
+
+**One thing for you:** eight leftover files from the 11/13 incident are still in the `釣り/` folder (hit, ishiguro, kameya, nakane, ssm, sunny, super and tomiura `.html`). Please delete them by hand from Explorer. I didn't delete them because I didn't create them.
+
+Sources:
+- [東京湾・相模湾の沖釣りのススメ - YouTube](https://www.youtube.com/channel/UCt8IlqIiU11LM0_3lH1Dp8Q)
+- [【東京湾奥ショアジギング】１１月もイナダのチャンス継続中！！ - YouTube](https://www.youtube.com/watch?v=kstkSEMLRuE)
+- [【東京湾ナブラ】そこへ投げると魚は逃げる - YouTube](https://www.youtube.com/watch?v=Ajni-M-Elaw)
+build-single: source = 釣果ログ.html
+build-single: all-in-one 2819172 chars / docs/index.html 2819172 / dist/artifact.html 2819013
+=== 2026-11-18 12:07 end (claude exit 0) ===
