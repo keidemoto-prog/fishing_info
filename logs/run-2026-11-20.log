@@ -26,3 +26,32 @@ I ran every step (1–9) in `収集手順.md` for the 2026-11-20 0:00 run. It ad
 build-single: source = 釣果ログ.html
 build-single: all-in-one 2872319 chars / docs/index.html 2872319 / dist/artifact.html 2872160
 === 2026-11-20 00:07 end (claude exit 0) ===
+git: push exit 0, unpushed commits: 0
+
+=== 2026-11-20 06:00 start ===
+auth: long-lived-token
+I ran all 9 steps in `収集手順.md` for today's 6:00 run (period 11/19–11/20). It added **1 new catch record** to `data/catch-log.js`, in Suruga Bay.
+
+**What was added:**
+- **焼津小川港 橋安丸** (11/19, chowari report 5359755): タチウオ, 47–100 per person on bait and 47 on tenya (width F2.5–F5), with some スルメイカ.
+- The sea and weather values come from Open-Meteo (焼津沖). They roughly match the boat's own report: clear skies, west wind of about 6–8 m/s, water around 21℃.
+
+**Sources checked:**
+- **chowari:** there were only 2 new reports since the last run. The other one was from 三重, outside the area.
+- **Shop and boat blogs:** none of the 8 had a new catch post. 中根ボート only updated an old weather-forecast post.
+  - かめや釣具: its latest catch posts were already in the data.
+  - イシグロ: its 3 new posts were all outside the area (日間賀島, 紀北, 渥美).
+  - 釣りビジョン: the page loads its content by script, so I couldn't read it.
+- **YouTube:** one search found no recent videos in range. The results were all from September–October or earlier ([example](https://www.youtube.com/watch?v=XSzFmnG4VyA), [example](https://www.youtube.com/watch?v=Ok0AyLCWLqY)).
+
+**Data and checks:**
+- I updated the "last updated" time and run summary at the top of the file.
+- `node` loads the file without errors (4,675 records), and there are no duplicate records.
+- The run notes are added to `logs/2026-11-20.md`.
+- Per step 9, I didn't rebuild the single-file HTML; `run-collect.ps1` does that next.
+- I saved my working files outside the `釣り/` folder.
+
+**Needs your action:** 8 saved copies of source web pages (`hit.html`, `ishiguro.html`, `kameya.html`, `nakane.html`, `ssm.html`, `sunny.html`, `super.html`, `tomiura.html`) are still in the `釣り/` folder. An earlier run left them there on 11/13, against the folder rules. The instructions only allow me to edit the data file and the logs, so I didn't delete them. Please delete them yourself, or tell me to.
+build-single: source = 釣果ログ.html
+build-single: all-in-one 2872906 chars / docs/index.html 2872906 / dist/artifact.html 2872747
+=== 2026-11-20 06:02 end (claude exit 0) ===
