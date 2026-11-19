@@ -1,0 +1,28 @@
+﻿
+=== 2026-11-20 00:00 start ===
+auth: long-lived-token
+I ran every step (1–9) in `収集手順.md` for the 2026-11-20 0:00 run. It added **5 new catch records** to `data/catch-log.js`: 2 in Tokyo Bay, 2 in Sagami Bay and 1 in Suruga Bay.
+
+**What was added:**
+- **羽田 かめだや** (11/18): LTアジ 15–29cm, 35–124 per person
+- **江東 瀬川丸** (11/15, posted late): アジ・シロギス, top angler about 40
+- **片瀬 ゆうせい丸** (11/18): アマダイ 23–46cm, 0–7
+- **片瀬 まなぶ丸** (11/18): アマダイ 0–6 and オニカサゴ
+- **清水港** (11/18, from かめや釣具 清水店): アジング, アジ 18–20cm, 4 fish
+
+**Sources checked:**
+- **chowari:** 14 new reports since the last run. Only the 4 above are in the target area; the other 10 were outside it (外房, 茨城, 三重, 広島, 大阪, 福岡).
+- **Shop and boat blogs:** none of the 8 sites had a new post. Of the new イシグロ posts, all 3 were outside the area.
+- **YouTube:** one search found no recent videos in range ([search results](https://www.youtube.com/watch?v=Ok0AyLCWLqY) were all older uploads).
+
+**Data and checks:**
+- Every record has the nearby sea and weather values filled in from Open-Meteo.
+- I updated the "last updated" time and run summary at the top of the file.
+- `node` loads the file without errors (4,674 records), and there are no duplicate records.
+- The run notes are in `logs/2026-11-20.md`.
+- Per step 9, I didn't rebuild the single-file HTML; `run-collect.ps1` does that next.
+
+**Needs your action:** 8 saved copies of source web pages (`hit.html`, `ishiguro.html`, `kameya.html`, `nakane.html`, `ssm.html`, `sunny.html`, `super.html`, `tomiura.html`) are still sitting in the `釣り/` folder. An earlier run left them there on 11/13, against the folder rules. The page-builder script now ignores them, so nothing is broken. The instructions only allow me to edit the data file and the logs, so I didn't delete them. Please delete them yourself, or tell me to.
+build-single: source = 釣果ログ.html
+build-single: all-in-one 2872319 chars / docs/index.html 2872319 / dist/artifact.html 2872160
+=== 2026-11-20 00:07 end (claude exit 0) ===
