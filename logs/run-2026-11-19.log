@@ -56,3 +56,32 @@ auth: long-lived-token
 build-single: source = 釣果ログ.html
 build-single: all-in-one 2852144 chars / docs/index.html 2852144 / dist/artifact.html 2851985
 === 2026-11-19 06:03 end (claude exit 0) ===
+git: push exit 0, unpushed commits: 0
+
+=== 2026-11-19 12:00 start ===
+auth: long-lived-token
+I've finished the 12:00 collection, following every step of `収集手順.md` from 1 to 9. I added 21 records to `data/catch-log.js`.
+
+**What was added (all from 釣割 / chowari)**
+- **東京湾 (15):**
+  - Inner bay (湾奥), 13 records: 長崎屋 (本牧) シロギス 39〜116 per person; 黒川本家 (新山下) 午後アジ 45〜132; 弁天屋 (八景) サワラ 1〜6 plus the タチウオ・アジ relay and カワハギ boats; 米元 (八景) タチウオ 75〜105cm 2〜9; 新明丸 (鶴見) マゴチ 3〜8; and others.
+  - Mouth of the bay, 三浦 side (湾口三浦), 1 record: 教至丸 (走水) カワハギ 1〜9.
+  - 房総 side, 1 record: 山賀丸 (小浦) アマダイ, カワハギ.
+- **相模湾 (6):** ちがさき丸 (茅ヶ崎) アマダイ 1〜8, アジ 35〜40cm and マダイ up to 4.7kg; 孝太郎丸 (腰越) マダイ; 豊幸丸 (小田原) イナダ 5〜8 on 11/17; 丸十丸 (小網代) カワハギ on 11/15.
+- **駿河湾:** nothing new.
+- 18 of the catches are from 11/18. The other 3 are earlier trips (11/17 and 11/15) that were posted late.
+
+**Sources with nothing new:** the boat and shop blogs, かめや and イシグロ. One YouTube search turned up no recent matching videos.
+
+**Checks:**
+- `data/catch-log.js` loads as valid JavaScript and now has 4,662 records.
+- No duplicates. Every species is on the allowed list, and every new record has a source URL and nearby sea and weather values.
+- I appended notes for this run to `logs/2026-11-19.md`. Working files went to a temp folder, not into `釣り/`.
+- As step 9 says, rebuilding the single-file HTML is left to `run-collect.ps1`.
+
+**Please handle:** the eight files saved by the 11/13 accident are still directly under `釣り/` (`hit` / `ishiguro` / `kameya` / `nakane` / `ssm` / `sunny` / `super` / `tomiura` `.html`). The instructions don't allow extra files in that folder, and a file like these broke the phone page before, so please delete them by hand when you have time.
+
+YouTube search results I looked at: [yutura.net](https://yutura.net/channel/11003/latest/), [tsurihack](https://tsurihack.com/3425), [anglers.jp](https://anglers.jp//catches/6366013)
+build-single: source = 釣果ログ.html
+build-single: all-in-one 2865058 chars / docs/index.html 2865058 / dist/artifact.html 2864899
+=== 2026-11-19 12:04 end (claude exit 0) ===
