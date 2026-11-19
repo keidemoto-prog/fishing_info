@@ -85,3 +85,30 @@ YouTube search results I looked at: [yutura.net](https://yutura.net/channel/1100
 build-single: source = 釣果ログ.html
 build-single: all-in-one 2865058 chars / docs/index.html 2865058 / dist/artifact.html 2864899
 === 2026-11-19 12:04 end (claude exit 0) ===
+git: push exit 0, unpushed commits: 0
+
+=== 2026-11-19 18:00 start ===
+auth: long-lived-token
+I ran all 9 steps in `収集手順.md` for the 18:00 collection. **7 new catch records were added** to `data/catch-log.js`, and the file still loads as valid JavaScript (4,669 records, no duplicates).
+
+**What was added** (Tokyo Bay 2, Sagami Bay 3, Suruga Bay 2):
+- **Tokyo Bay, inner bay:** 深川 吉野屋 on 11/18 — サワラ 60〜86cm, 1〜6 per person; タチウオ 80〜108cm, 2〜22 per person.
+- **Sagami Bay:**
+  - 邦丸（大磯）on 11/18 — only a few アジ and サバ.
+  - まごうの丸（茅ヶ崎）on 11/18 — アマダイ 20〜52cm, 3〜8 per person.
+  - 茅ヶ崎サーフ on 11/19 — キス 18〜23cm, 12 fish (かめや). This post wasn't on かめや's list page yet; I found it through the "next article" link on another post.
+- **Suruga Bay:**
+  - 沼津湾内 on 11/18 — ボートカワハギ, 11 fish in total, plus オオモンハタ and アカハタ (イシグロ沼津店).
+  - 沼津沖 光進丸, night タチウオ — up to about 30 per person. The post gives no fishing date, so the record uses "2026-11" (month only) and has no nearby sea or weather values.
+
+**Sources checked:**
+- chowari: 21 new posts since the 12:00 run. Only the 4 above were in the target area; the rest were from Ibaraki, Aichi, Osaka and other areas outside it.
+- The other boat and shop blogs had nothing new.
+- One YouTube search found no recent videos that qualify. Search results: [example 1](https://www.youtube.com/watch?v=XSzFmnG4VyA), [example 2](https://www.youtube.com/watch?v=k2W74rejVzM).
+
+The page header now shows the update time as 2026-11-19 18:00 with the counts. I added an 18:00 section to `logs/2026-11-19.md` listing the pages checked, what I skipped and why, and the checks I ran. I didn't create any files in the `釣り/` folder; my working copies and a backup of the data file are in a temporary folder outside it.
+
+**Please delete these by hand:** `hit.html`, `ishiguro.html`, `kameya.html`, `nakane.html`, `ssm.html`, `sunny.html`, `super.html` and `tomiura.html`, directly inside `釣り/`. They're left over from the 11/13 mishap, and the instructions don't allow me to touch them. The run script rebuilds the single-file HTML after this, and the phone page still has to be updated separately, as described in the README.
+build-single: source = 釣果ログ.html
+build-single: all-in-one 2869230 chars / docs/index.html 2869230 / dist/artifact.html 2869071
+=== 2026-11-19 18:06 end (claude exit 0) ===
