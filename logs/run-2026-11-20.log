@@ -55,3 +55,34 @@ I ran all 9 steps in `収集手順.md` for today's 6:00 run (period 11/19–11/2
 build-single: source = 釣果ログ.html
 build-single: all-in-one 2872906 chars / docs/index.html 2872906 / dist/artifact.html 2872747
 === 2026-11-20 06:02 end (claude exit 0) ===
+git: push exit 0, unpushed commits: 0
+
+=== 2026-11-20 12:00 start ===
+auth: long-lived-token
+`収集手順.md` の手順1〜9をすべて実行しました（2026-11-20 12:00の回）。今回追加できた釣果は**0件**です。
+
+**結果**
+- **釣割**: 前回以降の新着は10件ありましたが、すべて対象エリアの外でした（茨城・外房の大原・和歌山・徳島）。
+- **船宿・釣具店のブログ**:
+  - 石田丸は11/20、南西の強風で出船していません。
+  - 中根ボートの最新記事は「予報が悪い」というお知らせで、釣果ではありませんでした。
+  - 浜千鳥、SSM浦賀、HIT三浦海岸、スーパーフィッシング、富浦マリンボート、サニーサイドは新着なしでした。
+  - かめやは最新の記事がすでに記録済みでした。
+  - イシグロの新着2件は遠州灘と岐阜の釣り場で、どちらもエリア外でした。
+- **YouTube**: 1回検索しましたが、直近の該当動画はありませんでした。
+- 11/19〜20は強風で、相模湾と東京湾口の船があまり出ていないようです。
+
+**書き換えた内容**
+- `data/catch-log.js` は「最終更新日時」と「今回の実行メモ」の2行だけ変えました。正しいJavaScriptとして読み込めることも確認済みです（全4675件）。
+- `logs/2026-11-20.md` に今回の回の記録を書き足しました。
+- 一時ファイルはすべて、PCの一時フォルダ（`%TEMP%`）の中に置きました。`釣り/` フォルダに新しいファイルは作っていません。
+
+**お願い（手作業）**
+`釣り/` フォルダの直下に、11/13の事故で保存されたページが8つ残ったままです（`hit.html`、`ishiguro.html`、`kameya.html`、`nakane.html`、`ssm.html`、`sunny.html`、`super.html`、`tomiura.html`）。毎回のログでも削除をお願いしています。過去に同じ種類の残りファイルでスマホ用ページが壊れたことがあるので、エクスプローラーで `釣り` フォルダを開き、この8つを選んで削除してください。`tsuriha_all-in-one.html` と `釣果ログ.html` は消さないでください。
+
+Sources:
+- [東京湾・相模湾の沖釣りのススメ - YouTube](https://www.youtube.com/channel/UCt8IlqIiU11LM0_3lH1Dp8Q)
+- [コマセカツオが絶好調！相模湾｜2026.8.8 - YouTube](https://www.youtube.com/watch?v=H4yBL1chf7I)
+build-single: source = 釣果ログ.html
+build-single: all-in-one 2872926 chars / docs/index.html 2872926 / dist/artifact.html 2872767
+=== 2026-11-20 12:02 end (claude exit 0) ===
