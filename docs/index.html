@@ -137,11 +137,14 @@
  *   { obs:"観測地点名", waterTempC, weather, windMS, windDir, waveM, airTempC, time:"YYYY-MM-DD" }
  */
 window.CATCH_LOG_META = {
-  lastUpdated: "2026-11-21 00:00",
-  lastRunNote: "0件追加（東京湾0＝湾奥0・湾口三浦0・房総0／相模湾0／駿河湾0）。chowari 新着6件は茨城・外房・三重・愛知でエリア外、イシグロ新着4件も愛知・三重・岐阜でエリア外。石田丸・中根ボートは南西〜西の強風で出船なし（中根は21日も中止）、ほかのブログも新着なし"
+  lastUpdated: "2026-11-21 06:00",
+  lastRunNote: "2件追加（東京湾2＝湾奥2・湾口三浦0・房総0／相模湾0／駿河湾0）。chowari 新着7件のうち湾奥の忠彦丸（LTアジ）・ゴーゴーガイドサービス（シーバス）を採用、ほかは外房・茨城・広島でエリア外。石田丸・中根ボートは西風で出船なし、ほかのブログ・かめや・イシグロも新着なし"
 };
 
 window.CATCH_LOG = [
+  // ---------- 11-21 6:00回 追加分（chowari 2件） ----------
+  {id: "2026-11-20-aoku-21b001", date: "2026-11-20", area: "aoku", spot: "金沢漁港（横浜市） 忠彦丸 ライトアジ船", spotType: "沖-釣り船", method: "LTアジ", species: ["アジ"], result: "アジ（数・サイズの記載なし）", tideName: "中潮", waterTempC: 17.4, waterTempSource: "chowari 釣行当日の気象", weather: "晴れ", windMS: 9.2, windDir: "西南西", airTempC: 16.0, nearby: {obs: "Open-Meteo（金沢沖）", waterTempC: 18.8, weather: "晴れ", windMS: 12.4, windDir: "西", waveM: 1.96, airTempC: 15.0, time: "2026-11-20"}, sourceName: "忠彦丸（chowari）", sourceUrl: "https://www.chowari.jp/ship/00703/catch/", note: "choka 5360079"},
+  {id: "2026-11-20-aoku-21b002", date: "2026-11-20", area: "aoku", spot: "呑川（大田区） ゴーゴーガイドサービス シーバス午前便", spotType: "沖-釣り船", method: "シーバスルアー（ガイド船）", species: ["シーバス"], result: "シーバス（数・サイズの記載なし）。ウェイク145・クルクルSM135Sが活躍、コノシロパターン", tideName: "中潮", waterTempC: 17.0, waterTempSource: "chowari 釣行当日の気象", weather: "晴れ", windMS: 9.8, windDir: "西南西", airTempC: 16.0, nearby: {obs: "Open-Meteo（羽田沖）", waterTempC: 17.7, weather: "晴れ", windMS: 9.59, windDir: "西", waveM: 1.44, airTempC: 15.2, time: "2026-11-20"}, sourceName: "ゴーゴーガイドサービス（chowari）", sourceUrl: "https://www.chowari.jp/ship/01725/catch/", note: "choka 5360085"},
   // ---------- 11-20 18:00回 追加分（chowari 2件・イシグロ 1件・かめや 1件） ----------
   {id: "2026-11-20-aoku-20d001", date: "2026-11-20", area: "aoku", spot: "金沢漁港（横浜市） 仁丸 ショートLTアジ五目", spotType: "沖-釣り船", method: "LTアジ五目", species: ["アジ", "カサゴ", "キジハタ"], result: "アジ 16〜25cm 18〜52匹。カサゴ・キジハタ1匹混じり。朝から風が強く釣りにくい一日", tideName: "中潮", waterTempC: 17.4, waterTempSource: "chowari 釣行当日の気象", weather: "晴れ", windMS: 9.2, windDir: "西南西", airTempC: 16.0, nearby: {obs: "Open-Meteo（金沢沖）", waterTempC: 18.8, weather: "晴れ", windMS: 12.4, windDir: "西", waveM: 1.96, airTempC: 15.0, time: "2026-11-20"}, sourceName: "仁丸（chowari）", sourceUrl: "https://www.chowari.jp/ship/00010/catch/", note: "choka 5359898"},
   {id: "2026-11-20-aoku-20d002", date: "2026-11-20", area: "aoku", spot: "横浜港新山下（横浜市） 黒川本家 午前アジ船", spotType: "沖-釣り船", method: "LTアジ", species: ["アジ"], result: "アジ 18〜28cm 20〜70匹（中小型混じりに中型多め）。西寄りの強風だが釣り場は陰で穏やか、澄み潮。ほかクロダイ", tideName: "中潮", waterTempC: 17.4, waterTempSource: "chowari 釣行当日の気象", weather: "晴れ", windMS: 6.7, windDir: "西南西", airTempC: 16.0, nearby: {obs: "Open-Meteo（横浜港沖）", waterTempC: 18.4, weather: "晴れ", windMS: 10.57, windDir: "西", waveM: 1.44, airTempC: 14.9, time: "2026-11-20"}, sourceName: "黒川本家 -新山下-（chowari）", sourceUrl: "https://www.chowari.jp/ship/00158/catch/", note: "choka 5359863"},
