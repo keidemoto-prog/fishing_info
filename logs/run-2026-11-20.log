@@ -86,3 +86,38 @@ Sources:
 build-single: source = 釣果ログ.html
 build-single: all-in-one 2872926 chars / docs/index.html 2872926 / dist/artifact.html 2872767
 === 2026-11-20 12:02 end (claude exit 0) ===
+git: push exit 0, unpushed commits: 0
+
+=== 2026-11-20 18:00 start ===
+auth: long-lived-token
+`収集手順.md` の手順1〜9を最後まで実行しました。今日（11/20）18:00回の収集分です。
+
+**結果：4件追加しました**（東京湾2・相模湾1・駿河湾1）
+- 東京湾（湾奥）：仁丸（金沢漁港）のLTアジ五目。アジ16〜25cmが18〜52匹で、カサゴ・キジハタも混じりました。
+- 東京湾（湾奥）：黒川本家（新山下）の午前アジ船。アジ18〜28cmが20〜70匹。
+- 相模湾：大磯サーフのショアジギングで、ショゴ40cm前後が2匹（11/19、かめや釣具）。
+- 駿河湾：焼津サーフの夜エギングで、アオリイカ3杯・最大900g（11/19、イシグロ）。
+
+**判断した点**
+- 大磯のショゴは、記事タイトルの日付が11/19、本文の釣行日欄が11/20と食い違っていました。タイトルの11/19で登録し、食い違いは備考欄（note）に書きました。
+- かめや「西湘の堤防でアオリイカ」は追加していません。釣行日が書かれていないため日付が「2026-11」になり、すでにある記録と「日付・場所・魚種」が同じで、手順の重複ルールに当たるためです。
+- ほかの新着は、茨城・愛知・和歌山・福井など対象エリア外でした。石田丸は強風で出船していません。YouTubeにも該当する新しい動画はありませんでした。
+- 水温・天気は、記事に書かれていない分を近くの観測値（Open-Meteo）で埋めました。
+
+**確認したこと**
+- `data/catch-log.js` は正しく読み込めます（全4679件、重複なし）。
+- 見たページと判断の理由は `logs/2026-11-20.md` に書きました。
+- `釣り/` フォルダに新しいファイルは作っていません。作業用のファイルはパソコンの一時フォルダに置いています。
+
+**削除をお願いしたいもの**
+`釣り/` フォルダの直下に、11/13 の事故で残ったファイルが8つあります（hit.html, ishiguro.html, kameya.html, nakane.html, ssm.html, sunny.html, super.html, tomiura.html）。手順で新しいファイルの扱いが厳しく決められているので、私からは消していません。エクスプローラーで `釣り` フォルダを開き、この8つを選んで削除してください。
+
+Sources:
+- [釣割 釣果情報](https://www.chowari.jp/catch/)
+- [かめや釣具 546392 大磯サーフ](https://kameya-choka.com/kanto-tokai/archives/f-info/546392)
+- [イシグロ 50845 焼津](https://www.ishiguro-gr.com/enjoy/fishing/detail.php?id=50845)
+- [yutura.net（YouTube検索で出た結果）](https://yutura.net/channel/37296/video/C4rwO42njOc/)
+- [terukosan.com（YouTube検索で出た結果）](https://terukosan.com/?p=20261008113073701)
+build-single: source = 釣果ログ.html
+build-single: all-in-one 2875480 chars / docs/index.html 2875480 / dist/artifact.html 2875321
+=== 2026-11-20 18:04 end (claude exit 0) ===
