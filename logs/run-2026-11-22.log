@@ -1,0 +1,25 @@
+﻿
+=== 2026-11-22 00:00 start ===
+auth: long-lived-token
+I ran all 9 steps of `収集手順.md` (the 0:00 run on 2026-11-22). **29 catch records were added** to `data/catch-log.js`, all from fishing trips on 11/21.
+
+- **Tokyo Bay: 22** (18 inner bay, 4 at the Miura side of the bay mouth, 0 on the Boso side). Mostly アジ, plus サワラ, タチウオ, カワハギ, マダイ, マゴチ/ヒラメ and シロギス. Sources include かめだや, 深川吉野屋, 忠彦丸, 五郎丸, 房丸 and 政信丸.
+- **Sagami Bay: 4** — かりゆし丸 (アマダイ) and ゆうせい丸 (3 boats).
+- **Suruga Bay: 3** — 橋安丸 (タチウオ) and 魚磯丸 (hata, カンパチ).
+
+**How they were collected:**
+- **chowari** had 55 new reports since the last run and supplied all 29 records. The rest were outside the area (外房, 茨城, 和歌山 and others) or not on the species list (フグ, ヤリイカ, マダコ).
+- **The other boat and shop blogs** had nothing new. 石田丸 didn't sail on 11/21 because of the wind, and かめや and イシグロ had nothing beyond what was already logged.
+- **YouTube:** one search found no recent videos to use.
+- **Nearby sea and weather values:** I got new Open-Meteo readings for 6 spots and reused readings from earlier runs for the rest.
+
+**Checks:** the file still loads correctly in node (4732 records), with no duplicate entries and no species outside the list. Every new record has a source URL and nearby readings, and the original line endings are unchanged. `CATCH_LOG_META` is updated and the notes are in `logs/2026-11-22.md`.
+
+**You need to:** delete the 8 leftover HTML files from the 11/13 incident in `釣り/` (`hit.html`, `ishiguro.html`, `kameya.html`, `nakane.html`, `ssm.html`, `sunny.html`, `super.html`, `tomiura.html`). The rules don't let this automatic run delete files, so they've been flagged in every log since.
+
+`run-collect.ps1` rebuilds the single-file HTML after this run. The phone page (the claude.ai Artifact) still has to be updated separately, as described in the README.
+
+Sources: [yutura.net](https://yutura.net/channel/37296/video/C4rwO42njOc/), [yutura.net channel](https://yutura.net/channel/11003/latest/) (YouTube search results checked; nothing recent enough)
+build-single: source = 釣果ログ.html
+build-single: all-in-one 2907593 chars / docs/index.html 2907593 / dist/artifact.html 2907434
+=== 2026-11-22 00:05 end (claude exit 0) ===
