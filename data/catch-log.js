@@ -8,11 +8,14 @@
  *   { obs:"観測地点名", waterTempC, weather, windMS, windDir, waveM, airTempC, time:"YYYY-MM-DD" }
  */
 window.CATCH_LOG_META = {
-  lastUpdated: "2026-11-22 00:00",
-  lastRunNote: "29件追加（東京湾22＝湾奥18・湾口三浦4・房総0／相模湾4／駿河湾3）。chowari の 11/21 新着から、羽田 かめだや（シロギス・LTアジ）・平和島 まる八・海老取川 釣り船鶴（マゴチ・ヒラメ）・品川 大山丸／小林丸（アジ）・木場 深川吉野屋（アジ・サワラ・タチウオ）・木更津 宮川丸（サワラ）・金沢 忠彦丸4便／久保弘丸・金沢八景 野毛屋（テンヤマダイ）／黒川丸（アジ）／村本海事 BakuBakuタイラバ・鴨居 五郎丸（カワハギ・アジ）／房丸（アジ）・走水 政信丸（アジ）・平塚 かりゆし丸（アマダイ）・片瀬 ゆうせい丸3便・焼津 橋安丸（タチウオ）・久料 魚磯丸2便を採用。ほかは外房・茨城・和歌山などエリア外、フグ・ヤリイカ・マダコは対象魚種外"
+  lastUpdated: "2026-11-22 06:00",
+  lastRunNote: "2件追加（東京湾2＝湾奥1・湾口三浦1・房総0／相模湾0／駿河湾0）。chowari の新着14件から、市川 Friend☆Ship（湾奥サワラ・シーバス）・新安浦 こうゆう丸（タチウオ）を採用。ほかは茨城・外房・愛知・兵庫・岩手などエリア外、マダコ・ヤリイカは対象魚種外。船宿・釣具店ブログとYouTubeに新着なし"
 };
 
 window.CATCH_LOG = [
+  // ---------- 11-22 6:00回 追加分（chowari 2件） ----------
+  {id: "2026-11-21-aoku-22b001", date: "2026-11-21", area: "aoku", spot: "江戸川放水路（市川市） Friend☆Ship 湾奥サワラ", spotType: "沖-釣り船", method: "湾奥サワラ（ルアー・8時間便）", species: ["サワラ", "シーバス"], result: "サワラ・サゴシ 2.5〜3.6kg 0〜2本/人 船中7本（18ヒット、竿頭4）・シーバス 最大66cm 竿頭1。オデコ1人。強風予報で1時間遅らせ7時出船", tideName: "中潮", waterTempC: 16.7, waterTempSource: "chowari 釣行当日の気象", weather: "晴れ", windMS: 5.8, windDir: "南西", airTempC: 15.0, nearby: {obs: "Open-Meteo（市川沖）", waterTempC: 16.1, weather: "晴れ", windMS: 9.89, windDir: "西", waveM: 0.9, airTempC: 14.3, time: "2026-11-21"}, sourceName: "Friend☆Ship（chowari）", sourceUrl: "https://www.chowari.jp/ship/01635/catch/", note: "ブリクラスもヒットしたが船べりでバラシ（species には入れない） choka 5360550"},
+  {id: "2026-11-21-wanko-miura-22b002", date: "2026-11-21", area: "wanko-miura", spot: "新安浦港（横須賀市） こうゆう丸 タチウオ船", spotType: "沖-釣り船", method: "タチウオ", species: ["タチウオ"], result: "タチウオ 65〜115cm 1〜7（シケ後で反応は薄く広く。メーター級そこそこ、ドラゴン級も）", tideName: "中潮", waterTempC: 16.7, waterTempSource: "chowari 釣行当日の気象", weather: "晴れ", windMS: 5.6, windDir: "西南西", airTempC: 16.0, nearby: {obs: "Open-Meteo（観音崎沖）", waterTempC: 18.8, weather: "晴れ", windMS: 10.26, windDir: "西", waveM: 1.62, airTempC: 14.0, time: "2026-11-21"}, sourceName: "こうゆう丸（chowari）", sourceUrl: "https://www.chowari.jp/ship/00562/catch/", note: "choka 5360565"},
   // ---------- 11-22 0:00回 追加分（chowari 29件） ----------
   {id: "2026-11-21-aoku-22a001", date: "2026-11-21", area: "aoku", spot: "羽田（大田区） かめだや シロギス船", spotType: "沖-釣り船", method: "シロギス", species: ["キス（シロギス）"], result: "シロギス 14〜22cm 16〜175（中型中心に一日当たり多く好調）。イシモチ交じり", tideName: "中潮", waterTempC: 16.7, waterTempSource: "chowari 釣行当日の気象", weather: "晴れ", windMS: 6.4, windDir: "南西", airTempC: 16.0, nearby: {obs: "Open-Meteo（羽田沖）", waterTempC: 17.1, weather: "晴れ", windMS: 6.89, windDir: "西", waveM: 1.0, airTempC: 14.1, time: "2026-11-21"}, sourceName: "かめだや（chowari）", sourceUrl: "https://www.chowari.jp/ship/00702/catch/", note: "choka 5360543"},
   {id: "2026-11-21-aoku-22a002", date: "2026-11-21", area: "aoku", spot: "羽田（大田区） かめだや LTアジ船", spotType: "沖-釣り船", method: "LTアジ", species: ["アジ"], result: "アジ 16〜30cm 30〜87（朝は潮止まりで苦戦、日中に流れが出て小・中型ポツポツ）。イシモチ・クロダイ交じり", tideName: "中潮", waterTempC: 16.7, waterTempSource: "chowari 釣行当日の気象", weather: "晴れ", windMS: 6.4, windDir: "南西", airTempC: 16.0, nearby: {obs: "Open-Meteo（羽田沖）", waterTempC: 17.1, weather: "晴れ", windMS: 6.89, windDir: "西", waveM: 1.0, airTempC: 14.1, time: "2026-11-21"}, sourceName: "かめだや（chowari）", sourceUrl: "https://www.chowari.jp/ship/00702/catch/", note: "choka 5360542"},

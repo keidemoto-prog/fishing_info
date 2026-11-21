@@ -23,3 +23,28 @@ Sources: [yutura.net](https://yutura.net/channel/37296/video/C4rwO42njOc/), [yut
 build-single: source = 釣果ログ.html
 build-single: all-in-one 2907593 chars / docs/index.html 2907593 / dist/artifact.html 2907434
 === 2026-11-22 00:05 end (claude exit 0) ===
+git: push exit 0, unpushed commits: 0
+
+=== 2026-11-22 06:00 start ===
+auth: long-lived-token
+I ran all 9 steps of 収集手順.md for the 6:00 run on 2026-11-22 (Sunday, so the period was 11/21–11/22). **2 catch records were added** to `data/catch-log.js`, both from trips on 11/21.
+
+- **Tokyo Bay, inner bay:** Friend☆Ship (江戸川放水路). サワラ and サゴシ 2.5–3.6kg, 7 for the boat, plus シーバス up to 66cm. A ブリ-sized fish was lost at the boat's side, so I left ブリ out of the species list and put it in the note instead.
+- **Tokyo Bay mouth, Miura side:** こうゆう丸 (新安浦). タチウオ 65–115cm, 1–7 per person.
+
+**What I checked:**
+- **chowari:** 14 new reports since the last run. The other 12 were outside the area (茨城, 外房, 兵庫) or not on the species list (マダコ, ヤリイカ).
+- **Boat and shop blogs, かめや, イシグロ:** nothing new. 石田丸 still shows "did not sail on 11/21 because of wind".
+- **YouTube:** one search, no recent videos to use.
+- **Nearby sea and weather values:** I got new Open-Meteo readings for 観音崎沖 on 11/21 and reused the 市川沖 readings from an earlier run.
+
+**Checks:** the file still loads correctly in node (4,734 records), with no duplicate records. Every new record has a source URL and nearby readings, and the line endings are unchanged. `CATCH_LOG_META` is updated, and the notes for this run are added to `logs/2026-11-22.md`.
+
+**You need to:** delete the 8 leftover HTML files in `釣り/` from the 11/13 incident: `hit.html`, `ishiguro.html`, `kameya.html`, `nakane.html`, `ssm.html`, `sunny.html`, `super.html`, `tomiura.html`. The collection rules don't let the automatic run delete files, so they are still there.
+
+`run-collect.ps1` rebuilds the single-file HTML after this run. The phone page (the claude.ai Artifact) still has to be updated separately, as described in the README.
+
+Sources (YouTube search, nothing usable): [yutura.net video](https://yutura.net/channel/37296/video/C4rwO42njOc/), [yutura.net channel](https://yutura.net/channel/11003/latest/), [tsurihack 9095](https://tsurihack.com/9095), [tsurihack 9050](https://tsurihack.com/9050), [tsurihack 10335](https://tsurihack.com/10335), [tsurihack 7869](https://tsurihack.com/7869), [tsurihack 8675](https://tsurihack.com/8675), [iko-yo](https://iko-yo.net/events/483358), [TV Tokyo](https://www.tv-tokyo.co.jp/broad_tvtokyo/program/detail/202508/13037_202508231730.html)
+build-single: source = 釣果ログ.html
+build-single: all-in-one 2908779 chars / docs/index.html 2908779 / dist/artifact.html 2908620
+=== 2026-11-22 06:02 end (claude exit 0) ===
