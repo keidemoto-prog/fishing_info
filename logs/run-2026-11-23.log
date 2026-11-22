@@ -1,0 +1,30 @@
+﻿
+=== 2026-11-23 00:00 start ===
+auth: long-lived-token
+I followed every step in `収集手順.md` (steps 1–9) for the 2026-11-23 0:00 run.
+
+**What was added:** 34 new catch records in `data/catch-log.js`, all from 11/22 (大潮).
+- 東京湾: 17 (湾奥 9, 湾口三浦 6, 房総 2)
+- 相模湾: 13
+- 駿河湾: 4
+
+**Where they came from:**
+- 33 are from chowari posts made after the last run, e.g. 吉野屋's タチウオ, サワラ and アジ boats, カワハギ from 鴨居 and 松輪, アマダイ from 葉山, 茅ヶ崎 and 平塚, アオリイカ from 洲崎, 長井 and 熱海, and シロアマダイ from 焼津.
+- 1 is 石田丸's four 11/22 posts, combined into one record.
+- The other shop blogs (かめや, イシグロ, 中根ボート, etc.) and the YouTube search had nothing new.
+- I left out boats that only caught fish not on the target list (ヤリイカ, フグ, オニカサゴ) and posts from outside the three bays.
+
+**Other steps:**
+- **Date range:** It's Monday, but this is the 0:00 run, not the morning one, so I used the normal two-day range (11/22–11/23). The 6:00 run can pick up the weekend catch-up.
+- **Sea and weather data:** Where a post had no water temperature or weather, I filled the nearby readings from Open-Meteo. Eight spots needed new readings; the rest reuse the 11/22 readings from the last run.
+- **Summary note:** `CATCH_LOG_META` now shows `2026-11-23 00:00` and a one-line summary of what was added.
+- **Run log:** URLs checked, what was left out and why, and how I matched fish names (e.g. イナワラ counted as ワラサ, as before) are in `logs/2026-11-23.md`.
+- **Check:** The file loads as valid JavaScript (4,836 records). No IDs repeat, and none of the new records duplicates an existing date + spot + fish. All working files went in a temp folder, not `釣り/`.
+- **Phone page:** As the instructions say, `run-collect.ps1` rebuilds the single-file HTML pages after this; I didn't try to update the phone page.
+
+**Needs your action:** There are 8 leftover files in `釣り/` from a mistake on 11/13: `hit.html`, `ishiguro.html`, `kameya.html`, `nakane.html`, `ssm.html`, `sunny.html`, `super.html` and `tomiura.html`. The instructions only let me edit the data file and logs, so I didn't delete them. Please delete them by hand; they caused a similar breakage before.
+
+Sources: [chowari 釣果](https://www.chowari.jp/catch/), [石田丸](https://www.ishidamaru.com/?post_type=fishing&paged=1), [Open-Meteo](https://open-meteo.com/)
+build-single: source = 釣果ログ.html
+build-single: all-in-one 2972039 chars / docs/index.html 2972039 / dist/artifact.html 2971880
+=== 2026-11-23 00:06 end (claude exit 0) ===
