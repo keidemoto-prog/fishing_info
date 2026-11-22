@@ -28,3 +28,29 @@ Sources: [chowari 釣果](https://www.chowari.jp/catch/), [石田丸](https://ww
 build-single: source = 釣果ログ.html
 build-single: all-in-one 2972039 chars / docs/index.html 2972039 / dist/artifact.html 2971880
 === 2026-11-23 00:06 end (claude exit 0) ===
+git: push exit 0, unpushed commits: 0
+
+=== 2026-11-23 06:00 start ===
+auth: long-lived-token
+I did all 9 steps in `収集手順.md` for the Monday 6:00 run. It added **14 catch records** to `data/catch-log.js`, all from 11/22 (大潮).
+
+| Area | Count | What |
+|---|---|---|
+| 東京湾・湾奥 | 7 | えさ政 (タチウオ & アジ, カワハギ), 小林丸 (シロギス), 忠彦丸 (ライトアジ, カワハギ, ウィリー), PALLAS (シーバス, 大黒運河) |
+| 東京湾・湾口三浦 | 3 | 棒面丸 (カワハギ), 岩伊丸 (ショゴ), HIT三浦海岸 (3 posts made into 1 record: ショゴ, イナダ, タチウオ 110cm, etc.) |
+| 相模湾 | 3 | 太一丸 and たいぞう丸 (アマダイ), 安菜丸 at 網代 (マダイ) |
+| 駿河湾 | 1 | 橋安丸 (焼津 タチウオ, up to 58 fish) |
+
+- **Date range:** Because it's the Monday morning run, the range was Fri 11/20 to Mon 11/23. Earlier runs had already added the 11/20 and 11/21 catches, so I only looked for posts since the 0:00 run. Nothing from 11/23 is posted yet.
+- **Sources:** chowari had 35 new posts; 17 were from the three bays and 13 had fish on the list. The left-out ones were boats that only caught フグ, キンメ or ムツ. The other shop blogs had nothing new except HIT三浦海岸, and the YouTube search found no recent videos.
+- **Sea and weather data:** I got new Open-Meteo readings for 金田湾. For 網代 the sea readings came from a point about 18 km offshore, so I used the existing 熱海沖 values instead. Everything else reuses the 11/22 values from the 0:00 run.
+- **Check:** The file still loads as valid JavaScript (4,850 records). No IDs repeat, and no new record duplicates an existing date + spot + fish.
+- **Summary and log:** The summary note now shows `2026-11-23 06:00`. URLs checked and the reasons for leaving posts out are in `logs/2026-11-23.md`.
+- **Phone page:** I didn't rebuild or republish anything; `run-collect.ps1` does that next.
+
+**Needs your action:** the 8 leftover files in `釣り/` (`hit.html`, `ishiguro.html`, `kameya.html`, `nakane.html`, `ssm.html`, `sunny.html`, `super.html`, `tomiura.html`) are still there from the 11/13 mistake. The instructions don't let me delete them, so please delete them by hand. I didn't create any new files in `釣り/`.
+
+Sources: [chowari 釣果](https://www.chowari.jp/catch/), [HIT三浦海岸](https://hitmiurakaigan.com/my-instagram-feed), [Open-Meteo](https://open-meteo.com/), YouTube search results (none recent), e.g. [youtube.com/watch?v=XSzFmnG4VyA](https://www.youtube.com/watch?v=XSzFmnG4VyA)
+build-single: source = 釣果ログ.html
+build-single: all-in-one 2981115 chars / docs/index.html 2981115 / dist/artifact.html 2980956
+=== 2026-11-23 06:03 end (claude exit 0) ===
