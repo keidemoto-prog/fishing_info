@@ -48,3 +48,35 @@ Sources (YouTube search, nothing usable): [yutura.net video](https://yutura.net/
 build-single: source = 釣果ログ.html
 build-single: all-in-one 2908779 chars / docs/index.html 2908779 / dist/artifact.html 2908620
 === 2026-11-22 06:02 end (claude exit 0) ===
+git: push exit 0, unpushed commits: 0
+
+=== 2026-11-22 12:00 start ===
+auth: long-lived-token
+I ran all 9 steps of `収集手順.md` for the 12:00 run (period 11/21–11/22) and added 28 records to `data/catch-log.js`.
+
+**Added:**
+
+| Area | Records | Where they came from |
+|---|---|---|
+| 東京湾 湾奥 | 21 | chowari: boats from 横浜 新山下・本牧, 金沢八景, 羽田, 寒川, 浦安, 鮫洲, 荒川 and others |
+| 東京湾口 三浦 | 3 | chowari: 山下丸 (久比里), 教至丸 (走水); 中根ボート blog: ギガアジ on 11/22 |
+| 相模湾 | 3 | chowari: 豊幸丸 (小田原), 浅八丸 (平塚); かめや平塚店: マゴチ 54cm at 平塚新港 |
+| 駿河湾 | 1 | chowari: 勝利丸 (大井川) アマダイ |
+
+- **chowari:** it had a large batch of 11/21 reports posted late. None of them were already in the file.
+- **かめや マゴチ:** the post gives only "11月" as the fishing date, so it is recorded as `2026-11` with no nearby readings, as the rules require.
+- **Skipped:** reports from outside the three bays (茨城, 外房, 和歌山 and others) and species not on the list (マダコ, フグ, ハゼ, スミイカ, キハダ).
+- **Other sources:** the rest of the boat and shop blogs had nothing new, and the YouTube search turned up no recent dated videos.
+
+**Nearby readings:** I got new Open-Meteo values for 横浜港沖, 浦安沖 and 久里浜沖 on 11/21, and for 観音崎〜走水沖 on 11/22. The other spots reuse 11/21 values from earlier runs.
+
+**Checks:** the file loads correctly in node (4,762 records), with no duplicate records and every new record having a source URL. `CATCH_LOG_META` is updated, and this run's notes are added to `logs/2026-11-22.md`.
+
+**You need to:** delete the 8 leftover HTML files in `釣り/` from the 11/13 incident: `hit.html`, `ishiguro.html`, `kameya.html`, `nakane.html`, `ssm.html`, `sunny.html`, `super.html`, `tomiura.html`. The collection rules don't let the automatic run delete files, so they are still there.
+
+`run-collect.ps1` rebuilds the single-file HTML after this run. The phone page (the claude.ai Artifact) still has to be updated separately, as described in the README.
+
+Sources (YouTube search, nothing usable): [東京湾奥イナダ](https://www.youtube.com/watch?v=BEypJJUHAKA), [東京湾奥ショアジギング](https://www.youtube.com/watch?v=kstkSEMLRuE), [東京湾のタチウオ](https://www.youtube.com/watch?v=Ok0AyLCWLqY)
+build-single: source = 釣果ログ.html
+build-single: all-in-one 2925838 chars / docs/index.html 2925838 / dist/artifact.html 2925679
+=== 2026-11-22 12:05 end (claude exit 0) ===
