@@ -80,3 +80,34 @@ Sources (YouTube search, nothing usable): [東京湾奥イナダ](https://www.yo
 build-single: source = 釣果ログ.html
 build-single: all-in-one 2925838 chars / docs/index.html 2925838 / dist/artifact.html 2925679
 === 2026-11-22 12:05 end (claude exit 0) ===
+git: push exit 0, unpushed commits: 0
+
+=== 2026-11-22 18:00 start ===
+auth: long-lived-token
+I ran the 18:00 collection run from `収集手順.md`, steps 1 through 9.
+
+**What was added:** 40 new records in `data/catch-log.js`, all fishing trips on 2026-11-22. That's 26 in Tokyo Bay (10 inner bay, 15 on the Miura side of the bay mouth, 1 on the Boso side), 12 in Sagami Bay and 2 in Suruga Bay.
+- 39 came from new chowari posts. The main ones were ワラサ and デカアジ at Matsuwa, カワハギ around Koshigoe, Kataase and Nagai, アマダイ at Hiratsuka and Odawara, and LTアジ in the inner bay.
+- 1 came from Kameya's Shimizu store: 15 タチウオ caught inside Shimizu port.
+
+**What was checked and skipped:**
+- About 50 other new chowari posts were either outside the three bays (outer Boso, Ibaraki, Wakayama and others) or only had fish not on the target list (キハダ, ヤリイカ, タコ, ハゼ, イサキ).
+- Ishiguro's three new posts were all from outside the area.
+- The other shop and boat blogs had nothing new.
+- A YouTube search found no recent videos that fit.
+
+**How I recorded them:**
+- Weather and water temperature come from each chowari post. For each one I also added nearby sea and weather readings for 11/22 from Open-Meteo.
+- When one boat posted the same catch twice in a day (黒一丸's カワハギ and 金重丸's SLJ), I combined it into one record so the same date, spot and fish don't appear twice.
+
+**Checks (step 8):** the file loads as valid JavaScript with 4,802 records. There are no duplicate IDs and no duplicate date/spot/fish entries, every new fish is on the target list, and every new record has a source URL. `lastUpdated` and the run note are updated. The run notes, including the URLs I looked at, were added to the end of `logs/2026-11-22.md`.
+
+I created no new files in `釣り/`. The working copies are in a temporary folder (`%TEMP%/t1122d/`).
+
+**Needs your action:** eight leftover files from the 11/13 mishap are still sitting in `釣り/` (`hit.html`, `ishiguro.html`, `kameya.html`, `nakane.html`, `ssm.html`, `sunny.html`, `super.html`, `tomiura.html`). The instructions only let me edit `data/catch-log.js` and `logs/`, so I didn't delete them. Please delete them yourself.
+
+YouTube search used:
+- [東京湾・相模湾の沖釣りのススメ - YouTube](https://www.youtube.com/channel/UCt8IlqIiU11LM0_3lH1Dp8Q)
+build-single: source = 釣果ログ.html
+build-single: all-in-one 2950760 chars / docs/index.html 2950760 / dist/artifact.html 2950601
+=== 2026-11-22 18:06 end (claude exit 0) ===
