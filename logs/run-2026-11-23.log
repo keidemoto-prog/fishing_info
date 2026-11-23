@@ -82,3 +82,39 @@ Sources: [chowari 釣果](https://www.chowari.jp/catch/), [かめや 546509](htt
 build-single: source = 釣果ログ.html
 build-single: all-in-one 3000068 chars / docs/index.html 3000068 / dist/artifact.html 2999909
 === 2026-11-23 12:06 end (claude exit 0) ===
+git: push exit 0, unpushed commits: 0
+
+=== 2026-11-23 18:00 start ===
+auth: long-lived-token
+`収集手順.md` の手順1〜9をすべて実行し、2026-11-23 18:00回の収集が終わりました。
+
+**結果：40件を追加しました**（東京湾25件＝湾奥11・湾口三浦11・房総3／相模湾14件／駿河湾1件）
+- **釣割の新着から35件。** 釣行日はすべて11/23（大潮）です。主なもの：
+  - 松輪・勝山のワラサ（最大7.2kg）
+  - 平塚・腰越・片瀬・小田原・金田のアマダイ
+  - 上総湊・長井荒崎・洲崎・片瀬のカワハギ
+  - 深川 吉野屋のタチウオ107cmとサワラ86cm
+  - 千葉 TARGET のシーバス78cmとブリ90cm
+- **SSM浦賀から5件。** 11/23のカワハギ、11/22の中ノ瀬のサワラ10匹など、過去の回で拾えていなかった11/16の1件も含みます。
+- **その他の店・船宿のブログは新着なし。** 浜千鳥・イシグロには新しい記事がありましたが、対象外の魚種かエリア外でした。YouTube にも直近の該当動画はありませんでした。
+- **記録しなかったもの：** ヤリイカ・スルメイカ・タコ・キンメだけの便、外房・下田の便です。
+
+**確認したこと**
+- `data/catch-log.js` が JavaScript として正しく読めることを確認しました（全4921件）。
+- 記録の重複なし、対象外の魚種なし、出典URLの欠けなしです。
+- 追記の途中で、新しく足した行の改行コードが崩れていたので直しました。崩れた改行の数は、追記前から元々あった分と同じに戻っています。
+- 見たURL・判断の理由・近隣の海況値は `logs/2026-11-23.md` の「18:00回」に書きました。
+- `釣り/` フォルダに新しいファイルは作っていません。作業用のファイルはパソコンの一時フォルダに置きました。
+
+**お願い（手作業が必要です）**
+`釣り/` フォルダの直下に、11/13 の事故で残ったファイルが8つあります（`hit.html`・`ishiguro.html`・`kameya.html`・`nakane.html`・`ssm.html`・`sunny.html`・`super.html`・`tomiura.html`）。手順の決まりで AI は消さないため、エクスプローラーで開いて手で削除してください。
+
+一体型の表示ページの作り直しとコミットは、手順どおり `run-collect.ps1` がこの後に自動で行います。
+
+Sources:
+- [YouTube 検索結果（相模湾 落し込みサビキ ほか、直近の該当なし）](https://www.youtube.com/watch?v=HnfnMK1JZBE)
+- [【東京湾】良型爆釣！東京湾のタチウオ](https://www.youtube.com/watch?v=Ok0AyLCWLqY)
+- [【神奈川県某所】新ウキ釣り装備で秋の人気魚連発！？](https://www.youtube.com/watch?v=XSzFmnG4VyA)
+build-single: source = 釣果ログ.html
+build-single: all-in-one 3025032 chars / docs/index.html 3025032 / dist/artifact.html 3024873
+=== 2026-11-23 18:06 end (claude exit 0) ===
