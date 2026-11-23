@@ -17,3 +17,32 @@ auth: long-lived-token
 build-single: source = 釣果ログ.html
 build-single: all-in-one 3058575 chars / docs/index.html 3058575 / dist/artifact.html 3058416
 === 2026-11-24 00:07 end (claude exit 0) ===
+git: push exit 0, unpushed commits: 0
+
+=== 2026-11-24 06:00 start ===
+auth: long-lived-token
+I ran steps 1–9 of `収集手順.md` for the 6:00 run on 2026-11-24 and added **16 catches** (Tokyo Bay 7, Sagami Bay 8, Suruga Bay 1). All of them are from 11/23. No 11/24 catches have been posted yet, and many boats posted that they cancelled today's trips because of rough seas.
+
+- **釣割 (chowari):** 34 new posts since the last run. 15 of them were in the target area with target fish. Highlights:
+  - 五エム丸 (Hayama): 28 squid on the tip-run boat, and a tilefish up to 46 cm on the light-tackle tilefish boat.
+  - 和彦丸: up to 95 horse mackerel on the short light-tackle trip.
+  - 橋安丸 (Yaizu): up to 87 hairtail on the overnight trip.
+  - Also added: 忠彦丸, ゆうせい丸, たいぞう丸, さい丸, 二階屋丸, 豊漁丸, 棒面丸 and PALLAS.
+- **Shop and boat blogs:** HIT三浦海岸 had five new posts from 11/23, which I combined into one record, as earlier runs did. The best fish were yellowtail of 66 and 70 cm and a 48 cm sea bream. A sixth new post had no readable text, so I left it out. The other 10 sites had nothing new.
+- **YouTube:** one search found no recent videos that fit.
+- **Not recorded:**
+  - Fish not on the target list: pufferfish, yellowfin tuna, rosy seabass and squid.
+  - Places outside the target area: 外房, 銚子 and 浜松.
+
+**Checks:** `data/catch-log.js` loads correctly as JavaScript (4,975 → 4,991 records). There are no duplicate IDs, every record has a source URL, and every fish is on the target list. On the first insert, two records ended up joined on one line and the combined HIT record didn't get in. I restored the backup and inserted again, and all 16 went in. Notes for this run are in `logs/2026-11-24.md`. As the procedure says, `run-collect.ps1` rebuilds the single-file HTML after this.
+
+**Request:** The eight leftover files from the 11/13 incident are still in the top of the `釣り/` folder: `hit.html`, `ishiguro.html`, `kameya.html`, `nakane.html`, `ssm.html`, `sunny.html`, `super.html` and `tomiura.html`. The procedure doesn't let me delete them, so please delete them yourself when you have time.
+
+Sources:
+- [yutura.net](https://yutura.net/channel/37296/video/C4rwO42njOc/)
+- [tsurihack.com/9095](https://tsurihack.com/9095)
+- [tsurihack.com/9050](https://tsurihack.com/9050)
+- [chibanippo 釣果](https://www.chibanippo.co.jp/fishing/chouka?page=1)
+build-single: source = 釣果ログ.html
+build-single: all-in-one 3068686 chars / docs/index.html 3068686 / dist/artifact.html 3068527
+=== 2026-11-24 06:04 end (claude exit 0) ===
