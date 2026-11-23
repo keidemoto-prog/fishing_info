@@ -54,3 +54,31 @@ Sources: [chowari 釣果](https://www.chowari.jp/catch/), [HIT三浦海岸](http
 build-single: source = 釣果ログ.html
 build-single: all-in-one 2981115 chars / docs/index.html 2981115 / dist/artifact.html 2980956
 === 2026-11-23 06:03 end (claude exit 0) ===
+git: push exit 0, unpushed commits: 0
+
+=== 2026-11-23 12:00 start ===
+auth: long-lived-token
+I finished all 9 steps in `収集手順.md` for the 12:00 run and added **31 new catch records** to `data/catch-log.js`.
+
+| Area | Count | Examples |
+|---|---|---|
+| 東京湾・湾奥 | 12 | 黒一丸 アジ (11/23), 黒川本家 and 広島屋 アジ, 広島屋 シロギス, 守山丸 サワラ (up to 83 cm), ミナミ釣船 and 船宿いわた タチウオ, PLAYFUL シーバス |
+| 東京湾・湾口三浦 | 6 | 平作丸 タチウオ (up to 129 cm), 山下丸 カワハギ (up to 36 fish), 丸又丸 and 佐助丸 ワラサ |
+| 東京湾・房総 | 2 | 佐衛美丸 アオリイカ, 松大丸 ソウダガツオ |
+| 相模湾 | 8 | ちがさき丸 タイ五目, アマダイ and LT五目; 丸十丸 カワハギ; 腰越 アマダイ and マダイ; かめや 宇佐美港 カマス (11/23) |
+| 駿河湾 | 3 | ふじ丸 (戸田) アオリイカ and アジ, かめや 沼津 ワラサ 70 cm |
+
+- **Date range:** It's Monday, but this is the 12:00 run, not the morning run, so I only looked at 11/22–11/23. Two of the catches are from 11/23; the rest are from 11/22.
+- **Sources:** chowari had 85 new posts. 34 were from the three bays, and 29 of those had fish on the list. The ones I left out only caught ヤリイカ, キンメ, ムツ or キハダ. Of the shop blogs, only かめや had anything new (2 posts), and the YouTube search found no recent videos.
+- **One area choice to check:** 白間津 (松大丸) hasn't come up before. I put it in 房総 (`wanko-boso`) to match the nearby port 乙浜. One かめや post has a typo in its fishing date (`22026/11/23`), so I used 11/23 from the post date and title.
+- **Sea and weather data:** I got new Open-Meteo readings for 7 spots (戸田, 千葉港, 白間津, 小網代 and 沼津 for 11/22; 金沢 and 宇佐美 for 11/23). Everything else reuses the 11/22 values from the earlier runs today. The 11/23 readings are for today, so they still include forecast values.
+- **Check:** The file still loads as valid JavaScript (4,881 records). No IDs repeat, no new record duplicates an existing date + spot + fish, every fish is on the list, and every record has a source link.
+- **Summary and log:** The summary note now shows `2026-11-23 12:00`. URLs checked and the reasons for leaving posts out are in `logs/2026-11-23.md`.
+- **Phone page:** `run-collect.ps1` rebuilds the pages next, so I didn't do that here.
+
+**Needs your action:** the 8 leftover files in `釣り/` (`hit.html`, `ishiguro.html`, `kameya.html`, `nakane.html`, `ssm.html`, `sunny.html`, `super.html`, `tomiura.html`) are still there from the 11/13 mistake. The instructions don't let me delete them, so please delete them by hand. I didn't create any new files in `釣り/`.
+
+Sources: [chowari 釣果](https://www.chowari.jp/catch/), [かめや 546509](https://kameya-choka.com/kanto-tokai/archives/f-info/546509), [かめや 546516](https://kameya-choka.com/kanto-tokai/archives/f-info/546516), [Open-Meteo](https://open-meteo.com/). The YouTube search found nothing recent; it returned these, none of them relevant: [yutura.net](https://yutura.net/channel/37296/video/C4rwO42njOc/), [tsurihack 9095](https://tsurihack.com/9095), [tsurihack 9050](https://tsurihack.com/9050), [shimano](https://fish.shimano.com/ja-JP/content/fishingstyle/article/fune_tanken/index.html), [shimano profile](https://fish.shimano.com/ja-JP/content/fishingstyle/article/fune_tanken/profile.html), [nikkan-gendai](https://www.nikkan-gendai.com/articles/view/life/378745/2), [iko-yo](https://iko-yo.net/events/483358), [chibanippo](https://www.chibanippo.co.jp/fishing/chouka?page=1), [terukosan](https://terukosan.com/?p=20261008113081259)
+build-single: source = 釣果ログ.html
+build-single: all-in-one 3000068 chars / docs/index.html 3000068 / dist/artifact.html 2999909
+=== 2026-11-23 12:06 end (claude exit 0) ===
