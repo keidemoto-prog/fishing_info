@@ -1,0 +1,24 @@
+﻿
+=== 2026-11-25 00:00 start ===
+auth: long-lived-token
+The 0:00 run for 11/25 is finished. I followed all 9 steps in `収集手順.md` (the fishing-catch collection routine), and 17 new catch records are in `data/catch-log.js`.
+
+**Added: 17 records** (Tokyo Bay 9, Sagami Bay 7, Suruga Bay 1)
+- 16 are trips on 11/23. The only 11/24 trip is 藤八丸's squid boat, because most boats cancelled 11/24 for rough seas.
+- Notable catches: SEAKURO seabass up to 80cm, プレアデス about 52 seabass hits in one morning, 浜田丸 (乙浜) yellowtail 6.5kg and grouper 2kg, 愛正丸 (葉山) ワラサ 3–7kg, さわ浦 Spanish mackerel 3.8kg.
+- **Rejected:** 9 catches outside the target areas (outer Boso, south Izu, 遠州灘, 浜名湖) and one boat that caught only スミイカ, which isn't on the species list.
+
+**Sources checked:** chowari pages 1–16 had 42 posts not seen in earlier runs, 26 of them in the target prefectures. The new store-blog posts were a sale notice, a メジナ report (not a target fish) and a 遠州 surf report (outside the area). The other blogs had nothing new. One YouTube search found no recent videos; all results were older ([example 1](https://www.youtube.com/watch?v=kstkSEMLRuE), [example 2](https://www.youtube.com/watch?v=i3zMe8QEB00)).
+
+**Judgement calls:**
+- **愛正丸:** chowari lists the trip as 11/24, but the post says the boat stayed in port that day and describes 11/23. I recorded it as 11/23 and left out chowari's weather, which was for the wrong day.
+- **Two boats in one post:** 政美丸 ran two boats with different methods, so I made them two records.
+
+**Checks:** the file loads as valid JavaScript with 5062 records (5045 + 17). There are no duplicate IDs or duplicate date + spot + species entries, and every record has a source URL. The run is written up in `logs/2026-11-25.md`, the only file I created in `釣り/`. During the run, a text fix with `sed` changed every line ending in the file. I restored the backup and redid the insert, so the final diff is just the 18 added lines and the 2 updated summary lines.
+
+**Needs your attention:** 8 stray `.html` files from the 11/13 accident are still in `釣り/` (hit, ishiguro, kameya, nakane, ssm, sunny, super, tomiura). The routine doesn't allow me to delete them, so please remove them by hand.
+
+As step 9 says, the all-in-one HTML rebuild happens automatically after this run, and the phone page has to be updated separately.
+build-single: source = 釣果ログ.html
+build-single: all-in-one 3112804 chars / docs/index.html 3112804 / dist/artifact.html 3112645
+=== 2026-11-25 00:04 end (claude exit 0) ===
