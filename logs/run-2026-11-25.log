@@ -22,3 +22,44 @@ As step 9 says, the all-in-one HTML rebuild happens automatically after this run
 build-single: source = 釣果ログ.html
 build-single: all-in-one 3112804 chars / docs/index.html 3112804 / dist/artifact.html 3112645
 === 2026-11-25 00:04 end (claude exit 0) ===
+git: push exit 0, unpushed commits: 0
+
+=== 2026-11-25 06:00 start ===
+auth: long-lived-token
+6:00の回の釣果収集が終わり、`data/catch-log.js` に **6件** 追加しました（全部で5062件 → 5068件）。
+
+**追加した釣果**
+- **東京湾奥（2件）**: 忠彦丸（金沢）の11/24ライトアジ、PALLAS（大黒運河）の11/24シーバス。どちらも数の記載はありません。
+- **東京湾 房総（1件）**: 東丸（保田）の11/23マダイ、最大1.5kg。
+- **相模湾（2件）**: 海真丸（小田原）の11/23コマセ五目（イナダ・アジ・サバ・イワシ）、二階屋丸（宇佐美）の11/24アオリイカ 0〜1杯。
+- **駿河湾（1件）**: 橋安丸（焼津）の11/24朝帰りタチウオ、ジギングで49〜64本。
+
+11/24は時化（海の荒れ）明けで、釣果がまた出始めています。
+
+**見送ったもの**
+- 富士丸（大原）は外房なので対象外です。
+- HIT三浦海岸のInstagram新投稿1件は、本文が読めず釣果が分からないため採用していません（前にも同じ扱いをしています）。
+- イシグロの新着は浜名湖の記事で、対象エリア外です。
+- ほかの店ブログに新着はなく、YouTubeにも最近の該当動画はありませんでした。
+
+**確認したこと**
+- 追記後のファイルはJavaScriptとして正しく読めます。IDの重複も、既存の釣果との重複もありません。
+- 記事に水温・天気・風・波の記載がない分は、近くの観測値（Open-Meteo）で埋めました。11/24分は当日の値なので予報値を含みます。
+- 見たURLや判断の理由は `logs/2026-11-25.md` に追記しました。
+- 一時ファイルはすべてPCの一時フォルダに置き、`釣り/` フォルダには新しいファイルを作っていません。
+- スマホ用ページの作り直しは、このあと `run-collect.ps1` が自動で行います。
+
+**お願い（手作業での削除）**
+`釣り/` フォルダの直下に、11/13の事故で残ったファイルが今もあります。
+
+`hit.html` / `ishiguro.html` / `kameya.html` / `nakane.html` / `ssm.html` / `sunny.html` / `super.html` / `tomiura.html`
+
+手順上、私は消さないことにしています。エクスプローラーでこのフォルダを開き、この8つを選んで削除してください。スマホ用ページが壊れる原因になったのと同じ種類のファイルです。
+
+Sources:
+- [yutura.net](https://yutura.net/channel/37296/video/C4rwO42njOc/)
+- [fish.shimano.com](https://fish.shimano.com/ja-JP/content/fishingstyle/article/fune_tanken/index.html)
+- [chibanippo.co.jp](https://www.chibanippo.co.jp/fishing/chouka?page=1)
+build-single: source = 釣果ログ.html
+build-single: all-in-one 3116526 chars / docs/index.html 3116526 / dist/artifact.html 3116367
+=== 2026-11-25 06:03 end (claude exit 0) ===
