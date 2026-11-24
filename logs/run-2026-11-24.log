@@ -46,3 +46,35 @@ Sources:
 build-single: source = 釣果ログ.html
 build-single: all-in-one 3068686 chars / docs/index.html 3068686 / dist/artifact.html 3068527
 === 2026-11-24 06:04 end (claude exit 0) ===
+git: push exit 0, unpushed commits: 0
+
+=== 2026-11-24 12:00 start ===
+auth: long-lived-token
+I went through all 9 steps in `収集手順.md` for today's 12:00 run and added **33 new catch records** to `data/catch-log.js` (34 were found; one was a duplicate). All 33 are from 11/23, a 大潮 day.
+
+| Area | Added | Main sources |
+|---|---|---|
+| 東京湾 (inner bay) | 14 | かめだや, えさ政, ゴーゴーガイド (ブリ 90cm), 小峯丸 (サワラ), 新明丸, ミナミ釣船, つり滝, 釣り船小林 |
+| 東京湾 (Miura side of the mouth) | 5 | 山下丸, 教至丸, かめや釣具 (横須賀海釣り公園 タチウオ) |
+| 東京湾 (Boso side of the mouth) | 1 | 豊国丸 (マダイ 2.75kg) |
+| 相模湾 | 12 | まごうの丸, ちがさき丸, 孝太郎丸, 飯岡丸, 秋田屋, 浅八丸, 光義丸 |
+| 駿河湾 | 1 | ふじ丸 (戸田) |
+
+- **Checks:** the file still loads as valid JavaScript (5024 records). There are no duplicate IDs, every fish is on the target list, and every record has a source URL. I updated the "last updated" time and note (`CATCH_LOG_META`), and added the URLs I checked plus my reasoning to `logs/2026-11-24.md`.
+- **Left out:**
+  - A かめや post about アオリイカ off a 西湘 breakwater (November, no exact date) matched an existing record on date, place and fish, so I skipped it as the rules say.
+  - Outer Boso (外房) and 飯岡 reports are outside the target areas.
+  - フグ, スミイカ, ヤリイカ and キハダ aren't on the fish list.
+- **No new posts:** the other shop blogs had nothing new since the 6:00 run, and the YouTube search found no recent catch videos.
+- **Weather and sea data:** I pulled two new points from Open-Meteo (茅ヶ崎沖 and 戸田沖) and reused values already in the file for the other spots.
+- **Not done here:** rebuilding the single-file HTML is left to `run-collect.ps1` (step 9), and the phone page (Artifact) can't be updated from this automatic run. I didn't commit anything.
+
+**One thing needs you:** eight leftover HTML files from the 11/13 accident (`hit.html`, `ishiguro.html`, `kameya.html`, `nakane.html`, `ssm.html`, `sunny.html`, `super.html`, `tomiura.html`) are still in the top of the `釣り` folder. The rules don't let me delete them, so please delete them yourself in Explorer. In the past a stray file like this broke the phone page.
+
+YouTube search results checked:
+- [東京湾・相模湾の沖釣りのススメ](https://www.youtube.com/channel/UCt8IlqIiU11LM0_3lH1Dp8Q)
+- [【東京湾】良型爆釣！東京湾のタチウオ](https://www.youtube.com/watch?v=Ok0AyLCWLqY)
+- [【東京湾ナブラ】そこへ投げると魚は逃げる](https://www.youtube.com/watch?v=Ajni-M-Elaw)
+build-single: source = 釣果ログ.html
+build-single: all-in-one 3088966 chars / docs/index.html 3088966 / dist/artifact.html 3088807
+=== 2026-11-24 12:04 end (claude exit 0) ===
