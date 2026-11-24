@@ -78,3 +78,45 @@ YouTube search results checked:
 build-single: source = 釣果ログ.html
 build-single: all-in-one 3088966 chars / docs/index.html 3088966 / dist/artifact.html 3088807
 === 2026-11-24 12:04 end (claude exit 0) ===
+git: push exit 0, unpushed commits: 0
+
+=== 2026-11-24 18:00 start ===
+auth: long-lived-token
+`収集手順.md` の手順1〜9を最後まで実行しました（11/24 18:00回）。今回は **21件** を追加しています。
+
+**追加した内訳**
+- **東京湾 18件**
+  - 湾奥 8件：SEAKURO のシーバス最大78cm、船宿いわたのLTアジ 32〜99匹、守山丸のサワラなど
+  - 湾口三浦 7件：巳之助丸のカワハギ（最大32.5cm・1〜28枚）、平作丸、太郎八丸のアオリイカなど
+  - 房総 3件：安田丸、佐衛美丸のカンパチ、福丸のカワハギ
+- **相模湾 2件**：藤八丸のイナダ・アオリイカ、富八丸のワラサ 5.8kg
+- **駿河湾 1件**：伊勝丸（江の浦）のタチウオ 2〜20本
+
+釣行日は 11/23（大潮）が20件です。11/24 の分は平作丸のカワハギ1件だけで、その日は時化の予報だった船が多くありました。
+
+**調べた情報源**
+- **新着が見つかったところ**：釣果は全件、釣割（chowari）の新着から取りました。
+- **新着がなかったところ**：ほかの船宿・釣具店のブログ類には新着がありませんでした。かめや釣具の新着2件は、愛知の福袋の告知と伊勢湾の釣果で、どちらも対象外です。
+- **YouTube**：検索しましたが、直近の該当動画は見つかりませんでした。
+
+**取り込まなかったもの**
+- **対象外の魚種**：長井のヤリイカ、網代のクロムツ・メダイ
+- **対象外のエリア**：大原・勝浦・鴨川（外房）、飯岡、御前崎
+
+**確認したこと**
+- `data/catch-log.js` が正しいJavaScriptとして読み込めることを確認しました（合計5045件、IDの重複なし）。
+- 新しい21件は、既存の記録と重複していません。
+- 記事に水温などが無い記録には、近くの観測値（Open-Meteo）を入れました。11/24 の鴨居沖の値は当日分なので、予報値を含みます。
+- 作業記録は `logs/2026-11-24.md` に追記しました。
+- 一覧ページ（単体HTML）の作り直しは、この後に自動処理の `run-collect.ps1` が行います。
+
+**手で削除していただきたいもの**
+`釣り/` フォルダの直下に、11/13 の事故で残ったファイルが8つあります（hit / ishiguro / kameya / nakane / ssm / sunny / super / tomiura の `.html`）。手順で私は消さないことになっているので、手で削除してください。
+
+Sources:
+- [yutura.net](https://yutura.net/channel/37296/video/C4rwO42njOc/)
+- [tsurihack.com/9095](https://tsurihack.com/9095)
+- [千葉日報 釣果](https://www.chibanippo.co.jp/fishing/chouka?page=1)
+build-single: source = 釣果ログ.html
+build-single: all-in-one 3101822 chars / docs/index.html 3101822 / dist/artifact.html 3101663
+=== 2026-11-24 18:03 end (claude exit 0) ===
