@@ -116,3 +116,35 @@ YouTube の検索結果（直近の該当動画はなし）：
 build-single: source = 釣果ログ.html
 build-single: all-in-one 3121926 chars / docs/index.html 3121926 / dist/artifact.html 3121767
 === 2026-11-25 12:03 end (claude exit 0) ===
+git: push exit 0, unpushed commits: 0
+
+=== 2026-11-25 18:00 start ===
+auth: long-lived-token
+`収集手順.md` の手順1〜9を最後まで実行しました。これは 2026-11-25 の18:00回（通常期間 11/24〜11/25）です。
+
+**結果: 32件追加**（東京湾16＝湾奥4・三浦9・房総3、相模湾16、駿河湾0）。32件はすべて釣割（chowari）の記事からで、うち31件が11/25の釣行です。
+- 松輪のワラサ（成銀丸 トップ10本、新徳丸 9本）
+- 勝山 利八丸の泳がせワラサ（最大7.8kg）
+- 真鶴 誠いち丸のマダイ（最大6kg）
+- 平塚 庄治郎丸の3便（イナダ五目・タチウオ・アマダイ）
+- 江戸川放水路 林遊船のサワラ
+- 松輪・上総湊・片瀬・腰越のカワハギ など
+
+**調べた範囲**
+- 釣割の新着は61件で、神奈川・東京・千葉・静岡の記事は42件ありました。採用しなかった10件は、対象外の魚（ハゼ・ヤリイカ・メダイなど）か、対象エリア外（勝浦・御宿・大原・鴨川・飯岡）です。
+- 店のブログ10か所とYouTubeには、新しい釣果はありませんでした。イシグロの新しい記事はヘラブナ（淡水）だったので対象外です。
+
+**確認したこと**
+- 記事に水温などが無い分は、手順どおり Open-Meteo から近くの観測値を取りました。11/25 の値は当日分なので予報値を含みます。
+- `data/catch-log.js` は正しいJavaScriptとして読めます（5077件→5109件）。重複も出典URLの抜けもありませんでした。
+- 作業記録は `logs/2026-11-25.md` に18:00回の分として書き足しました。
+- スマホ用の単体HTMLは、手順どおりこの後 `run-collect.ps1` が自動で作り直します。
+
+**手で消していただきたいもの**
+`釣り/` フォルダの直下に、11/13 の事故で残ったファイルが8つあります: `hit.html`, `ishiguro.html`, `kameya.html`, `nakane.html`, `ssm.html`, `sunny.html`, `super.html`, `tomiura.html`。
+手順書でこのフォルダのファイルを変えてよいのは決められたものだけなので、私は消していません。エクスプローラーでこの8つを選んで削除してください。
+
+YouTube の検索結果（11月の該当動画はなし）: [東京湾奥イナダ](https://www.youtube.com/watch?v=BEypJJUHAKA)、[相模湾 落し込みサビキ](https://www.youtube.com/watch?v=HnfnMK1JZBE)、[東京湾タチウオ](https://www.youtube.com/watch?v=Ok0AyLCWLqY)、[東京湾側 電気ウキ（2026年9〜10月）](https://www.youtube.com/watch?v=XSzFmnG4VyA)
+build-single: source = 釣果ログ.html
+build-single: all-in-one 3142349 chars / docs/index.html 3142349 / dist/artifact.html 3142190
+=== 2026-11-25 18:03 end (claude exit 0) ===
