@@ -30,3 +30,31 @@ auth: long-lived-token
 build-single: source = 釣果ログ.html
 build-single: all-in-one 3155826 chars / docs/index.html 3155826 / dist/artifact.html 3155667
 === 2026-11-26 00:03 end (claude exit 0) ===
+git: push exit 0, unpushed commits: 0
+
+=== 2026-11-26 06:00 start ===
+auth: long-lived-token
+I ran the 6:00 collection for 2026-11-26 (steps 1–9 of `収集手順.md`) and added **7 new catches**: 4 in 東京湾, 3 in 相模湾, none in 駿河湾. All were caught on 11/25 (大潮); no catches from 11/26 have been posted yet.
+
+- **湾奥:** PALLAS (大黒運河), boat シーバス.
+- **三浦:** 五郎丸 (鴨居) — タチウオ 12〜50本, アジ 8〜28匹, カワハギ 0〜10.
+- **相模湾:** たいぞう丸 (葉山) アマダイ up to 50cm; まなぶ丸 (片瀬) アマダイ 49cm; 瀬戸丸 (熱海) アオリイカ just under 1kg ×4.
+
+**Sources checked:**
+- chowari pages 1–16: 9 new posts. I left out one because it was outside the area (天津, 外房).
+- The 10 shop blogs and store pages: nothing new. HIT's one new Instagram post had no readable text, so I skipped it, as earlier runs did.
+- One YouTube search: no recent videos for these areas.
+
+**Nearby weather (`nearby`):** I fetched new Open-Meteo values for 熱海沖 and 横浜港沖, and reused existing 11/25 values for the other spots.
+
+**Checks:** `data/catch-log.js` still loads as valid JavaScript, with 5137 records (5130 + 7). There are no duplicates, every species is on the target list, and every record has a source URL. On the first try the new lines got broken line endings; I restored the backup and redid the insert, so only the 7 records plus the update stamp changed. Notes are added to `logs/2026-11-26.md`. I created no new files in `釣り/`; temporary files are in `%TEMP%/t1126b/`.
+
+**One thing for you:** eight leftover files from the 11/13 accident are still in `釣り/`: `hit.html`, `ishiguro.html`, `kameya.html`, `nakane.html`, `ssm.html`, `sunny.html`, `super.html`, `tomiura.html`. The instructions don't let me delete them, so please remove them by hand. Leftover pages like these broke the phone page for 3 days back in September.
+
+Sources:
+- [chowari 釣果情報](https://www.chowari.jp/catch/)
+- [HIT三浦海岸 Instagram](https://www.instagram.com/p/DgKRCh-NH9l/)
+- YouTube search results (none recent): [example](https://www.youtube.com/watch?v=H4yBL1chf7I)
+build-single: source = 釣果ログ.html
+build-single: all-in-one 3160428 chars / docs/index.html 3160428 / dist/artifact.html 3160269
+=== 2026-11-26 06:02 end (claude exit 0) ===
