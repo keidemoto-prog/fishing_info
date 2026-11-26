@@ -1,0 +1,29 @@
+﻿
+=== 2026-11-27 00:00 start ===
+auth: long-lived-token
+I ran every step of `収集手順.md` for the 11/27 0:00 run. I added 13 new catch reports to `data/catch-log.js`, and the file still loads as valid JavaScript.
+
+- **Added:** 13 records, all from fishing trips on 11/26.
+  - Tokyo Bay: 5 (inner bay 1, Miura side 3, Boso side 1).
+  - Sagami Bay: 5.
+  - Suruga Bay: 3.
+  - Highlights:
+    - Uisomaru (Kuryo, Numazu): about 10 オオモンハタ across the boat.
+    - Setomaru (Atami): squid up to 1.3kg, 12 between 4 anglers.
+    - Fish On Daikatsu (Kazusa-Minato): タチウオ up to 110cm.
+    - Fusamaru (Kamoi): 12 マダイ across the boat.
+- **Sources:** all 13 came from 釣割 (chowari). The other shop and boat blogs had nothing new; the 3 new イシグロ posts are from Mie and Aichi, so they're outside the area. A YouTube search found no recent videos that fit.
+- **Left out:** 4 reports. One was ハゼ, which isn't on the species list. Three were from Ohara and Kominato, which are outside the area.
+- **Water temperature, weather, wind and waves:** none of the reports gave them, so each record uses nearby values from Open-Meteo for 11/26. Because that's the same day, some of these are forecasts rather than measurements.
+- **Updated:** the "last updated" time and run note (`lastUpdated` / `lastRunNote`) now read 2026-11-27 00:00. The run log is in `logs/2026-11-27.md`.
+- I didn't create any new files in `釣り/` apart from that log; working files are in a temp folder (`%TEMP%/t1127a/`).
+
+**One thing for you to do:** 8 stray pages (`hit.html`, `ishiguro.html`, `kameya.html`, `nakane.html`, `ssm.html`, `sunny.html`, `super.html`, `tomiura.html`) have been sitting directly in `釣り/` since 11/13. The instructions don't let me delete them, so please delete them yourself in Explorer. This kind of stray file broke the phone page once before.
+
+YouTube results checked:
+- [11月でもまだ釣れる！東京湾奥イナダ釣り！](https://www.youtube.com/watch?v=BEypJJUHAKA)
+- [【東京湾奥ショアジギング】１１月もイナダのチャンス継続中！！](https://www.youtube.com/watch?v=kstkSEMLRuE)
+- [【神奈川県某所】新ウキ釣り装備で秋の人気魚連発！？…【2026年9月～10月】](https://www.youtube.com/watch?v=XSzFmnG4VyA)
+build-single: source = 釣果ログ.html
+build-single: all-in-one 3200168 chars / docs/index.html 3200168 / dist/artifact.html 3200009
+=== 2026-11-27 00:03 end (claude exit 0) ===
