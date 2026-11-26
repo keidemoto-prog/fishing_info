@@ -58,3 +58,38 @@ Sources:
 build-single: source = 釣果ログ.html
 build-single: all-in-one 3160428 chars / docs/index.html 3160428 / dist/artifact.html 3160269
 === 2026-11-26 06:02 end (claude exit 0) ===
+git: push exit 0, unpushed commits: 0
+
+=== 2026-11-26 12:00 start ===
+auth: long-lived-token
+I ran the 12:00 collection in `収集手順.md` from step 1 to step 9. It added **22 new catches** to `data/catch-log.js`.
+
+**What was added** (all fished on 11/25, a spring tide; nothing from 11/26 has been posted yet):
+- **東京湾 17** (inner bay 13, Miura side 3, Boso side 1). Highlights:
+  - 長崎屋 in 本牧: シロギス, best angler 156.
+  - 豊国丸 in 竹岡: マダイ up to 4.3kg, 14 for the boat.
+  - 三喜丸 in 柴: タチウオ up to 135cm, アジ up to 89.
+  - 弁天屋 in 金沢八景: a カワハギ over 30cm.
+  - 佐助丸 in 間口: ワラサ biting well.
+- **相模湾 4**: 吾一丸 in 福浦 had a 3.4kg ヒラメ on live bait, and 浅八丸 in 平塚 had a trial タチウオ trip.
+- **駿河湾 1**: イシグロ reported 4 アオリイカ from the 焼津 beach by egi casting, the biggest over 1kg.
+
+**What was skipped:** catches from 外房 ports (大原, 勝浦, 飯岡), which are outside the target areas, and ヤリイカ, スミイカ, フグ and マダコ, which aren't on the species list. The other shop blogs, かめや and YouTube had nothing new and relevant.
+
+**Checks:**
+- The file still loads correctly: 5,159 records, up from 5,137.
+- No duplicates, and every new record has a source URL.
+- Water temperature, weather and wind come from Open-Meteo. One new point was fetched (羽田沖); the rest reuse 11/25 values already in the file. Because these are same-day values, they partly include forecast data.
+- The details are appended to `logs/2026-11-26.md`.
+
+**Needs you:** the 8 leftover files in the `釣り/` folder (`hit.html`, `ishiguro.html`, `kameya.html`, `nakane.html`, `ssm.html`, `sunny.html`, `super.html`, `tomiura.html`) are still there from the 11/13 incident. The rules don't let me delete them, so please remove them by hand.
+
+I didn't commit anything. `run-collect.ps1` rebuilds the single-file HTML and commits after this step.
+
+YouTube search (no matching recent videos):
+- [相模湾 落し込みサビキ](https://www.youtube.com/watch?v=HnfnMK1JZBE)
+- [東京湾奥イナダ](https://www.youtube.com/watch?v=BEypJJUHAKA)
+- [東京湾タチウオ](https://www.youtube.com/watch?v=Ok0AyLCWLqY)
+build-single: source = 釣果ログ.html
+build-single: all-in-one 3174420 chars / docs/index.html 3174420 / dist/artifact.html 3174261
+=== 2026-11-26 12:03 end (claude exit 0) ===
