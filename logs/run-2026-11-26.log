@@ -93,3 +93,45 @@ YouTube search (no matching recent videos):
 build-single: source = 釣果ログ.html
 build-single: all-in-one 3174420 chars / docs/index.html 3174420 / dist/artifact.html 3174261
 === 2026-11-26 12:03 end (claude exit 0) ===
+git: push exit 0, unpushed commits: 0
+
+=== 2026-11-26 18:00 start ===
+auth: long-lived-token
+`収集手順.md` の手順1〜9をすべて終えました。今回は18:00回（木曜なので対象は11/25〜26）で、**28件追加**して合計5187件になりました。
+
+**追加した内訳**
+- 東京湾15件（湾奥2・三浦8・房総5）、相模湾12件、駿河湾1件
+- 目立った釣果：
+  - 松輪のワラサ五目が好調（成銀丸トップ9本、伝五郎丸船中20本）
+  - 勝山・利八丸でワラサ最大7.2kg
+  - 平塚・庄治郎丸でタチウオ トップ37本、マダイ4.2kg
+  - 金谷・勘次郎丸で金アジ32〜38匹
+  - 千葉・都川でシーバス最大78cm
+- 店ブログからは、かめや清水店の静岡サーフのタチウオと、イシグロ伊東店の伊東沖アマダイを採用しました（どちらも11/25）。
+
+**見送ったもの**
+- 外房・茨城などエリア外の釣果
+- ヤリイカ・メダイ（対象魚種外）
+- SSM浦賀の新着（11/23分で記録済み）
+- 店ブログはほかに新着がなく、YouTubeにもこの期間の動画はありませんでした。
+
+**確認したこと**
+- `data/catch-log.js` は正しいJavaScriptとして読め、重複もありません。
+- 変更は追記と更新情報（`CATCH_LOG_META`）の2行だけです。
+- 記録は `logs/2026-11-26.md` に追記しました。
+- 海況（水温・風・波）は記事に書かれていないので、Open-Meteoの近隣の値を入れました。当日分なので予報値を含みます。
+- `釣り/` フォルダに新しいファイルは作っていません。
+
+**手動で消してほしいファイル**
+`釣り/` フォルダ直下に、11/13の事故で残ったファイルが8つあります（`hit.html`, `ishiguro.html`, `kameya.html`, `nakane.html`, `ssm.html`, `sunny.html`, `super.html`, `tomiura.html`）。手順書の決まりで私は消さないので、エクスプローラーで削除してください。
+
+この後のHTML再生成とgitへの登録は `run-collect.ps1` が自動で行います。
+
+YouTube検索で返ってきたページ（該当する動画はなし）:
+- [chibanippo.co.jp/articles/743026](https://www.chibanippo.co.jp/articles/743026)
+- [tsurihack.com/9050](https://tsurihack.com/9050)
+- [anglers.jp/catches/6366013](https://anglers.jp//catches/6366013)
+- [yutura.net](https://yutura.net/channel/37296/video/C4rwO42njOc/)
+build-single: source = 釣果ログ.html
+build-single: all-in-one 3192147 chars / docs/index.html 3192147 / dist/artifact.html 3191988
+=== 2026-11-26 18:04 end (claude exit 0) ===
