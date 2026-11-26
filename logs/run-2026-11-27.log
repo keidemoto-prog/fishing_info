@@ -27,3 +27,40 @@ YouTube results checked:
 build-single: source = 釣果ログ.html
 build-single: all-in-one 3200168 chars / docs/index.html 3200168 / dist/artifact.html 3200009
 === 2026-11-27 00:03 end (claude exit 0) ===
+git: push exit 0, unpushed commits: 0
+
+=== 2026-11-27 06:00 start ===
+auth: long-lived-token
+I ran every step of `収集手順.md` for the 11/27 6:00 run. I added 5 new catch reports to `data/catch-log.js`, and the file still loads as valid JavaScript (5,205 records now).
+
+- **Added:** 5 records, all from fishing trips on 11/26.
+  - Tokyo Bay: 2, both on the Miura side.
+    - 棒面丸 (Matsuwa), private-charter boat: 1–3 ワラサ each, fished off Kurihama.
+    - 棒面丸 (Matsuwa), light-tackle マダイ boat: good-sized マダイ, plus イナダ and サバ.
+  - Sagami Bay: 2.
+    - 豊漁丸 (Hiratsuka): best angler caught 8 マダイ; 3 カンパチ across the boat.
+    - 二階屋丸 (Usami): squid up to 1.7kg, the biggest this season.
+  - Suruga Bay: 1.
+    - 橋安丸 (Yaizu): タチウオ, up to an extra-large 1.06kg one; 80 on jigs.
+- **Sources:** all 5 came from 釣割 (chowari). The shop and boat blogs had nothing new since the 0:00 run. HIT三浦海岸's Instagram feed has one new post, but it shows no date or fish details, so I didn't record it. A YouTube search found no recent videos that fit.
+- **Left out:** 1 report from Ohara (大原), which is outside the area.
+- **Water temperature, weather, wind and waves:** none of the reports gave them, so each record uses nearby values from Open-Meteo for 11/26. Some are forecasts rather than measurements, because they're for the same day.
+- **Updated:** the "last updated" time now reads 2026-11-27 06:00, and the run note is filled in. The run log is in `logs/2026-11-27.md`.
+- **Not done here:** rebuilding the single-file page (`tsuriha_all-in-one.html` / `dist/artifact.html`) and committing. `run-collect.ps1` does both after this.
+- I didn't create any new files in `釣り/`; working files are in a temp folder (`%TEMP%/t1127b/`).
+
+**One thing for you to do (still needed):** 8 stray pages (`hit.html`, `ishiguro.html`, `kameya.html`, `nakane.html`, `ssm.html`, `sunny.html`, `super.html`, `tomiura.html`) have been sitting directly in `釣り/` since 11/13. The instructions don't let me delete them, so please delete them yourself in Explorer.
+
+Sources (YouTube search; none were usable):
+- [chibanippo 釣果](https://www.chibanippo.co.jp/fishing/chouka?page=1)
+- [terukosan.com (1)](https://terukosan.com/?p=20261008113081259)
+- [terukosan.com (2)](https://terukosan.com/?p=20261008113078536)
+- [静岡県 漁況情報](https://fish-exp.pref.shizuoka.jp/05wait/gepo_pdf/gepo2511.pdf)
+- [神奈川県 wadai2025-11](https://www.pref.kanagawa.jp/documents/109725/wadai2025-11.pdf)
+- [tsurihack 8675](https://tsurihack.com/8675)
+- [tsurihack 9050](https://tsurihack.com/9050)
+- [シマノ 相模湖釣行記](https://fish.shimano.com/ja-JP/content/fishingstyle/article/wakasagi_blog/2025/251210/index.html)
+- [yutura](https://yutura.net/channel/37296/video/C4rwO42njOc/)
+build-single: source = 釣果ログ.html
+build-single: all-in-one 3203454 chars / docs/index.html 3203454 / dist/artifact.html 3203295
+=== 2026-11-27 06:02 end (claude exit 0) ===
