@@ -100,3 +100,28 @@ Sources:
 build-single: source = 釣果ログ.html
 build-single: all-in-one 3211754 chars / docs/index.html 3211754 / dist/artifact.html 3211595
 === 2026-11-27 12:03 end (claude exit 0) ===
+git: push exit 0, unpushed commits: 0
+
+=== 2026-11-27 18:00 start ===
+auth: long-lived-token
+I ran all nine steps of `収集手順.md` for the 18:00 run on 2026-11-27, and added **23 new catch reports** to `data/catch-log.js`.
+
+- **What was added:** Tokyo Bay 11 (inner bay 4, Miura side 3, Boso side 4), Sagami Bay 12, Suruga Bay 0. All come from chowari. 22 are from 11/27 and one is from 11/26 (佑幸丸 at 松輪).
+  - Notable catches include a 9 kg マダイ (志平丸, 佐島), a 5.5 kg マダイ (誠いち丸, 真鶴), up to 71 タチウオ per angler (庄治郎丸, 平塚) and up to 108 アジ (黒川本家, 新山下).
+- **Sea and weather data:** No report gave its own water temperature or weather, so each record's `nearby` uses Open-Meteo values for 15 nearby points. For 11/27 these include forecast values.
+- **What was skipped:** 6 chowari reports were only non-target species (ヤリイカ, キハダ, クロムツ, スルメイカ). Reports from outside the three bays (外房, 下田, other prefectures) were also left out.
+  - The only new in-area shop post was Ishiguro's 沼津沖 trip on 11/25. I skipped it because it only had クロムツ and deep-water カサゴ species, which earlier runs have not counted as カサゴ.
+  - The other shop and boat blogs had nothing new. A YouTube search found no recent videos with a known trip date.
+- **Checks:** The file loads as valid JavaScript with 5,218 → 5,241 records, no duplicate IDs and no duplicate date + spot + species. Every record has a source URL, and the diff is only the new lines plus the 2 metadata lines.
+- **Run notes:** URLs checked, skipped items and judgment calls are written to `logs/2026-11-27.md`.
+
+I made no new files in `釣り/`; temporary files are in `%TEMP%/t1127d/`. `run-collect.ps1` will rebuild the single-file HTML page after this run, as step 9 says.
+
+**You need to delete 8 files by hand:** `hit.html`, `ishiguro.html`, `kameya.html`, `nakane.html`, `ssm.html`, `sunny.html`, `super.html` and `tomiura.html` are still in the `釣り/` folder. They are copies of source pages saved by mistake on 11/13. The procedure doesn't let me delete them.
+
+Sources:
+- [東京湾・相模湾の沖釣りのススメ - YouTube](https://www.youtube.com/channel/UCt8IlqIiU11LM0_3lH1Dp8Q)
+- [【東京湾奥ショアジギング】１１月もイナダのチャンス継続中！！ - YouTube](https://www.youtube.com/watch?v=kstkSEMLRuE)
+build-single: source = 釣果ログ.html
+build-single: all-in-one 3226195 chars / docs/index.html 3226195 / dist/artifact.html 3226036
+=== 2026-11-27 18:05 end (claude exit 0) ===
