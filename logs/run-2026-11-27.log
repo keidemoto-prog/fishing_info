@@ -64,3 +64,39 @@ Sources (YouTube search; none were usable):
 build-single: source = 釣果ログ.html
 build-single: all-in-one 3203454 chars / docs/index.html 3203454 / dist/artifact.html 3203295
 === 2026-11-27 06:02 end (claude exit 0) ===
+git: push exit 0, unpushed commits: 0
+
+=== 2026-11-27 12:00 start ===
+auth: long-lived-token
+`収集手順.md` の手順1〜9をすべて終えました（11/27 金曜の12:00回）。13件を追加し、`data/catch-log.js` が正しく読み込めることも確認済みです。
+
+**追加した13件（東京湾7・相模湾6・駿河湾0）**
+- **東京湾奥（3件）**: 羽田 えさ政釣船店のカワハギ、六郷 ミナミ釣船のタチウオ・アジ、同じ船宿の別便のカワハギ
+- **三浦側（3件）**: 久比里 山下丸のアマダイ（最大46cm）とカワハギ（竹岡沖で0〜20匹）、走水 教至丸のアジ（最大78匹）・マダイ
+- **房総側（1件）**: 竹岡 豊国丸のマダイ（最大1.75kg）・ワラサ
+- **相模湾（6件）**:
+  - 腰越 孝太郎丸のアマダイ、同じ船宿のマダイ・ソウダガツオ
+  - 腰越 秋田屋の深場釣り（対象魚種はサバのみ）
+  - 平塚 浅八丸のタチウオ（一番釣った人で28匹）
+  - かめや釣具の西湘サーフ ショゴ（11/27）
+  - かめや釣具の大磯沖アマダイ（記事に釣行日が無いので、日付は「2026-11」の月だけ）
+
+ほかの船宿・釣具店のブログは、ほとんど新しい記事がありませんでした。駿河湾とYouTubeも、使える新着はありません。
+
+**変更したファイル**
+- `data/catch-log.js`: 13件を追加し、更新日時を「2026-11-27 12:00」にした
+- `logs/2026-11-27.md`: 12:00回のメモ（見たURL・採用しなかった釣果・判断の理由）を足した
+
+`釣り/` フォルダに新しいファイルは作っていません。作業用のファイルは一時フォルダ（`%TEMP%/t1127c/`）に置きました。
+
+**お願い（手で削除してください）:** `釣り/` フォルダ直下に、11/13 の事故で残った `hit.html`・`ishiguro.html`・`kameya.html`・`nakane.html`・`ssm.html`・`sunny.html`・`super.html`・`tomiura.html` の8つがまだあります。手順で AI はこれらを消さない決まりなので、エクスプローラーで開いて削除してください。9月には同じようなファイルのせいでスマホ用ページが壊れたことがあります。
+
+Sources:
+- [yutura.net](https://yutura.net/channel/37296/video/C4rwO42njOc/)
+- [tsurihack.com/9050](https://tsurihack.com/9050)
+- [chibanippo.co.jp](https://www.chibanippo.co.jp/fishing/chouka?page=1)
+- [anglers.jp](https://anglers.jp//catches/6416851)
+- [terukosan.com](https://terukosan.com/?p=20261008113073701)
+build-single: source = 釣果ログ.html
+build-single: all-in-one 3211754 chars / docs/index.html 3211754 / dist/artifact.html 3211595
+=== 2026-11-27 12:03 end (claude exit 0) ===
