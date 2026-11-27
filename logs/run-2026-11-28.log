@@ -31,3 +31,36 @@ YouTube 検索の結果（使える動画なし）:
 build-single: source = 釣果ログ.html
 build-single: all-in-one 3246399 chars / docs/index.html 3246399 / dist/artifact.html 3246240
 === 2026-11-28 00:04 end (claude exit 0) ===
+git: push exit 0, unpushed commits: 0
+
+=== 2026-11-28 06:00 start ===
+auth: long-lived-token
+I finished the 6:00 collection run from `収集手順.md` (steps 1–9) and added **9 new catches** to `data/catch-log.js`, which now holds 5,282 records. I checked that the file still loads as valid JavaScript, with no duplicate records and no fish outside the target list.
+
+- **Tokyo Bay (3):**
+  - えさ政 (Haneda): カワハギ 0–10.
+  - 釣り船鶴 (Haneda): マゴチ up to 53cm and ヒラメ.
+  - 岩伊丸 (Kaneda): カワハギ, top angler 8.
+- **Sagami Bay (6):**
+  - アマダイ boats: たいぞう丸 (Hayama, best 49cm), まなぶ丸 (Katase, 2–6) and 飯岡丸 (Koshigoe).
+  - 太一丸 (Hiratsuka): LT五目 with plenty of アジ and アカアマダイ.
+  - 瀬戸丸 (Atami): ヒラメ up to 2kg.
+  - 深田正夫丸 (Sajima): アオリイカ.
+- **Suruga Bay (0):** nothing new.
+
+All 9 are from chowari and were caught on 11/27. No catches from 11/28 were posted yet. The other sources had nothing usable:
+- **かめや:** one new post repeated a マダイ report already in the log.
+- **HIT三浦海岸:** a new Instagram post had no readable text or fish.
+- **The other shop and boat blogs:** nothing new.
+- **YouTube:** one search found no recent videos.
+
+Water temperature and weather come from Open-Meteo. Because 11/27 was only a day ago, those values partly include forecast data. The run's notes are added to `logs/2026-11-28.md`. `run-collect.ps1` will rebuild the single-file HTML and commit automatically.
+
+**Please delete 8 files by hand:** the leftover pages from the 11/13 incident (`hit` / `ishiguro` / `kameya` / `nakane` / `ssm` / `sunny` / `super` / `tomiura.html`) are still in the `釣り/` folder. The rules don't let me remove them, so please delete them in File Explorer. Keep `釣果ログ.html` and `tsuriha_all-in-one.html`.
+
+Search results (no usable videos):
+- [yutura.net](https://yutura.net/channel/37296/video/C4rwO42njOc/)
+- [chibanippo.co.jp](https://www.chibanippo.co.jp/fishing/chouka?page=1)
+build-single: source = 釣果ログ.html
+build-single: all-in-one 3252024 chars / docs/index.html 3252024 / dist/artifact.html 3251865
+=== 2026-11-28 06:03 end (claude exit 0) ===
