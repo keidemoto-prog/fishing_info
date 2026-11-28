@@ -64,3 +64,36 @@ Search results (no usable videos):
 build-single: source = 釣果ログ.html
 build-single: all-in-one 3252024 chars / docs/index.html 3252024 / dist/artifact.html 3251865
 === 2026-11-28 06:03 end (claude exit 0) ===
+git: push exit 0, unpushed commits: 0
+
+=== 2026-11-28 12:00 start ===
+auth: long-lived-token
+I ran the 12:00 collection, all 9 steps in `収集手順.md`. **33 new catches were added** to `data/catch-log.js`: 23 in Tokyo Bay (17 inner bay, 5 Miura side, 1 Boso side), 9 in Sagami Bay and 1 in Suruga Bay. The file now has 5315 records. I loaded it with node and it reads as valid JavaScript, with no duplicates and a source link on every record.
+
+- **Where they came from:** all 33 are from chowari and were caught on 11/27 (中潮). Highlights:
+  - 長崎屋 シロギス, top angler 132
+  - 新明丸 マゴチ, 30 between 5 people
+  - ゴーゴーガイドサービス サゴシ and サワラ, 50 total
+  - 豊国丸 マダイ, 14 on the boat
+  - Several タチウオ and アジ boats
+  - The 11/28 catches posted so far are all from Ibaraki, outside the target area.
+- **Two judgement calls:**
+  - まごうの丸 posted one report covering 4 boats, so I split it into 3 records, one per boat, as earlier runs did. The 4th boat caught only キハダ, which isn't on the target list.
+  - 富士丸's plan name says 中深場, but the report text says they targeted マダイ, so I recorded マダイ.
+- **Skipped:**
+  - **Not on the target fish list:** マダコ, スミイカ, フグ and キハダ.
+  - **Outside the area:** Ibaraki, the outer Boso coast and other regions.
+  - **かめや:** its one new post (相模川河口 マゴチ) is already in the log.
+  - **イシグロ:** its new post is from Mie.
+  - **Other shop and boat blogs:** nothing new.
+  - **YouTube:** one search found no recent videos.
+- **Water temperature and weather** come from Open-Meteo. They may still include some forecast values, since 11/27 was only yesterday.
+- The run's notes are appended to `logs/2026-11-28.md`. As the instructions say, `run-collect.ps1` will rebuild the single-file HTML and push to GitHub after this.
+
+**Please delete 8 leftover files by hand.** `hit` / `ishiguro` / `kameya` / `nakane` / `ssm` / `sunny` / `super` / `tomiura.html` are still in the `釣り/` folder, left over from the 11/13 incident. The rules don't let me remove them, so please delete them in File Explorer. Keep `釣果ログ.html` and `tsuriha_all-in-one.html`.
+
+YouTube search result I checked (not used):
+- [東京湾・相模湾の沖釣りのススメ](https://www.youtube.com/channel/UCt8IlqIiU11LM0_3lH1Dp8Q)
+build-single: source = 釣果ログ.html
+build-single: all-in-one 3272548 chars / docs/index.html 3272548 / dist/artifact.html 3272389
+=== 2026-11-28 12:05 end (claude exit 0) ===
