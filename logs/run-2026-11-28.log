@@ -97,3 +97,36 @@ YouTube search result I checked (not used):
 build-single: source = 釣果ログ.html
 build-single: all-in-one 3272548 chars / docs/index.html 3272548 / dist/artifact.html 3272389
 === 2026-11-28 12:05 end (claude exit 0) ===
+git: push exit 0, unpushed commits: 0
+
+=== 2026-11-28 18:00 start ===
+auth: long-lived-token
+`収集手順.md` の手順1〜9を、11/28 18:00 の回としてすべて実行しました。
+
+**結果：38件追加**（東京湾22＝湾奥6・三浦14・房総2／相模湾14／駿河湾2）
+- 38件すべて釣割（chowari）の新着で、釣行日は11/28（中潮）です。朝から雨と南西の風、うねりの強い日でした。
+- 主な釣果は、松輪のワラサ（5隻）、各地のカワハギ、ティップラン（アオリイカ）、走水・金谷のアジ、相模湾のアマダイ、駿河湾のシロアマダイです。
+- 記録しなかったもの：
+  - 対象魚種外：小田原のヤリイカ、真間川のタコなど
+  - エリア外：和歌山・茨城・福島・三重・兵庫
+- そのほかの情報源も確認しました。船宿・釣具店のブログ10か所は新着なし、釣具のイシグロの新着3件はエリア外（琵琶湖・伊勢湾）、YouTube は該当する最近の動画なしでした。
+- 近くの海況（水温・天気・風・波）は Open-Meteo の値を入れました。当日分なので予報値が混じっている可能性があり、その旨を各レコードのメモに書いてあります。
+
+**確認したこと**
+- `data/catch-log.js` は正しく読み込めます（5315件 → 5353件）。
+- 重複、対象外の魚種、出典URLの抜けはありません。
+- 最終更新日時と更新メモ（`window.CATCH_LOG_META`）は「2026-11-28 18:00」に更新しました。
+- 見たURL・判断の理由・海況の値は `logs/2026-11-28.md` の末尾に書きました。
+- 作業用ファイルはすべて作業用の一時フォルダに置き、`釣り/` フォルダには新しいファイルを作っていません。
+- スマホ用の1つにまとめたページの作り直しは、手順どおり `run-collect.ps1` がこの後に自動で行います。
+
+**手作業でお願いしたいこと**
+`釣り/` フォルダの直下に、11/13 の事故で残ったファイルが8つ残っています（`hit.html`, `ishiguro.html`, `kameya.html`, `nakane.html`, `ssm.html`, `sunny.html`, `super.html`, `tomiura.html`）。手順では AI がファイルを消さない決まりなので、エクスプローラーでこの8つを選んで削除してください。
+
+YouTube の検索結果（該当なし）：
+- [11月でもまだ釣れる！東京湾奥イナダ釣り！](https://www.youtube.com/watch?v=BEypJJUHAKA)
+- [【東京湾奥ショアジギング】１１月もイナダのチャンス継続中！！](https://www.youtube.com/watch?v=kstkSEMLRuE)
+- [【東京湾】良型爆釣！東京湾のタチウオ](https://www.youtube.com/watch?v=Ok0AyLCWLqY)
+build-single: source = 釣果ログ.html
+build-single: all-in-one 3296640 chars / docs/index.html 3296640 / dist/artifact.html 3296481
+=== 2026-11-28 18:04 end (claude exit 0) ===
